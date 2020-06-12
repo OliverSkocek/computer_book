@@ -1,0 +1,898 @@
+\documentclass[11pt,a4paper,leqno]{report}
+\usepackage{tikz}
+%\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+%\usepackage{makeidx}
+%\usepackage{graphicx}
+%\graphicspath{{pics/}}
+\usepackage{listings}
+
+
+\newcommand{\eps}{\varepsilon}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+
+%%%%%%%%%%% REST %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\ran}{ran}
+\newcommand{\re}{\mathrm{Re}}
+\newcommand{\im}{\mathrm{Im}}
+
+\newcommand{\ul}{\underline}
+\newcommand{\I}{\mathrm{i}}
+\newcommand{\E}{\mathrm{e}}
+
+%\makeindex
+%\setlength{\parindent}{0em} 
+
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{chapter}
+
+
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily}
+\lstset{literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+}
+\begin{document}
+
+
+\begin{titlepage}
+
+\vspace*{5cm}
+\begin{center}
+\rule{\linewidth}{0.5mm} \\[0.4cm]
+{ \Huge \bfseries Mathematik, Berechnung} \\[0.2cm]
+{ \Huge \bfseries und Basteleien}\\[0.2cm]
+\rule{\linewidth}{0.5mm} \\[3.5cm]
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Oliver \textsc{Sko\v{c}ek} \\[4cm]
+\small
+
+\end{flushleft}
+
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+
+\end{minipage}
+ 
+% Bottom of the page
+
+ 
+\end{center}
+ 
+\end{titlepage}
+
+%\maketitle
+
+
+%\renewcommand{\contentsname}{Contents}
+
+\tableofcontents
+
+\markboth{Contents}{Contents}
+
+\vfill
+
+
+\chapter{Einführung}
+Im Sommer 2019 setzte ich mir in den Kopf ein Projekt zu starten, über das ich schon sehr lange nachgedacht hatte. Der ursprüngliche Plan, der vielleicht noch umgesetzt wird, aber zur Zeit auf Eis liegt, war es eine Rechenmaschine wie in den 1930ern zu bauen, basierend auf elektromechanischen Bauteilen wie Relais und einem Lochstreifenlesegerät. Von der Idee diese Relais selbst zu bauen und zwar aus Parkett Holzleisten, Zimmermannsnägeln, Aluminiumfolie und lackiertem Kupferdraht gab ich etwa zur selben Zeit auf wie die Idee Relais zu verwenden. Dies geschah zum einen, weil ich frustriert war mit der Unzverlässigkeit der Schaltung und mit der hohen Stromstärke von etwa 0.7A, die für eine Schaltung in meinem Design notwendig war, und zum Anderen geschah es weil ich angefangen hatte mich mit Breadboards und integrierten Schaltkreisen zu beschäftigen. 
+
+
+\chapter{Aufbau einer Rechenmaschine}
+Was muss eine Rechenmaschine können, damit sie im Prinzip alles berechnen kann, auch wenn sie dafür eine sehr lange Zeit benötigt? Diese Frage wurde Mitte des zwanzigsten Jahrhunderts beantwortet. Mehrere Personen entwickelten unterschiedliche Definitionen des Berechenbaren, und im Laufe der Zeit konnte gezeigt werden, dass all 
+iese hypotethischen Rechenmaschinen und Programmiersprachen gleichwertig sind. Die Gleichwertigkeit zwischen einer Rechenmaschine \textbf{A} und einer Rechenmaschine \textbf{B} ist gegeben, wenn die\\ Rechenmaschine \textbf{A} die Rechenmaschine \textbf{B} simulieren kann und umgekehrt. Dies gilt unabhängig davon ob es sich um eine analoge Rechenmaschine, eine digitale Rechenmaschine, eine Quantenrechenmaschine oder einen Menschen mit Papier und Stift handelt.\\
+\\
+Eine Rechenmaschine ist ein Apparat, der Listen von Befehlen abarbeitet und dabei drei fundamentale Bestandteile hat:
+\paragraph{Register:} Variablen, Platzhalter, Schmierzettel, et cetera. Ein Ding, dass ein Wort speichern kann, wobei dieses Wort von der Maschine gelesen werden kann und auch durch ein bestimmtes Wort ersetzt werden kann.
+\paragraph{Grundoperationen:} Eine Liste von grundlegenden Operation, welche die Maschine auf Wörtern, Paaren von Wörtern, et cetera ausführen kann. Die Ausgabe der Operation muss eindeutig sein und ist wiederum entweder ein Wort, ein Paar von Wörtern, et cetera. Die Eingabe Wörter liegen hierbei in bestimmten von der Operation abhängigen Registern und die Ausgabewörter werden wiederum in bestimmten operationsabhängigen Registern abgelegt.
+\paragraph{Bedingte Verzweigung:} Ein Weg wie der Ausgang einer Operation die Reihenfolge der abzuarbeitenden Befehle abändern kann. Diese Konstrukte haben für gewöhnlich die Form: "Wiederhole bestimmte Teilliste von Befehlen, bis eine Bedingung erreicht ist"
+\\
+\\
+Der zuletzt beschriebene Bestandteil einer Rechenmaschine, die \textbf{Bedingte Verzweigung} wird oft durch einen internen Zustand der Rechenmaschine realisiert, der für gewöhnlich über so genannte Flaggen implementiert wird. Dies sind Register mit nur einem Bit, die eine Aussage über den Ausgang der letzten Operation macht, welche die Rechenmaschine abgearbeitet hat. Diese Register sind die Ausnahme, sie sind nicht direkt in ihrem Wert setzbar, sondern nur indirekt und zusätzlich halten sie kein Wort, sondern genau einen Bit, also null falls die Aussage über die letzte Operation nicht zutrifft und eins falls doch.
+\newpage
+\subsection{GOTO-Programme}
+Eine der einfachsten und am leichtesten verständlichen Arten von Programmier- sprachen ist die Klasse der GOTO-Programmiersprachen. In der Praxis sind GOTO-Programmiersprachen zwar nur von geringer Bedeutung, da sich Programme, die in solchen Sprachen geschrieben wurden, wegen ihrer schwierigen Lesbarkeit, nur schwer warten lassen, jedoch sind die internen Maschinensprachen von allen Rechenmaschinen, die in der Praxis eingesetzt werden, GOTO-Programmiersprachen und (theoretisch interessant).\\
+\\
+Es folgt eine Beschreibung einer sehr einfachen Form einer GOTO-Programmier- sprache, die bereits alle Zutaten für eine universelle Programmiersprache enthält, und die wir fortan als Ausgangspunkt für unsere Diskussion des Berechenbaren ansehen.
+
+\paragraph{Variablen:} Variablen sind synonym zu verstehen mit Registern, es sind also Dinge die ein Wort speichern können, das gelesen werden kann, und durch ein anderes Wort ersetzt werden kann. Ein Wort wird in der folgenden Diskussion, um möglichst einfach zu bleiben, eine natürliche Zahl sein. \\
+\begin{definition}
+	Ein GOTO-Programm ist durch folgendes Schema definiert:
+	\begin{enumerate}
+		\item Das Kopieren des Wertes einer Variablen $X$ auf eine Variable $Y$, kurz $Y = X$, ist ein GOTO-Programm.
+		\item Einer Variable $X$, einen bestimmten Wert $A$ geben, kurz $X = A$\footnote{A ist zum Beispiel 12, daher kurz $X = 12$.}, ist ein GOTO-Programm.
+		\item Einer Variablen $Z$ die Summe zweier Variable $X$ und $Y$ als Wert zuordnen, kurz $Z = X + Y$, ist ein GOTO-Programm.
+		\item Einer Variablen $Z$ die Differenz zweier Variable $X$ und $Y$ als Wert zuordnen, kurz $Z = X - Y$, ist ein GOTO-Programm.\footnote{Da wir mit natürlichen Zahlen und keinen ganzen Zahlen arbeiten, setzen wir eine Differenz, die in einer negativen Zahl resultiren würde auf den Wert Null.}
+		\item Das Stoppen des Programmes, kurz $HALT$ ist ein GOTO-Programm.
+		\newpage
+		\item Seien $W$ und $V$ GOTO-Programme, dann ist
+		\begin{lstlisting}
+			W
+			V
+		\end{lstlisting}
+		ein GOTO-Programm. Daher zwei GOTO-Programme untereinander- geschrieben bilden ein GOTO-Programm. Praktisch bedeutet dies, dass zuerst das obere Programm und dann das untere Programm ausgeführt wird. Beispiel:
+		\begin{lstlisting}
+		X = Y
+		Z = X + Y
+		\end{lstlisting}
+		Hier wird der Variable $X$ der Wert der Variablen $Y$ zugeordnet und anschließend wird der Variablen $Z$ die Summe der Variablen $X$ und $Y$ zugeordnet.
+		\item Das Springen zu der $n$-ten Zeile des GOTO-Programms, falls die Variable $X$ einen Wert ungleich Null aufweist, und nichts tun falls es einen Wert gleich null hat, kurz $\text{IF }X\text{ GOTO }n$.\\
+		Beispiel (Arithmetische Multiplikation): 
+		\begin{lstlisting}
+		X = 0
+		X = X + Y
+		Z = Z - 1
+		IF Z GOTO 2
+		\end{lstlisting}
+	\end{enumerate}
+\end{definition}	
+Das Beispielprogramm unter Punkt sieben beschreibt die Multiplikation zweier natürlicher Zahlen $Z$ und $Y$, daher wenn das Programm zu Ende gelaufen ist, steht in der Variable $X$ das Produkt der Werte, die zum Start des Programmes in der Variablen $Z$ und $Y$ gespeichert waren. Es ist zu beachten, dass wir eins basiert nummerieren. Also mit Zeilennummerierung als Orientierung sieht unser Programm so aus:
+\begin{lstlisting}
+	1: X = 0
+	2: X = X + Y
+	3: Z = Z - 1
+	4: IF Z GOTO 2
+\end{lstlisting}			
+Wie nicht unschwer zu erkennen ist, steckt der Grund warum wir dies eine GOTO-Programmiersprache nennen im siebten Punkt der Definition. Dieser Punkt legt fest wie bedingte Verzweigung in der Programmiersprache funktioniert. Im Laufe der nächsten Kapitel werden wir weitere Möglichkeiten kennen lernen wie man dies bewerkstelligen kann.
+\paragraph{Übungsbeispiel 1:} Schreibe ein GOTO-Programm, dass die Fakultät einer natürlichen Zahl $n$ berechnet, kurz $n!$. Die Fakultät ist rekursiv definiert durch:
+$$0! = 1$$
+$$(n + 1)! = (n + 1) * n!$$
+In einer einzigen Formel lässt sie sich aber auch, weniger präzise, folgendermaßen definieren:
+$$n! = n * (n - 1) * \dots * 2 * 1$$
+Beispiel: $5! = 5 * 4 * 3 * 2 * 1$
+\subsection{Grundoperationen}
+Die Grundoperationen unserer GOTO-Programmiersprache sind die Summe und die Differenz zweier natürlicher Zahlen. Alternativ gibt es aber auch noch andere mögliche Operationen, die in Kombination unsere Grundoperationen ausdrücken können und damit genauso Kandidaten für Grundoperationen sind. Hier wollen wir kurz ein paar Beispiele bringen.
+\paragraph{Nachfolger und Vorgänger}
+Alternativ zur Addition und Subtraktion kann man auch die einstellige Operation des Nachfolgers ($S(n) = n + 1$) und seiner Umkehroperation Vorgängers ($T(n) = n - 1$)\footnote{Es soll gelten $T(0)=0$.} einer natürlichen Zahl verwenden. Offensichtlich lässt sich die Addition in diesen Operationen ausdrücken:
+\begin{lstlisting}
+	1: X = S(X)
+	2: Y = T(Y)
+	3: IF Y GOTO 1
+\end{lstlisting}	
+\paragraph{Übungsbeispiel 2:} Zeige wie sich die Subtraktion durch $S$ und $T$ in einem GOTO-Programm ausdrücken lässt.
+
+\paragraph{Nachfolger und Gleichheit} Die Vorgängeroperation lässt sich auch durch eine Gleichheitsrelation austauschen. Relationen sind Operationen, die als Resultat entweder Null für falsch oder Eins für wahr ausgeben. In unserem Fall nimmt die Operation zwei natürliche Zahlen $X$ und $Y$ und schreibt eine Eins, falls die Werte gleich sind, und sonst eine Null, in die Variable $Z$. \\Als Operation schreiben wir dies als: $Z = (X == Y)$.
+\paragraph{Übungsbeispiel 3:} Zeige wie sich die Vorgängeroperation durch die\\ Nachfolgeroperation und die Gleichheitsrelation in einem GOTO-Programm ausdrücken lässt.
+\paragraph{Übungsbeispiel 4:} Zeige wie sich die Gleichheitsrelation in in der ursprünglichen Definition eine GOTO-Programms ausdrücken lässt.
+
+\subsection{WHILE-Programme}
+Eine, wegen ihrer leichteren Lesbarkeit, beliebtere Klasse von Programmiersprachen sind die WHILE-Programmiersprachen. Die meisten modernen Programmiersprachen sind unter anderem auch WHILE-Programmiersprachen.\\
+\\
+Es folgt nun wie bei den GOTO-Programmen eine Beschreibung einer einfachen Form einer WHILE-Programmiersprache. Der einzige Untschied zu GOTO-Programmen liegt im siebenten Punkt der Definition, nämlich der Implementierung bedingter Verzweigungen.
+\begin{definition}
+	Ein WHILE-Programm ist durch folgendes Schema definiert (Übernehme Punkt 1-6 von der Definition eines GOTO-Programmes, lies einfach wo auch immer GOTO-Programm geschrieben steht, WHILE-Programm):
+	\begin{enumerate}
+ 		\setcounter{enumi}{6}
+		\item Wenn $X$ ein WHILE-Programm ist und $Z$ eine Variable, dann ist: 
+		\begin{lstlisting}
+			WHILE Z:
+			    X
+		\end{lstlisting}
+		auch ein WHILE-Programm. Es bedeutet, dass das WHILE-Programm X solange ausgeführt wird bis die Variable $Z$ Null ist.\\
+		Beispiel:(Arithmetische Multiplikation)
+		\begin{lstlisting}
+		X = 0
+		WHILE Z:
+		    X = X + Y
+		    Z = Z - 1
+		\end{lstlisting}	
+		Wir sehen hier, wie bereits für GOTO-Programme gemacht ein WHILE-Programm, das das Produkt zweier natürlicher Zahlen $X$ und $Z$ berechnet. 
+	\end{enumerate}
+\end{definition}
+An diesem einfachen Beispiel lässt sich wenn wir es mit dem zugehörigen GOTO-Programm vergleichen bereits erkennen, dass und inwiefern WHILE-Berechenbarkeit und GOTO-Berechenbarkeit equivalent sind, also sich zu jedem GOTO-Programm ein WHILE-Programm finden lässt und umgekehrt, dass daselbe berechnet. Was uns sogleich zum nächsten Abschnitt führt.
+
+\paragraph{Übungsbeispiel 5:} Mach Übungsbeispiel 1, 2 und 3 mit WHILE-Programmen, anstelle von GOTO-Programmen.
+
+\subsection{Church-Turing Hypothese}
+Die Church-Turing Hypothese (CT-Hypothese) ist eine nicht beweisbare Aussage über, dass was im Prinzip berechenbar ist. Inspiriert ist sie durch die Erkenntnis, dass alle Defintionen des Berechenbaren, also im Prinzip \\Programmiersprachen, zumindest die Berechnungen ausführen kann, die GOTO-Programme berechnen können. CT-Hypothese besagt also, dass jede Berechnung die im Prinzip möglich ist von einer Maschine ausgeführt werden kann, die GOTO-Programme verarbeiten kann. Hiermit ist auch klar weshalb die Aussage eher philosophisch und nicht beweisbar ist, da "das Berechenbare" nicht leicht fassbar/definierbar ist und wir heute nicht wissen können was morgen noch für Maschinen sein werden und welchen Gesetzen sie gehorchen werden. Es sei weiters noch angemerkt, dass wir aus ersichtlichem Grund die GOTO-Programmiersprache, sowie jede Programmier-sprache, die jede Berechnung ausführen kann, die von einem GOTO-Programm ausgeführt werden kann, eine universelle Programmiersprache genannt werden soll. Eine solche universelle Programmiersprache ist sozusagen maximal in ihrer Fähigkeit Berechnungen auszuführen. Zur Motivation der Hypothese werden wir als nächstes beweisen, dass zu jedem GOTO-Programm ein WHILE-Programm existiert, dass daselbe berechnet und umgekehrt
+\paragraph{IF THEN END} Doch bevor wir dies zeigen soll eine bedingte Verzweigung eingeführt werden, die zwar nicht zwingend notwendig ist, daher wir können sie mit WHILE-Programmen sowie GOTO-Programmen bereits ausdrücken, aber sie werden, die in unseren Beweisen vorkommenden Programme kompakter und leichter lesbar machen, wenn wir sie verwenden.
+\begin{definition}
+Sei $Z$ eine Variable, $P$ und $Q$ sind GOTO/WHILE-Programme, dann nennen wir das Konstrukt
+	\begin{lstlisting}
+	IF Z THEN
+		P
+	Q
+	\end{lstlisting}
+eine IF THEN END Anweisung und sie bedeutet, dass falls $Z$ ungleich Null ist, dann wird $P$ ausgeführt und anschließend $Q$, andererseits falls $Z$ gleich Null ist, dann überspringen wir $P$ und führen gleich $Q$ aus.
+\end{definition}
+
+\paragraph{Übungsbeispiel 6:} Schreibe ein GOTO-Programm, dass dieselbe Berechnung ausführt wie das oben beschriebene IF THEN END Konstrukt.
+
+\paragraph{Übungsbeispiel 7:} Schreibe ein WHILE-Programm, dass dieselbe Berechnung ausführt wie das oben beschriebene IF THEN END Konstrukt.
+
+\paragraph{Übungsbeispiel 8:} Schreibe ein WHILE-Programm, dass dieselbe Berechnung ausführt wie das oben beschriebene IF THEN END Konstrukt.
+
+\paragraph{Übungsbeispiel 9:} Zeige wie sich die Gleichheitsrelation als WHILE-Programm ausdrücken lässt.
+\begin{proof}
+\textbf{WHILE $\rightarrow$ GOTO:} Gegeben sei ein WHILE-Programm, wir können nun jedes Vorkommnis einer WHILE-Struktur
+\begin{lstlisting}
+		WHILE Z:
+			P 
+\end{lstlisting}
+nach folgendem Schema schrittweise durch eine GOTO-Struktur ersetzen:
+\begin{lstlisting}
+		n - 2: X = 1 - Z
+		n - 1: IF X GOTO m + 1
+		n    : P
+		m    : IF Z GOTO n
+\end{lstlisting}
+wobei $n$ die Nummer des ersten Befehls im Programm $P$ ist und die Rollen von $X$ und $Z$ so zu verstehen sind, dass zu jeder Variablen $Z$ eine eigene Variable $X$ erzeugt werden soll, die sonst nirgendwo verwendet wird.\\
+Wenn dieser Prozess abgeschlossen ist, haben wir ein zu unserem ursprünglichen WHILE-Programm, equivalents GOTO-Programm erzeugt.
+\\
+\\
+\textbf{GOTO $\rightarrow$ WHILE:} Gegeben sein ein GOTO-Programm $P$. Wir starten mit der Konstruktion eines equivalenten WHILE-Programmes $Q$ indem wir die ersten beiden Zeilen schreiben:
+\begin{lstlisting}
+	Y = 1
+	WHILE Y
+		X = 0
+\end{lstlisting}
+Wir rücken nun ein und der Rest des Programmes, dass wir konstruieren wird nun innerhalb dieser initialen WHILE-Anweisung laufen. Falls die Variable $Y$ bereits in $P$ vorkommt, wähle anstelle von $Y$ eine Variable, die nicht in $P$ vorkommt.\\
+\\
+Anschließend fügen wir für jede Zeile im Programm $P$, der Reihe nach einen Segment folgender Form am unteren Ende von $Q$, mit der Einrückung der ersten Zeile nach dem ersten WHILE, hinzu.\footnote{Da unsere WHILE-Programmiersprache keine IF THEN END Anweisungen enthalten, stehen die IF THEN END Anweisungen hier für ein funktionales equivalent in unserer WHILE-Programmiersprache.}
+\begin{lstlisting}
+	Z = (X == K)
+	IF Z THEN
+		'Befehl von Programm P in der Zeile K'
+		X = X + 1
+\end{lstlisting}
+Falls der Befehl in der $K$-ten Zeile von $P$ eine Sprunganweisung ist, ersetzen wir den dort stehenden Befehl:\footnote{$R$ steht hier für die im Befehl vorkommende Variable.}
+\begin{lstlisting}
+IF R GOTO n
+\end{lstlisting}
+durch
+\begin{lstlisting}
+IF R THEN
+	X = n
+\end{lstlisting}
+ansonsten schreiben wir den Befehl so wie er in $P$ steht an die entsprechende Position. Das so erzeugte WHILE-Programm ist equivalent zum ursprünglichen GOTO-Programm.
+\end{proof}
+
+Abschließend sei noch erwähnt, dass die CT-Hypothese nichts über die Anzahl der Rechenschritte oder die Zeit, die eine Machine zur Berechnung benötigen wird aussagt. Ein Quantencomputer wird eine Faktorisierung einer großen natürlichen Zahl in kurzer Zeit vollbringen, während eine klassischer Computer Jahrhunderte braucht. Aber diesen Aspekt von unterschiedlichen Programmiersprachen und Maschinen haben wir bereits gesehen, als wir untschiedliche Grundoperationen für GOTO-Programme in betracht gezogen haben.
+
+\subsection{Kleenesche Normalform}
+Im vorangegangenen haben wir gesehen, wie zu jedem GOTO-Programm ein equivalentes WHILE-Programm erzeugt werden kann und umgekehrt.\\
+Wir modifizieren nun unsere WHILE-Programmiersprache, indem wir IF THEN END Anweisungen hinzufügen. Die resultierende Sprache nennen wir WHILE/IF-Programmiersprache. Sie ist equivalent zu unsere WHILE-Programmiersprache, da sich IF THEN END durch WHILE Anweisungen ausdrücken lässt, aber erlaubt nun die Konstruktion einer Kleenschen Normal- form zu einem gegebenen WHILE-Programm.\\
+\\
+Wir folgen nun dem Beweis aus dem letzten Abschnitt.\\
+Gegeben ist ein WHILE-Programm $P$, wir wandeln es in ein equivalentes GOTO-Programm $Q$ um, und konstruieren anschließend wie im Beweis ein equivalentes WHILE/IF Programm, dass nur mehr eine einzelne WHILE-Anweisung besitzt. 
+\paragraph{Beispiel:} Gegeben sei folgendes WHILE-Programm, welches überprüft ob eine gegebene Zahl eine Primzahl ist.
+\paragraph{Übungsbeispiel 10:}
+\newpage
+\chapter{Zahlensysteme}
+Bislang haben wir Programmiersprachen als etwas angesehen, dass Operationen auf natürlichen Zahlen ausführt. Bislang haben wir darauf verzichtet genauer darauf einzugehen, was genau eine natürliche Zahl ist und wie sie in einer physischen Rechenmaschine dargestellt werden können.
+Eine Rechenmaschine wird nie beliebig große natürliche Zahlen darstellen können, da sie immer limitiert sein wird in der Anzahl der wohlunterscheidbaren Zustände die sie annehmen kann.%\\
+%\\
+%In diesem Kapitel wird eine neue an GOTO-Programmiersprachen angelehnte Programmiersprache verwendet, die im Gegensatz zu unserer ursprünglichen Definition nicht auf natürlichen Zahlen operieren, sondern auf Symbolen.\\
+%\\
+%\textbf{Variablen} speichern wie gehabt ein Wort, aber Wörter sind von hier an nicht mehr natürliche Zahlen sondern Symbole aus einer vorgegebenen Liste von Symbolen.\\
+%\\
+%Hier ist der richtige Zeitpunkt um ein wichtiges Konzept der Computerwissenschaften kennen zu lernen, den Stack.
+%Ein \textbf{Stappel} oder Stack ist eine Art von Speicher, der sich wie ein Stappel Notizzettel verhält. Er erlaubt zwei Operationen, nämlich das Legen einer Notiz oben auf den Stappel oder das Nehmen der obersten Notiz vom Stappel. 
+%\begin{definition}
+%	Sei $X$ eine Variable; ein Stappel oder Stack $Y$ ist ein Konstrukt bestehend aus einer geordneten Liste von Variablen $Y = \{x_1, x_2, \dots, x_n\}$ mit zwei Operationen.
+%	\begin{enumerate}
+%	\item\textbf{PUSH $X$ ONTO $Y$}: Sei $\{x_1, x_2, \dots, x_n\}$ der derzeitige Zustand von $Y$, dann wird eine neue Variable $x_{n+1}$ erzeugt, dieser der Wert von $X$ übergeben und anschließend an $Y$ drangehängt. Der neue Zustand des Stacks ist somit: $\{x_1, x_2, \dots, x_n, x_{n+1}\}$
+%	\item\textbf{POP $Y$ ONTO $X$}: Sei $\{x_1, x_2, \dots, x_{k-1}, x_k\}$ der derzeitige Zustand von $Y$. Falls $Y$ nicht leer ist, wird die Variable $x_k$ vom Stack genommen, ihr Wert in die Variable $X$ geschrieben und anschließend $x_k$ verworfen. Der neue Zustand des Stacks ist somit: $\{x_1, x_2, \dots, x_{k-1}\}$. Ansonsten wenn $Y$ leer ist, also keine Variable mehr enthält, passiert nichts.
+%	\end{enumerate}
+%\end{definition}
+%Wir kommen nun zur Definition unserer Stack-GOTO-Programmiersprache.
+%\begin{definition}
+%	Ein Stappel-GOTO-Programm ist durch folgendes Schema definiert:
+%	\begin{enumerate}
+%		\item Das Kopieren des Wertes einer Variablen $X$ auf eine Variable $Y$, kurz $Y = X$, ist ein GOTO-Programm.
+%		\item Einer Variable $X$, einen bestimmten Wert $A$ geben, kurz $X = A$
+%		\item Beliebige Stappel/Stack Anweisungen aus Definition 1.4.
+%		\item Das Stoppen des Programmes, kurz $HALT$ ist ein GOTO-Programm.
+%		\item Seien $W$ und $V$ GOTO-Programme, dann ist
+%		\begin{lstlisting}
+%		W
+%		V
+%		\end{lstlisting}
+%		ein GOTO-Programm. Daher zwei GOTO-Programme untereinander- geschrieben bilden ein GOTO-Programm. Praktisch bedeutet dies, dass zuerst das obere Programm und dann das untere Programm ausgeführt wird. Beispiel:
+%		\item Das Springen zu der $n$-ten Zeile des GOTO-Programms, falls die Variable $X$ ein vorgegebenes Symbol $S$ trägt, und nichts tun falls dem nicht so ist, kurz $\text{IF }X == S\text{ GOTO }n$.\\
+%	\end{enumerate}
+%\end{definition}
+%Wir haben also wie zu erwarten war, da wir ja keine natürlichen Zahlen mehr haben sondern nur Symbole, die Subtraktion und die Addition gestrichen. Weiters haben wir die Sprunganweisung etwas modifizieren müssen und Stappel/Stack Anweisungen hinzugefügt. Es wird sich in diesem Kapitel zeigen, dass wir von den möglichen Berechnungen, die wir ausführen können nichts verloren haben, jedoch ist diese Stack-GOTO-Programmiersprache in der Praxis relativ unpraktisch, da es sich im Prinzip um eine 1-bit Rechenmaschine handelt.
+\\
+\\
+Fangen wir bei Null an. Was sind die natürlichen Zahlen? Natürliche Zahlen werden verwendet zum Zählen. Schauen wir uns den Prozess des Zählens an. 
+
+\section{Der Zählvorgang} Wir haben zwei Haufen wohlunterscheidbarer Objekte. Einen Haufen Birnen und einen Haufen Äpfel. Wenn wir wissen wollen ob genauso viele Birnen auf dem Birnenhaufen wie Äpfel auf dem Äpfelhaufen sind, können wir folgendermaßen vorgehen. Wir entfernen eine Birne vom Birnenhaufen und einen Apfel vom Apfelhaufen und tun dies so lange bis einer der Haufen verschwunden ist. Wenn beide gleichzeitig verschwinden, dann sind es gleich viele Birnen wie Äpfel, ansonsten gibt es mehr Birnen respektive Äpfel wenn der Äpfelhaufen beziehungsweise der Birnenhaufen zuerst \\verschwunden ist. Durch diesen Prozess ist man in der Lage Anzahlen von allen möglichen Gegenständen durch Haufen von Äpfeln darzustellen. Haufen von Äpfeln sind eine mögliche Darstellung von natürlichen Zahlen. Ein beliebiger Apfelhaufen kann gebildet werden indem man mit einem Apfel startet und schrittweise weitere Äpfel hinzufügt. Wir wünschen uns jetzt aber eine weniger verderbliche und kompaktere Darstellung von natürlichen Zahlen. Hierzu abstrahieren wir unsere Äpfelhaufen. 
+\begin{definition} Jede Konstruktion mit den hier beschriebenen vier Eigenschaften nennen wir eine Darstellung der natürlichen Zahlen.
+	\begin{enumerate}
+		\item Es gibt eine erste natürliche Zahl, wir nennen sie Eins.
+		\item Es gibt zu jeder natürlichen Zahl $n$, eine eindeutige nächste natürliche Zahl, den Nachfolger $S(n)$.
+		\item Alle natürlichen Zahlen werden durch mehrmaliges Nachfolger bilden aus der Eins konstruiert.
+		\item Der Nachfolger $S(n)$ einer natürlichen Zahl $n$ unterscheidet sich von $n$ und jeder natürlichen Zahl, die im Bildungsprozess von $n$, also startend bei $1$, über alle Nachfolgerbildungen bis hin zu $n$, auftaucht.
+	\end{enumerate}
+\end{definition}
+%\begin{enumerate}
+%	\item Es gibt eine erste natürliche Zahl, wir nennen sie Eins.
+%	\item Es gibt zu jeder natürlichen Zahl $n$, eine eindeutige nächste natürliche Zahl $S(n)$, die
+%	\item Wenn zwei natürliche Zahlen $n$ und $m$ den gleichen Nachfolger haben, also $S(n) = S(m)$, dann sind bereits die beiden gleich, also $n = m$.
+%	\item Die Eins ist Nachfolger keiner natürlichen Zahl, also für jede natürliche Zahl $n$ gilt $S(n)\neq 1$.
+%	\item Alle natürlichen Zahlen werden durch mehrmaliges Nachfolger bilder aus der Eins konstruiert
+%\end{enumerate}
+\begin{proposition}
+	Beliebige zwei Darstellungen natürlicher Zahlen sind\\ equivalent\footnote{Equivalent bedeutet hier, dass es eine eindeutig umkehrbare Abbildung gibt, die mit den Nachfolgeroperationen der beiden Darstellungen verträglich ist.}.
+\end{proposition}
+\begin{proof}
+	Gegeben sind zwei Darstellungen natürlicher Zahlen $A$ und $B$. Wir assozieren nun die Eins von $A$ , kurz $1_A$, mit der Eins von $B$, kurz $1_B$. Falls ein Element $x$ von $A$ mit einem Element $y$ von $B$ assoziert wird dann wird auch der Nachfolger von $x$ bezüglich $A$ mit dem Nachfolger von $y$ bezüglich $B$ assoziert. 
+	Nach Eigenschaft vier aus der Definition der Darstellung natürlicher Zahlen werden unterschiedlichen Elementen von $A$ mit unterschiedliche Elemente von $B$ assoziiert.
+	Zusammen mit Eigenschaft drei folgt damit sofort, dass diese Assoziation $\phi$ eine umkehrbar eindeutige Abbildung ist, welche die Nachfolgerabbildung erhält. In Formeln können wir den Sachverhalt ausdrücken als:
+	$$\phi(S_A(x)) = S_B(\phi(x))$$ für beliebiges $x$ in $B$, wobei $\phi$ die oben definierte Assoziation ist und $S_A$ beziehungsweise $S_B$ die Nachfolgeroperationen von $A$ respektive $B$ sind.
+\end{proof}
+\section{Das dekadische Zahlensystem}
+In der Schule haben wir eine besonders effiziente Darstellung natürlicher Zahlen kennen gelernt, das dekadische Zahlensystem. Zeigen wir nun, dass diese tatsächlich natürliche Zahlen im oben beschriebenen Sinn sind.\\
+\\
+Wir starten mit zehn Symbolen $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$ und der Einfachheit halber starten wir nicht bei Eins, sondern bei Null. \footnote{Der Startpunkt ist irrelevant, solange es ein erstes Element gibt. Falls notwendig kann man einfach das erste Element nachträglich entfernen und man hat eine Struktur die bezüglich der ursprünglichen Struktur mit dem zweiten startet, aber die equivalent zur ursprünglichen Struktur ist.}
+ 
+\begin{definition}
+	Das dekadische Zahlensystem ist durch folgende Regeln definiert:
+	\begin{enumerate}
+		\item Die zehn Symbole haben eine feste Reihenfolge $0, 1, 2, 3, 4, 5, 6, 7, 8, 9$. Diese Reihenfolge definiert eine Operation $u$, die ein Symbol nimmt und das nächste Symbol in der Reihenfolge ausgibt. Wenn es das Symbol $9$ bekommt gibt es $0$ aus.\\ Daher $u(0)=1$, $u(1)=2$, $u(2)=3$, $u(3)=4$, $u(4)=5$, $u(5)=6$, $u(6)=7$, $u(7)=8$, $u(8)=9$, $u(9)=0$.
+		\item Eine dekadische Zahl ist eine endliche Abfolge dieser zehn Symbole. Hierbei schreiben/lesen wir von rechts nach links. Das erste Symbol oder wir sagen die erste Stelle ist das rechteste Symbol. \\Beispiele:
+		\begin{lstlisting}
+			28420
+			  455
+			  390
+			   89
+		\end{lstlisting}
+		\item Die Eins des dekadischen Zahlensystems ist:
+		\begin{lstlisting}
+			1
+		\end{lstlisting}
+		\item Wir definieren nun die Nachfolgeroperation des dekadischen Zahlensystems als ein Pseudo-GOTO-Programm. \\
+		%Sei $y=y_n, \dots, y_2, y_1$ eine dekadische Zahl. Bevor wir das Programm anstarten, befinden sich die Symbole der Stellen von $y$ der Reihe nach im Stack $Y = \{y_n, \dots, y_2, y_1\}$. Weiters gibt es einen Stack $R = \{\}$, der zu Beginn noch leer ist.
+\begin{lstlisting}
+	1: 'Starte bei der ersten Stelle.'
+	2: X = 'Symbol an der derzeitigen Stelle.'
+	3: X = u(X)
+	4: 'Setze den Wert der derzeitigen Stelle auf X.'
+	5: Z = X==0
+	6: if Z THEN
+	7: 	'Gehe zur naechsten Stelle, 
+		falls keine Stelle mehr übrig ist 
+		füge eine Stelle mit dem Wert 0 hinzu
+		und gehe zu dieser Stelle.'
+	8:	if Z GOTO 2
+	9: HALT
+\end{lstlisting}
+	\end{enumerate}
+\end{definition}
+\paragraph{Übungsbeispiel 11:} Spiele den Algorithmus für einige Beispiele von Zahlen durch um dich mit der Nachfolgeroperation vertraut zu machen.
+
+\begin{corollary}
+	Die Stellen des dekadischen Zahlensystems sind selbst ein Zahlensystem.
+\end{corollary}
+\paragraph{Übungsbeispiel 12:} Beweise Corollary 1.6.
+\section{Das binäre Zahlensystem}
+Nachdem wir uns jetzt das dekadische Zahlensystem angeschaut haben, kommen wir nun zum eigentlichen Thema, dem dualen Zahlensystem oder binären Zahlen. Im binären Zahlensystem gibt es im Gegensatz zu den zehn Symbolen des dekadischen Zahlensystem nur zwei Symbole nämlich ${0, 1}$. Wie bei den dekadischen Zahlen legen wir eine Reihenfolge der Symbole fest, nämlich $0, 1$ und definieren das duale Zahlensystem analog zum dekadischen.\\
+%Die Definition des binären Zahlensystems ist nun ganz einfach. Man nehme die Definition der dekadischen Zahlen und ersetze $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$ durch $\{0, 1\}$. 
+Zur Wiederholung: 
+\begin{definition}
+	Das dual/binäre Zahlensystem ist durch folgende Regeln definiert:
+	\begin{enumerate}
+		\item Die zwei Symbole haben eine feste Reihenfolge $0, 1$.
+		\item Eine binär Zahl ist eine endliche Abfolge dieser zwei Symbole. Hierbei schreiben/lesen wir von rechts nach links. Das erste Symbol oder wir sagen die erste Stelle ist das rechteste Symbol. \\Beispiele:
+		\begin{lstlisting}
+		101010
+		   101
+		   111
+		    10
+		\end{lstlisting}
+		\item Die Eins des dualen Zahlensystems ist:
+		\begin{lstlisting}
+		1
+		\end{lstlisting}
+		\item Wir definieren nun die Nachfolgeroperation des dualen Zahlensystems als eine Art GOTO-Programm:
+		\begin{lstlisting}
+1: 'Starte bei der ersten Stelle.'
+2: X = 'Symbol an der derzeitigen Stelle.'
+3: X = u(X)
+4: 'Setze den Wert der derzeitigen Stelle auf X.'
+5: Z = X==0
+6: if Z THEN
+7: 	'Gehe zur naechsten Stelle, 
+	falls keine Stelle mehr übrig ist 
+	füge eine Stelle mit dem Wert 0 hinzu
+	und gehe zu dieser Stelle.'
+8:	if Z GOTO 2
+9: HALT
+		\end{lstlisting}
+	\end{enumerate}
+\end{definition}
+Beispiel: Alle vier stelligen binären Zahlen
+\begin{center}
+	\begin{tabular}{c c c c}
+		0 & 0 & 0 & 0\\
+		0 & 0 & 0 & 1\\
+		0 & 0 & 1 & 0\\
+		0 & 0 & 1 & 1\\
+		0 & 1 & 0 & 0\\
+		0 & 1 & 0 & 1\\
+		0 & 1 & 1 & 0\\
+		0 & 1 & 1 & 1\\
+		1 & 0 & 0 & 0\\
+		1 & 0 & 0 & 1\\
+		1 & 0 & 1 & 0\\
+		1 & 0 & 1 & 1\\
+	\end{tabular} 
+
+	\begin{tabular}{c c c c}
+		1 & 1 & 0 & 0\\
+		1 & 1 & 0 & 1\\
+		1 & 1 & 1 & 0\\
+		1 & 1 & 1 & 1\\
+	\end{tabular}  
+\end{center}
+\paragraph{Übungsbeispiel 13:} Spiele den Algorithmus für einige Beispiele von Zahlen durch um dich mit der Nachfolgeroperation vertraut zu machen.
+\paragraph{Übungsbeispiel 14:} Berechne die binäre Darstellung der dekadischen Zahlen $23$, $12$ und $1000$. Finde eine schnelle Methode ohne alle Zahlen von $1$ bis zu der gewissen Zahl durchzugehen.\\
+\\
+Im Allgemeinen nennen wir Zahlensysteme wie das dekadische oder das duale Zahlensystem Stellenwertsysteme. Im Prinzip müssen wir nur ein paar wohlunterscheidbare Symbole aussuchen, eine Reihenfolge festlegen und wir können beliebige derartige Systeme festlegen. In der Informatik ist ein beliebtes Zahlensystem das Hexadezimalsystem. Hier haben wir die Symbole $0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F$.
+\paragraph{Übungsbeispiel 15:} Berechne die hexadezimale Darstellung der dekadischen Zahlen $15$, $17$ und $432$.\\
+\\
+In der Praxis hat sich das binäre Zahlensystem bewährt, da zum einen eine enge Beziehung zwischen logischen Ausdrücken und dem Zahlensystem und zum anderen unsere Rechenmaschinen elektronisch sind und es praktisch einfacher ist einen Schaltkreis zu bauen, der zwei Zustände kennt, nämlich viel Spannung oder Stromstärke und sehr wenig Spannung oder Stromstärke und es genauso einfacher ist diese zwei Zustände für einen oder mehrere weiteren Schaltkreis zu unterscheiden. Es gab zwar einige Versuche von Rechenmaschinen mit nicht binärem Zahlen- system, und sogar analoge Rechenmaschinen, die direkt mit reelen Zahlen arbeiten, aber nichts davon konnte die Robustheit der binären Darstellung und die daraus resultierenden Vorteile schlagen.
+%\\
+
+%In einem späteren Kapitel werden wir einige Elektronik Grundlagen vorstellen und 
+
+%einerseits müssen wir einen Weg finden natürliche Zahlen auf einer Rechenmaschine zuverlässig darzustellen und andererseit ein einheitliches Zahlenformat verwenden wollen. Dieses %eiheitliche Zahlenformat ist das Maschinenwort der Rechenmaschine und die Darstellung, die bei elektronischen Rechenmaschinen am sinnvollsten ist, ist die binäre Darstellung.
+\newpage
+\chapter{Aussagenlogik}
+Es ist nun an der Zeit, dass wir ein wenig Logik ins Spiel bringen. Logik ist die Lehre vom exakten Schließen; in einfacheren Worten beschäftigt sich die Logik damit wie man aus wahren Sätzen, wiederum wahre Sätze erzeugt. In diesem Kapitel werden wir uns mit Aussagenlogik oder Boolscher Logik befassen, doch bevor wir in die Tiefen der Logik starten, müssen wir zuerst ein paar Grundbegriffe definieren.\\
+\\
+Eine \textbf{Aussage} ist ein sprachliches Konstrukt, dass entweder wahr oder falsch ist. Es muss hierbei prinzipiell möglich sein zu überprüfen ob die Aussage zutrifft, also wahr ist oder nicht. Nehmen wir die Aussage:
+$$\text{Die vierte Nachkommastelle von }\pi\text{ ist $5$.}$$
+Um zu Überprüfen ob diese Aussage wahr ist, müssen wir die vierte Nachkomma- stelle der Kreiszahl $\pi$ berechnen und überprüfen ob der resultierende Wert gleich $5$ ist. Was prinzipiell geht und praktisch möglich oder sinnvoll ist, ist oft verschieden, doch ist eine Diskussion dieses Themas hier fehl am Platz.\\
+\\ 
+Man drückt den Sachverhalt, dass eine Aussage $\phi$ wahr ist beziehungsweise falsch ist durch den \textbf{Wahrheitswert} von $\phi$ (kurz $w(\phi)$) aus. Wir schreiben den Wahrheitswert $1$, falls die Aussage wahr ist oder $0$, falls die Aussage falsch ist. Präzise formulier heißt dies für den Wahrheitswert einer Aussage $\phi$ schreiben wir:
+$$w(\phi)=
+\begin{cases} 
+	1 & \text{falls $\phi$ wahr ist.} \\
+	0 & \text{falls $\phi$ falsch ist.} 
+\end{cases}
+$$
+\textbf{Logische Verknüpfung} sind Operationen die eine bestimmte Anzahl von Aussagen nehmen und daraus eine neue Aussage produzieren, deren Wahrheitswert allein von den Wahrheitswerten der Aussagen aus denen sie produziert wurde abhängt.\\
+\\
+Ein Beispiel für eine jedem bekannte logische Verknüpfung, die nur eine einzelne Aussage nimmt und daraus eine neue Aussage produziert, ist die \textbf{Negation} oder Verneinung (kurz $\neg$) einer Aussage. 
+$$\neg(\text{Der Himmel ist blau}) = \text{Der Himmel ist nicht blau.}$$
+Hierbei gilt, dass die Verneinung die Wahrheitswerte umdreht, daher aus wahr mach falsch und aus falsch mach wahr.
+\begin{equation}
+w(\neg\phi)= 1 - w(\phi)=
+\begin{cases} 
+1 & \text{falls }w(\phi)=0\\
+0 & \text{falls }w(\phi)=1
+\end{cases}
+\end{equation}
+Das logische \textbf{Und} ist eine logische Verknüpfung, die zwei Aussagen verbindet zu einer Aussage. Seien nun $\phi$ und $\psi$ Aussagen, dann schreiben wir $\phi\wedge\psi$ für die durch das logische Und erzeugte Verbindung der Aussagen.
+$$\phi = \text{Der Himmel ist blau.}$$
+$$\psi = \text{Fische leben im Wasser.}$$
+$$\phi\wedge\psi = \text{Der Himmel ist blau und Fische leben im Wasser.}$$
+Diese Verknüpfung verhält sich genauso wie im gewohnten Sprachgebrauch $\phi\wedge\psi$ wahr, falls $\phi$ und $\psi$ wahr sind und sonst falsch.
+\begin{equation}
+w(\phi\wedge\psi) = w(\phi) * w(\psi)=
+\begin{cases} 
+1 & \text{falls }w(\phi)=1\text{ und }w(\psi)=1\\
+0 & \text{sonst}
+\end{cases}
+\end{equation}
+Abschließend kommen wir zum logische \textbf{Oder}, das wie das logische Und zwei Aussagen verbindet zu einer Aussage. Seien wieder $\phi$ und $\psi$ Aussagen, dann schreiben wir $\phi\vee\psi$ für die durch das logische Oder erzeugte Verbindung der Aussagen.
+$$\phi = \text{Der Himmel ist grün.}$$
+$$\psi = \text{Fische leben im Wasser.}$$
+$$\phi\vee\psi = \text{Der Himmel ist grün oder Fische leben im Wasser.}$$
+Im Gegensatz zum Oder im gewöhnlichen Sprachgebrauch verhält sich das logische Oder jedoch anders. Das logische Oder ist wahr, sobald einer der beiden verbundenen Aussagen wahr ist.
+\begin{equation}
+w(\phi\vee\psi) = 
+\begin{cases} 
+1 & \text{falls }w(\phi)=1\text{ oder }w(\psi)=1\\
+0 & \text{sonst}
+\end{cases}
+\end{equation}
+Damit haben wir die wichtigsten logischen Verknüpfungen kennen gelernt und können damit bereits alles ausdrücken, was man in der Aussagenlogik ausdrücken kann. Wir werden später in diesem Kapitel noch weitere logische Verknüpfungen besprechen, die eine besondere Erwähnung verdienen.\\
+\\
+Als nächstes wollen wir konkretisieren was ein aussagelogisches System ist. Man startet mit elementaren Aussagen, so genannten \textbf{logischen Atomen}. Dies sind die Grundsymbole unseres Systems aus welchen wir zusammen mit den logischen Verknüpfungen alle möglichen Kombinationen bilden können. 
+Wir können nun jeder dieser Kombinationen einen Wahrheitswert geben, indem wir einfach für jedes logische Atom einen Wahrheitswert fixieren.
+Erst durch diese Zuordnung werden unsere Symbolketten von logischen Verknüpfungen und Atomen eigentlich Aussagen mit definierten Wahrheitswerten.
+Solange man aber nur die Symbolketten betrachtet und die logischen Atome noch nicht mit Wahrheitswerten belegt hat, nennt man diese Konstrukte aussagenlogische Formeln.
+\begin{definition}
+	Aussagenlogische Formeln sind durch folgendes Schema definiert:
+	\begin{enumerate}
+		\item Die logischen Atome $\{\phi_1, \phi_2, \dots\}$, daher die Elemente einer Liste von Grundsymbolen sind aussagenlogische Formeln.
+		\item Wenn $\phi$ und $\psi$ aussagenlogische Formeln sind, dann auch $\neg(\phi)$, $(\phi)\wedge(\psi)$ und $(\phi)\vee(\psi)$. Falls $\phi$ oder $\psi$ logische Atome sind, darf man an der Stelle wo dies zutrifft die Klammern hier weglassen.
+		\item Jede aussagenlogische Formel wird aus den logischen Atomen und mehrmalige Kombination dieser durch logische Verknüpfungen erzeugt.
+	\end{enumerate}
+	
+\end{definition}
+Jede aussagenlogische Formel wird zusammen mit einer Belegung der logischen Atome mit Wahrheitswerten, eine Aussage, durch folgendes Prinzip.
+\begin{definition}
+	Sei $\beta$ eine \textbf{Belegung} der logischen Atome $\{\phi_1, \phi_2, \dots\}$, daher eine Zuordnung von $0$ oder $1$ zu jedem logischen Atom, dann lassen sich durch $\beta$ Wahrheitswerte $w$ für beliebige aussagenlogische Formeln durch folgendes Schema berechnen:\\
+	\\
+	Sei $\phi$ eine aussagenlogische Formel, dann gilt
+	\begin{enumerate}
+		\item falls $\phi$ ein logisches Atom ist setzen wir den Wahrheitswert 
+		\begin{equation}
+			w(\phi) = \beta(\phi)
+		\end{equation}
+		\item falls $\phi$ kein logisches Atom ist, muss es nach Konstruktion entweder die Negation $\neg$ angewendet auf eine aussagenlogische Formel $p$ sein, oder eine Verknüpfung durch das logische Und $\wedge$ oder das Oder $\vee$ von zwei aussagenlogischen Formeln $p$ und $q$ sein.\\
+		Im ersten Fall der Negation setzen wir den Wahrheitswert: 
+		\begin{equation}
+			w(\phi) = 1 - w(p)
+		\end{equation}
+		Im zweiten Fall des logischen Unds, setzen wir den Wahrheitswert: 
+		\begin{equation}
+			w(\phi) = w(p) * w(q)
+		\end{equation}
+		Im dritten Fall des logischen Oders, setzen wir den Wahrheitswert: 
+		\begin{equation}
+			w(\phi) = 
+			\begin{cases} 
+			1 & \text{falls }w(p)=1\text{ oder }w(q)=1\\
+			0 & \text{sonst}
+			\end{cases}
+		\end{equation}
+		Falls $p$ beziehungsweise $p$ und $q$ logische Atome sind, wenden wir Punkt 1. an und sind fertig. Falls nicht, wenden wir wiederholt Punkt 2. an, bis wir ausschließlich logische Atome erreicht haben und wenden dann Punkt 1. an.
+	\end{enumerate}
+\end{definition}
+Wir zeigen nun anhand von einem Beispiel einer aussagenlogischen Formeln wie dies funktioniert.\\
+\\
+\textbf{Beispiel}: Wir haben drei logische Atome $\phi_1$, $\phi_2$ und $\phi_3$, mit Wahrheitswerten $w(\phi_1)=0$, $w(\phi_2)=1$ und $w(\phi_3)=1$.\\
+\\
+$\phi = (\neg(\phi_1))\wedge(((\phi_2)\vee\phi_3)\wedge(\neg(\phi_2)))$\\
+\\
+Berechne den Wahrheitswert $w(\phi)$:\\
+\\
+Wir sehen, dass $\phi$ eine Und Verknüpfung von $p=\neg(\phi_1)$ und\\ $q=(\phi_2\vee\phi_3)\wedge(\neg(\phi_2))$ ist. Daher berechnet sich der gesuchte Wert durch
+\begin{equation}
+	w(\phi) = w(p) * w(q)
+\end{equation}
+Berechnen wir nun den Wahrheitswert für $p$
+$$w(p) = w(\neg(\phi_1)) = 1 - w(\phi_1) = 1 - 0 = 1$$
+und um den Wahrheitswert von $q$ zu berechnen, bemerken wir, dass $q$ eine Und Verknüpfung von $s=\phi_2\vee\phi_3$ und $t=\neg(\phi_1)$ ist.
+\begin{equation}
+	w(q) = w(s) * w(t)
+\end{equation}
+Es ist ein leichtes die Wahrheitswertes für $s$ und $t$ zu berechnen:
+$$w(s) = w(\phi_2\vee\phi_3) = 
+\begin{cases} 
+1 & \text{falls }w(\phi_2)=1\text{ oder }w(\phi_3)=1\\
+0 & \text{sonst}
+\end{cases} = 1$$
+$$w(t)=w(\neg(\phi_2)) = 1 - w(\phi_2) = 1 - 1 = 0$$
+Als nächstes setzen wir $w(s)$ und $w(t)$ in (1.9) ein und erhalten:
+$$w(q) = w(s) * w(t) = 1 * 0 = 0$$
+Abschließend setzen wir noch $w(p)$ und $w(q)$ in (1.8) ein und erhalten:
+$$w(\phi) = w(p) * w(q) = 1 * 0 = 0$$
+\paragraph{Übungsbeispiel 16:} Berechne den Wahrheitswert der logischen Formeln $$(\neg(\phi_1))\vee((\neg(\phi_2))\wedge(\phi_3))$$ $$(\neg(\neg(\phi_3)))\vee\phi_1$$
+$$\phi_3\wedge(\phi_1\vee(\neg\phi_1))$$
+\subsection{Wahrheitstafeln}
+Wir kommen nun zu einer sehr nützlichen Werkzeug zur Behandlung von aussagenlogischen Formeln, den Wahrheitstafeln. Hier wird eine Tabelle mit allen möglichen Wahrheitswerten für die Atome der aussagenlogischen Formel gebildet und für jede dieser Kombinationen schreibt man in der letzten Spalte den Wahrheitswert den die Formel für diese Kombination ergeben würde.\\
+\\
+Wahrheitstafeln sind somit ein allgemeines Format zur Darstellung beliebiger aussagenlogischer Verknüpfunen und eignen sich hervorragend zum Finden von Lösungen aussagenlogischer Erfüllbarkeitsprobleme, die wir gleich an- schließend behandeln werden.
+Starten wir mit den Wahrheitstafeln der drei Grund- verknüpfungen Verneinung, Und und Oder.
+\begin{center}
+\begin{minipage}{1.0in}
+	\begin{tabular}{|c|c|}
+	$\phi$ & $\neg\phi$\\
+	\hline
+	0 & 1\\
+	1 & 0\\
+	\end{tabular}
+\end{minipage}
+\begin{minipage}{1.5in}
+	\begin{tabular}{|c c|c|}
+	$\phi$ & $\psi$ & $\phi \wedge \psi$\\
+	\hline
+	0 & 0 & 0\\
+	0 & 1 & 0\\
+	1 & 0 & 0\\
+	1 & 1 & 1\\
+	\end{tabular}  
+\end{minipage}
+\begin{minipage}{1.5in}
+	\begin{tabular}{|c c|c|}
+	$\phi$ & $\psi$ & $\phi \vee \psi$\\
+	\hline
+	0 & 0 & 0\\
+	0 & 1 & 1\\
+	1 & 0 & 1\\
+	1 & 1 & 1\\
+	\end{tabular}  
+\end{minipage}
+\end{center}
+Eine gute Methode um alle möglichen Kombinationen von Wahrheitswerten von $K$ logischen Atomen zu erzeugen und keine zu vergessen, ist es einfach die $K$ stelligen binären Zahlen von Null, also der binären Zahl, die aus $K$ Nullen besteht, bis zur größten binären Zahl mit $K$-Stellen, nämlich jener, die nur aus Einsern besteht, aufzuschreiben.\\
+\\
+Beispiel: Wir haben drei logische Atome $\phi_1$, $\phi_2$ und $\phi_3$. Die Wahrheitstafel für die aussagenlogische Formel $(\neg\phi_1)\vee((\neg\phi_3)\wedge\phi_2)$ ist:
+\begin{center}
+	\begin{tabular}{|c c c|c|}
+	$\phi_1$ & $\phi_2$ & $\phi_3$ & $(\neg\phi_1)\vee((\neg\phi_3)\wedge\phi_2)$\\
+	\hline
+	0 & 0 & 0 & 1\\
+	0 & 0 & 1 & 1\\
+	0 & 1 & 0 & 1\\
+	0 & 1 & 1 & 1\\
+	1 & 0 & 0 & 0\\
+	1 & 0 & 1 & 0\\
+	1 & 1 & 0 & 1\\
+	1 & 1 & 1 & 0\\
+\end{tabular}  
+\end{center}
+\paragraph{Übungsbeispiel 17:} Stelle die Wahrheitstafeln zu beiden aussagenlogischen Formeln in Übungsbeispiel 16 auf.\\
+\\
+Abschließend sollen in diesem Kapitel noch ein paar logische Verknüpfungen über ihre Wahrheitstabelle vorgestellt werden.\\
+\\
+Die logische \textbf{Implikation} ist eine Verknüpfung zweier Aussagen $\phi$ und $\psi$, die ausdrücken soll, dass wenn $\phi$ wahr ist, auch $\psi$ wahr sein muss. Wir schreiben hier $\phi \implies \psi$.\\
+\begin{center}
+\begin{tabular}{|c c|c|}
+	$\phi$ & $\psi$ & $\phi \implies \psi$\\
+	\hline
+	0 & 0 & 1\\
+	0 & 1 & 1\\
+	1 & 0 & 0\\
+	1 & 1 & 1\\
+\end{tabular}  
+\end{center}
+Falls $\phi$ falsch ist, kann $\psi$ falsch oder wahr sein und $\phi\implies\psi$ ist trotzdem wahr.
+\paragraph{Übungsbeispiel 18:} Zeige mit Hilfe von Wahrheitstafeln, dass \\$(\neg\psi)\implies(\neg\phi)$ dieselben Wahrheitswerte hat wie $\phi\implies\psi$.\\
+\\
+Die logische \textbf{Äquivalenz} zweier Aussagen  $\phi$ und $\psi$ drückt aus, dass die Wahrheitswerte der Aussagen gleich sind, kurz $\phi\equiv\psi$.
+\begin{center}
+	\begin{tabular}{|c c|c|}
+		$\phi$ & $\psi$ & $\phi \equiv \psi$\\
+		\hline
+		0 & 0 & 1\\
+		0 & 1 & 0\\
+		1 & 0 & 0\\
+		1 & 1 & 1\\
+	\end{tabular}  
+\end{center}
+\paragraph{Übungsbeispiel 19:} Die Verneinung der logischen Äquivalenz ist das ausschließende Oder, oder auch \textbf{XOR} genannt. Schreibe die Wahrheitstafel der XOR Verknüpfung auf.
+%TODO äquivalenz, xor und implikation ausdrücken durch und oder neg und zu formel syntax hinzufügen
+\newpage
+\subsection{Erfüllbarkeitsprobleme und Gleichungen}
+Aussagenlogische Formeln lassen sich wie die Terme und Gleichungen der Algebra, die wir aus der Schule kennen interpretieren. Logische Atome sind, wenn keine Wahrheitswerte definiert sind, nichts anderes als Variablen, daher Symbole mit unbestimmten Werten. Die Werte sind im Fall von aussagenogischen Formeln entweder Null oder Eins.\\
+\\
+Als Gleichheit verwendet man in der Logik die Äquivalenz; Diese verhält sich wie die Gleichheit in der Schulalgebra.
+\begin{definition}
+	Seien daher $\phi$, $\psi$ und $\gamma$ beliebige aussagenlogische Formeln dann gilt:
+	\begin{enumerate}
+		\item Eine Formel ist mit sich selbst äquivalent
+		\begin{equation}
+			\phi\equiv\phi
+		\end{equation}
+		\item Wenn für zwei Formeln gilt
+		\begin{equation}
+		\phi\equiv\psi \text{ dann gilt auch } \psi\equiv\phi
+		\end{equation}
+		\item Wenn für drei Formeln gilt
+		\begin{equation}
+		\phi\equiv\psi \text{ und } \psi\equiv\gamma\text{ dann gilt auch }\phi\equiv\gamma
+		\end{equation}
+	\end{enumerate}
+\end{definition}
+Eigentlich ist es notwendig Klammern um die beiden Formeln zu setzen, die links und rechts vom $\equiv$ Symbol sind, aber solange die Äquivalenz als Gleichheit betrachten und nicht als Verknüpfung, werden wir die Klammern weglassen.
+\\
+\\
+Eine erste Folgerung aus der Verwendung der Äquivalenz als Gleichheit zusammen mit dem Sachverhalt, dass zwei Formeln genau dann äqivalent sind, wenn sie dieselben Wahrheitswerte haben und der Wahrheitswert, den eine logische Verknüpfung ergibt nur von den Wahrheitswerten der verknüpften Aussagen abhängt.
+\begin{corollary}
+	Seien $\phi_1$, $\psi_1$, $\phi_2$ und $\psi_2$ aussagenlogische Formeln dann gilt.
+	\begin{enumerate}
+		\item Aus $\phi_1\equiv\phi_2$ folgt $\neg(\phi_1)\equiv\neg(\phi_2)$.
+		\item Aus $\phi_1\equiv\phi_2$ und $\psi_1\equiv\psi_2$ folgt $\phi_1\wedge\psi_1\equiv\phi_2\wedge\psi_2$.
+		\item Aus $\phi_1\equiv\phi_2$ und $\psi_1\equiv\psi_2$ folgt $\phi_1\vee\psi_1\equiv\phi_2\vee\psi_2$.
+	\end{enumerate}
+\end{corollary}
+Da die Äquivalenz selbst auch eine logische Verknüpfung darstellt, führt dies natürlich dazu, dass eine aussagenlogische Gleichung, zugleich als Gleichung aber auch als Formel interpretierbar ist.\\
+\\
+Wir nehmen daher Abstand vom Begriff Gleichungen und betrachten das so genannte Erfüllbarkeitsproblem Aussagenlogischer Formeln.\\
+In einfachen Worten ist das Erfüllbarkeitsproblem einer Formel $\psi$, die Suche nach Wahrheitswerten, also Null oder Eins, die wenn sie in $\psi$ für die logischen Atome eingesetzt werden Eins als Wahrheitswert ergeben.
+\begin{definition}
+	Sei $\psi$ eine aussagenlogische Formel und $\beta$ eine Belegung der logischen Atome in $\psi$, sodass der zu $\beta$ gehörende Wahrheitswert für $\psi$ Eins ist, dann nennen wir die Belegung $\beta$ eine Lösung des Erfüllbarketisproblems für $\psi$. Die Suche nach einer solchen Belegung, nennen wir folglich das Erfüllbarkeitsproblem von $\psi$.
+\end{definition}
+Genauso wie sich in der Schulalgebra Formeln umformen lassen in andere gültige Formeln, so lassen sich auch aussagenlogische Formeln umformen in äquivalente Formeln. Wir nennen die Algebra, die mit ausagenlogischen Formeln verbunden ist auch Boolsche Algebra nach dem Mathematiker George Bool, der nach unseren Aufzeichnungen, der erste war, der sich mit diesem Thema befasste.\\
+\\
+Aussagenlogische Formeln lasssen sich bezüglich der logischen Und und der logischen Oder Verknüpfung genauso umformen wie die Multiplikation und Addition in der Schulalgebra. Die Besonderheit der Boolschen Algebra ist, dass das diese beiden Verknüpfungen in Bezug auf die Rolle, die sie bei den Umformungen einnehmen, austauschbar sind.\\
+\\
+Es gilt in der Boolschen Algebra die \textbf{Assoziativität}, sowohl für das Und als auch für das Oder. Assoziativität bedeutet, dass solange wir nur Und oder nur Oder Verknüpfungen in einer Verkettung haben, ist die Reihenfolge der Verknüpfungen egal beziehungsweise lassen sich die Klammern beliebig setzen.\\
+\\
+Seien $\psi$, $\phi$ und $\gamma$ aussagenlogische Formeln, dann gilt.
+\begin{equation}
+	(\phi \vee \psi)\vee\gamma \equiv \phi \vee (\psi\vee\gamma)
+\end{equation}
+\begin{equation}
+	(\phi \wedge \psi)\wedge\gamma \equiv \phi \wedge (\psi\wedge\gamma)
+\end{equation}
+\paragraph{Übungsbeispiel 20:} Beweise die Formeln (1.10) und (1.11) indem du die Wahrheitstafel der Formel links der Äquivalenz und rechts der Äquivalenz aufschreibst und dich vergewisserst, dass sie gleich sind (Behandle dabei $\psi$, $\phi$ und $\gamma$ wie logische Atome).
+
+\paragraph{Übungsbeispiel 21:} Wir haben in (1.10) und (1.11) gesehen, dass die Reihenfolge der Klammerung für drei Formeln verknüpft durch das logische Und oder das logische Oder egal ist. Zeige, dass dies für beliebige Viele gilt.\\
+\\
+Eine direkte Konsequenz der Definition des Wahrheitswertes für Und und Oder Verknüpfungen ist die \textbf{Kommutativität} der beiden Verknüpfungen. Daher der Sachverhalt, dass es egal ist in welcher Reihenfolge zwei Formeln durch ein Und oder Oder verknüpft werden.\\
+\\
+Seien $\psi$ und $\phi$ aussagenlogische Formeln, dann gilt.
+\begin{equation}
+\phi \vee \psi \equiv  \psi\vee \phi
+\end{equation}
+\begin{equation}
+\phi \wedge \psi \equiv  \psi\wedge \phi
+\end{equation}
+\paragraph{Übungsbeispiel 22:} Beweise die Formeln (1.12) und (1.13) anhand der Definition des Wahrheitswertes (1.9), oder mit Wahrheitstafeln.\\
+\\
+Bislang haben wir Umformungen von Formeln betrachtet, die nur das logische Und oder nur das logische Oder betrachten. Wir kommen nun zu Umformungen von Kombinationen von Und und Oder. Analog zur Schulalgebra gilt in der Boolschen Algebra das Gesetz der \textbf{Distributivität}, also das "Herausheben von Ausdrücken". Zur Erinnerung in der Schulalgebra gilt $a*(b + c) = (a*b) + (a*c)$. Im Unterschied zur Schulalgebra sind aber in der Boolschen Algebra die beiden Verknüpfungen, also das logische Und und das logische Oder gleichberechtigt. \\
+\\
+Seien $\psi$, $\phi$ und $\gamma$ aussagenlogische Formeln, dann gilt.
+\begin{equation}
+\phi \vee (\psi\wedge\gamma) \equiv (\phi \vee \psi)\wedge(\phi \vee \gamma)
+\end{equation}
+\begin{equation}
+\phi \wedge (\psi\vee\gamma) \equiv (\phi \wedge \psi)\vee(\phi \wedge \gamma)
+\end{equation}
+\paragraph{Übungsbeispiel 23:} Überzeuge dich von (1.14) und (1.15), indem du die zugehörigen Wahrheitstafeln aufstellst.
+\paragraph{Übungsbeispiel 24:} Seien $a$, $b$, $c$ und $d$ logische Atome und sei 
+$$\phi = (a\vee b)\wedge(c\vee d)$$
+$$\psi = (b\wedge d)\vee(a\wedge c)\vee(b\wedge c)\vee(a\wedge d)$$
+\\
+\\
+Zeige, dass wenn du mit $\phi$ startest, durch schrittweise Umformung bei der Formel $\psi$ ankommen kannst.\\
+\\
+Bevor wir auf Umformungen eingehen, die zusätzlich zum logischen Und und Oder auch die Negation berücksichtigen, soll noch das Konzept der \textbf{Idempotenz} vorgestellt werden. Eine Formel durch Und oder Oder verknüpft mit sich selbst ist gleich sich selbst. Sei $\psi$ eine aussagenlogische Formel, dann gilt.
+\begin{equation}
+	\psi\wedge\psi\equiv\psi
+\end{equation}
+\begin{equation}
+\psi\vee\psi\equiv\psi
+\end{equation}
+Diese Eigenschaft ist eine große Hilfe, wenn man lange komplexe Formeln vor sich hat und auf eine einfachere Form bringen will. Wir werden im folgenden Kapitel mehr nützliche Vereinfachungen dieser Art kennen lernen.
+\subsection{Umformungen der Verneinung}
+Bisher haben wir ausschließlich Umformungen bezüglich der logischen Verknüpfungen Und und Oder kennen gelernt. Die wichtigsten Umformungen an der die Negation beteiligt ist und eine Verbindung mit dem logischen Und und Oder herstellt sind die DeMorganschen Gesetze.\\
+\\
+Die \textbf{DeMorganschen Gesetze} besagen vereinfacht gesagt, dass man die Negation aus einer Formel herausheben kann, wobei sich ein logisches Und in ein Oder umwandelt und ein logisches Oder in ein Und.\\
+\\
+Seien nun $\phi$ und $\psi$ aussagenlogische Formeln, dann gilt das erste DeMorgansche Gesetz.
+\begin{equation}
+	\neg(\phi\vee\psi)\equiv(\neg(\phi))\wedge(\neg(\psi))
+\end{equation}
+und das zweite DeMorgansche Gesetz.
+\begin{equation}
+\neg(\phi\wedge\psi)\equiv(\neg(\phi))\vee(\neg(\psi))
+\end{equation}
+
+\paragraph{Übungsbeispiel 25:} Vergewissere dich von der Gültigkeit von (1.21) und (1.22) indem du die Wahrheitstafeln der Formeln links und rechts des $\equiv$ aufstellst.\\
+\\
+Um dieses Kapitel abzuschließen seien noch zwei wichtige Methoden zur Vereinfachung von logischen Formeln erwähnt, nämlich die \textbf{Elimination der Doppelten Negation}, die besagt, dass wenn in einer Formel zwei Negationen hintereinander vorkommen, beide gestrichen werden können,
+\begin{equation}
+\neg(\neg(\phi))\equiv\phi
+\end{equation}
+und das Konzept der Tautologie. Eine Tautologie ist eine Formel, die unter beliebiger Belegung der logischen Atome den Wahrheitswert Eins ergibt. 
+Im Gegensatz dazu ist eine Kontradiktion eine Formel, die unter jeder Belegung Null als Wahrheitswert ergibt. Tautologien sind ein nützliches Konstrukt aus dem sich die gesamte Aussagenlogik konstruieren lässt wenn man so will.\\
+Als Methode zur Vereinfachung von aussagenlogischen Formeln, kann man sich folgende Sachverhalte zu Nutzen machen.
+\begin{lemma}
+	Sei $\phi$ eine aussagenlogische Formel und $\psi$ eine Tautologie dann gilt.
+	\begin{enumerate}
+		\item $\neg(\psi)$ is eine Kontradiktion.(Die Umkehrung gilt auch)
+		\item $\phi\wedge\psi\equiv\phi$
+		\item $\phi\vee\psi$ ist eine Tautologie.
+	\end{enumerate}
+\end{lemma}
+
+%und der \textbf{Satz vom ausgeschlossenen Dritten}, der besagt, dass jeder Ausdruck der vorm $(\phi)\vee(\neg(\phi))$ gestrichen werden kann.
+\paragraph{Übungsbeispiel 26:} Beweise den Satz der Elimination der Doppelten Negation (1.23) durch Aufstellen der Wahrheitstafeln.
+\paragraph{Übungsbeispiel 27:} Zeige durch Anwendung der DeMorganschen Gesetze auf Punkt 2 in Lemma 1.13, dass $\phi\wedge\psi$ eine Kontradiktion ist, wenn $\psi$ eine Kontradiktion ist.
+%Beweise die letzte Aussage.
+%Allgemein gilt, dass sich jede Tautolgie aus einer Formel streichen lässt.
+%\paragraph{Übungsbeispiel 28:} Finde weitere Tautologien.
+\subsection{Die disjunktive und konjunktive Normalform}
+
+
+\chapter{Die Linksverschiebungs und verneintes Und Maschine}
+Ein Digitalrechner hat zwei Buchstaben, nämlich die Null und die Eins, aber zusätzlich hat jeder eine meistens fixe Wortgröße, die in der Anzahl der Stellen , der Bits beziehungsweise Buchstaben, also der Nullen und der Einsen, welche die Maschine als ein Wort betrachtet, gemessen wird. Dieses Wort ist das eigentliche Elementare Objekt der Rechenmaschine, jede Operation wird nicht auf einem einzelnen Bit, also auf einer Stelle des Wortes, sondern immer auf dem gesamten Wort ausgeführt. Genauso holen wir wenn wir den Inhalt einer Speicheraddresse zum Rechenkern holen immer ein ganzes Wort, dass dort steht und nicht einen einzelnen Bit.
+Ein Wort kann dabei für einen Buchstaben stehen, für eine Zahl oder die Addresse eines anderen Wortes. 
+\section{Eine minimale Arithmetisch logische Einheit}
+Die Idee einer digitalen Rechenmaschine mit der kleinst möglichen Anzahl an arithmetischen und logischen Operationen, die in Kombination eine universelle Rechenmaschine ergeben, hat mich fasziniert, seit ich mir Gedanken über den Bau von Rechenmaschinen gemacht habe. Solche Minimal Konstruktionen sind in der Regel nur
+in der Theorie interessant, da sie natürlich mehr Rechenschritte benötigen als Maschinen mit mehreren Rechenoperationen. Diese zusätzlichen Rechenoperationen sind, zwar redundant was für bestimmte Menschen ein Schönheitsfehler sein kann, aber Schnelligkeit und praktikabilität sind in der echten Welt wichtiger.\\
+\\
+Meine arithmetisch logische Einheit hat die folgenden zwei Operationen:
+\paragraph{NAND: } Die verneinte-Und Operation, die wie wahrscheinlich wie jedem Leser bekannt, durch verschiedene Kombinationen mit sich selbst, jede erdenkliche boolsche Operation erzeugen kann. Somit lassen sich sämtliche logischen Funktionen mit dieser Operation ausdrücken. Zusätzlich setzt die NAND-Operation falls das NULL-Wort als Ergebnis erhalten wird ein Flag.
+\paragraph{LSHIFT:} Der links shift beziehungsweise die Linksverschiebung, bei der jede Stelle im Wort um einen bit nach links verschoben wird, hierbei wird die nullte Stelle auf Null gesetzt und die höchste Stelle geht in ein Flag über.\\
+\\
+Um zu zeigen, dass diese Operationen ausreichen, müssen wir lediglich einen Algorithmus finden, der die Additions Operation mit diesen beiden Grundoperationen ausdrücken kann.
+\\
+\\
+Bevor wir dies tun können müssen wir den Rest unserer Programmiersprache definieren. Meine Wahl fiel hierbei auf WHILE-Programme mit IF Verzweigungen. Insbesondere ließ ich mich einschränken durch die Tatsache, dass die Kontrolleinheit der Rechenmaschine selbst keine Additionsoperationen ausführen soll, da dies die Sinnhaftigkeit der Einschränkung auf die beiden Grundoperationen zu absurd scheinen lässt. Dies führte mich zur Kleenschen Normalform. Jedes WHILE-Programm, aber auch jedes GOTO- Programm lässt sich umschreiben sodass nur einer WHILE Schleife beziehungsweise GOTO Aufruf verwendet wird.\\
+Die Kontrolleinheit muss in diesem Fall immer nur den jeweils nächsten Befehl ausspucken, oder im Fall einer IF Verzweigung einige Befehle überspringen und am Ende des Programms zurückspulen zum Anfang. Es ist weder die Eingabe einer absoluten Addresse noch einer relativen Addresse notwendig. Die Kontrolleinheit muss also nicht Addressen aus den Befehlen extrahieren und dem Befehlzeiger setzten, noch einen Teil des Befehls auf den derzeitigen Befehlszeiger draufaddieren. Dies führt zusätzlich dazu, dass es die Absurdität des Vorhabens nicht zu offensichtlich macht, dazu, dass unsere Befehle nicht allzu lang sein müssen. In unserem Fall wird ein Befehl ein Byte sein, wobei der Befehlsraum hierbei nicht ausgelastet sein wird.\\
+\\
+Die Realisierung der Kontrolleinheit kann nun ein Lochstreifenlesegerät oder ein binär Counter zusammen mit einem 8 Bit Parallelspeicher (EEPROM oder FLASH) sein.
+\subsection{Die physische Realisierung}
+\section{Der Hauptspeicher und Registerkarte}
+\section{Die Sprache unserer Rechenmaschine}
+Unsere Rechenmaschine hat eine Wortlänge von vier Bit.\footnote{Im Fachjargon nennt man dies auch einen Nibble.} Die Architektur unserer Machine ist anglehnt an die Harvard Architektur, mit getrenntem Befehlsspeicher und Datenspeicher.\\
+Jeder Befehl ist einen Byte lang und hat die Form:
+$$(b_0, b_1, b_3, a_0, a_1, a_2, a_3, F)$$
+Die Befehle, die unsere Rechenmaschine kennt sind die Folgenden:
+\paragraph{HALT:} $(b_0, b_1, b_2) = (0, 0, 0)$ Der Zustand der Rechenmaschine ändert sich nicht und kein weiterer Befehl wird mehr ausgeführt.
+\paragraph{NAND + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 0, 1)$ Berechnet die NAND Operation des Wortes an der Addresse $(a_0, a_1, a_2, 0)$ mit dem Wort an der Stelle $(a_0, a_1, a_2, 1)$ und schreibt das Ergebnis in die Registerkarte. Falls das Ergebnis der Operation Null ist wird das Flag auf Eins gesetzt, sonst auf Null.
+\paragraph{LSHIFT + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 0)$ Wendet die LSHIFT auf das Wort an der Stelle $(a_0, a_1, a_2, 0)$ and und schreibt das Ergebnis in die Registerkarte. Hierbei wird das nullte Bit des Wortes auf Null gesetzt und der Wert des dritten Bits wird auf das Flag übertragen.
+\paragraph{POP + 4 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 1)$ Schreibt das Wort an der Addresse $(a_0, a_1, a_2, a_3)$ in die Registerkarte.
+\paragraph{PUSH + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 0)$ Schreibt das Wort in der Registerkarte an die Addresse $(a_0, a_1, a_2, a_3)$.
+\paragraph{LOAD + 4 bit Wort:} $(b_0, b_1, b_2) = (1, 0, 1)$ Schreibt das Wort $(a_0, a_1, a_2, a_3)$ in die Registerkarte.
+\paragraph{IF:} $(b_0, b_1, b_2) = (1, 1, 0)$ Wenn das Flag auf Eins steht wird der nächste Befehl in der Reihe als nächstes ausgeführt, ansonsten wenn das Flag auf Null steht wird der nächste Befehl ausgeführt dessen letztes Bit, der $F$ Bit, Eins ist.
+\paragraph{RESET IF:} $(b_0, b_1, b_2) = (1, 1, 1)$ Wenn das Flag Eins ist wird der Zähler auf Null gesetzt, sonst passiert nichts und der nächste Befehl in der Reihe wird ausgeführt.
+\\
+\\
+Nun sind wir in der Lage die Additionsoperation in der Maschinensprache unserer Rechenmaschine auszudrücken.
+
+\section{Die Kontrolleinheit}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+\chapter*{Einführung}
+In diesem Buch sei die Mathematik zusammengefasst, die ich persönlich als wichtig ansehe. Das Ziel, dass ich mir dabei in den Kopf gesetzt habe ist es die elementaren Ideen der Mathematik wie Zahl, Punkt und Gerade, von deren Realisierungen aus intuitiv einzuführen um daraus die Ideen zu konstruieren, und zwar so, dass nichts vorausgesetzt werden muss.
+Zu Beginn bewegen wir uns hierfür rein im Endlichen und Realisierbaren\footnote{meist im tatsächlich realisierten.} \\Stückweise nähern wir uns dann den Konzepten der modernen Mathematik wie Analysis und Computerwissenschaften an. Das unendliche kommt zum ersten Mal ins Spiel bei der Konstruktion des Punktes, in Form von einem Algorithmus. \\
+Was uns direkt in die Theorie des Computers und der Berechenbarkeit führen wird.
+Doch zuvor werden noch die Elemente der Geometrie so wie Algebra, wie wir sie in der Schule gelernt haben von einer konstruktiven Perspektive der höheren Mathematik aus betrachtet
+
+\chapter{Elementare Konstruktionen}
+
+Wir starten mit einer leeren Leinwand, einem Schreibgerät und einer  nicht dehnbaren Schnur. Berühren wir die Leinwand mit dem Schreibgerät, wird Farbe auf die Leinwand aufgetragen. Bewegen wir das Schreibgerät entlang der Leinwand unter ständiger Berührung der Leinwand mit dem Schreibgerät, so ziehen wir eine Linie.\\ 
+Der einfachsten Fall des Ziehens einer Linie, bestehend aus dem Ansetzen des Schreibgerätes an die Leinwand und dem sofortigen Absetzens, ohne Bewegung entlang der Leinwand, ist das Setzen eines Punktes. Ein Punkt ist hier ein möglichst kleiner Farbfleck auf der Leinwand, der durch Setzen eines Punktes entsteht.\\
+Man setze nun einen Punkt und anschließend einen Weiteren. Um die Punkte zu unterscheiden, wenn wir über sie reden wollen, werden wir oft den Punkten Namen geben. In unserem Fall nennen wir den ersten Punkt \textbf{A} und den zweiten Punkt \textbf{B}. Zwei Punkte, aber genauso auch zwei gezogene Linien, können überlappen, falls der eine Farbfleck direkt in den anderen Farbfleck übergeht, oder sie sind voneinander getrennt, falls egal wie man es betrachtet ein Stück leere Leinwand zwischen den Farbflecken liegt.
+Die beiden Aussagen schließen sich gegenseitig in einem gegebenen Fall aus, aber wir können unter Umständen in einem bestimmten Fall nicht sagen welcher von beiden zutrifft solange wir keine Lupe mit der entsprechenden Vergrößerung haben um einen Bereich leerer Leinwand zwischen zwei Punkten oder Linien zu erkennen.
+
+\paragraph{Die gerade Linie}
+
+Bislang haben wir ausschließlich die Leinwand und das Schreibgerät verwendet. Im nächsten Schritt verwenden wir die zu Beginn des Kapitels beschriebene Schnur. Setze nun einen Punkt, dem wir wieder den Namen \textbf{A} geben und einen weiteren, von Punkt \textbf{A} getrennten, Punkt namens \textbf{B}. Die beiden Punkte sollten für die nächste Aufgabe möglichst weit voneinander getrennt gesetzt werden.\\
+Es wird angenommen, dass diese Schnur dünner, ist als jeder der beiden Punkte breit ist.
+Gegeben sind nun Punkt \textbf{A} und Punkt \textbf{B}; unser Ziel ist es nun, eine gerade Linie von Punkt \textbf{A} nach Punkt \textbf{B} zu zeichnen. Hierzu befestigen\footnote{Befestigung kann zum Beispiel mit einer Stecknadel erfolgen.} wir die Schnur an beiden Punkten, sodass die Schnur dabei gespannt, an der Leinwand anliegend, zwischen den Punkten bleibt. In anderen Worten wir befestigen die Schnur so an Punkt \textbf{A} und Punkt \textbf{B}, sodass möglichst wenig Schnur zwischen den beiden Befestigungen liegt und die Schnur dabei direkt an der Leinwand anliegt.
+Anschließend ziehen wir eine Linie von Punkt \textbf{A} zu Punkt \textbf{B}, bei ständiger Berührung der Schnur, sodass die resultierende Linie mit beiden Punkten überlappt.\\
+Es ist leicht zu sehen, dass die zwei Punkte verbindente gerade Linie nicht eindeutig ist. Dies ist ein Resultat der Tatsache, dass es immer mehrere Möglichkeiten gibt die Schnur an einem Punkt zu befestigen, da ein Punkt endliche Ausdehnung hat.
+\\
+Als nächstes lösen wir die Befestigung der Schnur an Punkt \textbf{B} und nehmen nochmal so viel Schnur wie zwischen den beiden Punkten vorher gespannt war und spannen, an der Leinwand anliegend, sodass die Schnur unseren Punkt \textbf{B} und die gerade Linie zwischen Punkt \textbf{A} und Punkt \textbf{B} beührt. Wir zeichnen nun einen weiteren Punkt \textbf{C}, der den so gespannten Abschnitt der Schnur berührt. 
+
+\paragraph{Der Kreis}
+\paragraph{Winkel}
+\paragraph{Das Dreieck}
+\paragraph{Die Parallele}
+\paragraph{Das Messen}
+\paragraph{Das Lot}
+
+
+
+Die Welt der Symbole und 
+egal ob von punkt a nach b oder umgekehrt selbes ergebnis
+
+Bislang haben wir Begriffe wie überlappend und getrennt verwendet um Linien und somit auch Punkte in Beziehung zueinander zu setzen. Wir erweitern nun unser Repertoire an Beziehungen zwischen Punkten um deren Abstand. Jedem Paar von Punkten wird ein Abstand zugeordnet, indem man den Abstand zwischen den beiden Punkten als den Abschnitt der Schnur die zwischen den beiden Punkten liegt, wenn man eine gerade Linie zwischen den beiden Punkten zeichnet, definieren.\\
+
+
+Zwei gerade Linien sind parallel, wenn 
+Durch nebeneinander gespannt auflegen dieser Schnurabschnitte können wir leicht testen welche der beiden kleiner und welche größer ist und wenn wir weder das eine noch das Andere feststellen können, müssen wir sagen, dass sie ungefähr gleich seien. Somit können wir nun Aussagen über Paare von Paaren von Punkten tätigen, wir können sagen, dass Punkt \textbf{A} von Punkt \textbf{B} weiter entfernt ist als zum Beispiel ein Punkt \textbf{C} von einem anderen Punkt \textbf{D}.
+Genauso wie die gerade Linie zwischen zwei Punkten nicht eindeutig ist, ist auch der Abstand nicht eindeutig. 
