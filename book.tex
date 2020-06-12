@@ -111,7 +111,24 @@ Eine Rechenmaschine ist ein Apparat, der Listen von Befehlen abarbeitet und dabe
 \paragraph{Bedingte Verzweigung:} Ein Weg wie der Ausgang einer Operation die Reihenfolge der abzuarbeitenden Befehle abändern kann. Diese Konstrukte haben für gewöhnlich die Form: "Wiederhole bestimmte Teilliste von Befehlen, bis eine Bedingung erreicht ist"
 \\
 \\
-Der zuletzt beschriebene Bestandteil einer Rechenmaschine, die \textbf{Bedingte Verzweigung} wird oft durch einen internen Zustand der Rechenmaschine realisiert, der für gewöhnlich über so genannte Flaggen implementiert wird. Dies sind Register mit nur einem Bit, die eine Aussage über den Ausgang der letzten Operation macht, welche die Rechenmaschine abgearbeitet hat. Diese Register sind die Ausnahme, sie sind nicht direkt in ihrem Wert setzbar, sondern nur indirekt und zusätzlich halten sie kein Wort, sondern genau einen Bit, also null falls die Aussage über die letzte Operation nicht zutrifft und eins falls doch.
+Der zuletzt beschriebene Bestandteil einer Rechenmaschine, die \textbf{Bedingte Verzweigung} wird oft durch einen internen Zustand der Rechenmaschine realisiert, der für gewöhnlich über so genannte Flaggen implementiert wird. Dies sind Register mit nur einem Bit, die eine Aussage über den Ausgang der letzten Operation macht, welche die Rechenmaschine abgearbeitet hat. Diese Register sind die Ausnahme, sie sind nicht direkt in ihrem Wert setzbar, sondern nur indirekt und zusätzlich halten sie kein Wort, sondern genau einen Bit, also null falls die Aussage über die letzte Operation nicht zutrifft und Eins falls doch.\\
+\\
+In den nächsten Kapiteln werden wir uns näher mit den Befehlen, die eine Rechenmaschine abarbeitet auseindandersetze. Zuerst soll hier aber noch der Unterschied und die Beziehung einer Rechenmaschine zum Konzept der Programmiersprache gezogen werden. Programmiersprachen sind Regelwerke nach denen  Text geschrieben werden, der durch eine Rechenmaschine interpretiert und als Kette von Befehlen abgearbeitet werden kann.
+Typischerweise hat jede Rechenmaschine eine eigene interne Programmiersprache, welche die Maschinenbauteile interpretieren können und somit die Berechnung ausführen die wir uns wünschen.\\
+\\
+Jede Programmiersprache besteht aus elementaren Bausteinen, Gundsymbolen oder Wörtern, die Variablen, Befehle, Operationen, Zuweisungen oder\\ Verzweigungsanweisungen repräsentieren und aus Regeln, die festlegen welche Ketten dieser Grundsymbole Ausdrücke der Programmiersprache sind, also valide oder syntaktisch korrekte Programme. Ein Programm ist nichts anderes als ein Ausdruck, der die sprachlichen Regeln einer Programmiersprache erfüllt.\\
+\\
+Synonym zum Begriff des Programms ist der Begriff des Algorithmus. \\
+Programmieren ist das entwerfen von Programmen. Jeder der noch nichts damit zu tun hatte, kann sich das komplett analog zu einem Koch vorschreiben, der ein Rezept für einen unfähigen Lehrling schreibt. Das Rezept ist eine Abfolge an Operationen, die der Lehrling an der Küche ausführen muss, um ein Gericht herzustellen. Der Lehrling ist unfähig und deshalb muss man es ihm wie einem Idioten aufschreiben, also präzise formuliert, nach gewissen Regeln, damit die Anweisung immer eindeutig ist und keine Interpretationsfreiheit zulässt. 
+
+
+
+
+
+
+
+
+
 \newpage
 \subsection{GOTO-Programme}
 Eine der einfachsten und am leichtesten verständlichen Arten von Programmier- sprachen ist die Klasse der GOTO-Programmiersprachen. In der Praxis sind GOTO-Programmiersprachen zwar nur von geringer Bedeutung, da sich Programme, die in solchen Sprachen geschrieben wurden, wegen ihrer schwierigen Lesbarkeit, nur schwer warten lassen, jedoch sind die internen Maschinensprachen von allen Rechenmaschinen, die in der Praxis eingesetzt werden, GOTO-Programmiersprachen und (theoretisch interessant).\\
