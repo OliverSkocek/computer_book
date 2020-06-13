@@ -97,7 +97,7 @@ Oliver \textsc{Sko\v{c}ek} \\[4cm]
 \vfill
 
 
-\chapter{Einführung}
+\chapter*{Einführung}
 Im Sommer 2019 setzte ich mir in den Kopf ein Projekt zu starten, über das ich schon sehr lange nachgedacht hatte. Der ursprüngliche Plan, der vielleicht noch umgesetzt wird, aber zur Zeit auf Eis liegt, war es eine Rechenmaschine wie in den 1930ern zu bauen, basierend auf elektromechanischen Bauteilen wie Relais und einem Lochstreifenlesegerät. Von der Idee diese Relais selbst zu bauen und zwar aus Parkett Holzleisten, Zimmermannsnägeln, Aluminiumfolie und lackiertem Kupferdraht gab ich etwa zur selben Zeit auf wie die Idee Relais zu verwenden. Dies geschah zum einen, weil ich frustriert war mit der Unzverlässigkeit der Schaltung und mit der hohen Stromstärke von etwa 0.7A, die für eine Schaltung in meinem Design notwendig war, und zum Anderen geschah es weil ich angefangen hatte mich mit Breadboards und integrierten Schaltkreisen zu beschäftigen. 
 
 
@@ -119,22 +119,12 @@ Typischerweise hat jede Rechenmaschine eine eigene interne Programmiersprache, w
 Jede Programmiersprache besteht aus elementaren Bausteinen, Gundsymbolen oder Wörtern, die Variablen, Befehle, Operationen, Zuweisungen oder\\ Verzweigungsanweisungen repräsentieren und aus Regeln, die festlegen welche Ketten dieser Grundsymbole Ausdrücke der Programmiersprache sind, also valide oder syntaktisch korrekte Programme. Ein Programm ist nichts anderes als ein Ausdruck, der die sprachlichen Regeln einer Programmiersprache erfüllt.\\
 \\
 Synonym zum Begriff des Programms ist der Begriff des Algorithmus. \\
-Programmieren ist das entwerfen von Programmen. Jeder der noch nichts damit zu tun hatte, kann sich das komplett analog zu einem Koch vorschreiben, der ein Rezept für einen unfähigen Lehrling schreibt. Das Rezept ist eine Abfolge an Operationen, die der Lehrling an der Küche ausführen muss, um ein Gericht herzustellen. Der Lehrling ist unfähig und deshalb muss man es ihm wie einem Idioten aufschreiben, also präzise formuliert, nach gewissen Regeln, damit die Anweisung immer eindeutig ist und keine Interpretationsfreiheit zulässt. 
-
-
-
-
-
-
-
-
-
+Programmieren ist das entwerfen von Programmen. Jeder der noch nichts damit zu tun hatte, kann sich das komplett analog zu einem Koch vorstellen, der ein Rezept für einen unfähigen Lehrling schreibt. Das Rezept ist eine Abfolge an Operationen, die der Lehrling an der Küche ausführen muss, um ein Gericht herzustellen. Der Lehrling ist unfähig und deshalb muss man es ihm ganz genau aufschreiben, also präzise formuliert, nach gewissen Regeln, damit die Anweisung immer eindeutig ist und keine Interpretationsfreiheit zulässt. Genauso verhält es sich mit der Programmierung einer Rechenmaschine.
 \newpage
 \subsection{GOTO-Programme}
 Eine der einfachsten und am leichtesten verständlichen Arten von Programmier- sprachen ist die Klasse der GOTO-Programmiersprachen. In der Praxis sind GOTO-Programmiersprachen zwar nur von geringer Bedeutung, da sich Programme, die in solchen Sprachen geschrieben wurden, wegen ihrer schwierigen Lesbarkeit, nur schwer warten lassen, jedoch sind die internen Maschinensprachen von allen Rechenmaschinen, die in der Praxis eingesetzt werden, GOTO-Programmiersprachen und (theoretisch interessant).\\
 \\
 Es folgt eine Beschreibung einer sehr einfachen Form einer GOTO-Programmier- sprache, die bereits alle Zutaten für eine universelle Programmiersprache enthält, und die wir fortan als Ausgangspunkt für unsere Diskussion des Berechenbaren ansehen.
-
 \paragraph{Variablen:} Variablen sind synonym zu verstehen mit Registern, es sind also Dinge die ein Wort speichern können, das gelesen werden kann, und durch ein anderes Wort ersetzt werden kann. Ein Wort wird in der folgenden Diskussion, um möglichst einfach zu bleiben, eine natürliche Zahl sein. \\
 \begin{definition}
 	Ein GOTO-Programm ist durch folgendes Schema definiert:
@@ -190,11 +180,9 @@ Alternativ zur Addition und Subtraktion kann man auch die einstellige Operation 
 	3: IF Y GOTO 1
 \end{lstlisting}	
 \paragraph{Übungsbeispiel 2:} Zeige wie sich die Subtraktion durch $S$ und $T$ in einem GOTO-Programm ausdrücken lässt.
-
 \paragraph{Nachfolger und Gleichheit} Die Vorgängeroperation lässt sich auch durch eine Gleichheitsrelation austauschen. Relationen sind Operationen, die als Resultat entweder Null für falsch oder Eins für wahr ausgeben. In unserem Fall nimmt die Operation zwei natürliche Zahlen $X$ und $Y$ und schreibt eine Eins, falls die Werte gleich sind, und sonst eine Null, in die Variable $Z$. \\Als Operation schreiben wir dies als: $Z = (X == Y)$.
 \paragraph{Übungsbeispiel 3:} Zeige wie sich die Vorgängeroperation durch die\\ Nachfolgeroperation und die Gleichheitsrelation in einem GOTO-Programm ausdrücken lässt.
 \paragraph{Übungsbeispiel 4:} Zeige wie sich die Gleichheitsrelation in in der ursprünglichen Definition eine GOTO-Programms ausdrücken lässt.
-
 \subsection{WHILE-Programme}
 Eine, wegen ihrer leichteren Lesbarkeit, beliebtere Klasse von Programmiersprachen sind die WHILE-Programmiersprachen. Die meisten modernen Programmiersprachen sind unter anderem auch WHILE-Programmiersprachen.\\
 \\
@@ -220,9 +208,7 @@ Es folgt nun wie bei den GOTO-Programmen eine Beschreibung einer einfachen Form 
 	\end{enumerate}
 \end{definition}
 An diesem einfachen Beispiel lässt sich wenn wir es mit dem zugehörigen GOTO-Programm vergleichen bereits erkennen, dass und inwiefern WHILE-Berechenbarkeit und GOTO-Berechenbarkeit equivalent sind, also sich zu jedem GOTO-Programm ein WHILE-Programm finden lässt und umgekehrt, dass daselbe berechnet. Was uns sogleich zum nächsten Abschnitt führt.
-
 \paragraph{Übungsbeispiel 5:} Mach Übungsbeispiel 1, 2 und 3 mit WHILE-Programmen, anstelle von GOTO-Programmen.
-
 \subsection{Church-Turing Hypothese}
 Die Church-Turing Hypothese (CT-Hypothese) ist eine nicht beweisbare Aussage über, dass was im Prinzip berechenbar ist. Inspiriert ist sie durch die Erkenntnis, dass alle Defintionen des Berechenbaren, also im Prinzip \\Programmiersprachen, zumindest die Berechnungen ausführen kann, die GOTO-Programme berechnen können. CT-Hypothese besagt also, dass jede Berechnung die im Prinzip möglich ist von einer Maschine ausgeführt werden kann, die GOTO-Programme verarbeiten kann. Hiermit ist auch klar weshalb die Aussage eher philosophisch und nicht beweisbar ist, da "das Berechenbare" nicht leicht fassbar/definierbar ist und wir heute nicht wissen können was morgen noch für Maschinen sein werden und welchen Gesetzen sie gehorchen werden. Es sei weiters noch angemerkt, dass wir aus ersichtlichem Grund die GOTO-Programmiersprache, sowie jede Programmier-sprache, die jede Berechnung ausführen kann, die von einem GOTO-Programm ausgeführt werden kann, eine universelle Programmiersprache genannt werden soll. Eine solche universelle Programmiersprache ist sozusagen maximal in ihrer Fähigkeit Berechnungen auszuführen. Zur Motivation der Hypothese werden wir als nächstes beweisen, dass zu jedem GOTO-Programm ein WHILE-Programm existiert, dass daselbe berechnet und umgekehrt
 \paragraph{IF THEN END} Doch bevor wir dies zeigen soll eine bedingte Verzweigung eingeführt werden, die zwar nicht zwingend notwendig ist, daher wir können sie mit WHILE-Programmen sowie GOTO-Programmen bereits ausdrücken, aber sie werden, die in unseren Beweisen vorkommenden Programme kompakter und leichter lesbar machen, wenn wir sie verwenden.
@@ -335,8 +321,8 @@ Eine Rechenmaschine wird nie beliebig große natürliche Zahlen darstellen könn
 %Wir haben also wie zu erwarten war, da wir ja keine natürlichen Zahlen mehr haben sondern nur Symbole, die Subtraktion und die Addition gestrichen. Weiters haben wir die Sprunganweisung etwas modifizieren müssen und Stappel/Stack Anweisungen hinzugefügt. Es wird sich in diesem Kapitel zeigen, dass wir von den möglichen Berechnungen, die wir ausführen können nichts verloren haben, jedoch ist diese Stack-GOTO-Programmiersprache in der Praxis relativ unpraktisch, da es sich im Prinzip um eine 1-bit Rechenmaschine handelt.
 \\
 \\
-Fangen wir bei Null an. Was sind die natürlichen Zahlen? Natürliche Zahlen werden verwendet zum Zählen. Schauen wir uns den Prozess des Zählens an. 
-
+Bisher sind wir nicht näher auf das Konzept der natürlichen Zahl eingegangen, sondern haben eine gewisses Verständnis desser vorausgesetzt. Hier wollen wir damit brechen und unsere Vorstellungen etwas konkretisieren.
+Fangen wir bei Null an, oder eigentlich bei Eins. Was sind die natürlichen Zahlen? Natürliche Zahlen werden verwendet zum Zählen. Schauen wir uns den Prozess des Zählens an. 
 \section{Der Zählvorgang} Wir haben zwei Haufen wohlunterscheidbarer Objekte. Einen Haufen Birnen und einen Haufen Äpfel. Wenn wir wissen wollen ob genauso viele Birnen auf dem Birnenhaufen wie Äpfel auf dem Äpfelhaufen sind, können wir folgendermaßen vorgehen. Wir entfernen eine Birne vom Birnenhaufen und einen Apfel vom Apfelhaufen und tun dies so lange bis einer der Haufen verschwunden ist. Wenn beide gleichzeitig verschwinden, dann sind es gleich viele Birnen wie Äpfel, ansonsten gibt es mehr Birnen respektive Äpfel wenn der Äpfelhaufen beziehungsweise der Birnenhaufen zuerst \\verschwunden ist. Durch diesen Prozess ist man in der Lage Anzahlen von allen möglichen Gegenständen durch Haufen von Äpfeln darzustellen. Haufen von Äpfeln sind eine mögliche Darstellung von natürlichen Zahlen. Ein beliebiger Apfelhaufen kann gebildet werden indem man mit einem Apfel startet und schrittweise weitere Äpfel hinzufügt. Wir wünschen uns jetzt aber eine weniger verderbliche und kompaktere Darstellung von natürlichen Zahlen. Hierzu abstrahieren wir unsere Äpfelhaufen. 
 \begin{definition} Jede Konstruktion mit den hier beschriebenen vier Eigenschaften nennen wir eine Darstellung der natürlichen Zahlen.
 	\begin{enumerate}
