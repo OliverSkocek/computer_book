@@ -806,7 +806,7 @@ Als Methode zur Vereinfachung von aussagenlogischen Formeln, kann man sich folge
 %Beweise die letzte Aussage.
 %Allgemein gilt, dass sich jede Tautolgie aus einer Formel streichen lässt.
 %\paragraph{Übungsbeispiel 28:} Finde weitere Tautologien.
-\subsection{Die disjunktive und konjunktive Normalform}
+\subsection{Die disjunktive Normalform}
 Wir kommen nun zum letzten Abschnitt dieses Kapitels über Aussagenlogik. Bislang haben wir gelernt, was aussagenlogische Formeln sind, wie wir sie umformen und wie wir sie mit Wahrheitstafeln darstellen können. In diesem Abschnitt lernen wir, wie man zu beliebigen Wahrheitstafeln, eine aussagenlogische Formel konstruieren kann, welche die Wahrheitstafel erfüllt.\\
 \\
 Eine Wahrheitstafel der Länge $n$ ist, wie wir im Abschnitt Wahrheitstafeln gesehen haben, eine tabellarische Darstellung einer eindeutigen Zuordnung von Null oder Eins zu beliebigen Folgen von Null und Eins fester Länge $n$. In anderen Worten eine Tabelle in der links alle möglichen Kombinationen von Null und Eins der Länge $n$ einmal stehen und rechts der eindeutige zugeordnete Wert, Null oder Eins.\\
@@ -831,11 +831,74 @@ Welcher aussagenlogischen Formel von drei logischen Atomen, nennen wir sie $\phi
 Starten wir damit die Frage zu beantworten, indem wir für jeden Einser auf der rechten Seite eine aussagenlogische Formel konstruieren, die genau dann wahr ist, wenn die korrespondierende Kombination aus Nullen und Einsen links erfüllt ist.
 Wir haben vier Einser links und wir nennen die unbekannten Formeln, die noch zu konstruieren sind $\psi_1$, $\psi_2$, $\psi_3$ und $\psi_4$.\\
 \\
+Es sollen also folgende Wahrheitstafeln für $\psi_1$ bis $\psi_4$ gelten.
+\begin{center}
+	\begin{minipage}{1.2in}
+		\begin{tabular}{|c c c|c|}
+			$\phi_1$ & $\phi_2$ & $\phi_3$ &$\psi_1$\\
+			\hline
+			0 & 0 & 0 & 1\\
+			0 & 0 & 1 & 0\\
+			0 & 1 & 0 & 0\\
+			0 & 1 & 1 & 0\\
+			1 & 0 & 0 & 0\\
+			1 & 0 & 1 & 0\\
+			1 & 1 & 0 & 0\\
+			1 & 1 & 1 & 0\\
+			\hline
+		\end{tabular}  
+	\end{minipage}
+	\begin{minipage}{1.2in}
+		\begin{tabular}{|c c c|c|}
+			$\phi_1$ & $\phi_2$ & $\phi_3$ &$\psi_2$\\
+			\hline
+			0 & 0 & 0 & 0\\
+			0 & 0 & 1 & 1\\
+			0 & 1 & 0 & 0\\
+			0 & 1 & 1 & 0\\
+			1 & 0 & 0 & 0\\
+			1 & 0 & 1 & 0\\
+			1 & 1 & 0 & 0\\
+			1 & 1 & 1 & 0\\
+			\hline
+	\end{tabular}
+	\end{minipage}  
+	\begin{minipage}{1.2in}
+		\begin{tabular}{|c c c|c|}
+			$\phi_1$ & $\phi_2$ & $\phi_3$ &$\psi_3$\\
+			\hline
+			0 & 0 & 0 & 0\\
+			0 & 0 & 1 & 0\\
+			0 & 1 & 0 & 0\\
+			0 & 1 & 1 & 1\\
+			1 & 0 & 0 & 0\\
+			1 & 0 & 1 & 0\\
+			1 & 1 & 0 & 0\\
+			1 & 1 & 1 & 0\\
+			\hline
+		\end{tabular}  
+	\end{minipage}
+	\begin{minipage}{1.2in}
+		\begin{tabular}{|c c c|c|}
+			$\phi_1$ & $\phi_2$ & $\phi_3$ &$\psi_4$\\
+			\hline
+			0 & 0 & 0 & 0\\
+			0 & 0 & 1 & 0\\
+			0 & 1 & 0 & 0\\
+			0 & 1 & 1 & 0\\
+			1 & 0 & 0 & 0\\
+			1 & 0 & 1 & 0\\
+			1 & 1 & 0 & 1\\
+			1 & 1 & 1 & 0\\
+			\hline
+		\end{tabular}  
+	\end{minipage}
+\end{center}
 Wenn wir nun
 \begin{equation}
 	\psi = \psi_1\vee\psi_2\vee\psi_3\vee\psi_4
 \end{equation}
-betrachten, erschließt sich sofort, dass die zu $\psi$ gehörende Wahrheitstafel eben die Wahrheitstafel erfüllt, die oben gegeben ist.\\
+betrachten, erschließt sich sofort, dass die zu $\psi$ gehörende Wahrheitstafel eben die Wahrheitstafel erfüllt, die oben gegeben ist. Wegen diesem Verhalten nennt man das logische Oder auch "logische Addition".\\
 \\
 Es fehlt also bloß Formeln zu finden für die $\psi_1$ bis $\psi_4$ stehen, also Formeln, welche die zugehörigen Eigenschaften erfüllen.\\
 \\
@@ -844,7 +907,9 @@ Der einfachste Weg dies zu erreichen ist\footnote{Man beachte, dass auf Klammern
 \begin{equation}
 	\psi_1 = (\neg(\phi_1))\wedge(\neg(\phi_2))\wedge(\neg(\phi_3))
 \end{equation}
-\paragraph{Übungsbeispiel 28:} Stelle die Wahrheitstafel der rechten Seite der Gleichung (3.25) auf um dich zu vergewissern, dass wir tatsächlich ein gültiges $\psi_1$ gefunden haben.
+\paragraph{Übungsbeispiel 28:} Stelle die Wahrheitstafel der rechten Seite der Gleichung (3.25) auf um dich zu vergewissern, dass wir tatsächlich ein gültiges $\psi_1$ gefunden haben.\\
+\\
+
 
 
 
