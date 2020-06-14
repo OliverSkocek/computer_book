@@ -784,7 +784,7 @@ und das zweite DeMorgansche Gesetz.
 
 \paragraph{Übungsbeispiel 25:} Vergewissere dich von der Gültigkeit von (1.21) und (1.22) indem du die Wahrheitstafeln der Formeln links und rechts des $\equiv$ aufstellst.\\
 \\
-Um dieses Kapitel abzuschließen seien noch zwei wichtige Methoden zur Vereinfachung von logischen Formeln erwähnt, nämlich die \textbf{Elimination der Doppelten Negation}, die besagt, dass wenn in einer Formel zwei Negationen hintereinander vorkommen, beide gestrichen werden können,
+Um diesen Abschnitt abzuschließen seien noch zwei wichtige Methoden zur Vereinfachung von logischen Formeln erwähnt, nämlich die \textbf{Elimination der Doppelten Negation}, die besagt, dass wenn in einer Formel zwei Negationen hintereinander vorkommen, beide gestrichen werden können,
 \begin{equation}
 \neg(\neg(\phi))\equiv\phi
 \end{equation}
@@ -807,6 +807,26 @@ Als Methode zur Vereinfachung von aussagenlogischen Formeln, kann man sich folge
 %Allgemein gilt, dass sich jede Tautolgie aus einer Formel streichen lässt.
 %\paragraph{Übungsbeispiel 28:} Finde weitere Tautologien.
 \subsection{Die disjunktive und konjunktive Normalform}
+Wir kommen nun zum letzten Abschnitt dieses Kapitels über Aussagenlogik. Bislang haben wir gelernt, was aussagenlogische Formeln sind, wie wir sie umformen und wie wir sie mit Wahrheitstafeln darstellen können. In diesem Abschnitt lernen wir, wie man zu beliebigen Wahrheitstafeln, eine aussagenlogische Formel konstruieren kann, welche die Wahrheitstafel erfüllt.\\
+\\
+Eine Wahrheitstafel der Länge $n$ ist, wie wir im Abschnitt Wahrheitstafeln gesehen haben, eine tabellarische Darstellung einer eindeutigen Zuordnung von Null oder Eins zu beliebigen Folgen von Null und Eins fester Länge $n$. In anderen Worten eine Tabelle in der links alle möglichen Kombinationen von Null und Eins der Länge $n$ einmal stehen und rechts der eindeutige zugeordnete Wert, Null oder Eins.\\
+\\
+Hier ein Beispiel einer Wahrheitstafel der Länge 3.
+\begin{center}
+	\begin{tabular}{|c c c|c|}
+		\hline
+		0 & 0 & 0 & 1\\
+		0 & 0 & 1 & 1\\
+		0 & 1 & 0 & 0\\
+		0 & 1 & 1 & 1\\
+		1 & 0 & 0 & 0\\
+		1 & 0 & 1 & 0\\
+		1 & 1 & 0 & 1\\
+		1 & 1 & 1 & 0\\
+		\hline
+	\end{tabular}  
+\end{center}
+Welcher aussagenlogischen Formel von drei logischen Atomen, nennen wir sie $\phi_1$, $\phi_2$ und $\phi_3$, entspricht dieser Wahrheitstafel?
 
 
 \chapter{Die Linksverschiebungs und verneintes Und Maschine}
