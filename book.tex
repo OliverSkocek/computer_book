@@ -826,10 +826,29 @@ Hier ein Beispiel einer Wahrheitstafel der Länge 3.
 		\hline
 	\end{tabular}  
 \end{center}
-Welcher aussagenlogischen Formel von drei logischen Atomen, nennen wir sie $\phi_1$, $\phi_2$ und $\phi_3$, entspricht dieser Wahrheitstafel?
+Welcher aussagenlogischen Formel von drei logischen Atomen, nennen wir sie $\phi_1$, $\phi_2$ und $\phi_3$, entspricht diese Wahrheitstafel?\\
+\\
+Starten wir damit die Frage zu beantworten, indem wir für jeden Einser auf der rechten Seite eine aussagenlogische Formel konstruieren, die genau dann wahr ist, wenn die korrespondierende Kombination aus Nullen und Einsen links erfüllt ist.
+Wir haben vier Einser links und wir nennen die unbekannten Formeln, die noch zu konstruieren sind $\psi_1$, $\psi_2$, $\psi_3$ und $\psi_4$.\\
+\\
+Wenn wir nun
+\begin{equation}
+	\psi = \psi_1\vee\psi_2\vee\psi_3\vee\psi_4
+\end{equation}
+betrachten, erschließt sich sofort, dass die zu $\psi$ gehörende Wahrheitstafel eben die Wahrheitstafel erfüllt, die oben gegeben ist.\\
+\\
+Es fehlt also bloß Formeln zu finden für die $\psi_1$ bis $\psi_4$ stehen, also Formeln, welche die zugehörigen Eigenschaften erfüllen.\\
+\\
+Fangen wir mit $\psi_1$ an. $\psi_1$ soll nur dann war sein, wenn die Atome $\phi_1$, $\phi_2$ und $\phi_3$ alle den Wahrheitswert Null tragen. Andersherum betrachtet bedeutet dies, dass die Verneinungen von $\phi_1$ bis $\phi_3$ alle Eins beziehungsweise wahr sein müssen damit die gesuchte Formel wahr ist.\\
+Der einfachste Weg dies zu erreichen ist\footnote{Man beachte, dass auf Klammern verzichtet wurde, da wir ja nun wissen dass die Klammerung wenn wir nur Und oder nur Oder haben egal ist, und deshalb eindeutige Lesbarkeit nicht notwendig ist.}
+\begin{equation}
+	\psi_1 = (\neg(\phi_1))\wedge(\neg(\phi_2))\wedge(\neg(\phi_3))
+\end{equation}
+\paragraph{Übungsbeispiel 28:} Stelle die Wahrheitstafel der rechten Seite der Gleichung (3.25) auf um dich zu vergewissern, dass wir tatsächlich ein gültiges $\psi_1$ gefunden haben.
 
 
-\chapter{Die Linksverschiebungs und verneintes Und Maschine}
+
+\chapter{Ein möglichst einfacher Digitalrechner}
 Ein Digitalrechner hat zwei Buchstaben, nämlich die Null und die Eins, aber zusätzlich hat jeder eine meistens fixe Wortgröße, die in der Anzahl der Stellen , der Bits beziehungsweise Buchstaben, also der Nullen und der Einsen, welche die Maschine als ein Wort betrachtet, gemessen wird. Dieses Wort ist das eigentliche Elementare Objekt der Rechenmaschine, jede Operation wird nicht auf einem einzelnen Bit, also auf einer Stelle des Wortes, sondern immer auf dem gesamten Wort ausgeführt. Genauso holen wir wenn wir den Inhalt einer Speicheraddresse zum Rechenkern holen immer ein ganzes Wort, dass dort steht und nicht einen einzelnen Bit.
 Ein Wort kann dabei für einen Buchstaben stehen, für eine Zahl oder die Addresse eines anderen Wortes. 
 \section{Eine minimale Arithmetisch logische Einheit}
