@@ -121,7 +121,7 @@ Jede Programmiersprache besteht aus elementaren Bausteinen, Gundsymbolen oder W�
 Synonym zum Begriff des Programms ist der Begriff des Algorithmus. \\
 Programmieren ist das entwerfen von Programmen. Jeder der noch nichts damit zu tun hatte, kann sich das komplett analog zu einem Koch vorstellen, der ein Rezept für einen unfähigen Lehrling schreibt. Das Rezept ist eine Abfolge an Operationen, die der Lehrling an der Küche ausführen muss, um ein Gericht herzustellen. Der Lehrling ist unfähig und deshalb muss man es ihm ganz genau aufschreiben, also präzise formuliert, nach gewissen Regeln, damit die Anweisung immer eindeutig ist und keine Interpretationsfreiheit zulässt. Genauso verhält es sich mit der Programmierung einer Rechenmaschine.
 \newpage
-\subsection{GOTO-Programme}
+\section{GOTO-Programme}
 Eine der einfachsten und am leichtesten verständlichen Arten von Programmier- sprachen ist die Klasse der GOTO-Programmiersprachen. In der Praxis sind GOTO-Programmiersprachen zwar nur von geringer Bedeutung, da sich Programme, die in solchen Sprachen geschrieben wurden, wegen ihrer schwierigen Lesbarkeit, nur schwer warten lassen, jedoch sind die internen Maschinensprachen von allen Rechenmaschinen, die in der Praxis eingesetzt werden, GOTO-Programmiersprachen und (theoretisch interessant).\\
 \\
 Es folgt eine Beschreibung einer sehr einfachen Form einer GOTO-Programmier- sprache, die bereits alle Zutaten für eine universelle Programmiersprache enthält, und die wir fortan als Ausgangspunkt für unsere Diskussion des Berechenbaren ansehen.
@@ -183,7 +183,7 @@ Alternativ zur Addition und Subtraktion kann man auch die einstellige Operation 
 \paragraph{Nachfolger und Gleichheit} Die Vorgängeroperation lässt sich auch durch eine Gleichheitsrelation austauschen. Relationen sind Operationen, die als Resultat entweder Null für falsch oder Eins für wahr ausgeben. In unserem Fall nimmt die Operation zwei natürliche Zahlen $X$ und $Y$ und schreibt eine Eins, falls die Werte gleich sind, und sonst eine Null, in die Variable $Z$. \\Als Operation schreiben wir dies als: $Z = (X == Y)$.
 \paragraph{Übungsbeispiel 3:} Zeige wie sich die Vorgängeroperation durch die\\ Nachfolgeroperation und die Gleichheitsrelation in einem GOTO-Programm ausdrücken lässt.
 \paragraph{Übungsbeispiel 4:} Zeige wie sich die Gleichheitsrelation in in der ursprünglichen Definition eine GOTO-Programms ausdrücken lässt.
-\subsection{WHILE-Programme}
+\section{WHILE-Programme}
 Eine, wegen ihrer leichteren Lesbarkeit, beliebtere Klasse von Programmiersprachen sind die WHILE-Programmiersprachen. Die meisten modernen Programmiersprachen sind unter anderem auch WHILE-Programmiersprachen.\\
 \\
 Es folgt nun wie bei den GOTO-Programmen eine Beschreibung einer einfachen Form einer WHILE-Programmiersprache. Der einzige Untschied zu GOTO-Programmen liegt im siebenten Punkt der Definition, nämlich der Implementierung bedingter Verzweigungen.
@@ -209,7 +209,7 @@ Es folgt nun wie bei den GOTO-Programmen eine Beschreibung einer einfachen Form 
 \end{definition}
 An diesem einfachen Beispiel lässt sich wenn wir es mit dem zugehörigen GOTO-Programm vergleichen bereits erkennen, dass und inwiefern WHILE-Berechenbarkeit und GOTO-Berechenbarkeit equivalent sind, also sich zu jedem GOTO-Programm ein WHILE-Programm finden lässt und umgekehrt, dass daselbe berechnet. Was uns sogleich zum nächsten Abschnitt führt.
 \paragraph{Übungsbeispiel 5:} Mach Übungsbeispiel 1, 2 und 3 mit WHILE-Programmen, anstelle von GOTO-Programmen.
-\subsection{Church-Turing Hypothese}
+\section{Church-Turing Hypothese}
 Die Church-Turing Hypothese (CT-Hypothese) ist eine nicht beweisbare Aussage über, dass was im Prinzip berechenbar ist. Inspiriert ist sie durch die Erkenntnis, dass alle Defintionen des Berechenbaren, also im Prinzip \\Programmiersprachen, zumindest die Berechnungen ausführen kann, die GOTO-Programme berechnen können. CT-Hypothese besagt also, dass jede Berechnung die im Prinzip möglich ist von einer Maschine ausgeführt werden kann, die GOTO-Programme verarbeiten kann. Hiermit ist auch klar weshalb die Aussage eher philosophisch und nicht beweisbar ist, da "das Berechenbare" nicht leicht fassbar/definierbar ist und wir heute nicht wissen können was morgen noch für Maschinen sein werden und welchen Gesetzen sie gehorchen werden. Es sei weiters noch angemerkt, dass wir aus ersichtlichem Grund die GOTO-Programmiersprache, sowie jede Programmier-sprache, die jede Berechnung ausführen kann, die von einem GOTO-Programm ausgeführt werden kann, eine universelle Programmiersprache genannt werden soll. Eine solche universelle Programmiersprache ist sozusagen maximal in ihrer Fähigkeit Berechnungen auszuführen. Zur Motivation der Hypothese werden wir als nächstes beweisen, dass zu jedem GOTO-Programm ein WHILE-Programm existiert, dass daselbe berechnet und umgekehrt
 \paragraph{IF THEN END} Doch bevor wir dies zeigen soll eine bedingte Verzweigung eingeführt werden, die zwar nicht zwingend notwendig ist, daher wir können sie mit WHILE-Programmen sowie GOTO-Programmen bereits ausdrücken, aber sie werden, die in unseren Beweisen vorkommenden Programme kompakter und leichter lesbar machen, wenn wir sie verwenden.
 \begin{definition}
@@ -275,7 +275,7 @@ ansonsten schreiben wir den Befehl so wie er in $P$ steht an die entsprechende P
 
 Abschließend sei noch erwähnt, dass die CT-Hypothese nichts über die Anzahl der Rechenschritte oder die Zeit, die eine Machine zur Berechnung benötigen wird aussagt. Ein Quantencomputer wird eine Faktorisierung einer großen natürlichen Zahl in kurzer Zeit vollbringen, während eine klassischer Computer Jahrhunderte braucht. Aber diesen Aspekt von unterschiedlichen Programmiersprachen und Maschinen haben wir bereits gesehen, als wir untschiedliche Grundoperationen für GOTO-Programme in betracht gezogen haben.
 
-\subsection{Kleenesche Normalform}
+\section{Kleenesche Normalform}
 Im vorangegangenen haben wir gesehen, wie zu jedem GOTO-Programm ein equivalentes WHILE-Programm erzeugt werden kann und umgekehrt.\\
 Wir modifizieren nun unsere WHILE-Programmiersprache, indem wir IF THEN END Anweisungen hinzufügen. Die resultierende Sprache nennen wir WHILE/IF-Programmiersprache. Sie ist equivalent zu unsere WHILE-Programmiersprache, da sich IF THEN END durch WHILE Anweisungen ausdrücken lässt, aber erlaubt nun die Konstruktion einer Kleenschen Normal- form zu einem gegebenen WHILE-Programm.\\
 \\
@@ -826,7 +826,7 @@ Hier ein Beispiel einer Wahrheitstafel der Länge 3.
 		\hline
 	\end{tabular}  
 \end{center}
-Welcher aussagenlogischen Formel von drei logischen Atomen, nennen wir sie $\phi_1$, $\phi_2$ und $\phi_3$, entspricht diese Wahrheitstafel?\\
+Welcher aussagenlogischen Formel von drei logischen Atomen, nennen wir die Atome $\phi_1$, $\phi_2$ und $\phi_3$, entspricht diese Wahrheitstafel?\\
 \\
 Starten wir damit die Frage zu beantworten, indem wir für jeden Einser auf der rechten Seite eine aussagenlogische Formel konstruieren, die genau dann wahr ist, wenn die korrespondierende Kombination aus Nullen und Einsen links erfüllt ist.
 Wir haben vier Einser links und wir nennen die unbekannten Formeln, die noch zu konstruieren sind $\psi_1$, $\psi_2$, $\psi_3$ und $\psi_4$.\\
@@ -907,11 +907,26 @@ Der einfachste Weg dies zu erreichen ist\footnote{Man beachte, dass auf Klammern
 \begin{equation}
 	\psi_1 = (\neg(\phi_1))\wedge(\neg(\phi_2))\wedge(\neg(\phi_3))
 \end{equation}
-\paragraph{Übungsbeispiel 28:} Stelle die Wahrheitstafel der rechten Seite der Gleichung (3.25) auf um dich zu vergewissern, dass wir tatsächlich ein gültiges $\psi_1$ gefunden haben.\\
+Fahren wir fort mit $\psi_2$; Wir verlangen von $\psi_2$, dass es genau dann wahr ist wenn $\phi_1$ sowie $\phi_2$ den Wahrheitswert Null tragen, also falsch sind, und $\phi_3$ den Wahrheitswert Eins hat. Anders ausgedrückt ist $\psi_2$ genau dann Eins wenn die $\neg(\phi_1)$, $\neg(\phi_2)$ und $\phi_3$ wahr sind.\\
+Der einfachste Weg ist wieder die Verknüpfung dieser drei Formeln durch Und Operationen.  
+\begin{equation}
+	\psi_2 = (\neg(\phi_1))\wedge(\neg(\phi_2))\wedge(\phi_3)
+\end{equation}
+\paragraph{Übungsbeispiel 28:} Stelle die Wahrheitstafel der rechten Seiten der Gleichungen (3.25) und (3.26) auf um dich zu vergewissern, dass wir tatsächlich ein gültiges $\psi_1$ beziehungsweise $\psi_2$ gefunden haben.\\
 \\
-
-
-
+Nach diesen beiden Beispielen erkennt man bereits das allgemeine Muster. Wenn eine Formel nur für eine bestimmte Belegung seiner logischen Atome mit Nullen und Einsen wahr sein soll, dann schreibe für jedes Atom, dass von dieser Belegung den Wert Null bekommt die Verneinung dieses Atom und für jedes andere Atom, schreiben wir das Atom selbst auf. Am Ende verknüpfen wir alles durch logische Unds.\\
+\\
+Zeigen wir dies noch einmal an der gesuchten Formel $\psi_3$. Sie soll nur unter der Belegung $B$
+\begin{equation}
+	B(\phi_1)=0\text{, }B(\phi_2)=1\text{, }B(\phi_3)=1
+\end{equation}
+wahr sein, beziehungsweise für die Kombination in der vieren Zeile auf der linken Seite der Wahrheitstafel oben in diesem Abschnitt.\\
+\\
+Wir schreiben somit $\neg(\phi_1)$, weil $B(\phi_1)=0$; wegen $B(\phi_2)=1$ und $B(\phi_3)=1$ schreiben wir auch $\phi_2$ und $\phi_2$. Am Ende verknüpfen wir alles 'geschriebene':
+\begin{equation}
+	\psi_3 = (\neg(\phi_1))\wedge(\phi_2)\wedge(\phi_3)
+\end{equation}
+\paragraph{Übungsbeispiel 29:} Berechne $\psi_3$ nach dem oben beschriebenen Schema und schreibe die vollständige Formel für $\psi$ auf.
 
 \chapter{Ein möglichst einfacher Digitalrechner}
 Ein Digitalrechner hat zwei Buchstaben, nämlich die Null und die Eins, aber zusätzlich hat jeder eine meistens fixe Wortgröße, die in der Anzahl der Stellen , der Bits beziehungsweise Buchstaben, also der Nullen und der Einsen, welche die Maschine als ein Wort betrachtet, gemessen wird. Dieses Wort ist das eigentliche Elementare Objekt der Rechenmaschine, jede Operation wird nicht auf einem einzelnen Bit, also auf einer Stelle des Wortes, sondern immer auf dem gesamten Wort ausgeführt. Genauso holen wir wenn wir den Inhalt einer Speicheraddresse zum Rechenkern holen immer ein ganzes Wort, dass dort steht und nicht einen einzelnen Bit.
