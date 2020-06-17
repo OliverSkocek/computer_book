@@ -591,7 +591,7 @@ Abschließend setzen wir noch $w(p)$ und $w(q)$ in (1.8) ein und erhalten:
 $$w(\phi) = w(p) * w(q) = 1 * 0 = 0$$
 \paragraph{Übungsbeispiel 16:} Berechne den Wahrheitswert der logischen Formeln $$(\neg(\phi_1))\vee((\neg(\phi_2))\wedge(\phi_3))$$ $$(\neg(\neg(\phi_3)))\vee\phi_1$$
 $$\phi_3\wedge(\phi_1\vee(\neg\phi_1))$$
-\subsection{Wahrheitstafeln}
+\section{Wahrheitstafeln}
 Wir kommen nun zu einer sehr nützlichen Werkzeug zur Behandlung von aussagenlogischen Formeln, den Wahrheitstafeln. Hier wird eine Tabelle mit allen möglichen Wahrheitswerten für die Atome der aussagenlogischen Formel gebildet und für jede dieser Kombinationen schreibt man in der letzten Spalte den Wahrheitswert den die Formel für diese Kombination ergeben würde.\\
 \\
 Wahrheitstafeln sind somit ein allgemeines Format zur Darstellung beliebiger aussagenlogischer Verknüpfunen und eignen sich hervorragend zum Finden von Lösungen aussagenlogischer Erfüllbarkeitsprobleme, die wir gleich an- schließend behandeln werden.
@@ -675,7 +675,7 @@ Die logische \textbf{Äquivalenz} zweier Aussagen  $\phi$ und $\psi$ drückt aus
 \paragraph{Übungsbeispiel 19:} Die Verneinung der logischen Äquivalenz ist das ausschließende Oder, oder auch \textbf{XOR} genannt. Schreibe die Wahrheitstafel der XOR Verknüpfung auf.
 %TODO äquivalenz, xor und implikation ausdrücken durch und oder neg und zu formel syntax hinzufügen
 \newpage
-\subsection{Erfüllbarkeitsprobleme und Gleichungen}
+\section{Erfüllbarkeitsprobleme und Gleichungen}
 Aussagenlogische Formeln lassen sich wie die Terme und Gleichungen der Algebra, die wir aus der Schule kennen interpretieren. Logische Atome sind, wenn keine Wahrheitswerte definiert sind, nichts anderes als Variablen, daher Symbole mit unbestimmten Werten. Die Werte sind im Fall von aussagenogischen Formeln entweder Null oder Eins.\\
 \\
 Als Gleichheit verwendet man in der Logik die Äquivalenz; Diese verhält sich wie die Gleichheit in der Schulalgebra.
@@ -768,7 +768,7 @@ Bevor wir auf Umformungen eingehen, die zusätzlich zum logischen Und und Oder a
 \psi\vee\psi\equiv\psi
 \end{equation}
 Diese Eigenschaft ist eine große Hilfe, wenn man lange komplexe Formeln vor sich hat und auf eine einfachere Form bringen will. Wir werden im folgenden Kapitel mehr nützliche Vereinfachungen dieser Art kennen lernen.
-\subsection{Umformungen der Verneinung}
+\section{Umformungen der Verneinung}
 Bisher haben wir ausschließlich Umformungen bezüglich der logischen Verknüpfungen Und und Oder kennen gelernt. Die wichtigsten Umformungen an der die Negation beteiligt ist und eine Verbindung mit dem logischen Und und Oder herstellt sind die DeMorganschen Gesetze.\\
 \\
 Die \textbf{DeMorganschen Gesetze} besagen vereinfacht gesagt, dass man die Negation aus einer Formel herausheben kann, wobei sich ein logisches Und in ein Oder umwandelt und ein logisches Oder in ein Und.\\
@@ -806,8 +806,8 @@ Als Methode zur Vereinfachung von aussagenlogischen Formeln, kann man sich folge
 %Beweise die letzte Aussage.
 %Allgemein gilt, dass sich jede Tautolgie aus einer Formel streichen lässt.
 %\paragraph{Übungsbeispiel 28:} Finde weitere Tautologien.
-\subsection{Die disjunktive Normalform}
-Wir kommen nun zum letzten Abschnitt dieses Kapitels über Aussagenlogik. Bislang haben wir gelernt, was aussagenlogische Formeln sind, wie wir sie umformen und wie wir sie mit Wahrheitstafeln darstellen können. In diesem Abschnitt lernen wir, wie man zu beliebigen Wahrheitstafeln, eine aussagenlogische Formel konstruieren kann, welche die Wahrheitstafel erfüllt.\\
+\section{Die disjunktive Normalform}
+Wir haben bislang gelernt, was aussagenlogische Formeln sind, wie wir sie umformen und wie wir Formeln mit Wahrheitstafeln darstellen können. In diesem Abschnitt lernen wir, wie man zu beliebigen Wahrheitstafeln, eine aussagenlogische Formel konstruieren kann, welche die Wahrheitstafel erfüllt. Da es aber immer mehr als eine Formel gibt, welche dieselbe Wahrheitstafel hat, muss die zu einer Wahrheitstafel konstruierte Formel eine spezielle Form haben, eine spezielle Darstellung, eine so genannte Normalform.\\
 \\
 Eine Wahrheitstafel der Länge $n$ ist, wie wir im Abschnitt Wahrheitstafeln gesehen haben, eine tabellarische Darstellung einer eindeutigen Zuordnung von Null oder Eins zu beliebigen Folgen von Null und Eins fester Länge $n$. In anderen Worten eine Tabelle in der links alle möglichen Kombinationen von Null und Eins der Länge $n$ einmal stehen und rechts der eindeutige zugeordnete Wert, Null oder Eins.\\
 \\
@@ -927,7 +927,47 @@ Wir schreiben somit $\neg(\phi_1)$, weil $B(\phi_1)=0$; wegen $B(\phi_2)=1$ und 
 	\psi_3 = (\neg(\phi_1))\wedge(\phi_2)\wedge(\phi_3)
 \end{equation}
 \paragraph{Übungsbeispiel 29:} Berechne $\psi_3$ nach dem oben beschriebenen Schema und schreibe die vollständige Formel für $\psi$ auf.
+\newpage
+\subsection{NAND und NOR}
+Wir schließen dieses Kapitel mit einer kurzen Diskussion zweier wichtiger logischer Operationen ab. Die Besonderheit dieser Operationen ist, dass für beide gilt, dass sich jede mögliche logische Operation durch Komposition darstellen lässt.\\
+\\
+Die erste dieser Operationen ist die Verneinung des Unds, auch \textbf{NAND}, aus dem Englischen 'not and'. Als logische Formel können wir die Operation schreiben als $\neg(\phi\wedge\psi)$ oder über die DeMorgansche Gesetze umgeformt $(\neg(\phi))\vee(\neg(\psi))$. Die zugehörige Wahrheitstafel ist
+\begin{center}
+	\begin{tabular}{|c c|c|}
+		$\phi$ & $\psi$ &$\psi_4$\\
+		\hline
+		0 & 0 & 1\\
+		0 & 1 & 1\\
+		1 & 0 & 1\\
+		1 & 1 & 0\\
+		\hline
+	\end{tabular}  
+\end{center}
+\paragraph{Übungsbeispiel 30:} Konstruiere die disjunktive Normalform zu dieser Wahrheitstafel.
+\paragraph{Übungsbeispiel 31:} Zeige, dass die beiden Formeln äquivalent sind, indem du zeigst das beide die obige Wahrheitstafel als zugehörige Wahrheitstafel haben.
+\begin{theorem}
+	Jede logische Formel und somit jede mögliche Wahrheitstafel, lässt sich durch Komposition logischer Atome durch NAND Operationen darstellen.
+\end{theorem}
+\begin{proof}
+	Nachdem wir bereits über die Disjunktive Normalform gesehen haben, wie sich beliebige Wahrheitstafeln durch Kompositionen des logischen Unds, Oders und der Verneinung, bleibt zu zeigen, dass sich das Und, das Oder und die Verneinung als Komposition von NAND Operationen darstellen lässt.\\
+	Seien $\phi$ und $\psi$ logische Atome dann zeigen wir zuerst, dass sich die Verneinung darstellen lässt:
+	\begin{equation}
+		\neg(\phi) \equiv \neg(\phi\wedge\phi) \equiv (\phi)\text{NAND}(\phi)
+	\end{equation}
+	Nun kommen wir zum Und.
+	Durch Anwendung der doppleten Verneinung Umformung ist schnell gezeigt, dass
+	\begin{equation}
+	\phi\wedge\psi \equiv \neg(\neg(\phi\wedge\psi)) \equiv \neg((\phi)\text{NAND}(\psi))
+	\end{equation}
+	Da wir bereits wissen wie sich die Verneinung darstellen lässt, haben wir schon jetzt gezeigt, dass sich das Und darstellen lässt. Es fehlt noch das Oder. Wir fangen wieder an mit doppelter Verneinung, dann DeMorgan und kommen auf
+	\begin{align}
+	\phi\vee\psi \equiv \neg(\neg(\phi\vee\psi)) \equiv \neg((\neg(\phi))\wedge(\neg(\psi)))\equiv (\neg(\phi))\text{NAND}(\neg(\psi))
+	\end{align}
+\end{proof}
 
+Es ist nun eine leichte Übung zu zeigen, dass das \textbf{NOR}, also die Verneinung des Oders, in Formel $\neg(\phi\vee\psi)$ dieselbe Eigenschaften hat.
+\paragraph{Übungsbeispiel 32:} Zeige Dies.
+\chapter{Elektronik}
 \chapter{Ein möglichst einfacher Digitalrechner}
 Ein Digitalrechner hat zwei Buchstaben, nämlich die Null und die Eins, aber zusätzlich hat jeder eine meistens fixe Wortgröße, die in der Anzahl der Stellen , der Bits beziehungsweise Buchstaben, also der Nullen und der Einsen, welche die Maschine als ein Wort betrachtet, gemessen wird. Dieses Wort ist das eigentliche Elementare Objekt der Rechenmaschine, jede Operation wird nicht auf einem einzelnen Bit, also auf einer Stelle des Wortes, sondern immer auf dem gesamten Wort ausgeführt. Genauso holen wir wenn wir den Inhalt einer Speicheraddresse zum Rechenkern holen immer ein ganzes Wort, dass dort steht und nicht einen einzelnen Bit.
 Ein Wort kann dabei für einen Buchstaben stehen, für eine Zahl oder die Addresse eines anderen Wortes. 
