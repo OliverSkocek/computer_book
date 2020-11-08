@@ -11,7 +11,8 @@
 %\usepackage{graphicx}
 %\graphicspath{{pics/}}
 \usepackage{listings}
-
+\usepackage{svg}
+\usepackage{amsmath}
 
 \newcommand{\eps}{\varepsilon}
 \newcommand{\R}{\mathbb{R}}
@@ -412,20 +413,20 @@ Zur Wiederholung:
 		1
 		\end{lstlisting}
 		\item Wir definieren nun die Nachfolgeroperation des dualen Zahlensystems als eine Art GOTO-Programm:
-		\begin{lstlisting}
-1: 'Starte bei der ersten Stelle.'
-2: X = 'Symbol an der derzeitigen Stelle.'
-3: X = u(X)
-4: 'Setze den Wert der derzeitigen Stelle auf X.'
-5: Z = X==0
-6: if Z THEN
-7: 	'Gehe zur naechsten Stelle, 
-	falls keine Stelle mehr übrig ist 
-	füge eine Stelle mit dem Wert 0 hinzu
-	und gehe zu dieser Stelle.'
-8:	if Z GOTO 2
-9: HALT
-		\end{lstlisting}
+			\begin{lstlisting}
+	1: 'Starte bei der ersten Stelle.'
+	2: X = 'Symbol an der derzeitigen Stelle.'
+	3: X = u(X)
+	4: 'Setze den Wert der derzeitigen Stelle auf X.'
+	5: Z = X==0
+	6: if Z THEN
+	7: 	'Gehe zur naechsten Stelle, 
+		falls keine Stelle mehr übrig ist 
+		füge eine Stelle mit dem Wert 0 hinzu
+		und gehe zu dieser Stelle.'
+	8:	if Z GOTO 2
+	9: HALT
+			\end{lstlisting}
 	\end{enumerate}
 \end{definition}
 Beispiel: Alle vier stelligen binären Zahlen
@@ -968,6 +969,60 @@ Die erste dieser Operationen ist die Verneinung des Unds, auch \textbf{NAND}, au
 Es ist nun eine leichte Übung zu zeigen, dass das \textbf{NOR}, also die Verneinung des Oders, in Formel $\neg(\phi\vee\psi)$ dieselbe Eigenschaften hat.
 \paragraph{Übungsbeispiel 32:} Zeige Dies.
 \chapter{Elektronik}
+Streng genommen kann man eine Rechenmaschine bauen, die anstelle von elektrischen Schaltkreisen aus Wasserschläuchen und Ventilen oder Zahnrädern besteh. Da moderne Rechenmaschinen elektronisch sind und dies auf absehbare Zeit so bleiben wird, ist es notwendig einige wichtige Konzepte der Elektronik vorzustellen.
+\section{Der elektrische Stromkreis}
+Wer genauere Details über die zugrundeliegende Physik wissen will, soll im Anhang nachlesen oder sich ein passendes Fachbuch suchen.\\
+\\
+Ein idealisierter elektrischer \textbf{Stromkreis} ist ein Graph dessen Kanten elektrische Leiter und dessen Ecken elektronische Komponenten sind. \\Hier ein konkretes Beispiel.
+
+\begin{figure}[h]
+	\centering{
+		\resizebox{75mm}{!}{\input{circuit.pdf_tex}}
+		\caption{Stromkreis.}
+		\label{fig:circuit}
+	}
+\end{figure}
+Das Symbol links mit der Annotation +5V ist eine elektrische Spannungsquelle. Diese ist über \textbf{elektrische Leiter}, die Lininen, mit einem Kästchen, annotiert mit 1 k, verbunden. Dies ist das Symbol eines elektrischen Widerstand von 1000 Ohm, also 1 kilo Ohm.\\
+\\
+Der \textbf{elektrische Strom} ist eine Größe die an jedem Punkt des elektrischen Stromkreises gemessen werden kann. Eine gute Anschauung ist eine Flüssigkeit, die elektrische Ladung, die durch den Leiter fließt wie durch ein Rohr. Gemessen wird die Menge an Flüssigkeit, die in einer gewissen Zeit, den Punkt durchfließt. Abhängig von der Flußrichtung ist die Größe positiv oder negativ. \\
+\\
+Welche der beiden Möglichkeiten der Flußrichtung als positiv angesehen wird, muss hierbei zu Beginn festgelegt und als Referenz zu der Messgröße mitnotiert werden.\\
+\\
+Das Formelsymbol für den elektrische Strom ist $UI$ und die Maßeinheit ist das Ampere, abgekürzt $A$. 
+\\
+\\
+Die \textbf{elektrische Spannung} ist eine Größe, die zwischen beliebigen zwei Punkten eines elektrischen Stromkreises, gemessen wird. Sie stellt im Prinzip den Trieb des elektrischen Stromes zwischen den beiden Punkten dar. Innerhalb unseres Bildes der Flüssigkeit, die durch Rohre fließt, wäre diese Größe so etwas wie der Druckunterschied zwischen zwei Punkten.\\
+\\
+Das Formelsymbol für die elektrische Spannung ist $U$ und die Maßeinheit ist das Volt, abgekürzt $V$. 
+\\
+\\
+Der \textbf{elektrische Widerstand} ist eine Größe, die jedem elektronische Bauteil zu eigen ist, also eine Bauteileigenschaft und hat in der Regel bei gegebener Temperatur einen festen Wert. Sie stellt einen quantitativen Zusammenhang zwischen Strom und Spannung her und kann als Widerstand des Bauteiles gegen die Verursachung von elektrischem Strom durch eine gegebene elektrische Spannung angesehen werden.\\
+Innerhalb unserer Anschauung der Flüssigkeit, die sich durch Röhren bewegt, wäre dies so etwas wie ein Gewebe oder ein poröses Material, durch die die Flüßigkeit mit Druck gepresst werden muss.\\
+\\
+Das Formelsymbol für den elektrische Widerstand ist $R$ und die Maßeinheit ist das Ohm, abgekürzt $\Omega$. 
+\\
+\\
+Abschließend sei noch erwähnt, dass wir hier einige Idealisierungen vorgenommen haben. Unter anderem, dass jeder elektrische Leiter eine drei dimensionale räumliche Ausdehung hat und auch einen elektrischen Widerstand. Normalerweise können wir diese Idealisierung annehmen, da die Metalle, meist Kupfer, die als elektrische Leiter verwendet werden, einen sehr kleinen Widerstand pro Meter haben. Bei größeren und aufwendigeren Leiterschleifen darf dies aber nicht vergessen werden.
+\subsection{Die drei Grundgesetze elektrischer Netze}
+Die Beziehung zwischen elektrischem Strom durch ein Bauteil und der an das Bauteil angelegten elektrischen Spannung wird als \textbf{Ohm'sches Gesetz} bezeichnet. Die einfache Formel:
+\begin{equation}
+U = I * R
+\end{equation}
+erlaubt es in diesem einfachen Fall, der zum Beispiel in Abbildung 4.1 erfüllt ist, den Strom an jedem Punkt des elektrischen Stromkreises zu berechnen.
+\begin{equation}
+I = \frac{U}{R} =\frac{5V}{1000 \Omega} = 0.005 A
+\end{equation}
+
+
+
+
+
+Abschließend stellen wir mit logischen Gattern eine direkte Realisierung von 
+aussagenlogischen Formeln dar
+
+\section{title}
+
+Ein Computer kann im Prinzip auch au
 \chapter{Ein möglichst einfacher Digitalrechner}
 Ein Digitalrechner hat zwei Buchstaben, nämlich die Null und die Eins, aber zusätzlich hat jeder eine meistens fixe Wortgröße, die in der Anzahl der Stellen , der Bits beziehungsweise Buchstaben, also der Nullen und der Einsen, welche die Maschine als ein Wort betrachtet, gemessen wird. Dieses Wort ist das eigentliche Elementare Objekt der Rechenmaschine, jede Operation wird nicht auf einem einzelnen Bit, also auf einer Stelle des Wortes, sondern immer auf dem gesamten Wort ausgeführt. Genauso holen wir wenn wir den Inhalt einer Speicheraddresse zum Rechenkern holen immer ein ganzes Wort, dass dort steht und nicht einen einzelnen Bit.
 Ein Wort kann dabei für einen Buchstaben stehen, für eine Zahl oder die Addresse eines anderen Wortes. 
