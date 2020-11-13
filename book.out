@@ -1,0 +1,26 @@
+\BOOKMARK [0][-]{chapter.1}{Aufbau einer Rechenmaschine}{}% 1
+\BOOKMARK [1][-]{section.1.1}{GOTO-Programme}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Grundoperationen}{section.1.1}% 3
+\BOOKMARK [1][-]{section.1.2}{WHILE-Programme}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{Church-Turing Hypothese}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.4}{Kleenesche Normalform}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Zahlensysteme}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Der Z\344hlvorgang}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Das dekadische Zahlensystem}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Das bin\344re Zahlensystem}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{Aussagenlogik}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Wahrheitstafeln}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{Erf\374llbarkeitsprobleme und Gleichungen}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.3}{Umformungen der Verneinung}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.4}{Die disjunktive Normalform}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.4.1}{NAND und NOR}{section.3.4}% 16
+\BOOKMARK [0][-]{chapter.4}{Elektronik}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Der elektrische Stromkreis}{chapter.4}% 18
+\BOOKMARK [2][-]{subsection.4.1.1}{Die drei Grundgesetze elektrischer Stromkreise}{section.4.1}% 19
+\BOOKMARK [1][-]{section.4.2}{title}{chapter.4}% 20
+\BOOKMARK [0][-]{chapter.5}{Ein m\366glichst einfacher Digitalrechner}{}% 21
+\BOOKMARK [1][-]{section.5.1}{Eine minimale Arithmetisch logische Einheit}{chapter.5}% 22
+\BOOKMARK [2][-]{subsection.5.1.1}{Die physische Realisierung}{section.5.1}% 23
+\BOOKMARK [1][-]{section.5.2}{Der Hauptspeicher und Registerkarte}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.3}{Die Sprache unserer Rechenmaschine}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.4}{Die Kontrolleinheit}{chapter.5}% 26

@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.0.1 (0767f8302a, 2020-10-17), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'circuit.pdf' (pdf, eps, ps)
+%% Accompanies image file 'aufgabe.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{240bp}%
+    \setlength{\unitlength}{75bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,15 +50,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.75)%
+  \begin{picture}(1,1.2)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{circuit.pdf}}%
-    \put(0.83125,0.390625){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}100 Ω\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{circuit.pdf}}%
-    \put(0.4875,0.390625){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}100 Ω\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{circuit.pdf}}%
-    \put(0.14375,0.390625){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}+5V\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=4]{circuit.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{aufgabe.pdf}}%
+    \put(0.72,0.8){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}i4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{aufgabe.pdf}}%
+    \put(0.32,0.4){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}i3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{aufgabe.pdf}}%
+    \put(0.7,0.42){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}i2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{aufgabe.pdf}}%
+    \put(0.3,0.82){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}i1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{aufgabe.pdf}}%
   \end{picture}%
 \endgroup%

@@ -1,0 +1,76 @@
+\contentsline {chapter}{\numberline {1}Aufbau einer Rechenmaschine}{3}{chapter.1}
+\contentsline {paragraph}{Register:}{3}{section*.3}
+\contentsline {paragraph}{Grundoperationen:}{3}{section*.4}
+\contentsline {paragraph}{Bedingte Verzweigung:}{4}{section*.5}
+\contentsline {section}{\numberline {1.1}GOTO-Programme}{5}{section.1.1}
+\contentsline {paragraph}{Variablen:}{5}{section*.6}
+\contentsline {paragraph}{\"Ubungsbeispiel 1:}{6}{section*.7}
+\contentsline {subsection}{\numberline {1.1.1}Grundoperationen}{7}{subsection.1.1.1}
+\contentsline {paragraph}{Nachfolger und Vorg\"anger}{7}{section*.8}
+\contentsline {paragraph}{\"Ubungsbeispiel 2:}{7}{section*.9}
+\contentsline {paragraph}{Nachfolger und Gleichheit}{7}{section*.10}
+\contentsline {paragraph}{\"Ubungsbeispiel 3:}{7}{section*.11}
+\contentsline {paragraph}{\"Ubungsbeispiel 4:}{8}{section*.12}
+\contentsline {section}{\numberline {1.2}WHILE-Programme}{8}{section.1.2}
+\contentsline {paragraph}{\"Ubungsbeispiel 5:}{8}{section*.13}
+\contentsline {section}{\numberline {1.3}Church-Turing Hypothese}{9}{section.1.3}
+\contentsline {paragraph}{IF THEN END}{9}{section*.14}
+\contentsline {paragraph}{\"Ubungsbeispiel 6:}{9}{section*.15}
+\contentsline {paragraph}{\"Ubungsbeispiel 7:}{9}{section*.16}
+\contentsline {paragraph}{\"Ubungsbeispiel 8:}{9}{section*.17}
+\contentsline {paragraph}{\"Ubungsbeispiel 9:}{10}{section*.18}
+\contentsline {section}{\numberline {1.4}Kleenesche Normalform}{11}{section.1.4}
+\contentsline {paragraph}{Beispiel:}{11}{section*.19}
+\contentsline {paragraph}{\"Ubungsbeispiel 10:}{11}{section*.20}
+\contentsline {chapter}{\numberline {2}Zahlensysteme}{12}{chapter.2}
+\contentsline {section}{\numberline {2.1}Der Z\"ahlvorgang}{12}{section.2.1}
+\contentsline {section}{\numberline {2.2}Das dekadische Zahlensystem}{13}{section.2.2}
+\contentsline {paragraph}{\"Ubungsbeispiel 11:}{15}{section*.21}
+\contentsline {paragraph}{\"Ubungsbeispiel 12:}{15}{section*.22}
+\contentsline {section}{\numberline {2.3}Das bin\"are Zahlensystem}{15}{section.2.3}
+\contentsline {paragraph}{\"Ubungsbeispiel 13:}{16}{section*.23}
+\contentsline {paragraph}{\"Ubungsbeispiel 14:}{16}{section*.24}
+\contentsline {paragraph}{\"Ubungsbeispiel 15:}{16}{section*.25}
+\contentsline {chapter}{\numberline {3}Aussagenlogik}{18}{chapter.3}
+\contentsline {paragraph}{\"Ubungsbeispiel 16:}{22}{section*.26}
+\contentsline {section}{\numberline {3.1}Wahrheitstafeln}{22}{section.3.1}
+\contentsline {paragraph}{\"Ubungsbeispiel 17:}{23}{section*.27}
+\contentsline {paragraph}{\"Ubungsbeispiel 18:}{23}{section*.28}
+\contentsline {paragraph}{\"Ubungsbeispiel 19:}{23}{section*.29}
+\contentsline {section}{\numberline {3.2}Erf\"ullbarkeitsprobleme und Gleichungen}{24}{section.3.2}
+\contentsline {paragraph}{\"Ubungsbeispiel 20:}{25}{section*.30}
+\contentsline {paragraph}{\"Ubungsbeispiel 21:}{26}{section*.31}
+\contentsline {paragraph}{\"Ubungsbeispiel 22:}{26}{section*.32}
+\contentsline {paragraph}{\"Ubungsbeispiel 23:}{26}{section*.33}
+\contentsline {paragraph}{\"Ubungsbeispiel 24:}{26}{section*.34}
+\contentsline {section}{\numberline {3.3}Umformungen der Verneinung}{27}{section.3.3}
+\contentsline {paragraph}{\"Ubungsbeispiel 25:}{27}{section*.35}
+\contentsline {paragraph}{\"Ubungsbeispiel 26:}{28}{section*.36}
+\contentsline {paragraph}{\"Ubungsbeispiel 27:}{28}{section*.37}
+\contentsline {section}{\numberline {3.4}Die disjunktive Normalform}{28}{section.3.4}
+\contentsline {paragraph}{\"Ubungsbeispiel 28:}{30}{section*.38}
+\contentsline {paragraph}{\"Ubungsbeispiel 29:}{30}{section*.39}
+\contentsline {subsection}{\numberline {3.4.1}NAND und NOR}{31}{subsection.3.4.1}
+\contentsline {paragraph}{\"Ubungsbeispiel 30:}{31}{section*.40}
+\contentsline {paragraph}{\"Ubungsbeispiel 31:}{31}{section*.41}
+\contentsline {paragraph}{\"Ubungsbeispiel 32:}{32}{section*.42}
+\contentsline {chapter}{\numberline {4}Elektronik}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Der elektrische Stromkreis}{33}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Die drei Grundgesetze elektrischer Stromkreise}{34}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}title}{39}{section.4.2}
+\contentsline {chapter}{\numberline {5}Ein m\"oglichst einfacher Digitalrechner}{40}{chapter.5}
+\contentsline {section}{\numberline {5.1}Eine minimale Arithmetisch logische Einheit}{40}{section.5.1}
+\contentsline {paragraph}{NAND: }{40}{section*.43}
+\contentsline {paragraph}{LSHIFT:}{41}{section*.44}
+\contentsline {subsection}{\numberline {5.1.1}Die physische Realisierung}{42}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Der Hauptspeicher und Registerkarte}{42}{section.5.2}
+\contentsline {section}{\numberline {5.3}Die Sprache unserer Rechenmaschine}{42}{section.5.3}
+\contentsline {paragraph}{HALT:}{42}{section*.45}
+\contentsline {paragraph}{NAND + 3 bit Addresse:}{42}{section*.46}
+\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{42}{section*.47}
+\contentsline {paragraph}{POP + 4 bit Addresse:}{42}{section*.48}
+\contentsline {paragraph}{PUSH + 4 bit Addresse:}{42}{section*.49}
+\contentsline {paragraph}{LOAD + 4 bit Wort:}{42}{section*.50}
+\contentsline {paragraph}{IF:}{42}{section*.51}
+\contentsline {paragraph}{RESET IF:}{43}{section*.52}
+\contentsline {section}{\numberline {5.4}Die Kontrolleinheit}{43}{section.5.4}
