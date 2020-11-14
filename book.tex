@@ -999,9 +999,7 @@ Das Formelsymbol f\"ur den elektrische Strom ist das $I$ und die Ma\ss{}einheit 
 Die \textbf{elektrische Spannung} ist im Gegensatz dazu eine Gr\"o\ss{}e, die zwischen zwei beliebigen Punkten auf den Leitern/Kanten gemessen werden kann. Sie stellt im Prinzip den Trieb des elektrischen Stromes zwischen den beiden Punkten dar. Innerhalb unseres Bildes der Fl\"ussigkeit, die durch Rohre flie\ss{}t, w\"are diese Gr\"o\ss{}e so etwas wie der Druckunterschied zwischen zwei Punkten. Entsprechend dieser Interpretation ist die elektrische Spannung eine gerichtete Größe in dem Sinn, dass es einen Unterschied macht um man vom Punkt $A$ zum Punkt $B$ misst oder umgekehrt vom Punkt $B$ zum Punkt $A$ misst. Die beiden Messwerte unterscheiden sich wie zu erwarten ist nur im Vorzeichen.\\
 \\
 Das Formelsymbol f\"ur die elektrische Spannung ist das $U$ und die Ma\ss{}einheit ist das Volt, abgek\"urzt $V$. 
-\\
-\\
-\subsection{Die drei Grundgesetze elektrischer Stromkreise}
+\section{Die drei Grundgesetze elektrischer Stromkreise}
 Entsprechend der bereits vorgestellten Anschauung des Flu\ss{}es einer Fl\"u\ss{}igkeit durch ein Rohrwerk, lassen sich Gesetze formulieren nach denen sich die im Stromkreis messbaren Gr\"o\ss{}en verhalten.\\
 \\
 Zwei Grundannahmen die im idealisierten Stromkreis getroffen werden, aber keine Naturgesetze darstellen, sondern in erster Linie der einfacheren Darstellung des Sachverhaltes dienen, sind die Annahmen, dass innerhalb der Punkte einer Kante die Stromst\"arke konstant ist, sowie dass zwischen zwei Punkten auf Kanten, die \"uber Knoten verbunden sind die Spannung Null ist.\\
@@ -1048,8 +1046,7 @@ Ein elektrisches Bauteil hat eine bestimmte feste Anzahl von Anschlüssen oder P
 	Eine Charakteristik $\Phi$ eines elektrischen Bauteiles mit $N$ Anschl\"ussen ist eine Teilmenge des $2 * (N - 1)$-dimensionalen Raumes. Wobei die ersten $N - 1$ Komponenten Potentialwerte an den Anschl\"ussen repr\"asentieren und die restlichen Komponenten die entsprechenden Stromst\"arken.\footnote{Die Stromst\"arken sind bereits wegen der Knotenregel durch $N - 1$ Werte  festgelegt. Da Potentiale genauso wegen ihrer Eindeutigkeit bis auf eine additive Konstante.}
 \end{definition}
 \noindent
-Die Charakteristik eines Bauteiles kann direkt gemessen werden (zb.: mit einem Oszilloskop) oder typischerweise im vom Hersteller zur Verfüngung gestellten Datenblatt des elektrischen Bauteiles.\\
-Es folgen einige wichtige Beispiele.
+Die Charakteristik eines Bauteiles kann direkt gemessen werden (zb.: mit einem Oszilloskop) oder typischerweise im vom Hersteller zur Verfüngung gestellten Datenblatt des elektrischen Bauteiles.
 \\
 \\
 Eine \textbf{ideale elektrische Spannungsquelle} ist ein zwei poliges elektrisches Bauteil von dem unabh\"angig von der abgenommenen Stromstärke eine konstante Spanung abgenommen werden kann. Die Strom-Spannungs-Kennlinie einer 5V Spannungsquelle sieht zum Beispiel folgenderma\ss{}en aus.
@@ -1072,6 +1069,23 @@ Eine elektrische Gl\"uhbirne hat eine parabolische Charakteristik.
 	}
 \end{figure}
 \noindent
+Man bemerke hier, dass im Gegensatz zur Spannungsquelle, hier die Charakteristik durch den Ursprung $(0,0)$ geht. Es ist leicht zu sehen, dass Quellen diese Eigenschaft haben müssen um ihre Funktion zu erfüllen.\\
+\\
+\
+\subsection{Zusammenfassung}
+Gegeben sei ein elektrischer Stromkreis bestehend aus Knoten und elektrischen Bauteilen verbunden durch Kanten, welche elektrische Verbindungen beziehungsweise Leiter darstellen.\\
+Gesucht sei nun eine Potentialfunktion, die jeder Kante einen Potentialwert zuordnet, und somit jedem elektrischen Bauteil eindeutig die elektrische Spannung an jedem der Paare von Eing\"agen (Anschl\"usse).\\
+Die Charakteristiken der elektrischen Bauteile wiederum legen f\"ur jede Kante eindeutig die elektrische Stromstärke fest. \\
+\\
+Wir sehen also, dass wenn eine Potentialfunktion gegeben ist, bereits alle me\ss{}baren Gr\"o\ss{}en im Stromkreis, daher Spannungen und Stromstärken, eindeutig bestimmt sind.\footnote{Eindeutig nur falls die Charakteristiken eindeutige Zuordnungen sind.}
+Die Knotenregel erlaubt es uns mit Hilfe der Strom- st\"arken ein System von Gleichungen aufzustellen, mit deren Hilfe die Potentialfunktion bestimmt werden kann.
+\\
+\\
+Abschlie\ss{}end ist zu bedenken, dass wir eine Reihe von Idealisierungen in unserer Beschreibung getroffen haben. Ein wesentlicher Aspekt dabei ist, dass wir von einem statischen elektrischen Stromkreis ausgehen. Weder die Stromst\"arke noch die Spannung sind abh\"angig von der Zeit. In einem realen elektrischen Stromkreis, braucht die Spannung so wie der Strom eine gewisse Zeit bis er bei Anschlu\ss{} der Spannungsquelle von der einen Seite des Stromkreises zur anderen gewandert ist. Zus\"atzlich gibt es elektrische Bauteile, die bisher noch nicht erwähnt wurden, die eine interne Dynamik haben, daher zu einem Stromkreis mit zeitabhängigen Strom und Spannungswerten f\"uhren.
+Ein weiterer nicht unwesentlicher Aspekt ist der Einflu\ss{} der Umwelt auf den elektrischen Stromkreis. Hierzu geh\"oren die Temperatur, elektromagnetische Felder, Feuchtigkeit etc.
+Auf der anderen Seite werden einige von diesen Umwelteigenschaften, wie Temperatur und Elektromagnetismus von unserem Stromkreis beeinflu\ss{}t. Normalerweise wird versucht solche Einfl\"u\ss{}e so klein wie m\"oglich zu halten, aber of l\"asst es sich nicht vermeiden und darf nicht vergessen werden.
+\section{Lineare elektrische Netzwerke}
+Eine wichtige Erkenntnis in der Elektroni
 F\"ur kleine Spanungen und Stromstärke haben elektrische Leiter für gew\"onlich eine annähernd lineare Charakteristik.
 \begin{figure}[H]
 	\centering{
@@ -1090,8 +1104,6 @@ Innerhalb unserer Anschauung der Fl\"ussigkeit, die sich durch R\"ohren bewegt, 
 Das Formelsymbol f\"ur den elektrische Widerstand ist $R$ und die Ma\ss{}einheit ist das Ohm, abgek\"urzt $\Omega$. 
 \\
 \\
-Abschlie\ss{}end sei noch erw\"ahnt, dass wir hier einige Idealisierungen vorgenommen haben. Unter anderem, dass jeder elektrische Leiter eine drei dimensionale r\"aumliche Ausdehung hat und auch einen elektrischen Widerstand. Normalerweise k\"onnen wir diese Idealisierung annehmen, da die Metalle, meist Kupfer, die als elektrische Leiter verwendet werden, einen sehr kleinen Widerstand pro Meter haben. Bei gr\"o\ss{}eren und aufwendigeren Leiterschleifen darf dies aber nicht vergessen werden.
-
 
 
 

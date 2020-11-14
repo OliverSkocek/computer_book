@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.3)  13 NOV 2020 23:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.3)  14 NOV 2020 02:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1258,7 +1258,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 974--979
  []
 
 (./circuit.pdf_tex
-<circuit.pdf, id=533, page=1, 240.9pt x 180.675pt>
+<circuit.pdf, id=538, page=1, 240.9pt x 180.675pt>
 File: circuit.pdf Graphic file (type pdf)
 <use circuit.pdf, page 1>
 Package pdftex.def Info: circuit.pdf , page1 used on input line 56.
@@ -1266,7 +1266,7 @@ Package pdftex.def Info: circuit.pdf , page1 used on input line 56.
 Missing character: There is no â in font cmr10!
 Missing character: There is no „ in font cmr10!
 Missing character: There is no ¦ in font cmr10!
-<circuit.pdf, id=534, page=2, 240.9pt x 180.675pt>
+<circuit.pdf, id=539, page=2, 240.9pt x 180.675pt>
 File: circuit.pdf Graphic file (type pdf)
 <use circuit.pdf, page 2>
 Package pdftex.def Info: circuit.pdf , page2 used on input line 58.
@@ -1274,12 +1274,12 @@ Package pdftex.def Info: circuit.pdf , page2 used on input line 58.
 Missing character: There is no â in font cmr10!
 Missing character: There is no „ in font cmr10!
 Missing character: There is no ¦ in font cmr10!
-<circuit.pdf, id=535, page=3, 240.9pt x 180.675pt>
+<circuit.pdf, id=540, page=3, 240.9pt x 180.675pt>
 File: circuit.pdf Graphic file (type pdf)
 <use circuit.pdf, page 3>
 Package pdftex.def Info: circuit.pdf , page3 used on input line 60.
 (pdftex.def)             Requested size: 240.9pt x 180.68005pt.
-<circuit.pdf, id=536, page=4, 240.9pt x 180.675pt>
+<circuit.pdf, id=541, page=4, 240.9pt x 180.675pt>
 File: circuit.pdf Graphic file (type pdf)
 <use circuit.pdf, page 4>
 Package pdftex.def Info: circuit.pdf , page4 used on input line 62.
@@ -1290,48 +1290,38 @@ Missing character: There is no ¶ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no Ÿ in font cmr10!
 
-Overfull \hbox (5.36253pt too wide) in paragraph at lines 988--1004
+Overfull \hbox (5.36253pt too wide) in paragraph at lines 988--1002
 []\OT1/cmr/m/n/10.95 Es han-delt sich hier um einen elek-trischen Stromkreis in
  dem drei Bauteile,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 988--1004
+Underfull \hbox (badness 10000) in paragraph at lines 988--1002
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 988--1004
+Underfull \hbox (badness 10000) in paragraph at lines 988--1002
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 988--1004
+Underfull \hbox (badness 10000) in paragraph at lines 988--1002
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 988--1004
+Underfull \hbox (badness 10000) in paragraph at lines 988--1002
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 988--1004
+Underfull \hbox (badness 10000) in paragraph at lines 988--1002
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 988--1004
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 988--1004
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 988--1004
+Underfull \hbox (badness 10000) in paragraph at lines 988--1002
 
  []
 
@@ -1350,87 +1340,92 @@ pdfTeX warning: /usr/bin/pdflatex (file ./circuit.pdf): PDF inclusion: multiple
 pdfTeX warning: /usr/bin/pdflatex (file ./circuit.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-Overfull \hbox (7.49461pt too wide) in paragraph at lines 1005--1012
+Overfull \hbox (5.38637pt too wide) in paragraph at lines 1002--1002
+[]\OT1/cmr/bx/n/14.4 Die drei Grundge-setze elek-trischer Stromkreise 
+ []
+
+
+Overfull \hbox (7.49461pt too wide) in paragraph at lines 1003--1010
 \OT1/cmr/m/n/10.95 Entsprechend der bere-its vorgestell-ten An-schau-ung des Fl
 u^^Yes einer Fl^^?u^^Yigkeit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1005--1012
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1010
 
  []
 
 
-Overfull \hbox (1.83708pt too wide) in paragraph at lines 1005--1012
+Overfull \hbox (1.83708pt too wide) in paragraph at lines 1003--1010
 \OT1/cmr/m/n/10.95 keine Naturge-setze darstellen, son-dern in er-ster Linie de
 r ein-facheren Darstel-
  []
 
 
-Overfull \hbox (2.99294pt too wide) in paragraph at lines 1005--1012
+Overfull \hbox (2.99294pt too wide) in paragraph at lines 1003--1010
 \OT1/cmr/m/n/10.95 lung des Sachver-haltes di-enen, sind die An-nah-men, dass i
 n-ner-halb der Punkte
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1005--1012
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1010
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1005--1012
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1010
 
  []
 
 [34] (./flow.pdf_tex
-<flow.pdf, id=548, page=1, 75.28125pt x 90.3375pt>
+<flow.pdf, id=553, page=1, 75.28125pt x 90.3375pt>
 File: flow.pdf Graphic file (type pdf)
 <use flow.pdf, page 1>
 Package pdftex.def Info: flow.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<flow.pdf, id=549, page=2, 75.28125pt x 90.3375pt>
+<flow.pdf, id=554, page=2, 75.28125pt x 90.3375pt>
 File: flow.pdf Graphic file (type pdf)
 <use flow.pdf, page 2>
 Package pdftex.def Info: flow.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<flow.pdf, id=550, page=3, 75.28125pt x 90.3375pt>
+<flow.pdf, id=555, page=3, 75.28125pt x 90.3375pt>
 File: flow.pdf Graphic file (type pdf)
 <use flow.pdf, page 3>
 Package pdftex.def Info: flow.pdf , page3 used on input line 60.
 (pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<flow.pdf, id=551, page=4, 75.28125pt x 90.3375pt>
+<flow.pdf, id=556, page=4, 75.28125pt x 90.3375pt>
 File: flow.pdf Graphic file (type pdf)
 <use flow.pdf, page 4>
 Package pdftex.def Info: flow.pdf , page4 used on input line 62.
 (pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
 ) (./aufgabe.pdf_tex
-<aufgabe.pdf, id=552, page=1, 75.28125pt x 90.3375pt>
+<aufgabe.pdf, id=557, page=1, 75.28125pt x 90.3375pt>
 File: aufgabe.pdf Graphic file (type pdf)
 <use aufgabe.pdf, page 1>
 Package pdftex.def Info: aufgabe.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<aufgabe.pdf, id=553, page=2, 75.28125pt x 90.3375pt>
+<aufgabe.pdf, id=558, page=2, 75.28125pt x 90.3375pt>
 File: aufgabe.pdf Graphic file (type pdf)
 <use aufgabe.pdf, page 2>
 Package pdftex.def Info: aufgabe.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<aufgabe.pdf, id=554, page=3, 75.28125pt x 90.3375pt>
+<aufgabe.pdf, id=559, page=3, 75.28125pt x 90.3375pt>
 File: aufgabe.pdf Graphic file (type pdf)
 <use aufgabe.pdf, page 3>
 Package pdftex.def Info: aufgabe.pdf , page3 used on input line 60.
 (pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<aufgabe.pdf, id=555, page=4, 75.28125pt x 90.3375pt>
+<aufgabe.pdf, id=560, page=4, 75.28125pt x 90.3375pt>
 File: aufgabe.pdf Graphic file (type pdf)
 <use aufgabe.pdf, page 4>
 Package pdftex.def Info: aufgabe.pdf , page4 used on input line 62.
 (pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<aufgabe.pdf, id=556, page=5, 75.28125pt x 90.3375pt>
+<aufgabe.pdf, id=561, page=5, 75.28125pt x 90.3375pt>
 File: aufgabe.pdf Graphic file (type pdf)
 <use aufgabe.pdf, page 5>
 Package pdftex.def Info: aufgabe.pdf , page5 used on input line 64.
 (pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
 )
-Overfull \hbox (1.74823pt too wide) in paragraph at lines 1023--1031
+Overfull \hbox (1.74823pt too wide) in paragraph at lines 1021--1029
 []\OT1/cmr/bx/n/10.95 Ubungsbeispiel\OT1/cmr/m/n/10.95 : For-muliere das Kon-ti
 -nuit^^?atsgesetz f^^?ur die fol-gende Anord-
  []
@@ -1453,7 +1448,7 @@ Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 
-Overfull \hbox (10.36789pt too wide) in paragraph at lines 1036--1037
+Overfull \hbox (10.36789pt too wide) in paragraph at lines 1034--1035
 [][]\OT1/cmr/bx/n/10.95 Theorem 4.1. []\OT1/cmr/m/it/10.95 Gegeben sei ein elek
 -trischer Stromkreis, dann gilt die Maschen-
  []
@@ -1469,12 +1464,12 @@ Missing character: There is no ¶ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1047
+Underfull \hbox (badness 10000) in paragraph at lines 1040--1045
 
  []
 
 
-Overfull \hbox (2.4622pt too wide) in paragraph at lines 1042--1047
+Overfull \hbox (2.4622pt too wide) in paragraph at lines 1040--1045
 \OT1/cmr/bx/n/10.95 Spannungs-Kennlinie \OT1/cmr/m/n/10.95 oder all-ge-meiner \
 OT1/cmr/bx/n/10.95 Charak-ter-is-tik \OT1/cmr/m/n/10.95 kurz $^^H$ bes-timmt.
  []
@@ -1496,7 +1491,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./aufgabe.pdf): PDF inclusion: multiple
 pdfTeX warning: /usr/bin/pdflatex (file ./aufgabe.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-Overfull \hbox (27.16386pt too wide) in paragraph at lines 1048--1049
+Overfull \hbox (27.16386pt too wide) in paragraph at lines 1046--1047
 \OT1/cmr/m/it/10.95 repr^^?asentieren und die restlichen Kom-po-nen-ten die ent
 sprechen-den Stromst^^?arken.[][][] 
  []
@@ -1506,28 +1501,67 @@ Missing character: There is no ¼ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 (./ideal_spannung.pdf_tex
-<ideal_spannung.pdf, id=576, page=1, 433.62pt x 289.08pt>
+<ideal_spannung.pdf, id=581, page=1, 433.62pt x 289.08pt>
 File: ideal_spannung.pdf Graphic file (type pdf)
 <use ideal_spannung.pdf, page 1>
 Package pdftex.def Info: ideal_spannung.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 433.62pt x 289.09251pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1062
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1059
 
  []
 
 (./gluhbirne.pdf_tex
-<gluhbirne.pdf, id=577, page=1, 433.62pt x 289.08pt>
+<gluhbirne.pdf, id=582, page=1, 433.62pt x 289.08pt>
 File: gluhbirne.pdf Graphic file (type pdf)
 <use gluhbirne.pdf, page 1>
 Package pdftex.def Info: gluhbirne.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 433.62pt x 289.09251pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1063--1073
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1070
 
  []
 
 [37 <./ideal_spannung.pdf>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1075
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1075
+
+ []
+
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+
+Overfull \hbox (0.74214pt too wide) in paragraph at lines 1076--1087
+\OT1/cmr/m/n/10.95 Die Charak-ter-is-tiken der elek-trischen Bauteile wiederum 
+legen f^^?ur jede Kante
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1076--1087
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1076--1087
+
+ []
+
+[38 <./gluhbirne.pdf>]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -1535,7 +1569,7 @@ Missing character: There is no ¼ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
  (./widerstand.pdf_tex
-<widerstand.pdf, id=591, page=1, 433.62pt x 289.08pt>
+<widerstand.pdf, id=608, page=1, 433.62pt x 289.08pt>
 File: widerstand.pdf Graphic file (type pdf)
 <use widerstand.pdf, page 1>
 Package pdftex.def Info: widerstand.pdf , page1 used on input line 56.
@@ -1544,62 +1578,57 @@ Package pdftex.def Info: widerstand.pdf , page1 used on input line 56.
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1094
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1094
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1094
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1107
 
  []
 
 
-Overfull \hbox (3.87495pt too wide) in paragraph at lines 1083--1094
-\OT1/cmr/m/n/10.95 Abschlie^^Yend sei noch erw^^?ahnt, dass wir hier einige Ide
--al-isierun-gen vorgenom-
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1107
+
  []
 
-[38 <./gluhbirne.pdf> <./widerstand.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./widerstand.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
->] [39]
+[39 <./widerstand.pdf>] [40]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1125
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1137
 
  []
 
-[40
+[41
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1126--1135
+Underfull \hbox (badness 10000) in paragraph at lines 1138--1147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1126--1135
+Underfull \hbox (badness 10000) in paragraph at lines 1138--1147
 
  []
 
 
-Overfull \hbox (7.55417pt too wide) in paragraph at lines 1126--1135
+Overfull \hbox (7.55417pt too wide) in paragraph at lines 1138--1147
 \OT1/cmr/m/n/10.95 fehl ausspucken, oder im Fall einer IF Verzwei-gung einige B
 e-fehle ^^?uberspringen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1126--1135
+Underfull \hbox (badness 10000) in paragraph at lines 1138--1147
 
  []
 
-[41]
-Overfull \hbox (11.71478pt too wide) in paragraph at lines 1147--1148
+[42]
+Overfull \hbox (11.71478pt too wide) in paragraph at lines 1159--1160
  []\OT1/cmr/bx/n/10.95 LOAD + 4 bit Wort:[] $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/
 10.95 b[]; b[]; b[]\OT1/cmr/m/n/10.95 ) = (1\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/
 10.95 0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1)$ Schreibt das Wort $(\OML/cm
@@ -1607,64 +1636,55 @@ m/m/it/10.95 a[]; a[]; a[]; a[]\OT1/cmr/m/n/10.95 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1153
+Underfull \hbox (badness 10000) in paragraph at lines 1161--1165
 
  []
 
-[42] [43]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1156.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1156.
+[43] [44]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1168.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1168.
  (./book.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1156.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1156.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1168.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1168.
 
+Package rerunfilecheck Info: File `book.out' has not changed.
+(rerunfilecheck)             Checksum: C125F7E1667FB3B508BAAEED3AE97094;1942.
 
-
-Package rerunfilecheck Warning: File `book.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `book.out':
-(rerunfilecheck)             Before: 6683482F24F3B79B20899CF60A54D3B0;1898
-(rerunfilecheck)             After:  6D43DB1B0840C2B9C64DE4C9A1F2A89B;1804.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1156.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1168.
  ) 
 Here is how much of TeX's memory you used:
- 18191 strings out of 494923
- 333759 string characters out of 6180743
- 416329 words of memory out of 5000000
- 20862 multiletter control sequences out of 15000+600000
+ 18195 strings out of 494923
+ 333792 string characters out of 6180743
+ 416328 words of memory out of 5000000
+ 20863 multiletter control sequences out of 15000+600000
  15598 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,16n,54p,1320b,1821s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.4.1.2} has been referenced but does no
-t exist, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on book.pdf (44 pages, 386104 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on book.pdf (45 pages, 388948 bytes).
 PDF statistics:
- 786 PDF objects out of 1000 (max. 8388607)
- 691 compressed objects within 7 object streams
- 319 named destinations out of 1000 (max. 500000)
- 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 799 PDF objects out of 1000 (max. 8388607)
+ 702 compressed objects within 8 object streams
+ 322 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
