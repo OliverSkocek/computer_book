@@ -7,10 +7,10 @@
 \usepackage{float}
 \usepackage{amsfonts}
 \usepackage{hyperref}
+\usepackage{lmodern}
 %\usepackage{makeidx}
 %\usepackage{graphicx}
 %\graphicspath{{pics/}}
-\usepackage{listings}
 \usepackage{svg}
 \usepackage{amsmath}
 
@@ -976,15 +976,12 @@ Wer genauere Details \"uber die zugrundeliegende Physik wissen m\"ochte, soll im
 Ein elektrischer Stromkreis besteht aus Spannungsquelle, Leiter und Verbraucher, wie wir der Schule gelernt haben. Unser Ziel einen elektronischen Computer zu bauen, verlangt allerdings ein klein wenig detaillierteres Verst\"andnis.
 Ein idealisierter elektrischer \textbf{Stromkreis} ist ein Graph bestehend aus \textbf{Knoten} und \textbf{elektrischen Bauteilen}, die mit Kanten, welche elektrische Leiter darstellen, miteinander verbunden sind.\\
 Hier ein konkretes Beispiel.
-
 \begin{figure}[H]
-	\centering{
-		\resizebox{62mm}{!}{\input{circuit.pdf_tex}}
+	\begin{center}
+		\includegraphics[height=0.55\textwidth, width=0.55\textheight]{circuit.pdf}
 		\caption{Stromkreis.}
-		\label{fig:circuit}
-	}
+	\end{center}
 \end{figure}
-
 Es handelt sich hier um einen elektrischen Stromkreis in dem drei Bauteile, jeweils eine 5 Volt Spannungsquelle link, und zwei 100 $\Omega$ Widerst\"ande \"uber zwei Knoten (Punkte \"uber und unter dem mittleren Widerstand) verbunden sind.\\
 \\
 Innerhalb eines elektrischen Stromkreises k\"onnen zu jedem Zeitpunkt zwei fundamentale Gr\"o\ss{}en gemssen werden.\\
@@ -998,7 +995,13 @@ Das Formelsymbol f\"ur den elektrische Strom ist das $I$ und die Ma\ss{}einheit 
 \\
 Die \textbf{elektrische Spannung} ist im Gegensatz dazu eine Gr\"o\ss{}e, die zwischen zwei beliebigen Punkten auf den Leitern/Kanten gemessen werden kann. Sie stellt im Prinzip den Trieb des elektrischen Stromes zwischen den beiden Punkten dar. Innerhalb unseres Bildes der Fl\"ussigkeit, die durch Rohre flie\ss{}t, w\"are diese Gr\"o\ss{}e so etwas wie der Druckunterschied zwischen zwei Punkten. Entsprechend dieser Interpretation ist die elektrische Spannung eine gerichtete Größe in dem Sinn, dass es einen Unterschied macht um man vom Punkt $A$ zum Punkt $B$ misst oder umgekehrt vom Punkt $B$ zum Punkt $A$ misst. Die beiden Messwerte unterscheiden sich wie zu erwarten ist nur im Vorzeichen.\\
 \\
-Das Formelsymbol f\"ur die elektrische Spannung ist das $U$ und die Ma\ss{}einheit ist das Volt, abgek\"urzt $V$. 
+Das Formelsymbol f\"ur die elektrische Spannung ist das $U$ und die Ma\ss{}einheit ist das Volt, abgek\"urzt $V$.\\
+\\
+Jedem zweipoligen elektrischen Bauteil kann eine \textbf{elektrische Leistung} kurz $P$ \"uber die angelgte elektrische Spannung $U$ und die das Bauteil durchflie\ss{}ende elektrische Stromst\"arke $I$ zugeordnet werden.
+\begin{equation}
+	P = U * I
+\end{equation} 
+Die elektrische Leistung hat keine besondere Bedeutung f\"ur unsere Diskussion, sollte aber der Vollst\"andigkeit halber erw\"ahnt werden.
 \section{Die drei Grundgesetze elektrischer Stromkreise}
 Entsprechend der bereits vorgestellten Anschauung des Flu\ss{}es einer Fl\"u\ss{}igkeit durch ein Rohrwerk, lassen sich Gesetze formulieren nach denen sich die im Stromkreis messbaren Gr\"o\ss{}en verhalten.\\
 \\
@@ -1007,14 +1010,13 @@ Zwei Grundannahmen die im idealisierten Stromkreis getroffen werden, aber keine 
 Das \textbf{Kontinuit\"atsgesetz}/\textbf{Knotenregel} besagt, dass die Summe der in einen Knoten oder ein elektrisches Bauteil flie\ss{}enden Str\"ome gleich der Summe der abflie\ss{}enden Str\"ome ist.\\
 \\
 \textbf{Beispiel}: Nehmen wir einen Knoten mit zwei zuflie\ss{}enden Kanten und einer wegflie\ss{}enden Kante.
- 
 \begin{figure}[H]
-	\centering{
-		\resizebox{40mm}{!}{\input{flow.pdf_tex}}
+	\begin{center}
+		\includegraphics[height=0.25\textwidth, width=0.25\textheight]{flow.pdf}
 		\caption{Str\"ome.}
-		\label{fig:circuit}
-	}
+	\end{center}
 \end{figure}
+\noindent
 Der Flu\ss{} bezieht sich hier auf die vor der Messung vorgenommene Konvention der Flu\ss{}richtung jeder Kante. Ein positiver Strom bedeutet Flu\ss{} entlang der Richtung, w\"ahrend ein negativer Strom der Richtung entgegengesetzt ist. In diesem Fall besagt das Kontinuit\"atssatz:
 \begin{equation}
 i1 + i2 = i3
@@ -1022,7 +1024,7 @@ i1 + i2 = i3
 \textbf{\"Ubungsbeispiel}: Formuliere das Kontinuit\"atsgesetz f\"ur die folgende Anordnung:
 \begin{figure}[H]
 	\centering{
-		\resizebox{40mm}{!}{\input{aufgabe.pdf_tex}}
+		\includegraphics[height=0.40\textwidth, width=0.25\textheight]{aufgabe.pdf}
 		\caption{Aufgabe.}
 		\label{fig:circuit}
 	}
@@ -1031,19 +1033,18 @@ i1 + i2 = i3
 Die Spannungen in einem elektrischen Stromkreis gehorchen ebenso einem Gesetz, dass die Struktur des Stromnetzes mit den Messwerten verbindet. Man wähle zwei Kanten in einem elektrischen Stromkreis und einen Pfad zwischen den beiden Kanten. Wenn man an der ersten Kante startet und den Pfad durchwandert und dabei die Spannungen zwischen aufeinanderfolgenden Kanten misst, dann ergibt die Summe der Spannungen sobald man bei der letzten Kante ankommt dieselbe Spannung die man zwischen der ersten und letzten Kante misst. Insbesondere bedeutet dies, dass für jeden geschlossenen Pfad die Summe dieser Spannungen Null sein muss.
 Diese Regel nennt man die \textbf{Maschenregel}, wobei Maschen sich auf jene geschlossenen Pfade im Stromkreis bezieht.
 \begin{theorem}
-	Gegeben sei ein elektrischer Stromkreis, dann gilt die Maschenregel genau dann wenn es eine Funktion $\phi$ gibt, die jeder Kante einen Zahlenwert zuordnet, sodass die gemessene Spannung zwischen der Kante $x$ zur Kante $y$ genau die Differenz $\phi(y)-\phi(x)$ ist.
+	Gegeben sei ein elektrischer Stromkreis, dann gilt die Maschenregel genau dann wenn es eine Funktion $\psi$ gibt, die jeder Kante einen Zahlenwert zuordnet, sodass die gemessene Spannung zwischen der Kante $x$ zur Kante $y$ genau die Differenz $\psi(y)-\psi(x)$ ist.
 \end{theorem}
 \noindent
+Eine solche Funktion $\psi$ der Kanten nennen wir eine \textbf{Potentialfunktion} und wir werden anstelle der Maschenregel immer von der Existenz einer Potentialfunktion ausgehen, da dies eine einfachere Analyse des elektrische Stromkreises erlaubt.
 \begin{corollary}
-	Eine Potentialfunktion eines Stromkreises $X$ ist bis auf eine additive Konstante eindeutig festgelegt, daher falls $\phi$ eine Potentialfunktion von $X$ ist und $c$ ein reele Zahl, dann ist $\phi + c$ auch eine Potentialfunktion von $X$.
+	Eine Potentialfunktion eines Stromkreises $X$ ist bis auf eine additive Konstante eindeutig festgelegt, daher falls $\psi$ eine Potentialfunktion von $X$ ist und $c$ ein reele Zahl, dann ist $\psi + c$ auch eine Potentialfunktion von $X$.
 \end{corollary}
 \noindent
-Eine solche Funktion $\phi$ der Kanten nennen wir eine Potentialfunktion und wir werden anstelle der Maschenregel immer von der Existenz einer Potentialfunktion ausgehen, da dies eine einfachere Analyse des elektrische Stromkreises erlaubt.\\
-\\
 Bisher haben wir den Einflu\ss{} der Struktur des Stromkreises, also des Netzwerkes an Verbindungen, behandelt. Der Einflu\ss{} der elektrischen Bauteile selbst auf Spannungen und Stromstärken wurde bislang ausgelassen.\\
 Ein elektrisches Bauteil hat eine bestimmte feste Anzahl von Anschlüssen oder Pole an welche elektrische Leiter/Kanten befestigt/geklemmt werden können. Das Verhalten eines elektrischen Bauteiles wird durch die \textbf{Strom-Spannungs-Kennlinie} oder allgemeiner \textbf{Charakteristik} kurz $\Phi$ bestimmt. Sie legt fest welche Ströme zwischen den Anschlüssen bei gegebenen Spannungen an den Anschl\"ussen erlaubt sind. Die allgemeinste abstrakte Definition des Konzeptes ist:
 \begin{definition}
-	Eine Charakteristik $\Phi$ eines elektrischen Bauteiles mit $N$ Anschl\"ussen ist eine Teilmenge des $2 * (N - 1)$-dimensionalen Raumes. Wobei die ersten $N - 1$ Komponenten Potentialwerte an den Anschl\"ussen repr\"asentieren und die restlichen Komponenten die entsprechenden Stromst\"arken.\footnote{Die Stromst\"arken sind bereits wegen der Knotenregel durch $N - 1$ Werte  festgelegt. Da Potentiale genauso wegen ihrer Eindeutigkeit bis auf eine additive Konstante.}
+	Eine Charakteristik $\Phi$ eines elektrischen Bauteiles mit $N$ Anschl\"ussen ist eine Teilmenge des $2 * (N - 1)$-dimensionalen Raumes. Wobei die ersten $N - 1$ Komponenten Potentialwerte an den Anschl\"ussen repr\"asentieren und die restlichen Komponenten die entsprechenden Strom- st\"arken.\footnote{Die Stromst\"arken sind bereits wegen der Knotenregel durch $N - 1$ Werte  festgelegt. Da Potentiale genauso wegen ihrer Eindeutigkeit bis auf eine additive Konstante.}
 \end{definition}
 \noindent
 Die Charakteristik eines Bauteiles kann direkt gemessen werden (zb.: mit einem Oszilloskop) oder typischerweise im vom Hersteller zur Verfüngung gestellten Datenblatt des elektrischen Bauteiles.
@@ -1069,24 +1070,74 @@ Eine elektrische Gl\"uhbirne hat eine parabolische Charakteristik.
 	}
 \end{figure}
 \noindent
-Man bemerke hier, dass im Gegensatz zur Spannungsquelle, hier die Charakteristik durch den Ursprung $(0,0)$ geht. Es ist leicht zu sehen, dass Quellen diese Eigenschaft haben müssen um ihre Funktion zu erfüllen.\\
-\\
-\
+Man bemerke hier, dass im Gegensatz zur Spannungsquelle, hier die Charakteristik durch den Ursprung $(0,0)$ geht. Es ist leicht zu sehen, dass Quellen diese Eigenschaft haben müssen um ihre Funktion zu erfüllen.
 \subsection{Zusammenfassung}
-Gegeben sei ein elektrischer Stromkreis bestehend aus Knoten und elektrischen Bauteilen verbunden durch Kanten, welche elektrische Verbindungen beziehungsweise Leiter darstellen.\\
-Gesucht sei nun eine Potentialfunktion, die jeder Kante einen Potentialwert zuordnet, und somit jedem elektrischen Bauteil eindeutig die elektrische Spannung an jedem der Paare von Eing\"agen (Anschl\"usse).\\
-Die Charakteristiken der elektrischen Bauteile wiederum legen f\"ur jede Kante eindeutig die elektrische Stromstärke fest. \\
+Gegeben sei ein elektrischer Stromkreis bestehend aus Knoten und elektrischen Bauteilen verbunden durch Kanten, welche elektrische Verbindungen beziehungsweise Leiter darstellen.
 \\
-Wir sehen also, dass wenn eine Potentialfunktion gegeben ist, bereits alle me\ss{}baren Gr\"o\ss{}en im Stromkreis, daher Spannungen und Stromstärken, eindeutig bestimmt sind.\footnote{Eindeutig nur falls die Charakteristiken eindeutige Zuordnungen sind.}
-Die Knotenregel erlaubt es uns mit Hilfe der Strom- st\"arken ein System von Gleichungen aufzustellen, mit deren Hilfe die Potentialfunktion bestimmt werden kann.
+\\
+Hier ein Beispiel eines abstrakten elektrischen Stromkreises. 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[height=0.33\textwidth, width=0.33\textheight]{_abstract.pdf}
+	\end{center}
+\end{figure}
+\noindent
+Die K\"astchen symbolisieren die elektrischen Bauteile, mitsamt ihrer Charakteristik $\Phi$. Die Kanten wurden zur besseren Lesbarkeit rot angefärbt. In der Mitte gibt es oben und unten zwei Knoten, wieder symbolisiert durch einen dicken schwarzen Punkt.\\
+Gesucht ist nun eine Potentialfunktion $\psi$, die jeder Kante einen Potentialwert zuordnet, und somit jedem elektrischen Bauteil eindeutig die elektrische Spannung an jedem der Paare von Eing\"agen.\\
+Kanten, welche direkt \"uber Knoten verbunden sind, haben den selben Potentialwert, da wir ja festgelegt haben, dass zwischen darauf liegenden Punkten die Spannung Null ist.\\
+Somit haben wir sechs Bereiche an denen die Potentialfunktion konstanten Wert hat; im Bild angezeigt durch $\{\psi_1, \psi_2, \psi_3, \psi_4, \psi_5, \psi_6\}$. 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[height=0.33\textwidth, width=0.33\textheight]{potent.pdf}
+	\end{center}
+\end{figure}
+\noindent
+Hier wird gezeigt wie die Spannung $U$ von einem Punkt bei $\psi_3$ zu einem Punkt an $\psi_5$ gemessen und mit Hilfe der Potentialfunktion berechnet werden kann\\
+\\
+Als n\"achstes betrachten wir die elektrischen Stromst\"arken die innerhalb des Stromkreises auftreten und die Flu\ss{}richtungen: 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[height=0.33\textwidth, width=0.33\textheight]{laminar.pdf}
+	\end{center}
+\end{figure}
+\noindent
+Die Charakteristiken der elektrischen Bauteile wiederum legen f\"ur jede Kante eindeutig die elektrische Stromst\"arke fest. \\
+\begin{align} 
+\begin{split}
+j_2 = \Phi_1(\psi_2 - \psi_1)\\
+j_4 = \Phi_2(\psi_3 - \psi_2)\\
+j_1 = \Phi_3(\psi_1 - \psi_6)\\
+j_{10} = \Phi_4(\psi_5 - \psi_2)\\
+j_5 = \Phi_5(\psi_4 - \psi_3)\\
+j_8 = \Phi_6(\psi_6 - \psi_5)\\
+j_6 = \Phi_7(\psi_5 - \psi_4)
+\end{split}
+\end{align}
+Wir sehen, dass viele der Stromst\"arken bereits direkt \"uber die Potentialfunktion und die Charakteristiken gegeben sind. \\
+Die Knotenregel erlaubt es uns den Rest der Str\"ome zu bestimmen. Wir k\"onnen diese direkt aus dem Bild ablesen. Beachte die jeweilige Flu\ss{}richtung.
+\begin{align} 
+\begin{split}
+j_1 = j_2\\
+j_2 = j_3 + j_9\\
+j_3 = j_4\\
+j_4 = j_5\\
+j_5 = j_6\\
+j_9 = j_{10}\\
+j_7 = j_8\\
+j_8 = j_1\\
+j_{10} + j_6 = j_7
+\end{split}
+\end{align}
+Wir sehen also, dass wenn eine Potentialfunktion gegeben ist, bereits alle me\ss{}baren Gr\"o\ss{}en im Stromkreis, daher Spannungen und Stromst\"arken, eindeutig bestimmt sind.\footnote{Eindeutig nur falls die Charakteristiken eindeutige Zuordnungen sind.}\\
+\\
+Kombinieren wir, die aus der Knotenregel abgeleitet Gleichungen (4.4), und die Gleichungen (4.3), die aus den Charakteristiken  bestimmt wurden, so erhalten wir ein Gleichungssystem dessen Variablen die m\"glichen Werte der Potentialfunktion des Stromkreises darstellen. Dies erm\"oglicht es uns die zu einem Stromkreis geh\"orende unbekannte Potentialfunktion zu bestimmen. Wir werden das im Detail im n\"achsten Kapitel f\"ur lineare Stromkreise zeigen.
 \\
 \\
 Abschlie\ss{}end ist zu bedenken, dass wir eine Reihe von Idealisierungen in unserer Beschreibung getroffen haben. Ein wesentlicher Aspekt dabei ist, dass wir von einem statischen elektrischen Stromkreis ausgehen. Weder die Stromst\"arke noch die Spannung sind abh\"angig von der Zeit. In einem realen elektrischen Stromkreis, braucht die Spannung so wie der Strom eine gewisse Zeit bis er bei Anschlu\ss{} der Spannungsquelle von der einen Seite des Stromkreises zur anderen gewandert ist. Zus\"atzlich gibt es elektrische Bauteile, die bisher noch nicht erwähnt wurden, die eine interne Dynamik haben, daher zu einem Stromkreis mit zeitabhängigen Strom und Spannungswerten f\"uhren.
 Ein weiterer nicht unwesentlicher Aspekt ist der Einflu\ss{} der Umwelt auf den elektrischen Stromkreis. Hierzu geh\"oren die Temperatur, elektromagnetische Felder, Feuchtigkeit etc.
-Auf der anderen Seite werden einige von diesen Umwelteigenschaften, wie Temperatur und Elektromagnetismus von unserem Stromkreis beeinflu\ss{}t. Normalerweise wird versucht solche Einfl\"u\ss{}e so klein wie m\"oglich zu halten, aber of l\"asst es sich nicht vermeiden und darf nicht vergessen werden.
+Auf der anderen Seite werden einige von diesen Umwelteigenschaften, wie Temperatur und Elektromagnetismus von unserem Stromkreis beeinflu\ss{}t. Normalerweise wird versucht solche Einfl\"u\ss{}e so klein wie m\"oglich zu halten, aber oft l\"asst es sich nicht vermeiden und darf nicht vergessen werden.
 \section{Lineare elektrische Netzwerke}
-Eine wichtige Erkenntnis in der Elektroni
-F\"ur kleine Spanungen und Stromstärke haben elektrische Leiter für gew\"onlich eine annähernd lineare Charakteristik.
+Eine wichtige Erkenntnis in der Elektronik ist das Ohm'sche Gesetz, welches besagt, dass bei kleinen Stromst\"arken und Spannungen die Charakteristiken von vielen Materialen ann\"ahernd linear sind.
 \begin{figure}[H]
 	\centering{
 		\resizebox{65mm}{!}{\input{widerstand.pdf_tex}}
@@ -1095,37 +1146,29 @@ F\"ur kleine Spanungen und Stromstärke haben elektrische Leiter für gew\"onlic
 	}
 \end{figure}
 \noindent
-Elektrischen Bauteilen mit linearer Charakteristik werden normalerweise über die Steigung der Strom/Spannungs Kurve, ihrem \textbf{elektrischen Leitwert}, beziehungsweise die Steigung der Spannungs/Strom Kurve, ihrem \textbf{elektrischem Widerstand} charakterisiert.
-\\
-\\
-Sie stellt einen quantitativen Zusammenhang zwischen Strom und Spannung her und kann als Widerstand des Bauteiles gegen die Verursachung von elektrischem Strom durch eine gegebene elektrische Spannung angesehen werden.\\
-Innerhalb unserer Anschauung der Fl\"ussigkeit, die sich durch R\"ohren bewegt, w\"are dies so etwas wie ein Gewebe oder ein por\"oses Material, durch die die Fl\"u\ss{}igkeit mit Druck gepresst werden muss.\\
-\\
-Das Formelsymbol f\"ur den elektrische Widerstand ist $R$ und die Ma\ss{}einheit ist das Ohm, abgek\"urzt $\Omega$. 
-\\
-\\
-
-
-
-Die Beziehung zwischen dem durch ein Bauteil flie\ss{}enden elektrischen Strom und der an das Bauteil angelegten elektrischen Spannung wird als \textbf{Ohm'sches Gesetz} bezeichnet. Die einfache Formel:
+Ein elektrisches Bauteil mit linearer Charakteristik wird nach dem Ohm'schen Gesetz
+\begin{equation}
+I = \Phi(U) = G * U
+\end{equation}
+Wobei $G$, also die Steigung der Strom/Spannungskurve,  \textbf{elektrische Leitf\"ahigkeit} genannt wird.\\
+Alternativ wird das Ohm'sche Gesetz oft ausgedr\"uckt \"uber die Spannungs/Strom Kurve als
 \begin{equation}
 U = I * R
 \end{equation}
-erlaubt es in diesem einfachen Fall, der zum Beispiel in Abbildung 4.1 erf\"ullt ist, den Strom an jedem Punkt des elektrischen Stromkreises zu berechnen.
+\noindent
+Der Wert $R$, also die Steigung der Spannungs/Strom Kurve, ist bekannt als elektrischer Widerstand und wird gemessen in Ohm kurz $\Omega$.
+Es gilt nat\"urlich der Zusammenhang
 \begin{equation}
-I = \frac{U}{R} =\frac{5V}{1000 \Omega} = 0.005 A
+G = \frac{1}{R}
 \end{equation}
+zwischen Widerstand und Leitf\"ahigkeit.
+\\
+\\
+Sie stellt einen quantitativen Zusammenhang zwischen Strom und Spannung her und kann wie der Name schn sagt als Widerstand des Bauteiles gegen die Verursachung von elektrischem Strom durch eine gegebene elektrische Spannung angesehen werden.\\
+Innerhalb unserer Anschauung der Fl\"ussigkeit, die sich durch R\"ohren bewegt, w\"are dies so etwas wie ein Gewebe oder ein por\"oses Material, durch die die Fl\"u\ss{}igkeit mit Druck gepresst werden muss.\\
+\\
 
 
-
-
-
-Abschlie\ss{}end stellen wir mit logischen Gattern eine direkte Realisierung von 
-aussagenlogischen Formeln dar
-
-\section{title}
-
-Ein Computer kann im Prinzip auch au
 \chapter{Ein m\"oglichst einfacher Digitalrechner}
 Ein Digitalrechner hat zwei Buchstaben, n\"amlich die Null und die Eins, aber zus\"atzlich hat jeder eine meistens fixe Wortgr\"o\ss{}e, die in der Anzahl der Stellen , der Bits beziehungsweise Buchstaben, also der Nullen und der Einsen, welche die Maschine als ein Wort betrachtet, gemessen wird. Dieses Wort ist das eigentliche Elementare Objekt der Rechenmaschine, jede Operation wird nicht auf einem einzelnen Bit, also auf einer Stelle des Wortes, sondern immer auf dem gesamten Wort ausgef\"uhrt. Genauso holen wir wenn wir den Inhalt einer Speicheraddresse zum Rechenkern holen immer ein ganzes Wort, dass dort steht und nicht einen einzelnen Bit.
 Ein Wort kann dabei f\"ur einen Buchstaben stehen, f\"ur eine Zahl oder die Addresse eines anderen Wortes. 

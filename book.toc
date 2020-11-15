@@ -56,23 +56,22 @@
 \contentsline {paragraph}{\"Ubungsbeispiel 32:}{32}{section*.42}
 \contentsline {chapter}{\numberline {4}Elektronik}{33}{chapter.4}
 \contentsline {section}{\numberline {4.1}Der elektrische Stromkreis}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Die drei Grundgesetze elektrischer Stromkreise}{34}{section.4.2}
+\contentsline {section}{\numberline {4.2}Die drei Grundgesetze elektrischer Stromkreise}{35}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Zusammenfassung}{38}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Lineare elektrische Netzwerke}{39}{section.4.3}
-\contentsline {section}{\numberline {4.4}title}{40}{section.4.4}
-\contentsline {chapter}{\numberline {5}Ein m\"oglichst einfacher Digitalrechner}{41}{chapter.5}
-\contentsline {section}{\numberline {5.1}Eine minimale Arithmetisch logische Einheit}{41}{section.5.1}
-\contentsline {paragraph}{NAND: }{41}{section*.43}
-\contentsline {paragraph}{LSHIFT:}{42}{section*.44}
-\contentsline {subsection}{\numberline {5.1.1}Die physische Realisierung}{43}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Der Hauptspeicher und Registerkarte}{43}{section.5.2}
-\contentsline {section}{\numberline {5.3}Die Sprache unserer Rechenmaschine}{43}{section.5.3}
-\contentsline {paragraph}{HALT:}{43}{section*.45}
-\contentsline {paragraph}{NAND + 3 bit Addresse:}{43}{section*.46}
-\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{43}{section*.47}
-\contentsline {paragraph}{POP + 4 bit Addresse:}{43}{section*.48}
-\contentsline {paragraph}{PUSH + 4 bit Addresse:}{43}{section*.49}
-\contentsline {paragraph}{LOAD + 4 bit Wort:}{43}{section*.50}
-\contentsline {paragraph}{IF:}{43}{section*.51}
-\contentsline {paragraph}{RESET IF:}{44}{section*.52}
-\contentsline {section}{\numberline {5.4}Die Kontrolleinheit}{44}{section.5.4}
+\contentsline {section}{\numberline {4.3}Lineare elektrische Netzwerke}{41}{section.4.3}
+\contentsline {chapter}{\numberline {5}Ein m\"oglichst einfacher Digitalrechner}{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}Eine minimale Arithmetisch logische Einheit}{43}{section.5.1}
+\contentsline {paragraph}{NAND: }{43}{section*.43}
+\contentsline {paragraph}{LSHIFT:}{44}{section*.44}
+\contentsline {subsection}{\numberline {5.1.1}Die physische Realisierung}{45}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Der Hauptspeicher und Registerkarte}{45}{section.5.2}
+\contentsline {section}{\numberline {5.3}Die Sprache unserer Rechenmaschine}{45}{section.5.3}
+\contentsline {paragraph}{HALT:}{45}{section*.45}
+\contentsline {paragraph}{NAND + 3 bit Addresse:}{45}{section*.46}
+\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{45}{section*.47}
+\contentsline {paragraph}{POP + 4 bit Addresse:}{45}{section*.48}
+\contentsline {paragraph}{PUSH + 4 bit Addresse:}{45}{section*.49}
+\contentsline {paragraph}{LOAD + 4 bit Wort:}{45}{section*.50}
+\contentsline {paragraph}{IF:}{45}{section*.51}
+\contentsline {paragraph}{RESET IF:}{46}{section*.52}
+\contentsline {section}{\numberline {5.4}Die Kontrolleinheit}{46}{section.5.4}

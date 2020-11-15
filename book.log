@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.3)  14 NOV 2020 02:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.3)  15 NOV 2020 23:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -529,31 +529,41 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count130
-\lst@gtempboxa=\box41
-\lst@token=\toks40
-\lst@length=\count131
-\lst@currlwidth=\dimen164
-\lst@column=\count132
-\lst@pos=\count133
-\lst@lostspace=\dimen165
-\lst@width=\dimen166
-\lst@newlines=\count134
-\lst@lineno=\count135
-\lst@maxwidth=\dimen167
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count136
-\lst@skipnumbers=\count137
-\lst@framebox=\box42
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2015/06/04 1.6 listings configuration
-))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
-
 (/usr/share/texlive/texmf-dist/tex/latex/svg/svg.sty
 Package: svg 2017/11/29 v2.01 (include SVG pictures)
 
@@ -568,22 +578,41 @@ Package: scrlfile 2017/09/07 v3.24 KOMA-Script package (loading files)
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 69.
 )
-\c@svg@param@lastpage=\count138
-\c@svg@param@currpage=\count139
+\c@svg@param@lastpage=\count130
+\c@svg@param@currpage=\count131
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/transparent.sty
 Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
 
 )
-\c@theorem=\count140
-\c@proposition=\count141
+\c@theorem=\count132
+\c@proposition=\count133
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count134
+\lst@gtempboxa=\box41
+\lst@token=\toks40
+\lst@length=\count135
+\lst@currlwidth=\dimen164
+\lst@column=\count136
+\lst@pos=\count137
+\lst@lostspace=\dimen165
+\lst@width=\dimen166
+\lst@newlines=\count138
+\lst@lineno=\count139
+\lst@maxwidth=\dimen167
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count140
+\lst@skipnumbers=\count141
+\lst@framebox=\box42
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
  (./book.aux
-
-LaTeX Warning: Label `fig:circuit' multiply defined.
-
-
-LaTeX Warning: Label `fig:circuit' multiply defined.
-
 
 LaTeX Warning: Label `fig:circuit' multiply defined.
 
@@ -610,7 +639,11 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
- ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 58.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count142
@@ -664,8 +697,29 @@ LaTeX Info: Redefining \nameref on input line 58.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./book.toc
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 5.
+ (/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 5.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 5.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 5.
 LaTeX Font Info:    Try loading font information for U+msa on input line 5.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 5.
@@ -708,8 +762,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--124
  []
 
 
-Overfull \hbox (4.3007pt too wide) in paragraph at lines 112--124
-\OT1/cmr/m/n/10.95 Verzweigungsanweisungen repr^^?asentieren und aus Regeln, di
+Overfull \hbox (4.29926pt too wide) in paragraph at lines 112--124
+\OT1/lmr/m/n/10.95 Verzweigungsanweisungen repr^^?asentieren und aus Regeln, di
 e fes-tle-gen welche
  []
 
@@ -721,8 +775,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--124
 [3
 
 ] [4]
-Overfull \hbox (14.18623pt too wide) in paragraph at lines 126--129
-\OT1/cmr/m/n/10.95 Eine der ein-fach-sten und am le-icht-esten verst^^?andliche
+Overfull \hbox (14.18488pt too wide) in paragraph at lines 126--129
+\OT1/lmr/m/n/10.95 Eine der ein-fach-sten und am le-icht-esten verst^^?andliche
 n Arten von Programmier-
  []
 
@@ -732,8 +786,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--129
  []
 
 
-Overfull \hbox (16.75647pt too wide) in paragraph at lines 126--129
-\OT1/cmr/m/n/10.95 Es folgt eine Beschrei-bung einer sehr ein-fachen Form einer
+Overfull \hbox (16.7543pt too wide) in paragraph at lines 126--129
+\OT1/lmr/m/n/10.95 Es folgt eine Beschrei-bung einer sehr ein-fachen Form einer
  GOTO-Programmier-
  []
 
@@ -743,20 +797,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
  []
 
 
-Overfull \hbox (0.9234pt too wide) in paragraph at lines 131--132
-[][]\OT1/cmr/bx/n/10.95 Definition 1.1. []\OT1/cmr/m/it/10.95 Ein GOTO-Programm
+Overfull \hbox (0.9675pt too wide) in paragraph at lines 131--132
+[][]\OT1/lmr/bx/n/10.95 Definition 1.1. []\OT1/lmr/m/it/10.95 Ein GOTO-Programm
  ist durch fol-gen-des Schema definiert: 
  []
 
-[5] [6]
-Overfull \hbox (3.96516pt too wide) in paragraph at lines 184--185
- []\OT1/cmr/bx/n/10.95 Nachfolger und Gle-ich-heit[] \OT1/cmr/m/n/10.95 Die Vor
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 134.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 134.
+[5]
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 140
+.
+ (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [6]
+Overfull \hbox (3.96661pt too wide) in paragraph at lines 184--185
+ []\OT1/lmr/bx/n/10.95 Nachfolger und Gle-ich-heit[] \OT1/lmr/m/n/10.95 Die Vor
 g^^?angeroperation l^^?asst sich auch durch
  []
 
 
-Overfull \hbox (13.69955pt too wide) in paragraph at lines 188--191
-\OT1/cmr/m/n/10.95 Pro-gram-mier-sprachen sind unter an-derem auch WHILE-Progra
+Overfull \hbox (13.69652pt too wide) in paragraph at lines 188--191
+\OT1/lmr/m/n/10.95 Pro-gram-mier-sprachen sind unter an-derem auch WHILE-Progra
 mmiersprachen. 
  []
 
@@ -766,76 +829,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--191
  []
 
 [7]
-Overfull \hbox (2.06401pt too wide) in paragraph at lines 192--193
-[][]\OT1/cmr/bx/n/10.95 Definition 1.2. []\OT1/cmr/m/it/10.95 Ein WHILE-Program
+Overfull \hbox (2.10773pt too wide) in paragraph at lines 192--193
+[][]\OT1/lmr/bx/n/10.95 Definition 1.2. []\OT1/lmr/m/it/10.95 Ein WHILE-Program
 m ist durch fol-gen-des Schema definiert
  []
 
 
-Overfull \hbox (24.07036pt too wide) in paragraph at lines 192--193
-\OT1/cmr/m/it/10.95 ein-fach wo auch im-mer GOTO-Programm geschrieben steht, WH
+Overfull \hbox (24.07355pt too wide) in paragraph at lines 192--193
+\OT1/lmr/m/it/10.95 ein-fach wo auch im-mer GOTO-Programm geschrieben steht, WH
 ILE-Programm): 
  []
 
 
-Overfull \hbox (5.70508pt too wide) in paragraph at lines 208--209
-\OT1/cmr/m/it/10.95 Wir se-hen hier, wie bere-its f^^?ur GOTO-Programme gemacht
+Overfull \hbox (5.70789pt too wide) in paragraph at lines 208--209
+\OT1/lmr/m/it/10.95 Wir se-hen hier, wie bere-its f^^?ur GOTO-Programme gemacht
  ein WHILE-
  []
 
 
-Overfull \hbox (22.37068pt too wide) in paragraph at lines 212--213
- [][]\OT1/cmr/bx/n/10.95 Ubungsbeispiel 5:[] \OT1/cmr/m/n/10.95 Mach []Ubungsbe
+Overfull \hbox (22.37007pt too wide) in paragraph at lines 212--213
+ [][]\OT1/lmr/bx/n/10.95 Ubungsbeispiel 5:[] \OT1/lmr/m/n/10.95 Mach []Ubungsbe
 ispiel 1, 2 und 3 mit WHILE-Programmen,
  []
 
 
-Overfull \hbox (2.4758pt too wide) in paragraph at lines 214--215
-\OT1/cmr/m/n/10.95 sichtlichem Grund die GOTO-Programmiersprache, sowie jede Pr
+Overfull \hbox (2.47252pt too wide) in paragraph at lines 214--215
+\OT1/lmr/m/n/10.95 sichtlichem Grund die GOTO-Programmiersprache, sowie jede Pr
 ogrammier-
  []
 
 
-Overfull \hbox (9.48691pt too wide) in paragraph at lines 214--215
-\OT1/cmr/m/n/10.95 sprache, die jede Berech-nung ausf^^?uhren kann, die von ein
+Overfull \hbox (10.09264pt too wide) in paragraph at lines 214--215
+\OT1/lmr/m/n/10.95 sprache, die jede Berech-nung ausf^^?uhren kann, die von ein
 em GOTO-Programm
  []
 
 [8]
-Overfull \hbox (35.61485pt too wide) in paragraph at lines 215--216
-\OT1/cmr/m/n/10.95 k^^?onnen sie mit WHILE-Programmen sowie GOTO-Programmen ber
+Overfull \hbox (35.61235pt too wide) in paragraph at lines 215--216
+\OT1/lmr/m/n/10.95 k^^?onnen sie mit WHILE-Programmen sowie GOTO-Programmen ber
 e-its ausdr^^?ucken,
  []
 
 
-Overfull \hbox (20.84589pt too wide) in paragraph at lines 217--218
-[][]\OT1/cmr/bx/n/10.95 Definition 1.3. []\OT1/cmr/m/it/10.95 Sei $\OML/cmm/m/i
-t/10.95 Z$ \OT1/cmr/m/it/10.95 eine Vari-able, $\OML/cmm/m/it/10.95 P$ \OT1/cmr
-/m/it/10.95 und $\OML/cmm/m/it/10.95 Q$ \OT1/cmr/m/it/10.95 sind GOTO/WHILE-Pro
+Overfull \hbox (20.89027pt too wide) in paragraph at lines 217--218
+[][]\OT1/lmr/bx/n/10.95 Definition 1.3. []\OT1/lmr/m/it/10.95 Sei $\OML/lmm/m/i
+t/10.95 Z$ \OT1/lmr/m/it/10.95 eine Vari-able, $\OML/lmm/m/it/10.95 P$ \OT1/lmr
+/m/it/10.95 und $\OML/lmm/m/it/10.95 Q$ \OT1/lmr/m/it/10.95 sind GOTO/WHILE-Pro
 gramme,
  []
 
 
-Overfull \hbox (2.26518pt too wide) in paragraph at lines 228--229
- [][]\OT1/cmr/bx/n/10.95 Ubungsbeispiel 7:[] \OT1/cmr/m/n/10.95 Schreibe ein WH
+Overfull \hbox (2.2648pt too wide) in paragraph at lines 228--229
+ [][]\OT1/lmr/bx/n/10.95 Ubungsbeispiel 7:[] \OT1/lmr/m/n/10.95 Schreibe ein WH
 ILE-Programm, dass dieselbe Berech-
  []
 
 
-Overfull \hbox (2.26518pt too wide) in paragraph at lines 230--231
- [][]\OT1/cmr/bx/n/10.95 Ubungsbeispiel 8:[] \OT1/cmr/m/n/10.95 Schreibe ein WH
+Overfull \hbox (2.2648pt too wide) in paragraph at lines 230--231
+ [][]\OT1/lmr/bx/n/10.95 Ubungsbeispiel 8:[] \OT1/lmr/m/n/10.95 Schreibe ein WH
 ILE-Programm, dass dieselbe Berech-
  []
 
 [9]
-Overfull \hbox (2.35185pt too wide) in paragraph at lines 234--235
-[]\OT1/cmr/bx/n/10.95 WHILE $\OMS/cmsy/m/n/10.95 !$ \OT1/cmr/bx/n/10.95 GOTO: \
-OT1/cmr/m/n/10.95 Gegeben sei ein WHILE-Programm, wir k^^?onnen
+Overfull \hbox (2.35176pt too wide) in paragraph at lines 234--235
+[]\OT1/lmr/bx/n/10.95 WHILE $\OMS/lmsy/m/n/10.95 !$ \OT1/lmr/bx/n/10.95 GOTO: \
+OT1/lmr/m/n/10.95 Gegeben sei ein WHILE-Programm, wir k^^?onnen
  []
 
 
-Overfull \hbox (13.72995pt too wide) in paragraph at lines 246--251
-\OT1/cmr/m/n/10.95 Wenn dieser Prozess abgeschlossen ist, haben wir ein zu un-s
+Overfull \hbox (13.72871pt too wide) in paragraph at lines 246--251
+\OT1/lmr/m/n/10.95 Wenn dieser Prozess abgeschlossen ist, haben wir ein zu un-s
 erem ur-spr^^?unglichen
  []
 
@@ -850,13 +913,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--259
  []
 
 
-Overfull \hbox (12.51892pt too wide) in paragraph at lines 262--263
+Overfull \hbox (12.52222pt too wide) in paragraph at lines 262--263
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [10]
-Overfull \hbox (13.41566pt too wide) in paragraph at lines 274--275
-\OT1/cmr/m/n/10.95 Po-si-tion. Das so erzeugte WHILE-Programm ist equiv-a-lent 
+Overfull \hbox (13.41457pt too wide) in paragraph at lines 274--275
+\OT1/lmr/m/n/10.95 Po-si-tion. Das so erzeugte WHILE-Programm ist equiv-a-lent 
 zum ur-spr^^?unglichen
  []
 
@@ -885,54 +948,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 372--374
  []
 
 
-Overfull \hbox (12.29999pt too wide) in paragraph at lines 376--377
+Overfull \hbox (12.30304pt too wide) in paragraph at lines 376--377
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (60.58948pt too wide) in paragraph at lines 378--379
+Overfull \hbox (60.59296pt too wide) in paragraph at lines 378--379
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (12.29999pt too wide) in paragraph at lines 382--383
+Overfull \hbox (12.30304pt too wide) in paragraph at lines 382--383
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (39.89398pt too wide) in paragraph at lines 383--384
+Overfull \hbox (39.89728pt too wide) in paragraph at lines 383--384
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (6.52354pt too wide) in paragraph at lines 390--391
- [][]\OT1/cmr/bx/n/10.95 Ubungsbeispiel 11:[] \OT1/cmr/m/n/10.95 Spiele den Al-
+Overfull \hbox (6.52318pt too wide) in paragraph at lines 390--391
+ [][]\OT1/lmr/bx/n/10.95 Ubungsbeispiel 11:[] \OT1/lmr/m/n/10.95 Spiele den Al-
 go-rith-mus f^^?ur einige Beispiele von Zahlen
  []
 
 [14]
-Overfull \hbox (12.29999pt too wide) in paragraph at lines 418--419
+Overfull \hbox (12.30304pt too wide) in paragraph at lines 418--419
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (60.58948pt too wide) in paragraph at lines 420--421
+Overfull \hbox (60.59296pt too wide) in paragraph at lines 420--421
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (12.29999pt too wide) in paragraph at lines 424--425
+Overfull \hbox (12.30304pt too wide) in paragraph at lines 424--425
 [][][][][][][][][][][][][][][][][] 
  []
 
 [15]
-Overfull \hbox (39.89398pt too wide) in paragraph at lines 425--426
+Overfull \hbox (39.89728pt too wide) in paragraph at lines 425--426
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (6.52354pt too wide) in paragraph at lines 456--457
- [][]\OT1/cmr/bx/n/10.95 Ubungsbeispiel 13:[] \OT1/cmr/m/n/10.95 Spiele den Al-
+Overfull \hbox (6.52318pt too wide) in paragraph at lines 456--457
+ [][]\OT1/lmr/bx/n/10.95 Ubungsbeispiel 13:[] \OT1/lmr/m/n/10.95 Spiele den Al-
 go-rith-mus f^^?ur einige Beispiele von Zahlen
  []
 
@@ -954,8 +1017,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 470--473
  []
 
 
-Overfull \hbox (15.49417pt too wide) in paragraph at lines 473--477
-\OT1/cmr/m/n/10.95 Um zu ^^?uberpr^^?ufen ob diese Aus-sage wahr ist, m^^?ussen
+Overfull \hbox (15.1877pt too wide) in paragraph at lines 473--477
+\OT1/lmr/m/n/10.95 Um zu ^^?uberpr^^?ufen ob diese Aus-sage wahr ist, m^^?ussen
  wir die vierte Nachkomma-
  []
 
@@ -965,8 +1028,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 473--477
  []
 
 
-Overfull \hbox (28.90793pt too wide) in paragraph at lines 482--486
-\OT1/cmr/m/n/10.95 Aus-sagen nehmen und da-raus eine neue Aus-sage pro-duzieren
+Overfull \hbox (28.29816pt too wide) in paragraph at lines 482--486
+\OT1/lmr/m/n/10.95 Aus-sagen nehmen und da-raus eine neue Aus-sage pro-duzieren
 , deren Wahrheitswert
  []
 
@@ -983,14 +1046,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 518--525
  []
 
 
-Overfull \hbox (23.88918pt too wide) in paragraph at lines 518--525
-\OT1/cmr/m/n/10.95 durch diese Zuord-nung wer-den un-sere Sym-bol-ket-ten von l
+Overfull \hbox (23.8877pt too wide) in paragraph at lines 518--525
+\OT1/lmr/m/n/10.95 durch diese Zuord-nung wer-den un-sere Sym-bol-ket-ten von l
 o-gis-chen Verkn^^?upfungen
  []
 
 [19]
-Overfull \hbox (18.47217pt too wide) in paragraph at lines 530--531
-[]\OT1/cmr/m/it/10.95 Jede aus-sagen-l-o-gis-che Formel wird aus den lo-gis-che
+Overfull \hbox (18.19308pt too wide) in paragraph at lines 530--531
+[]\OT1/lmr/m/it/10.95 Jede aus-sagen-l-o-gis-che Formel wird aus den lo-gis-che
 n Atomen und mehrma-
  []
 
@@ -1000,8 +1063,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 536--539
  []
 
 [20]
-Overfull \hbox (9.2558pt too wide) in paragraph at lines 564--573
-[]\OT1/cmr/m/n/10.95 Wir zeigen nun an-hand von einem Beispiel einer aus-sagen-
+Overfull \hbox (9.25418pt too wide) in paragraph at lines 564--573
+[]\OT1/lmr/m/n/10.95 Wir zeigen nun an-hand von einem Beispiel einer aus-sagen-
 l-o-gis-chen Formeln
  []
 
@@ -1011,10 +1074,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 564--573
  []
 
 
-Overfull \hbox (4.64417pt too wide) in paragraph at lines 564--573
-\OT1/cmr/bx/n/10.95 Beispiel\OT1/cmr/m/n/10.95 : Wir haben drei lo-gis-che Atom
-e $\OML/cmm/m/it/10.95 ^^^[]$\OT1/cmr/m/n/10.95 , $\OML/cmm/m/it/10.95 ^^^[]$ \
-OT1/cmr/m/n/10.95 und $\OML/cmm/m/it/10.95 ^^^[]$\OT1/cmr/m/n/10.95 , mit Wahrh
+Overfull \hbox (4.65819pt too wide) in paragraph at lines 564--573
+\OT1/lmr/bx/n/10.95 Beispiel\OT1/lmr/m/n/10.95 : Wir haben drei lo-gis-che Atom
+e $\OML/lmm/m/it/10.95 ^^^[]$\OT1/lmr/m/n/10.95 , $\OML/lmm/m/it/10.95 ^^^[]$ \
+OT1/lmr/m/n/10.95 und $\OML/lmm/m/it/10.95 ^^^[]$\OT1/lmr/m/n/10.95 , mit Wahrh
 eitswerten
  []
 
@@ -1039,8 +1102,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 596--600
  []
 
 
-Overfull \hbox (0.59003pt too wide) in paragraph at lines 596--600
-\OT1/cmr/m/n/10.95 Wahrheitstafeln sind somit ein all-ge-meines For-mat zur Dar
+Overfull \hbox (0.58904pt too wide) in paragraph at lines 596--600
+\OT1/lmr/m/n/10.95 Wahrheitstafeln sind somit ein all-ge-meines For-mat zur Dar
 stel-lung be-liebiger
  []
 
@@ -1085,9 +1148,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 712--716
  []
 
 [24]
-Overfull \hbox (17.54071pt too wide) in paragraph at lines 717--718
-\OT1/cmr/m/it/10.95 Eins ist, dann nen-nen wir die Bele-gung $\OML/cmm/m/it/10.
-95 ^^L$ \OT1/cmr/m/it/10.95 eine L^^?osung des Erf^^?ullbarketisproblems
+Overfull \hbox (17.82037pt too wide) in paragraph at lines 717--718
+\OT1/lmr/m/it/10.95 Eins ist, dann nen-nen wir die Bele-gung $\OML/lmm/m/it/10.
+95 ^^L$ \OT1/lmr/m/it/10.95 eine L^^?osung des Erf^^?ullbarketisproblems
  []
 
 
@@ -1136,8 +1199,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 759--765
  []
 
 [26]
-Overfull \hbox (40.83127pt too wide) in paragraph at lines 773--778
-\OT1/cmr/m/n/10.95 Bisher haben wir auss-chlie^^Ylich Um-for-mungen bez^^?uglic
+Overfull \hbox (40.82835pt too wide) in paragraph at lines 773--778
+\OT1/lmr/m/n/10.95 Bisher haben wir auss-chlie^^Ylich Um-for-mungen bez^^?uglic
 h der lo-gis-chen Verkn^^?upfungen
  []
 
@@ -1157,14 +1220,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 786--789
  []
 
 [27]
-Overfull \hbox (1.45909pt too wide) in paragraph at lines 806--810
- [][]\OT1/cmr/bx/n/10.95 Ubungsbeispiel 27:[] \OT1/cmr/m/n/10.95 Zeige durch An
+Overfull \hbox (1.45973pt too wide) in paragraph at lines 806--810
+ [][]\OT1/lmr/bx/n/10.95 Ubungsbeispiel 27:[] \OT1/lmr/m/n/10.95 Zeige durch An
 -wen-dung der De-Mor-gan-schen Gesetze
  []
 
 
-Overfull \hbox (5.50731pt too wide) in paragraph at lines 811--816
-\OT1/cmr/m/n/10.95 erf^^?ullt. Da es aber im-mer mehr als eine Formel gibt, wel
+Overfull \hbox (5.50583pt too wide) in paragraph at lines 811--816
+\OT1/lmr/m/n/10.95 erf^^?ullt. Da es aber im-mer mehr als eine Formel gibt, wel
 che dieselbe Wahrheit-
  []
 
@@ -1189,22 +1252,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 830--836
  []
 
 
-Overfull \hbox (6.98236pt too wide) in paragraph at lines 838--851
+Overfull \hbox (6.98212pt too wide) in paragraph at lines 838--851
 [][] 
  []
 
 
-Overfull \hbox (6.98236pt too wide) in paragraph at lines 853--866
+Overfull \hbox (6.98212pt too wide) in paragraph at lines 853--866
 [][] 
  []
 
 
-Overfull \hbox (6.98236pt too wide) in paragraph at lines 868--881
+Overfull \hbox (6.98212pt too wide) in paragraph at lines 868--881
 [][] 
  []
 
 
-Overfull \hbox (6.98236pt too wide) in paragraph at lines 883--896
+Overfull \hbox (6.98212pt too wide) in paragraph at lines 883--896
 [][] 
  []
 
@@ -1239,452 +1302,352 @@ Underfull \hbox (badness 10000) in paragraph at lines 933--936
  []
 
 
-Overfull \hbox (2.0802pt too wide) in paragraph at lines 953--955
-[]\OT1/cmr/m/n/10.95 Nachdem wir bere-its ^^?uber die Dis-junk-tive Nor-mal-for
+Overfull \hbox (2.0786pt too wide) in paragraph at lines 953--955
+[]\OT1/lmr/m/n/10.95 Nachdem wir bere-its ^^?uber die Dis-junk-tive Nor-mal-for
 m gese-hen haben,
  []
 
 [31] [32]
 Chapter 4.
 
-Overfull \hbox (10.41454pt too wide) in paragraph at lines 972--973
-\OT1/cmr/m/n/10.95 elek-trischen Schaltkreisen aus Wasser-schl^^?auchen und Ven
+Overfull \hbox (10.4143pt too wide) in paragraph at lines 972--973
+\OT1/lmr/m/n/10.95 elek-trischen Schaltkreisen aus Wasser-schl^^?auchen und Ven
 -tilen oder Zahnr^^?adern
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 974--979
-
- []
-
-(./circuit.pdf_tex
-<circuit.pdf, id=538, page=1, 240.9pt x 180.675pt>
+<circuit.pdf, id=533, 240.9pt x 180.675pt>
 File: circuit.pdf Graphic file (type pdf)
-<use circuit.pdf, page 1>
-Package pdftex.def Info: circuit.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 240.9pt x 180.68005pt.
-Missing character: There is no â in font cmr10!
-Missing character: There is no „ in font cmr10!
-Missing character: There is no ¦ in font cmr10!
-<circuit.pdf, id=539, page=2, 240.9pt x 180.675pt>
-File: circuit.pdf Graphic file (type pdf)
-<use circuit.pdf, page 2>
-Package pdftex.def Info: circuit.pdf , page2 used on input line 58.
-(pdftex.def)             Requested size: 240.9pt x 180.68005pt.
-Missing character: There is no â in font cmr10!
-Missing character: There is no „ in font cmr10!
-Missing character: There is no ¦ in font cmr10!
-<circuit.pdf, id=540, page=3, 240.9pt x 180.675pt>
-File: circuit.pdf Graphic file (type pdf)
-<use circuit.pdf, page 3>
-Package pdftex.def Info: circuit.pdf , page3 used on input line 60.
-(pdftex.def)             Requested size: 240.9pt x 180.68005pt.
-<circuit.pdf, id=541, page=4, 240.9pt x 180.675pt>
-File: circuit.pdf Graphic file (type pdf)
-<use circuit.pdf, page 4>
-Package pdftex.def Info: circuit.pdf , page4 used on input line 62.
-(pdftex.def)             Requested size: 240.9pt x 180.68005pt.
-)
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¶ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no Ÿ in font cmr10!
+<use circuit.pdf>
+Package pdftex.def Info: circuit.pdf  used on input line 981.
+(pdftex.def)             Requested size: 327.72256pt x 198.0015pt.
 
-Overfull \hbox (5.36253pt too wide) in paragraph at lines 988--1002
-[]\OT1/cmr/m/n/10.95 Es han-delt sich hier um einen elek-trischen Stromkreis in
- dem drei Bauteile,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 988--1002
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 988--1002
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 988--1002
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 988--1002
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 988--1002
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 988--1002
+Underfull \hbox (badness 10000) in paragraph at lines 974--984
 
  []
 
 [33
 
- <./circuit.pdf> <./circuit.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./circuit.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./circuit.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./circuit.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./circuit.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./circuit.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
->]
-Overfull \hbox (5.38637pt too wide) in paragraph at lines 1002--1002
-[]\OT1/cmr/bx/n/14.4 Die drei Grundge-setze elek-trischer Stromkreise 
+]
+Overfull \hbox (5.3609pt too wide) in paragraph at lines 985--1001
+[]\OT1/lmr/m/n/10.95 Es han-delt sich hier um einen elek-trischen Stromkreis in
+ dem drei Bauteile,
  []
 
 
-Overfull \hbox (7.49461pt too wide) in paragraph at lines 1003--1010
-\OT1/cmr/m/n/10.95 Entsprechend der bere-its vorgestell-ten An-schau-ung des Fl
+Underfull \hbox (badness 10000) in paragraph at lines 985--1001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--1001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--1001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--1001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--1001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--1001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--1001
+
+ []
+
+[34 <./circuit.pdf>]
+Overfull \hbox (5.3898pt too wide) in paragraph at lines 1005--1005
+[]\OT1/lmr/bx/n/14.4 Die drei Grundge-setze elek-trischer Stromkreise 
+ []
+
+<flow.pdf, id=558, 56.64166pt x 35.59265pt>
+File: flow.pdf Graphic file (type pdf)
+<use flow.pdf>
+Package pdftex.def Info: flow.pdf  used on input line 1015.
+(pdftex.def)             Requested size: 148.95189pt x 90.0165pt.
+
+Overfull \hbox (7.49509pt too wide) in paragraph at lines 1006--1018
+\OT1/lmr/m/n/10.95 Entsprechend der bere-its vorgestell-ten An-schau-ung des Fl
 u^^Yes einer Fl^^?u^^Yigkeit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1010
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1018
 
  []
 
 
-Overfull \hbox (1.83708pt too wide) in paragraph at lines 1003--1010
-\OT1/cmr/m/n/10.95 keine Naturge-setze darstellen, son-dern in er-ster Linie de
+Overfull \hbox (1.83746pt too wide) in paragraph at lines 1006--1018
+\OT1/lmr/m/n/10.95 keine Naturge-setze darstellen, son-dern in er-ster Linie de
 r ein-facheren Darstel-
  []
 
 
-Overfull \hbox (2.99294pt too wide) in paragraph at lines 1003--1010
-\OT1/cmr/m/n/10.95 lung des Sachver-haltes di-enen, sind die An-nah-men, dass i
+Overfull \hbox (2.99138pt too wide) in paragraph at lines 1006--1018
+\OT1/lmr/m/n/10.95 lung des Sachver-haltes di-enen, sind die An-nah-men, dass i
 n-ner-halb der Punkte
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1010
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1018
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1010
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1018
 
  []
 
-[34] (./flow.pdf_tex
-<flow.pdf, id=553, page=1, 75.28125pt x 90.3375pt>
-File: flow.pdf Graphic file (type pdf)
-<use flow.pdf, page 1>
-Package pdftex.def Info: flow.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<flow.pdf, id=554, page=2, 75.28125pt x 90.3375pt>
-File: flow.pdf Graphic file (type pdf)
-<use flow.pdf, page 2>
-Package pdftex.def Info: flow.pdf , page2 used on input line 58.
-(pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<flow.pdf, id=555, page=3, 75.28125pt x 90.3375pt>
-File: flow.pdf Graphic file (type pdf)
-<use flow.pdf, page 3>
-Package pdftex.def Info: flow.pdf , page3 used on input line 60.
-(pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<flow.pdf, id=556, page=4, 75.28125pt x 90.3375pt>
-File: flow.pdf Graphic file (type pdf)
-<use flow.pdf, page 4>
-Package pdftex.def Info: flow.pdf , page4 used on input line 62.
-(pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-) (./aufgabe.pdf_tex
-<aufgabe.pdf, id=557, page=1, 75.28125pt x 90.3375pt>
+[35]
+<aufgabe.pdf, id=564, 56.64166pt x 49.6764pt>
 File: aufgabe.pdf Graphic file (type pdf)
-<use aufgabe.pdf, page 1>
-Package pdftex.def Info: aufgabe.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<aufgabe.pdf, id=558, page=2, 75.28125pt x 90.3375pt>
-File: aufgabe.pdf Graphic file (type pdf)
-<use aufgabe.pdf, page 2>
-Package pdftex.def Info: aufgabe.pdf , page2 used on input line 58.
-(pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<aufgabe.pdf, id=559, page=3, 75.28125pt x 90.3375pt>
-File: aufgabe.pdf Graphic file (type pdf)
-<use aufgabe.pdf, page 3>
-Package pdftex.def Info: aufgabe.pdf , page3 used on input line 60.
-(pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<aufgabe.pdf, id=560, page=4, 75.28125pt x 90.3375pt>
-File: aufgabe.pdf Graphic file (type pdf)
-<use aufgabe.pdf, page 4>
-Package pdftex.def Info: aufgabe.pdf , page4 used on input line 62.
-(pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-<aufgabe.pdf, id=561, page=5, 75.28125pt x 90.3375pt>
-File: aufgabe.pdf Graphic file (type pdf)
-<use aufgabe.pdf, page 5>
-Package pdftex.def Info: aufgabe.pdf , page5 used on input line 64.
-(pdftex.def)             Requested size: 75.28125pt x 90.34554pt.
-)
-Overfull \hbox (1.74823pt too wide) in paragraph at lines 1021--1029
-[]\OT1/cmr/bx/n/10.95 Ubungsbeispiel\OT1/cmr/m/n/10.95 : For-muliere das Kon-ti
+<use aufgabe.pdf>
+Package pdftex.def Info: aufgabe.pdf  used on input line 1027.
+(pdftex.def)             Requested size: 148.95189pt x 144.01009pt.
+
+Overfull \hbox (1.45923pt too wide) in paragraph at lines 1023--1031
+[]\OT1/lmr/bx/n/10.95 Ubungsbeispiel\OT1/lmr/m/n/10.95 : For-muliere das Kon-ti
 -nuit^^?atsgesetz f^^?ur die fol-gende Anord-
  []
 
-[35 <./flow.pdf> <./flow.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./flow.pdf): PDF inclusion: multiple pd
-fs with page group included in a single page
-> <./flow.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./flow.pdf): PDF inclusion: multiple pd
-fs with page group included in a single page
-> <./flow.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./flow.pdf): PDF inclusion: multiple pd
-fs with page group included in a single page
->]
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¤ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¼ in font cmr10!
-
-Overfull \hbox (10.36789pt too wide) in paragraph at lines 1034--1035
-[][]\OT1/cmr/bx/n/10.95 Theorem 4.1. []\OT1/cmr/m/it/10.95 Gegeben sei ein elek
+Overfull \hbox (10.4174pt too wide) in paragraph at lines 1036--1037
+[][]\OT1/lmr/bx/n/10.95 Theorem 4.1. []\OT1/lmr/m/it/10.95 Gegeben sei ein elek
 -trischer Stromkreis, dann gilt die Maschen-
  []
 
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¤ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¼ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¶ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¶ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¼ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 1040--1045
-
- []
-
-
-Overfull \hbox (2.4622pt too wide) in paragraph at lines 1040--1045
-\OT1/cmr/bx/n/10.95 Spannungs-Kennlinie \OT1/cmr/m/n/10.95 oder all-ge-meiner \
-OT1/cmr/bx/n/10.95 Charak-ter-is-tik \OT1/cmr/m/n/10.95 kurz $^^H$ bes-timmt.
- []
-
-[36 <./aufgabe.pdf> <./aufgabe.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./aufgabe.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./aufgabe.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./aufgabe.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./aufgabe.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./aufgabe.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./aufgabe.pdf
+[36 <./flow.pdf> <./aufgabe.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./aufgabe.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-Overfull \hbox (27.16386pt too wide) in paragraph at lines 1046--1047
-\OT1/cmr/m/it/10.95 repr^^?asentieren und die restlichen Kom-po-nen-ten die ent
-sprechen-den Stromst^^?arken.[][][] 
+Overfull \hbox (2.55pt too wide) in paragraph at lines 1043--1046
+\OT1/lmr/bx/n/10.95 Spannungs-Kennlinie \OT1/lmr/m/n/10.95 oder all-ge-meiner \
+OT1/lmr/bx/n/10.95 Charak-ter-is-tik \OT1/lmr/m/n/10.95 kurz $^^H$ bes-timmt.
  []
 
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¼ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¤ in font cmr10!
 (./ideal_spannung.pdf_tex
-<ideal_spannung.pdf, id=581, page=1, 433.62pt x 289.08pt>
+<ideal_spannung.pdf, id=589, page=1, 433.62pt x 289.08pt>
 File: ideal_spannung.pdf Graphic file (type pdf)
 <use ideal_spannung.pdf, page 1>
 Package pdftex.def Info: ideal_spannung.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 433.62pt x 289.09251pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1048--1059
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1060
 
  []
 
-(./gluhbirne.pdf_tex
-<gluhbirne.pdf, id=582, page=1, 433.62pt x 289.08pt>
+
+Overfull \hbox (16.48544pt too wide) in paragraph at lines 1049--1060
+\OT1/lmr/m/n/10.95 kon-stante Spanung abgenom-men wer-den kann. Die Strom-Spann
+ungs-Kennlinie
+ []
+
+[37] (./gluhbirne.pdf_tex
+<gluhbirne.pdf, id=599, page=1, 433.62pt x 289.08pt>
 File: gluhbirne.pdf Graphic file (type pdf)
 <use gluhbirne.pdf, page 1>
 Package pdftex.def Info: gluhbirne.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 433.62pt x 289.09251pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1070
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1071
 
  []
 
-[37 <./ideal_spannung.pdf>]
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¼ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¼ in font cmr10!
+<_abstract.pdf, id=600, 165.0246pt x 100.88425pt>
+File: _abstract.pdf Graphic file (type pdf)
+<use _abstract.pdf>
+Package pdftex.def Info: _abstract.pdf  used on input line 1081.
+(pdftex.def)             Requested size: 196.62341pt x 118.80067pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1075
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1075
+Underfull \hbox (badness 10000) in paragraph at lines 1075--1083
 
  []
 
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¤ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¤ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¤ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¤ in font cmr10!
+[38 <./ideal_spannung.pdf> <./gluhbirne.pdf
 
-Overfull \hbox (0.74214pt too wide) in paragraph at lines 1076--1087
-\OT1/cmr/m/n/10.95 Die Charak-ter-is-tiken der elek-trischen Bauteile wiederum 
+pdfTeX warning: /usr/bin/pdflatex (file ./gluhbirne.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>]
+<potent.pdf, id=616, 180.28911pt x 121.41615pt>
+File: potent.pdf Graphic file (type pdf)
+<use potent.pdf>
+Package pdftex.def Info: potent.pdf  used on input line 1091.
+(pdftex.def)             Requested size: 196.62126pt x 118.80174pt.
+<laminar.pdf, id=617, 165.0246pt x 100.88425pt>
+File: laminar.pdf Graphic file (type pdf)
+<use laminar.pdf>
+Package pdftex.def Info: laminar.pdf  used on input line 1100.
+(pdftex.def)             Requested size: 196.62341pt x 118.80067pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1102
+
+ []
+
+[39 <./_abstract.pdf> <./potent.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./potent.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>]
+Overfull \hbox (0.74174pt too wide) in paragraph at lines 1103--1105
+\OT1/lmr/m/n/10.95 Die Charak-ter-is-tiken der elek-trischen Bauteile wiederum 
 legen f^^?ur jede Kante
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1076--1087
+Underfull \hbox (badness 10000) in paragraph at lines 1103--1105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1076--1087
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1139
 
  []
 
-[38 <./gluhbirne.pdf>]
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¤ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¼ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¤ in font cmr10!
- (./widerstand.pdf_tex
-<widerstand.pdf, id=608, page=1, 433.62pt x 289.08pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1139
+
+ []
+
+[40 <./laminar.pdf>] (./widerstand.pdf_tex
+<widerstand.pdf, id=675, page=1, 433.62pt x 289.08pt>
 File: widerstand.pdf Graphic file (type pdf)
 <use widerstand.pdf, page 1>
 Package pdftex.def Info: widerstand.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 433.62pt x 289.09251pt.
 )
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¼ in font cmr10!
+Overfull \hbox (4.81647pt too wide) in paragraph at lines 1148--1150
+\OT1/lmr/m/n/10.95 Ein elek-trisches Bauteil mit lin-earer Charak-ter-is-tik wi
+rd nach dem Ohm'schen
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 1097--1107
+[41 <./widerstand.pdf>]
+Overfull \hbox (33.90646pt too wide) in paragraph at lines 1152--1155
+\OT1/lmr/m/n/10.95 Wobei $\OML/lmm/m/it/10.95 G$\OT1/lmr/m/n/10.95 , also die S
+tei-gung der Strom/S-pan-nungskurve, \OT1/lmr/bx/n/10.95 elek-trische Leitf[]ah
+igkeit
+ []
+
+
+Overfull \hbox (18.91481pt too wide) in paragraph at lines 1152--1155
+\OT1/lmr/m/n/10.95 Alternativ wird das Ohm'sche Gesetz oft aus-gedr^^?uckt ^^?u
+ber die Span-nungs/Strom
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1163--1170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1097--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1163--1170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1097--1107
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1097--1107
-
- []
-
-[39 <./widerstand.pdf>] [40]
-Chapter 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1133--1137
-
- []
-
-[41
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1138--1147
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1138--1147
-
- []
-
-
-Overfull \hbox (7.55417pt too wide) in paragraph at lines 1138--1147
-\OT1/cmr/m/n/10.95 fehl ausspucken, oder im Fall einer IF Verzwei-gung einige B
-e-fehle ^^?uberspringen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1138--1147
+Underfull \hbox (badness 10000) in paragraph at lines 1163--1170
 
  []
 
 [42]
-Overfull \hbox (11.71478pt too wide) in paragraph at lines 1159--1160
- []\OT1/cmr/bx/n/10.95 LOAD + 4 bit Wort:[] $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/
-10.95 b[]; b[]; b[]\OT1/cmr/m/n/10.95 ) = (1\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/
-10.95 0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1)$ Schreibt das Wort $(\OML/cm
-m/m/it/10.95 a[]; a[]; a[]; a[]\OT1/cmr/m/n/10.95 )$
- []
+Chapter 5.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1161--1165
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1180
 
  []
 
-[43] [44]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1168.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1168.
+[43
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1190
+
+ []
+
+
+Overfull \hbox (7.55261pt too wide) in paragraph at lines 1181--1190
+\OT1/lmr/m/n/10.95 fehl ausspucken, oder im Fall einer IF Verzwei-gung einige B
+e-fehle ^^?uberspringen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1190
+
+ []
+
+[44]
+Overfull \hbox (11.71472pt too wide) in paragraph at lines 1202--1203
+ []\OT1/lmr/bx/n/10.95 LOAD + 4 bit Wort:[] $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/
+10.95 b[]; b[]; b[]\OT1/lmr/m/n/10.95 ) = (1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/
+10.95 0\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 1)$ Schreibt das Wort $(\OML/lm
+m/m/it/10.95 a[]; a[]; a[]; a[]\OT1/lmr/m/n/10.95 )$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1208
+
+ []
+
+[45] [46]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1211.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1211.
  (./book.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1168.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1168.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1211.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1211.
 
 Package rerunfilecheck Info: File `book.out' has not changed.
-(rerunfilecheck)             Checksum: C125F7E1667FB3B508BAAEED3AE97094;1942.
+(rerunfilecheck)             Checksum: DEBB55313E15BDAD1C788953B49617B6;1890.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1168.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1211.
  ) 
 Here is how much of TeX's memory you used:
- 18195 strings out of 494923
- 333792 string characters out of 6180743
- 416328 words of memory out of 5000000
- 20863 multiletter control sequences out of 15000+600000
- 15598 words of font info for 58 fonts, out of 8000000 for 9000
+ 18315 strings out of 494923
+ 335932 string characters out of 6180743
+ 416466 words of memory out of 5000000
+ 20958 multiletter control sequences out of 15000+600000
+ 78178 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,16n,54p,1320b,1821s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on book.pdf (45 pages, 388948 bytes).
+ 55i,14n,54p,1320b,1821s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/l
+m/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texm
+f/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx
+12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+r9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
+Output written on book.pdf (47 pages, 533906 bytes).
 PDF statistics:
- 799 PDF objects out of 1000 (max. 8388607)
- 702 compressed objects within 8 object streams
- 322 named destinations out of 1000 (max. 500000)
- 317 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 874 PDF objects out of 1000 (max. 8388607)
+ 762 compressed objects within 8 object streams
+ 327 named destinations out of 1000 (max. 500000)
+ 274 words of extra memory for PDF output out of 10000 (max. 10000000)
 
