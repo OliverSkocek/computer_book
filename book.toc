@@ -57,23 +57,25 @@
 \contentsline {chapter}{\numberline {4}Elektronik}{33}{chapter.4}
 \contentsline {section}{\numberline {4.1}Der elektrische Stromkreis}{33}{section.4.1}
 \contentsline {section}{\numberline {4.2}Die drei Grundgesetze elektrischer Stromkreise}{35}{section.4.2}
+\contentsline {paragraph}{\"Ubungsbeispiel:}{36}{section*.43}
 \contentsline {subsection}{\numberline {4.2.1}Zusammenfassung}{39}{subsection.4.2.1}
 \contentsline {section}{\numberline {4.3}Lineare elektrische Netzwerke}{42}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Lineare Systeme}{43}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Reihen und parallele Schaltungen}{43}{subsection.4.3.2}
+\contentsline {paragraph}{\"Ubungsbeispiel:}{44}{section*.44}
 \contentsline {chapter}{\numberline {5}Ein m\"oglichst einfacher Digitalrechner}{45}{chapter.5}
 \contentsline {section}{\numberline {5.1}Eine minimale Arithmetisch logische Einheit}{45}{section.5.1}
-\contentsline {paragraph}{NAND: }{45}{section*.43}
-\contentsline {paragraph}{LSHIFT:}{46}{section*.44}
+\contentsline {paragraph}{NAND: }{45}{section*.45}
+\contentsline {paragraph}{LSHIFT:}{46}{section*.46}
 \contentsline {subsection}{\numberline {5.1.1}Die physische Realisierung}{47}{subsection.5.1.1}
 \contentsline {section}{\numberline {5.2}Der Hauptspeicher und Registerkarte}{47}{section.5.2}
 \contentsline {section}{\numberline {5.3}Die Sprache unserer Rechenmaschine}{47}{section.5.3}
-\contentsline {paragraph}{HALT:}{47}{section*.45}
-\contentsline {paragraph}{NAND + 3 bit Addresse:}{47}{section*.46}
-\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{47}{section*.47}
-\contentsline {paragraph}{POP + 4 bit Addresse:}{47}{section*.48}
-\contentsline {paragraph}{PUSH + 4 bit Addresse:}{47}{section*.49}
-\contentsline {paragraph}{LOAD + 4 bit Wort:}{47}{section*.50}
-\contentsline {paragraph}{IF:}{47}{section*.51}
-\contentsline {paragraph}{RESET IF:}{48}{section*.52}
+\contentsline {paragraph}{HALT:}{47}{section*.47}
+\contentsline {paragraph}{NAND + 3 bit Addresse:}{47}{section*.48}
+\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{47}{section*.49}
+\contentsline {paragraph}{POP + 4 bit Addresse:}{47}{section*.50}
+\contentsline {paragraph}{PUSH + 4 bit Addresse:}{47}{section*.51}
+\contentsline {paragraph}{LOAD + 4 bit Wort:}{47}{section*.52}
+\contentsline {paragraph}{IF:}{47}{section*.53}
+\contentsline {paragraph}{RESET IF:}{48}{section*.54}
 \contentsline {section}{\numberline {5.4}Die Kontrolleinheit}{48}{section.5.4}

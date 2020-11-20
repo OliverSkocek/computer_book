@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.3)  19 NOV 2020 21:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.3)  20 NOV 2020 01:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1418,9 +1418,9 @@ File: aufgabe.pdf Graphic file (type pdf)
 Package pdftex.def Info: aufgabe.pdf  used on input line 1027.
 (pdftex.def)             Requested size: 148.95189pt x 144.01009pt.
 
-Overfull \hbox (1.45923pt too wide) in paragraph at lines 1023--1031
-[]\OT1/lmr/bx/n/10.95 Ubungsbeispiel\OT1/lmr/m/n/10.95 : For-muliere das Kon-ti
--nuit^^?atsgesetz f^^?ur die fol-gende Anord-
+Overfull \hbox (8.59264pt too wide) in paragraph at lines 1024--1031
+ [][]\OT1/lmr/bx/n/10.95 Ubungsbeispiel:[] \OT1/lmr/m/n/10.95 For-muliere das K
+on-ti-nuit^^?atsgesetz f^^?ur die fol-gende Anord-
  []
 
 
@@ -1445,7 +1445,7 @@ Overfull \hbox (4.14682pt too wide) in paragraph at lines 1049--1051
 , dass die Charak-
  []
 
-<charakter.pdf, id=599, 64.39186pt x 81.9727pt>
+<charakter.pdf, id=600, 64.39186pt x 81.9727pt>
 File: charakter.pdf Graphic file (type pdf)
 <use charakter.pdf>
 Package pdftex.def Info: charakter.pdf  used on input line 1059.
@@ -1456,7 +1456,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1053--1062
  []
 
 [37] (./ideal_spannung.pdf_tex
-<ideal_spannung.pdf, id=609, page=1, 433.62pt x 289.08pt>
+<ideal_spannung.pdf, id=610, page=1, 433.62pt x 289.08pt>
 File: ideal_spannung.pdf Graphic file (type pdf)
 <use ideal_spannung.pdf, page 1>
 Package pdftex.def Info: ideal_spannung.pdf , page1 used on input line 56.
@@ -1468,7 +1468,7 @@ s- Kennlinie
  []
 
 (./gluhbirne.pdf_tex
-<gluhbirne.pdf, id=610, page=1, 433.62pt x 289.08pt>
+<gluhbirne.pdf, id=611, page=1, 433.62pt x 289.08pt>
 File: gluhbirne.pdf Graphic file (type pdf)
 <use gluhbirne.pdf, page 1>
 Package pdftex.def Info: gluhbirne.pdf , page1 used on input line 56.
@@ -1483,7 +1483,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1082--1093
 pdfTeX warning: /usr/bin/pdflatex (file ./ideal_spannung.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
 >]
-<_abstract.pdf, id=638, 165.0246pt x 100.88425pt>
+<_abstract.pdf, id=639, 165.0246pt x 100.88425pt>
 File: _abstract.pdf Graphic file (type pdf)
 <use _abstract.pdf>
 Package pdftex.def Info: _abstract.pdf  used on input line 1103.
@@ -1493,7 +1493,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1097--1105
 
  []
 
-<potent.pdf, id=639, 180.28911pt x 121.41615pt>
+<potent.pdf, id=640, 180.28911pt x 121.41615pt>
 File: potent.pdf Graphic file (type pdf)
 <use potent.pdf>
 Package pdftex.def Info: potent.pdf  used on input line 1113.
@@ -1503,7 +1503,7 @@ Package pdftex.def Info: potent.pdf  used on input line 1113.
 pdfTeX warning: /usr/bin/pdflatex (file ./_abstract.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<laminar.pdf, id=664, 165.0246pt x 100.88425pt>
+<laminar.pdf, id=665, 165.0246pt x 100.88425pt>
 File: laminar.pdf Graphic file (type pdf)
 <use laminar.pdf>
 Package pdftex.def Info: laminar.pdf  used on input line 1122.
@@ -1539,7 +1539,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1152--1161
  []
 
 [41] (./widerstand.pdf_tex
-<widerstand.pdf, id=706, page=1, 433.62pt x 289.08pt>
+<widerstand.pdf, id=707, page=1, 433.62pt x 289.08pt>
 File: widerstand.pdf Graphic file (type pdf)
 <use widerstand.pdf, page 1>
 Package pdftex.def Info: widerstand.pdf , page1 used on input line 56.
@@ -1556,7 +1556,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1185--1191
 
  []
 
-<reihe.pdf, id=732, 128.61617pt x 212.00705pt>
+<reihe.pdf, id=733, 128.61617pt x 212.00705pt>
 File: reihe.pdf Graphic file (type pdf)
 <use reihe.pdf>
 Package pdftex.def Info: reihe.pdf  used on input line 1200.
@@ -1567,43 +1567,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 1195--1203
  []
 
 [43 <./reihe.pdf>]
-<Parallel.pdf, id=757, 112.20747pt x 232.84227pt>
+<Parallel.pdf, id=758, 152.1786pt x 231.96338pt>
 File: Parallel.pdf Graphic file (type pdf)
 <use Parallel.pdf>
-Package pdftex.def Info: Parallel.pdf  used on input line 1209.
-(pdftex.def)             Requested size: 59.58267pt x 118.80127pt.
- [44 <./Parallel.pdf>]
+Package pdftex.def Info: Parallel.pdf  used on input line 1217.
+(pdftex.def)             Requested size: 89.36894pt x 118.79881pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1211--1220
+
+ []
+
+[44 <./Parallel.pdf>]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1222
+Underfull \hbox (badness 10000) in paragraph at lines 1226--1230
 
  []
 
 [45
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1223--1232
+Underfull \hbox (badness 10000) in paragraph at lines 1231--1240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1223--1232
+Underfull \hbox (badness 10000) in paragraph at lines 1231--1240
 
  []
 
 
-Overfull \hbox (7.55261pt too wide) in paragraph at lines 1223--1232
+Overfull \hbox (7.55261pt too wide) in paragraph at lines 1231--1240
 \OT1/lmr/m/n/10.95 fehl ausspucken, oder im Fall einer IF Verzwei-gung einige B
 e-fehle ^^?uberspringen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1223--1232
+Underfull \hbox (badness 10000) in paragraph at lines 1231--1240
 
  []
 
 [46]
-Overfull \hbox (11.71472pt too wide) in paragraph at lines 1244--1245
+Overfull \hbox (11.71472pt too wide) in paragraph at lines 1252--1253
  []\OT1/lmr/bx/n/10.95 LOAD + 4 bit Wort:[] $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/
 10.95 b[]; b[]; b[]\OT1/lmr/m/n/10.95 ) = (1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/
 10.95 0\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 1)$ Schreibt das Wort $(\OML/lm
@@ -1611,16 +1616,16 @@ m/m/it/10.95 a[]; a[]; a[]; a[]\OT1/lmr/m/n/10.95 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1246--1250
+Underfull \hbox (badness 10000) in paragraph at lines 1254--1258
 
  []
 
 [47] [48]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1253.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1253.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1261.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1261.
  (./book.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1253.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1253.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1261.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1261.
 
 Package rerunfilecheck Info: File `book.out' has not changed.
 (rerunfilecheck)             Checksum: B70E4426EAE6C4D1971493A8F16688BE;2045.
@@ -1628,12 +1633,12 @@ Package rerunfilecheck Info: File `book.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1253.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1261.
  ) 
 Here is how much of TeX's memory you used:
- 18340 strings out of 494923
- 336355 string characters out of 6180743
- 416466 words of memory out of 5000000
+ 18343 strings out of 494923
+ 336389 string characters out of 6180743
+ 416465 words of memory out of 5000000
  20972 multiletter control sequences out of 15000+600000
  78178 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1655,10 +1660,10 @@ ts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmtti10.pfb>
-Output written on book.pdf (49 pages, 558734 bytes).
+Output written on book.pdf (49 pages, 562856 bytes).
 PDF statistics:
- 946 PDF objects out of 1000 (max. 8388607)
- 816 compressed objects within 9 object streams
- 335 named destinations out of 1000 (max. 500000)
+ 960 PDF objects out of 1000 (max. 8388607)
+ 827 compressed objects within 9 object streams
+ 338 named destinations out of 1000 (max. 500000)
  305 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1021,7 +1021,7 @@ Der Flu\ss{} bezieht sich hier auf die vor der Messung vorgenommene Konvention d
 \begin{equation}
 i1 + i2 = i3
 \end{equation}
-\textbf{\"Ubungsbeispiel}: Formuliere das Kontinuit\"atsgesetz f\"ur die folgende Anordnung:
+\paragraph{\"Ubungsbeispiel:} Formuliere das Kontinuit\"atsgesetz f\"ur die folgende Anordnung:
 \begin{figure}[H]
 	\centering{
 		\includegraphics[height=0.40\textwidth, width=0.25\textheight]{aufgabe.pdf}
@@ -1203,10 +1203,18 @@ Gegeben sei eine Teilstruktur bestehend aus mehreren zweipoligen elektrischen Ba
 \end{figure}
 \noindent
 Hier haben wir ein Beispiel mit zwei Bauteilen, mit Charakteristiken $\Phi_1$ und $\Phi_2$. Man beachte das gepunkte Rechteck um die beiden Bauteile. Dies soll unser zusammengesetztes Bauteil darstellen, zusammen mit dessen Charakteristik $\Phi$. Gesucht ist $\Phi$. Wir wissen, dass Wegen der Knotenregel die Stromst\"arke \"ueberall im Stromkreis gleich sein muss, weil es ja keine Verzweigung gibt. Wir setzten den Potentialwert der oberen Kante auf Null, was wir ja d\"urfen, weil das Potential immer bis auf eine Konstante nur eindeutig ist und daher ein Potentialwert frei gew\"ahlt werden darf. Die untere Kannte hat damit laut Abbildung den Potentialwert $U$. Es verbleibt der Potentialwert, nennen wir ihn $u'$ der verbleibenden Kante zwischen den Bauteilen zu bestimmen. \\Dieser muss erf\"ullen, dass $\Phi_1(u' - 0)=\Phi_1(u') = j$ ist und das $\Phi_2(U - u') = j$ ist. Wenn wir zu einem gegebenen $U$ das $u'$ und damit $j$, da $j = \Phi_1(u')$ bestimmen k\"onnen haben wir unsere Charakteristik $\Phi$ gefunden. Diese Gleichungsystem ist im allgemeinen nicht linearen Fall das Best, dass wir tun k\"onnen. Nehmen wir an $\Phi_1$ und $\Phi_2$ sind linear, daher $\Phi_1(u) = u / R_1$ und $\Phi_2(u) = u / R_2$. Wobei $R_1$ und $R_2$ die Widerst\"ande der Bauteile sind.\\
-Das Problem vereinfacht sich stark und es ist leicht zu zeigen, dass $\Phi(u) = u / R$ ist, wobei $$R = R_1 + R_2$$.
+Das Problem vereinfacht sich stark und es ist leicht zu zeigen, dass $\Phi(u) = u / R$ ist, wobei 
+\begin{equation}
+	R = R_1 + R_2.
+\end{equation}
+\noindent
+\paragraph{\"Ubungsbeispiel:} Zeige die G\"ultigkeit von 4.9.
+\\
+\\
+Gegeben sei eine Teilstruktur bestehend aus mehreren zweipoligen elektrischen Bauteilen, die nebeneinander geschaltet sind, eine so genannte \textbf{Paralellschaltung}. In der folgenden Abbildung sehen wir ein Beispiel mit zwei paralell geschalteten Bauteilen.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[height=0.33\textwidth, width=0.1\textheight]{Parallel.pdf}
+		\includegraphics[height=0.33\textwidth, width=0.15\textheight]{Parallel.pdf}
 		\caption{Paralellschaltung.}
 	\end{center}
 \end{figure}
