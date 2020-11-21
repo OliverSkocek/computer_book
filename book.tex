@@ -1056,7 +1056,7 @@ ist. Also eine Zuordnung die den $N-1$ Potentialwerten eindeutig die $N-1$ Str\"
 Die Charakteristik eines Bauteiles kann direkt gemessen werden (zb.: mit einem Oszilloskop; siehe Anhang) oder typischerweise im vom Hersteller zur Verf\"ungung gestellten Datenblatt des elektrischen Bauteiles.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[height=0.33\textwidth, width=0.15\textheight]{charakter.pdf}
+		\includegraphics[scale=1]{charakter.pdf}
 	\end{center}
 	\caption{Charakteristik eines mehrpoligen Bauteiles.}
 \end{figure}
@@ -1071,7 +1071,15 @@ i_3 = \Phi^3(\phi_1,\phi_2,\phi_3)\\
 \end{split}
 \end{align}
 $$$$
-Eine \textbf{ideale elektrische Spannungsquelle} ist ein zwei poliges elektrisches Bauteil von dem unabh\"angig von der abgenommenen Stromst\"arke eine konstante Spanung abgenommen werden kann. Die Strom- Spannungs- Kennlinie einer 5V Spannungsquelle sieht folgenderma\ss{}en aus.
+Eine \textbf{ideale elektrische Spannungsquelle} ist ein zwei poliges elektrisches Bauteil von dem unabh\"angig von der abgenommenen Stromst\"arke eine konstante Spanung abgenommen werden kann. 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1]{ideal.pdf}
+		\caption{Schaltsymbol ideale Spannungsquelle.}
+	\end{center}
+\end{figure}
+\noindent
+Die Strom- Spannungs- Kennlinie einer 5V Spannungsquelle sieht folgenderma\ss{}en aus.
 \begin{figure}[H]
 	\centering{
 		\resizebox{65mm}{!}{\input{ideal_spannung.pdf_tex}}
@@ -1083,6 +1091,14 @@ Eine \textbf{ideale elektrische Spannungsquelle} ist ein zwei poliges elektrisch
 Dies ist ein Beispiel bei dem die Charakteristik keine Funktion ist sondern man sich zur Beschreibung die allgemeinere Form, eine Gleichung, bedinen muss: $U=5$.\\
 Reale Spannungsquellen, wie Zink/Kohle Batterien oder Lithium- Ionen- Akkumulatoren haben nur in einem sehr kleinen Stromst\"arke Bereich eine derartige vertikale Charakteristik.\\
 \\
+Als n\"achstes Bauteil lernen wir die Gl\"uhbirne kennen. Eine Gl\"ubirne ist ein zweipoliges Bauteil, das Licht erzeugt wenn es mit Strom durchflossen wird.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1]{gluh.pdf}
+		\caption{Schaltsymbol Gl\"uhbirne.}
+	\end{center}
+\end{figure}
+\noindent
 Eine elektrische Gl\"uhbirne hat eine parabolische Charakteristik.
 \begin{figure}[H]
 	\centering{
@@ -1100,7 +1116,7 @@ Gegeben sei ein elektrischer Stromkreis bestehend aus Knoten und elektrischen Ba
 Hier ein Beispiel eines abstrakten elektrischen Stromkreises. 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[height=0.33\textwidth, width=0.33\textheight]{_abstract.pdf}
+		\includegraphics[scale=1]{_abstract.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1110,7 +1126,7 @@ Kanten, welche direkt \"uber Knoten verbunden sind, haben den selben Potentialwe
 Somit haben wir sechs Bereiche an denen die Potentialfunktion konstanten Wert hat; im Bild angezeigt durch $\{\psi_1, \psi_2, \psi_3, \psi_4, \psi_5, \psi_6\}$. 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[height=0.33\textwidth, width=0.33\textheight]{potent.pdf}
+		\includegraphics[scale=1]{potent.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1119,7 +1135,7 @@ Hier wird gezeigt wie die Spannung $U$ von einem Punkt bei $\psi_3$ zu einem Pun
 Als n\"achstes betrachten wir die elektrischen Stromst\"arken die innerhalb des Stromkreises auftreten und die Flu\ss{}richtungen: 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[height=0.33\textwidth, width=0.33\textheight]{laminar.pdf}
+		\includegraphics[scale=1]{laminar.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1186,11 +1202,16 @@ G = \frac{1}{R}
 zwischen Widerstand und Leitf\"ahigkeit.
 \\
 \\
+Das elektrische Bauteil assoziiert mit dem Ohm'schen Widerstand ist der Widerstand mit dem Schaltsymbol.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1]{widder.pdf}
+		\caption{Schaltsymbol 4000 $\Omega$ Widerstand.}
+	\end{center}
+\end{figure}
+\noindent
 Sie stellt einen quantitativen Zusammenhang zwischen Strom und Spannung her und kann wie der Name schn sagt als Widerstand des Bauteiles gegen die Verursachung von elektrischem Strom durch eine gegebene elektrische Spannung angesehen werden.\\
 Innerhalb unserer Anschauung der Fl\"ussigkeit, die sich durch R\"ohren bewegt, w\"are dies so etwas wie ein Gewebe oder ein por\"oses Material, durch die die Fl\"u\ss{}igkeit mit Druck gepresst werden muss.
-\subsection{Lineare Systeme}
-Die Gleichungen in (4.3) reduzieren sich im Fall von Bauteilen mit linearer Charakteristik zu linearen Gleichungen und mit Hilfe von (4.4) erhalten wir ein lineares Gleichungssystem, das mit den klassischen Methoden wie dem Gau\ss{}schen Eliminationsverfahren gel\"ost werden. 
-
 \subsection{Reihen und parallele Schaltungen}
 Bestimmte h\"aufig auftretende Teilstrukturen elektrischer Stromkreise werden als elektrische Bauteile abstrahiert. Hierbei errechnet sich, abh\"angig von der Teilstruktur die Charakteristik des abstrahierten Bauteiles aus den Charakteristiken der darin enthaltenen Bauteile.\\
 \\
@@ -1219,6 +1240,30 @@ Gegeben sei eine Teilstruktur bestehend aus mehreren zweipoligen elektrischen Ba
 	\end{center}
 \end{figure}
 \noindent
+Wie im letzten Beispiel haben wir hier zwei Bauteile mit Charakteristiken $\Phi_1$ und $\Phi_2$, sowie ein gepunktetes Rechteck um diese, welches das zusammengesetzte Bauteil symbolisiert, dessen Charakteristik $\Phi$ wir suchen. Es liegt eine Spannung von $U$ zwischen dem oberen und dem unteren Punkt an und wir suchen die zugeh\"orige Stromst\"arke $j$. Wir legen wieder fest, dass oben, daher der gesamte durch den Knoten verbundene Bereich oberhalb der Bauteile, den Potentialwert Null hat und analog unten der Potential wert $U$. Nun liegt an beiden Bauteilen dieselbe Spannung $U$ an, daher produzieren sie jeweils auf ihre Leiterverzweigung den zugeh\"origen Strom $j_1 = \Phi_1(U)$ und $j_2 = \Phi_2(U)$. Nach der Knotenregel ergibt sich $j = j_1 + j_2$. Es gilt also 
+\begin{equation}
+	\Phi(U) = \Phi_1(U) + \Phi_2(U)
+\end{equation}
+Es ist leicht zu sehen, dass wenn wir annehmen, dass unsere Bauteile lineare Charakteristik haben, daher $\Phi_1(U) = U / R_1$ und $\Phi_2(U) = U / R_2$ ist, dann ist $\Phi(U) = U / R$, wobei $R$ sich errechnet aus
+\begin{equation*}
+	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2}
+\end{equation*}
+\subsection{Lineare Systeme}
+Die Gleichungen in (4.3) reduzieren sich im Fall von Bauteilen mit linearer Charakteristik zu linearen Gleichungen und mit Hilfe von (4.4) erhalten wir ein lineares Gleichungssystem, das mit klassischen Methoden wie dem Gau\ss{}schen Eliminationsverfahren gel\"ost werden kann. \\Wir zeigen in diesen Abschnitt wie dies an einem konkreten Beispiel funktioniert und dass wir im Fall von zweipoligen linearen Bauteilen immer eine eindeutige L\"osung haben.\\
+\\
+Gegeben sei ein elektrischer Stromkreis bestehend aus einer quadratischen Anordnung von Widerst\"anden. Die Kanten des Quadrats sind Widerst\"ande, die Ecken sind Knoten. Eine Diagonale ist ein Widerstand, die andere ist eine ideale Spannungsquelle.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[height=0.22\textwidth, width=0.20\textheight]{stromkreis_1.pdf}
+		\caption{Beispiel.}
+	\end{center}
+\end{figure}
+\noindent
+
+
+
+\section{Dynamische Stromkreise}
+
 \chapter{Ein m\"oglichst einfacher Digitalrechner}
 Ein Digitalrechner hat zwei Buchstaben, n\"amlich die Null und die Eins, aber zus\"atzlich hat jeder eine meistens fixe Wortgr\"o\ss{}e, die in der Anzahl der Stellen , der Bits beziehungsweise Buchstaben, also der Nullen und der Einsen, welche die Maschine als ein Wort betrachtet, gemessen wird. Dieses Wort ist das eigentliche Elementare Objekt der Rechenmaschine, jede Operation wird nicht auf einem einzelnen Bit, also auf einer Stelle des Wortes, sondern immer auf dem gesamten Wort ausgef\"uhrt. Genauso holen wir wenn wir den Inhalt einer Speicheraddresse zum Rechenkern holen immer ein ganzes Wort, dass dort steht und nicht einen einzelnen Bit.
 Ein Wort kann dabei f\"ur einen Buchstaben stehen, f\"ur eine Zahl oder die Addresse eines anderen Wortes. 
