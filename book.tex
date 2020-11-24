@@ -978,7 +978,7 @@ Ein idealisierter elektrischer \textbf{Stromkreis} ist ein Graph bestehend aus \
 Hier ein konkretes Beispiel.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[height=0.55\textwidth, width=0.55\textheight]{circuit.pdf}
+		\includegraphics[scale=0.6]{circuit.pdf}
 		\caption{Stromkreis.}
 	\end{center}
 \end{figure}
@@ -1012,7 +1012,7 @@ Das \textbf{Kontinuit\"atsgesetz}/\textbf{Knotenregel} besagt, dass die Summe de
 \textbf{Beispiel}: Nehmen wir einen Knoten mit zwei zuflie\ss{}enden Kanten und einer wegflie\ss{}enden Kante.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[height=0.25\textwidth, width=0.25\textheight]{flow.pdf}
+		\includegraphics[scale=2]{flow.pdf}
 		\caption{Str\"ome.}
 	\end{center}
 \end{figure}
@@ -1024,7 +1024,7 @@ i1 + i2 = i3
 \paragraph{\"Ubungsbeispiel:} Formuliere das Kontinuit\"atsgesetz f\"ur die folgende Anordnung:
 \begin{figure}[H]
 	\centering{
-		\includegraphics[height=0.40\textwidth, width=0.25\textheight]{aufgabe.pdf}
+		\includegraphics[scale=2]{aufgabe.pdf}
 		\caption{Aufgabe.}
 		\label{fig:circuit}
 	}
@@ -1079,6 +1079,8 @@ Eine \textbf{ideale elektrische Spannungsquelle} ist ein zwei poliges elektrisch
 	\end{center}
 \end{figure}
 \noindent
+Beachte die Pfeile in der obigen Abbildung, die nicht Teil des eigentlichen Schaltsymbols sind, sondern eine Konvention der Flu\ss{}richtung anzeigen. Die Konvention besagt, dass die l\"angere der beiden paralellen Linien als der Ausgang angesehen wird.\\
+\\
 Die Strom- Spannungs- Kennlinie einer 5V Spannungsquelle sieht folgenderma\ss{}en aus.
 \begin{figure}[H]
 	\centering{
@@ -1088,7 +1090,9 @@ Die Strom- Spannungs- Kennlinie einer 5V Spannungsquelle sieht folgenderma\ss{}e
 	}
 \end{figure}
 \noindent
-Dies ist ein Beispiel bei dem die Charakteristik keine Funktion ist sondern man sich zur Beschreibung die allgemeinere Form, eine Gleichung, bedinen muss: $U=5$.\\
+Dies ist ein Beispiel bei dem die Charakteristik keine Funktion ist sondern man sich zur Beschreibung die allgemeinere Form, eine Gleichung, bedienen muss: $U=5$.\\
+\\
+In unserer Fl\"u\ss{}igkeitsanalogie des elektrischen Stromes w\"are dies eine Pumpe mit konstantem Druck.\\
 Reale Spannungsquellen, wie Zink/Kohle Batterien oder Lithium- Ionen- Akkumulatoren haben nur in einem sehr kleinen Stromst\"arke Bereich eine derartige vertikale Charakteristik.\\
 \\
 Als n\"achstes Bauteil lernen wir die Gl\"uhbirne kennen. Eine Gl\"ubirne ist ein zweipoliges Bauteil, das Licht erzeugt wenn es mit Strom durchflossen wird.
@@ -1108,7 +1112,14 @@ Eine elektrische Gl\"uhbirne hat eine parabolische Charakteristik.
 	}
 \end{figure}
 \noindent
-Man bemerke hier, dass im Gegensatz zur Spannungsquelle, hier die Charakteristik durch den Ursprung $(0,0)$ geht. Es ist leicht zu sehen, dass Quellen diese Eigenschaft haben m\"ussen um ihre Funktion zu erf\"ullen.
+Man bemerke hier, dass im Gegensatz zur Spannungsquelle, hier die Charakteristik durch den Ursprung $(0,0)$ geht. Es ist leicht zu sehen, dass Quellen diese Eigenschaft haben m\"ussen um ihre Funktion zu erf\"ullen. Au\ss{}erdem ist die Charakteristik symmetrische im Sinne von 
+\begin{equation*}
+	\Phi(-U) = - j.
+\end{equation*}
+Daher sie sieht gleich aus wenn man an der $x-$Achse und anschlie\ss{}end and der $y-$Achse spiegelt. Bei Charakteristiken mit dieser Symmetrie ist es egal welchen der Pole man als Eingang und welchen als Ausgang z\"ahlt. Ein derartiges Bauteil nennt man auch ungerichtet. \footnote{In der Regel erkennt man, dass ein Bauteil ungerichtet ist wenn das Schaltsymbol symmetrisch ist.}
+\\
+\\
+\paragraph{\"Ubungsbeispiel:} \"Uberzeuge dich davon, dass es tats\"achlich keinen Unterschied macht welcher Pol als Eingang gesehen wird. 
 \subsection{Zusammenfassung}
 Gegeben sei ein elektrischer Stromkreis bestehend aus Knoten und elektrischen Bauteilen verbunden durch Kanten, welche elektrische Verbindungen beziehungsweise Leiter darstellen.
 \\
@@ -1139,7 +1150,7 @@ Als n\"achstes betrachten wir die elektrischen Stromst\"arken die innerhalb des 
 	\end{center}
 \end{figure}
 \noindent
-Die Charakteristiken der elektrischen Bauteile wiederum legen f\"ur jede Kante eindeutig die elektrische Stromst\"arke fest. \\
+Die Charakteristiken der elektrischen Bauteile wiederum legen f\"ur jede Kante eindeutig die elektrische Stromst\"arke fest. Bedenke dabei, dass immer der zuflie\ss{}ende Strom in unserer Definition einer Charakteristik betrachtet wird und immer in Bezug gesetzt zur Differenz des Potential des Einganges der betrachtet wird minus dem Potentials am Ausgang. Zus\"tzlich vergess nicht, dass die Flu\"ss{}richtungen im Netzwerk nicht mit den vorher f\"r die Bauteil Anschl\"usse festgelegten Richtungen \"ubereinstimmen muss.\\
 \begin{align} 
 \begin{split}
 j_1 = \Phi_1(\psi_1 - \psi_2)\\
@@ -1210,7 +1221,9 @@ Das elektrische Bauteil assoziiert mit dem Ohm'schen Widerstand ist der Widersta
 	\end{center}
 \end{figure}
 \noindent
-Sie stellt einen quantitativen Zusammenhang zwischen Strom und Spannung her und kann wie der Name schn sagt als Widerstand des Bauteiles gegen die Verursachung von elektrischem Strom durch eine gegebene elektrische Spannung angesehen werden.\\
+Eine lineare Funktion erf\"ullt die selbe Symmetrie wie die Gl\"uhbirne (Abbildung 4.8). die Flu\ss{}richtungen k\"onnen daher beliebig gew\"ahlt werden.\\
+\\
+Ein elektrischer Widerstand stellt einen quantitativen Zusammenhang zwischen Strom und Spannung her und kann wie der Name schn sagt als Widerstand des Bauteiles gegen die Verursachung von elektrischem Strom durch eine gegebene elektrische Spannung angesehen werden.\\
 Innerhalb unserer Anschauung der Fl\"ussigkeit, die sich durch R\"ohren bewegt, w\"are dies so etwas wie ein Gewebe oder ein por\"oses Material, durch die die Fl\"u\ss{}igkeit mit Druck gepresst werden muss.
 \subsection{Reihen und parallele Schaltungen}
 Bestimmte h\"aufig auftretende Teilstrukturen elektrischer Stromkreise werden als elektrische Bauteile abstrahiert. Hierbei errechnet sich, abh\"angig von der Teilstruktur die Charakteristik des abstrahierten Bauteiles aus den Charakteristiken der darin enthaltenen Bauteile.\\
@@ -1218,7 +1231,7 @@ Bestimmte h\"aufig auftretende Teilstrukturen elektrischer Stromkreise werden al
 Gegeben sei eine Teilstruktur bestehend aus mehreren zweipoligen elektrischen Bauteilen, die nacheinander geschaltet sind, eine so genannte \textbf{Reihenschaltung}.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[height=0.33\textwidth, width=0.12\textheight]{reihe.pdf}
+		\includegraphics[scale=0.75]{reihe.pdf}
 		\caption{Reihenschaltung.}
 	\end{center}
 \end{figure}
@@ -1235,7 +1248,7 @@ Das Problem vereinfacht sich stark und es ist leicht zu zeigen, dass $\Phi(u) = 
 Gegeben sei eine Teilstruktur bestehend aus mehreren zweipoligen elektrischen Bauteilen, die nebeneinander geschaltet sind, eine so genannte \textbf{Paralellschaltung}. In der folgenden Abbildung sehen wir ein Beispiel mit zwei paralell geschalteten Bauteilen.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[height=0.33\textwidth, width=0.15\textheight]{Parallel.pdf}
+		\includegraphics[scale=0.75]{Parallel.pdf}
 		\caption{Paralellschaltung.}
 	\end{center}
 \end{figure}
@@ -1251,15 +1264,21 @@ Es ist leicht zu sehen, dass wenn wir annehmen, dass unsere Bauteile lineare Cha
 \subsection{Lineare Systeme}
 Die Gleichungen in (4.3) reduzieren sich im Fall von Bauteilen mit linearer Charakteristik zu linearen Gleichungen und mit Hilfe von (4.4) erhalten wir ein lineares Gleichungssystem, das mit klassischen Methoden wie dem Gau\ss{}schen Eliminationsverfahren gel\"ost werden kann. \\Wir zeigen in diesen Abschnitt wie dies an einem konkreten Beispiel funktioniert und dass wir im Fall von zweipoligen linearen Bauteilen immer eine eindeutige L\"osung haben.\\
 \\
-Gegeben sei ein elektrischer Stromkreis bestehend aus einer quadratischen Anordnung von Widerst\"anden. Die Kanten des Quadrats sind Widerst\"ande, die Ecken sind Knoten. Eine Diagonale ist ein Widerstand, die andere ist eine ideale Spannungsquelle.
+Gegeben sei ein elektrischer Stromkreis bestehend aus einer quadratischen Anordnung von Widerst\"anden. Die Kanten des Quadrats sind Widerst\"ande, die Ecken sind Knoten. Eine der Diagonalen ist ein Widerstand, die Andere ist eine ideale Spannungsquelle.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[height=0.22\textwidth, width=0.20\textheight]{stromkreis_1.pdf}
+		\includegraphics[scale=0.8]{stromkreis_1.pdf}
 		\caption{Beispiel.}
 	\end{center}
 \end{figure}
 \noindent
+Wir starten mit unserer Analyse des Stromkreises indem wir f\"ur jede Kante eine Vorzugsrichtung ausw\"ahlen und die zugeh\"origen Str\"ome benennen. Die an der Spannungsquelle liegenden Kanten haben bereits eine Vorzugsrichtung (4.5), und f\"ur alle an Widerst\"ande grenzenten Kanten, kann die Flu\ss{}richtung beliebig gew\"ahlt werden (4.10), solange beachtet wird, dass jeder Widerstand eine zuflie\ss{}ende und eine abflie\ss{}ende Kante haben muss.
+\\
+\\
 
+
+
+und jedem durch Bauteile abgetrennten Bereich von Kanten und Knoten eine Potentialvariable, die f\"ur den unbekannten Potentialwert stellvertretend steht.
 
 
 \section{Dynamische Stromkreise}
