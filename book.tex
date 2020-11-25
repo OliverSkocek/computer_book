@@ -970,42 +970,73 @@ Es ist nun eine leichte \"ubung zu zeigen, dass das \textbf{NOR}, also die Verne
 \paragraph{\"Ubungsbeispiel 32:} Zeige Dies.
 \chapter{Elektronik}
 Streng genommen kann man eine Rechenmaschine bauen, die anstelle von elektrischen Schaltkreisen aus Wasserschl\"auchen und Ventilen oder Zahnr\"adern besteh. Da moderne Rechenmaschinen elektronisch sind und dies auf absehbare Zeit so bleiben wird, ist es notwendig einige wichtige Konzepte der Elektronik vorzustellen.
-\section{Der elektrische Stromkreis}
+\section{Elektrische Netzwerke}
 Wer genauere Details \"uber die zugrundeliegende Physik wissen m\"ochte, soll im Anhang nachlesen oder sich ein passendes Fachbuch suchen.\\
 \\
-Ein elektrischer Stromkreis besteht aus Spannungsquelle, Leiter und Verbraucher, wie wir der Schule gelernt haben. Unser Ziel einen elektronischen Computer zu bauen, verlangt allerdings ein klein wenig detaillierteres Verst\"andnis.
-Ein idealisierter elektrischer \textbf{Stromkreis} ist ein Graph bestehend aus \textbf{Knoten} und \textbf{elektrischen Bauteilen}, die mit Kanten, welche elektrische Leiter darstellen, miteinander verbunden sind.\\
-Hier ein konkretes Beispiel.
+Das Ziel dieses Abschnittes ist den Leser mit den Grundideen elektronischer Vorg\"ange vertraut zu machen. Hierzu werden wir lernen, was wir in einem elektronischen System messen k\"onnen, was die Bausteine eines elektronischen Systems sind und wie wir ein physikalisch realisiertes elektronisches System, wie zum Beispiel die Verkabelung in unserem Haus oder das Innenleben eines Radios als Schaltplan mit idealisierten Komponenten abstrahieren können.\\
+\\
+In der Schule haben wir gelernt, dass ein elektrischer Stromkreis aus einer Spannungsquelle, Leiter und einem Verbraucher besteht.
+In einem komplexen elektrischen Netzwerk kann man mehrere Spannungsquellen, beliebig verzweigte Leiterbahnen und Verbraucher mit verschiedensten Eigenschaften haben.
+\\
+\\
+Wir starten mit einem jedem bekannten Beispiel eines elektrischen Stromkreises, dem Kartoffelstromkreis.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{kartoffel.jpg}
+		\caption{Typischer Stromkreis.}
+	\end{center}
+\end{figure}
+\noindent
+In der Abbildung sehen wir drei Kartoffelbatterien, die mit Dr\"ahten miteinander und mit einer Gl\"uhbirne verbunden sind. Dieser Stromkreis kann als Schaltplan idealisierter Komponenten abstrahiert werden. Hierbei werden irrelevante Eigenschaften der Bausteine des Stromkreises ignoriert und durch idealisierte Bauteile dargestellt. Unser Kartoffelstromkreis wird in folgendem Schaltplan abstrahiert.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1]{kartoffel_diagram.pdf}
+		\caption{Schaltplan.}
+	\end{center}
+\end{figure}
+\noindent
+Wir ignorieren die Farben der Kabeln, die Form der Alligatorklemmen, die Abmessungen der Gl\"uhbirne die L\"ange und Kr\"ummung sowie die Dicke der Kabel. Interessant ist f\"ur uns, was f\"ur Bauteile da sind, also drei Spannungsquellen (Kartoffelbatterien) und ein Verbraucher ( Gl\"uhbirne) und wie diese durch Leiter (Kabel) untereinander verbunden sind.\\
+\\
+Ein \textbf{Schaltplan} ist ein Netzwerk bestehend aus \textbf{Knoten} und \textbf{elektrischen Bauteilen}, die durch Kanten, welche elektrische Leiter darstellen, miteinander verbunden sind.\\
+Jedes Bauteil hat eine feste Anzahl an Anschl\"ussen und ein Leiter endet immer an eineer Seite an einem Anschluss eines Bauteils und an der anderen Seite an einem Knoten oder einem weiteren Anschluss eines Bauteiles.\\
+Betrachten wir ein weiteres Beispiel um dies zu illustrieren. 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.6]{circuit.pdf}
 		\caption{Stromkreis.}
 	\end{center}
 \end{figure}
-Es handelt sich hier um einen elektrischen Stromkreis in dem drei Bauteile, jeweils eine 5 Volt Spannungsquelle link, und zwei 100 $\Omega$ Widerst\"ande \"uber zwei Knoten (Punkte \"uber und unter dem mittleren Widerstand) verbunden sind.\\
+\noindent
+Dieser Schaltplan besteht aus drei Bauteilen, und zwar einer 5 Volt Spannungsquelle (links im Bild), und zwei 100 $\Omega$ Widerst\"ande.
+Die geraden Linien sind die Kanten und diese symbolisieren Verbindungen durch elektrische Leiter. Die dicken Punkte sind die Knoten. Knoten sind Ausgangpunkte f\"ur Verzweigungen von Leitern und jede Verzweigung muss in einem Schaltplan \"uber Knoten dargestellt werden.\\
 \\
-Innerhalb eines elektrischen Stromkreises k\"onnen zu jedem Zeitpunkt zwei fundamentale Gr\"o\ss{}en gemssen werden.\\
+Innerhalb eines elektrischen Netzwerkes k\"onnen zu jedem Zeitpunkt zwei fundamentale Gr\"o\ss{}en gemessen werden. Um diese beiden Gr\"o\ss{}en und ihre Berechnung wird sich das Gro\ss{} diese Kapitel drehen.\\
 \\
-Der \textbf{elektrische Strom} ist eine Gr\"o\ss{}e die an jedem Punkt auf einem Leiter im elektrischen Stromkreis gemessen werden kann. Eine gute Anschauung ist eine Fl\"ussigkeit, die elektrische Ladung, die durch den Leiter flie\ss{}t wie durch ein Rohr. Gemessen wird die Menge an Fl\"ussigkeit, die in einer gewissen Zeit, den Punkt durchflie\ss{}t. Abh\"angig von der Flu\ss{}richtung ist die Gr\"o\ss{}e positiv oder negativ. \\
+An jedem Punkt auf jedem der Leiter in einem elektrischen Netzwerk kann eine \textbf{elektrische Stromstr\"arke} gemessen werden. Oft werden wir kurz elektrischer Strom oder nur Strom schreiben.
+Eine gute Anschauung f\"ur diese Gr\"o\ss{}e ist eine Fl\"ussigkeit, die \textbf{elektrische Ladung}, die durch ein Rohr, den Leiter, flie\ss{}t. 
+Gemessen wird die Menge an Fl\"ussigkeit, die in einer gewissen Zeit, den Rohrquerschnitt beziehungsweise den Punkt im Schaltplan durchflie\ss{}t.\\
 \\
-Welche der beiden M\"oglichkeiten der Flu\ss{}richtung als positiv angesehen wird, muss hierbei zu Beginn festgelegt und als Referenz zu der Messgr\"o\ss{}e mitnotiert werden.\\
+Ein Fluss hat auch immer eine Richtung. Da ein Leiter in unserem Schaltplan eine Linie ist, daher nur in eine Richtung Ausdehnung hat, kann dieser Flu\ss{} nur zwei Richtungen haben. Die Richtung wird \"uber das Vorzeichen der Stromst\"arke angegeben. Daher ein elektrischer Strom kann immer nur in Bezug zu einer Messrichtung gemessen werden.\\
+\\
+Um das positive Vorzeichen auch in Beziehung mit einer Richtung des Leiters (Kante/Linie) setzen zu k\"onnen, muss dem Leiter vor der Messung\footnote{Am Besten beim Design des Schaltplanes.} eine Richtung zugesprochen werden. Die Messung muss dann unter Ber\"ucksichtigung dieser Richtung vollzogen werden.\\
 \\
 Das Formelsymbol f\"ur den elektrische Strom ist das $I$ und die Ma\ss{}einheit ist das Ampere, abgek\"urzt $A$. 
 \\
 \\
-Die \textbf{elektrische Spannung} ist im Gegensatz dazu eine Gr\"o\ss{}e, die zwischen zwei beliebigen Punkten auf den Leitern/Kanten gemessen werden kann. Sie stellt im Prinzip den Trieb des elektrischen Stromes zwischen den beiden Punkten dar. Innerhalb unseres Bildes der Fl\"ussigkeit, die durch Rohre flie\ss{}t, w\"are diese Gr\"o\ss{}e so etwas wie der Druckunterschied zwischen zwei Punkten. Entsprechend dieser Interpretation ist die elektrische Spannung eine gerichtete Gr\"oße in dem Sinn, dass es einen Unterschied macht um man vom Punkt $A$ zum Punkt $B$ misst oder umgekehrt vom Punkt $B$ zum Punkt $A$ misst. Die beiden Messwerte unterscheiden sich wie zu erwarten ist nur im Vorzeichen.\\
+Die \textbf{elektrische Spannung} ist im Kontrast eine Gr\"o\ss{}e, die von einem beliebigen Punkt zu einem beliebigen anderen Punkt gemessen wird. Wir sehen also, dass auch diese Gr\"o\ss{}e eine Richtung hat. Die elektrische Spannung stellt im Prinzip den Antrieb des elektrischen Stromes zwischen den beiden Punkten dar, was auch erkl\"art warum es eine gerichtete Gr\"o\ss{}e ist. \\
+Innerhalb unserer Anschauung der Fl\"ussigkeit, die durch Rohre flie\ss{}t, w\"are diese Gr\"o\ss{}e so etwas wie der Druckunterschied zwischen zwei Punkten. Oder noch einfacher der H\"ohenunterschied zwischen den Rohrabschnitten. Dies legt den Sachverhalt nahe, dass sich nur das Vorzeichen der elektrischen Spannung umdreht wenn man die Reihenfolge der Punkte an denen man misst umdreht.\\
 \\
 Das Formelsymbol f\"ur die elektrische Spannung ist das $U$ und die Ma\ss{}einheit ist das Volt, abgek\"urzt $V$.\\
 \\
-Jedem zweipoligen elektrischen Bauteil kann eine \textbf{elektrische Leistung} kurz $P$ \"uber die angelgte elektrische Spannung $U$ und die das Bauteil durchflie\ss{}ende elektrische Stromst\"arke $I$ zugeordnet werden.
+Jedem zweipoligen elektrischen Bauteil, daher Bauteil mit zwei Anschl\"ussen, kann eine \textbf{elektrische Leistung} kurz $P$ \"uber die angelgte elektrische Spannung $U$ und die das Bauteil durchflie\ss{}ende elektrische Stromst\"arke $I$ zugeordnet werden.
 \begin{equation}
 	P = U * I
 \end{equation} 
 Die elektrische Leistung hat keine besondere Bedeutung f\"ur unsere Diskussion, sollte aber der Vollst\"andigkeit halber erw\"ahnt werden.
-\section{Die drei Grundgesetze elektrischer Stromkreise}
-Entsprechend der bereits vorgestellten Anschauung des Flu\ss{}es einer Fl\"u\ss{}igkeit durch ein Rohrwerk, lassen sich Gesetze formulieren nach denen sich die im Stromkreis messbaren Gr\"o\ss{}en verhalten.\\
+\section{Die drei Grundgesetze elektrischer Netzwerke}
+Entsprechend der bereits vorgestellten Anschauung des Flu\ss{}es einer Fl\"u\ss{}igkeit durch ein Rohrwerk, lassen sich Gesetze formulieren nach denen sich die im Netzwerk messbaren Gr\"o\ss{}en verhalten.\\
 \\
-Zwei Grundannahmen die im idealisierten Stromkreis getroffen werden, aber keine Naturgesetze darstellen, sondern in erster Linie der einfacheren Darstellung des Sachverhaltes dienen, sind die Annahmen, dass innerhalb der Punkte einer Kante die Stromst\"arke konstant ist, sowie dass zwischen zwei Punkten auf Kanten, die \"uber Knoten verbunden sind die Spannung Null ist.\\
+Zwei Grundannahmen die im Schaltplan getroffen werden, aber keine Naturgesetze darstellen, sondern in erster Linie der einfacheren Darstellung des Sachverhaltes dienen, sind die Annahmen, dass innerhalb der Punkte einer Kante die Stromst\"arke und Spannung gleich ist, sowie dass zwischen zwei Punkten auf Kanten, die \"uber Knoten verbunden sind die Spannung Null ist.\\
 \\
 Das \textbf{Kontinuit\"atsgesetz}/\textbf{Knotenregel} besagt, dass die Summe der in einen Knoten oder ein elektrisches Bauteil flie\ss{}enden Str\"ome gleich der Summe der abflie\ss{}enden Str\"ome ist.\\
 \\
@@ -1030,18 +1061,18 @@ i1 + i2 = i3
 	}
 \end{figure}
 \noindent
-Die Spannungen in einem elektrischen Stromkreis gehorchen ebenso einem Gesetz, dass die Struktur des Stromnetzes mit den Messwerten verbindet. Man w\"ahle zwei Kanten in einem elektrischen Stromkreis und einen Pfad zwischen den beiden Kanten. Wenn man an der ersten Kante startet und den Pfad durchwandert und dabei die Spannungen zwischen aufeinanderfolgenden Kanten misst, dann ergibt die Summe der Spannungen sobald man bei der letzten Kante ankommt dieselbe Spannung die man zwischen der ersten und letzten Kante misst. Insbesondere bedeutet dies, dass f\"ur jeden geschlossenen Pfad die Summe dieser Spannungen Null sein muss.
-Diese Regel nennt man die \textbf{Maschenregel}, wobei Maschen sich auf jene geschlossenen Pfade im Stromkreis bezieht.
+Die Spannungen in einem elektrischen Netzwerk gehorchen ebenso einem Gesetz, dass die Struktur des Stromnetzes mit den Messwerten verbindet. Man w\"ahle zwei Kanten im Schaltplan und einen Pfad zwischen den beiden Kanten. Wenn man an der ersten Kante startet und den Pfad durchwandert und dabei die Spannungen zwischen aufeinanderfolgenden Kanten misst, dann ergibt die Summe der Spannungen sobald man bei der letzten Kante ankommt dieselbe Spannung die man zwischen der ersten und letzten Kante misst. Insbesondere bedeutet dies, dass f\"ur jeden geschlossenen Pfad die Summe dieser Spannungen Null sein muss.
+Diese Regel nennt man die \textbf{Maschenregel}, wobei Maschen sich auf jene geschlossenen Pfade im Schaltplan bezieht.
 \begin{theorem}
-	Gegeben sei ein elektrischer Stromkreis, dann gilt die Maschenregel genau dann wenn es eine Funktion $\psi$ gibt, die jeder Kante einen Zahlenwert zuordnet, sodass die gemessene Spannung zwischen der Kante $x$ zur Kante $y$ genau die Differenz $\psi(y)-\psi(x)$ ist.
+	Gegeben sei ein Schaltplan, dann gilt die Maschenregel genau dann wenn es eine Funktion $\psi$ gibt, die jeder Kante einen Zahlenwert zuordnet, sodass die gemessene Spannung zwischen der Kante $x$ zur Kante $y$ genau die Differenz $\psi(y)-\psi(x)$ ist.
 \end{theorem}
 \noindent
-Eine solche Funktion $\psi$ der Kanten nennen wir eine \textbf{Potentialfunktion} und wir werden anstelle der Maschenregel immer von der Existenz einer Potentialfunktion ausgehen, da dies eine einfachere Analyse des elektrische Stromkreises erlaubt.
+Eine solche Funktion $\psi$ der Kanten nennen wir eine \textbf{Potentialfunktion} und wir werden anstelle der Maschenregel immer von der Existenz einer Potentialfunktion ausgehen, da dies eine einfachere Analyse elektrischer Netzwerke erlaubt.
 \begin{corollary}
-	Eine Potentialfunktion eines Stromkreises $X$ ist bis auf eine additive Konstante eindeutig festgelegt, daher falls $\psi$ eine Potentialfunktion von $X$ ist und $c$ ein reele Zahl, dann ist $\psi + c$ auch eine Potentialfunktion von $X$.
+	Eine Potentialfunktion eines Schaltplans $X$ ist bis auf eine additive Konstante eindeutig festgelegt, daher falls $\psi$ eine Potentialfunktion von $X$ ist und $c$ ein reele Zahl, dann ist $\psi + c$ auch eine Potentialfunktion von $X$.
 \end{corollary}
 \noindent
-Bisher haben wir den Einflu\ss{} der Struktur des Stromkreises, also des Netzwerkes an Verbindungen, behandelt. Der Einflu\ss{} der elektrischen Bauteile selbst auf Spannungen und Stromst\"arken wurde bislang ausgelassen.\\
+Bisher haben wir den Einflu\ss{} der Struktur des Schalplans, also des Netzwerkes an Verbindungen, behandelt. Der Einflu\ss{} der elektrischen Bauteile selbst auf Spannungen und Stromst\"arken wurde bislang ausgelassen.\\
 Ein elektrisches Bauteil hat eine bestimmte feste Anzahl von Anschl\"ussen oder Pole an welche elektrische Leiter/Kanten befestigt/geklemmt werden k\"onnen. Das Verhalten eines elektrischen Bauteiles wird durch die \textbf{Strom-Spannungs-Kennlinie} oder allgemeiner \textbf{Charakteristik} kurz $\Phi$ bestimmt. Sie legt fest welche Str\"ome zwischen den Anschl\"ussen bei gegebenen Spannungen an den Anschl\"ussen erlaubt sind. Die allgemeinste abstrakte Definition des Konzeptes ist:
 \begin{definition}
 	Eine Charakteristik $\Phi$ eines elektrischen Bauteiles mit $N$ Anschl\"ussen ist eine Teilmenge des $2 * (N - 1)$-dimensionalen Raumes. Wobei die ersten $N - 1$ Komponenten Potentialwerte an den Anschl\"ussen repr\"asentieren und die restlichen Komponenten die entsprechenden Strom- st\"arken.\footnote{Die Stromst\"arken sind bereits wegen der Knotenregel durch $N - 1$ Werte  festgelegt. Da Potentiale genauso wegen ihrer Eindeutigkeit bis auf eine additive Konstante.}
