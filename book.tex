@@ -1034,11 +1034,36 @@ Jedem zweipoligen elektrischen Bauteil, daher Bauteil mit zwei Anschl\"ussen, ka
 \end{equation} 
 Die elektrische Leistung hat keine besondere Bedeutung f\"ur unsere Diskussion, sollte aber der Vollst\"andigkeit halber erw\"ahnt werden.
 \section{Die drei Grundgesetze elektrischer Netzwerke}
-Entsprechend der bereits vorgestellten Anschauung des Flu\ss{}es einer Fl\"u\ss{}igkeit durch ein Rohrwerk, lassen sich Gesetze formulieren nach denen sich die im Netzwerk messbaren Gr\"o\ss{}en verhalten.\\
+In diesem Abschnitt zeigen wir wie wir einen gegebenen Schaltplan in ein Gleichungsystem umwandeln k\"onnen, dass uns erlaubt an jedem Punkt des elektrischen Netzwerkes den Strom und an jedem Paar von Punkten die Spannung zu berechnen.\\
 \\
-Zwei Grundannahmen die im Schaltplan getroffen werden, aber keine Naturgesetze darstellen, sondern in erster Linie der einfacheren Darstellung des Sachverhaltes dienen, sind die Annahmen, dass innerhalb der Punkte einer Kante die Stromst\"arke und Spannung gleich ist, sowie dass zwischen zwei Punkten auf Kanten, die \"uber Knoten verbunden sind die Spannung Null ist.\\
+Bevor wir uns den drei Gesetzen widmen, die Strom und Spannung in einem Netzwerk bestimmen, gehen wir kurz auf zwei Vereinfachungen ein, die beim Lesen eines Schaltplanes angenommen werden.\\
 \\
-Das \textbf{Kontinuit\"atsgesetz}/\textbf{Knotenregel} besagt, dass die Summe der in einen Knoten oder ein elektrisches Bauteil flie\ss{}enden Str\"ome gleich der Summe der abflie\ss{}enden Str\"ome ist.\\
+Wir nehmen an, dass die Kanten, die Bauteile und Knoten verbinden, den Strom und die Spannung nicht beeinflu\ss{}. Ihre Interpretation soll einzig und allein das darstellen von Verbindungen zwischen Komponenten sein. Strom und Spannungs Abh\"anigkeiten werden allein in die Bauteile gepresst. Wenn man genau sein will h\"atten wir den Schaltplan unseres Kartoffelstromkreises so zeichnen m\"ussen:
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.6]{true_kartoffel.pdf}
+		\caption{Der wahre Kartoffelschaltplan.}
+	\end{center}
+\end{figure}
+\noindent
+Wir sehen, jedem einzelnen Kabel wurde jetzt ein Bauteil zugeordnet, symbolisiert durch Rechtecke. In diesen Schaltsymbolen ist nun der Einflu\ss{} des Kabelmaterials auf Strom und Spannung versteckt.\\
+In der Praxis l\"asst man dies aber oft weg, weil der Einflu\ss{} auf das Strom Spannungsverhalten von guten Leitern wie Metall nur sehr klein ist.
+\\
+\\
+Praktisch bedeutet dies f\"ur die Interpretation des Schalplanes, dass wenn wir zwischen zwei Punkten die Spannung bestimmen, der Wert nicht von dem Punkten abh\"angt die man gew\"alt hat, sondern von den Kanten auf denen die Punkte liegen. Daher ist die Spannung zwischen zwei Punkten derselben Spalte im Prinzip Null und wir vergleichen beim Spannungsmessen nicht Punkte sondern ganze Kanten.
+\\
+\\
+\"Ahnliches gilt f\"ur die Interpretation von Knoten, die einzig und allein als Symbold f\"ur Verzweigungen im Netzwerk dienen. Es gilt daher, dass die Spannung zwischen zwei Kanten, die am selben Knoten anliegen gleich Null ist.\\
+\\
+Kommen wir zur\"uck zu unserer Anschauung des elektrischen Netzwerkes als Rohrwerk durch das eine Fl\"u\ss{}igkeit flie\ss{}t. Hieraus wollen nun das erste unserer Grundgesetze ableiten.
+\\
+\\
+Betrachten wir hierzu eine Verzweigung in einem Rohrwerk. Drei Rohre, Rohr $A$, Rohr $B$ und Rohr $C$ treffen sich in einem Punkt. Es flie\ss{}t nun eine bestimmte Flu\ss{}igkeitsmenge $X$ in einer gegebenen Zeit durch das Rohr $A$ in die Verzweigung. Nachdem das Rohr vollst\"andig mit Fl\"u\ss{}igkeit gef\"ullt ist\footnote{Damit die Anschauung korrekt ist, m\"ussen wir annehmen, dass keine Luft im Rohrwerk ist.} und sich eine Fl\"ussigkeit nicht verdichten l\"asst muss in der selben Zeit in Summe die Menge $X$ aus Rohr $B$ und Rohr $C$ hinausflie\ss{}en.\\
+\\
+Das gerade beschriebene Konzept nennt sich \textbf{Kontinuit\"atsgesetz} und ist \"uberall dort anzutreffen wo sich Dinge fl\"u\ss{}igkeits\"hnlich verhalten.\\
+\\
+Zu solchen Dingen z\"ahlen neben Wasser, Benzin und Milch, auch W\"arme und elektrische Ladung in einem Leiter. In der Elektronik nenn man dieses Konzept auch \textbf{Knotenregel}.\\
+In unserer Abstraktion eines elektrischen Netzwerkes als Schaltplan bedeutet dies, zum Einen dass die Summe der in einen Knoten oder in ein elektrisches Bauteil flie\ss{}enden Str\"ome gleich der Summe der abflie\ss{}enden Str\"ome ist, und zum Anderen, dass auf einer gegebenen Kante jeder Punkt den selben Strom hat.\\
 \\
 \textbf{Beispiel}: Nehmen wir einen Knoten mit zwei zuflie\ss{}enden Kanten und einer wegflie\ss{}enden Kante.
 \begin{figure}[H]
@@ -1048,7 +1073,7 @@ Das \textbf{Kontinuit\"atsgesetz}/\textbf{Knotenregel} besagt, dass die Summe de
 	\end{center}
 \end{figure}
 \noindent
-Der Flu\ss{} bezieht sich hier auf die vor der Messung vorgenommene Konvention der Flu\ss{}richtung jeder Kante. Ein positiver Strom bedeutet Flu\ss{} entlang der Richtung, w\"ahrend ein negativer Strom der Richtung entgegengesetzt ist. In diesem Fall besagt das Kontinuit\"atssatz:
+Der Flu\ss{} bezieht sich dabei auf die vor der Messung festgelegte Referenz Flu\ss{}richtung jeder Kante. Ein positiver Strom bedeutet also Flu\ss{} entlang der Richtung, w\"ahrend ein negativer Strom der Richtung entgegengesetzt ist. In diesem Fall besagt das Kontinuit\"atssatz:
 \begin{equation}
 i1 + i2 = i3
 \end{equation}
