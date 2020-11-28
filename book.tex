@@ -1075,7 +1075,7 @@ In unserer Abstraktion eines elektrischen Netzwerkes als Schaltplan bedeutet die
 \noindent
 Der Flu\ss{} bezieht sich dabei auf die vor der Messung festgelegte Referenz Flu\ss{}richtung jeder Kante. Ein positiver Strom bedeutet also Flu\ss{} entlang der Richtung, w\"ahrend ein negativer Strom der Richtung entgegengesetzt ist. In diesem Fall besagt das Kontinuit\"atssatz:
 \begin{equation}
-i1 + i2 = i3
+i_1 + i_2 = i_3
 \end{equation}
 \paragraph{\"Ubungsbeispiel:} Formuliere das Kontinuit\"atsgesetz f\"ur die folgende Anordnung:
 \begin{figure}[H]
@@ -1086,7 +1086,17 @@ i1 + i2 = i3
 	}
 \end{figure}
 \noindent
-Die Spannungen in einem elektrischen Netzwerk gehorchen ebenso einem Gesetz, dass die Struktur des Stromnetzes mit den Messwerten verbindet. Man w\"ahle zwei Kanten im Schaltplan und einen Pfad zwischen den beiden Kanten. Wenn man an der ersten Kante startet und den Pfad durchwandert und dabei die Spannungen zwischen aufeinanderfolgenden Kanten misst, dann ergibt die Summe der Spannungen sobald man bei der letzten Kante ankommt dieselbe Spannung die man zwischen der ersten und letzten Kante misst. Insbesondere bedeutet dies, dass f\"ur jeden geschlossenen Pfad die Summe dieser Spannungen Null sein muss.
+Als n\"achstes widmen wir uns dem zweiten Grundgesetz. So wie die Knotenregel die Struktur des Netzwerkes in Verbindung mit den elektrischen Str\"omen setzt, so verbindet dieses die Netzstruktur mit den Spannungen.\\
+\\
+Zur Motivation des neuen Gesetzes gehen wir wieder zur\"uck zur Anschaung des Fl\"u\ss{}igkeitsdurchflossenen R\"orensystems. Wir haben ja bereits in diesem Bilde die Spannung als H\"ohenunterschied der Rohrabschnitte beschrieben.\\
+\\
+Damit diese Anschauung der Spannung aber mit unserer Erfahrung zu H\"ohen- unterschieden \"ubereinstimmt, muss gelten, dass sie unabh\"angig vom Weg ist, der zur\"uckgelegt wurde um Teilabschnitte zu vermessen. Zur Erkl\"arung: Wir machen uns zusammen auf einen Berg zu besteigen. Dabei starten wir beide am selben Punkt, sagen wir dem Parkplatz am Flu\ss{} des Berges. Anschlie\ss{}end wandern wir auf unterschiedlichen Pfaden den Berg hinauf und machen zwischendurch Halt an zwei verschiedenen Bergh\"utten. Am Ende treffen wir uns beide am Gipfel. Messen wir beide bei der Pause in der H\"utte den H\"ohenunterschied zum Parkplatz und dann am Gipfel den H\"ohen- unterschied zu der H\"utte an der wir Pause gemacht haben, dann muss die Summe dieser Werte f\"ur uns beide gleich sein. Als Konsequenz k\"onnen wir offensichtlich eine absolute H\"ohe definieren als den H\"ohenunterschied zum Parkplatz (oder irgendeinem anderen festen Punkt). Jeder H\"ohenunterschied zwischen einem Punkt $A$ und einem Punkt $B$ ist dann genau gleich der Differenz der absoluten H\"ohe am Punkt $B$ minus der am Punkt $A$.\\
+\\
+Dieses Prinzip, dass eine Eigenschaft eines Weges, die nur abh\"angig vom Anfangs und Endpunkt des Weges ist, eine absolute Eigenschaft f\"ur jeden Punkt definiert, ist ein wichtiges Konzept aus der Potentialtheorie, einem Teilgebiet der Mathematik und hat in der Elektronik eine analoge Bedeutung.
+\\
+\\
+In einem Schaltplan gilt diees Konzept ganz analog f\"ur die elektrische Spannung.
+Man w\"ahle zwei Kanten im Schaltplan und einen Pfad zwischen den beiden Kanten. Wenn man an der ersten Kante startet und den Pfad durchwandert und dabei die Spannungen zwischen aufeinanderfolgenden Kanten misst, dann ergibt die Summe der Spannungen sobald man bei der letzten Kante ankommt dieselbe Spannung die man zwischen der ersten und letzten Kante misst. Insbesondere bedeutet dies, dass f\"ur jeden geschlossenen Pfad die Summe dieser Spannungen Null sein muss.
 Diese Regel nennt man die \textbf{Maschenregel}, wobei Maschen sich auf jene geschlossenen Pfade im Schaltplan bezieht.
 \begin{theorem}
 	Gegeben sei ein Schaltplan, dann gilt die Maschenregel genau dann wenn es eine Funktion $\psi$ gibt, die jeder Kante einen Zahlenwert zuordnet, sodass die gemessene Spannung zwischen der Kante $x$ zur Kante $y$ genau die Differenz $\psi(y)-\psi(x)$ ist.
@@ -1097,7 +1107,7 @@ Eine solche Funktion $\psi$ der Kanten nennen wir eine \textbf{Potentialfunktion
 	Eine Potentialfunktion eines Schaltplans $X$ ist bis auf eine additive Konstante eindeutig festgelegt, daher falls $\psi$ eine Potentialfunktion von $X$ ist und $c$ ein reele Zahl, dann ist $\psi + c$ auch eine Potentialfunktion von $X$.
 \end{corollary}
 \noindent
-Bisher haben wir den Einflu\ss{} der Struktur des Schalplans, also des Netzwerkes an Verbindungen, behandelt. Der Einflu\ss{} der elektrischen Bauteile selbst auf Spannungen und Stromst\"arken wurde bislang ausgelassen.\\
+Bisher haben wir den Einflu\ss{} der Struktur des Schalplans, also des Netzwerkes an Verbindungen, behandelt. Der Einflu\ss{} der elektrischen Bauteile selbst auf Spannungen und Stromst\"arken wurde bislang ausgelassen. Dies stellt das dritte Gesetz elektrischer Netzwerke dar.\\
 Ein elektrisches Bauteil hat eine bestimmte feste Anzahl von Anschl\"ussen oder Pole an welche elektrische Leiter/Kanten befestigt/geklemmt werden k\"onnen. Das Verhalten eines elektrischen Bauteiles wird durch die \textbf{Strom-Spannungs-Kennlinie} oder allgemeiner \textbf{Charakteristik} kurz $\Phi$ bestimmt. Sie legt fest welche Str\"ome zwischen den Anschl\"ussen bei gegebenen Spannungen an den Anschl\"ussen erlaubt sind. Die allgemeinste abstrakte Definition des Konzeptes ist:
 \begin{definition}
 	Eine Charakteristik $\Phi$ eines elektrischen Bauteiles mit $N$ Anschl\"ussen ist eine Teilmenge des $2 * (N - 1)$-dimensionalen Raumes. Wobei die ersten $N - 1$ Komponenten Potentialwerte an den Anschl\"ussen repr\"asentieren und die restlichen Komponenten die entsprechenden Strom- st\"arken.\footnote{Die Stromst\"arken sind bereits wegen der Knotenregel durch $N - 1$ Werte  festgelegt. Da Potentiale genauso wegen ihrer Eindeutigkeit bis auf eine additive Konstante.}
@@ -1126,7 +1136,7 @@ i_2 = \Phi^2(\phi_1,\phi_2,\phi_3)\\
 i_3 = \Phi^3(\phi_1,\phi_2,\phi_3)\\
 \end{split}
 \end{align}
-$$$$
+\noindent
 Eine \textbf{ideale elektrische Spannungsquelle} ist ein zwei poliges elektrisches Bauteil von dem unabh\"angig von der abgenommenen Stromst\"arke eine konstante Spanung abgenommen werden kann. 
 \begin{figure}[H]
 	\begin{center}
@@ -1329,14 +1339,49 @@ Gegeben sei ein elektrischer Stromkreis bestehend aus einer quadratischen Anordn
 \end{figure}
 \noindent
 Wir starten mit unserer Analyse des Stromkreises indem wir f\"ur jede Kante eine Vorzugsrichtung ausw\"ahlen und die zugeh\"origen Str\"ome benennen. Die an der Spannungsquelle liegenden Kanten haben bereits eine Vorzugsrichtung (4.5), und f\"ur alle an Widerst\"ande grenzenten Kanten, kann die Flu\ss{}richtung beliebig gew\"ahlt werden (4.10), solange beachtet wird, dass jeder Widerstand eine zuflie\ss{}ende und eine abflie\ss{}ende Kante haben muss.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.8]{stromkreis_2.pdf}
+		\caption{Str\"ome und Richtungen.}
+	\end{center}
+\end{figure}
+\noindent
+Um ein wenig mit den Variablen zu sparen, haben wir hier beiden an ein Bauteil geschlossenen Kanten denselben Strom zugeordnet, weil sie ja laut Knotenregel ohnehin gleich sind.\\
+\\
+Als n\"achstes ordnen wir jedem durch Knoten verbundenen Bereich von Kanten und einzelnen nicht an Knoten grenzende Kanten eine Potentialvariable zu. Die Potentialvariablen stehen f\"ur die unbekannten Potentialwert an den entsprechenden Bereichen.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.8]{stromkreis_3.pdf}
+		\caption{Potentialvariablen.}
+	\end{center}
+\end{figure}
+\noindent
+Anstelle von Spannungswerten bei der Spannungsquelle und Widerstandswerten bei den elektrischen Widerst\"anden haben wir $\Phi_x$ f\"ur die Charakteristiken der Bauteile geschrieben. Dies geschah damit wir zu Anfangs im selben Schema wie zuvor arbeiten. \\
+\\
+Die Charakteristiken geben uns non folgende Gleichungen.
+\begin{align} 
+\begin{split}
+\psi_1 = 5V\\
+j_2 = \Phi_4(\psi_3 - \psi_1) = \frac{\psi_3 - \psi_1}{500\Omega}\\
+j_3 = \Phi_3(\psi_4 - \psi_3) = \frac{\psi_4 - \psi_3}{1000\Omega}\\
+j_4 = \Phi_1(\psi_2 - \psi_1) = \frac{\psi_2 - \psi_1}{400\Omega}\\
+j_5 = \Phi_2(\psi_4 - \psi_2) = \frac{\psi_4 - \psi_2}{4700\Omega}\\
+j_6 = \Phi_5(\psi_3 - \psi_2) = \frac{\psi_3 - \psi_2}{2000\Omega}\\
+\end{split}
+\end{align}
+Beachte hierbei die erste Gleichung, welche wir erhalten da sich wie schon gezeigt die Charakteristik der idealen Spannungsquelle nicht als Funktion schreiben l\"asst. Links stehen die Stromst\"arken; in der Mitte dann die Charakteristik als Funktionensymbol und rechts dann die Definition der linearen Charakteristik ausgeschrieben. Wir sehen, dass es keine Gleichung f\"uer $j_1$ gibt, aber dies \"andert sich sogleich.\\
+\\
+Wir kommen nun zu den Gleichungen der Stromst\"arken, die aus der Knotenregel resultieren.
+\begin{align} 
+\begin{split}
+j_1 = j_2 + j_4\\
+j_2 + j_6 = j_3\\
+j_3 + j_5 = j_1\\
+j_4 = j_6 + j_5\\
+\end{split}
+\end{align}
 \\
 \\
-
-
-
-und jedem durch Bauteile abgetrennten Bereich von Kanten und Knoten eine Potentialvariable, die f\"ur den unbekannten Potentialwert stellvertretend steht.
-
-
 \section{Dynamische Stromkreise}
 
 \chapter{Ein m\"oglichst einfacher Digitalrechner}
