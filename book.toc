@@ -64,20 +64,20 @@
 \contentsline {subsection}{\numberline {4.3.1}Reihen und parallele Schaltungen}{48}{subsection.4.3.1}
 \contentsline {paragraph}{\"Ubungsbeispiel:}{49}{section*.45}
 \contentsline {subsection}{\numberline {4.3.2}Lineare Systeme}{50}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Dynamische Stromkreise}{52}{section.4.4}
-\contentsline {chapter}{\numberline {5}Ein m\"oglichst einfacher Digitalrechner}{53}{chapter.5}
-\contentsline {section}{\numberline {5.1}Eine minimale Arithmetisch logische Einheit}{53}{section.5.1}
-\contentsline {paragraph}{NAND: }{53}{section*.46}
-\contentsline {paragraph}{LSHIFT:}{54}{section*.47}
-\contentsline {subsection}{\numberline {5.1.1}Die physische Realisierung}{55}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Der Hauptspeicher und Registerkarte}{55}{section.5.2}
-\contentsline {section}{\numberline {5.3}Die Sprache unserer Rechenmaschine}{55}{section.5.3}
-\contentsline {paragraph}{HALT:}{55}{section*.48}
-\contentsline {paragraph}{NAND + 3 bit Addresse:}{55}{section*.49}
-\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{55}{section*.50}
-\contentsline {paragraph}{POP + 4 bit Addresse:}{55}{section*.51}
-\contentsline {paragraph}{PUSH + 4 bit Addresse:}{55}{section*.52}
-\contentsline {paragraph}{LOAD + 4 bit Wort:}{55}{section*.53}
-\contentsline {paragraph}{IF:}{55}{section*.54}
-\contentsline {paragraph}{RESET IF:}{56}{section*.55}
-\contentsline {section}{\numberline {5.4}Die Kontrolleinheit}{56}{section.5.4}
+\contentsline {section}{\numberline {4.4}Dynamische Stromkreise}{53}{section.4.4}
+\contentsline {chapter}{\numberline {5}Ein m\"oglichst einfacher Digitalrechner}{54}{chapter.5}
+\contentsline {section}{\numberline {5.1}Eine minimale Arithmetisch logische Einheit}{54}{section.5.1}
+\contentsline {paragraph}{NAND: }{54}{section*.46}
+\contentsline {paragraph}{LSHIFT:}{55}{section*.47}
+\contentsline {subsection}{\numberline {5.1.1}Die physische Realisierung}{56}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Der Hauptspeicher und Registerkarte}{56}{section.5.2}
+\contentsline {section}{\numberline {5.3}Die Sprache unserer Rechenmaschine}{56}{section.5.3}
+\contentsline {paragraph}{HALT:}{56}{section*.48}
+\contentsline {paragraph}{NAND + 3 bit Addresse:}{56}{section*.49}
+\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{56}{section*.50}
+\contentsline {paragraph}{POP + 4 bit Addresse:}{56}{section*.51}
+\contentsline {paragraph}{PUSH + 4 bit Addresse:}{56}{section*.52}
+\contentsline {paragraph}{LOAD + 4 bit Wort:}{56}{section*.53}
+\contentsline {paragraph}{IF:}{56}{section*.54}
+\contentsline {paragraph}{RESET IF:}{57}{section*.55}
+\contentsline {section}{\numberline {5.4}Die Kontrolleinheit}{57}{section.5.4}
