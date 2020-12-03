@@ -378,7 +378,7 @@ Wir starten mit zehn Symbolen $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$ und der Einfach
 	4: 'Setze den Wert der derzeitigen Stelle auf X.'
 	5: Z = X==0
 	6: if Z THEN
-	7: 	'Gehe zur naechsten Stelle, 
+	7: 	'Gehe zur n\"achsten Stelle, 
 		falls keine Stelle mehr \"ubrig ist 
 		f\"uge eine Stelle mit dem Wert 0 hinzu
 		und gehe zu dieser Stelle.'
@@ -420,7 +420,7 @@ Zur Wiederholung:
 	4: 'Setze den Wert der derzeitigen Stelle auf X.'
 	5: Z = X==0
 	6: if Z THEN
-	7: 	'Gehe zur naechsten Stelle, 
+	7: 	'Gehe zur n\"achsten Stelle, 
 		falls keine Stelle mehr \"ubrig ist 
 		f\"uge eine Stelle mit dem Wert 0 hinzu
 		und gehe zu dieser Stelle.'
@@ -973,7 +973,7 @@ Streng genommen kann man eine Rechenmaschine bauen, die anstelle von elektrische
 \section{Elektrische Netzwerke}
 Wer genauere Details \"uber die zugrundeliegende Physik wissen m\"ochte, soll im Anhang nachlesen oder sich ein passendes Fachbuch suchen.\\
 \\
-Das Ziel dieses Abschnittes ist den Leser mit den Grundideen elektronischer Vorg\"ange vertraut zu machen. Hierzu werden wir lernen, was wir in einem elektronischen System messen k\"onnen, was die Bausteine eines elektronischen Systems sind und wie wir ein physikalisch realisiertes elektronisches System, wie zum Beispiel die Verkabelung in unserem Haus oder das Innenleben eines Radios als Schaltplan mit idealisierten Komponenten abstrahieren können.\\
+Das Ziel dieses Abschnittes ist den Leser mit den Grundideen elektronischer Vorg\"ange vertraut zu machen. Hierzu werden wir lernen, was wir in einem elektronischen System messen k\"onnen, was die Bausteine eines elektronischen Systems sind und wie wir ein physikalisch realisiertes elektronisches System, wie zum Beispiel die Verkabelung in unserem Haus oder das Innenleben eines Radios als Schaltplan mit idealisierten Komponenten abstrahieren k\"onnen.\\
 \\
 In der Schule haben wir gelernt, dass ein elektrischer Stromkreis aus einer Spannungsquelle, Leiter und einem Verbraucher besteht.
 In einem komplexen elektrischen Netzwerk kann man mehrere Spannungsquellen, beliebig verzweigte Leiterbahnen und Verbraucher mit verschiedensten Eigenschaften haben.
@@ -1088,14 +1088,14 @@ i_1 + i_2 = i_3
 \noindent
 Als n\"achstes widmen wir uns dem zweiten Grundgesetz. So wie die Knotenregel die Struktur des Netzwerkes in Verbindung mit den elektrischen Str\"omen setzt, so verbindet dieses die Netzstruktur mit den Spannungen.\\
 \\
-Zur Motivation des neuen Gesetzes gehen wir wieder zur\"uck zur Anschaung des Fl\"u\ss{}igkeitsdurchflossenen R\"orensystems. Wir haben ja bereits in diesem Bilde die Spannung als H\"ohenunterschied der Rohrabschnitte beschrieben.\\
+Zur Motivation des neuen Gesetzes gehen wir wieder zur\"uck zur Anschaung des fl\"ussigkeitsdurchflossenen R\"ohrensystems. Wir haben ja bereits in diesem Bilde die Spannung als H\"ohenunterschied der Rohrabschnitte beschrieben.\\
 \\
-Damit diese Anschauung der Spannung aber mit unserer Erfahrung zu H\"ohen- unterschieden \"ubereinstimmt, muss gelten, dass sie unabh\"angig vom Weg ist, der zur\"uckgelegt wurde um Teilabschnitte zu vermessen. Zur Erkl\"arung: Wir machen uns zusammen auf einen Berg zu besteigen. Dabei starten wir beide am selben Punkt, sagen wir dem Parkplatz am Flu\ss{} des Berges. Anschlie\ss{}end wandern wir auf unterschiedlichen Pfaden den Berg hinauf und machen zwischendurch Halt an zwei verschiedenen Bergh\"utten. Am Ende treffen wir uns beide am Gipfel. Messen wir beide bei der Pause in der H\"utte den H\"ohenunterschied zum Parkplatz und dann am Gipfel den H\"ohen- unterschied zu der H\"utte an der wir Pause gemacht haben, dann muss die Summe dieser Werte f\"ur uns beide gleich sein. Als Konsequenz k\"onnen wir offensichtlich eine absolute H\"ohe definieren als den H\"ohenunterschied zum Parkplatz (oder irgendeinem anderen festen Punkt). Jeder H\"ohenunterschied zwischen einem Punkt $A$ und einem Punkt $B$ ist dann genau gleich der Differenz der absoluten H\"ohe am Punkt $B$ minus der am Punkt $A$.\\
+Damit diese Anschauung der Spannung aber mit unserer Erfahrung zu H\"ohen- unterschieden \"ubereinstimmt, muss gelten, dass sie unabh\"angig vom Weg ist, der zur\"uckgelegt wurde um Teilabschnitte zu vermessen. Zur Erkl\"arung: Wir machen uns zusammen auf, einen Berg zu besteigen. Dabei starten wir beide am selben Punkt, sagen wir dem Parkplatz am Fu\ss{} des Berges. Anschlie\ss{}end wandern wir auf unterschiedlichen Pfaden den Berg hinauf und machen zwischendurch Halt an jeweils verschiedenen Bergh\"utten. Am Ende treffen wir uns beide am Gipfel. Messen wir beide bei der Pause in der H\"utte den H\"ohenunterschied zum Parkplatz und dann am Gipfel den H\"ohenunterschied zu der H\"utte, an der wir Pause gemacht haben, dann muss die Summe dieser Werte f\"ur uns beide gleich sein. Als Konsequenz k\"onnen wir offensichtlich eine absolute H\"ohe definieren als den H\"ohenunterschied zum Parkplatz (oder irgendeinem anderen festen Punkt). Jeder H\"ohenunterschied zwischen einem Punkt $A$ und einem Punkt $B$ ist dann genau gleich der Differenz der absoluten H\"ohe am Punkt $B$ minus der am Punkt $A$.\\
 \\
 Dieses Prinzip, dass eine Eigenschaft eines Weges, die nur abh\"angig vom Anfangs und Endpunkt des Weges ist, eine absolute Eigenschaft f\"ur jeden Punkt definiert, ist ein wichtiges Konzept aus der Potentialtheorie, einem Teilgebiet der Mathematik und hat in der Elektronik eine analoge Bedeutung.
 \\
 \\
-In einem Schaltplan gilt diees Konzept ganz analog f\"ur die elektrische Spannung.
+In einem Schaltplan gilt dieses Konzept ganz analog f\"ur die elektrische Spannung.
 Man w\"ahle zwei Kanten im Schaltplan und einen Pfad zwischen den beiden Kanten. Wenn man an der ersten Kante startet und den Pfad durchwandert und dabei die Spannungen zwischen aufeinanderfolgenden Kanten misst, dann ergibt die Summe der Spannungen sobald man bei der letzten Kante ankommt dieselbe Spannung die man zwischen der ersten und letzten Kante misst. Insbesondere bedeutet dies, dass f\"ur jeden geschlossenen Pfad die Summe dieser Spannungen Null sein muss.
 Diese Regel nennt man die \textbf{Maschenregel}, wobei Maschen sich auf jene geschlossenen Pfade im Schaltplan bezieht.
 \begin{theorem}
@@ -1422,6 +1422,36 @@ Es ist nun eine einfache Aufgabe dieses Gleichungssystem aufzul\"osen. Die Strom
 \end{figure}
 \noindent
 \section{Dynamische Stromkreise}
+Bisher haben wir die Annahme getroffen, dass Strom und Spannung in einem elektrischen Netzwerk sich nicht mit der Zeit ver\"andert. Diese Annahme ist allerdings bis auf Netze, die sich nach dem Einschalten in einem konstanten Gleichgewichtzustand einfinden in physischen Netzwerken nie gegeben. Nach dem Einschalten eines elektrischen Ger\"ates braucht es immer eine gewisse Zeit bis die Spannung und der Strom von den Quellen zu den Bauteilen gelangt sind. Es gibt Anordnungen von elektrischen Bauteilen, die Schwingungen unterschiedlicher Formen erzeugen, sowie einen Effekt der bei Abschalten der Spannungsquelle beziehungsweise des Stromes dazu f\"uhrt, dass dieser nicht sofort wegf\"allt sondern langsam abklingt. All diese Effekte werden in diesem Abschnitt anhand von idealisierten Bauteilen erkl\"art. Abschließend werden Halbleiterbauteile wie Dioden und Feldeffekttransistoren behandelt, die uns dann erm\"oglichen im letzten Abschnitt dieses Kapitels die CMOS Technologie und darauf basierende logische Gatter zu verstehen.
+\subsection{Der Kondensator}
+ Ein Kondensator ist ein elektrisches Bauteil, dass Strom in eine dem Strom entgegengerichete Spannung umwandelt. Wir wollen in diesem Abschnitt nicht auf den Aufbau oder unterliegende physikalische Prinzip ein, sondern beschränken uns auf eine Beschreibung basierend auf Strom und Spannung allein. Wer mehr wissen will kann \"uber die darunterliegende Physik im Anhang lesen oder in einem entsprecheden Fachbuch.
+  \begin{figure}[H]
+ 	\begin{center}
+ 		\includegraphics[scale=0.8]{kondens.pdf}
+ 		\caption{Schaltsymbol eines Kondensator.}
+ 	\end{center}
+ \end{figure}
+ \noindent
+ Betrachten wir einen Schaltplan in dem ein Kondensator \"ueber einen Widerstand und eine Gl\"uhbiren an eine Spannungsquelle geschlossen ist. 
+ \begin{figure}[H]
+ 	\begin{center}
+ 		\includegraphics[scale=0.8]{kondensator.pdf}
+ 		\caption{Stromkreis mit Kondensator.}
+ 	\end{center}
+ \end{figure}
+ \noindent
+ Eine m\"ogliche Realisierung dieses Schaltplanes w\"are eine Batterie die anuf einem Pol an einen Kondensator und am anderen Pol \"uber eine Gl\"uhbirne am anderen Pol des Kondensators geschlossen ist.\\
+ Sobald wir den Stromkreis geschlossen haben wird entsprechend der Spannung an der Quelle, dem Widerstand der Leiter und der Gl\"uhbirne ein Strom im Uhrzeigersinn durch den Stromkreis flie\ss{}en. Der Kondensator wird diesen Strom in eine dem Strom und somit der Spannungsquelle (unten) entgegengerichtete Spannung umwandeln. Umso mehr Strom geflossen ist umso h\"oher wird diese umgekehrte Spannung und umso kleiner wird der Strom, da der Kondensator die an den Bauteilen anliegende Spannung verringert. Dies geht so lange bis der Kondensator betragsm\"assig dieselbe Spannung wie die Spannungsquelle hat und der Strom Null wird. Wir beobachten ensprechend beim Schlie\ss{}en des Stromkreises ein helles Aufleuchten der Gl\"uhbirne, das schnell dimmt und verschwindet.\\
+ 
+\subsection{Die Spule}
+\subsection{Der Schwingkreis}
+\subsection{Die Diode}
+\subsection{Der Feldeffekt Transitor}
+\
+
+
+
+
 
 \chapter{Ein m\"oglichst einfacher Digitalrechner}
 Ein Digitalrechner hat zwei Buchstaben, n\"amlich die Null und die Eins, aber zus\"atzlich hat jeder eine meistens fixe Wortgr\"o\ss{}e, die in der Anzahl der Stellen , der Bits beziehungsweise Buchstaben, also der Nullen und der Einsen, welche die Maschine als ein Wort betrachtet, gemessen wird. Dieses Wort ist das eigentliche Elementare Objekt der Rechenmaschine, jede Operation wird nicht auf einem einzelnen Bit, also auf einer Stelle des Wortes, sondern immer auf dem gesamten Wort ausgef\"uhrt. Genauso holen wir wenn wir den Inhalt einer Speicheraddresse zum Rechenkern holen immer ein ganzes Wort, dass dort steht und nicht einen einzelnen Bit.
