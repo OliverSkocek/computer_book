@@ -1362,11 +1362,11 @@ Die Charakteristiken geben uns non folgende Gleichungen.
 \begin{align} 
 \begin{split}
 \psi_1 - \psi_4 = 5V\\
-j_2 = \Phi_4(\psi_3 - \psi_1) = \frac{\psi_3 - \psi_1}{500\Omega}\\
-j_3 = \Phi_3(\psi_4 - \psi_3) = \frac{\psi_4 - \psi_3}{1000\Omega}\\
-j_4 = \Phi_1(\psi_2 - \psi_1) = \frac{\psi_2 - \psi_1}{400\Omega}\\
-j_5 = \Phi_2(\psi_4 - \psi_2) = \frac{\psi_4 - \psi_2}{4700\Omega}\\
-j_6 = \Phi_5(\psi_3 - \psi_2) = \frac{\psi_3 - \psi_2}{2000\Omega}\\
+j_2 = \Phi_4(\psi_1 - \psi_3) = \frac{\psi_1 - \psi_3}{500\Omega}\\
+j_3 = \Phi_3(\psi_3 - \psi_4) = \frac{\psi_3 - \psi_4}{1000\Omega}\\
+j_4 = \Phi_1(\psi_1 - \psi_2) = \frac{\psi_1 - \psi_2}{400\Omega}\\
+j_5 = \Phi_2(\psi_2 - \psi_4) = \frac{\psi_2 - \psi_4}{4700\Omega}\\
+j_6 = \Phi_5(\psi_2 - \psi_3) = \frac{\psi_2 - \psi_3}{2000\Omega}\\
 \end{split}
 \end{align}
 Beachte hierbei die erste Gleichung, welche wir erhalten da sich wie schon gezeigt die Charakteristik der idealen Spannungsquelle nicht als Funktion schreiben l\"asst. Links stehen die Stromst\"arken; in der Mitte dann die Charakteristik als Funktionensymbol und rechts dann die Definition der linearen Charakteristik ausgeschrieben. Wir sehen, dass es keine Gleichung f\"uer $j_1$ gibt, aber dies wird sich \"andern sobald wir die Knotenregeln aufschreiben.\\
@@ -1379,10 +1379,8 @@ Wir wissen bereits, dass Potentialfunktionen immer nur bis auf eine Konstante fe
 	\end{center}
 \end{figure}
 \noindent
-Sobald wir $\psi_4 = 0$ gesetzt haben folgt aus (4.11), dass $\psi_1 = 5V$ ist.
-Wir haben also zwei Unbekannte $\psi_2$ und $\psi_3$.\\
+Sobald wir $\psi_4 = 0$ gesetzt haben folgt aus (4.11), dass $\psi_1 = 5V$ ist. Wir haben also nur zwei Unbekannte $\psi_2$ und $\psi_3$, welche im weiteren Verlauf dieser Analyse noch eindeutig bestimmt werden.\\
 \\
-
 Als n\"achstes kommen wir zu den Gleichungen, die aus der Knotenregel resultieren.
 \begin{align} 
 j_1 = j_2 + j_4\\
@@ -1392,7 +1390,7 @@ j_4 = j_6 + j_5
 \end{align}
 Die unbekannten Potentialvariablen bestimmen \"uber die Charakteristiken die Str\"ome. Die Str\"ome wiederum stehen \"uber die Knotenregel in Beziehung zu einander. Daher k\"onnen wir durch Einsetzen der rechten Seiten in (4.11) in die Gleichunge (4.12-4.15) ein Gleichungssystem der unbekannten Potentialvariablen aufstellen.\\
 \\
-Bevor wir Einsetzen beachte, dass es zwei unbekannte gibt und vier Gleichungen. Ein lineares Gleichungssystem kann nur dann eindeutig l\"osbar sein, wenn die Anzahl der Gleichungen gleich der Anzahl der Unbekannten ist.\\
+Bevor wir Einsetzen beachte, dass es zwei Unbekannte gibt und vier Gleichungen. Ein lineares Gleichungssystem kann nur dann eindeutig l\"osbar sein, wenn die Anzahl der Gleichungen gleich der Anzahl der Unbekannten ist.\\
 Wir k\"onnen nicht einfach zwei Gleichungen rausnehmen und uns damit begn\"ugen, weil wir damit Information ignorieren k\"onnten.\\
 Der korrekte Weg ist es das Gleichungsystem (4.12-4.15) durch Umformung in ein logisch \"aquivalentes System mit m\"oglichst wenigen Gleichungen umzuformen.\\
 Der allgemeine Weg dies zu tun, ist das Gau\ss{}schen Eliminationsverfahren anzuwenden, aber wir werden einen individuelleren Weg gehen.\\
@@ -1408,8 +1406,8 @@ Damit haben wir (4.12) und (4.14) auf eine Gleichung reduziert, aber es kommt no
 Als Konsequenz k\"onnen wir Gleichungen (4.12) und (4.14) streichen und durch Einsetzen von (4.11) in (4.13) und (4.15) erhalten wir unser gesuchtes Gleichungssystem.
 \begin{align} 
 \begin{split}
-\frac{\psi_3 - 5V}{500\Omega} + \frac{\psi_3 - \psi_2}{2000\Omega} = \frac{- \psi_3}{1000\Omega}\\
-\frac{\psi_2 - 5V}{400\Omega} = \frac{\psi_3 - \psi_2}{2000\Omega} + \frac{ - \psi_2}{4700\Omega}
+\frac{5V - \psi_3}{500\Omega} + \frac{\psi_2 - \psi_3}{2000\Omega} = \frac{ \psi_3}{1000\Omega}\\
+\frac{5V - \psi_2}{400\Omega} = \frac{\psi_2 - \psi_3}{2000\Omega} + \frac{ \psi_2}{4700\Omega}
 \end{split}
 \end{align}
 Es ist nun eine einfache Aufgabe dieses Gleichungssystem aufzul\"osen. Die Stromst\"arke $j_1$ ist zum Abschluss noch mit Hilfe von (4.12) zu bestimmen.
@@ -1442,13 +1440,94 @@ Bisher haben wir die Annahme getroffen, dass Strom und Spannung in einem elektri
  \noindent
  Eine m\"ogliche Realisierung dieses Schaltplanes w\"are eine Batterie die anuf einem Pol an einen Kondensator und am anderen Pol \"uber eine Gl\"uhbirne am anderen Pol des Kondensators geschlossen ist.\\
  Sobald wir den Stromkreis geschlossen haben wird entsprechend der Spannung an der Quelle, dem Widerstand der Leiter und der Gl\"uhbirne ein Strom im Uhrzeigersinn durch den Stromkreis flie\ss{}en. Der Kondensator wird diesen Strom in eine dem Strom und somit der Spannungsquelle (unten) entgegengerichtete Spannung umwandeln. Umso mehr Strom geflossen ist umso h\"oher wird diese umgekehrte Spannung und umso kleiner wird der Strom, da der Kondensator die an den Bauteilen anliegende Spannung verringert. Dies geht so lange bis der Kondensator betragsm\"assig dieselbe Spannung wie die Spannungsquelle hat und der Strom Null wird. Wir beobachten ensprechend beim Schlie\ss{}en des Stromkreises ein helles Aufleuchten der Gl\"uhbirne, das schnell dimmt und verschwindet.\\
- 
+ \\
+ Entfernen wir nun die Spannungsquelle aus dem Stromkreis, und schlie\ss{}en den Kondensator direkt an die Gl\"uhbiren, sehen wir dasselbe Resultat. Die Gl\"uhbirne leuchtet auf, dimmt schnell und erlischt.\\
+ \\
+ Ein Kondensator speichert also Strom als Spannung, \"ahnlich wie eine aufladbare Batterie. Er hat daher einen Zustand, n\"amlich seine Spannung. \\
+ Die Charakteristik eines Kondensators entspricht der einer idealen Spannungsquelle, deren Spannung von der Summe, der durch Str\"ome, zugeflossenen elektrischen Ladung abh\"angt. Hierbei tragen Str\"ome in eine Richtung als positiver Beitrag und Str\"ome in die andere Richtung als negativer Beitrag zur Summe bei.\\
+ Wir werden daher jedem Kondensator, genauso wie einer Kante, eine Vorzugsrichtung zuordnen. Die Charakteristik soll einer idealen Spannungsquelle mit Plus Pol in Vorzugsrichtung entsprechen.
+  \begin{figure}[H]
+ 	\begin{center}
+ 		\includegraphics[scale=0.5]{variable_Spannungsquelle.pdf}
+ 		\caption{Charakteristik variable Spannungsquelle}
+ 	\end{center}
+ \end{figure}
+ \noindent
+Jedem Kondensator in einem elektrischen Netz wird ein Zustand, seine Spannung $U$ zugeordnet. Um diese Spannung zu interpretieren m\"ussen eine Vorzugsrichtung und anliegende Potentiale gegeben sein
+  \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1]{kkondens.pdf}
+	\end{center}
+\end{figure}
+\noindent
+Wir schreiben nun, unter Beachtung der Vorzugsrichtung.
+\begin{equation*}
+	\psi_2 - \psi_1 = U
+\end{equation*}
+Dies entspricht genau der Gleichung, die wir f\"ur eine ideale Spannungsquelle mit Pluspol in Vorzugsrichtung erhalten w\"urden.
+Es wird ein linearer Zusammenhang zwischen dem Differentialquotienten der Spannung $U$ nach der Zeit $t$ und dem Strom $j$ angenommen. 
+ \begin{equation}
+ 	\frac{dU}{dt} = -\frac{j}{c} 
+ \end{equation}
+ \noindent
+ Das negative Vorzeichen ber\"ucksichtigt, dass die durch den Strom aufgebaute Spannung im Kondensator immer gegen den Strom wirkt.Die Konstante $c$ nennt man auch die Kapazit\"at des Konsensators. Sie gibt an wie viel elektrische Ladung $q$ zuflie\ss{}en muss um eine gegebene den Strom antreibende Spannung zu erreichen.
+  \begin{equation}
+	c = \frac{q}{U} 
+  \end{equation}
+ \noindent
+ Als Konsequenz von (4.18) wird das zu einem Schaltplan gehörende Gleichungssystem zu einem Differentialgleichungssystem. Also zu einem System von Gleichungen, dass nicht einen Satz von reelen Zahlenwerten f\"ur jede Potentialvariable festlegt, sondern Funktionen, die jedem Zeitpunkt einen reelen Zahlenwert zuordnet.\\
+ \\
+ Wir werden im Rest dieses Abschnittes das in Worten beschriebene Experiment zu Abbildung (4.22) nachrechnen. Hierzu vereinfachen wir den Stromkreis indem wir die Gl\"uhbirne und den Widerstand zu einem einzigen Widerstand verschmelzen. Dies f\"uhrt zum selben Ergebnis, wenn wir annehmen, dass die Gl\"uhbirne eine lineare Charakteristik hat und der resultierende Widerstand nach der Reihenschaltungsformel(4.9) berechnet wird.
+   \begin{figure}[H]
+ 	\begin{center}
+ 		\includegraphics[scale=1]{einfach.pdf}
+ 	\end{center}
+ \end{figure}
+ \noindent
+ In der Abbildung wurden bereits alle Vorzugsrichtungen, Potentiale und Str\"ome, sowie Paramter $c$, $R$ und $u$ eingezeichnet. Als Gleichungssystem ausformuliert bedeutet dies.
+ \begin{align} 
+ 	\psi_1 = \psi_3 + u\\
+	j = \frac{\psi_1 - \psi_2}{R}\\
+	\frac{d(\psi_3 - \psi_2)}{dt} = - \frac{j}{c}
+ \end{align}
+Wir werden wie gehabt annehmen, dass $\psi_3 = 0$, wodurch $\psi_1 = u$ ist und wir das Problem auf eine Unbekannte, n\"amlich $\psi_2$ reduziert haben.
+\begin{equation}
+	\frac{d\psi_2}{dt} = \frac{u - \psi_2}{R c}
+\end{equation}
+Dies ist eine inhomogene lineare Differentialgleichung, die beschreibt wie sich das Potential $\psi_2$ mit der Zeit entwickelt. Es fehlt uns nur noch ein Startwert f\"uer die Spannung am Kondensator $U$ und wir k\"onnen eine eindeutige L\"oesung aufschreiben. \\
+\\
+Dies f\"uhrt uns zu den Szenarien unterhalb von Abbildung (4.22). Starten wir mit dem Szenario wo wir eine Spannungsquelle an einen Kondensator schlie\ss{}en. Der Kondensator ist zu Beginn ungeladen also $U(0) = 0$.
+Dies f\"uhrt zur eindeutigen L\"osung:
+\begin{equation}
+	\psi_2(t) = u * (1 - e^{-\frac{t}{Rc}})
+\end{equation}
+Setzen wir den Widerstand $R$ gleich $10k\Omega$, die Spannung $u$ auf $5V$ und die Kapazität $c$ gleich $10nAs/V$ und betrachten die Kurve.
+   \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{ladung.png}
+	\end{center}
+\end{figure}
+\noindent
+Zu Beginn steigt die Spannung sehr rasch an und es stellt sich schnell ein Gleichgewicht mit der Spannungsquelle ein wodurch nur mehr ein kleiner werdender schwacher Strom flie\ss{}t.\\
+\\
+Im zweiten Szenario nehmen wir an, dass wir den nun geladenen Kondensator von der Spannungsquelle nehmen und direkt an den Widerstand schließen. Hierzu setzen wir $u$ einfach Null, was die Spannungsquelle aus dem Stromkreis eliminiert und setzen die Spannung des Kondensators $U$ gleich $5V$.
+\begin{equation}
+\psi_2(t) = 5 * e^{-\frac{t}{Rc}}
+\end{equation}
+Wir setzen die Paramter $c$ und $R$ wie gehabt und erhalten, einen exponentiellen Abfall der Spannung.
+   \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{entladung.png}
+	\end{center}
+\end{figure}
+\noindent
+Wie im ersten Szenario folg auf eine schnelle \"Anderung der Spannung eine Abflachung und S\"attigung. Der Strom verh\"alt sich entsprechend dem Ohmschen Gesetz hier analog.\\
+\\
+
 \subsection{Die Spule}
 \subsection{Der Schwingkreis}
 \subsection{Die Diode}
 \subsection{Der Feldeffekt Transitor}
-\
-
 
 
 
