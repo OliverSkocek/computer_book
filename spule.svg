@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Circuit Diagram, cdlibrary.dll 1.0.0.0 -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="112"
+   height="9.9999962"
+   id="svg14"
+   sodipodi:docname="spule.svg"
+   viewBox="0 0 112 9.9999962"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     id="namedview16"
+     showgrid="false"
+     scale-x="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="6.1341513"
+     inkscape:cx="93.35391"
+     inkscape:cy="-9.0444648"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <line
+     x1="81"
+     y1="8.9999962"
+     x2="111"
+     y2="8.9999962"
+     style="stroke:#000000;stroke-width:2;stroke-linecap:square"
+     id="line2" />
+  <line
+     x1="1"
+     y1="8.9999962"
+     x2="31"
+     y2="8.9999962"
+     style="stroke:#000000;stroke-width:2;stroke-linecap:square"
+     id="line4" />
+  <line
+     x1="31"
+     y1="8.9999962"
+     x2="32"
+     y2="8.9999962"
+     style="stroke:#000000;stroke-width:2;stroke-linecap:square"
+     id="line6" />
+  <line
+     x1="80"
+     y1="8.9999962"
+     x2="81"
+     y2="8.9999962"
+     style="stroke:#000000;stroke-width:2;stroke-linecap:square"
+     id="line8" />
+  <path
+     d="m 32,8.9999965 a 6,8 0 1 1 12,0 m 0,0 a 6,8 0 1 1 12,0 m 0,0 a 6,8 0 1 1 12,0 m 0,0 a 6,8 0 1 1 12,0"
+     style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:2;stroke-linecap:square"
+     id="path10"
+     inkscape:connector-curvature="0" />
+</svg>

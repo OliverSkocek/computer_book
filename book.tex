@@ -1523,8 +1523,79 @@ Wir setzen die Paramter $c$ und $R$ wie gehabt und erhalten, einen exponentielle
 \noindent
 Wie im ersten Szenario folgt auf eine schnelle \"Anderung der Spannung eine Abflachung und S\"attigung. Der Strom verh\"alt sich entsprechend dem Ohmschen Gesetz hier analog zur Spannungskurve. \\
 \\
-Damit haben wir die Ladesituation sowie die Entladungssituation eines Kondensators im Detail beschrieben und nachgerechnet.  
+Damit haben wir die Ladesituation sowie die Entladungssituation eines Kondensators im Detail beschrieben und nachgerechnet. \\
+\\
+In einem physikalsichen elektrischen Netzwerk verhalten sich so gut wie alle elektrischen Bauteile und somit auch die Kabelverbindungen zwischen Diesen wie ein Kondensator mit sehr kleiner Kapazit\"at. Dies f\"allt kaum auf solange im Netzwerk keine all zu hoch frequenten Prozesse stattfinden. Kann aber zum Problem werden, wenn zum Beispiel unsere Rechenmaschine eine sehr hohe Taktfrequenz hat. Man spricht hier von kapazitiven Effekten und wenn wir sie ber\"ucksichtigt wollen, dann kann dies einfach gemacht werden indem man einen Kondensator in parallel mit dem ensprechenden Bauteil im Schaltplan zeichnet. Wenn zwei Bauteile kapazitiv wechselwirken, also sich zusammen wie ein Kondensator verhalten, dann verbinden wir sie \"uber einen Kondensator mit der entsprechenden Kapazit\"at.
 \subsection{Die Spule}
+Eine Spule ist ein zweipoliges elektrisches Bauteil, dass sich einer \"Anderung des elektrischen Stromes durch eine, der \"Anderung entgegen gerichtete, Spannung widersetzt. Man sagt die Strom\"anderung induziert eine Spannung in der Spule. Das zugrunde liegende physikalsiche Prinzip nennt man Induktion beziehungsweise Selbstinduktion und wird im Anhang näher erkl\"art.
+Wir wollen aber hier, wie bereits beim Kondensator, das Bauteil anhand der f\"ur uns interessanten Ph\"anomene Spannung und Stromst\"arke beschreiben.
+  \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1.5]{spule.pdf}
+		\caption{Schaltsymbol einer Spule.}
+	\end{center}
+\end{figure}
+\noindent
+Starten wir wieder mit einem einfachen Experiment. Wir nehmen eine Spule und verbinden sie an einer Seite mit einer Gl\"uhbirne und schlie\"ss{}en dies in parallel mit einer weiteren Gl\"uhbirne an eine Spannungsquelle. 
+Der beschriebene Sachverhalt entspricht dem in Abbildung (4.25) dargestellten Schaltpan.
+  \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1]{spulensg.pdf}
+		\caption{Experiment zu Induktion.}
+	\end{center}
+\end{figure}
+\noindent
+Wenn eine stark genuge Spule\footnote{Was das hei\ss{} sehen wir im Laufe dieses Abschnittes.} gew\"ahlt wurde, sehen wir beim schlie\ss{} der Spannungsquelle an den Stromkreis Lampe Nummer eins sofort aufleuchten, aber Lampe Nummer zwei leuchtet anfangs nur gedimmt und erreicht seine volle Leuchtst\"arke erst einen Moment sp\"ater.
+Unterbrechen wir nun den Stromkreis indem wir die Spannungsquelle entfernen, beobachten wir, dass Lampe eins und zwei noch einen Moment nachleuchten.\\
+\\
+Im Gegensatz zum Kondensator speichert eine Spule also anscheinend elektrischen Strom. Zuerst will sie ihn bei Null lassen und nachdem er seinen S\"attungsstrom nach dem Ohmschen Gesetz erreicht hat, versucht es diesen beizubehalten, auch nachdem die treibende Spannung genommen wurde.
+\\
+\\
+Woher kommt aber dieser Strom, nachdem die Spannungsquelle entnommen wurde? Es gelten ja noch immer die Grundgesetze elektrischer Netzwerke, also muss der Strom von einer Spannung begleitet werden. Diese Spannung nennt man induzierte Spannung und sie ist immer der Richtung der \"Anderung des Stromes entgegengerichtet. Wenn wir also beim Entfernen des Stromkreises die an der Spule anliegende Spannung gemessen h\"atten, so w\"are sie der Richtung der gerade entfernten Spannungsquelle entegegengesetzt gewesen.\\
+\\
+Analog zum Kondensator nehmen wir an, dass die Spule die Charakteristik einer idealen Spannungsquelle (4.23) mit ver\"anderlicher Spannung $U$ hat. Die Spule hat ebenfalls wie der Kondensator eine Zustand und zwar die durch sie flie\ss{}ende Stromst\"arke.
+Entsprechend wird einer Spule eine Vorzugsrichtung gegeben wie einer Kante und es gilt wie beim Kondensator.
+  \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1.5]{spule_direkt.pdf}
+	\end{center}
+\end{figure}
+\noindent
+Da wir die Spule wie eine ideale Spannungsquelle behandeln gilt wieder.
+\begin{equation*}
+\psi_2 - \psi_1 = U
+\end{equation*}
+Die induzierte Spannung $U$ h\"angt linear vom Differentialquotienten der Stromst\"arke $j$ nach der Zeit $t$ ab.
+ \begin{equation}
+\frac{dj}{dt} = -\frac{U}{L} 
+\end{equation}
+\noindent
+Vergleiche Gleichung (4.26) mit (4.18) und erkenne, dass sich Kondensator und Spule analog verhalten, wobei die Rolle von Strom und Spannung vertauscht ist.\\
+\\
+Die Konstante $L$ nennen wir die Induktivit\"at der Spule und sie wird in $Vs/A$ gemessen. Genauso wie beim Fall des Kondensators erhalten wir bei einer Spule ein Differentialgleichungssystem, dass einen Satz von Funktionen f\"ur jeden Potentialwert bestimmt.\\
+\\
+Kommen wir nun zur\"uck zum Experiment zu Abbildung (4.25) zurück und rechnen dieses mit Hilfe der nun bekannten Gesetzm\"assigkeiten nach. Der Schaltplan wird hierzu wieder vereinfacht indem jede Gl\"uhbirne durch einen ohmschen Widerstand ersetzt wird.
+  \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1]{spuledir.pdf}
+	\end{center}
+\end{figure}
+\noindent
+In der Abbildung sind bereits alle Vorzugsrichtungen, Potentiale und Parameter eingezeichnet. Es verbleibt nur noch das resultierende Gleichungssystem aufzuschreiben.\\
+\\
+Zuerst die Bauteilgleichungen:
+ \begin{align} 
+\psi_1 = \psi_3 + u\\
+j_1 = \frac{\psi_1 - \psi_3}{R_1}\\
+j_2 = \frac{\psi_2 - \psi_3}{R_2}\\
+\frac{dj_2}{dt} = -\frac{\psi_2 - \psi_1}{L}
+\end{align}
+und dann die Knotenregel:
+\begin{equation*}
+	j = j_1 + j_2
+\end{equation*}
+
+
 \subsection{Der Schwingkreis}
 \subsection{Die Diode}
 \subsection{Der Feldeffekt Transitor}

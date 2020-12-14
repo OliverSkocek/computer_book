@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.2)  6 DEC 2020 20:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.2)  13 DEC 2020 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -777,7 +777,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.78 ...sische Realisierung}{63}{subsection.5.1.1}
+l.78 ...sische Realisierung}{66}{subsection.5.1.1}
                                                   % [1
 
 ])
@@ -1931,42 +1931,107 @@ File: entladung.png Graphic file (type png)
 Package pdftex.def Info: entladung.png  used on input line 1520.
 (pdftex.def)             Requested size: 276.53244pt x 191.2139pt.
 [59 <./Ladung.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1523--1527
+Underfull \hbox (badness 10000) in paragraph at lines 1523--1529
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1523--1529
+
+ []
+
+<spule.pdf, id=1067, 84.315pt x 7.52812pt>
+File: spule.pdf Graphic file (type pdf)
+<use spule.pdf>
+Package pdftex.def Info: spule.pdf  used on input line 1534.
+(pdftex.def)             Requested size: 126.47215pt x 11.29213pt.
 [60 <./entladung.png>]
+<spulensg.pdf, id=1074, 147.55125pt x 123.46124pt>
+File: spulensg.pdf Graphic file (type pdf)
+<use spulensg.pdf>
+Package pdftex.def Info: spulensg.pdf  used on input line 1543.
+(pdftex.def)             Requested size: 147.55087pt x 123.46092pt.
+<spule_direkt.pdf, id=1076, 84.315pt x 13.92067pt>
+File: spule_direkt.pdf Graphic file (type pdf)
+<use spule_direkt.pdf>
+Package pdftex.def Info: spule_direkt.pdf  used on input line 1560.
+(pdftex.def)             Requested size: 126.47215pt x 20.88094pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1547--1562
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1547--1562
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1547--1562
+
+ []
+
+[61 <./spule.pdf> <./spulensg.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./spulensg.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+>]
+<spuledir.pdf, id=1093, 165.38577pt x 127.05644pt>
+File: spuledir.pdf Graphic file (type pdf)
+<use spuledir.pdf>
+Package pdftex.def Info: spuledir.pdf  used on input line 1580.
+(pdftex.def)             Requested size: 165.38536pt x 127.05612pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1571--1582
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1571--1582
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1583--1587
+
+ []
+
+[62 <./spule_direkt.pdf> <./spuledir.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./spuledir.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+>] [63]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1539--1543
+Underfull \hbox (badness 10000) in paragraph at lines 1610--1614
 
  []
 
-[61
+[64
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1544--1553
+Underfull \hbox (badness 10000) in paragraph at lines 1615--1624
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1544--1553
+Underfull \hbox (badness 10000) in paragraph at lines 1615--1624
 
  []
 
 
-Overfull \hbox (7.55261pt too wide) in paragraph at lines 1544--1553
+Overfull \hbox (7.55261pt too wide) in paragraph at lines 1615--1624
 \OT1/lmr/m/n/10.95 fehl ausspucken, oder im Fall einer IF Verzwei-gung einige B
 e-fehle ^^?uberspringen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1544--1553
+Underfull \hbox (badness 10000) in paragraph at lines 1615--1624
 
  []
 
-[62]
-Overfull \hbox (11.71472pt too wide) in paragraph at lines 1565--1566
+[65]
+Overfull \hbox (11.71472pt too wide) in paragraph at lines 1636--1637
  []\OT1/lmr/bx/n/10.95 LOAD + 4 bit Wort:[] $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/
 10.95 b[]; b[]; b[]\OT1/lmr/m/n/10.95 ) = (1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/
 10.95 0\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 1)$ Schreibt das Wort $(\OML/lm
@@ -1974,16 +2039,16 @@ m/m/it/10.95 a[]; a[]; a[]; a[]\OT1/lmr/m/n/10.95 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1567--1571
+Underfull \hbox (badness 10000) in paragraph at lines 1638--1642
 
  []
 
-[63] [64]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1574.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1574.
+[66] [67]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1645.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1645.
  (./book.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1574.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1574.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1645.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1645.
 
 Package rerunfilecheck Info: File `book.out' has not changed.
 (rerunfilecheck)             Checksum: 095982B0BC299311781578462A39047A;2450.
@@ -1991,13 +2056,13 @@ Package rerunfilecheck Info: File `book.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1574.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1645.
  ) 
 Here is how much of TeX's memory you used:
- 19873 strings out of 483183
- 360617 string characters out of 5966292
+ 19908 strings out of 483183
+ 361203 string characters out of 5966292
  616690 words of memory out of 5000000
- 34046 multiletter control sequences out of 15000+600000
+ 34066 multiletter control sequences out of 15000+600000
  606876 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,14n,60p,1320b,1957s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2019,10 +2084,10 @@ s/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
 e1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmtti10.pfb>
-Output written on book.pdf (65 pages, 1030081 bytes).
+Output written on book.pdf (68 pages, 1058017 bytes).
 PDF statistics:
- 1259 PDF objects out of 1440 (max. 8388607)
- 1055 compressed objects within 11 object streams
- 395 named destinations out of 1000 (max. 500000)
- 443 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1327 PDF objects out of 1440 (max. 8388607)
+ 1105 compressed objects within 12 object streams
+ 406 named destinations out of 1000 (max. 500000)
+ 463 words of extra memory for PDF output out of 10000 (max. 10000000)
 
