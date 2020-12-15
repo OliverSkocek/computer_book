@@ -1504,7 +1504,7 @@ Dies f\"uhrt zur eindeutigen L\"osung:
 Setzen wir den Widerstand $R$ gleich $10k\Omega$, die Spannung $u$ auf $5V$ und die Kapazität $c$ gleich $10nAs/V$ und betrachten die Kurve.
    \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{ladung.png}
+		\includegraphics[scale=0.5]{Ladung.png}
 	\end{center}
 \end{figure}
 \noindent
@@ -1594,7 +1594,62 @@ und dann die Knotenregel:
 \begin{equation*}
 	j = j_1 + j_2
 \end{equation*}
-
+Wir setzen wieder $\psi_3=0$, woraus $\psi_1=u$ folgt und erhalten durch Umformung:
+ \begin{align} 
+\frac{d\psi_2}{dt} = -\frac{R_2}{L} (\psi_2 - u)
+\end{align}
+Dies entspricht der Differentialgleichung (4.23), die wir bei unserer Diskussion des Kondensators kennen gelernt haben. Der Anfangszustand unseres Stromkreises ist $j_2(0) = 0$. Wir haben aber unseren Stromkreis \"uber das Potential $\psi_2$ beschrieben.  Daher m\"ussen wir unsere Anfangsbedingung \"uber (4.29)  umwandeln in eine die $\psi_2$ betrifft und zwar $\psi_2(0) = \psi_3(0) = 0$.\\
+\\
+Unser erstes Experiment entspricht also bis auf die Konstanten genau dem ersten Experiment, dass wir beim Kondensator kennen gelernt haben. Wir k\"onnen daher die L\"oesung (4.24) kopieren.
+\begin{equation}
+\psi_2(t) = u * (1 - e^{-\frac{R_2 t}{L}})
+\end{equation}  
+Nehmen wir wie beim Kondensator ein konkretes Beispiel heran. Die Spule hat eine Induktivit\"at $L=0.1 Vs/A$, $R_1=100\Omega$ und $R_2=100\Omega$ und die Spannungsquelle eine Spannung $u=5V$.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.75]{spule_j.pdf}
+		\caption{Stromst\"arken zu Experiment 1.}
+	\end{center}
+\end{figure}
+\noindent
+Die Abbildung zeigt die Stromst\"arken der Gl\"uhbirne 1 und 2. Es zeigt sich ganz analog zu unserem Experiment, dass der Strom durch Gl\"uhbirne 2 etwas l\"anger braucht um seine volle St\"arke zu erreichen. Dies entspricht einem Ladevorgang der Spule.\\
+\\
+Kommen wir nun zum zweiten Experiment, wo wir von dem Stromkreis (4.25), nachdem beide Gl\"uhbirnen konstant leuchten, die Spannungsquelle aus dem Stromkreis entfernen. Hierzu m\"ussen wir etwas an unseren Variablen \"andern und erhalten folgenden Schaltplan, der den Sachverhalt nach der Entfernung widerspiegelt.
+  \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1]{spuledir2.pdf}
+	\end{center}
+\end{figure}
+\noindent
+Im Abschnitt \"uber Reihenschaltung haben wir gesehen, dass sich dies vereinfachen l\"asst, sei hierzu $R = R_1 + R_2$.
+  \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1]{spuledir3.pdf}
+	\end{center}
+\end{figure}
+\noindent
+Wir haben damit beide Gl\"uhbirnen zu einem Bauteil vereinigt und erhalten folgendes Gleichungssytem, wobei wir $\psi_2$ schon Null gesetzt haben:
+ \begin{align} 
+j = \frac{\psi_1}{R}\\
+\frac{dj}{dt} = \frac{\psi_1}{L}
+\end{align}
+Durch Einsetzen erhalten wir die Differentialgleichung,
+\begin{equation}
+\frac{d\psi_1}{dt} = \frac{R}{L}\psi_1
+\end{equation}  
+die unter der Annahme, dass $j(0) = u/R$ und somit $\psi_1(0)=u$ zur L\"osung
+\begin{equation*}
+\psi_1(t) = u * e^{-\frac{R t}{L}})
+\end{equation*}  
+f\"uhrt.\\
+\\
+Betrachten wir abschlie\ss{}end noch den Verlauf von $j$ in diesem Experiment.
+  \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.75]{entladungspule.pdf}
+	\end{center}
+\end{figure}
+\noindent
 
 \subsection{Der Schwingkreis}
 \subsection{Die Diode}
