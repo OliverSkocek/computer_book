@@ -69,21 +69,21 @@
 \contentsline {subsection}{\numberline {4.4.1}Der Kondensator}{56}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Die Spule}{60}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Der Schwingkreis}{66}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Die Diode}{67}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Der Feldeffekt Transitor}{67}{subsection.4.4.5}
-\contentsline {chapter}{\numberline {5}Ein m\"oglichst einfacher Digitalrechner}{68}{chapter.5}
-\contentsline {section}{\numberline {5.1}Eine minimale Arithmetisch logische Einheit}{68}{section.5.1}
-\contentsline {paragraph}{NAND: }{68}{section*.47}
-\contentsline {paragraph}{LSHIFT:}{69}{section*.48}
-\contentsline {subsection}{\numberline {5.1.1}Die physische Realisierung}{70}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Der Hauptspeicher und Registerkarte}{70}{section.5.2}
-\contentsline {section}{\numberline {5.3}Die Sprache unserer Rechenmaschine}{70}{section.5.3}
-\contentsline {paragraph}{HALT:}{70}{section*.49}
-\contentsline {paragraph}{NAND + 3 bit Addresse:}{70}{section*.50}
-\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{70}{section*.51}
-\contentsline {paragraph}{POP + 4 bit Addresse:}{70}{section*.52}
-\contentsline {paragraph}{PUSH + 4 bit Addresse:}{70}{section*.53}
-\contentsline {paragraph}{LOAD + 4 bit Wort:}{70}{section*.54}
-\contentsline {paragraph}{IF:}{70}{section*.55}
-\contentsline {paragraph}{RESET IF:}{71}{section*.56}
-\contentsline {section}{\numberline {5.4}Die Kontrolleinheit}{71}{section.5.4}
+\contentsline {subsection}{\numberline {4.4.4}Die Diode}{68}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Der Feldeffekt Transitor}{68}{subsection.4.4.5}
+\contentsline {chapter}{\numberline {5}Ein m\"oglichst einfacher Digitalrechner}{69}{chapter.5}
+\contentsline {section}{\numberline {5.1}Eine minimale Arithmetisch logische Einheit}{69}{section.5.1}
+\contentsline {paragraph}{NAND: }{69}{section*.47}
+\contentsline {paragraph}{LSHIFT:}{70}{section*.48}
+\contentsline {subsection}{\numberline {5.1.1}Die physische Realisierung}{71}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Der Hauptspeicher und Registerkarte}{71}{section.5.2}
+\contentsline {section}{\numberline {5.3}Die Sprache unserer Rechenmaschine}{71}{section.5.3}
+\contentsline {paragraph}{HALT:}{71}{section*.49}
+\contentsline {paragraph}{NAND + 3 bit Addresse:}{71}{section*.50}
+\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{71}{section*.51}
+\contentsline {paragraph}{POP + 4 bit Addresse:}{71}{section*.52}
+\contentsline {paragraph}{PUSH + 4 bit Addresse:}{71}{section*.53}
+\contentsline {paragraph}{LOAD + 4 bit Wort:}{71}{section*.54}
+\contentsline {paragraph}{IF:}{71}{section*.55}
+\contentsline {paragraph}{RESET IF:}{72}{section*.56}
+\contentsline {section}{\numberline {5.4}Die Kontrolleinheit}{72}{section.5.4}

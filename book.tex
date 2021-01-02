@@ -1659,13 +1659,41 @@ Die Analogie zieht sich aber noch weiter, denn genauso wie sich in einem physika
 Entsprechend muss man auch so genannte induktive Effekte ber\"ucksichtigen, wenn man ein elektrisches Netzwerk plant. Ein bekannter Effekt der Induktvit\"at ist der Funken\"uberschlag beim \"offnen eines Schalters oder die zeitliche Verz\"ogerung bei sehr langen Netzwerken.\\
 Will man das induktive Verhalten eines elektrischen Bauteiles im Schaltplan ber\"ucksichtigen, wird eine Spule mit entsprechender Induktivit\"at vor oder nach dem Bauteil in Reihe geschaltet. Es gibt noch induktive Effekte die \"uber die hier besprochenen Effekte hinausgehen. Hierzu geh\"oren allgemeine elektromagnetische Effekte, die im Anhang besprochen werden.
 \subsection{Der Schwingkreis}
-In den letzten beiden Abschnitten haben wir einen Spaicher f\"ur Strom, die Spule und einen Speicher f\"ur Spannung, den Kondensator kennen gelernt. Nun ist es so, dass ein Kondensator durch einen Strom geladen wird, und sich \"uber einen Strom entl\"adt. Auf der anderen Seite ist es so, dass eine Spule \"uber eine Spannung geladen wird und sich \"uber eine Spannung entl\"adt.\\
+In den letzten beiden Abschnitten haben wir einen Speicher f\"ur Strom, die Spule und einen Speicher f\"ur Spannung, den Kondensator kennen gelernt. Nun ist es so, dass ein Kondensator durch einen Strom geladen wird, und sich \"uber einen Strom entl\"adt. Auf der anderen Seite ist es so, dass eine Spule \"uber eine Spannung geladen wird und sich \"uber eine Spannung entl\"adt.\\
 \\
 Es ist daher leicht zu sehen, dass wenn wir eine Spule und einen Kondensator kombinieren in einer Schleife, die eine Komponente die andere Komponente beim entladen aufl\"adt und umgekehrt. Dies f\"uhrt zu einem zyklischen oder periodischen Verhalten des Stromkreises. \\
 In diesem Abschnitt werden wir uns entwas n\"aher mit diesem Ph\"anomen auseinandersetzen und nachrechnen was genau passiert und wie ein ohmscher Widerstand das Verhalten beeinflu\ss{}t.\\
 \\
-Betrachten wir zun\"achst den einfacheren Fall eines Kondensators, der direkt an eine Spule geschlossen wird. Nehmen wir, dass der Kondensator anfangs geladen ist und kein Strom flie\ss{}t. 
-
+Betrachten wir zun\"achst den einfacheren Fall, den so genannten unged\"ampften Schwingkreis, n\"amlich eines Kondensators, der direkt an eine Spule geschlossen wird. Nehmen wir an, dass der Kondensator anfangs geladen ist und kein Strom flie\ss{}t und berechnen wie sich der Strom und die Spannung mit der Zeit entwickelt.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1]{schnwingkreis_ungedampft.pdf}
+		\caption{Unged\"ampfter Schwingkreis.}
+	\end{center}
+\end{figure}
+\noindent
+Wir nehmen wieder an, dass $\psi_2=0$ und k\"onnen sofort die Differentialgleichungen aufschreiben.
+ \begin{align} 
+\frac{dj}{dt} = \frac{\psi_1}{L}\\
+\frac{d\psi_1}{dt} = -\frac{j}{c}
+\end{align}
+Durch Einsetzen von (4.37) in (4.36) erhalten wir die Gleichung:
+\begin{equation}
+	\frac{d^2\psi_1}{dt^2} = -\frac{\psi_1}{Lc}
+\end{equation}
+Diese Gleichung ist bekannt als der klassische harmonische Oszillator und besitzt die allgemeine L\"osung:
+\begin{equation}
+	\psi_1(t) = a \cos(\frac{t}{Lc}) + b \sin(\frac{t}{Lc})
+\end{equation}
+Wir haben also zwei Unbekannte, die durch die Anfangsbedingung bestimmt werden sollen. Die Anfangsbdingung lautet $\psi_1(0) = u$ und $j(0) = 0$. Betrachten wir zun\"achst die allemeine L\"osung und ihre Ableitung zum Zeitpunkt $t=0$.
+ \begin{align} 
+\psi_1(0) = a \cos(\frac{0}{Lc}) + b \sin(\frac{0}{Lc}) = a\\
+\frac{d\psi_1}{dt}(0) = -\frac{a}{Lc} \sin(\frac{0}{Lc}) + \frac{b}{Lc} \cos(\frac{0}{Lc}) = \frac{b}{Lc}
+\end{align}
+Aus GLeichung (4.37) und $j(0) = 0$ folgt zusammen mit (4.41), dass $b=0$ und aus der Anfangsbedingung $\psi_1(0) = u$ k\"onnen wir mit (4.40) schlie\ss{}en, dass $a=u$. Die L\"osung unseres Problems lautet also:
+\begin{equation}
+	\psi_1(t) = u * \cos(\frac{t}{Lc})
+\end{equation}
 \subsection{Die Diode}
 \subsection{Der Feldeffekt Transitor}
 
