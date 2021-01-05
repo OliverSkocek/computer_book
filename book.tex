@@ -1694,6 +1694,41 @@ Aus GLeichung (4.37) und $j(0) = 0$ folgt zusammen mit (4.41), dass $b=0$ und au
 \begin{equation}
 	\psi_1(t) = u * \cos(\frac{t}{Lc})
 \end{equation}
+In graphischer Form dargestellt sieht das bei einem Kondensator mit Kapazit\"at $c=1nF$ und einer Spule mit Induktivit\"at $L=10H$ folgenderma\ss{}en aus.
+  \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.75]{harmonisch.pdf}
+	\end{center}
+\end{figure}
+\noindent
+Man sieht ein periodisches Verhalten des Spannungssignals, was analog auch f\"ur den Strom gilt. Dieser periodische Vorgang w\"urde sich unendlich fortsetzen wenn man ihn lie\ss{}e. In der Praxis ist eine derartige Schaltung aber unm\"oglich, da der Kondensator und die Spule nur Idealisierungen darstellen.\\
+Vor allem ist in einem echten Schaltkreis auch immer die Charakteristik der verbindenden Dr\"ahte, also ein ohmscher Widerstand, beteiligt.\\
+\\
+Warum nennen wir diese Schaltung einen \textbf{ged\"ampften} Schwingkreis? Um diese Frage zu beantworten betrachten wir die Energie, die ein Kondensator bei einer bestimmten Spannung $U$ h\"alt. 
+\begin{equation}
+	E_c(U) = \frac{1}{2}c * U^2
+\end{equation}
+Die Energie erh\"alt man durch Integration der Leistung nach der Zeit. In diesem Fall verwendeten wir Gleichung (4.18) und die Formel f\"ur die elektrische Leistung (4.1).\\
+Analog errechnet sich die Energie die bei einer bestimmten Stromst\"arke $I$ in einer Spule gespeichert ist aus (4.26) und erh\"alt.
+\begin{equation}
+	E_L(I) = \frac{1}{2}L * I^2
+\end{equation}
+Wir k\"onnen $E_L$ als die kinetische Energie und $E_c$ als die potentielle Energie in Analogie zur Mechanik. Die Gesamtenergie eines geschlossenen Systems bleibt erhalten und da wir Verluste durch W\"arme und elektromagnetischen Wechselwirkung mit der Umgebung vernachl\"assigt wurde, gilt dies auch hier. Also wenn wir die L\"osung (4.42) und den sich daraus ergebenden Strom nach (4.37) einsetzen erhalten wir.
+\begin{align*}
+E_{ges}(\psi_1) = E_L(-c\frac{d\psi_1}{dt}) + E_c(\psi_1)\\
+= \frac{1}{2}(Lc^2(\frac{d\psi_1}{dt})^2  + c(\psi_1)^2) = \frac{1}{2}cu^2
+\end{align*}
+Dies zeigt, dass die Gesamtenergie $E_{ges}$ konstant bleibt f\"ur alle Zeiten und zwar mit dem Startwert der Energie des geladenen Kondensators.\\
+\\
+D\"ampfung ist ein Resultat von Termen in der dynamischen Gleichung, die Energie an die Umgebung abf\"uren. Ein Ohmscher Widerstand gibt uns einen solchen Term. Er wandelt elektrische Energie bei Stromdurchfluss in W\"arme um, die so genannte Joulesche W\"arme.\\
+\\
+Widmen wir uns um n\"aher an die Realit\"at zu kommen, kurz dem ged\"ampften Schwingkreis in dem einfach zus\"atzlich ein Widerstand zwischen Kondensator und Spule geschaltet ist.
+  \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1]{schnwingkreis_gedampft.pdf}
+	\end{center}
+\end{figure}
+\noindent
 \subsection{Die Diode}
 \subsection{Der Feldeffekt Transitor}
 
