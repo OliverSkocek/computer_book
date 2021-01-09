@@ -1729,11 +1729,21 @@ Widmen wir uns um n\"aher an die Realit\"at zu kommen, kurz dem ged\"ampften Sch
 	\end{center}
 \end{figure}
 \noindent
-Wir k\"onnen direkt das zugeh\"orige Differentialgleichungssystem ablesen.
-\begin{align*}
+Wir setzen wieder $\psi_3=0$ und lesen direkt das zugeh\"orige Differentialgleichungssystem ab.
+\begin{align}
+	\frac{dj}{dt} = -\frac{\psi_1 - j*R}{L}\\
 	\frac{d\psi_1}{dt} = -\frac{j}{c}
-	\frac{d\psi_1}{dt} = -\frac{j}{c}
-\end{align*}
+\end{align}
+Durch Einsetzen von (4.45) in (4,46) erhalten wir wieder eine Differentialgleichung mit einer zweiten Ableitung.
+\begin{equation}
+	\frac{d^2\psi_1}{dt^2} + \frac{R}{L}\frac{d\psi_1}{dt} + \frac{1}{Lc}\psi_1 = 0
+\end{equation}
+Dies ist eine lineare Differentialgleichung mit konstanten Koeffizienten, genauso wie der harmonische Oszillator, nur eben mit einem D\"ampfungsterm. Wenn wir auf so eine Gleichung sto\ss{}en k\"onnen wir immer die L\"oesung schreiben als.
+\begin{equation}
+	\psi_1(t) = a*e^{\lambda_1*t} + b*e^{\lambda_2*t}
+\end{equation}
+Im Anhang wird eine genaue Begr\"undung f\"ur diesen Ansatz geliefert. 
+F\
 \subsection{Die Diode}
 \subsection{Der Feldeffekt Transitor}
 
