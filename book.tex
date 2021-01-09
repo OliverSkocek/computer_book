@@ -1738,12 +1738,25 @@ Durch Einsetzen von (4.45) in (4,46) erhalten wir wieder eine Differentialgleich
 \begin{equation}
 	\frac{d^2\psi_1}{dt^2} + \frac{R}{L}\frac{d\psi_1}{dt} + \frac{1}{Lc}\psi_1 = 0
 \end{equation}
-Dies ist eine lineare Differentialgleichung mit konstanten Koeffizienten, genauso wie der harmonische Oszillator, nur eben mit einem D\"ampfungsterm. Wenn wir auf so eine Gleichung sto\ss{}en k\"onnen wir immer die L\"oesung schreiben als.
+Dies ist eine lineare Differentialgleichung mit konstanten Koeffizienten, genauso wie der harmonische Oszillator, nur eben mit einem D\"ampfungsterm. Eine solche Gleichung l\"asst sich mit einem Exponentialansatz l\"osen. Setzen wir hierzu eine Funktion $\psi_1$ der Form
 \begin{equation}
-	\psi_1(t) = a*e^{\lambda_1*t} + b*e^{\lambda_2*t}
+\psi_1(t) = a*e^{\lambda*t}
 \end{equation}
-Im Anhang wird eine genaue Begr\"undung f\"ur diesen Ansatz geliefert. 
-F\
+in die Gleichung (4.47) ein wobei $\lambda$ eine unbekannte komplexe Zahl ist. 
+Exponentialfunktionen sind immer positiv also k\"onnen wir nach Einsetzen auf eine quadratische Gleichung reduzieren.
+\begin{equation}
+\lambda^2 + \frac{R}{L}\lambda + \frac{1}{Lc} = 0
+\end{equation}
+Es gibt entweder zwei komplexe Zahlen $\lambda_1$ und $\lambda_2$, oder nur eine komplexe Zahl $\lambda$, die diese Gleichung aufl\"ost. Im ersten Fall setzen wir 
+\begin{equation}
+\psi_1(t) = a*e^{\lambda_1*t} + b*e^{\lambda_2*t}
+\end{equation}
+und suchen Werte f\"ur die Unbekannten $a$ und $b$, sodass die Anfangsbedingung $\psi_1(0)=u$ und $j(0)=0$ erf\"ullt sind. Wir gehen hier genauso vor wie beim unged\"ampften Fall und erhalten die L\"osung.
+\begin{equation}
+\psi_1(t) = \frac{\lambda_2*u}{\lambda_2 - \lambda_1}*e^{\lambda_1*t} + \frac{\lambda_1*u}{\lambda_2 - \lambda_1}*e^{\lambda_2*t}
+\end{equation}
+\paragraph{\"Ubungsbeispiel:} Zeige Dies.
+\paragraph{\"Ubungsbeispiel:} Im Fall wenn es nur eine L\"osung der Gleichung (4.50) gibt m\"ussen wir den Ansatz $\psi_1(t) = a*e^{\lambda*t} + b*t*e^{\lambda*t}.$ verwenden. Finde die L\"osung f\"ur diesen Fall.
 \subsection{Die Diode}
 \subsection{Der Feldeffekt Transitor}
 
