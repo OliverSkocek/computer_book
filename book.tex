@@ -1772,9 +1772,10 @@ Betrachten wir die graphische Darstellung des zeitlichen Verlaufes der Spannungs
 \noindent
 Wir sehen, dass eine D\"ampfung stattfindet, daher die vormals periodische Funktion mit der Zeit abklingt. Dieses Abklingen ist umso schneller, desto gr\"o\ss{}er der elektrische Widerstand im Schwingkreis ist.\\
 \\
-Wenn wir das Ganze von der Perspektive der Energie im Schwingkreis aus betrachten, verh\"alt sich der Widerstand wie ein Leck, das mit der Zeit Energie an die Umwelt abgibt. Diese Jouleschen Verluste sind f\"ur den D\"ampfungseffekt verantwortlich.
-\\
-\\
+Wenn wir das Ganze von der Perspektive der Energie im Schwingkreis aus betrachten, verh\"alt sich der Widerstand wie ein Leck, das mit der Zeit Energie an die Umwelt abgibt. Diese Jouleschen Verluste sind f\"ur den D\"ampfungseffekt verantwortlich. Der Energieverlust erfolgt durch Umwandlung der elektrischen Energie in W\"arme nach der Formel:
+\begin{equation}
+	E_R(t) = j^2*R*t
+\end{equation}
 Im Fall wenn es nur eine L\"osung der Gleichung (4.50) gibt, in der Literatur als aperiodischer Grenzfall bezeichnet,  m\"ussen wir den Ansatz 
 \begin{equation}
 	\psi_1(t) = a*e^{\lambda*t} + b*t*e^{\lambda*t}
@@ -1783,7 +1784,7 @@ Im Fall wenn es nur eine L\"osung der Gleichung (4.50) gibt, in der Literatur al
 \\
 Das Thema Schwingkreis lie\ss{}e sich noch wesentlich detailierter darstellen. Der ged\"ampfte Schwingkreis ist immer noch eine Idealisierung und wir sind nicht auf ein \"au\ss{}eres Spannungssignal eingegangen, dass wom\"oglich den Schwingkreis treibt. 
 \subsection{Die Diode}
-Eine Diode ist ein zweipoliges nichtlineares elektrisches Bauteil, dass Strom in eine Richtung sehr gut und in die entgegengesetzte Richtung bei moderat niedrigen Spannungen kaum leitet. Es gibt sehr viele verschiedene Bauformen und Implementierungen in verschiedenen Substraten. An sich ist eine Diode kein dynamisches Bauteil, aber Implementierungsabh\"angig kann es eine zeitliche Charakteristik haben und unabh\"angig von der Implementierung ist sie in Sperrrichtung immer auch ein Kondensator.
+Eine Diode ist ein zweipoliges nichtlineares elektrisches Bauteil, dass Strom in eine Richtung sehr gut und in die entgegengesetzte Richtung bei moderat niedrigen Spannungen kaum leitet. Es gibt sehr viele verschiedene Bauformen und Implementierungen in verschiedenen Substraten. An sich ist eine Diode kein dynamisches Bauteil, aber Implementierungsabh\"angig kann es eine zeitliche Charakteristik haben und unabh\"angig von der Implementierung ist sie in Sperrrichtung immer auch ein Kondensator. Wir werden uns in der Diskussion von Dioden auf normale Halbleiter Dioden beschr\"anken.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=1.5]{diode.pdf}
@@ -1793,14 +1794,90 @@ Eine Diode ist ein zweipoliges nichtlineares elektrisches Bauteil, dass Strom in
 \noindent
 Am Schaltsymbol einer Diode sehen wir sofort, dass es sich um ein Bauteil mit asymmetrischer Charakteristik handelt. Der Pfeil gibt hierbei die bevorzugte Stromrichtung an und die vertikale Linie ist auf der Seite aus welcher der Strom nicht kommen darf.\\
 \\
+
 \subsection{Der Feldeffekt Transitor}
 
-
+\subsection{Logische Gatter}
 
 
 \chapter{Ein m\"oglichst einfacher Digitalrechner}
-Ein Digitalrechner hat zwei Buchstaben, n\"amlich die Null und die Eins, aber zus\"atzlich hat jeder eine meistens fixe Wortgr\"o\ss{}e, die in der Anzahl der Stellen , der Bits beziehungsweise Buchstaben, also der Nullen und der Einsen, welche die Maschine als ein Wort betrachtet, gemessen wird. Dieses Wort ist das eigentliche Elementare Objekt der Rechenmaschine, jede Operation wird nicht auf einem einzelnen Bit, also auf einer Stelle des Wortes, sondern immer auf dem gesamten Wort ausgef\"uhrt. Genauso holen wir wenn wir den Inhalt einer Speicheraddresse zum Rechenkern holen immer ein ganzes Wort, dass dort steht und nicht einen einzelnen Bit.
-Ein Wort kann dabei f\"ur einen Buchstaben stehen, f\"ur eine Zahl oder die Addresse eines anderen Wortes. 
+Ein Digitalrechner zeichnet sich dadurch aus, dass er genau zwei Buchstaben hat, die in der Machine durch ein hohe Spannung und eine niedrige Spannung dargestellt sind. Wir schreiben diese Buchstaben normalerweise als Null und Eins.\\
+Innerhalb der Rechenmaschine werden diese Buchstaben in Worten einer festen L\"ange angeordnet. Jede Stelle in diesen Anordnungen von Nullen und Einsen nennen wir Bits.\\
+Ein moderner 64Bit Prozessor arbeitet entsprechend auf Worten der L\"ange 64. Diese Worte stellen die eigentlichen elementaren Objekte im Computer dar. Jede Operation wird auf einem ganzen Wort ausgef\"urt, jeder vergleich ist ein Vergleich zwischen ganzen Worten.\\
+\\
+Diese Worte k\"onnen nat\"urliche Zahlen, ganze Zahlen, rationale Zahlen oder auch komplexe Zahlen symbolisieren. Genauso ist es aber auch m\"oglich, dass es eine Kodierung gibt, die einem Wort einen Buchstaben zuordnet, sodass die Worte im Speicher zusammen einen Text repr\"asentieren.\\
+\\
+Die einfachste M\"oglichkeit w\"are es eine Rechenmaschine mit Wortl\"ange Eins zu bauen, also jedes Wort ist genau einen Bit lang. Aber dies w\"urde der Maschine eine Komplexit\"at nehmen, die ich f\"ur essentiell halte.\\
+\\
+Ich habe mich entschieden f\"ur uns eine 4Bit Rechner zu bauen. Daher wir arbeiten mit der Wortl\"ange vier, wodurch wir zumindest nat\"urliche Zahlen von 0 bis 15 oder ganze Zahlen von -7 bis +7 darstellen k\"onnen. Vier Bit werden auch 1 Nibble genannt, genauso wie acht Bit auch ein Byte genannt werden.\\
+\\
+\section{Aufbau der Rechenmaschine}
+In diesem Abschnitt besprechen wir den groben Aufbau der Rechenmaschine. Hierbei werden die einzelnen Module vorgestellt und beschrieben wie Diese kommunizieren.
+Das zentrale Modul der Machine ist die \textbf{Kontrolleinheit}, die mit dem \textbf{Programmspeicher} kommuniziert, den Zustand der Machine \"uber das \textbf{Flag} liest und Kommandos an alle anderen Module schickt um die im Programmspeicher beschriebene Berechnung durchzuf\"urhren. Malen wir zuerst ein Bild der Module und der Kommunikationskan\"ale zwischen Ihnen. 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{Plan.pdf}
+		\caption{Grober Plan der Rechenmaschine.}
+	\end{center}
+\end{figure}
+\noindent
+\subsection{Speicher}
+Die Rechenmaschine hat einen Daten Speicher von 16 Worten. Er kann sich also gleichzeitig 16 vier Bit lange Worte merken. Jeder dieser ein Wort fassenden Speicherbl\"ocke hat eine 4 Bit lange Addresse mit der er angesprochen werden kann.\\
+\\
+Das Speicher Modul hat einen vier Bit Ausgang/Eingang Anschluss um Daten zwischen Register und Speicher hin und her zu transportieren. Zus\"atzlich gibt es einen vier Bit Anschluss an dem die Addresse angelegt wird.
+Es gibt noch drei ein Bit Eing\"ange mit den Namen \textbf{Schreiben}, \textbf{Lesen} und \textbf{Operation}.\\
+Wenn wir beabsichtigen ein bestimmtes Wort $(1,1,1,1)$ in Speicheradresse $(0,1,1,1)$ zu schreiben, dann legen wir das Wort an den Eingang/Ausgang an, setzen die Adresse auf den entsprechenden Wert und setzen den ein Bit Eingang mit dem Namen \textbf{Schreiben} auf Eins und die anderen ein Bit Eing\"ange auf Null.\\
+Die Spannungssignale m\"ussen bevor der Schreiben Eingang auf Eins gesetzt wird immer stabilisiert sein, damit nicht an die falsche Adresse geschrieben wird.\\
+Falls wir aber ein Wort an einer bestimmten Adresse lesen wollen, setzen wir die Adresse auf den gew\"unschten Speicherblock und den Lesen Eingang auf Eins. Alle anderen ein Bit Eing\"ange sollen dabei wieder auf Null gesetzt sein.\\
+\\
+Man unterscheidet Speicherbl\"ocke deren Adresse auf Null endet und solche deren Adresse auf Eins endet. Erstere wollen wir linker Speicher und letzere rechter Speicher nennen. Wenn eine bin\"are Operation ausgef\"uhrt wird, ist jeweils der linke Operand aus dem Linken und der rechte Operand aus dem rechten Speicher.\\
+Deshalb gibt es einen \textbf{Operation} Modus, der aktiv ist wenn am Operation Eingang Eins anliegt. Im Operation Modus wird das letzte Bit der Adresse $(a_1, a_2, a_3, a_4))$ ignoriert und stattdessen am Ausgang \textbf{Linker Operand} der Inhalt vom Speicherblock mit der Adresse $(a_1, a_2, a_3, 0))$ ausgegeben und am Ausgang \textbf{Rechter Operand} der Inhalt der Speicheradresse $(a_1, a_2, a_3, 1))$ ausgegeben.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{Speicher.pdf}
+		\caption{Speichermodul.}
+	\end{center}
+\end{figure}
+\noindent
+\section{Das Register}
+Normalerweise \"ubernehmen Register in einer Rechenmaschine eine Aufgabe analog zu Schmierzetteln beim h\"andisch Rechnen. Es gibt nur einige wenige davon im Gegensatz zum gro\ss{}en Speicher, ihr Inhalt kann schnell manipuliert werden und in vielen F\"allen k\"onnen Operanden und Resultate von Rechenoperationen nur Register sein. Bei unserer Rechenmaschine gilt dies nur teilweise. Auf jeden Fall gibt es nur ein einzelnes vier Bit Register, aber die Zugriffszeiten des Registers unterscheiden sich nicht von denen des Hauptspeichers.\\
+\\
+Eine Besonderheit des Registers ist es, dass sie zus\"atzlich noch ein f\"unftes Bit enh\"alt, dass unser einziges Flag darstellt.\\
+Das Register hat einen vier Bit Eingang/Ausgang, wie der Speicher, einen ein Bit Eingang zum Setzen des Flags und einen ein Bit Ausgang zum Lesen des Flags.
+Zus\"atzlich hat es noch drei ein Bit Eing\"ange, mit Namen \textbf{Lesen}, \textbf{Schreiben} und \textbf{Operation}.\\
+Wenn wir ein Wort in das Register geschrieben werden soll, wird das Wort an den Eingang/Ausgang angelegt und der ein Bit Eingang mit Namen \textbf{Schreiben} auf Eins gesetzt und der \textbf{Lesen} Eingang auf Null gesetzt.\\
+Im Gegenzug wenn wir das Wort im Register lesen wollen, setzen wir den \textbf{Lesen} Anschluss auf Eins und den \textbf{Operation} sowie \textbf{Schreiben} Anschluss auf Null, sodass dann am Eingang/Ausgang das gesuchte Wort vorliegt.\\
+Falls eine Operation stattfindet, wird der \textbf{Operation} Anschluss auf Eins geschalten und an den f\"unften Eingangs/Ausgangsbit der Flag Zustand des Rechenkerns angelegt.
+Der Zustand des Flags kann jeder Zeit vom Flag Ausgang gelesen werden.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{register.pdf}
+		\caption{Register.}
+	\end{center}
+\end{figure}
+\noindent
+\section{Der Rechenkern}
+
+
+Unsere Rechenmaschine hat eine Wortl\"ange von vier Bit.\footnote{Im Fachjargon nennt man dies auch einen Nibble.} Die Architektur unserer Machine ist anglehnt an die Harvard Architektur, mit getrenntem Befehlsspeicher und Datenspeicher.\\
+Jeder Befehl ist einen Byte lang und hat die Form:
+$$(b_0, b_1, b_3, a_0, a_1, a_2, a_3, F)$$
+Die Befehle, die unsere Rechenmaschine kennt sind die Folgenden:
+\paragraph{HALT:} $(b_0, b_1, b_2) = (0, 0, 0)$ Der Zustand der Rechenmaschine \"andert sich nicht und kein weiterer Befehl wird mehr ausgef\"uhrt.
+\paragraph{NAND + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 0, 1)$ Berechnet die NAND Operation des Wortes an der Addresse $(a_0, a_1, a_2, 0)$ mit dem Wort an der Stelle $(a_0, a_1, a_2, 1)$ und schreibt das Ergebnis in die Registerkarte. Falls das Ergebnis der Operation Null ist wird das Flag auf Eins gesetzt, sonst auf Null.
+\paragraph{LSHIFT + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 0)$ Wendet die LSHIFT auf das Wort an der Stelle $(a_0, a_1, a_2, 0)$ and und schreibt das Ergebnis in die Registerkarte. Hierbei wird das nullte Bit des Wortes auf Null gesetzt und der Wert des dritten Bits wird auf das Flag \"ubertragen.
+\paragraph{POP + 4 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 1)$ Schreibt das Wort an der Addresse $(a_0, a_1, a_2, a_3)$ in die Registerkarte.
+\paragraph{PUSH + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 0)$ Schreibt das Wort in der Registerkarte an die Addresse $(a_0, a_1, a_2, a_3)$.
+\paragraph{LOAD + 4 bit Wort:} $(b_0, b_1, b_2) = (1, 0, 1)$ Schreibt das Wort $(a_0, a_1, a_2, a_3)$ in die Registerkarte.
+\paragraph{IF:} $(b_0, b_1, b_2) = (1, 1, 0)$ Wenn das Flag auf Eins steht wird der n\"achste Befehl in der Reihe als n\"achstes ausgef\"uhrt, ansonsten wenn das Flag auf Null steht wird der n\"achste Befehl ausgef\"uhrt dessen letztes Bit, der $F$ Bit, Eins ist.
+\paragraph{RESET IF:} $(b_0, b_1, b_2) = (1, 1, 1)$ Wenn das Flag Eins ist wird der Z\"ahler auf Null gesetzt, sonst passiert nichts und der n\"achste Befehl in der Reihe wird ausgef\"uhrt.
+\\
+\\
+Nun sind wir in der Lage die Additionsoperation in der Maschinensprache unserer Rechenmaschine auszudr\"ucken.
+
+\subsection{Der Rechenkern}
+Der Rechenkern ist das Modul, dass die Grundoperationen unserer Rechenmaschine implementiert
+
 \section{Eine minimale Arithmetisch logische Einheit}
 Die Idee einer digitalen Rechenmaschine mit der kleinst m\"oglichen Anzahl an arithmetischen und logischen Operationen, die in Kombination eine universelle Rechenmaschine ergeben, hat mich fasziniert, seit ich mir Gedanken \"uber den Bau von Rechenmaschinen gemacht habe. Solche Minimal Konstruktionen sind in der Regel nur
 in der Theorie interessant, da sie nat\"urlich mehr Rechenschritte ben\"otigen als Maschinen mit mehreren Rechenoperationen. Diese zus\"atzlichen Rechenoperationen sind, zwar redundant was f\"ur bestimmte Menschen ein Sch\"onheitsfehler sein kann, aber Schnelligkeit und praktikabilit\"at sind in der echten Welt wichtiger.\\
@@ -1819,21 +1896,6 @@ Die Realisierung der Kontrolleinheit kann nun ein Lochstreifenleseger\"at oder e
 \subsection{Die physische Realisierung}
 \section{Der Hauptspeicher und Registerkarte}
 \section{Die Sprache unserer Rechenmaschine}
-Unsere Rechenmaschine hat eine Wortl\"ange von vier Bit.\footnote{Im Fachjargon nennt man dies auch einen Nibble.} Die Architektur unserer Machine ist anglehnt an die Harvard Architektur, mit getrenntem Befehlsspeicher und Datenspeicher.\\
-Jeder Befehl ist einen Byte lang und hat die Form:
-$$(b_0, b_1, b_3, a_0, a_1, a_2, a_3, F)$$
-Die Befehle, die unsere Rechenmaschine kennt sind die Folgenden:
-\paragraph{HALT:} $(b_0, b_1, b_2) = (0, 0, 0)$ Der Zustand der Rechenmaschine \"andert sich nicht und kein weiterer Befehl wird mehr ausgef\"uhrt.
-\paragraph{NAND + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 0, 1)$ Berechnet die NAND Operation des Wortes an der Addresse $(a_0, a_1, a_2, 0)$ mit dem Wort an der Stelle $(a_0, a_1, a_2, 1)$ und schreibt das Ergebnis in die Registerkarte. Falls das Ergebnis der Operation Null ist wird das Flag auf Eins gesetzt, sonst auf Null.
-\paragraph{LSHIFT + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 0)$ Wendet die LSHIFT auf das Wort an der Stelle $(a_0, a_1, a_2, 0)$ and und schreibt das Ergebnis in die Registerkarte. Hierbei wird das nullte Bit des Wortes auf Null gesetzt und der Wert des dritten Bits wird auf das Flag \"ubertragen.
-\paragraph{POP + 4 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 1)$ Schreibt das Wort an der Addresse $(a_0, a_1, a_2, a_3)$ in die Registerkarte.
-\paragraph{PUSH + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 0)$ Schreibt das Wort in der Registerkarte an die Addresse $(a_0, a_1, a_2, a_3)$.
-\paragraph{LOAD + 4 bit Wort:} $(b_0, b_1, b_2) = (1, 0, 1)$ Schreibt das Wort $(a_0, a_1, a_2, a_3)$ in die Registerkarte.
-\paragraph{IF:} $(b_0, b_1, b_2) = (1, 1, 0)$ Wenn das Flag auf Eins steht wird der n\"achste Befehl in der Reihe als n\"achstes ausgef\"uhrt, ansonsten wenn das Flag auf Null steht wird der n\"achste Befehl ausgef\"uhrt dessen letztes Bit, der $F$ Bit, Eins ist.
-\paragraph{RESET IF:} $(b_0, b_1, b_2) = (1, 1, 1)$ Wenn das Flag Eins ist wird der Z\"ahler auf Null gesetzt, sonst passiert nichts und der n\"achste Befehl in der Reihe wird ausgef\"uhrt.
-\\
-\\
-Nun sind wir in der Lage die Additionsoperation in der Maschinensprache unserer Rechenmaschine auszudr\"ucken.
 
 \section{Die Kontrolleinheit}
 

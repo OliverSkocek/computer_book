@@ -27,9 +27,15 @@
 \BOOKMARK [2][-]{subsection.4.4.3}{Der Schwingkreis}{section.4.4}% 27
 \BOOKMARK [2][-]{subsection.4.4.4}{Die Diode}{section.4.4}% 28
 \BOOKMARK [2][-]{subsection.4.4.5}{Der Feldeffekt Transitor}{section.4.4}% 29
-\BOOKMARK [0][-]{chapter.5}{Ein m\366glichst einfacher Digitalrechner}{}% 30
-\BOOKMARK [1][-]{section.5.1}{Eine minimale Arithmetisch logische Einheit}{chapter.5}% 31
-\BOOKMARK [2][-]{subsection.5.1.1}{Die physische Realisierung}{section.5.1}% 32
-\BOOKMARK [1][-]{section.5.2}{Der Hauptspeicher und Registerkarte}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.3}{Die Sprache unserer Rechenmaschine}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.4}{Die Kontrolleinheit}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.4.4.6}{Logische Gatter}{section.4.4}% 30
+\BOOKMARK [0][-]{chapter.5}{Ein m\366glichst einfacher Digitalrechner}{}% 31
+\BOOKMARK [1][-]{section.5.1}{Aufbau der Rechenmaschine}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.1.1}{Speicher}{section.5.1}% 33
+\BOOKMARK [1][-]{section.5.2}{Das Register}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.3}{Der Rechenkern}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.3.1}{Der Rechenkern}{section.5.3}% 36
+\BOOKMARK [1][-]{section.5.4}{Eine minimale Arithmetisch logische Einheit}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.4.1}{Die physische Realisierung}{section.5.4}% 38
+\BOOKMARK [1][-]{section.5.5}{Der Hauptspeicher und Registerkarte}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.6}{Die Sprache unserer Rechenmaschine}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.7}{Die Kontrolleinheit}{chapter.5}% 41

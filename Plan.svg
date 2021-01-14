@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="227.90717mm"
+   height="121.29392mm"
+   viewBox="0 0 227.90717 121.29392"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
+   sodipodi:docname="Plan.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient2922"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2920" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2894"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2892" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient950"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop948" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient940">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop936" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop938" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient940"
+       id="radialGradient942"
+       cx="102.67071"
+       cy="21.461874"
+       fx="102.67071"
+       fy="21.461874"
+       r="30.874752"
+       gradientTransform="matrix(1,0,0,0.42949935,0,12.244013)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="575.35466"
+     inkscape:cy="78.904164"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(12.400768,-7.7540874)">
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2926"
+       width="56.538494"
+       height="25.217989"
+       x="72.116966"
+       y="8.2540874" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="100.25965"
+       y="17.372002"
+       id="text2930"><tspan
+         sodipodi:role="line"
+         id="tspan2928"
+         x="100.25965"
+         y="17.372002"
+         style="text-align:center;text-anchor:middle;stroke-width:0.264583">Programm</tspan><tspan
+         sodipodi:role="line"
+         x="100.25965"
+         y="30.601126"
+         style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan2932">speicher</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2938"
+       width="20.75893"
+       height="51.261326"
+       x="90.5"
+       y="76.773582" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="62.950249"
+       y="57.191887"
+       id="text2971"><tspan
+         sodipodi:role="line"
+         id="tspan2969"
+         x="62.950249"
+         y="57.191887"
+         style="stroke-width:0.264583">Kontrolleinheit</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2973"
+       width="90.724052"
+       height="15.673836"
+       x="55.852119"
+       y="46.45739" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="96.52401"
+       y="92.068359"
+       id="text2977"><tspan
+         sodipodi:role="line"
+         id="tspan2975"
+         x="96.52401"
+         y="92.068359"
+         style="stroke-width:0.264583">B</tspan><tspan
+         sodipodi:role="line"
+         x="96.52401"
+         y="105.29749"
+         style="stroke-width:0.264583"
+         id="tspan2979">U</tspan><tspan
+         sodipodi:role="line"
+         x="96.52401"
+         y="118.52661"
+         style="stroke-width:0.264583"
+         id="tspan2981">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="7.6371722"
+       y="88.204865"
+       id="text2985"><tspan
+         sodipodi:role="line"
+         id="tspan2983"
+         x="7.6371722"
+         y="88.204865"
+         style="stroke-width:0.264583">Rechenkern</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2987"
+       width="68.310051"
+       height="16.700901"
+       x="3.8960834"
+       y="76.774002" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="16.214767"
+       y="123.92321"
+       id="text2991"><tspan
+         sodipodi:role="line"
+         id="tspan2989"
+         x="16.214767"
+         y="123.92321"
+         style="stroke-width:0.264583">Speicher</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2987-2"
+       width="68.310051"
+       height="16.700901"
+       x="3.8959999"
+       y="111.84711" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="130.78554"
+       y="88.571533"
+       id="text3010"><tspan
+         sodipodi:role="line"
+         id="tspan3008"
+         x="130.78554"
+         y="88.571533"
+         style="stroke-width:0.264583">Register Flag</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3035"
+       width="75.524002"
+       height="16.79528"
+       x="127.60078"
+       y="76.871193" />
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3037"
+       width="26.693523"
+       height="16.578043"
+       x="176.43124"
+       y="76.871193" />
+    <g
+       id="g74"
+       transform="matrix(0.50301117,0,0,0.91545445,189.26683,64.227934)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76" />
+    </g>
+    <g
+       id="g78"
+       transform="matrix(0.50301117,0,0,0.91545445,189.26683,64.227934)">
+      <path
+         d="m 39.875,22.691 -0.016,1.121 -3.714,-1.167 3.746,-1.075 -0.016,1.121"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path80" />
+    </g>
+    <g
+       id="g74-1"
+       transform="matrix(0.50301118,0,0,0.91545444,96.700456,61.242565)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-2" />
+    </g>
+    <g
+       id="g78-7"
+       transform="matrix(0.50301118,0,0,0.91545444,96.700456,61.242565)">
+      <path
+         d="m 39.875,22.691 -0.016,1.121 -3.714,-1.167 3.746,-1.075 -0.016,1.121"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path80-0" />
+    </g>
+    <g
+       id="g74-9"
+       transform="matrix(-0.50292341,0.00939653,-0.0171012,-0.91529469,141.42987,110.70718)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-3" />
+    </g>
+    <g
+       id="g78-6"
+       transform="matrix(-0.50292341,0.00939653,-0.0171012,-0.91529469,141.42987,110.70718)">
+      <path
+         d="m 39.875,22.691 -0.016,1.121 -3.714,-1.167 3.746,-1.075 -0.016,1.121"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path80-06" />
+    </g>
+    <g
+       id="g74-9-7"
+       transform="matrix(-0.50292341,0.00939653,-0.0171012,-0.91529469,103.40465,105.30843)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-3-9" />
+    </g>
+    <g
+       id="g78-6-2"
+       transform="matrix(-0.50292341,0.00939653,-0.0171012,-0.91529469,103.40465,105.30843)">
+      <path
+         d="m 39.875,22.691 -0.016,1.121 -3.714,-1.167 3.746,-1.075 -0.016,1.121"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path80-06-0" />
+    </g>
+    <g
+       id="g74-1-23"
+       transform="matrix(0.50301118,0,0,0.91545444,59.540578,95.110084)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-2-7" />
+    </g>
+    <g
+       id="g78-7-5"
+       transform="matrix(0.50301118,0,0,0.91545444,59.540578,95.110084)">
+      <path
+         d="m 39.875,22.691 -0.016,1.121 -3.714,-1.167 3.746,-1.075 -0.016,1.121"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path80-0-9" />
+    </g>
+    <g
+       id="g74-9-2"
+       transform="matrix(-0.50292341,0.00939653,-0.0171012,-0.91529469,104.26999,144.5747)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-3-2" />
+    </g>
+    <g
+       id="g78-6-8"
+       transform="matrix(-0.50292341,0.00939653,-0.0171012,-0.91529469,104.26999,144.5747)">
+      <path
+         d="m 39.875,22.691 -0.016,1.121 -3.714,-1.167 3.746,-1.075 -0.016,1.121"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path80-06-9" />
+    </g>
+    <g
+       id="g74-1-23-7"
+       transform="matrix(0.00432169,0.50299261,-0.91542065,0.00786524,55.891732,80.159813)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-2-7-3" />
+    </g>
+    <g
+       id="g78-7-5-6"
+       transform="matrix(0.00432169,0.50299261,-0.91542065,0.00786524,55.891732,80.159813)">
+      <path
+         d="m 39.875,22.691 -0.016,1.121 -3.714,-1.167 3.746,-1.075 -0.016,1.121"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path80-0-9-1" />
+    </g>
+    <g
+       id="g74-1-3"
+       transform="matrix(-0.00145152,0.50300909,-0.91545063,-0.00264169,126.12744,18.108204)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-2-1" />
+    </g>
+    <g
+       id="g78-7-9"
+       transform="matrix(-0.00145152,0.50300909,-0.91545063,-0.00264169,126.12744,18.108204)">
+      <path
+         d="m 39.875,22.691 -0.016,1.121 -3.714,-1.167 3.746,-1.075 -0.016,1.121"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path80-0-4" />
+    </g>
+    <g
+       id="g74-9-78"
+       transform="matrix(-0.00794523,-0.50294843,0.91534023,-0.0144599,76.533962,62.694694)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-3-4" />
+    </g>
+    <g
+       id="g78-6-5"
+       transform="matrix(-0.00794523,-0.50294843,0.91534023,-0.0144599,76.533962,62.694694)">
+      <path
+         d="m 39.875,22.691 -0.016,1.121 -3.714,-1.167 3.746,-1.075 -0.016,1.121"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path80-06-03" />
+    </g>
+    <g
+       id="g74-0-3-8"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,-27.062476,31.81293)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-7-9" />
+    </g>
+    <g
+       id="g74-3-4-2"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,-32.691132,31.822915)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-5-6" />
+    </g>
+    <g
+       id="g74-6-2-6"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,-21.433817,31.802941)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-5-4" />
+    </g>
+    <g
+       id="g74-5-4-9"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,-15.80516,31.792952)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-7-5" />
+    </g>
+    <g
+       id="g74-4-4-0"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,-10.176503,31.782966)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-4-4" />
+    </g>
+    <g
+       id="g74-65-3-8"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,-4.547845,31.772977)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-69-0-7" />
+    </g>
+    <g
+       id="g74-0-7-1"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,6.7094689,31.753004)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-8-7" />
+    </g>
+    <g
+       id="g74-3-6-2"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,1.0808119,31.762989)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-8-7" />
+    </g>
+    <g
+       id="g74-6-8-2"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,12.338127,31.743015)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-4-2" />
+    </g>
+    <g
+       id="g74-5-3-6"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,17.966784,31.733026)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-1-1" />
+    </g>
+    <g
+       id="g74-4-49-0"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,23.595443,31.723041)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-2-6" />
+    </g>
+    <g
+       id="g74-65-0-1"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,29.224098,31.713052)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-69-6-5" />
+    </g>
+    <g
+       id="g74-0-3-9"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,-26.705276,36.407888)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-7-4" />
+    </g>
+    <g
+       id="g74-6-2-9"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,-21.076617,36.397899)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-5-1" />
+    </g>
+    <g
+       id="g74-5-4-7"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,-15.44796,36.38791)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-7-7" />
+    </g>
+    <g
+       id="g74-4-4-1"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,-9.8193033,36.377924)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-4-1" />
+    </g>
+    <g
+       id="g74-65-3-5"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,-4.1906455,36.367935)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-69-0-9" />
+    </g>
+    <g
+       id="g74-0-7-7"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,7.0666686,36.347962)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-8-76" />
+    </g>
+    <g
+       id="g74-3-6-7"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,1.4380116,36.357947)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-8-3" />
+    </g>
+    <g
+       id="g74-6-8-6"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,12.695327,36.337973)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-4-5" />
+    </g>
+    <g
+       id="g74-5-3-63"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,18.323984,36.327984)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-1-9" />
+    </g>
+    <g
+       id="g74-4-49-4"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,23.952643,36.317999)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-2-8" />
+    </g>
+    <g
+       id="g74-65-0-12"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,29.581298,36.30801)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-69-6-9" />
+    </g>
+    <g
+       id="g74-0-3-3"
+       transform="matrix(0.01048001,0.502902,-0.91525572,0.0190731,14.19775,41.821223)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-7-90" />
+    </g>
+    <g
+       id="g74-3-4-8"
+       transform="matrix(0.01048001,0.502902,-0.91525572,0.0190731,14.209563,36.19257)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-5-8" />
+    </g>
+    <g
+       id="g74-6-2-5"
+       transform="matrix(0.01048001,0.502902,-0.91525572,0.0190731,14.18594,47.449878)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-5-0" />
+    </g>
+    <g
+       id="g74-5-4-96"
+       transform="matrix(0.01048001,0.502902,-0.91525572,0.0190731,14.174131,53.078531)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-7-3" />
+    </g>
+    <g
+       id="g74-4-4-8"
+       transform="matrix(0.01048001,0.502902,-0.91525572,0.0190731,14.162318,58.707185)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-4-5" />
+    </g>
+    <g
+       id="g74-0-3-3-7"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,8.9624578,32.315937)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-7-90-6" />
+    </g>
+    <g
+       id="g74-6-2-5-3"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,8.9506478,37.944595)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-5-0-1" />
+    </g>
+    <g
+       id="g74-5-4-96-7"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,8.9388388,43.573248)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-7-3-5" />
+    </g>
+    <g
+       id="g74-4-4-8-9"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,8.9270258,49.201902)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-4-5-6" />
+    </g>
+    <g
+       id="g74-65-3-6-2"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,8.9152168,54.830558)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-69-0-1-1" />
+    </g>
+    <g
+       id="g74-0-7-15-7"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,8.8915928,66.087864)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-8-9-8" />
+    </g>
+    <g
+       id="g74-3-6-8-5"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,8.9034058,60.459211)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-8-4-7" />
+    </g>
+    <g
+       id="g74-6-8-8-4"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,8.8797828,71.71652)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-4-1-1" />
+    </g>
+    <g
+       id="g74-5-3-0-8"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,8.8679738,77.345171)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-1-3-5" />
+    </g>
+    <g
+       id="g74-4-49-04-9"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,8.8561598,82.973827)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-2-4-7" />
+    </g>
+    <g
+       id="g74-65-0-4-5"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,8.8443508,88.602477)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-69-6-4-3" />
+    </g>
+    <g
+       id="g74-4-4-8-8"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,14.13192,60.603677)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-4-5-8" />
+    </g>
+    <g
+       id="g74-4-4-8-3"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,8.8278089,92.681661)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-4-5-1" />
+    </g>
+    <g
+       id="g74-9-7-3"
+       transform="matrix(-0.50292341,0.00939653,-0.0171012,-0.91529469,19.840661,107.13654)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-3-9-3" />
+    </g>
+    <g
+       id="g78-6-2-3"
+       transform="matrix(-0.50292341,0.00939653,-0.0171012,-0.91529469,19.840661,107.13654)">
+      <path
+         d="m 39.875,22.691 -0.016,1.121 -3.714,-1.167 3.746,-1.075 -0.016,1.121"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path80-06-0-8" />
+    </g>
+    <g
+       id="g74-9-7-6"
+       transform="matrix(-0.50292341,0.00939653,-0.0171012,-0.91529469,18.59042,139.17401)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-3-9-0" />
+    </g>
+    <g
+       id="g78-6-2-4"
+       transform="matrix(-0.50292341,0.00939653,-0.0171012,-0.91529469,18.59042,139.17401)">
+      <path
+         d="m 39.875,22.691 -0.016,1.121 -3.714,-1.167 3.746,-1.075 -0.016,1.121"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path80-06-0-88" />
+    </g>
+    <g
+       id="g74-9-7-3-8"
+       transform="matrix(-0.50292341,0.00939653,-0.0171012,-0.91529469,14.53655,139.21452)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-3-9-3-9" />
+    </g>
+    <g
+       id="g74-0-3-7"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,43.739007,49.143047)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-7-7" />
+    </g>
+    <g
+       id="g74-3-4-6"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,38.110351,49.153032)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-5-4" />
+    </g>
+    <g
+       id="g74-6-2-3"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,49.367666,49.133058)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-5-03" />
+    </g>
+    <g
+       id="g74-5-4-0"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,54.996323,49.123069)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-7-9" />
+    </g>
+    <g
+       id="g74-4-4-2"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,60.62498,49.113083)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-4-54" />
+    </g>
+    <g
+       id="g74-65-3-0"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,66.253638,49.103094)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-69-0-5" />
+    </g>
+    <g
+       id="g74-0-7-9"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,77.510952,49.083121)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-8-4" />
+    </g>
+    <g
+       id="g74-3-6-6"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,71.882295,49.093106)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-8-9" />
+    </g>
+    <g
+       id="g74-6-8-22"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,83.13961,49.073132)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-4-4" />
+    </g>
+    <g
+       id="g74-5-3-7"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,88.768267,49.063143)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-1-7" />
+    </g>
+    <g
+       id="g74-4-49-5"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,94.396926,49.073533)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-2-4" />
+    </g>
+    <g
+       id="g74-0-3-7-8"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,94.396925,49.073534)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-7-7-1" />
+    </g>
+    <g
+       id="g74-3-4-6-3"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,88.768269,49.083519)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-5-4-1" />
+    </g>
+    <g
+       id="g74-6-2-3-1"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,100.02558,49.063546)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-5-03-0" />
+    </g>
+    <g
+       id="g74-5-4-0-3"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,105.65424,49.053555)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-7-9-4" />
+    </g>
+    <g
+       id="g74-4-4-2-0"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,111.2829,49.04357)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-4-54-3" />
+    </g>
+    <g
+       id="g74-65-3-0-9"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,116.91156,49.033582)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-69-0-5-1" />
+    </g>
+    <g
+       id="g74-0-7-9-9"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,128.16887,49.013608)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-8-4-6" />
+    </g>
+    <g
+       id="g74-3-6-6-9"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,122.54022,49.023594)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-8-9-3" />
+    </g>
+    <g
+       id="g74-6-8-22-3"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,133.79753,49.003618)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-4-4-8" />
+    </g>
+    <g
+       id="g74-5-3-7-0"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,139.42619,48.99363)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-1-7-5" />
+    </g>
+    <g
+       id="g74-4-49-5-6"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,145.05485,49.00402)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-2-4-6" />
+    </g>
+    <g
+       id="g74-4-49-5-6-4"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,150.68351,48.994033)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-2-4-6-0" />
+    </g>
+    <g
+       id="g74-4-49-5-6-0"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,156.31217,48.984046)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-2-4-6-4" />
+    </g>
+    <g
+       id="g74-9-78-6"
+       transform="matrix(-0.00794523,-0.50294844,0.91534022,-0.0144599,38.181665,95.435421)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-3-4-2" />
+    </g>
+    <g
+       id="g74-9-78-67"
+       transform="matrix(-0.00794523,-0.50294844,0.91534022,-0.0144599,38.181665,97.022922)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-3-4-5" />
+    </g>
+    <g
+       id="g74-9-78-7"
+       transform="matrix(-0.00906401,-0.39304361,1.0442306,-0.01130011,159.12644,89.572343)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-3-4-28" />
+    </g>
+    <g
+       id="g78-6-5-2"
+       transform="matrix(-0.00794523,-0.50294844,0.91534022,-0.0144599,162.00931,94.026403)">
+      <path
+         d="m 39.875,22.691 -0.016,1.121 -3.714,-1.167 3.746,-1.075 -0.016,1.121"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path80-06-03-9" />
+    </g>
+    <g
+       id="g74-0-3-96"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,132.54255,33.842679)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-7-0" />
+    </g>
+    <g
+       id="g74-3-4-27"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,126.9139,33.852664)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-5-61" />
+    </g>
+    <g
+       id="g74-6-2-32"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,138.17121,33.83269)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-5-15" />
+    </g>
+    <g
+       id="g74-5-4-99"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,143.79987,33.822701)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-7-1" />
+    </g>
+    <g
+       id="g74-4-4-4"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,149.42853,33.812715)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-4-9" />
+    </g>
+    <g
+       id="g74-65-3-1"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,155.05718,33.802726)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-69-0-0" />
+    </g>
+    <g
+       id="g74-3-6-75"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,160.68584,33.792738)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-8-8" />
+    </g>
+    <g
+       id="g74-4-4-4-7"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,166.3145,33.782751)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-7-4-9-0" />
+    </g>
+    <g
+       id="g74-65-3-1-4"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,171.94315,33.772761)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-69-0-0-8" />
+    </g>
+    <g
+       id="g74-3-6-75-0"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,177.57181,33.762773)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-8-8-4" />
+    </g>
+    <g
+       id="g74-3-6-75-0-2"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,183.20047,33.752786)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-8-8-4-9" />
+    </g>
+    <g
+       id="g74-0-3-3-6"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,235.37262,33.517494)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-7-90-1" />
+    </g>
+    <g
+       id="g74-6-2-5-0"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,235.36081,39.14615)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-5-0-4" />
+    </g>
+    <g
+       id="g74-5-4-96-2"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,235.349,44.774803)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-7-3-2" />
+    </g>
+    <g
+       id="g74-0-3-3-2"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,235.33719,47.757622)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-6-7-90-0" />
+    </g>
+    <g
+       id="g74-6-2-5-5"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,235.32538,53.386278)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-1-5-0-5" />
+    </g>
+    <g
+       id="g74-5-4-96-29"
+       transform="matrix(0.01048001,0.50290201,-0.91525572,0.0190731,235.31357,59.014931)">
+      <path
+         d="M 51.062,22.832 39.875,22.691"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-5-7-3-0" />
+    </g>
+    <g
+       id="g74-3-6-75-0-2-2"
+       transform="matrix(0.50285764,-0.01242755,0.02261751,0.91517499,186.4734,33.860496)">
+      <path
+         d="m 55.749602,22.767049 -11.187,-0.141"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05625;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path76-20-8-8-4-9-8" />
+    </g>
+  </g>
+</svg>
