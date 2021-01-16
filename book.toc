@@ -79,20 +79,15 @@
 \contentsline {section}{\numberline {5.1}Aufbau der Rechenmaschine}{74}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Speicher}{74}{subsection.5.1.1}%
 \contentsline {section}{\numberline {5.2}Das Register}{76}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Der Rechenkern}{77}{section.5.3}%
-\contentsline {paragraph}{HALT:}{77}{section*.50}%
-\contentsline {paragraph}{NAND + 3 bit Addresse:}{77}{section*.51}%
-\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{77}{section*.52}%
-\contentsline {paragraph}{POP + 4 bit Addresse:}{77}{section*.53}%
-\contentsline {paragraph}{PUSH + 4 bit Addresse:}{77}{section*.54}%
-\contentsline {paragraph}{LOAD + 4 bit Wort:}{77}{section*.55}%
-\contentsline {paragraph}{IF:}{77}{section*.56}%
-\contentsline {paragraph}{RESET IF:}{78}{section*.57}%
-\contentsline {subsection}{\numberline {5.3.1}Der Rechenkern}{78}{subsection.5.3.1}%
-\contentsline {section}{\numberline {5.4}Eine minimale Arithmetisch logische Einheit}{78}{section.5.4}%
-\contentsline {paragraph}{NAND: }{78}{section*.58}%
-\contentsline {paragraph}{LSHIFT:}{78}{section*.59}%
-\contentsline {subsection}{\numberline {5.4.1}Die physische Realisierung}{79}{subsection.5.4.1}%
-\contentsline {section}{\numberline {5.5}Der Hauptspeicher und Registerkarte}{79}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Die Sprache unserer Rechenmaschine}{79}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Die Kontrolleinheit}{79}{section.5.7}%
+\contentsline {section}{\numberline {5.3}Der Rechenkern}{76}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Kontrolleinheit}{77}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Entwicklungsentscheidungen}{77}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Maschinensprache}{79}{section.5.6}%
+\contentsline {paragraph}{HALT:}{79}{section*.50}%
+\contentsline {paragraph}{NAND + 3 bit Addresse:}{79}{section*.51}%
+\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{79}{section*.52}%
+\contentsline {paragraph}{POP + 4 bit Addresse:}{79}{section*.53}%
+\contentsline {paragraph}{PUSH + 4 bit Addresse:}{79}{section*.54}%
+\contentsline {paragraph}{LOAD + 4 bit Wort:}{79}{section*.55}%
+\contentsline {paragraph}{IF:}{79}{section*.56}%
+\contentsline {paragraph}{RESET IF:}{79}{section*.57}%

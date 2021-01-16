@@ -1857,9 +1857,37 @@ Der Zustand des Flags kann jeder Zeit vom Flag Ausgang gelesen werden.
 \end{figure}
 \noindent
 \section{Der Rechenkern}
-
-
-Unsere Rechenmaschine hat eine Wortl\"ange von vier Bit.\footnote{Im Fachjargon nennt man dies auch einen Nibble.} Die Architektur unserer Machine ist anglehnt an die Harvard Architektur, mit getrenntem Befehlsspeicher und Datenspeicher.\\
+Die harte Arbeit im Rechner, also die Implementierung der Grundfunktionen \"ubernimmt der Rechenkern. In unserem Fall implementiert er eine stellenweise NAND Operation und eine Links Verschiebung.\\
+Die stellenweise NAND Operation nimmt zwei 4 Bit lange Worte und wendet auf jedes Bit das NAND an. Falls das Resultat Null ist wird das \textbf{Flag} auf Eins gesetzt, ansonsten wird es Null.\\
+Die Links Verschiebung ignoriert den rechten Operand und schiebt jeden 0-1 Wert des Wortes auf den n\"achst h\"oheren Bit. Der niedrigste Bit erh\"alt dabei den Wert Null und der Wert des h\"ochsten Bits geht auf das Flag \"ueber.\\
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{ALU.pdf}
+		\caption{Rechenkern.}
+	\end{center}
+\end{figure}
+\noindent
+Wenn wir die NAND Operation ausf\"uhren wollen, stellen wir den Selektor auf Null und legen den linken sowie den rechten Operand an die entsprechenden vier Bit Eing\"ange. Das Resultat erscheint am 4 Bit Ausgang \textbf{Resultat} und dem ein Bit Flag Ausgang.\\
+Will man die Links Verschiebung anwenden, so legt man am Selektor die Eins and und an den vier Bit Eingang namens linker Operand das zu bearbeitende Wort an. Wie im ersten Fall steht das Resultat im Ausgang Resultat und Flag.
+\section{Kontrolleinheit}
+Die Kontrolleiheit ist der zentrale Kern des Rechners. Sie \"ubernimmt die Aufgabe mit dem Programmspeicher zu kommunizieren um die n\"achste Anweisunge zu lesen und anschlie\ss{}end Signale an alle anderen Module zu schicken in der korrekten Reihenfolge um genau die Anweisung umzusetzen, die im Programmspeicher geschrieben steht.
+\section{Entwicklungsentscheidungen}
+Die Idee einer digitalen Rechenmaschine mit der kleinst m\"oglichen Anzahl an arithmetischen und logischen Operationen, die in Kombination eine universelle Rechenmaschine ergeben, hat mich fasziniert, seit ich mir Gedanken \"uber den Bau von Rechenmaschinen gemacht habe. Solche Minimal Konstruktionen sind in der Regel nur
+in der Theorie interessant, da sie nat\"urlich mehr Rechenschritte ben\"otigen als Maschinen mit mehreren Rechenoperationen. Diese zus\"atzlichen Rechenoperationen sind, zwar redundant was f\"ur bestimmte Menschen ein Sch\"onheitsfehler sein kann, aber Schnelligkeit und Praktikabilit\"at sind in der echten Welt wichtiger.\\
+\\
+Ebenso galt es die Kontrolleinheit so einfach wie m\"oglich zu gestalten um eine physikalische Realisierung mit so wenigen Bauteilen wie m\"oglich zu gew\"ahrleisten. Dies musste nat\"urlich unter der Bedingung geschehen, dass unsere Rechenmaschine mit universeller Berechenbarkeit ausgestattet ist.
+\\
+\\
+Um zu zeigen, dass unsere Rechenmaschine ein universelle Programmiersprache darstellt, m\"ussen wir lediglich einen Algorithmus finden, der die Additions Operation mit unseren beiden Grundoperationen und den zu verf\"ugung stehenden bedingten Verzweigungen ausdr\"uckt.
+\\
+\\
+Bevor wir dies tun k\"onnen m\"ussen wir den Rest unserer Programmiersprache definieren. Meine Wahl fiel hierbei auf WHILE-Programme mit IF Verzweigungen. Insbesondere lie\ss{} ich mich einschr\"anken durch die Tatsache, dass die Kontrolleinheit der Rechenmaschine selbst keine Additionsoperationen ausf\"uhren soll, da dies die Sinnhaftigkeit der Einschr\"ankung auf die beiden gew\"ahlten Grundoperationen zu absurd scheinen l\"asst. Dies f\"uhrte mich zur Kleenschen Normalform. Jedes WHILE-Programm, aber auch jedes GOTO- Programm l\"asst sich umschreiben sodass nur einer WHILE Schleife beziehungsweise GOTO Aufruf verwendet wird.\\
+Die Kontrolleinheit muss in diesem Fall immer nur den jeweils n\"achsten Befehl ausspucken, oder im Fall einer IF Verzweigung einige Befehle \"uberspringen und am Ende des Programms zur\"uckspulen zum Anfang. Es ist weder die Eingabe einer absoluten Addresse noch einer relativen Addresse notwendig. Die Kontrolleinheit muss also nicht Addressen aus den Befehlen extrahieren und dem Befehlzeiger setzten, noch einen Teil des Befehls auf den derzeitigen Befehlszeiger hinzuaddieren. Als Konsequenz ist zum einen die Absurdit\"at der Rechenmaschine nicht all zu offensichtlich und zum Anderen m\"ussen unsere Befehle auch nicht all zu lange sein und jede Opertion ben\"otigt genau einen Maschinenzyklus.\\
+In unserem Fall wird ein Befehl ein Byte sein, wobei der Befehlsraum hierbei nicht ausgelastet sein wird.\\
+\\
+Die Realisierung der Kontrolleinheit kann nun ein Lochstreifenleseger\"at oder ein bin\"ar Counter zusammen mit einem 8 Bit Parallelspeicher (EEPROM oder FLASH) sein.
+\section{Maschinensprache}
+Die Architektur unserer Machine ist anglehnt an die Harvard Architektur, mit getrenntem Befehlsspeicher und Datenspeicher.\\
 Jeder Befehl ist einen Byte lang und hat die Form:
 $$(b_0, b_1, b_3, a_0, a_1, a_2, a_3, F)$$
 Die Befehle, die unsere Rechenmaschine kennt sind die Folgenden:
@@ -1875,29 +1903,6 @@ Die Befehle, die unsere Rechenmaschine kennt sind die Folgenden:
 \\
 Nun sind wir in der Lage die Additionsoperation in der Maschinensprache unserer Rechenmaschine auszudr\"ucken.
 
-\subsection{Der Rechenkern}
-Der Rechenkern ist das Modul, dass die Grundoperationen unserer Rechenmaschine implementiert
-
-\section{Eine minimale Arithmetisch logische Einheit}
-Die Idee einer digitalen Rechenmaschine mit der kleinst m\"oglichen Anzahl an arithmetischen und logischen Operationen, die in Kombination eine universelle Rechenmaschine ergeben, hat mich fasziniert, seit ich mir Gedanken \"uber den Bau von Rechenmaschinen gemacht habe. Solche Minimal Konstruktionen sind in der Regel nur
-in der Theorie interessant, da sie nat\"urlich mehr Rechenschritte ben\"otigen als Maschinen mit mehreren Rechenoperationen. Diese zus\"atzlichen Rechenoperationen sind, zwar redundant was f\"ur bestimmte Menschen ein Sch\"onheitsfehler sein kann, aber Schnelligkeit und praktikabilit\"at sind in der echten Welt wichtiger.\\
-\\
-Meine arithmetisch logische Einheit hat die folgenden zwei Operationen:
-\paragraph{NAND: } Die verneinte-Und Operation, die wie wahrscheinlich wie jedem Leser bekannt, durch verschiedene Kombinationen mit sich selbst, jede erdenkliche boolsche Operation erzeugen kann. Somit lassen sich s\"amtliche logischen Funktionen mit dieser Operation ausdr\"ucken. Zus\"atzlich setzt die NAND-Operation falls das NULL-Wort als Ergebnis erhalten wird ein Flag.
-\paragraph{LSHIFT:} Der links shift beziehungsweise die Linksverschiebung, bei der jede Stelle im Wort um einen bit nach links verschoben wird, hierbei wird die nullte Stelle auf Null gesetzt und die h\"ochste Stelle geht in ein Flag \"uber.\\
-\\
-Um zu zeigen, dass diese Operationen ausreichen, m\"ussen wir lediglich einen Algorithmus finden, der die Additions Operation mit diesen beiden Grundoperationen ausdr\"ucken kann.
-\\
-\\
-Bevor wir dies tun k\"onnen m\"ussen wir den Rest unserer Programmiersprache definieren. Meine Wahl fiel hierbei auf WHILE-Programme mit IF Verzweigungen. Insbesondere lie\ss{} ich mich einschr\"anken durch die Tatsache, dass die Kontrolleinheit der Rechenmaschine selbst keine Additionsoperationen ausf\"uhren soll, da dies die Sinnhaftigkeit der Einschr\"ankung auf die beiden Grundoperationen zu absurd scheinen l\"asst. Dies f\"uhrte mich zur Kleenschen Normalform. Jedes WHILE-Programm, aber auch jedes GOTO- Programm l\"asst sich umschreiben sodass nur einer WHILE Schleife beziehungsweise GOTO Aufruf verwendet wird.\\
-Die Kontrolleinheit muss in diesem Fall immer nur den jeweils n\"achsten Befehl ausspucken, oder im Fall einer IF Verzweigung einige Befehle \"uberspringen und am Ende des Programms zur\"uckspulen zum Anfang. Es ist weder die Eingabe einer absoluten Addresse noch einer relativen Addresse notwendig. Die Kontrolleinheit muss also nicht Addressen aus den Befehlen extrahieren und dem Befehlzeiger setzten, noch einen Teil des Befehls auf den derzeitigen Befehlszeiger draufaddieren. Dies f\"uhrt zus\"atzlich dazu, dass es die Absurdit\"at des Vorhabens nicht zu offensichtlich macht, dazu, dass unsere Befehle nicht allzu lang sein m\"ussen. In unserem Fall wird ein Befehl ein Byte sein, wobei der Befehlsraum hierbei nicht ausgelastet sein wird.\\
-\\
-Die Realisierung der Kontrolleinheit kann nun ein Lochstreifenleseger\"at oder ein bin\"ar Counter zusammen mit einem 8 Bit Parallelspeicher (EEPROM oder FLASH) sein.
-\subsection{Die physische Realisierung}
-\section{Der Hauptspeicher und Registerkarte}
-\section{Die Sprache unserer Rechenmaschine}
-
-\section{Die Kontrolleinheit}
 
 \end{document}
 
