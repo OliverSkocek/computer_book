@@ -33,6 +33,8 @@
 \BOOKMARK [2][-]{subsection.5.1.1}{Speicher}{section.5.1}% 33
 \BOOKMARK [1][-]{section.5.2}{Das Register}{chapter.5}% 34
 \BOOKMARK [1][-]{section.5.3}{Der Rechenkern}{chapter.5}% 35
-\BOOKMARK [1][-]{section.5.4}{Kontrolleinheit}{chapter.5}% 36
-\BOOKMARK [1][-]{section.5.5}{Entwicklungsentscheidungen}{chapter.5}% 37
-\BOOKMARK [1][-]{section.5.6}{Maschinensprache}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.4}{Der BUS}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.5}{Kontrolleinheit}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.5.1}{Ausf\374hrer}{section.5.5}% 38
+\BOOKMARK [1][-]{section.5.6}{Entwicklungsentscheidungen}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.7}{Maschinensprache}{chapter.5}% 40

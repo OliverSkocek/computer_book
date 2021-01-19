@@ -1869,8 +1869,33 @@ Die Links Verschiebung ignoriert den rechten Operand und schiebt jeden 0-1 Wert 
 \noindent
 Wenn wir die NAND Operation ausf\"uhren wollen, stellen wir den Selektor auf Null und legen den linken sowie den rechten Operand an die entsprechenden vier Bit Eing\"ange. Das Resultat erscheint am 4 Bit Ausgang \textbf{Resultat} und dem ein Bit Flag Ausgang.\\
 Will man die Links Verschiebung anwenden, so legt man am Selektor die Eins and und an den vier Bit Eingang namens linker Operand das zu bearbeitende Wort an. Wie im ersten Fall steht das Resultat im Ausgang Resultat und Flag.
+\section{Der BUS}
 \section{Kontrolleinheit}
-Die Kontrolleiheit ist der zentrale Kern des Rechners. Sie \"ubernimmt die Aufgabe mit dem Programmspeicher zu kommunizieren um die n\"achste Anweisunge zu lesen und anschlie\ss{}end Signale an alle anderen Module zu schicken in der korrekten Reihenfolge um genau die Anweisung umzusetzen, die im Programmspeicher geschrieben steht.
+Die Kontrolleiheit ist der zentrale Kern des Rechners. Sie \"ubernimmt die Aufgabe mit dem Programmspeicher zu kommunizieren um die n\"achste Anweisunge zu lesen und anschlie\ss{}end Signale an alle anderen Module zu schicken in der korrekten Reihenfolge um genau die Anweisung umzusetzen, die im Programmspeicher geschrieben steht.\\
+\\
+Die Kontrolleinheit besteht im wesentlichen aus zwei Komponenten, einem \textbf{Taktgeber} und einem \textbf{Ausf\"uhrer}. Der Taktgeber erzeugt zwei Taktsignale, ein regul\"ares Taktsignal in Form einer Rechteckswelle und ein um einige Nanosekunden versetztes von der Form her identes Schreibsignal, dass dazu dient den Modulen die Schreibbefehle zu senden.\\
+\\
+Der Grund warum wir ein extra Schreibsignal brauchen liegt in einer Verz\"ogerung der jede elektronische Komponente im Rechner unterliegt. Erst nach einer kurzen Zeit wird jede Komponente den korrekten Spannungswert liefern und ein Schreiben bevor diese Zeit vergangen ist, f\"uhrt zu Fehlern.
+\subsection{Ausf\"uhrer}
+Am Anfang des Kapitels haben wir gesehen wie die Kontrolleinheit mit den unterschiedlichen Modulen im Rechner kommuniziert. Anschlie\ss{}end haben wir in jedem der bisherigen Module gesehen welche Steuersignale jedes von ihnen ben\"otigt. In diesem Abschnitt wird gezeigt wie der Ausf\"uhrer mit dem Programmspeicher kommuniziert, und abh\"angig von seinem internen Zustand, der vom Programmspeicher gesendeten Anweisung und dem Flag diese Steuersignale erzeugt. 
+\\
+\\
+Der Ausf\"uhrer hat vier ein Bit Eing\"ange. Einen Eingang f\"ur das Flag, einen Eingang f\"ur das Taktsignal, einen f\"ur das Schreib Signal und einen Eingang zum Einschalten der Rechenmaschine.\\
+\\
+Die Kommunikation mit dem Programmspeicher ist sehr einfach gestaltet. Es gibt zwei ein Bit Ausg\"ange namens \textbf{n\"achste Anweisung} und \textbf{Zur\"ucksetzen}. Ersterer kommuniziert dem Programmspeicher, dass er zur n\"achsten Anweisung im Speicher gehen soll und Letzterer teilt dem Programmspeicher mit, dass er zur\"uck zur ersten Anweisung gehen soll.\\
+Als Antwort erh\"alt der Ausf\"uhrer an einem acht Bit Eingang, namens \textbf{Anweisung von Programmspeicher} die gesuchte Anweisung in Form eines acht Bit Wortes.\\
+\\
+Intern hat der Ausf\"uhrer zwei Zust\"ande, die durch RS-Flip-Flops implementiert sind. Einen \textbf{AN} Bit, der signalisiert, dass die Maschine einen Rechenprozess ausf\"uhrt und einen \textbf{WENN} Bit, der signalisiert, dass sich der Rechner in einer IF-THEN-END Verzweigung befindet.\\
+\\
+Es folgt wie in jedem Modul bisher ein bildliche Zusammenfassung. Da es eine Menge Ausg\"ange gibt mit selbsterkl\"arendem Namen, verzichte ich darauf sie alle hier im Text aufzuz\"ahlen, sondern verweise auf die Abbildung.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{Ausfuehrer.pdf}
+		\caption{Ausf\"uhrer.}
+	\end{center}
+\end{figure}
+\noindent
+Der ein Bit Ausgang namens \textbf{Operation Selektor} teilt dem Rechenkern mit welche der beiden Operationen ausgef\"uhrt werden soll. Die \"ubrigen Ausg\"ange dienen zur Kontrolle des BUS.
 \section{Entwicklungsentscheidungen}
 Die Idee einer digitalen Rechenmaschine mit der kleinst m\"oglichen Anzahl an arithmetischen und logischen Operationen, die in Kombination eine universelle Rechenmaschine ergeben, hat mich fasziniert, seit ich mir Gedanken \"uber den Bau von Rechenmaschinen gemacht habe. Solche Minimal Konstruktionen sind in der Regel nur
 in der Theorie interessant, da sie nat\"urlich mehr Rechenschritte ben\"otigen als Maschinen mit mehreren Rechenoperationen. Diese zus\"atzlichen Rechenoperationen sind, zwar redundant was f\"ur bestimmte Menschen ein Sch\"onheitsfehler sein kann, aber Schnelligkeit und Praktikabilit\"at sind in der echten Welt wichtiger.\\
@@ -1892,11 +1917,11 @@ Jeder Befehl ist einen Byte lang und hat die Form:
 $$(b_0, b_1, b_3, a_0, a_1, a_2, a_3, F)$$
 Die Befehle, die unsere Rechenmaschine kennt sind die Folgenden:
 \paragraph{HALT:} $(b_0, b_1, b_2) = (0, 0, 0)$ Der Zustand der Rechenmaschine \"andert sich nicht und kein weiterer Befehl wird mehr ausgef\"uhrt.
-\paragraph{NAND + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 0, 1)$ Berechnet die NAND Operation des Wortes an der Addresse $(a_0, a_1, a_2, 0)$ mit dem Wort an der Stelle $(a_0, a_1, a_2, 1)$ und schreibt das Ergebnis in die Registerkarte. Falls das Ergebnis der Operation Null ist wird das Flag auf Eins gesetzt, sonst auf Null.
-\paragraph{LSHIFT + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 0)$ Wendet die LSHIFT auf das Wort an der Stelle $(a_0, a_1, a_2, 0)$ and und schreibt das Ergebnis in die Registerkarte. Hierbei wird das nullte Bit des Wortes auf Null gesetzt und der Wert des dritten Bits wird auf das Flag \"ubertragen.
-\paragraph{POP + 4 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 1)$ Schreibt das Wort an der Addresse $(a_0, a_1, a_2, a_3)$ in die Registerkarte.
-\paragraph{PUSH + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 0)$ Schreibt das Wort in der Registerkarte an die Addresse $(a_0, a_1, a_2, a_3)$.
-\paragraph{LOAD + 4 bit Wort:} $(b_0, b_1, b_2) = (1, 0, 1)$ Schreibt das Wort $(a_0, a_1, a_2, a_3)$ in die Registerkarte.
+\paragraph{NAND + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 0, 1)$ Berechnet die NAND Operation des Wortes an der Addresse $(a_0, a_1, a_2, 0)$ mit dem Wort an der Stelle $(a_0, a_1, a_2, 1)$ und schreibt das Ergebnis in das Register. Falls das Ergebnis der Operation Null ist wird das Flag auf Eins gesetzt, sonst auf Null.
+\paragraph{LSHIFT + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 0)$ Wendet die LSHIFT auf das Wort an der Stelle $(a_0, a_1, a_2, 0)$ and und schreibt das Ergebnis in das Register. Hierbei wird das nullte Bit des Wortes auf Null gesetzt und der Wert des dritten Bits wird auf das Flag \"ubertragen.
+\paragraph{POP + 4 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 1)$ Schreibt das Wort an der Addresse $(a_0, a_1, a_2, a_3)$ in das Register.
+\paragraph{PUSH + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 0)$ Schreibt das Wort im Register an die Addresse $(a_0, a_1, a_2, a_3)$.
+\paragraph{LOAD + 4 bit Wort:} $(b_0, b_1, b_2) = (1, 0, 1)$ Schreibt das Wort $(a_0, a_1, a_2, a_3)$ in das Register.
 \paragraph{IF:} $(b_0, b_1, b_2) = (1, 1, 0)$ Wenn das Flag auf Eins steht wird der n\"achste Befehl in der Reihe als n\"achstes ausgef\"uhrt, ansonsten wenn das Flag auf Null steht wird der n\"achste Befehl ausgef\"uhrt dessen letztes Bit, der $F$ Bit, Eins ist.
 \paragraph{RESET IF:} $(b_0, b_1, b_2) = (1, 1, 1)$ Wenn das Flag Eins ist wird der Z\"ahler auf Null gesetzt, sonst passiert nichts und der n\"achste Befehl in der Reihe wird ausgef\"uhrt.
 \\

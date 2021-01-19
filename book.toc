@@ -80,14 +80,16 @@
 \contentsline {subsection}{\numberline {5.1.1}Speicher}{74}{subsection.5.1.1}%
 \contentsline {section}{\numberline {5.2}Das Register}{76}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Der Rechenkern}{76}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Kontrolleinheit}{77}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Entwicklungsentscheidungen}{77}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Maschinensprache}{79}{section.5.6}%
-\contentsline {paragraph}{HALT:}{79}{section*.50}%
-\contentsline {paragraph}{NAND + 3 bit Addresse:}{79}{section*.51}%
-\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{79}{section*.52}%
-\contentsline {paragraph}{POP + 4 bit Addresse:}{79}{section*.53}%
-\contentsline {paragraph}{PUSH + 4 bit Addresse:}{79}{section*.54}%
-\contentsline {paragraph}{LOAD + 4 bit Wort:}{79}{section*.55}%
-\contentsline {paragraph}{IF:}{79}{section*.56}%
-\contentsline {paragraph}{RESET IF:}{79}{section*.57}%
+\contentsline {section}{\numberline {5.4}Der BUS}{77}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Kontrolleinheit}{77}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Ausf\"uhrer}{78}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.6}Entwicklungsentscheidungen}{79}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Maschinensprache}{80}{section.5.7}%
+\contentsline {paragraph}{HALT:}{80}{section*.50}%
+\contentsline {paragraph}{NAND + 3 bit Addresse:}{81}{section*.51}%
+\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{81}{section*.52}%
+\contentsline {paragraph}{POP + 4 bit Addresse:}{81}{section*.53}%
+\contentsline {paragraph}{PUSH + 4 bit Addresse:}{81}{section*.54}%
+\contentsline {paragraph}{LOAD + 4 bit Wort:}{81}{section*.55}%
+\contentsline {paragraph}{IF:}{81}{section*.56}%
+\contentsline {paragraph}{RESET IF:}{81}{section*.57}%
