@@ -27,14 +27,15 @@
 \BOOKMARK [2][-]{subsection.4.4.3}{Der Schwingkreis}{section.4.4}% 27
 \BOOKMARK [2][-]{subsection.4.4.4}{Die Diode}{section.4.4}% 28
 \BOOKMARK [2][-]{subsection.4.4.5}{Der Feldeffekt Transitor}{section.4.4}% 29
-\BOOKMARK [2][-]{subsection.4.4.6}{Logische Gatter}{section.4.4}% 30
-\BOOKMARK [0][-]{chapter.5}{Ein m\366glichst einfacher Digitalrechner}{}% 31
-\BOOKMARK [1][-]{section.5.1}{Aufbau der Rechenmaschine}{chapter.5}% 32
-\BOOKMARK [2][-]{subsection.5.1.1}{Speicher}{section.5.1}% 33
-\BOOKMARK [1][-]{section.5.2}{Das Register}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.3}{Der Rechenkern}{chapter.5}% 35
-\BOOKMARK [1][-]{section.5.4}{Der BUS}{chapter.5}% 36
-\BOOKMARK [1][-]{section.5.5}{Kontrolleinheit}{chapter.5}% 37
-\BOOKMARK [2][-]{subsection.5.5.1}{Ausf\374hrer}{section.5.5}% 38
-\BOOKMARK [1][-]{section.5.6}{Entwicklungsentscheidungen}{chapter.5}% 39
-\BOOKMARK [1][-]{section.5.7}{Maschinensprache}{chapter.5}% 40
+\BOOKMARK [2][-]{subsection.4.4.6}{Kippstufen}{section.4.4}% 30
+\BOOKMARK [2][-]{subsection.4.4.7}{Logische Gatter}{section.4.4}% 31
+\BOOKMARK [0][-]{chapter.5}{Ein m\366glichst einfacher Digitalrechner}{}% 32
+\BOOKMARK [1][-]{section.5.1}{Aufbau der Rechenmaschine}{chapter.5}% 33
+\BOOKMARK [2][-]{subsection.5.1.1}{Speicher}{section.5.1}% 34
+\BOOKMARK [2][-]{subsection.5.1.2}{Das Register}{section.5.1}% 35
+\BOOKMARK [2][-]{subsection.5.1.3}{Der Rechenkern}{section.5.1}% 36
+\BOOKMARK [2][-]{subsection.5.1.4}{Der BUS}{section.5.1}% 37
+\BOOKMARK [2][-]{subsection.5.1.5}{Kontrolleinheit}{section.5.1}% 38
+\BOOKMARK [1][-]{section.5.2}{Entwicklungsentscheidungen}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.3}{Maschinensprache}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.4}{Funktionsweise der Kontrolleinheit}{chapter.5}% 41

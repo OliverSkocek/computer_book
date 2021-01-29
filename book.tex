@@ -1797,6 +1797,8 @@ Am Schaltsymbol einer Diode sehen wir sofort, dass es sich um ein Bauteil mit as
 
 \subsection{Der Feldeffekt Transitor}
 
+\subsection{Kippstufen}
+
 \subsection{Logische Gatter}
 
 
@@ -1809,7 +1811,7 @@ Diese Worte k\"onnen nat\"urliche Zahlen, ganze Zahlen, rationale Zahlen oder au
 \\
 Die einfachste M\"oglichkeit w\"are es eine Rechenmaschine mit Wortl\"ange Eins zu bauen, also jedes Wort ist genau einen Bit lang. Aber dies w\"urde der Maschine eine Komplexit\"at nehmen, die ich f\"ur essentiell halte.\\
 \\
-Ich habe mich entschieden f\"ur uns eine 4Bit Rechner zu bauen. Daher wir arbeiten mit der Wortl\"ange vier, wodurch wir zumindest nat\"urliche Zahlen von 0 bis 15 oder ganze Zahlen von -7 bis +7 darstellen k\"onnen. Vier Bit werden auch 1 Nibble genannt, genauso wie acht Bit auch ein Byte genannt werden.\\
+Ich habe mich entschieden f\"ur uns eine 4Bit Rechner zu bauen. Daher wir arbeiten mit der Wortl\"ange vier, wodurch wir zumindest nat\"urliche Zahlen von 0 bis 15 oder ganze Zahlen von -7 bis +7 darstellen k\"onnen. Vier Bit werden auch ein Nibble genannt, genauso wie acht Bit auch ein Byte genannt werden.\\
 \\
 \section{Aufbau der Rechenmaschine}
 In diesem Abschnitt besprechen wir den groben Aufbau der Rechenmaschine. Hierbei werden die einzelnen Module vorgestellt und beschrieben wie Diese kommunizieren.
@@ -1839,7 +1841,7 @@ Deshalb gibt es einen \textbf{Operation} Modus, der aktiv ist wenn am Operation 
 	\end{center}
 \end{figure}
 \noindent
-\section{Das Register}
+\subsection{Das Register}
 Normalerweise \"ubernehmen Register in einer Rechenmaschine eine Aufgabe analog zu Schmierzetteln beim h\"andisch Rechnen. Es gibt nur einige wenige davon im Gegensatz zum gro\ss{}en Speicher, ihr Inhalt kann schnell manipuliert werden und in vielen F\"allen k\"onnen Operanden und Resultate von Rechenoperationen nur Register sein. Bei unserer Rechenmaschine gilt dies nur teilweise. Auf jeden Fall gibt es nur ein einzelnes vier Bit Register, aber die Zugriffszeiten des Registers unterscheiden sich nicht von denen des Hauptspeichers.\\
 \\
 Eine Besonderheit des Registers ist es, dass sie zus\"atzlich noch ein f\"unftes Bit enh\"alt, dass unser einziges Flag darstellt.\\
@@ -1856,7 +1858,7 @@ Der Zustand des Flags kann jeder Zeit vom Flag Ausgang gelesen werden.
 	\end{center}
 \end{figure}
 \noindent
-\section{Der Rechenkern}
+\subsection{Der Rechenkern}
 Die harte Arbeit im Rechner, also die Implementierung der Grundfunktionen \"ubernimmt der Rechenkern. In unserem Fall implementiert er eine stellenweise NAND Operation und eine Links Verschiebung.\\
 Die stellenweise NAND Operation nimmt zwei 4 Bit lange Worte und wendet auf jedes Bit das NAND an. Falls das Resultat Null ist wird das \textbf{Flag} auf Eins gesetzt, ansonsten wird es Null.\\
 Die Links Verschiebung ignoriert den rechten Operand und schiebt jeden 0-1 Wert des Wortes auf den n\"achst h\"oheren Bit. Der niedrigste Bit erh\"alt dabei den Wert Null und der Wert des h\"ochsten Bits geht auf das Flag \"ueber.\\
@@ -1869,14 +1871,16 @@ Die Links Verschiebung ignoriert den rechten Operand und schiebt jeden 0-1 Wert 
 \noindent
 Wenn wir die NAND Operation ausf\"uhren wollen, stellen wir den Selektor auf Null und legen den linken sowie den rechten Operand an die entsprechenden vier Bit Eing\"ange. Das Resultat erscheint am 4 Bit Ausgang \textbf{Resultat} und dem ein Bit Flag Ausgang.\\
 Will man die Links Verschiebung anwenden, so legt man am Selektor die Eins and und an den vier Bit Eingang namens linker Operand das zu bearbeitende Wort an. Wie im ersten Fall steht das Resultat im Ausgang Resultat und Flag.
-\section{Der BUS}
-\section{Kontrolleinheit}
-Die Kontrolleiheit ist der zentrale Kern des Rechners. Sie \"ubernimmt die Aufgabe mit dem Programmspeicher zu kommunizieren um die n\"achste Anweisunge zu lesen und anschlie\ss{}end Signale an alle anderen Module zu schicken in der korrekten Reihenfolge um genau die Anweisung umzusetzen, die im Programmspeicher geschrieben steht.\\
+\subsection{Der BUS}
+
+\subsection{Kontrolleinheit}
+Die Kontrolleiheit ist der zentrale Kern des Rechners. Sie kommuniziert mit dem Programmspeicher, um die n\"achste Anweisung zu erhalten und \"ubersetzt diese dann in zeitlich abgestimmte Signale an die einzelnen Module. Die Module f\"uhren dann die durch die Anweisung bestimmte Berechnung durch.
 \\
-Die Kontrolleinheit besteht im wesentlichen aus zwei Komponenten, einem \textbf{Taktgeber} und einem \textbf{Ausf\"uhrer}. Der Taktgeber erzeugt zwei Taktsignale, ein regul\"ares Taktsignal in Form einer Rechteckswelle und ein um einige Nanosekunden versetztes von der Form her identes Schreibsignal, dass dazu dient den Modulen die Schreibbefehle zu senden.\\
+\\
+Wir k\"onnen die Kontrolleinheit in zwei Teilmodule aufspalten, nämlich einem \textbf{Taktgeber} und einem \textbf{Ausf\"uhrer}. Der Taktgeber erzeugt zwei Taktsignale, ein regul\"ares Taktsignal in Form einer Rechteckswelle und ein um einige Nanosekunden versetztes von der Form her identes Schreibsignal, dass dazu dient den Modulen die Schreibbefehle zu senden.\\
 \\
 Der Grund warum wir ein extra Schreibsignal brauchen liegt in einer Verz\"ogerung der jede elektronische Komponente im Rechner unterliegt. Erst nach einer kurzen Zeit wird jede Komponente den korrekten Spannungswert liefern und ein Schreiben bevor diese Zeit vergangen ist, f\"uhrt zu Fehlern.
-\subsection{Ausf\"uhrer}
+\subsubsection{Ausf\"uhrer}
 Am Anfang des Kapitels haben wir gesehen wie die Kontrolleinheit mit den unterschiedlichen Modulen im Rechner kommuniziert. Anschlie\ss{}end haben wir in jedem der bisherigen Module gesehen welche Steuersignale jedes von ihnen ben\"otigt. In diesem Abschnitt wird gezeigt wie der Ausf\"uhrer mit dem Programmspeicher kommuniziert, und abh\"angig von seinem internen Zustand, der vom Programmspeicher gesendeten Anweisung und dem Flag diese Steuersignale erzeugt. 
 \\
 \\
@@ -1896,6 +1900,7 @@ Es folgt wie in jedem Modul bisher ein bildliche Zusammenfassung. Da es eine Men
 \end{figure}
 \noindent
 Der ein Bit Ausgang namens \textbf{Operation Selektor} teilt dem Rechenkern mit welche der beiden Operationen ausgef\"uhrt werden soll. Die \"ubrigen Ausg\"ange dienen zur Kontrolle des BUS.
+
 \section{Entwicklungsentscheidungen}
 Die Idee einer digitalen Rechenmaschine mit der kleinst m\"oglichen Anzahl an arithmetischen und logischen Operationen, die in Kombination eine universelle Rechenmaschine ergeben, hat mich fasziniert, seit ich mir Gedanken \"uber den Bau von Rechenmaschinen gemacht habe. Solche Minimal Konstruktionen sind in der Regel nur
 in der Theorie interessant, da sie nat\"urlich mehr Rechenschritte ben\"otigen als Maschinen mit mehreren Rechenoperationen. Diese zus\"atzlichen Rechenoperationen sind, zwar redundant was f\"ur bestimmte Menschen ein Sch\"onheitsfehler sein kann, aber Schnelligkeit und Praktikabilit\"at sind in der echten Welt wichtiger.\\
@@ -1908,26 +1913,53 @@ Um zu zeigen, dass unsere Rechenmaschine ein universelle Programmiersprache dars
 \\
 Bevor wir dies tun k\"onnen m\"ussen wir den Rest unserer Programmiersprache definieren. Meine Wahl fiel hierbei auf WHILE-Programme mit IF Verzweigungen. Insbesondere lie\ss{} ich mich einschr\"anken durch die Tatsache, dass die Kontrolleinheit der Rechenmaschine selbst keine Additionsoperationen ausf\"uhren soll, da dies die Sinnhaftigkeit der Einschr\"ankung auf die beiden gew\"ahlten Grundoperationen zu absurd scheinen l\"asst. Dies f\"uhrte mich zur Kleenschen Normalform. Jedes WHILE-Programm, aber auch jedes GOTO- Programm l\"asst sich umschreiben sodass nur einer WHILE Schleife beziehungsweise GOTO Aufruf verwendet wird.\\
 Die Kontrolleinheit muss in diesem Fall immer nur den jeweils n\"achsten Befehl ausspucken, oder im Fall einer IF Verzweigung einige Befehle \"uberspringen und am Ende des Programms zur\"uckspulen zum Anfang. Es ist weder die Eingabe einer absoluten Addresse noch einer relativen Addresse notwendig. Die Kontrolleinheit muss also nicht Addressen aus den Befehlen extrahieren und dem Befehlzeiger setzten, noch einen Teil des Befehls auf den derzeitigen Befehlszeiger hinzuaddieren. Als Konsequenz ist zum einen die Absurdit\"at der Rechenmaschine nicht all zu offensichtlich und zum Anderen m\"ussen unsere Befehle auch nicht all zu lange sein und jede Opertion ben\"otigt genau einen Maschinenzyklus.\\
-In unserem Fall wird ein Befehl ein Byte sein, wobei der Befehlsraum hierbei nicht ausgelastet sein wird.\\
+In unserem Fall wird ein Befehl ein Byte sein, wobei der Befehlsraum hierbei nicht ausgelastet wird.\\
 \\
-Die Realisierung der Kontrolleinheit kann nun ein Lochstreifenleseger\"at oder ein bin\"ar Counter zusammen mit einem 8 Bit Parallelspeicher (EEPROM oder FLASH) sein.
+Die Realisierung des Programmspeichers kann ein Lochstreifenleseger\"at oder ein bin\"ar Counter zusammen mit einem 8 Bit Parallelspeicher (EEPROM oder FLASH) sein.
 \section{Maschinensprache}
 Die Architektur unserer Machine ist anglehnt an die Harvard Architektur, mit getrenntem Befehlsspeicher und Datenspeicher.\\
 Jeder Befehl ist einen Byte lang und hat die Form:
 $$(b_0, b_1, b_3, a_0, a_1, a_2, a_3, F)$$
 Die Befehle, die unsere Rechenmaschine kennt sind die Folgenden:
 \paragraph{HALT:} $(b_0, b_1, b_2) = (0, 0, 0)$ Der Zustand der Rechenmaschine \"andert sich nicht und kein weiterer Befehl wird mehr ausgef\"uhrt.
-\paragraph{NAND + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 0, 1)$ Berechnet die NAND Operation des Wortes an der Addresse $(a_0, a_1, a_2, 0)$ mit dem Wort an der Stelle $(a_0, a_1, a_2, 1)$ und schreibt das Ergebnis in das Register. Falls das Ergebnis der Operation Null ist wird das Flag auf Eins gesetzt, sonst auf Null.
-\paragraph{LSHIFT + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 0)$ Wendet die LSHIFT auf das Wort an der Stelle $(a_0, a_1, a_2, 0)$ and und schreibt das Ergebnis in das Register. Hierbei wird das nullte Bit des Wortes auf Null gesetzt und der Wert des dritten Bits wird auf das Flag \"ubertragen.
-\paragraph{POP + 4 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 1)$ Schreibt das Wort an der Addresse $(a_0, a_1, a_2, a_3)$ in das Register.
-\paragraph{PUSH + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 0)$ Schreibt das Wort im Register an die Addresse $(a_0, a_1, a_2, a_3)$.
-\paragraph{LOAD + 4 bit Wort:} $(b_0, b_1, b_2) = (1, 0, 1)$ Schreibt das Wort $(a_0, a_1, a_2, a_3)$ in das Register.
-\paragraph{IF:} $(b_0, b_1, b_2) = (1, 1, 0)$ Wenn das Flag auf Eins steht wird der n\"achste Befehl in der Reihe als n\"achstes ausgef\"uhrt, ansonsten wenn das Flag auf Null steht wird der n\"achste Befehl ausgef\"uhrt dessen letztes Bit, der $F$ Bit, Eins ist.
+\paragraph{IF:} $(b_0, b_1, b_2) = (0, 0, 1)$ Wenn das Flag auf Eins steht wird der n\"achste Befehl in der Reihe als n\"achstes ausgef\"uhrt, ansonsten wenn das Flag auf Null steht wird der n\"achste Befehl ausgef\"uhrt dessen letztes Bit, der $F$ Bit, Eins ist.
+\paragraph{NAND + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 0)$ Berechnet die NAND Operation des Wortes an der Addresse $(a_0, a_1, a_2, 0)$ mit dem Wort an der Stelle $(a_0, a_1, a_2, 1)$ und schreibt das Ergebnis in das Register. Falls das Ergebnis der Operation Null ist wird das Flag auf Eins gesetzt, sonst auf Null.
+\paragraph{LSHIFT + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 1)$ Wendet die LSHIFT auf das Wort an der Stelle $(a_0, a_1, a_2, 0)$ and und schreibt das Ergebnis in das Register. Hierbei wird das nullte Bit des Wortes auf Null gesetzt und der Wert des dritten Bits wird auf das Flag \"ubertragen.
+\paragraph{PUSH + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 0)$ Schreibt das Wort an der Addresse $(a_0, a_1, a_2, a_3)$ in das Register.
+\paragraph{POP + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 1)$ Schreibt das Wort im Register an die Addresse $(a_0, a_1, a_2, a_3)$.
+\paragraph{LOAD + 4 bit Wort:} $(b_0, b_1, b_2) = (1, 1, 0)$ Schreibt das Wort $(a_0, a_1, a_2, a_3)$ in das Register.
 \paragraph{RESET IF:} $(b_0, b_1, b_2) = (1, 1, 1)$ Wenn das Flag Eins ist wird der Z\"ahler auf Null gesetzt, sonst passiert nichts und der n\"achste Befehl in der Reihe wird ausgef\"uhrt.
 \\
 \\
 Nun sind wir in der Lage die Additionsoperation in der Maschinensprache unserer Rechenmaschine auszudr\"ucken.
 
+\section{Funktionsweise der Kontrolleinheit}
+Nachdem wir die Machinensprache die in unserem Rechner zur Anwendung kommt definiert haben, k\"onnen wir die Kontrolleinheit im Detail konstruieren.\\
+\\
+Es gibt drei Befehle, die direkt die Kontrolleinheit betreffen. Die HALT Anweisung, die der Machine mitteilt, dass das Ende der Berechnung erreicht wurde und sie nun ruhen kann und die beiden bedingte Verzweigungen der IF Befehl und der RESET IF Befehl.\\
+Diese Befehle sind in der Lage den internen Zustand der Kontrolleinheit zu ver\"andern.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{ausfuhrer.pdf}
+		\caption{Logischer Schaltplan.}
+	\end{center}
+\end{figure}
+\noindent
+Das obige Bild stellt eine M\"oglichkeit dar den Ausf\"uhrer als logischen Schaltplan darzustellen. Man beachte, dass nur die drei oben erw\"ahnten Befehle in diesem Schaltplan implementier sind. Dies dient der \"Ubersichtlichkeit und was fehlt wird sp\"ater nachgeholt.\\
+\\
+Starten wir beim Einschaltvorgang. Wenn wir den ein Bit Eingang namens \textbf{Ein} auf eins setzen, wird dadurch der AN Flip-Flop aktiv gesetzt. Dies signalisiert der Machine, dass sie nun arbeiten soll.\\
+Der Ausgang des AN FLip-Flops wird \"uber ein UND Gatter, dessen Ausgang wiederum den \textbf{n\"achste Anweisung} Ausgang darstellt, mit dem Taktsignal verkn\"upft.
+Hierdurch wird sicher gestellt, dass die Machine h\"alt wenn der AN Flip-Flop inaktiv ist. Zus\"atzlich wird der IF Flip-Flop durch das AN Signal auf die inaktive Position gesetzt.\\
+\\
+Das \textbf{Schreib Takt} Signal wird durch ein UND Gatter mit dem Flag Eingang verkn\"upft, sodass ein getaktetes Flag Signal gebildet wird.\\
+\\
+Der acht Bit Eingang vom Programmspeicher teilt sich in drei Segmente. Die ersten drei Bit sind an die drei Adresseing\"ange eines acht Bit analog Multiplexers gebunden. Die n\"achsten vier Bit bilden direkt den Ausgang \textbf{Datenadresse} und der letzte Bit wird \"uber ein UND Gatter mit dem \textbf{Schreib Takt} verbunden. Das letztere Signal vom Ausgang des UND Gatters schaltet den IF Flip-Flop in die inaktive Position.\\
+\\
+
+
+ 
+Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den Rechenkern und werden am Ende diesee\\
+\\
 
 \end{document}
 
