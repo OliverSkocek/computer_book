@@ -1869,8 +1869,17 @@ Die Links Verschiebung ignoriert den rechten Operand und schiebt jeden 0-1 Wert 
 	\end{center}
 \end{figure}
 \noindent
+Der ein Bit Eingang namens \textbf{Resultat Lesen} setzt den Ausgang \textbf{Resultat} in jedem Fall auf Null, falls er selbst gleich Null ist. Falls der Eingang jedoch Eins ist, haben wir das im Folgenden beschriebene Verhalten.\\
+\\
 Wenn wir die NAND Operation ausf\"uhren wollen, stellen wir den Selektor auf Null und legen den linken sowie den rechten Operand an die entsprechenden vier Bit Eing\"ange. Das Resultat erscheint am 4 Bit Ausgang \textbf{Resultat} und dem ein Bit Flag Ausgang.\\
 Will man die Links Verschiebung anwenden, so legt man am Selektor die Eins and und an den vier Bit Eingang namens linker Operand das zu bearbeitende Wort an. Wie im ersten Fall steht das Resultat im Ausgang Resultat und Flag.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{Kern.pdf}
+		\caption{Logischer Schaltplan Kern.}
+	\end{center}
+\end{figure}
+\noindent
 \subsection{Der BUS}
 
 \subsection{Kontrolleinheit}
