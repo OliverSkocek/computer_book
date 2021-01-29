@@ -1947,18 +1947,20 @@ Diese Befehle sind in der Lage den internen Zustand der Kontrolleinheit zu ver\"
 \noindent
 Das obige Bild stellt eine M\"oglichkeit dar den Ausf\"uhrer als logischen Schaltplan darzustellen. Man beachte, dass nur die drei oben erw\"ahnten Befehle in diesem Schaltplan implementier sind. Dies dient der \"Ubersichtlichkeit und was fehlt wird sp\"ater nachgeholt.\\
 \\
-Starten wir beim Einschaltvorgang. Wenn wir den ein Bit Eingang namens \textbf{Ein} auf eins setzen, wird dadurch der AN Flip-Flop aktiv gesetzt. Dies signalisiert der Machine, dass sie nun arbeiten soll.\\
-Der Ausgang des AN FLip-Flops wird \"uber ein UND Gatter, dessen Ausgang wiederum den \textbf{n\"achste Anweisung} Ausgang darstellt, mit dem Taktsignal verkn\"upft.
-Hierdurch wird sicher gestellt, dass die Machine h\"alt wenn der AN Flip-Flop inaktiv ist. Zus\"atzlich wird der IF Flip-Flop durch das AN Signal auf die inaktive Position gesetzt.\\
+Starten wir beim Einschaltvorgang. Wenn wir den ein Bit Eingang namens \textbf{Ein} auf eins setzen, wird dadurch der AN Flip-Flop gesetzt. Dies signalisiert der Machine, dass sie nun arbeiten soll.\\
+Der aktive Ausgang des AN FLip-Flops wird \"uber ein UND Gatter, dessen Ausgang wiederum den \textbf{n\"achste Anweisung} Ausgang darstellt, mit dem Taktsignal verkn\"upft.
+Hierdurch wird sicher gestellt, dass die Machine h\"alt wenn der AN Flip-Flop inaktiv ist. Zus\"atzlich wird der IF Flip-Flop durch das AN Signal zur\"uckgesetzt.\\
 \\
 Das \textbf{Schreib Takt} Signal wird durch ein UND Gatter mit dem Flag Eingang verkn\"upft, sodass ein getaktetes Flag Signal gebildet wird.\\
 \\
-Der acht Bit Eingang vom Programmspeicher teilt sich in drei Segmente. Die ersten drei Bit sind an die drei Adresseing\"ange eines acht Bit analog Multiplexers gebunden. Die n\"achsten vier Bit bilden direkt den Ausgang \textbf{Datenadresse} und der letzte Bit wird \"uber ein UND Gatter mit dem \textbf{Schreib Takt} verbunden. Das letztere Signal vom Ausgang des UND Gatters schaltet den IF Flip-Flop in die inaktive Position.\\
+Der acht Bit Eingang vom Programmspeicher teilt sich in drei Segmente. Die ersten drei Bit sind an die drei Adresseing\"ange eines acht Bit analog Multiplexers gebunden. Die n\"achsten vier Bit bilden direkt den Ausgang \textbf{Datenadresse} und der letzte Bit wird \"uber ein UND Gatter mit dem \textbf{Schreib Takt} verbunden. Das letztere Signal vom Ausgang des UND Gatters setzt den IF Flip-Flop zur\"uck.\\
 \\
-
-
- 
-Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den Rechenkern und werden am Ende diesee\\
+Der erste Ausgang des Multiplexers ist mit de Schreibtakt verkn\"upft durch ein UND-Gatter dessen Ausgang den \textbf{AN} Flip-Flop zur\"ucksetzt. Hierdurch wird \textbf{HALT} implementiert.\\
+Der zweite Ausgang des Multiplexers wird mit dem gatakteten Flag Signal durch ein UND-Gatter verkn\"upft. Das resultierende Signal setzt den \textbf{IF} FLip-Flop.
+Dies implementiert den \textbf{IF} Befehl.\\
+Der letzte Ausgang des Multiplexers ist ebenfalls \"uber ein UND-Gatter mit dem getakteten Flag verbunden. Der Ausgang des UND-Gatters bildet dann den Ausgang \textbf{Zur\"ucksetzen}.\\
+\\
+Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den Rechenkern und werden im folgenden pr\"asentiert.\\
 \\
 
 \end{document}
