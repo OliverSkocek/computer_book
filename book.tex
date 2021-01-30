@@ -1859,9 +1859,13 @@ Der Zustand des Flags kann jeder Zeit vom Flag Ausgang gelesen werden.
 \end{figure}
 \noindent
 \subsection{Der Rechenkern}
-Die harte Arbeit im Rechner, also die Implementierung der Grundfunktionen \"ubernimmt der Rechenkern. In unserem Fall implementiert er eine stellenweise NAND Operation und eine Links Verschiebung.\\
+Die harte Arbeit im Rechner, also die Implementierung der Grundoperationen \"ubernimmt der Rechenkern. Er ist dabei daf\"ur verantwortlich abh\"angig vom einkommenden Steuersignal die richtige Operation auszuw\"ahlen, und das korrekte Resultat der Operation, angewendet auf die einkommenden Operanden, auszugeben\\
+\\
+In unserem Fall implementiert er eine stellenweise NAND Operation und eine Links Verschiebung.\\
 Die stellenweise NAND Operation nimmt zwei 4 Bit lange Worte und wendet auf jedes Bit das NAND an. Falls das Resultat Null ist wird das \textbf{Flag} auf Eins gesetzt, ansonsten wird es Null.\\
 Die Links Verschiebung ignoriert den rechten Operand und schiebt jeden 0-1 Wert des Wortes auf den n\"achst h\"oheren Bit. Der niedrigste Bit erh\"alt dabei den Wert Null und der Wert des h\"ochsten Bits geht auf das Flag \"ueber.\\
+\\
+Betrachten wir das Eingabe/Ausgabe Schema unseres Rechenkerns.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.3]{ALU.pdf}
@@ -1869,10 +1873,15 @@ Die Links Verschiebung ignoriert den rechten Operand und schiebt jeden 0-1 Wert 
 	\end{center}
 \end{figure}
 \noindent
+Wir haben zwei vier Bit Eing\"ange f\"ur den \textbf{linken} und den \textbf{rechten Operand}, zwei ein Bit Eing\"ange namens \textbf{Selektor} und \textbf{Resultat Lesen}. Zus\"atzlich haben wir einen vier Bit Ausgang f\"ur das Ergebnis der Operation und einen ein Bit Ausgang f\"ur das Flag.\\
+\\
 Der ein Bit Eingang namens \textbf{Resultat Lesen} setzt den Ausgang \textbf{Resultat} in jedem Fall auf Null, falls er selbst gleich Null ist. Falls der Eingang jedoch Eins ist, haben wir das im Folgenden beschriebene Verhalten.\\
 \\
-Wenn wir die NAND Operation ausf\"uhren wollen, stellen wir den Selektor auf Null und legen den linken sowie den rechten Operand an die entsprechenden vier Bit Eing\"ange. Das Resultat erscheint am 4 Bit Ausgang \textbf{Resultat} und dem ein Bit Flag Ausgang.\\
-Will man die Links Verschiebung anwenden, so legt man am Selektor die Eins and und an den vier Bit Eingang namens linker Operand das zu bearbeitende Wort an. Wie im ersten Fall steht das Resultat im Ausgang Resultat und Flag.
+Wenn wir die NAND Operation ausf\"uhren wollen, stellen wir den Selektor auf Null und legen den linken sowie den rechten Operand an die entsprechenden vier Bit Eing\"ange. Das Resultat erscheint am 4 Bit Ausgang \textbf{Resultat}.
+Falls das Ergebnis der Operation gleich Null sein sollte, wird der \textbf{Flag} Ausgang gleich Eins, ansonsten Null.\\
+Will man allerdings die Links Verschiebung anwenden, so legt man am Selektor die Eins and und an den vier Bit Eingang namens \textbf{linker Operand} das zu bearbeitende Wort an. Wie im ersten Fall steht das Resultat im Ausgang \textbf{Resultat} und das \textbf{Flag} tr\"agt den vormals h\"ochsten Bit des linken Operanden.\\
+\\
+Das beschriebene Verhalten l\"asst sich leicht durch folgenden logischen Schaltplan darstellen.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.7]{Kern.pdf}
@@ -1880,6 +1889,7 @@ Will man die Links Verschiebung anwenden, so legt man am Selektor die Eins and u
 	\end{center}
 \end{figure}
 \noindent
+\paragraph{\"Ubungsbeispiel}: Analysiere den logischen Schaltplan und identifiziere welche Komponente welche Aufgabe \"ubernimmt.
 \subsection{Der BUS}
 
 \subsection{Kontrolleinheit}
