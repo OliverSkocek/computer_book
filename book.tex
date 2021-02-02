@@ -123,7 +123,7 @@ Synonym zum Begriff des Programms ist der Begriff des Algorithmus. \\
 Programmieren ist das entwerfen von Programmen. Jeder der noch nichts damit zu tun hatte, kann sich das komplett analog zu einem Koch vorstellen, der ein Rezept f\"ur einen unf\"ahigen Lehrling schreibt. Das Rezept ist eine Abfolge an Operationen, die der Lehrling an der K\"uche ausf\"uhren muss, um ein Gericht herzustellen. Der Lehrling ist unf\"ahig und deshalb muss man es ihm ganz genau aufschreiben, also pr\"azise formuliert, nach gewissen Regeln, damit die Anweisung immer eindeutig ist und keine Interpretationsfreiheit zul\"asst. Genauso verh\"alt es sich mit der Programmierung einer Rechenmaschine.
 \newpage
 \section{GOTO-Programme}
-Eine der einfachsten und am leichtesten verst\"andlichen Arten von Programmier- sprachen ist die Klasse der GOTO-Programmiersprachen. In der Praxis sind GOTO-Programmiersprachen zwar nur von geringer Bedeutung, da sich Programme, die in solchen Sprachen geschrieben wurden, wegen ihrer schwierigen Lesbarkeit, nur schwer warten lassen, jedoch sind die internen Maschinensprachen von allen Rechenmaschinen, die in der Praxis eingesetzt werden, GOTO-Programmiersprachen und (theoretisch interessant).\\
+Eine der einfachsten und am leichtesten verst\"andlichen Arten von Programmiersprachen ist die Klasse der GOTO-Programmiersprachen. In der Praxis sind GOTO-Programmiersprachen zwar nur von geringer Bedeutung, da sich Programme, die in solchen Sprachen geschrieben wurden, wegen ihrer schwierigen Lesbarkeit, nur schwer warten lassen, jedoch sind die internen Maschinensprachen von allen Rechenmaschinen, die in der Praxis eingesetzt werden, GOTO-Programmiersprachen und (theoretisch interessant).\\
 \\
 Es folgt eine Beschreibung einer sehr einfachen Form einer GOTO-Programmier- sprache, die bereits alle Zutaten f\"ur eine universelle Programmiersprache enth\"alt, und die wir fortan als Ausgangspunkt f\"ur unsere Diskussion des Berechenbaren ansehen.
 \paragraph{Variablen:} Variablen sind synonym zu verstehen mit Registern, es sind also Dinge die ein Wort speichern k\"onnen, das gelesen werden kann, und durch ein anderes Wort ersetzt werden kann. Ein Wort wird in der folgenden Diskussion, um m\"oglichst einfach zu bleiben, eine nat\"urliche Zahl sein. \\
@@ -208,7 +208,11 @@ Es folgt nun wie bei den GOTO-Programmen eine Beschreibung einer einfachen Form 
 		Wir sehen hier, wie bereits f\"ur GOTO-Programme gemacht ein WHILE-Programm, das das Produkt zweier nat\"urlicher Zahlen $X$ und $Z$ berechnet. 
 	\end{enumerate}
 \end{definition}
-An diesem einfachen Beispiel l\"asst sich wenn wir es mit dem zugeh\"origen GOTO-Programm vergleichen bereits erkennen, dass und inwiefern WHILE-Berechenbarkeit und GOTO-Berechenbarkeit equivalent sind, also sich zu jedem GOTO-Programm ein WHILE-Programm finden l\"asst und umgekehrt, dass daselbe berechnet. Was uns sogleich zum n\"achsten Abschnitt f\"uhrt.
+An diesem einfachen Beispiel l\"asst sich wenn wir es mit dem zugeh\"origen GOTO-Programm vergleichen bereits erkennen, dass und inwiefern WHILE-Berechenbarkeit und GOTO-Berechenbarkeit equivalent sind. Zuerst definieren wir was es bedeutet f\"ur zwei Programme equivalent zu sein.
+\begin{definition}
+	Seien $P$ und $Q$ Programme, dann sagen wir $P$ und $Q$ sind equivalent, wenn beide Programme bei gleicher Eingabe den selben Wert produzieren\footnote{Eine beliebe Eingabe schlie\ss{}t auch die leere Eingabe, also keine Eingabe mit ein.}.
+\end{definition}
+Zwei Programmiersprachen nennen wir equivalent, wenn es zu jedem Programm in der einen Programmiersprache ein equivalentes Programm in der anderen Programmiersprache gibt und umgekehrt. Was uns sogleich zum n\"achsten Abschnitt f\"uhrt.
 \paragraph{\"Ubungsbeispiel 5:} Mach \"Ubungsbeispiel 1, 2 und 3 mit WHILE-Programmen, anstelle von GOTO-Programmen.
 \section{Church-Turing Hypothese}
 Die Church-Turing Hypothese (CT-Hypothese) ist eine nicht beweisbare Aussage \"uber, dass was im Prinzip berechenbar ist. Inspiriert ist sie durch die Erkenntnis, dass alle Defintionen des Berechenbaren, also im Prinzip \\Programmiersprachen, zumindest die Berechnungen ausf\"uhren kann, die GOTO-Programme berechnen k\"onnen. CT-Hypothese besagt also, dass jede Berechnung die im Prinzip m\"oglich ist von einer Maschine ausgef\"uhrt werden kann, die GOTO-Programme verarbeiten kann. Hiermit ist auch klar weshalb die Aussage eher philosophisch und nicht beweisbar ist, da "das Berechenbare" nicht leicht fassbar/definierbar ist und wir heute nicht wissen k\"onnen was morgen noch f\"ur Maschinen sein werden und welchen Gesetzen sie gehorchen werden. Es sei weiters noch angemerkt, dass wir aus ersichtlichem Grund die GOTO-Programmiersprache, sowie jede Programmier-sprache, die jede Berechnung ausf\"uhren kann, die von einem GOTO-Programm ausgef\"uhrt werden kann, eine universelle Programmiersprache genannt werden soll. Eine solche universelle Programmiersprache ist sozusagen maximal in ihrer F\"ahigkeit Berechnungen auszuf\"uhren. Zur Motivation der Hypothese werden wir als n\"achstes beweisen, dass zu jedem GOTO-Programm ein WHILE-Programm existiert, dass daselbe berechnet und umgekehrt
@@ -274,14 +278,59 @@ IF R THEN
 ansonsten schreiben wir den Befehl so wie er in $P$ steht an die entsprechende Position. Das so erzeugte WHILE-Programm ist equivalent zum urspr\"unglichen GOTO-Programm.
 \end{proof}
 
+
+
 Abschlie\ss{}end sei noch erw\"ahnt, dass die CT-Hypothese nichts \"uber die Anzahl der Rechenschritte oder die Zeit, die eine Machine zur Berechnung ben\"otigen wird aussagt. Ein Quantencomputer wird eine Faktorisierung einer gro\ss{}en nat\"urlichen Zahl in kurzer Zeit vollbringen, w\"ahrend eine klassischer Computer Jahrhunderte braucht. Aber diesen Aspekt von unterschiedlichen Programmiersprachen und Maschinen haben wir bereits gesehen, als wir untschiedliche Grundoperationen f\"ur GOTO-Programme in betracht gezogen haben.
 
 \section{Kleenesche Normalform}
-Im vorangegangenen haben wir gesehen, wie zu jedem GOTO-Programm ein equivalentes WHILE-Programm erzeugt werden kann und umgekehrt.\\
-Wir modifizieren nun unsere WHILE-Programmiersprache, indem wir IF THEN END Anweisungen hinzuf\"ugen. Die resultierende Sprache nennen wir WHILE/IF-Programmiersprache. Sie ist equivalent zu unsere WHILE-Programmiersprache, da sich IF THEN END durch WHILE Anweisungen ausdr\"ucken l\"asst, aber erlaubt nun die Konstruktion einer Kleenschen Normal- form zu einem gegebenen WHILE-Programm.\\
+Im vorangegangenen Abschnitt haben wir gesehen, wie zu jedem GOTO-Programm ein equivalentes WHILE-Programm erzeugt werden kann und umgekehrt.\\
+Das Ziel dieses Abschnitts ist es zu zeigen, dass  sich durch eine leichte Modifikation der Sprache ein beliebiges WHILE-Programm in eine Form umwandeln l\"asst in der nur eine einzige WHILE Anweisung enthalten ist.\\
+Das Geheimnis hinter dieser Umwandlung liegt darin der Sprache um IF-THEN-END Anweisungen zu erweitern. Diese sollen aber nicht wie im letzten Abschnitt beschrieben aus einer WHILE Anweisungen aufgebaut sein, sondern sollen selbst einen elementarer Baustein der Sprache darstellen.\\
 \\
-Wir folgen nun dem Beweis aus dem letzten Abschnitt.\\
-Gegeben ist ein WHILE-Programm $P$, wir wandeln es in ein equivalentes GOTO-Programm $Q$ um, und konstruieren anschlie\ss{}end wie im Beweis ein equivalentes WHILE/IF Programm, dass nur mehr eine einzelne WHILE-Anweisung besitzt. 
+Die resultierende Sprachen nennen wir WHILE/IF-Programmiersprache. Sie ist equivalent zu unsere WHILE-Programmiersprache, da sich IF THEN END durch WHILE Anweisungen ausdr\"ucken l\"asst, aber erlaubt nun die Konstruktion einer so genannten Kleenschen Normalform zu einem gegebenen WHILE-Programm.
+\begin{theorem}
+	Sei $P$ ein beliebiges WHILE Programm, dann existiert ein equivalentes WHILE/IF Programm $P'$ mit nur einer einzigen WHILE Anweisung.
+\end{theorem}
+\begin{proof}
+Wir folgen einfach dem Beweis aus dem letzten Abschnitt.\\
+Gegeben ist ein WHILE-Programm $P$, wir wandeln es in ein equivalentes GOTO-Programm $Q$ um, und konstruieren anschlie\ss{}end wie im Beweis ein equivalentes WHILE/IF Programm $P'$, dass nur mehr eine einzelne WHILE-Anweisung besitzt. Beachte, dass im Gegensatz zum Beweis vorangegangenen Abschnitt IF-THEN-END Anweisungen hier keine Konstruktion aus WHILE-Anweisungen sind, sondern elementare Sprachbausteine.
+\end{proof}
+\noindent
+Abschlie\ss{}end sei hier noch erw\"ahnt, dass sich beliebig komplexe IF-THEN-END Verschachtelungen immer in eine einfache lineare Form bringen lassen.
+\begin{theorem} 
+	Sei $P$ ein beliebiges Programm, das IF-THEN-END Verzweigungen enth\"alt, dann gibt es ein dazu equivalents Programm $Q$, welches keine IF-THEN-END Verzweigung innerhalb einer anderen IF-THEN-END Verzweigung enth\"alt.
+\end{theorem}
+\begin{proof}
+Sei $P$ ein Programm mit IF-THEN-END Verzweigungen und $R$ und $S$ Variablen, dann hat $P$ die allgemeine Form:
+\begin{lstlisting}
+IF R THEN
+	q_1
+	IF S THEN
+		q_2
+	q_3
+\end{lstlisting}
+Wobei $q_1$ ein Programmabschnitt sein soll, der keine Verzweigungen enth\"alt im Gegensatz zu $q_2$ und $q_3$, die IF-THEN-END Verzweigungen enthalten k\"onnen. \\
+Wir nennen IF-THEN-END Verzweigungen innerhalb der ersten IF-THEN-END Anweisung innere Verzweigungen.\\
+Unser Ziel ist es alle inneren Verzweigungen zu eliminieren. Daher die hervorgehobene innere Verzweigung und jene innerhalb der Programmabschnitte $q_2$ und $q_3$.\\
+\\
+Es ist ein Leichtes ein zu $P$ equivalentes Programm $Q$ zu schreiben, in dem die hervorgehobene innere IF-THEN-END Anweisung eliminiert wurde. Sei $X$ hierbei eine Variable, die nicht in $P$ verwendet wird.
+\begin{lstlisting}[mathescape=true]
+X = 0
+IF R THEN
+	X = R
+	q_1
+IF X $\wedge$ S THEN
+	q_2
+IF X THEN
+	q_3
+\end{lstlisting}
+Die einzigen verbleibenden inneren Anweisungen sind nun innerhalb von $q_2$ und $q_3$. Wir k\"onnen diese Prozedur fortsetzen, indem wir entweder $q_2$ oder $q_3$ ausw\"ahlen und die erste IF-THEN-END Verzweigung darin hervorheben. Wir erreichen dadurch wieder die allgemeine Form wie zu Beginn des Beweises und eliminieren wie gehabt.\\
+Da jedes Programm nur endlich viele Verzweigungen enth\"alt, wird irgendwann keine innere Anweisung mehr da sein womit der Beweis fertig ist.
+\end{proof}
+\noindent
+Offensichtlich ist die Tiefe einer IF-THEN-END Verschachtelung limitiert durch die Anzahl der zu Verf\"ugung stehenden Variablen.\\
+\\
+Insgesamt haben wir gezeigt, dass es keine Einschr\"ankung ist, wenn wir nur eine einzige WHILE Schleife zur Verf\"ugung haben und keine Verschachtelten IF-THEN-END Verzweigungen verwenden d\"urfen.
 \paragraph{Beispiel:} Gegeben sei folgendes WHILE-Programm, welches \"uberpr\"uft ob eine gegebene Zahl eine Primzahl ist.
 \paragraph{\"Ubungsbeispiel 10:}
 \newpage
@@ -1979,8 +2028,47 @@ Der zweite Ausgang des Multiplexers wird mit dem gatakteten Flag Signal durch ei
 Dies implementiert den \textbf{IF} Befehl.\\
 Der letzte Ausgang des Multiplexers ist ebenfalls \"uber ein UND-Gatter mit dem getakteten Flag verbunden. Der Ausgang des UND-Gatters bildet dann den Ausgang \textbf{Zur\"ucksetzen}.\\
 \\
-Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den Rechenkern und werden im folgenden pr\"asentiert.\\
-\\
+Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den Rechenkern und werden im folgenden pr\"asentiert.
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\textbf{Multiplexer Ausgang} & Register Lesen & Speicher Lesen & Eingabe Lesen \\
+		\hline
+		0 & 0 & 0 & 0 \\
+		1 & 0 & 0 & 0 \\
+		2 & 0 & 0 & 0 \\
+		3 & 0 & 0 & 0 \\
+		4 & 0 & 1 & 0 \\
+		5 & 1 & 0 & 0 \\
+		6 & 0 & 0 & 1 \\
+		7 & 0 & 0 & 0 \\
+	\end{tabular}  
+\end{center}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		Operation Selektor & Operation & Register schreiben & Speicher schreiben \\
+		\hline
+		0 & 0 & 0 & 0\\
+		0 & 0 & 0 & 0\\
+		0 & 1 & 1 & 0\\
+		1 & 1 & 1 & 0\\
+		0 & 0 & 1 & 0\\
+		0 & 0 & 0 & 1\\
+		0 & 0 & 1 & 0\\
+		0 & 0 & 0 & 0\\
+	\end{tabular}  
+\end{center}
+\begin{tabular}{|c|}
+		Resultat Lesen \\
+		\hline
+		0\\
+		0\\
+		1\\
+		1\\
+		0\\
+		0\\
+		0\\
+		0\\
+\end{tabular}  
 
 \end{document}
 
