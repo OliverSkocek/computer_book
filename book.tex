@@ -55,6 +55,7 @@
 	{\"a}{{\"a}}1
 	{\"o}{{\"o}}1
 }
+\renewcommand{\proofname}{Beweis}
 \begin{document}
 
 
@@ -99,8 +100,23 @@ Oliver \textsc{Sko\v{c}ek} \\[4cm]
 
 
 \chapter*{Einf\"uhrung}
+Das Ziel dieses Buches ist es dem Leser die Grundkonzepte von Rechenmaschinen also Computern zu vermitteln. 
+Viel mehr noch soll die F\"ahigkeit vermittelt werden einen Computer selbst zu erdenken und zu bauen.\\
+\\
+Dies geschieht auf mehreren Ebenen. Es soll dabei sowohl auf theoretische Konzepte der Programmierung als auch praktischer Konzepte aus der Elektronik eingegangen werden.\\
+\\
+Im ersten Kapitel werden Konzepte aus der theoretischen Informatik vermittelt. Hierzu geh\"ort der konzeptionelle Aufbau einer Rechenmaschine aber auch Prinzipien aus der Programmierung, wie die Church-Turing Hypothese oder die Kleensche Normalform.\\
+\\
+Im zweiten Kapitel geht es um Zahlensysteme, wobei bereits Konzepte aus dem ersten Kapitel verwendet werden um dem Leser zu zeigen wie diese angewendet werden k\"onnen.\\
+\\
+Im dritten Kapitel werden Konzepte aus der Aussagenlogik erarbeitet. Das Konzept der Wahrheitstafel wird eingef\"urt, und eine Verbindung zu algebraischen Konzepten wird gezogen.\\
+\\
+Im vierten Kapitel werden grundlegende Konzepte der Elektronik eingef\"uhrt. Dem Leser wird vermittelt was ein elektrisches Netzwerk ist, was Strom und Spannung sind und wie man die beiden Gr\"ossen an belibigen Punkten in einem solchen Netzwerk berechnen kann. Dies geschieht zuerst im zeitunabh\"angigen Fall und dann im zeitabh\"angigen Fall. Hierbei werden schrittweise elektronische Komponenten vorgestellt und es werden auch auf die Grenzen der vorgestellten Modelle zur Berechnung eingegangen.\\
+\\
+Im f\"unften und letzten Kapitel wird eine Rechenmaschine entwickelt. Hierbei wird auf die letzten Kapitel zur\"uckgegriffen um eine m\"oglichst einfache Maschine zu konstruieren, die dennoch im Prinzip ein vollst\"andiger, funktionierender Computer ist
+\iffalse
 Im Sommer 2019 setzte ich mir in den Kopf ein Projekt zu starten, \"uber das ich schon sehr lange nachgedacht hatte. Der urspr\"ungliche Plan, der vielleicht noch umgesetzt wird, aber zur Zeit auf Eis liegt, war es eine Rechenmaschine wie in den 1930ern zu bauen, basierend auf elektromechanischen Bauteilen wie Relais und einem Lochstreifenleseger\"at. Von der Idee diese Relais selbst zu bauen und zwar aus Parkett Holzleisten, Zimmermannsn\"ageln, Aluminiumfolie und lackiertem Kupferdraht gab ich etwa zur selben Zeit auf wie die Idee Relais zu verwenden. Dies geschah zum einen, weil ich frustriert war mit der Unzverl\"assigkeit der Schaltung und mit der hohen Stromst\"arke von etwa 0.7A, die f\"ur eine Schaltung in meinem Design notwendig war, und zum Anderen geschah es weil ich angefangen hatte mich mit Breadboards und integrierten Schaltkreisen zu besch\"aftigen. 
-
+\fi
 
 \chapter{Aufbau einer Rechenmaschine}
 Was muss eine Rechenmaschine k\"onnen, damit sie im Prinzip alles berechnen kann, auch wenn sie daf\"ur eine sehr lange Zeit ben\"otigt? Diese Frage wurde Mitte des zwanzigsten Jahrhunderts beantwortet. Mehrere Personen entwickelten unterschiedliche Definitionen des Berechenbaren, und im Laufe der Zeit konnte gezeigt werden, dass all 
@@ -1810,7 +1826,7 @@ Wir gehen hier genauso vor wie beim unged\"ampften Fall und erhalten die L\"osun
 \begin{equation}
 \psi_1(t) = \frac{\lambda_2*u}{\lambda_2 - \lambda_1}*e^{\lambda_1*t} + \frac{\lambda_1*u}{\lambda_2 - \lambda_1}*e^{\lambda_2*t}
 \end{equation}
-\paragraph{\"Ubungsbeispiel:} Führe die Berechnung durch, die zu gegebenen Anfangswerten $j(0)$ und $\psi_1(0)$ Werte f\"ur $a$ und $b$ liefert.\\
+\paragraph{\"Ubungsbeispiel:} F\"uhre die Berechnung durch, die zu gegebenen Anfangswerten $j(0)$ und $\psi_1(0)$ Werte f\"ur $a$ und $b$ liefert.\\
 \\
 Betrachten wir die graphische Darstellung des zeitlichen Verlaufes der Spannungskurve mit den selben Werten f\"ur Induktivit\"at und Kapazit\"at wie in der vorherigen Darstellung im unged\"ampften Fall, f\"ur drei Werte des Widerstandes $R$.
 \begin{figure}[H]
@@ -1956,7 +1972,7 @@ Das beschriebene Verhalten l\"asst sich leicht durch folgenden logischen Schaltp
 Die Kontrolleiheit ist der zentrale Kern des Rechners. Sie kommuniziert mit dem Programmspeicher, um die n\"achste Anweisung zu erhalten und \"ubersetzt diese dann in zeitlich abgestimmte Signale an die einzelnen Module. Die Module f\"uhren dann die durch die Anweisung bestimmte Berechnung durch.
 \\
 \\
-Wir k\"onnen die Kontrolleinheit in zwei Teilmodule aufspalten, nämlich einem \textbf{Taktgeber} und einem \textbf{Ausf\"uhrer}. Der Taktgeber erzeugt zwei Taktsignale, ein regul\"ares Taktsignal in Form einer Rechteckswelle und ein um einige Nanosekunden versetztes von der Form her identes Schreibsignal, dass dazu dient den Modulen die Schreibbefehle zu senden.\\
+Wir k\"onnen die Kontrolleinheit in zwei Teilmodule aufspalten, n\"amlich einem \textbf{Taktgeber} und einem \textbf{Ausf\"uhrer}. Der Taktgeber erzeugt zwei Taktsignale, ein regul\"ares Taktsignal in Form einer Rechteckswelle und ein um einige Nanosekunden versetztes von der Form her identes Schreibsignal, dass dazu dient den Modulen die Schreibbefehle zu senden.\\
 \\
 Der Grund warum wir ein extra Schreibsignal brauchen liegt in einer Verz\"ogerung der jede elektronische Komponente im Rechner unterliegt. Erst nach einer kurzen Zeit wird jede Komponente den korrekten Spannungswert liefern und ein Schreiben bevor diese Zeit vergangen ist, f\"uhrt zu Fehlern.
 \subsubsection{Ausf\"uhrer}
