@@ -35,11 +35,11 @@
 
 
 \newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{proposition}{Satz}[chapter]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{definition}[theorem]{Definition}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{remark}[theorem]{Remark}
+\newtheorem{corollary}[theorem]{Folgerung}
+\newtheorem{remark}[theorem]{Bemerkung}
 
 \numberwithin{equation}{chapter}
 
@@ -55,6 +55,8 @@
 	{\"a}{{\"a}}1
 	{\"o}{{\"o}}1
 }
+\renewcommand{\chaptername}{Kapitel}
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
 \renewcommand{\proofname}{Beweis}
 \begin{document}
 
@@ -453,7 +455,7 @@ Wir starten mit zehn Symbolen $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$ und der Einfach
 	\end{enumerate}
 \end{definition}
 \paragraph{\"Ubungsbeispiel 11:} Spiele den Algorithmus f\"ur einige Beispiele von Zahlen durch um dich mit der Nachfolgeroperation vertraut zu machen.
-
+\noindent
 \begin{corollary}
 	Die Stellen des dekadischen Zahlensystems sind selbst ein Zahlensystem.
 \end{corollary}
