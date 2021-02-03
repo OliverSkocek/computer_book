@@ -80,19 +80,19 @@
 \contentsline {section}{\numberline {5.1}Aufbau der Rechenmaschine}{76}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Speicher}{76}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}Das Register}{78}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Der Rechenkern}{78}{subsection.5.1.3}%
-\contentsline {paragraph}{\"Ubungsbeispiel}{80}{section*.50}%
-\contentsline {subsection}{\numberline {5.1.4}Der BUS}{80}{subsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.1.5}Kontrolleinheit}{80}{subsection.5.1.5}%
-\contentsline {subsubsection}{Ausf\"uhrer}{81}{section*.51}%
-\contentsline {section}{\numberline {5.2}Entwicklungsentscheidungen}{82}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Maschinensprache}{83}{section.5.3}%
-\contentsline {paragraph}{HALT:}{83}{section*.52}%
-\contentsline {paragraph}{IF:}{83}{section*.53}%
-\contentsline {paragraph}{NAND + 3 bit Addresse:}{84}{section*.54}%
-\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{84}{section*.55}%
-\contentsline {paragraph}{PUSH + 4 bit Addresse:}{84}{section*.56}%
-\contentsline {paragraph}{POP + 4 bit Addresse:}{84}{section*.57}%
-\contentsline {paragraph}{LOAD + 4 bit Wort:}{84}{section*.58}%
-\contentsline {paragraph}{RESET IF:}{84}{section*.59}%
-\contentsline {section}{\numberline {5.4}Funktionsweise der Kontrolleinheit}{84}{section.5.4}%
+\contentsline {subsection}{\numberline {5.1.3}Der Rechenkern}{79}{subsection.5.1.3}%
+\contentsline {paragraph}{\"Ubungsbeispiel}{81}{section*.50}%
+\contentsline {subsection}{\numberline {5.1.4}Der BUS}{81}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Kontrolleinheit}{81}{subsection.5.1.5}%
+\contentsline {subsubsection}{Ausf\"uhrer}{82}{section*.51}%
+\contentsline {section}{\numberline {5.2}Entwicklungsentscheidungen}{83}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Maschinensprache}{84}{section.5.3}%
+\contentsline {paragraph}{HALT:}{84}{section*.52}%
+\contentsline {paragraph}{IF:}{84}{section*.53}%
+\contentsline {paragraph}{NAND + 3 bit Addresse:}{85}{section*.54}%
+\contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{85}{section*.55}%
+\contentsline {paragraph}{PUSH + 4 bit Addresse:}{85}{section*.56}%
+\contentsline {paragraph}{POP + 4 bit Addresse:}{85}{section*.57}%
+\contentsline {paragraph}{LOAD + 4 bit Wort:}{85}{section*.58}%
+\contentsline {paragraph}{RESET IF:}{85}{section*.59}%
+\contentsline {section}{\numberline {5.4}Funktionsweise der Kontrolleinheit}{85}{section.5.4}%

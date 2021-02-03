@@ -1899,7 +1899,9 @@ Zus\"atzlich hat es noch drei ein Bit Eing\"ange, mit Namen \textbf{Lesen}, \tex
 Wenn wir ein Wort in das Register geschrieben werden soll, wird das Wort an den Eingang/Ausgang angelegt und der ein Bit Eingang mit Namen \textbf{Schreiben} auf Eins gesetzt und der \textbf{Lesen} Eingang auf Null gesetzt.\\
 Im Gegenzug wenn wir das Wort im Register lesen wollen, setzen wir den \textbf{Lesen} Anschluss auf Eins und den \textbf{Operation} sowie \textbf{Schreiben} Anschluss auf Null, sodass dann am Eingang/Ausgang das gesuchte Wort vorliegt.\\
 Falls eine Operation stattfindet, wird der \textbf{Operation} Anschluss auf Eins geschalten und an den f\"unften Eingangs/Ausgangsbit der Flag Zustand des Rechenkerns angelegt.
-Der Zustand des Flags kann jeder Zeit vom Flag Ausgang gelesen werden.
+Der Zustand des Flags kann zu jeder Zeit vom Flag Ausgang gelesen werden.\\
+\\
+Betrachten wir als n\"achstes das Eingabe-Ausgabe Schema des Registers.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.3]{register.pdf}
@@ -1907,6 +1909,15 @@ Der Zustand des Flags kann jeder Zeit vom Flag Ausgang gelesen werden.
 	\end{center}
 \end{figure}
 \noindent
+Der Bau unseres Register l\"asst sich sehr einfach mit f\"unf D-Flip-Flops und vier UND-Gattern umsetzen. Betrachte hierzu den logischen Schaltplan.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{reg.pdf}
+		\caption{Plan Register.}
+	\end{center}
+\end{figure}
+\noindent
+Wir sehen im Plan im Gegensatz zum Schema jeweils einen vier Bit Eingang und einen vier Bit Ausgang. Beim Zusammenbau der Rechenmaschine werden sp\"ater alle Ausg\"ange der unterschiedlichen Module \"uber ein gemeinsames ODER-Gatter in den BUS eingleitet, der direkt an den Eing\"angen liegt. Dementsprechend werden die Ein- und Ausg\"ange verbunden.
 \subsection{Der Rechenkern}
 Die harte Arbeit im Rechner, also die Implementierung der Grundoperationen \"ubernimmt der Rechenkern. Er ist dabei daf\"ur verantwortlich abh\"angig vom einkommenden Steuersignal die richtige Operation auszuw\"ahlen, und das korrekte Resultat der Operation, angewendet auf die einkommenden Operanden, auszugeben\\
 \\
