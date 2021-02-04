@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.9)  3 FEB 2021 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.9)  5 FEB 2021 00:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -741,35 +741,35 @@ LaTeX Info: Redefining \nameref on input line 61.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./book.toc
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
 .
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-5.
+6.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-5.
+6.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 5.
+(Font)              <10.95> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 5.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+(Font)              <6> on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -777,7 +777,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.79 ...t einfacher Digitalrechner}{75}{chapter.5}
+l.79 ...4.7}Logische Gatter}{75}{subsection.5.4.7}
                                                   % [1
 
 ])
@@ -785,6 +785,8 @@ l.79 ...t einfacher Digitalrechner}{75}{chapter.5}
 \openout5 = `book.toc'.
 
  [2]
+Kapitel 1.
+
 Underfull \hbox (badness 10000) in paragraph at lines 105--122
 
  []
@@ -816,8 +818,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--122
 
 [3
 
-]
-Kapitel 1.
+] [4]
+Kapitel 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 124--128
 
@@ -849,9 +851,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--142
 
  []
 
-[4
+[5
 
-] [5]
+] [6]
 Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
@@ -869,7 +871,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
 
 Overfull \hbox (0.9675pt too wide) in paragraph at lines 149--150
-[][]\OT1/lmr/bx/n/10.95 Definition 1.1. []\OT1/lmr/m/it/10.95 Ein GOTO-Programm
+[][]\OT1/lmr/bx/n/10.95 Definition 2.1. []\OT1/lmr/m/it/10.95 Ein GOTO-Programm
  ist durch fol-gen-des Schema definiert: 
  []
 
@@ -877,12 +879,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 152.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 152.
-[6]
+[7]
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
 158.
  (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [7]
+) [8]
 Overfull \hbox (3.96661pt too wide) in paragraph at lines 202--203
  []\OT1/lmr/bx/n/10.95 Nachfolger und Gle-ich-heit[] \OT1/lmr/m/n/10.95 Die Vor
 g^^?angeroperation l^^?asst sich auch durch
@@ -899,9 +901,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--209
 
  []
 
-[8]
+[9]
 Overfull \hbox (2.10773pt too wide) in paragraph at lines 210--211
-[][]\OT1/lmr/bx/n/10.95 Definition 1.2. []\OT1/lmr/m/it/10.95 Ein WHILE-Program
+[][]\OT1/lmr/bx/n/10.95 Definition 2.2. []\OT1/lmr/m/it/10.95 Ein WHILE-Program
 m ist durch fol-gen-des Schema definiert
  []
 
@@ -923,7 +925,7 @@ Overfull \hbox (12.88272pt too wide) in paragraph at lines 229--230
 Zuerst definieren
  []
 
-[9]
+[10]
 Overfull \hbox (22.37007pt too wide) in paragraph at lines 234--235
  [][]\OT1/lmr/bx/n/10.95 Ubungsbeispiel 5:[] \OT1/lmr/m/n/10.95 Mach []Ubungsbe
 ispiel 1, 2 und 3 mit WHILE-Programmen,
@@ -949,13 +951,13 @@ e-its ausdr^^?ucken,
 
 
 Overfull \hbox (20.89027pt too wide) in paragraph at lines 239--240
-[][]\OT1/lmr/bx/n/10.95 Definition 1.4. []\OT1/lmr/m/it/10.95 Sei $\OML/lmm/m/i
+[][]\OT1/lmr/bx/n/10.95 Definition 2.4. []\OT1/lmr/m/it/10.95 Sei $\OML/lmm/m/i
 t/10.95 Z$ \OT1/lmr/m/it/10.95 eine Vari-able, $\OML/lmm/m/it/10.95 P$ \OT1/lmr
 /m/it/10.95 und $\OML/lmm/m/it/10.95 Q$ \OT1/lmr/m/it/10.95 sind GOTO/WHILE-Pro
 gramme,
  []
 
-[10]
+[11]
 Overfull \hbox (2.2648pt too wide) in paragraph at lines 250--251
  [][]\OT1/lmr/bx/n/10.95 Ubungsbeispiel 7:[] \OT1/lmr/m/n/10.95 Schreibe ein WH
 ILE-Programm, dass dieselbe Berech-
@@ -989,7 +991,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--281
 
  []
 
-[11]
+[12]
 Overfull \hbox (12.52222pt too wide) in paragraph at lines 284--285
 [][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1011,9 +1013,9 @@ Overfull \hbox (0.24353pt too wide) in paragraph at lines 304--309
 rsprache. Sie
  []
 
-[12]
+[13]
 Overfull \hbox (0.58292pt too wide) in paragraph at lines 319--320
-[][]\OT1/lmr/bx/n/10.95 Theorem 1.6. []\OT1/lmr/m/it/10.95 Sei $\OML/lmm/m/it/1
+[][]\OT1/lmr/bx/n/10.95 Theorem 2.6. []\OT1/lmr/m/it/10.95 Sei $\OML/lmm/m/it/1
 0.95 P$ \OT1/lmr/m/it/10.95 ein be-liebiges Pro-gramm, das IF-THEN-END Verzwei-
 
  []
@@ -1023,26 +1025,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--335
 
  []
 
-[13]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 348--352
 
  []
 
-[14]
-Kapitel 2.
+[15]
+Kapitel 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 356--394
 
  []
 
-[15
+[16
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 420--423
 
  []
 
-[16]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 439--441
 
  []
@@ -1073,7 +1075,7 @@ Overfull \hbox (6.52318pt too wide) in paragraph at lines 457--459
 go-rith-mus f^^?ur einige Beispiele von Zahlen
  []
 
-[17]
+[18]
 Overfull \hbox (12.30304pt too wide) in paragraph at lines 485--486
 [][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1088,7 +1090,7 @@ Overfull \hbox (12.30304pt too wide) in paragraph at lines 491--492
 [][][][][][][][][][][][][][][][][] 
  []
 
-[18]
+[19]
 Overfull \hbox (39.89728pt too wide) in paragraph at lines 492--493
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1109,8 +1111,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 527--531
 
  []
 
-[19] [20]
-Kapitel 3.
+[20] [21]
+Kapitel 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 537--540
 
@@ -1138,7 +1140,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 549--553
 
  []
 
-[21
+[22
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 585--592
@@ -1151,7 +1153,7 @@ Overfull \hbox (23.8877pt too wide) in paragraph at lines 585--592
 o-gis-chen Verkn^^?upfungen
  []
 
-[22]
+[23]
 Overfull \hbox (18.19308pt too wide) in paragraph at lines 597--598
 []\OT1/lmr/m/it/10.95 Jede aus-sagen-l-o-gis-che Formel wird aus den lo-gis-che
 n Atomen und mehrma-
@@ -1162,7 +1164,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 603--606
 
  []
 
-[23]
+[24]
 Overfull \hbox (9.25418pt too wide) in paragraph at lines 631--640
 []\OT1/lmr/m/n/10.95 Wir zeigen nun an-hand von einem Beispiel einer aus-sagen-
 l-o-gis-chen Formeln
@@ -1196,7 +1198,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 631--640
 
  []
 
-[24]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 663--667
 
  []
@@ -1227,12 +1229,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 714--719
 
  []
 
-[25]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 730--733
 
  []
 
-[26]
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 747--750
 
  []
@@ -1247,7 +1249,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 779--783
 
  []
 
-[27]
+[28]
 Overfull \hbox (17.82037pt too wide) in paragraph at lines 784--785
 \OT1/lmr/m/it/10.95 Eins ist, dann nen-nen wir die Bele-gung $\OML/lmm/m/it/10.
 95 ^^L$ \OT1/lmr/m/it/10.95 eine L^^?osung des Erf^^?ullbarketisproblems
@@ -1278,27 +1280,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 801--806
 
  []
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 812--817
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 812--817
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 826--832
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 826--832
-
- []
-
 [29]
+Underfull \hbox (badness 10000) in paragraph at lines 812--817
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--817
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--832
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--832
+
+ []
+
+[30]
 Overfull \hbox (40.82835pt too wide) in paragraph at lines 840--845
 \OT1/lmr/m/n/10.95 Bisher haben wir auss-chlie^^Ylich Um-for-mungen bez^^?uglic
 h der lo-gis-chen Verkn^^?upfungen
@@ -1319,7 +1321,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 853--856
 
  []
 
-[30]
+[31]
 Overfull \hbox (1.45973pt too wide) in paragraph at lines 873--877
  [][]\OT1/lmr/bx/n/10.95 Ubungsbeispiel 27:[] \OT1/lmr/m/n/10.95 Zeige durch An
 -wen-dung der De-Mor-gan-schen Gesetze
@@ -1341,7 +1343,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 878--883
 
  []
 
-[31]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 897--903
 
  []
@@ -1381,7 +1383,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 968--975
 
  []
 
-[32]
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 983--988
 
  []
@@ -1396,7 +1398,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 990--994
 
  []
 
-[33]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 1000--1003
 
  []
@@ -1407,15 +1409,15 @@ Overfull \hbox (9.49461pt too wide) in paragraph at lines 1020--1022
 m gese-hen haben,
  []
 
-[34] [35]
-Kapitel 4.
+[35] [36]
+Kapitel 5.
 
 Overfull \hbox (10.4143pt too wide) in paragraph at lines 1039--1040
 \OT1/lmr/m/n/10.95 elek-trischen Schaltkreisen aus Wasser-schl^^?auchen und Ven
 -tilen oder Zahnr^^?adern
  []
 
-<kartoffel.jpg, id=636, 539.1342pt x 337.26pt>
+<kartoffel.jpg, id=646, 539.1342pt x 337.26pt>
 File: kartoffel.jpg Graphic file (type jpg)
 <use kartoffel.jpg>
 Package pdftex.def Info: kartoffel.jpg  used on input line 1052.
@@ -1441,10 +1443,10 @@ Overfull \hbox (16.3147pt too wide) in paragraph at lines 1041--1055
 trischen Stromkreises,
  []
 
-[36
+[37
 
 ]
-<kartoffel_diagram.pdf, id=643, 114.4275pt x 63.23625pt>
+<kartoffel_diagram.pdf, id=651, 114.4275pt x 63.23625pt>
 File: kartoffel_diagram.pdf Graphic file (type pdf)
 <use kartoffel_diagram.pdf>
 Package pdftex.def Info: kartoffel_diagram.pdf  used on input line 1060.
@@ -1455,7 +1457,7 @@ Overfull \hbox (3.508pt too wide) in paragraph at lines 1056--1063
 ie mit Dr^^?ahten miteinan-
  []
 
-<circuit.pdf, id=644, 240.9pt x 180.675pt>
+<circuit.pdf, id=652, 240.9pt x 180.675pt>
 File: circuit.pdf Graphic file (type pdf)
 <use circuit.pdf>
 Package pdftex.def Info: circuit.pdf  used on input line 1072.
@@ -1465,7 +1467,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1064--1075
 
  []
 
-[37 <./kartoffel.jpg> <./kartoffel_diagram.pdf>]
+[38 <./kartoffel.jpg> <./kartoffel_diagram.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1076--1099
 
  []
@@ -1511,8 +1513,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1076--1099
 
  []
 
-[38 <./circuit.pdf>]
-<true_kartoffel.pdf, id=675, 201.75375pt x 85.82062pt>
+[39 <./circuit.pdf>]
+<true_kartoffel.pdf, id=683, 201.75375pt x 85.82062pt>
 File: true_kartoffel.pdf Graphic file (type pdf)
 <use true_kartoffel.pdf>
 Package pdftex.def Info: true_kartoffel.pdf  used on input line 1111.
@@ -1527,8 +1529,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1104--1114
 
  []
 
-[39]
-<flow.pdf, id=682, 56.64166pt x 35.59265pt>
+[40]
+<flow.pdf, id=690, 56.64166pt x 35.59265pt>
 File: flow.pdf Graphic file (type pdf)
 <use flow.pdf>
 Package pdftex.def Info: flow.pdf  used on input line 1138.
@@ -1568,8 +1570,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1115--1141
 
  []
 
-[40 <./true_kartoffel.pdf>]
-<aufgabe.pdf, id=691, 56.64166pt x 49.6764pt>
+[41 <./true_kartoffel.pdf>]
+<aufgabe.pdf, id=699, 56.64166pt x 49.6764pt>
 File: aufgabe.pdf Graphic file (type pdf)
 <use aufgabe.pdf>
 Package pdftex.def Info: aufgabe.pdf  used on input line 1150.
@@ -1618,11 +1620,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1155--1168
 
  []
 
-[41 <./flow.pdf> <./aufgabe.pdf
+[42 <./flow.pdf> <./aufgabe.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./aufgabe.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
->] [42]
+>] [43]
 Overfull \hbox (2.55pt too wide) in paragraph at lines 1176--1179
 \OT1/lmr/bx/n/10.95 Spannungs-Kennlinie \OT1/lmr/m/n/10.95 oder all-ge-meiner \
 OT1/lmr/bx/n/10.95 Charak-ter-is-tik \OT1/lmr/m/n/10.95 kurz $^^H$ bes-timmt.
@@ -1634,7 +1636,7 @@ Overfull \hbox (4.14682pt too wide) in paragraph at lines 1182--1184
 , dass die Charak-
  []
 
-<charakter.pdf, id=722, 64.39186pt x 81.9727pt>
+<charakter.pdf, id=730, 64.39186pt x 81.9727pt>
 File: charakter.pdf Graphic file (type pdf)
 <use charakter.pdf>
 Package pdftex.def Info: charakter.pdf  used on input line 1192.
@@ -1644,14 +1646,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1186--1195
 
  []
 
-[43]
-<ideal.pdf, id=731, 120.11609pt x 32.00229pt>
+[44]
+<ideal.pdf, id=739, 120.11609pt x 32.00229pt>
 File: ideal.pdf Graphic file (type pdf)
 <use ideal.pdf>
 Package pdftex.def Info: ideal.pdf  used on input line 1210.
 (pdftex.def)             Requested size: 120.11578pt x 32.0022pt.
  (./ideal_spannung.pdf_tex
-<ideal_spannung.pdf, id=732, page=1, 433.62pt x 289.08pt>
+<ideal_spannung.pdf, id=740, page=1, 433.62pt x 289.08pt>
 File: ideal_spannung.pdf Graphic file (type pdf)
 <use ideal_spannung.pdf, page 1>
 Package pdftex.def Info: ideal_spannung.pdf , page1 used on input line 56.
@@ -1661,12 +1663,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1214--1224
 
  []
 
-[44 <./charakter.pdf> <./ideal.pdf
+[45 <./charakter.pdf> <./ideal.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./ideal.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
 >]
-<gluh.pdf, id=762, 165.61874pt x 60.225pt>
+<gluh.pdf, id=770, 165.61874pt x 60.225pt>
 File: gluh.pdf Graphic file (type pdf)
 <use gluh.pdf>
 Package pdftex.def Info: gluh.pdf  used on input line 1234.
@@ -1688,12 +1690,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1225--1237
  []
 
 (./gluhbirne.pdf_tex
-<gluhbirne.pdf, id=763, page=1, 433.62pt x 289.08pt>
+<gluhbirne.pdf, id=771, page=1, 433.62pt x 289.08pt>
 File: gluhbirne.pdf Graphic file (type pdf)
 <use gluhbirne.pdf, page 1>
 Package pdftex.def Info: gluhbirne.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 433.62pt x 289.09251pt.
-) [45 <./ideal_spannung.pdf> <./gluh.pdf
+) [46 <./ideal_spannung.pdf> <./gluh.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./gluh.pdf): PDF inclusion: multiple pd
 fs with page group included in a single page
@@ -1707,7 +1709,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1251--1255
 
  []
 
-<_abstract.pdf, id=778, 165.0246pt x 100.88425pt>
+<_abstract.pdf, id=786, 165.0246pt x 100.88425pt>
 File: _abstract.pdf Graphic file (type pdf)
 <use _abstract.pdf>
 Package pdftex.def Info: _abstract.pdf  used on input line 1263.
@@ -1717,13 +1719,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1257--1265
 
  []
 
-[46 <./gluhbirne.pdf>]
-<potent.pdf, id=791, 180.28911pt x 121.41615pt>
+[47 <./gluhbirne.pdf>]
+<potent.pdf, id=799, 180.28911pt x 121.41615pt>
 File: potent.pdf Graphic file (type pdf)
 <use potent.pdf>
 Package pdftex.def Info: potent.pdf  used on input line 1273.
 (pdftex.def)             Requested size: 180.28867pt x 121.41585pt.
-<laminar.pdf, id=792, 165.0246pt x 100.88425pt>
+<laminar.pdf, id=800, 165.0246pt x 100.88425pt>
 File: laminar.pdf Graphic file (type pdf)
 <use laminar.pdf>
 Package pdftex.def Info: laminar.pdf  used on input line 1282.
@@ -1733,7 +1735,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1276--1284
 
  []
 
-[47 <./_abstract.pdf> <./potent.pdf
+[48 <./_abstract.pdf> <./potent.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./potent.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
@@ -1758,20 +1760,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 1312--1321
 
  []
 
-[48 <./laminar.pdf>] (./widerstand.pdf_tex
-<widerstand.pdf, id=849, page=1, 433.62pt x 289.08pt>
+[49 <./laminar.pdf>] (./widerstand.pdf_tex
+<widerstand.pdf, id=857, page=1, 433.62pt x 289.08pt>
 File: widerstand.pdf Graphic file (type pdf)
 <use widerstand.pdf, page 1>
 Package pdftex.def Info: widerstand.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 433.62pt x 289.09251pt.
-) [49]
+) [50]
 Overfull \hbox (33.90646pt too wide) in paragraph at lines 1334--1337
 \OT1/lmr/m/n/10.95 Wobei $\OML/lmm/m/it/10.95 G$\OT1/lmr/m/n/10.95 , also die S
 tei-gung der Strom/S-pan-nungskurve, \OT1/lmr/bx/n/10.95 elek-trische Leitf[]ah
 igkeit
  []
 
-<widder.pdf, id=855, 165.61874pt x 75.28125pt>
+<widder.pdf, id=863, 165.61874pt x 75.28125pt>
 File: widder.pdf Graphic file (type pdf)
 <use widder.pdf>
 Package pdftex.def Info: widder.pdf  used on input line 1352.
@@ -1786,12 +1788,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1356--1361
 
  []
 
-[50 <./widerstand.pdf> <./widder.pdf
+[51 <./widerstand.pdf> <./widder.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./widder.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
 >]
-<reihe.pdf, id=896, 128.61617pt x 212.00705pt>
+<reihe.pdf, id=904, 128.61617pt x 212.00705pt>
 File: reihe.pdf Graphic file (type pdf)
 <use reihe.pdf>
 Package pdftex.def Info: reihe.pdf  used on input line 1367.
@@ -1801,8 +1803,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1362--1370
 
  []
 
-[51 <./reihe.pdf>]
-<Parallel.pdf, id=921, 152.1786pt x 231.96338pt>
+[52 <./reihe.pdf>]
+<Parallel.pdf, id=929, 152.1786pt x 231.96338pt>
 File: Parallel.pdf Graphic file (type pdf)
 <use Parallel.pdf>
 Package pdftex.def Info: Parallel.pdf  used on input line 1384.
@@ -1812,8 +1814,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1378--1387
 
  []
 
-[52 <./Parallel.pdf>]
-<stromkreis_1.pdf, id=947, 174.95413pt x 147.88184pt>
+[53 <./Parallel.pdf>]
+<stromkreis_1.pdf, id=955, 174.95413pt x 147.88184pt>
 File: stromkreis_1.pdf Graphic file (type pdf)
 <use stromkreis_1.pdf>
 Package pdftex.def Info: stromkreis_1.pdf  used on input line 1403.
@@ -1823,7 +1825,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1398--1406
 
  []
 
-<stromkreis_2.pdf, id=948, 161.00252pt x 156.09392pt>
+<stromkreis_2.pdf, id=956, 161.00252pt x 156.09392pt>
 File: stromkreis_2.pdf Graphic file (type pdf)
 <use stromkreis_2.pdf>
 Package pdftex.def Info: stromkreis_2.pdf  used on input line 1411.
@@ -1840,8 +1842,8 @@ Overfull \hbox (1.8361pt too wide) in paragraph at lines 1407--1414
 ird, dass jeder Wider-
  []
 
-[53 <./stromkreis_1.pdf>]
-<stromkreis_3.pdf, id=970, 156.6363pt x 151.92715pt>
+[54 <./stromkreis_1.pdf>]
+<stromkreis_3.pdf, id=979, 156.6363pt x 151.92715pt>
 File: stromkreis_3.pdf Graphic file (type pdf)
 <use stromkreis_3.pdf>
 Package pdftex.def Info: stromkreis_3.pdf  used on input line 1421.
@@ -1862,12 +1864,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1425--1429
 
  []
 
-[54 <./stromkreis_2.pdf> <./stromkreis_3.pdf
+[55 <./stromkreis_2.pdf> <./stromkreis_3.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./stromkreis_3.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >]
-<erde.pdf, id=1000, 149.05125pt x 182.1976pt>
+<erde.pdf, id=1008, 149.05125pt x 182.1976pt>
 File: erde.pdf Graphic file (type pdf)
 <use erde.pdf>
 Package pdftex.def Info: erde.pdf  used on input line 1444.
@@ -1882,7 +1884,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1448--1452
 
  []
 
-[55 <./erde.pdf>]
+[56 <./erde.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1457--1466
 
  []
@@ -1892,24 +1894,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 1457--1466
 
  []
 
-[56]
-<ub.pdf, id=1018, 141.00853pt x 194.48601pt>
+[57]
+<ub.pdf, id=1026, 141.00853pt x 194.48601pt>
 File: ub.pdf Graphic file (type pdf)
 <use ub.pdf>
 Package pdftex.def Info: ub.pdf  used on input line 1484.
 (pdftex.def)             Requested size: 112.80696pt x 155.589pt.
-<kondens.pdf, id=1019, 99.37125pt x 22.58438pt>
+<kondens.pdf, id=1027, 99.37125pt x 22.58438pt>
 File: kondens.pdf Graphic file (type pdf)
 <use kondens.pdf>
 Package pdftex.def Info: kondens.pdf  used on input line 1495.
 (pdftex.def)             Requested size: 79.4971pt x 18.0675pt.
- [57 <./ub.pdf>]
-<kondensator.pdf, id=1042, 114.2583pt x 117.43875pt>
+ [58 <./ub.pdf>]
+<kondensator.pdf, id=1051, 114.2583pt x 117.43875pt>
 File: kondensator.pdf Graphic file (type pdf)
 <use kondensator.pdf>
 Package pdftex.def Info: kondensator.pdf  used on input line 1503.
 (pdftex.def)             Requested size: 91.40675pt x 93.95111pt.
-<variable_Spannungsquelle.pdf, id=1043, 433.62pt x 289.08pt>
+<variable_Spannungsquelle.pdf, id=1052, 433.62pt x 289.08pt>
 File: variable_Spannungsquelle.pdf Graphic file (type pdf)
 <use variable_Spannungsquelle.pdf>
 Package pdftex.def Info: variable_Spannungsquelle.pdf  used on input line 1518.
@@ -1931,12 +1933,12 @@ Overfull \hbox (22.91484pt too wide) in paragraph at lines 1507--1521
 ante, eine Vorzugsrich-
  []
 
-[58 <./kondens.pdf> <./kondensator.pdf
+[59 <./kondens.pdf> <./kondensator.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./kondensator.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >]
-<kkondens.pdf, id=1054, 99.37125pt x 30.47552pt>
+<kkondens.pdf, id=1062, 99.37125pt x 30.47552pt>
 File: kkondens.pdf Graphic file (type pdf)
 <use kkondens.pdf>
 Package pdftex.def Info: kkondens.pdf  used on input line 1526.
@@ -1947,12 +1949,12 @@ Overfull \hbox (0.79012pt too wide) in paragraph at lines 1533--1536
 rd ein lin-earer Zusam-
  []
 
-[59 <./variable_Spannungsquelle.pdf> <./kkondens.pdf
+[60 <./variable_Spannungsquelle.pdf> <./kkondens.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./kkondens.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]
-<einfach.pdf, id=1089, 105.39375pt x 123.7677pt>
+<einfach.pdf, id=1098, 105.39375pt x 123.7677pt>
 File: einfach.pdf Graphic file (type pdf)
 <use einfach.pdf>
 Package pdftex.def Info: einfach.pdf  used on input line 1550.
@@ -1967,8 +1969,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1563--1568
 
  []
 
-[60 <./einfach.pdf>]
-<Ladung.png, id=1115, 549.05125pt x 372.39125pt>
+[61 <./einfach.pdf>]
+<Ladung.png, id=1123, 549.05125pt x 372.39125pt>
 File: Ladung.png Graphic file (type png)
 <use Ladung.png>
 Package pdftex.def Info: Ladung.png  used on input line 1574.
@@ -1978,12 +1980,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1577--1581
 
  []
 
-<entladung.png, id=1117, 553.06625pt x 382.42876pt>
+<entladung.png, id=1125, 553.06625pt x 382.42876pt>
 File: entladung.png Graphic file (type png)
 <use entladung.png>
 Package pdftex.def Info: entladung.png  used on input line 1587.
 (pdftex.def)             Requested size: 276.53244pt x 191.2139pt.
-[61 <./Ladung.png>]
+[62 <./Ladung.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1590--1596
 
  []
@@ -1993,18 +1995,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1590--1596
 
  []
 
-<spule.pdf, id=1126, 84.315pt x 7.52812pt>
+<spule.pdf, id=1134, 84.315pt x 7.52812pt>
 File: spule.pdf Graphic file (type pdf)
 <use spule.pdf>
 Package pdftex.def Info: spule.pdf  used on input line 1601.
 (pdftex.def)             Requested size: 126.47215pt x 11.29213pt.
-[62 <./entladung.png>]
-<spulensg.pdf, id=1132, 147.55125pt x 123.46124pt>
+[63 <./entladung.png>]
+<spulensg.pdf, id=1140, 147.55125pt x 123.46124pt>
 File: spulensg.pdf Graphic file (type pdf)
 <use spulensg.pdf>
 Package pdftex.def Info: spulensg.pdf  used on input line 1610.
 (pdftex.def)             Requested size: 147.55087pt x 123.46092pt.
-<spule_direkt.pdf, id=1134, 84.315pt x 13.92067pt>
+<spule_direkt.pdf, id=1142, 84.315pt x 13.92067pt>
 File: spule_direkt.pdf Graphic file (type pdf)
 <use spule_direkt.pdf>
 Package pdftex.def Info: spule_direkt.pdf  used on input line 1627.
@@ -2024,12 +2026,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1614--1629
 
  []
 
-[63 <./spule.pdf> <./spulensg.pdf
+[64 <./spule.pdf> <./spulensg.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./spulensg.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]
-<spuledir.pdf, id=1151, 165.38577pt x 127.05644pt>
+<spuledir.pdf, id=1159, 165.38577pt x 127.05644pt>
 File: spuledir.pdf Graphic file (type pdf)
 <use spuledir.pdf>
 Package pdftex.def Info: spuledir.pdf  used on input line 1647.
@@ -2049,7 +2051,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1650--1654
 
  []
 
-[64 <./spule_direkt.pdf> <./spuledir.pdf
+[65 <./spule_direkt.pdf> <./spuledir.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./spuledir.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2058,13 +2060,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1667--1671
 
  []
 
-<spule_j.pdf, id=1187, 433.62pt x 289.08pt>
+<spule_j.pdf, id=1195, 433.62pt x 289.08pt>
 File: spule_j.pdf Graphic file (type pdf)
 <use spule_j.pdf>
 Package pdftex.def Info: spule_j.pdf  used on input line 1677.
 (pdftex.def)             Requested size: 325.2142pt x 216.80946pt.
-[65]
-<spuledir2.pdf, id=1198, 161.83827pt x 85.34189pt>
+[66]
+<spuledir2.pdf, id=1207, 161.83827pt x 85.34189pt>
 File: spuledir2.pdf Graphic file (type pdf)
 <use spuledir2.pdf>
 Package pdftex.def Info: spuledir2.pdf  used on input line 1687.
@@ -2074,17 +2076,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1681--1689
 
  []
 
-<spuledir3.pdf, id=1199, 161.83827pt x 85.34189pt>
+<spuledir3.pdf, id=1208, 161.83827pt x 85.34189pt>
 File: spuledir3.pdf Graphic file (type pdf)
 <use spuledir3.pdf>
 Package pdftex.def Info: spuledir3.pdf  used on input line 1694.
 (pdftex.def)             Requested size: 161.83786pt x 85.34167pt.
-[66 <./spule_j.pdf> <./spuledir2.pdf
+[67 <./spule_j.pdf> <./spuledir2.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./spuledir2.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<entladungsspule.pdf, id=1237, 433.62pt x 289.08pt>
+<entladungsspule.pdf, id=1245, 433.62pt x 289.08pt>
 File: entladungsspule.pdf Graphic file (type pdf)
 <use entladungsspule.pdf>
 Package pdftex.def Info: entladungsspule.pdf  used on input line 1716.
@@ -2104,12 +2106,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1719--1728
 
  []
 
-[67 <./spuledir3.pdf> <./entladungsspule.pdf
+[68 <./spuledir3.pdf> <./entladungsspule.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./entladungsspule.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >]
-<schnwingkreis_ungedampft.pdf, id=1270, 92.47952pt x 83.02878pt>
+<schnwingkreis_ungedampft.pdf, id=1278, 92.47952pt x 83.02878pt>
 File: schnwingkreis_ungedampft.pdf Graphic file (type pdf)
 <use schnwingkreis_ungedampft.pdf>
 Package pdftex.def Info: schnwingkreis_ungedampft.pdf  used on input line 1737.
@@ -2137,19 +2139,19 @@ Overfull \hbox (8.77126pt too wide) in paragraph at lines 1729--1740
 n eine Spule geschlossen
  []
 
-[68]
-<harmonisch.pdf, id=1275, 433.62pt x 289.08pt>
+[69]
+<harmonisch.pdf, id=1283, 433.62pt x 289.08pt>
 File: harmonisch.pdf Graphic file (type pdf)
 <use harmonisch.pdf>
 Package pdftex.def Info: harmonisch.pdf  used on input line 1767.
 (pdftex.def)             Requested size: 325.2142pt x 216.80946pt.
- [69 <./schnwingkreis_ungedampft.pdf>]
+ [70 <./schnwingkreis_ungedampft.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1770--1775
 
  []
 
-[70 <./harmonisch.pdf>]
-<schnwingkreis_gedampft.pdf, id=1320, 92.2139pt x 105.43481pt>
+[71 <./harmonisch.pdf>]
+<schnwingkreis_gedampft.pdf, id=1329, 92.2139pt x 105.43481pt>
 File: schnwingkreis_gedampft.pdf Graphic file (type pdf)
 <use schnwingkreis_gedampft.pdf>
 Package pdftex.def Info: schnwingkreis_gedampft.pdf  used on input line 1795.
@@ -2170,12 +2172,12 @@ Overfull \hbox (11.32646pt too wide) in paragraph at lines 1807--1809
 an-ten Ko-ef-fizien-ten, genauso
  []
 
-[71 <./schnwingkreis_gedampft.pdf>]
+[72 <./schnwingkreis_gedampft.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1818--1823
 
  []
 
-<dampf.pdf, id=1344, 433.62pt x 289.08pt>
+<dampf.pdf, id=1353, 433.62pt x 289.08pt>
 File: dampf.pdf Graphic file (type pdf)
 <use dampf.pdf>
 Package pdftex.def Info: dampf.pdf  used on input line 1836.
@@ -2185,7 +2187,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1831--1838
 
  []
 
-[72]
+[73]
 Underfull \hbox (badness 10000) in paragraph at lines 1839--1843
 
  []
@@ -2195,12 +2197,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1850--1853
 
  []
 
-<diode.pdf, id=1356, 39.14626pt x 14.55438pt>
+<diode.pdf, id=1364, 39.14626pt x 14.55438pt>
 File: diode.pdf Graphic file (type pdf)
 <use diode.pdf>
 Package pdftex.def Info: diode.pdf  used on input line 1857.
 (pdftex.def)             Requested size: 58.71922pt x 21.8315pt.
-[73 <./dampf.pdf>]
+[74 <./dampf.pdf>]
 Overfull \hbox (19.28568pt too wide) in paragraph at lines 1861--1864
 \OT1/lmr/m/n/10.95 mit asym-metrischer Charak-ter-is-tik han-delt. Der Pfeil gi
 bt hi-er-bei die bevorzugte
@@ -2216,8 +2218,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1861--1864
 
  []
 
-[74 <./diode.pdf>]
-Kapitel 5.
+[75 <./diode.pdf>]
+Kapitel 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1873--1883
 
@@ -2243,15 +2245,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 1873--1883
 
  []
 
-<Plan.pdf, id=1391, 648.45871pt x 345.11464pt>
+<Plan.pdf, id=1399, 648.45871pt x 345.11464pt>
 File: Plan.pdf Graphic file (type pdf)
 <use Plan.pdf>
 Package pdftex.def Info: Plan.pdf  used on input line 1888.
 (pdftex.def)             Requested size: 324.22856pt x 172.55688pt.
-[75
+[76
 
 ]
-<Speicher.pdf, id=1396, 520.8065pt x 894.15721pt>
+<Speicher.pdf, id=1404, 520.8065pt x 894.15721pt>
 File: Speicher.pdf Graphic file (type pdf)
 <use Speicher.pdf>
 Package pdftex.def Info: Speicher.pdf  used on input line 1906.
@@ -2272,8 +2274,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1894--1909
 
  []
 
-[76 <./Plan.pdf>]
-<register.pdf, id=1410, 423.55688pt x 325.15465pt>
+[77 <./Plan.pdf>]
+<register.pdf, id=1418, 423.55688pt x 325.15465pt>
 File: register.pdf Graphic file (type pdf)
 <use register.pdf>
 Package pdftex.def Info: register.pdf  used on input line 1925.
@@ -2288,14 +2290,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1912--1928
 
  []
 
-[77 <./Speicher.pdf>]
-<reg.pdf, id=1452, 449.1128pt x 283.07658pt>
+[78 <./Speicher.pdf>]
+<reg.pdf, id=1461, 449.1128pt x 283.07658pt>
 File: reg.pdf Graphic file (type pdf)
 <use reg.pdf>
 Package pdftex.def Info: reg.pdf  used on input line 1933.
 (pdftex.def)             Requested size: 314.3768pt x 198.15225pt.
- [78 <./register.pdf>]
-<ALU.pdf, id=1488, 517.38074pt x 323.29912pt>
+ [79 <./register.pdf>]
+<ALU.pdf, id=1496, 517.38074pt x 323.29912pt>
 File: ALU.pdf Graphic file (type pdf)
 <use ALU.pdf>
 Package pdftex.def Info: ALU.pdf  used on input line 1949.
@@ -2310,8 +2312,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1940--1952
 
  []
 
-[79 <./reg.pdf>]
-<Kern.pdf, id=1508, 529.23026pt x 346.30284pt>
+[80 <./reg.pdf>]
+<Kern.pdf, id=1516, 529.23026pt x 346.30284pt>
 File: Kern.pdf Graphic file (type pdf)
 <use Kern.pdf>
 Package pdftex.def Info: Kern.pdf  used on input line 1965.
@@ -2349,7 +2351,7 @@ Overfull \hbox (0.43738pt too wide) in paragraph at lines 1953--1968
 -gen-den lo-gis-chen Schalt-
  []
 
-[80 <./ALU.pdf>]
+[81 <./ALU.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1974--1980
 
  []
@@ -2371,8 +2373,8 @@ Overfull \hbox (19.88745pt too wide) in paragraph at lines 1974--1980
 t in einer Verz^^?ogerung
  []
 
-[81 <./Kern.pdf>]
-<Ausfuehrer.pdf, id=1578, 594.70766pt x 748.30359pt>
+[82 <./Kern.pdf>]
+<Ausfuehrer.pdf, id=1587, 594.70766pt x 748.30359pt>
 File: Ausfuehrer.pdf Graphic file (type pdf)
 <use Ausfuehrer.pdf>
 Package pdftex.def Info: Ausfuehrer.pdf  used on input line 1994.
@@ -2397,7 +2399,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1981--1997
 
  []
 
-[82]
+[83]
 Underfull \hbox (badness 10000) in paragraph at lines 2002--2016
 
  []
@@ -2423,8 +2425,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 2002--2016
 
  []
 
-[83 <./ausfuehrer.pdf>] [84]
-Overfull \hbox (11.71472pt too wide) in paragraph at lines 2027--2028
+[84 <./ausfuehrer.pdf>]
+Overfull \hbox (11.17253pt too wide) in paragraph at lines 2017--2028
+\OT1/lmr/m/n/10.95 In diesem Ab-schnitt definieren wir die Pro-gram-mier-sprach
+e, die un-sere Rechen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2017--2028
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2017--2028
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2017--2028
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2017--2028
+
+ []
+
+[85]
+Overfull \hbox (11.71472pt too wide) in paragraph at lines 2036--2037
  []\OT1/lmr/bx/n/10.95 LOAD + 4 bit Wort:[] $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/
 10.95 b[]; b[]; b[]\OT1/lmr/m/n/10.95 ) = (1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/
 10.95 1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 0)$ Schreibt das Wort $(\OML/lm
@@ -2432,80 +2460,81 @@ m/m/it/10.95 a[]; a[]; a[]; a[]\OT1/lmr/m/n/10.95 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2028--2032
+Underfull \hbox (badness 10000) in paragraph at lines 2037--2041
 
  []
 
-<ausfuhrer.pdf, id=1664, 578.12796pt x 321.00677pt>
+[86]
+<ausfuhrer.pdf, id=1681, 578.12796pt x 321.00677pt>
 File: ausfuhrer.pdf Graphic file (type pdf)
 <use ausfuhrer.pdf>
-Package pdftex.def Info: ausfuhrer.pdf  used on input line 2040.
+Package pdftex.def Info: ausfuhrer.pdf  used on input line 2049.
 (pdftex.def)             Requested size: 404.68681pt x 224.7032pt.
 
-Overfull \hbox (44.68681pt too wide) in paragraph at lines 2040--2041
+Overfull \hbox (44.68681pt too wide) in paragraph at lines 2049--2050
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2034--2043
-
- []
-
-[85]
-Underfull \hbox (badness 10000) in paragraph at lines 2044--2061
+Underfull \hbox (badness 10000) in paragraph at lines 2043--2052
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2044--2061
+Underfull \hbox (badness 10000) in paragraph at lines 2053--2070
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2044--2061
+Underfull \hbox (badness 10000) in paragraph at lines 2053--2070
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2044--2061
+Underfull \hbox (badness 10000) in paragraph at lines 2053--2070
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2044--2061
+Underfull \hbox (badness 10000) in paragraph at lines 2053--2070
 
  []
 
-[86 <./ausfuhrer.pdf>]
-Overfull \hbox (15.89731pt too wide) in paragraph at lines 2062--2074
+
+Underfull \hbox (badness 10000) in paragraph at lines 2053--2070
+
+ []
+
+[87 <./ausfuhrer.pdf>]
+Overfull \hbox (15.89731pt too wide) in paragraph at lines 2071--2083
  [] 
  []
 
 
-Overfull \hbox (4.75232pt too wide) in paragraph at lines 2076--2088
+Overfull \hbox (4.75232pt too wide) in paragraph at lines 2085--2097
  [] 
  []
 
-[87]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2102.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2102.
+[88] [89]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2111.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2111.
  (./book.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2102.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2102.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2111.
 
 Package rerunfilecheck Info: File `book.out' has not changed.
-(rerunfilecheck)             Checksum: 6B797B9FE7B0833612C965E54749D516;2799.
+(rerunfilecheck)             Checksum: 3336D7173E0272F9D4BEBD0E11472044;2848.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2102.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2111.
  ) 
 Here is how much of TeX's memory you used:
- 20099 strings out of 481239
- 364336 string characters out of 5920378
- 621657 words of memory out of 5000000
- 34410 multiletter control sequences out of 15000+600000
+ 20102 strings out of 481239
+ 364359 string characters out of 5920378
+ 621655 words of memory out of 5000000
+ 34411 multiletter control sequences out of 15000+600000
  606876 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,14n,60p,1320b,1957s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2527,10 +2556,10 @@ s/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
 e1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmtti10.pfb>
-Output written on book.pdf (88 pages, 1328408 bytes).
+Output written on book.pdf (90 pages, 1329932 bytes).
 PDF statistics:
- 1878 PDF objects out of 2073 (max. 8388607)
- 1519 compressed objects within 16 object streams
- 487 named destinations out of 1000 (max. 500000)
- 596 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1890 PDF objects out of 2073 (max. 8388607)
+ 1529 compressed objects within 16 object streams
+ 489 named destinations out of 1000 (max. 500000)
+ 604 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,41 +1,42 @@
-\BOOKMARK [0][-]{chapter.1}{Aufbau einer Rechenmaschine}{}% 1
-\BOOKMARK [1][-]{section.1.1}{GOTO-Programme}{chapter.1}% 2
-\BOOKMARK [2][-]{subsection.1.1.1}{Grundoperationen}{section.1.1}% 3
-\BOOKMARK [1][-]{section.1.2}{WHILE-Programme}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.3}{Church-Turing Hypothese}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.4}{Kleenesche Normalform}{chapter.1}% 6
-\BOOKMARK [0][-]{chapter.2}{Zahlensysteme}{}% 7
-\BOOKMARK [1][-]{section.2.1}{Der Z\344hlvorgang}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.2}{Das dekadische Zahlensystem}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.3}{Das bin\344re Zahlensystem}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Aussagenlogik}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Wahrheitstafeln}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{Erf\374llbarkeitsprobleme und Gleichungen}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.3}{Umformungen der Verneinung}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.4}{Die disjunktive Normalform}{chapter.3}% 15
-\BOOKMARK [2][-]{subsection.3.4.1}{NAND und NOR}{section.3.4}% 16
-\BOOKMARK [0][-]{chapter.4}{Elektronik}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Elektrische Netzwerke}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.2}{Die drei Grundgesetze elektrischer Netzwerke}{chapter.4}% 19
-\BOOKMARK [2][-]{subsection.4.2.1}{Zusammenfassung}{section.4.2}% 20
-\BOOKMARK [1][-]{section.4.3}{Lineare elektrische Netzwerke}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.3.1}{Reihen und parallele Schaltungen}{section.4.3}% 22
-\BOOKMARK [2][-]{subsection.4.3.2}{Lineare Systeme}{section.4.3}% 23
-\BOOKMARK [1][-]{section.4.4}{Dynamische Stromkreise}{chapter.4}% 24
-\BOOKMARK [2][-]{subsection.4.4.1}{Der Kondensator}{section.4.4}% 25
-\BOOKMARK [2][-]{subsection.4.4.2}{Die Spule}{section.4.4}% 26
-\BOOKMARK [2][-]{subsection.4.4.3}{Der Schwingkreis}{section.4.4}% 27
-\BOOKMARK [2][-]{subsection.4.4.4}{Die Diode}{section.4.4}% 28
-\BOOKMARK [2][-]{subsection.4.4.5}{Der Feldeffekt Transitor}{section.4.4}% 29
-\BOOKMARK [2][-]{subsection.4.4.6}{Kippstufen}{section.4.4}% 30
-\BOOKMARK [2][-]{subsection.4.4.7}{Logische Gatter}{section.4.4}% 31
-\BOOKMARK [0][-]{chapter.5}{Ein m\366glichst einfacher Digitalrechner}{}% 32
-\BOOKMARK [1][-]{section.5.1}{Aufbau der Rechenmaschine}{chapter.5}% 33
-\BOOKMARK [2][-]{subsection.5.1.1}{Speicher}{section.5.1}% 34
-\BOOKMARK [2][-]{subsection.5.1.2}{Das Register}{section.5.1}% 35
-\BOOKMARK [2][-]{subsection.5.1.3}{Der Rechenkern}{section.5.1}% 36
-\BOOKMARK [2][-]{subsection.5.1.4}{Der BUS}{section.5.1}% 37
-\BOOKMARK [2][-]{subsection.5.1.5}{Kontrolleinheit}{section.5.1}% 38
-\BOOKMARK [1][-]{section.5.2}{Entwicklungsentscheidungen}{chapter.5}% 39
-\BOOKMARK [1][-]{section.5.3}{Maschinensprache}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.4}{Funktionsweise der Kontrolleinheit}{chapter.5}% 41
+\BOOKMARK [0][-]{chapter.1}{Einf\374hrung}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Aufbau einer Rechenmaschine}{}% 2
+\BOOKMARK [1][-]{section.2.1}{GOTO-Programme}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Grundoperationen}{section.2.1}% 4
+\BOOKMARK [1][-]{section.2.2}{WHILE-Programme}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.3}{Church-Turing Hypothese}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.4}{Kleenesche Normalform}{chapter.2}% 7
+\BOOKMARK [0][-]{chapter.3}{Zahlensysteme}{}% 8
+\BOOKMARK [1][-]{section.3.1}{Der Z\344hlvorgang}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.2}{Das dekadische Zahlensystem}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.3}{Das bin\344re Zahlensystem}{chapter.3}% 11
+\BOOKMARK [0][-]{chapter.4}{Aussagenlogik}{}% 12
+\BOOKMARK [1][-]{section.4.1}{Wahrheitstafeln}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.2}{Erf\374llbarkeitsprobleme und Gleichungen}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.3}{Umformungen der Verneinung}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.4}{Die disjunktive Normalform}{chapter.4}% 16
+\BOOKMARK [2][-]{subsection.4.4.1}{NAND und NOR}{section.4.4}% 17
+\BOOKMARK [0][-]{chapter.5}{Elektronik}{}% 18
+\BOOKMARK [1][-]{section.5.1}{Elektrische Netzwerke}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.2}{Die drei Grundgesetze elektrischer Netzwerke}{chapter.5}% 20
+\BOOKMARK [2][-]{subsection.5.2.1}{Zusammenfassung}{section.5.2}% 21
+\BOOKMARK [1][-]{section.5.3}{Lineare elektrische Netzwerke}{chapter.5}% 22
+\BOOKMARK [2][-]{subsection.5.3.1}{Reihen und parallele Schaltungen}{section.5.3}% 23
+\BOOKMARK [2][-]{subsection.5.3.2}{Lineare Systeme}{section.5.3}% 24
+\BOOKMARK [1][-]{section.5.4}{Dynamische Stromkreise}{chapter.5}% 25
+\BOOKMARK [2][-]{subsection.5.4.1}{Der Kondensator}{section.5.4}% 26
+\BOOKMARK [2][-]{subsection.5.4.2}{Die Spule}{section.5.4}% 27
+\BOOKMARK [2][-]{subsection.5.4.3}{Der Schwingkreis}{section.5.4}% 28
+\BOOKMARK [2][-]{subsection.5.4.4}{Die Diode}{section.5.4}% 29
+\BOOKMARK [2][-]{subsection.5.4.5}{Der Feldeffekt Transitor}{section.5.4}% 30
+\BOOKMARK [2][-]{subsection.5.4.6}{Kippstufen}{section.5.4}% 31
+\BOOKMARK [2][-]{subsection.5.4.7}{Logische Gatter}{section.5.4}% 32
+\BOOKMARK [0][-]{chapter.6}{Ein m\366glichst einfacher Digitalrechner}{}% 33
+\BOOKMARK [1][-]{section.6.1}{Aufbau der Rechenmaschine}{chapter.6}% 34
+\BOOKMARK [2][-]{subsection.6.1.1}{Speicher}{section.6.1}% 35
+\BOOKMARK [2][-]{subsection.6.1.2}{Das Register}{section.6.1}% 36
+\BOOKMARK [2][-]{subsection.6.1.3}{Der Rechenkern}{section.6.1}% 37
+\BOOKMARK [2][-]{subsection.6.1.4}{Der BUS}{section.6.1}% 38
+\BOOKMARK [2][-]{subsection.6.1.5}{Kontrolleinheit}{section.6.1}% 39
+\BOOKMARK [1][-]{section.6.2}{Entwicklungsentscheidungen}{chapter.6}% 40
+\BOOKMARK [1][-]{section.6.3}{Maschinensprache}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.4}{Funktionsweise der Kontrolleinheit}{chapter.6}% 42

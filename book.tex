@@ -101,7 +101,7 @@ Oliver \textsc{Sko\v{c}ek} \\[4cm]
 \vfill
 
 
-\chapter*{Einf\"uhrung}
+\chapter{Einf\"uhrung}
 Das Ziel dieses Buches ist es dem Leser die Grundkonzepte von Rechenmaschinen also Computern zu vermitteln. 
 Viel mehr noch soll die F\"ahigkeit vermittelt werden einen Computer selbst zu erdenken und zu bauen.\\
 \\
@@ -2014,7 +2014,16 @@ In unserem Fall wird ein Befehl ein Byte sein, wobei der Befehlsraum hierbei nic
 \\
 Die Realisierung des Programmspeichers kann ein Lochstreifenleseger\"at oder ein bin\"ar Counter zusammen mit einem 8 Bit Parallelspeicher (EEPROM oder FLASH) sein.
 \section{Maschinensprache}
-Die Architektur unserer Machine ist anglehnt an die Harvard Architektur, mit getrenntem Befehlsspeicher und Datenspeicher.\\
+In diesem Abschnitt definieren wir die Programmiersprache, die unsere Rechenmaschine ausf\"uhren wird. Es wird dabei besonders viel Wert auf Einfachheit gelegt, wobei wir einige Eigenschaften ausnutzen die wir in den vorangegangenen Kapiteln kennen gelernt haben\\
+\\
+Eine dieser Eigenschaften ist, dass sich jede aussagenlogische Formel durch NAND Operation ausdr\"ucken l\"asst.\\
+Am Ende dieses Kapitels werden wir sehen, dass sich sowohl die Addition als auch die Gleichheit in unserer Maschinensprache ausdr\"ucken l\"asst.\\
+\\
+Bei den bedingten Verzweigungen greifen wir auf die Kleenesche Normalform zur\"uck. Hierzu ben\"otigen wir eine Implementierung einer IF-THEN-END Verzweigung und einer einzigen WHILE Schleife. Die WHILE-Schleife soll dabei durch bedingte Spr\"unge zum Anfang des Programms dargestellt werden. Hierdurch erhalten wir bedingte Verzweigungen, die equivalent zu GOTO Verzweigungen sind.\\
+\\
+Die letzte Eigenschaft die wir ausnutzen ist, dass verschachtelte IF-THEN-END Verzweigungen nicht notwendig sind und wir werden demnach auf diese verzichten.\\
+\\
+Gie\ss{}en wir den Gedanken nun in eine konkrete Form.
 Jeder Befehl ist einen Byte lang und hat die Form:
 $$(b_0, b_1, b_3, a_0, a_1, a_2, a_3, F)$$
 Die Befehle, die unsere Rechenmaschine kennt sind die Folgenden:
