@@ -121,25 +121,30 @@ Im Sommer 2019 setzte ich mir in den Kopf ein Projekt zu starten, \"uber das ich
 \fi
 
 \chapter{Aufbau einer Rechenmaschine}
-Was muss eine Rechenmaschine k\"onnen, damit sie im Prinzip alles berechnen kann, auch wenn sie daf\"ur eine sehr lange Zeit ben\"otigt? Diese Frage wurde Mitte des zwanzigsten Jahrhunderts beantwortet. Mehrere Personen entwickelten unterschiedliche Definitionen des Berechenbaren, und im Laufe der Zeit konnte gezeigt werden, dass all 
-iese hypotethischen Rechenmaschinen und Programmiersprachen gleichwertig sind. Die Gleichwertigkeit zwischen einer Rechenmaschine \textbf{A} und einer Rechenmaschine \textbf{B} ist gegeben, wenn die\\ Rechenmaschine \textbf{A} die Rechenmaschine \textbf{B} simulieren kann und umgekehrt. Dies gilt unabh\"angig davon ob es sich um eine analoge Rechenmaschine, eine digitale Rechenmaschine, eine Quantenrechenmaschine oder einen Menschen mit Papier und Stift handelt.\\
+Was muss eine Rechenmaschine k\"onnen, damit sie im Prinzip alles berechnen kann, auch wenn sie daf\"ur eine sehr lange Zeit ben\"otigt? Diese Frage wurde Mitte des zwanzigsten Jahrhunderts beantwortet. Mehrere Personen entwickelten unterschiedliche Definitionen des Berechenbaren, und im Laufe der Zeit konnte gezeigt werden, dass all diese hypotethischen Rechenmaschinen und Programmiersprachen gleichwertig sind. Die Gleichwertigkeit zwischen einer Rechenmaschine \textbf{A} und einer Rechenmaschine \textbf{B} ist dabei dann gegeben, wenn die Rechenmaschine \textbf{A} die Rechenmaschine \textbf{B} simulieren kann und umgekehrt. Dies gilt unabh\"angig davon ob es sich um eine analoge Rechenmaschine, eine digitale Rechenmaschine, eine Quantenrechenmaschine oder einen Menschen mit Papier und Stift handelt.\\
 \\
 Eine Rechenmaschine ist ein Apparat, der Listen von Befehlen abarbeitet und dabei drei fundamentale Bestandteile hat:
-\paragraph{Register:} Variablen, Platzhalter, Schmierzettel, et cetera. Ein Ding, dass ein Wort speichern kann, wobei dieses Wort von der Maschine gelesen werden kann und auch durch ein bestimmtes Wort ersetzt werden kann.
-\paragraph{Grundoperationen:} Eine Liste von grundlegenden Operation, welche die Maschine auf W\"ortern, Paaren von W\"ortern, et cetera ausf\"uhren kann. Die Ausgabe der Operation muss eindeutig sein und ist wiederum entweder ein Wort, ein Paar von W\"ortern, et cetera. Die Eingabe W\"orter liegen hierbei in bestimmten von der Operation abh\"angigen Registern und die Ausgabew\"orter werden wiederum in bestimmten operationsabh\"angigen Registern abgelegt.
-\paragraph{Bedingte Verzweigung:} Ein Weg wie der Ausgang einer Operation die Reihenfolge der abzuarbeitenden Befehle ab\"andern kann. Diese Konstrukte haben f\"ur gew\"ohnlich die Form: "Wiederhole bestimmte Teilliste von Befehlen, bis eine Bedingung erreicht ist"
+\paragraph{Register:} Ein Ding, dass ein Wort, also eine Kette von Symbolen, speichern kann. Das Wort muss also zu einem sp\"ateren Zeitpunkt abgerufen werden k\"onnen und bei Bedarf muss es m\"oglich sein das Wort im Speicher durch ein Anderes zu ersetzen. Analogien sind Variablen, Platzhalter oder auch Schmierzettel, sofern man mit Bleistift schreibt.
+\paragraph{Grundoperationen:} Eine Liste der elementarten Operationen, welche die Maschine auf Worte oder Paare von Worten anwenden kann. Eine Operation ist dabei ein Vorgang der ein Wort oder Wortpaar, die Operanden, nimmt und in Abh\"angigkeit davon ein resultierendes Wort ausgibt. Wichtige Beisiele hierf\"r sind Rechenoperationen wie Addition und Multiplikation.
+
+\paragraph{Bedingte Verzweigung:} Ein Weg wie der Ausgang einer Operation die Reihenfolge der abzuarbeitenden Befehle ab\"andern kann. Diese Konstrukte haben f\"ur gew\"ohnlich die Form: "Wiederhole bestimmte Teilliste von Befehlen, bis eine Bedingung erreicht ist" oder "Falls Bedingung erf\"ullt ist springe zum so und so vielten Befehl und mach von dort weiter.
 \\
 \\
-Der zuletzt beschriebene Bestandteil einer Rechenmaschine, die \textbf{Bedingte Verzweigung} wird oft durch einen internen Zustand der Rechenmaschine realisiert, der f\"ur gew\"ohnlich \"uber so genannte Flaggen implementiert wird. Dies sind Register mit nur einem Bit, die eine Aussage \"uber den Ausgang der letzten Operation macht, welche die Rechenmaschine abgearbeitet hat. Diese Register sind die Ausnahme, sie sind nicht direkt in ihrem Wert setzbar, sondern nur indirekt und zus\"atzlich halten sie kein Wort, sondern genau einen Bit, also null falls die Aussage \"uber die letzte Operation nicht zutrifft und Eins falls doch.\\
+Der zuletzt beschriebene Bestandteil einer Rechenmaschine, die \textbf{Bedingte Verzweigung} wird oft durch einen internen Zustand der Rechenmaschine realisiert, der f\"ur gew\"ohnlich \"uber so genannte Flags implementiert wird. 
+Dies sind Register, die entweder Null oder Eins sind und eine Aussage \"uber den Verlauf der zuletzt von der Rechenmaschine durchgef\"uhrten Operation macht.\\
+Es gilt dabei, dass das Flag Eins ist wenn die Aussage zutrifft und Null falls nicht. Das wichtigste Beispiel ist das Null-Flag, dass genau dann Eins ausgibt wenn die letzte Ausgabe nur Nullen enthielt.\\
+Diese Register bilden eine Ausnahme, da man ihren Wert nicht direkt setzen kann, sondern nur indirekt \"uber die Ausf\"uhrung einer Operation.\\
 \\
-In den n\"achsten Kapiteln werden wir uns n\"aher mit den Befehlen, die eine Rechenmaschine abarbeitet auseindandersetze. Zuerst soll hier aber noch der Unterschied und die Beziehung einer Rechenmaschine zum Konzept der Programmiersprache gezogen werden. Programmiersprachen sind Regelwerke nach denen  Text geschrieben werden, der durch eine Rechenmaschine interpretiert und als Kette von Befehlen abgearbeitet werden kann.
-Typischerweise hat jede Rechenmaschine eine eigene interne Programmiersprache, welche die Maschinenbauteile interpretieren k\"onnen und somit die Berechnung ausf\"uhren die wir uns w\"unschen.\\
+In den n\"achsten Abschnitten werden wir uns n\"aher mit den Befehlen, die eine Rechenmaschine abarbeitet auseindandersetzen. Zuerst soll hier aber noch der Unterschied und die Beziehung einer Rechenmaschine zum Konzept der Programmiersprache gezogen werden. Programmiersprachen sind Regelwerke nach denen ein Text geschrieben werden kann, der als Kette von Befehlen interpretiert und durch eine Rechenmaschine abgearbeitet werden kann.
+Einen solchen Text nennt man auch ein Programm.
+Typischerweise hat jede Rechenmaschine eine eigene interne Programmiersprache, ihre Machinensprache und sie kann nur Programme verstehen und die darin beschriebene Berechnung durchf\"uhren, wenn sie in dieser Maschinensprache geschrieben ist.
 \\
-Jede Programmiersprache besteht aus elementaren Bausteinen, Gundsymbolen oder W\"ortern, die Variablen, Befehle, Operationen, Zuweisungen oder\\ Verzweigungsanweisungen repr\"asentieren und aus Regeln, die festlegen welche Ketten dieser Grundsymbole Ausdr\"ucke der Programmiersprache sind, also valide oder syntaktisch korrekte Programme. Ein Programm ist nichts anderes als ein Ausdruck, der die sprachlichen Regeln einer Programmiersprache erf\"ullt.\\
 \\
-Synonym zum Begriff des Programms ist der Begriff des Algorithmus. \\
+Jede Programmiersprache besteht aus Grundsymbolen und einigen Regeln, die bestimmen wie die Grundsymbole zusammengesetzt werden k\"onnen. Die Grundsymbole k\"onnen dabei Konstanten (z.B.: $0$,$1$, $2$, $odots$)) Variablen (zb.: $x$), Operationen (z.B.:$+,-$), Zuweisungen (z.B.:$x = y + 4$) oder auch Verzweigunganweisungen (z.B.: Spring zum dritten Befehl) sein.\\
+Die Regeln legen fest welche Anordnung korrekt geschriebene Programme darstellen und welche nicht interpretierbar oder nicht eindeutig interpretierbar sind.\\
+\\
 Programmieren ist das entwerfen von Programmen. Jeder der noch nichts damit zu tun hatte, kann sich das komplett analog zu einem Koch vorstellen, der ein Rezept f\"ur einen unf\"ahigen Lehrling schreibt. Das Rezept ist eine Abfolge an Operationen, die der Lehrling an der K\"uche ausf\"uhren muss, um ein Gericht herzustellen. Der Lehrling ist unf\"ahig und deshalb muss man es ihm ganz genau aufschreiben, also pr\"azise formuliert, nach gewissen Regeln, damit die Anweisung immer eindeutig ist und keine Interpretationsfreiheit zul\"asst. Genauso verh\"alt es sich mit der Programmierung einer Rechenmaschine.
-\newpage
+
 \section{GOTO-Programme}
 Eine der einfachsten und am leichtesten verst\"andlichen Arten von Programmiersprachen ist die Klasse der GOTO-Programmiersprachen. In der Praxis sind GOTO-Programmiersprachen zwar nur von geringer Bedeutung, da sich Programme, die in solchen Sprachen geschrieben wurden, wegen ihrer schwierigen Lesbarkeit, nur schwer warten lassen, jedoch sind die internen Maschinensprachen von allen Rechenmaschinen, die in der Praxis eingesetzt werden, GOTO-Programmiersprachen und (theoretisch interessant).\\
 \\
@@ -351,7 +356,6 @@ Offensichtlich ist die Tiefe einer IF-THEN-END Verschachtelung limitiert durch d
 Insgesamt haben wir gezeigt, dass es keine Einschr\"ankung ist, wenn wir nur eine einzige WHILE Schleife zur Verf\"ugung haben und keine Verschachtelten IF-THEN-END Verzweigungen verwenden d\"urfen.
 \paragraph{Beispiel:} Gegeben sei folgendes WHILE-Programm, welches \"uberpr\"uft ob eine gegebene Zahl eine Primzahl ist.
 \paragraph{\"Ubungsbeispiel 10:}
-\newpage
 \chapter{Zahlensysteme}
 Bislang haben wir Programmiersprachen als etwas angesehen, dass Operationen auf nat\"urlichen Zahlen ausf\"uhrt. Bislang haben wir darauf verzichtet genauer darauf einzugehen, was genau eine nat\"urliche Zahl ist und wie sie in einer physischen Rechenmaschine dargestellt werden k\"onnen.
 Eine Rechenmaschine wird nie beliebig gro\ss{}e nat\"urliche Zahlen darstellen k\"onnen, da sie immer limitiert sein wird in der Anzahl der wohlunterscheidbaren Zust\"ande die sie annehmen kann.%\\
