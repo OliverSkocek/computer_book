@@ -8,15 +8,21 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="209.98003mm"
-   height="305.14151mm"
-   viewBox="0 0 209.98003 305.14152"
+   width="207.22066mm"
+   height="289.98572mm"
+   viewBox="0 0 207.22066 289.98573"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
    sodipodi:docname="ausfuehrer.svg">
   <defs
      id="defs2">
+    <rect
+       x="241.92931"
+       y="317.80652"
+       width="311.31265"
+       height="241.85126"
+       id="rect932" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient987"
@@ -86,8 +92,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="246.6606"
-     inkscape:cy="540.79214"
+     inkscape:cx="409.04404"
+     inkscape:cy="629.54641"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -100,7 +106,8 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     showguides="false" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -117,7 +124,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-5.6598443,-7.6435084)">
+     transform="translate(-6.4968442,-7.6435084)">
     <g
        id="g90"
        transform="matrix(0.35277777,0,0,0.35277777,1.9035643,-48.942115)">
@@ -138,7 +145,7 @@
          y="15.684336">Ein</tspan></text>
     <g
        id="g98"
-       transform="matrix(0.35277777,0,0,0.35277777,31.404042,-48.942115)">
+       transform="matrix(0.35277777,0,0,0.35277777,24.063888,-48.942115)">
       <path
          d="m 206.129,207.641 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.371,0 -13.351,-5.84 -13.351,-13.043 0,-7.207 5.98,-13.047 13.351,-13.047 7.375,0 13.352,5.84 13.352,13.047 z"
          style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -147,16 +154,16 @@
     <text
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text104"
-       x="93.031006"
+       x="85.690849"
        y="15.925219"><tspan
          sodipodi:role="line"
          id="tspan102"
          style="stroke-width:0.352777"
-         x="93.031006"
+         x="85.690849"
          y="15.925219">Takt</tspan></text>
     <g
        id="g106"
-       transform="matrix(0.35277777,0,0,0.35277777,34.415814,-48.942115)">
+       transform="matrix(0.35277777,0,0,0.35277777,25.386669,-48.942115)">
       <path
          d="m 313.699,207.211 c 0,7.203 -5.976,13.043 -13.351,13.043 -7.371,0 -13.348,-5.84 -13.348,-13.043 0,-7.203 5.977,-13.043 13.348,-13.043 7.375,0 13.351,5.84 13.351,13.043 z"
          style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -165,16 +172,16 @@
     <text
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text112"
-       x="133.99136"
+       x="124.96221"
        y="15.774027"><tspan
          sodipodi:role="line"
          id="tspan110"
          style="stroke-width:0.352777"
-         x="133.99136"
-         y="15.774027">Schreib_Takt</tspan></text>
+         x="124.96221"
+         y="15.774027">Schreib Takt</tspan></text>
     <g
        id="g82-3"
-       transform="matrix(0.17422936,0,0,0.35411946,135.05133,186.82138)"
+       transform="matrix(0.17422936,0,0,0.35411946,135.05133,184.7047)"
        style="fill:url(#linearGradient989);fill-opacity:1;stroke:#000000">
       <path
          d="m 1.66,47.594 h 257.211 v 58.352 H 1.66 Z"
@@ -185,15 +192,15 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text88-7"
        x="134.11"
-       y="195.79434"><tspan
+       y="193.6777"><tspan
          sodipodi:role="line"
          id="tspan86-5"
          style="stroke-width:0.352777"
          x="134.11"
-         y="195.79434">Datenadresse</tspan></text>
+         y="193.6777">Datenadresse</tspan></text>
     <g
        id="g98-3"
-       transform="matrix(0.35277777,0,0,0.35277777,-12.663376,-48.9425)">
+       transform="matrix(0.35277777,0,0,0.35277777,-17.005802,-48.9425)">
       <path
          d="m 206.129,207.641 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.371,0 -13.351,-5.84 -13.351,-13.043 0,-7.207 5.98,-13.047 13.351,-13.047 7.375,0 13.352,5.84 13.352,13.047 z"
          style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -202,16 +209,16 @@
     <text
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text104-7"
-       x="48.963577"
+       x="44.621151"
        y="15.924828"><tspan
          sodipodi:role="line"
          id="tspan102-5"
          style="stroke-width:0.352777"
-         x="48.963577"
+         x="44.621151"
          y="15.924828">Flag</tspan></text>
     <g
        id="g90-3"
-       transform="matrix(0.35277777,0,0,0.35277777,2.348004,131.1685)"
+       transform="matrix(0.35277777,0,0,0.35277777,2.348004,129.05182)"
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
@@ -222,15 +229,15 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6"
        x="5.9027228"
-       y="195.79384"><tspan
+       y="193.6772"><tspan
          sodipodi:role="line"
          id="tspan94-2"
          style="stroke-width:0.352777"
          x="5.9027228"
-         y="195.79384">Operation_Schreiben</tspan></text>
+         y="193.6772">Operation Schreiben</tspan></text>
     <g
        id="g90-3-0"
-       transform="matrix(0.35277777,0,0,0.35277777,2.3480096,159.50998)"
+       transform="matrix(0.35277777,0,0,0.35277777,2.3480096,157.3933)"
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
@@ -241,15 +248,15 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-3"
        x="5.9027228"
-       y="224.13474"><tspan
+       y="222.0181"><tspan
          sodipodi:role="line"
          id="tspan94-2-6"
          style="stroke-width:0.352777"
          x="5.9027228"
-         y="224.13474">Speicher_Schreiben</tspan></text>
+         y="222.0181">Speicher Schreiben</tspan></text>
     <g
        id="g90-3-06"
-       transform="matrix(0.35277777,0,0,0.35277777,2.3480077,187.91055)"
+       transform="matrix(0.35277777,0,0,0.35277777,2.3480077,185.79387)"
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
@@ -260,15 +267,15 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-6"
        x="5.9027228"
-       y="252.53474"><tspan
+       y="250.41811"><tspan
          sodipodi:role="line"
          id="tspan94-2-1"
          style="stroke-width:0.352777"
          x="5.9027228"
-         y="252.53474">Register_Schreiben</tspan></text>
+         y="250.41811">Register Schreiben</tspan></text>
     <g
        id="g90-3-5"
-       transform="matrix(0.35277777,0,0,0.35277777,1.9034325,36.176124)"
+       transform="matrix(0.35277777,0,0,0.35277777,1.9034325,37.234458)"
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
@@ -279,15 +286,15 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-2"
        x="5.4581513"
-       y="100.8026"><tspan
+       y="101.86094"><tspan
          sodipodi:role="line"
          id="tspan94-2-8"
          style="stroke-width:0.352777"
          x="5.4581513"
-         y="100.8026">Register_Lesen</tspan></text>
+         y="101.86094">Register Lesen</tspan></text>
     <g
        id="g90-3-9"
-       transform="matrix(0.35277777,0,0,0.35277777,130.43673,37.273212)"
+       transform="matrix(0.35277777,0,0,0.35277777,130.43673,38.331546)"
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
@@ -298,15 +305,15 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36"
        x="133.99136"
-       y="101.89967"><tspan
+       y="102.95798"><tspan
          sodipodi:role="line"
          id="tspan94-2-12"
          style="stroke-width:0.352777"
          x="133.99136"
-         y="101.89967">Speicher_Lesen</tspan></text>
+         y="102.95798">Speicher Lesen</tspan></text>
     <g
        id="g90-3-9-9"
-       transform="matrix(0.35277777,0,0,0.35277777,2.3480071,64.640043)"
+       transform="matrix(0.35277777,0,0,0.35277777,2.3480071,65.698377)"
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
@@ -317,15 +324,15 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-1"
        x="5.9027228"
-       y="129.26645"><tspan
+       y="130.32477"><tspan
          sodipodi:role="line"
          id="tspan94-2-12-9"
          style="stroke-width:0.352777"
          x="5.9027228"
-         y="129.26645">Operation_Selektor</tspan></text>
+         y="130.32477">Operation Selektor</tspan></text>
     <g
        id="g90-3-9-4"
-       transform="matrix(0.35277777,0,0,0.35277777,1.9034376,92.095447)"
+       transform="matrix(0.35277777,0,0,0.35277777,1.9034376,93.153779)"
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
@@ -336,12 +343,12 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-8"
        x="5.4581513"
-       y="156.72145"><tspan
+       y="157.77977"><tspan
          sodipodi:role="line"
          id="tspan94-2-12-4"
          style="stroke-width:0.352777"
          x="5.4581513"
-         y="156.72145">Eingabe_Lesen</tspan></text>
+         y="157.77977">Eingabe Lesen</tspan></text>
     <text
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-3"
@@ -354,7 +361,7 @@
          y="87.995438" /></text>
     <g
        id="g90-3-9-1"
-       transform="matrix(0.35277777,0,0,0.35277777,130.43658,64.640417)"
+       transform="matrix(0.35277777,0,0,0.35277777,130.43658,65.698751)"
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
@@ -365,16 +372,16 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-6"
        x="133.99121"
-       y="129.26685"><tspan
+       y="130.32516"><tspan
          sodipodi:role="line"
          id="tspan94-2-12-3"
          style="stroke-width:0.352777"
          x="133.99121"
-         y="129.26685">Resultat_Lesen</tspan></text>
+         y="130.32516">Resultat Lesen</tspan></text>
     <g
        id="g82"
        style="fill:url(#linearGradient1027);fill-opacity:1"
-       transform="matrix(0.35277777,0,0,0.35277777,6.3184051,37.788911)">
+       transform="matrix(0.35277777,0,0,0.35277777,6.3184051,45.726416)">
       <path
          d="m 1.66,47.594 h 257.211 v 58.352 H 1.66 Z"
          style="fill:url(#linearGradient447);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -384,15 +391,20 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text88"
        x="6.4141622"
-       y="46.659576"><tspan
+       y="42.955406"><tspan
          sodipodi:role="line"
-         id="tspan86"
          x="6.4141622"
-         y="46.659576"
-         style="stroke-width:0.352777">Anweisung_von_Programmspeicher</tspan></text>
+         y="42.955406"
+         style="stroke-width:0.352777"
+         id="tspan936">Anweisung von</tspan><tspan
+         sodipodi:role="line"
+         x="6.4141622"
+         y="56.184532"
+         style="stroke-width:0.352777"
+         id="tspan940">Programmspeicher</tspan></text>
     <g
        id="g90-3-5-2"
-       transform="matrix(0.35277777,0,0,0.35277777,2.3484356,232.01799)"
+       transform="matrix(0.35277777,0,0,0.35277777,2.3484356,218.78874)"
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
@@ -403,15 +415,15 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-2-6"
        x="5.9031515"
-       y="296.64447"><tspan
+       y="283.4151"><tspan
          sodipodi:role="line"
          id="tspan94-2-8-1"
          style="stroke-width:0.352777"
          x="5.9031515"
-         y="296.64447">nächste_Anweisung</tspan></text>
+         y="283.4151">nächste_Anweisung</tspan></text>
     <g
        id="g90-3-9-5"
-       transform="matrix(0.35277777,0,0,0.35277777,130.88174,233.11508)"
+       transform="matrix(0.35277777,0,0,0.35277777,130.88174,219.88583)"
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
@@ -422,11 +434,33 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-4"
        x="134.43636"
-       y="297.74155"><tspan
+       y="284.51218"><tspan
          sodipodi:role="line"
          id="tspan94-2-12-7"
          style="stroke-width:0.352777"
          x="134.43636"
-         y="297.74155">Zurücksetzen</tspan></text>
+         y="284.51218">Zurücksetzen</tspan></text>
+    <g
+       id="g106-3"
+       transform="matrix(0.35277777,0,0,0.35277777,25.386793,-8.5316289)">
+      <path
+         d="m 313.699,207.211 c 0,7.203 -5.976,13.043 -13.351,13.043 -7.371,0 -13.348,-5.84 -13.348,-13.043 0,-7.203 5.977,-13.043 13.348,-13.043 7.375,0 13.351,5.84 13.351,13.043 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path108-6" />
+    </g>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       id="text112-7"
+       x="124.96221"
+       y="56.184517"><tspan
+         sodipodi:role="line"
+         id="tspan110-5"
+         style="stroke-width:0.352777"
+         x="124.96221"
+         y="56.184517">Steuer Takt</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text930"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect932);fill:#000000;fill-opacity:1;stroke:none;" />
   </g>
 </svg>

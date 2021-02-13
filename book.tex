@@ -121,7 +121,8 @@ Im Sommer 2019 setzte ich mir in den Kopf ein Projekt zu starten, \"uber das ich
 \fi
 
 \chapter{Aufbau einer Rechenmaschine}
-Was muss eine Rechenmaschine k\"onnen, damit sie im Prinzip alles berechnen kann, auch wenn sie daf\"ur eine sehr lange Zeit ben\"otigt? Diese Frage wurde Mitte des zwanzigsten Jahrhunderts beantwortet. Mehrere Personen entwickelten unterschiedliche Definitionen des Berechenbaren, und im Laufe der Zeit konnte gezeigt werden, dass all diese hypotethischen Rechenmaschinen und Programmiersprachen gleichwertig sind. Die Gleichwertigkeit zwischen einer Rechenmaschine \textbf{A} und einer Rechenmaschine \textbf{B} ist dabei dann gegeben, wenn die Rechenmaschine \textbf{A} die Rechenmaschine \textbf{B} simulieren kann und umgekehrt. Dies gilt unabh\"angig davon ob es sich um eine analoge Rechenmaschine, eine digitale Rechenmaschine, eine Quantenrechenmaschine oder einen Menschen mit Papier und Stift handelt.\\
+Was muss eine Rechenmaschine k\"onnen, damit sie im Prinzip alles berechnen kann?
+Diese Frage wurde Mitte des zwanzigsten Jahrhunderts beantwortet. Mehrere Personen entwickelten unterschiedliche Definitionen des Berechenbaren, und im Laufe der Zeit konnte gezeigt werden, dass all diese hypothetischen Rechenmaschinen gleichwertig sind. Die Gleichwertigkeit zweier Rechenmaschine ist dabei so zu verstehen, dass jeweils eine Maschine die andere simulieren kann. Dies gilt unabh\"angig davon ob es sich um eine analoge Rechenmaschine, eine digitale Rechenmaschine, eine Quantenrechenmaschine oder einen Menschen mit Papier und Stift handelt. Die einzige Einschr\"ankung ist dabei die Gr\"osse des Speichers. Die beschriebene Gleichwertigkeit gilt nur unter der Annahme eines unendlich großen Speichers, also im Prinzip eines Speichers der bei Bedarf beliebig vergr\"ossert werden kann.\\
 \\
 Eine Rechenmaschine ist ein Apparat, der Listen von Befehlen abarbeitet und dabei drei fundamentale Bestandteile hat:
 \paragraph{Register:} Ein Ding, dass ein Wort, also eine Kette von Symbolen, speichern kann. Das Wort muss also zu einem sp\"ateren Zeitpunkt abgerufen werden k\"onnen und bei Bedarf muss es m\"oglich sein das Wort im Speicher durch ein Anderes zu ersetzen. Analogien sind Variablen, Platzhalter oder auch Schmierzettel, sofern man mit Bleistift schreibt.
@@ -140,7 +141,7 @@ Einen solchen Text nennt man auch ein Programm.
 Typischerweise hat jede Rechenmaschine eine eigene interne Programmiersprache, ihre Machinensprache und sie kann nur Programme verstehen und die darin beschriebene Berechnung durchf\"uhren, wenn sie in dieser Maschinensprache geschrieben ist.
 \\
 \\
-Jede Programmiersprache besteht aus Grundsymbolen und einigen Regeln, die bestimmen wie die Grundsymbole zusammengesetzt werden k\"onnen. Die Grundsymbole k\"onnen dabei Konstanten (z.B.: $0$,$1$, $2$, $odots$)) Variablen (zb.: $x$), Operationen (z.B.:$+,-$), Zuweisungen (z.B.:$x = y + 4$) oder auch Verzweigunganweisungen (z.B.: Spring zum dritten Befehl) sein.\\
+Jede Programmiersprache besteht aus Grundsymbolen und einigen sprachlichen Regeln, die bestimmen wie die Grundsymbole zusammengesetzt werden k\"onnen. Die Grundsymbole k\"onnen dabei Konstanten (z.B.: $0$, $1$, $2$, $\dots$) Variablen (zb.: $x$, $y$, $z$), Operationen (z.B.: $+$, $-$), Zuweisungen (z.B.:$x = y + 4$) oder auch Verzweigunganweisungen (z.B.: Spring zum dritten Befehl) sein.\\
 Die Regeln legen fest welche Anordnung korrekt geschriebene Programme darstellen und welche nicht interpretierbar oder nicht eindeutig interpretierbar sind.\\
 \\
 Programmieren ist das entwerfen von Programmen. Jeder der noch nichts damit zu tun hatte, kann sich das komplett analog zu einem Koch vorstellen, der ein Rezept f\"ur einen unf\"ahigen Lehrling schreibt. Das Rezept ist eine Abfolge an Operationen, die der Lehrling an der K\"uche ausf\"uhren muss, um ein Gericht herzustellen. Der Lehrling ist unf\"ahig und deshalb muss man es ihm ganz genau aufschreiben, also pr\"azise formuliert, nach gewissen Regeln, damit die Anweisung immer eindeutig ist und keine Interpretationsfreiheit zul\"asst. Genauso verh\"alt es sich mit der Programmierung einer Rechenmaschine.
@@ -1985,14 +1986,21 @@ Die Ausnahme bildet hier wieder die Eingabe. Die Kontrolle wann die Eingabe send
 Die Kontrolleiheit ist der zentrale Kern des Rechners. Sie kommuniziert mit dem Programmspeicher, um die n\"achste Anweisung zu erhalten und \"ubersetzt diese dann in zeitlich abgestimmte Signale an die einzelnen Module. Die Module f\"uhren dann die durch die Anweisung bestimmte Berechnung durch.
 \\
 \\
-Wir k\"onnen die Kontrolleinheit in zwei Teilmodule aufspalten, n\"amlich einem \textbf{Taktgeber} und einem \textbf{Ausf\"uhrer}. Der Taktgeber erzeugt zwei Taktsignale, ein regul\"ares Taktsignal in Form einer Rechteckswelle und ein um einige Nanosekunden versetztes von der Form her identes Schreibsignal, dass dazu dient den Modulen die Schreibbefehle zu senden.\\
-\\
-Der Grund warum wir ein extra Schreibsignal brauchen liegt in einer Verz\"ogerung der jede elektronische Komponente im Rechner unterliegt. Erst nach einer kurzen Zeit wird jede Komponente den korrekten Spannungswert liefern und ein Schreiben bevor diese Zeit vergangen ist, f\"uhrt zu Fehlern.
+Wir k\"onnen die Kontrolleinheit in zwei Teilmodule aufspalten, n\"amlich einem \textbf{Taktgeber} und einem \textbf{Ausf\"uhrer}. Der Taktgeber erzeugt drei Taktsignale.
+Eine Rechteckswelle, die als eigentliches Taktsignal bezeichnet wird. Ausgehend von diesem Taktsignal werden zwei versetzte Taktsignale ohne gegenseitige zeitliche \"Uberlappung erzeugt. Beide diese abgeleiteten Signale sollen genauso Rechteckswellen sein, wobei die erste der beiden, namens Schreibtakt, einige Nanosekunden nach dem eigentlichen Taktsignal startet und das dritte Taktsignal, namens Steuertakt, startet nachdem das Zweite endet, und endet bevor der eigentliche Takt endet.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.6]{takt.pdf}
+		\caption{Taktsignale.}
+	\end{center}
+\end{figure}
+\noindent
+Der Grund warum wir ein extra Schreibsignal und Steuersignal brauchen liegt in einer Verz\"ogerung der jede elektronische Komponente im Rechner unterliegt. Erst nach einer kurzen Zeit wird jede Komponente den korrekten Spannungswert liefern und ein Schreiben bevor diese Zeit vergangen ist, f\"uhrt zu Fehlern. Das Steuersignal dient dazu den internen Zustand der Kontrolleinheit zu manipulieren und das Zur\"ucksetz Signal an den Programmspeicher zu erzeugen. Es ist notwendig, dass nichts mehr geschrieben wird nachdem das Steuersignal entweder den internen Zustand \"andert oder ein Zur\"ucksetzsignal sendet, da sich ansonsten die Machine in einem unspezifischen Zustand befindent und gleichzeitig Schreiben darf. 
 \subsubsection{Ausf\"uhrer}
 Am Anfang des Kapitels haben wir gesehen wie die Kontrolleinheit mit den unterschiedlichen Modulen im Rechner kommuniziert. Anschlie\ss{}end haben wir in jedem der bisherigen Module gesehen welche Steuersignale jedes von ihnen ben\"otigt. In diesem Abschnitt wird gezeigt wie der Ausf\"uhrer mit dem Programmspeicher kommuniziert, und abh\"angig von seinem internen Zustand, der vom Programmspeicher gesendeten Anweisung und dem Flag diese Steuersignale erzeugt. 
 \\
 \\
-Der Ausf\"uhrer hat vier ein Bit Eing\"ange. Einen Eingang f\"ur das Flag, einen Eingang f\"ur das Taktsignal, einen f\"ur das Schreib Signal und einen Eingang zum Einschalten der Rechenmaschine.\\
+Der Ausf\"uhrer hat f\"unf ein Bit Eing\"ange. Einen Eingang f\"ur das Flag, einen Eingang f\"ur das Taktsignal, einen f\"ur den Schreib Takt, einen f\"ur den Steuertakt und einen Eingang zum Einschalten der Rechenmaschine.\\
 \\
 Die Kommunikation mit dem Programmspeicher ist sehr einfach gestaltet. Es gibt zwei ein Bit Ausg\"ange namens \textbf{n\"achste Anweisung} und \textbf{Zur\"ucksetzen}. Ersterer kommuniziert dem Programmspeicher, dass er zur n\"achsten Anweisung im Speicher gehen soll und Letzterer teilt dem Programmspeicher mit, dass er zur\"uck zur ersten Anweisung gehen soll.\\
 Als Antwort erh\"alt der Ausf\"uhrer an einem acht Bit Eingang, namens \textbf{Anweisung von Programmspeicher} die gesuchte Anweisung in Form eines acht Bit Wortes.\\
@@ -2002,7 +2010,7 @@ Intern hat der Ausf\"uhrer zwei Zust\"ande, die durch RS-Flip-Flops implementier
 Es folgt wie in jedem Modul bisher ein bildliche Zusammenfassung. Da es eine Menge Ausg\"ange gibt mit selbsterkl\"arendem Namen, verzichte ich darauf sie alle hier im Text aufzuz\"ahlen, sondern verweise auf die Abbildung.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.3]{Ausfuehrer.pdf}
+		\includegraphics[scale=0.265]{Ausfuehrer.pdf}
 		\caption{Ausf\"uhrer.}
 	\end{center}
 \end{figure}
@@ -2068,11 +2076,11 @@ Starten wir beim Einschaltvorgang. Wenn wir den ein Bit Eingang namens \textbf{E
 Der aktive Ausgang des AN FLip-Flops wird \"uber ein UND Gatter, dessen Ausgang wiederum den \textbf{n\"achste Anweisung} Ausgang darstellt, mit dem Taktsignal verkn\"upft.
 Hierdurch wird sicher gestellt, dass die Machine h\"alt wenn der AN Flip-Flop inaktiv ist. Zus\"atzlich wird der IF Flip-Flop durch das AN Signal zur\"uckgesetzt.\\
 \\
-Das \textbf{Schreib Takt} Signal wird durch ein UND Gatter mit dem Flag Eingang verkn\"upft, sodass ein getaktetes Flag Signal gebildet wird.\\
+Das \textbf{Steuer Takt} Signal wird durch ein UND Gatter mit dem Flag Eingang verkn\"upft, sodass ein getaktetes Flag Signal gebildet wird.\\
 \\
-Der acht Bit Eingang vom Programmspeicher teilt sich in drei Segmente. Die ersten drei Bit sind an die drei Adresseing\"ange eines acht Bit analog Multiplexers gebunden. Die n\"achsten vier Bit bilden direkt den Ausgang \textbf{Datenadresse} und der letzte Bit wird \"uber ein UND Gatter mit dem \textbf{Schreib Takt} verbunden. Das letztere Signal vom Ausgang des UND Gatters setzt den IF Flip-Flop zur\"uck.\\
+Der acht Bit Eingang vom Programmspeicher teilt sich in drei Segmente. Die ersten drei Bit sind an die drei Adresseing\"ange eines acht Bit analog Multiplexers gebunden. Die n\"achsten vier Bit bilden direkt den Ausgang \textbf{Datenadresse} und der letzte Bit wird \"uber ein UND Gatter mit dem \textbf{Steuer Takt} verbunden. Das letztere Signal vom Ausgang des UND Gatters setzt den IF Flip-Flop zur\"uck.\\
 \\
-Der erste Ausgang des Multiplexers ist mit de Schreibtakt verkn\"upft durch ein UND-Gatter dessen Ausgang den \textbf{AN} Flip-Flop zur\"ucksetzt. Hierdurch wird \textbf{HALT} implementiert.\\
+Der erste Ausgang des Multiplexers ist mit de Steuertakt verkn\"upft durch ein UND-Gatter dessen Ausgang den \textbf{AN} Flip-Flop zur\"ucksetzt. Hierdurch wird \textbf{HALT} implementiert.\\
 Der zweite Ausgang des Multiplexers wird mit dem gatakteten Flag Signal durch ein UND-Gatter verkn\"upft. Das resultierende Signal setzt den \textbf{IF} FLip-Flop.
 Dies implementiert den \textbf{IF} Befehl.\\
 Der letzte Ausgang des Multiplexers ist ebenfalls \"uber ein UND-Gatter mit dem getakteten Flag verbunden. Der Ausgang des UND-Gatters bildet dann den Ausgang \textbf{Zur\"ucksetzen}.\\
@@ -2117,8 +2125,13 @@ Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den 
 		0\\
 		0\\
 		0\\
-\end{tabular}  
-
+\end{tabular}\\  
+\\
+Die Implementierung dieses Teils des Ausf\"uhrers erfolgt ohne viel Nachdenkens. Für jeden Ausgang des Multiplexers betrachten wir die entsprechende Zeile in der Tabelle und verbinden den Multiplexerausgang mit jedem durch Eins gekennzeichneten Ausgang des Ausf\"uhrers.
+Falls mehrere Multiplexer Ausg\"ange mit dem selben Ausf\"uhrer Ausgang verbunden werden sollen, m\"ussen Diese zuerst durch ein ODER-Gatter mit entsprechend vielen Eing\"angen verkn\"upft werden. Der Ausgang des ODER-Gatters f\"uhrt dann zum gewollten Ausf\"uhrer Ausgang.\\
+\\
+Abschlie\ss{}end muss noch der \textbf{Register Schreiben} und der \textbf{Speicher Schreiben} jeder f\"ur sich mit dem \textbf{Schreib Takt} per UND-Gatter verkn\"upft werden. Hierdurch erzeugt man die eigentlichen Schreib Takt gesteuerte Schreibsignale.
+\chapter{Programmierung der Rechenmaschine}
 \end{document}
 
 

@@ -85,15 +85,16 @@
 \contentsline {paragraph}{\"Ubungsbeispiel}{82}{section*.49}%
 \contentsline {subsection}{\numberline {6.1.4}Der BUS}{82}{subsection.6.1.4}%
 \contentsline {subsection}{\numberline {6.1.5}Kontrolleinheit}{83}{subsection.6.1.5}%
-\contentsline {subsubsection}{Ausf\"uhrer}{83}{section*.50}%
+\contentsline {subsubsection}{Ausf\"uhrer}{84}{section*.50}%
 \contentsline {section}{\numberline {6.2}Entwicklungsentscheidungen}{85}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Maschinensprache}{86}{section.6.3}%
-\contentsline {paragraph}{HALT:}{86}{section*.51}%
-\contentsline {paragraph}{IF:}{86}{section*.52}%
-\contentsline {paragraph}{NAND + 3 bit Addresse:}{86}{section*.53}%
+\contentsline {paragraph}{HALT:}{87}{section*.51}%
+\contentsline {paragraph}{IF:}{87}{section*.52}%
+\contentsline {paragraph}{NAND + 3 bit Addresse:}{87}{section*.53}%
 \contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{87}{section*.54}%
 \contentsline {paragraph}{PUSH + 4 bit Addresse:}{87}{section*.55}%
 \contentsline {paragraph}{POP + 4 bit Addresse:}{87}{section*.56}%
 \contentsline {paragraph}{LOAD + 4 bit Wort:}{87}{section*.57}%
-\contentsline {paragraph}{RESET IF:}{87}{section*.58}%
-\contentsline {section}{\numberline {6.4}Funktionsweise der Kontrolleinheit}{87}{section.6.4}%
+\contentsline {paragraph}{RESET IF:}{88}{section*.58}%
+\contentsline {section}{\numberline {6.4}Funktionsweise der Kontrolleinheit}{88}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Programmierung der Rechenmaschine}{91}{chapter.7}%
