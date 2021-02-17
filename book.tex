@@ -1982,6 +1982,14 @@ Bis auf die Kommunikation mit der Eingabe und dem Rechenkern verl\"auft jeder Au
 \\
 Die Kontrolle wann ein Modul Daten an den BUS sendet und wann es sie empf\"angt wird, wie wir in den bisherigen Modulen gesehen haben, durch die Kontrolleinheit direkt an den Modulen gesteuert. Dies ist der Grund warum jedes Modul Eing\"ange hat, die ihm sagen ob es Schreiben oder Lesen soll.\\
 Die Ausnahme bildet hier wieder die Eingabe. Die Kontrolle wann die Eingabe sendet wird direkt im BUS Modul \"uber vier UND-Gatter implementiert. Hierbei darf nicht vergessen werden, dass die vier Bits im Befehl der vom Befehlsspeicher kommt sowohl als Eingabe dient als auch als Adresse f\"ur den Speicher.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{bus.pdf}
+		\caption{BUS Modul.}
+	\end{center}
+\end{figure}
+\noindent
+
 \subsection{Kontrolleinheit}
 Die Kontrolleiheit ist der zentrale Kern des Rechners. Sie kommuniziert mit dem Programmspeicher, um die n\"achste Anweisung zu erhalten und \"ubersetzt diese dann in zeitlich abgestimmte Signale an die einzelnen Module. Die Module f\"uhren dann die durch die Anweisung bestimmte Berechnung durch.
 \\
@@ -2130,7 +2138,17 @@ Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den 
 Die Implementierung dieses Teils des Ausf\"uhrers erfolgt ohne viel Nachdenkens. Für jeden Ausgang des Multiplexers betrachten wir die entsprechende Zeile in der Tabelle und verbinden den Multiplexerausgang mit jedem durch Eins gekennzeichneten Ausgang des Ausf\"uhrers.
 Falls mehrere Multiplexer Ausg\"ange mit dem selben Ausf\"uhrer Ausgang verbunden werden sollen, m\"ussen Diese zuerst durch ein ODER-Gatter mit entsprechend vielen Eing\"angen verkn\"upft werden. Der Ausgang des ODER-Gatters f\"uhrt dann zum gewollten Ausf\"uhrer Ausgang.\\
 \\
-Abschlie\ss{}end muss noch der \textbf{Register Schreiben} und der \textbf{Speicher Schreiben} jeder f\"ur sich mit dem \textbf{Schreib Takt} per UND-Gatter verkn\"upft werden. Hierdurch erzeugt man die eigentlichen Schreib Takt gesteuerte Schreibsignale.
+Abschlie\ss{}end muss noch der \textbf{Register Schreiben} und der \textbf{Speicher Schreiben} jeder f\"ur sich mit dem \textbf{Schreib Takt} per UND-Gatter verkn\"upft werden. Hierdurch erzeugt man die eigentlichen Schreib Takt gesteuerte Schreibsignale.\\
+\\
+Die gew\"unschte Funktionalit\"at l\"asst sich mit nur wenig Aufwand implementieren.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{aus_2.pdf}
+		\caption{restlicher Ausf\"uhrer.}
+	\end{center}
+\end{figure}
+\noindent
+Die Symbole 3, 4, 5 ,6 und 7 stehen hierbei f\"ur die entsprechenden Ausg\"ange des Multiplexers.
 \chapter{Programmierung der Rechenmaschine}
 \end{document}
 
