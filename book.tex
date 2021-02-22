@@ -1941,6 +1941,7 @@ Der Bau unseres Register l\"asst sich sehr einfach mit f\"unf D-Flip-Flops und v
 \end{figure}
 \noindent
 Wir sehen im Plan im Gegensatz zum Schema jeweils einen vier Bit Eingang und einen vier Bit Ausgang. Beim Zusammenbau der Rechenmaschine werden sp\"ater alle Ausg\"ange der unterschiedlichen Module \"uber ein gemeinsames ODER-Gatter in den BUS eingleitet, der direkt an den Eing\"angen liegt. Dementsprechend werden die Ein- und Ausg\"ange verbunden.
+\newpage
 \subsection{Der Rechenkern}
 Die harte Arbeit im Rechner, also die Implementierung der Grundoperationen \"ubernimmt der Rechenkern. Er ist dabei daf\"ur verantwortlich abh\"angig vom einkommenden Steuersignal die richtige Operation auszuw\"ahlen, und das korrekte Resultat der Operation, angewendet auf die einkommenden Operanden, auszugeben\\
 \\
@@ -1973,15 +1974,12 @@ Das beschriebene Verhalten l\"asst sich leicht durch folgenden logischen Schaltp
 \end{figure}
 \noindent
 \paragraph{\"Ubungsbeispiel}: Analysiere den logischen Schaltplan und identifiziere welche Komponente welche Aufgabe \"ubernimmt.
+\newpage
 \subsection{Der BUS}
-Ein BUS ist ein Modul, dass der Kommunikation mehrerer Komponenten in einer Rechenmaschine dient. Hierbei muss kontrolliert werden, dass immer nur die gewollte Komponente sendet und die richtige Komponente empf\"angt.\\
-Im Fall unserer Rechenmaschine stellt der BUS den zentralen vier Bit Kommunikationskanal dar. Jeder Austausch von vier Bit Daten zwischen der Eingabe, dem Register, dem Rechenkern und dem Speicher wird durch den BUS vermittelt. Der BUS selbst besteht aus vier Leitern, den vier Bits, und hat einen Eingang f\"uer jede Komponente, die an der Kommunikation beteiligt sein wird.\\
-Eine Ausnahme bildet die \"Ubermittelung der Operanden vom Speicher zum Rechenkern. Diese erfolgt ja direkt.\\
+Ein BUS wird in einer Rechenmaschine verwendet um die Kommunikation mehrerer Komponenten miteinander zu erm\"oglichen. Der BUS selbst besteht dabei aus einem mehrere Bit gro\ss{}en Kanals, durch den genau zwei Komponenten miteinander reden k\"onnen. Es gibt dabei immer einen Sender und einen Empf\"anger. Falls man mehr als zwei Komponenten hat oder bl\ss{} Komminikation in beide Richtugen zwischen zwei Komponenten zu erm\"oglichen will, muss man pr\"azise steuern wann eine Komponente redet, wann sie schweigt und wann sie zuh\"oren soll. Das Prinzip ist, dass immer genau eine Komponente reden soll und alle anderen w\"ahrenddessen schweigen sollen.\\
+Im Fall unserer Rechenmaschine ist der BUS ein vier Bit breiter Kommunikationskanal \"uber den, wie in der Skizze zu Beginn dieses Kapitels zu erkennen ist, beinahe jeglicher Datenaustausch l\"auft.\\
 \\
-Bis auf die Kommunikation mit der Eingabe und dem Rechenkern verl\"auft jeder Austausch mit dem BUS in beide Richtungen. Die Eingabe und der Rechenkern k\"onnen beide nur Daten an den BUS senden, und nicht empfangen.\\
-\\
-Die Kontrolle wann ein Modul Daten an den BUS sendet und wann es sie empf\"angt wird, wie wir in den bisherigen Modulen gesehen haben, durch die Kontrolleinheit direkt an den Modulen gesteuert. Dies ist der Grund warum jedes Modul Eing\"ange hat, die ihm sagen ob es Schreiben oder Lesen soll.\\
-Die Ausnahme bildet hier wieder die Eingabe. Die Kontrolle wann die Eingabe sendet wird direkt im BUS Modul \"uber vier UND-Gatter implementiert. Hierbei darf nicht vergessen werden, dass die vier Bits im Befehl der vom Befehlsspeicher kommt sowohl als Eingabe dient als auch als Adresse f\"ur den Speicher.
+Der BUS hat entsprechend folgendes Eingabe/Ausgabe Schema.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.3]{bus.pdf}
@@ -1989,6 +1987,11 @@ Die Ausnahme bildet hier wieder die Eingabe. Die Kontrolle wann die Eingabe send
 	\end{center}
 \end{figure}
 \noindent
+Wir sehe die vier Module, die im BUS senden d\"urfen, aber nur ein Steuersignal \textbf{Lesen}, dass kontrolliert ob die Eingabe sendet oder nicht. Die Eingabe ist dabei ein von der Kontrolleinheit kommendes vier Bit Signal, dass direkt aus dem Programm im Programmspeicher ausgelesen wurde.\\
+Die \"ubrigen Module wurden bereits mit einem Kontrolleingang geplant, der festlegt ob sie gerade in den BUS senden oder nicht. Im Prinzip lie\ss{}e sich dieses Kontrollsignal auch direkt in der Kontrolleinheit implentieren, aber diese ist ohnehin schon komplex genug, wie wir gleich sehen werden.\\
+Der vier Bit Ausgang, namens \textbf{Ausgang BUS}, dient als Anschluss f\"ur alle Module, die empfangen sollen. Die korrekten Anschl\"usse finden sich in der Skizze zu Beginn des Kapitels.\\
+\\
+Ein m\"oglicher logischer Schaltplan um das erw\"unschte Verhalten zu bekommen, ist der Folgende.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.9]{BUS.pdf}
@@ -1996,6 +1999,7 @@ Die Ausnahme bildet hier wieder die Eingabe. Die Kontrolle wann die Eingabe send
 	\end{center}
 \end{figure}
 \noindent
+\newpage
 \subsection{Kontrolleinheit}
 Die Kontrolleiheit ist der zentrale Kern des Rechners. Sie kommuniziert mit dem Programmspeicher, um die n\"achste Anweisung zu erhalten und \"ubersetzt diese dann in zeitlich abgestimmte Signale an die einzelnen Module. Die Module f\"uhren dann die durch die Anweisung bestimmte Berechnung durch.
 \\
