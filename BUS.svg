@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="155.59171mm"
+   width="175.38582mm"
    height="111.97872mm"
-   viewBox="0 0 155.59171 111.97872"
+   viewBox="0 0 175.38582 111.97872"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.9899495"
-     inkscape:cx="272.87518"
-     inkscape:cy="233.06589"
+     inkscape:zoom="5.6"
+     inkscape:cx="358.45434"
+     inkscape:cy="293.20519"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -262,7 +262,7 @@
        id="line66-7-9-3-4-1-6" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.59;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 124.48096,102.80179 -87.754765,0.0663"
+       d="m 118.56741,102.7896 -87.754762,0.0663"
        id="path1253"
        sodipodi:nodetypes="cc" />
     <ellipse
@@ -521,7 +521,7 @@
          id="tspan129-3-5-6-2-92"
          x="119.63598"
          y="29.203043"
-         style="font-size:4.23333px;stroke-width:0.264583">1. Bit BUS</tspan></text>
+         style="font-size:4.23333px;stroke-width:0.264583">1. Bit Ausgang BUS</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -532,7 +532,7 @@
          id="tspan129-3-5-6-2-92-2"
          x="132.38899"
          y="39.968994"
-         style="font-size:4.23333px;stroke-width:0.264583">2. Bit BUS</tspan></text>
+         style="font-size:4.23333px;stroke-width:0.264583">2. Bit Ausgang BUS</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -543,7 +543,7 @@
          id="tspan129-3-5-6-2-92-7"
          x="145.07706"
          y="50.483147"
-         style="font-size:4.23333px;stroke-width:0.264583">3. Bit BUS</tspan></text>
+         style="font-size:4.23333px;stroke-width:0.264583">3. Bit Ausgang BUS</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -554,6 +554,6 @@
          id="tspan129-3-5-6-2-92-9"
          x="156.6925"
          y="63.008102"
-         style="font-size:4.23333px;stroke-width:0.264583">4. Bit BUS</tspan></text>
+         style="font-size:4.23333px;stroke-width:0.264583">4. Bit Ausgang BUS</tspan></text>
   </g>
 </svg>
