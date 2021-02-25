@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.9)  23 FEB 2021 00:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.9)  25 FEB 2021 21:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2250,223 +2250,227 @@ Package pdftex.def Info: Plan.pdf  used on input line 1893.
 <Speicher.pdf, id=1409, 520.8065pt x 894.15721pt>
 File: Speicher.pdf Graphic file (type pdf)
 <use Speicher.pdf>
-Package pdftex.def Info: Speicher.pdf  used on input line 1911.
+Package pdftex.def Info: Speicher.pdf  used on input line 1902.
 (pdftex.def)             Requested size: 156.24315pt x 268.24924pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1899--1914
+ [77 <./Plan.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1906--1918
 
  []
 
 
-Overfull \hbox (13.84038pt too wide) in paragraph at lines 1899--1914
+Overfull \hbox (13.84038pt too wide) in paragraph at lines 1906--1918
 \OT1/lmr/m/n/10.95 Daten zwis-chen Reg-is-ter und Spe-icher hin und her zu tran
 s-portieren. Zus^^?atzlich
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1899--1914
-
- []
-
-[77 <./Plan.pdf>]
-<register.pdf, id=1423, 423.55688pt x 325.15465pt>
-File: register.pdf Graphic file (type pdf)
-<use register.pdf>
-Package pdftex.def Info: register.pdf  used on input line 1930.
-(pdftex.def)             Requested size: 127.06804pt x 97.54713pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1917--1933
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1917--1933
+Underfull \hbox (badness 10000) in paragraph at lines 1906--1918
 
  []
 
 [78 <./Speicher.pdf>]
-<reg.pdf, id=1466, 449.1128pt x 283.07658pt>
+<register.pdf, id=1465, 423.55688pt x 325.15465pt>
+File: register.pdf Graphic file (type pdf)
+<use register.pdf>
+Package pdftex.def Info: register.pdf  used on input line 1933.
+(pdftex.def)             Requested size: 127.06804pt x 97.54713pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1920--1936
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1920--1936
+
+ []
+
+[79]
+<reg.pdf, id=1470, 449.1128pt x 283.07658pt>
 File: reg.pdf Graphic file (type pdf)
 <use reg.pdf>
-Package pdftex.def Info: reg.pdf  used on input line 1938.
+Package pdftex.def Info: reg.pdf  used on input line 1941.
 (pdftex.def)             Requested size: 314.3768pt x 198.15225pt.
- [79 <./register.pdf>] [80 <./reg.pdf>]
-<ALU.pdf, id=1520, 517.38074pt x 323.29912pt>
+ [80 <./register.pdf> <./reg.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./reg.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+>]
+<ALU.pdf, id=1519, 517.38074pt x 323.29912pt>
 File: ALU.pdf Graphic file (type pdf)
 <use ALU.pdf>
-Package pdftex.def Info: ALU.pdf  used on input line 1955.
+Package pdftex.def Info: ALU.pdf  used on input line 1958.
 (pdftex.def)             Requested size: 155.21541pt x 96.99048pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1946--1958
+Underfull \hbox (badness 10000) in paragraph at lines 1949--1961
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1946--1958
+Underfull \hbox (badness 10000) in paragraph at lines 1949--1961
 
  []
 
-<Kern.pdf, id=1521, 529.23026pt x 346.30284pt>
+<Kern.pdf, id=1520, 529.23026pt x 346.30284pt>
 File: Kern.pdf Graphic file (type pdf)
 <use Kern.pdf>
-Package pdftex.def Info: Kern.pdf  used on input line 1971.
+Package pdftex.def Info: Kern.pdf  used on input line 1974.
 (pdftex.def)             Requested size: 317.5406pt x 207.7833pt.
 
-Overfull \hbox (5.13208pt too wide) in paragraph at lines 1959--1974
+Overfull \hbox (5.13208pt too wide) in paragraph at lines 1962--1977
 \OT1/lmr/m/n/10.95 Wir haben zwei vier Bit Eing^^?ange f^^?ur den \OT1/lmr/bx/n
 /10.95 linken \OT1/lmr/m/n/10.95 und den \OT1/lmr/bx/n/10.95 rechten Operand\OT
 1/lmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1959--1974
+Underfull \hbox (badness 10000) in paragraph at lines 1962--1977
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1959--1974
+Underfull \hbox (badness 10000) in paragraph at lines 1962--1977
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1959--1974
+Underfull \hbox (badness 10000) in paragraph at lines 1962--1977
 
  []
 
 
-Overfull \hbox (0.43738pt too wide) in paragraph at lines 1959--1974
+Overfull \hbox (0.43738pt too wide) in paragraph at lines 1962--1977
 \OT1/lmr/m/n/10.95 Das beschriebene Ver-hal-ten l^^?asst sich le-icht durch fol
 -gen-den lo-gis-chen Schalt-
  []
 
 [81 <./ALU.pdf>] [82 <./Kern.pdf>]
-<bus.pdf, id=1592, 598.76205pt x 322.52065pt>
+<bus.pdf, id=1591, 598.76205pt x 322.52065pt>
 File: bus.pdf Graphic file (type pdf)
 <use bus.pdf>
-Package pdftex.def Info: bus.pdf  used on input line 1985.
+Package pdftex.def Info: bus.pdf  used on input line 1988.
 (pdftex.def)             Requested size: 179.62999pt x 96.75693pt.
 
-Overfull \hbox (12.84552pt too wide) in paragraph at lines 1979--1988
-\OT1/lmr/m/n/10.95 Kom-minika-tion in beide Rich-tu-gen zwis-chen zwei Kom-po-n
-en-ten zu erm^^?oglichen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1979--1988
+Underfull \hbox (badness 10000) in paragraph at lines 1982--1991
 
  []
 
-<BUS.pdf, id=1593, 499.02098pt x 318.61034pt>
+<BUS.pdf, id=1592, 499.02098pt x 318.61034pt>
 File: BUS.pdf Graphic file (type pdf)
 <use BUS.pdf>
-Package pdftex.def Info: BUS.pdf  used on input line 1997.
+Package pdftex.def Info: BUS.pdf  used on input line 2000.
 (pdftex.def)             Requested size: 399.21732pt x 254.8886pt.
 
-Overfull \hbox (39.21732pt too wide) in paragraph at lines 1997--1998
+Overfull \hbox (39.21732pt too wide) in paragraph at lines 2000--2001
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1989--2000
+Underfull \hbox (badness 10000) in paragraph at lines 1992--2003
 
  []
 
 [83 <./bus.pdf>] [84 <./BUS.pdf>]
-<takt.pdf, id=1654, 433.62pt x 289.08pt>
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+006.
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+<takt.pdf, id=1653, 433.62pt x 289.08pt>
 File: takt.pdf Graphic file (type pdf)
 <use takt.pdf>
-Package pdftex.def Info: takt.pdf  used on input line 2011.
+Package pdftex.def Info: takt.pdf  used on input line 2015.
 (pdftex.def)             Requested size: 260.17401pt x 173.44933pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2004--2014
+Underfull \hbox (badness 10000) in paragraph at lines 2008--2018
 
  []
 
 
-Overfull \hbox (0.80078pt too wide) in paragraph at lines 2004--2014
+Overfull \hbox (0.80078pt too wide) in paragraph at lines 2008--2018
 \OT1/lmr/m/n/10.95 Wir k^^?onnen die Kon-trollein-heit in zwei Teilmod-ule auf-
 s-pal-ten, n^^?amlich einem
  []
 
-<Ausfuehrer.pdf, id=1655, 589.5999pt x 743.78506pt>
+[85 <./takt.pdf>]
+<Ausfuehrer.pdf, id=1680, 589.5999pt x 743.78506pt>
 File: Ausfuehrer.pdf Graphic file (type pdf)
 <use Ausfuehrer.pdf>
-Package pdftex.def Info: Ausfuehrer.pdf  used on input line 2031.
+Package pdftex.def Info: Ausfuehrer.pdf  used on input line 2035.
 (pdftex.def)             Requested size: 156.24323pt x 197.1021pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2018--2034
+Underfull \hbox (badness 10000) in paragraph at lines 2022--2038
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2018--2034
+Underfull \hbox (badness 10000) in paragraph at lines 2022--2038
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2018--2034
+Underfull \hbox (badness 10000) in paragraph at lines 2022--2038
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2018--2034
+Underfull \hbox (badness 10000) in paragraph at lines 2022--2038
 
  []
 
-[85 <./takt.pdf>] [86]
-Underfull \hbox (badness 10000) in paragraph at lines 2039--2053
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2039--2053
+[86]
+Underfull \hbox (badness 10000) in paragraph at lines 2043--2057
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2039--2053
+Underfull \hbox (badness 10000) in paragraph at lines 2043--2057
 
  []
 
 
-Overfull \hbox (7.55261pt too wide) in paragraph at lines 2039--2053
+Underfull \hbox (badness 10000) in paragraph at lines 2043--2057
+
+ []
+
+
+Overfull \hbox (7.55261pt too wide) in paragraph at lines 2043--2057
 \OT1/lmr/m/n/10.95 fehl ausspucken, oder im Fall einer IF Verzwei-gung einige B
 e-fehle ^^?uberspringen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2039--2053
+Underfull \hbox (badness 10000) in paragraph at lines 2043--2057
 
  []
 
 [87 <./ausfuehrer.pdf>]
-Overfull \hbox (11.17253pt too wide) in paragraph at lines 2054--2065
+Overfull \hbox (11.17253pt too wide) in paragraph at lines 2058--2069
 \OT1/lmr/m/n/10.95 In diesem Ab-schnitt definieren wir die Pro-gram-mier-sprach
 e, die un-sere Rechen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2054--2065
+Underfull \hbox (badness 10000) in paragraph at lines 2058--2069
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2054--2065
+Underfull \hbox (badness 10000) in paragraph at lines 2058--2069
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2054--2065
+Underfull \hbox (badness 10000) in paragraph at lines 2058--2069
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2054--2065
+Underfull \hbox (badness 10000) in paragraph at lines 2058--2069
 
  []
 
 [88]
-Overfull \hbox (11.71472pt too wide) in paragraph at lines 2073--2074
+Overfull \hbox (11.71472pt too wide) in paragraph at lines 2077--2078
  []\OT1/lmr/bx/n/10.95 LOAD + 4 bit Wort:[] $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/
 10.95 b[]; b[]; b[]\OT1/lmr/m/n/10.95 ) = (1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/
 10.95 1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 0)$ Schreibt das Wort $(\OML/lm
@@ -2474,7 +2478,7 @@ m/m/it/10.95 a[]; a[]; a[]; a[]\OT1/lmr/m/n/10.95 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2074--2078
+Underfull \hbox (badness 10000) in paragraph at lines 2078--2082
 
  []
 
@@ -2482,45 +2486,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 2074--2078
 <ausfuhrer.pdf, id=1730, 575.51671pt x 321.0083pt>
 File: ausfuhrer.pdf Graphic file (type pdf)
 <use ausfuhrer.pdf>
-Package pdftex.def Info: ausfuhrer.pdf  used on input line 2086.
+Package pdftex.def Info: ausfuhrer.pdf  used on input line 2090.
 (pdftex.def)             Requested size: 345.31268pt x 192.60646pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2080--2089
+Underfull \hbox (badness 10000) in paragraph at lines 2084--2093
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2090--2107
+Underfull \hbox (badness 10000) in paragraph at lines 2094--2111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2090--2107
+Underfull \hbox (badness 10000) in paragraph at lines 2094--2111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2090--2107
+Underfull \hbox (badness 10000) in paragraph at lines 2094--2111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2090--2107
+Underfull \hbox (badness 10000) in paragraph at lines 2094--2111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2090--2107
+Underfull \hbox (badness 10000) in paragraph at lines 2094--2111
 
  []
 
 [90 <./ausfuhrer.pdf>]
-Overfull \hbox (15.89731pt too wide) in paragraph at lines 2108--2120
+Overfull \hbox (15.89731pt too wide) in paragraph at lines 2112--2124
  [] 
  []
 
 
-Overfull \hbox (4.75232pt too wide) in paragraph at lines 2122--2134
+Overfull \hbox (4.75232pt too wide) in paragraph at lines 2126--2138
  [] 
  []
 
@@ -2528,38 +2532,38 @@ Overfull \hbox (4.75232pt too wide) in paragraph at lines 2122--2134
 <aus_2.pdf, id=1756, 486.50131pt x 161.56721pt>
 File: aus_2.pdf Graphic file (type pdf)
 <use aus_2.pdf>
-Package pdftex.def Info: aus_2.pdf  used on input line 2156.
+Package pdftex.def Info: aus_2.pdf  used on input line 2160.
 (pdftex.def)             Requested size: 340.5486pt x 113.09627pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2135--2159
+Underfull \hbox (badness 10000) in paragraph at lines 2139--2163
 
  []
 
 
-Overfull \hbox (10.37411pt too wide) in paragraph at lines 2135--2159
+Overfull \hbox (10.37411pt too wide) in paragraph at lines 2139--2163
 \OT1/lmr/m/n/10.95 denkens. F^^?ur je-den Aus-gang des Mul-ti-plex-ers be-tra-c
 hten wir die entsprechende
  []
 
 
-Overfull \hbox (15.99522pt too wide) in paragraph at lines 2135--2159
+Overfull \hbox (15.99522pt too wide) in paragraph at lines 2139--2163
 \OT1/lmr/m/n/10.95 m^^?ussen Diese zuerst durch ein ODER-Gatter mit entsprechen
 d vie-len Eing^^?angen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2135--2159
+Underfull \hbox (badness 10000) in paragraph at lines 2139--2163
 
  []
 
 
-Overfull \hbox (20.43025pt too wide) in paragraph at lines 2135--2159
+Overfull \hbox (20.43025pt too wide) in paragraph at lines 2139--2163
 \OT1/lmr/m/n/10.95 Abschlie^^Yend muss noch der \OT1/lmr/bx/n/10.95 Reg-is-ter 
 Schreiben \OT1/lmr/m/n/10.95 und der \OT1/lmr/bx/n/10.95 Spe-icher Schreiben
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2135--2159
+Underfull \hbox (badness 10000) in paragraph at lines 2139--2163
 
  []
 
@@ -2568,11 +2572,11 @@ Kapitel 7.
 [94
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2163.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2163.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2167.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2167.
  (./book.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2163.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2163.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2167.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2167.
 
 Package rerunfilecheck Info: File `book.out' has not changed.
 (rerunfilecheck)             Checksum: 94DFA98D36763A05E446C4F431D27913;2917.
@@ -2580,38 +2584,38 @@ Package rerunfilecheck Info: File `book.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2163.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2167.
  ) 
 Here is how much of TeX's memory you used:
- 20137 strings out of 481239
- 364815 string characters out of 5920378
- 621655 words of memory out of 5000000
- 34432 multiletter control sequences out of 15000+600000
- 606876 words of font info for 69 fonts, out of 8000000 for 9000
+ 20170 strings out of 481239
+ 365644 string characters out of 5920378
+ 621657 words of memory out of 5000000
+ 34461 multiletter control sequences out of 15000+600000
+ 607241 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,14n,60p,1320b,1957s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/l
-m/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texm
-f/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx
-12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/font
-s/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmtti10.pfb>
-Output written on book.pdf (95 pages, 1347097 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
+vips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/
+share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
+m-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf
+/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+r6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
+Output written on book.pdf (95 pages, 1347997 bytes).
 PDF statistics:
- 1959 PDF objects out of 2073 (max. 8388607)
- 1592 compressed objects within 16 object streams
+ 1961 PDF objects out of 2073 (max. 8388607)
+ 1594 compressed objects within 16 object streams
  499 named destinations out of 1000 (max. 500000)
  632 words of extra memory for PDF output out of 10000 (max. 10000000)
 

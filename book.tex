@@ -1896,7 +1896,16 @@ Das zentrale Modul der Machine ist die \textbf{Kontrolleinheit}, die mit dem \te
 \end{figure}
 \noindent
 \subsection{Speicher}
-Die Rechenmaschine hat einen Daten Speicher von 16 Worten. Er kann sich also gleichzeitig 16 vier Bit lange Worte merken. Jeder dieser ein Wort fassenden Speicherbl\"ocke hat eine 4 Bit lange Addresse mit der er angesprochen werden kann.\\
+Die Rechenmaschine hat einen Daten Speicher von 16 Worten. Er kann sich also gleichzeitig 16 vier Bit lange Worte merken. Jeder dieser ein Wort fassenden Speicherbl\"ocke hat eine 4 Bit lange Addresse mit der er angesprochen werden kann.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{Speicher.pdf}
+		\caption{Speichermodul.}
+	\end{center}
+\end{figure}
+\noindent
+Die Abbildung zeigt das was wir Schema des Moduls nennen werden. Es fasst alle als Eingang verwendeten Anschl\"usse durch blau unterlegte Symbole zusammen und alle Ausg\"ange durch rot hinterlegte Symbole zusammen. Ein Bit Anschl\"usse werden durch kleine Kreise dargestellt und vier Bit Anschl\"usse durch rechteckige K\"astchen. 
+Die \"ubrigen nicht farblich hinterlegten Symbole stellen in diesem Fall interne Komponenten des Moduls dar, die nicht direkt manipulierbar sind.\\
 \\
 Das Speicher Modul hat einen vier Bit Ausgang/Eingang Anschluss um Daten zwischen Register und Speicher hin und her zu transportieren. Zus\"atzlich gibt es einen vier Bit Anschluss an dem die Addresse angelegt wird.
 Es gibt noch drei ein Bit Eing\"ange mit den Namen \textbf{Schreiben}, \textbf{Lesen} und \textbf{Operation}.\\
@@ -1906,13 +1915,7 @@ Falls wir aber ein Wort an einer bestimmten Adresse lesen wollen, setzen wir die
 \\
 Man unterscheidet Speicherbl\"ocke deren Adresse auf Null endet und solche deren Adresse auf Eins endet. Erstere wollen wir linker Speicher und letzere rechter Speicher nennen. Wenn eine bin\"are Operation ausgef\"uhrt wird, ist jeweils der linke Operand aus dem Linken und der rechte Operand aus dem rechten Speicher.\\
 Deshalb gibt es einen \textbf{Operation} Modus, der aktiv ist wenn am Operation Eingang Eins anliegt. Im Operation Modus wird das letzte Bit der Adresse $(a_1, a_2, a_3, a_4))$ ignoriert und stattdessen am Ausgang \textbf{Linker Operand} der Inhalt vom Speicherblock mit der Adresse $(a_1, a_2, a_3, 0))$ ausgegeben und am Ausgang \textbf{Rechter Operand} der Inhalt der Speicheradresse $(a_1, a_2, a_3, 1))$ ausgegeben.
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[scale=0.3]{Speicher.pdf}
-		\caption{Speichermodul.}
-	\end{center}
-\end{figure}
-\noindent
+
 \subsection{Das Register}
 Normalerweise \"ubernehmen Register in einer Rechenmaschine eine Aufgabe analog zu Schmierzetteln beim h\"andisch Rechnen. Es gibt nur einige wenige davon im Gegensatz zum gro\ss{}en Speicher, ihr Inhalt kann schnell manipuliert werden und in vielen F\"allen k\"onnen Operanden und Resultate von Rechenoperationen nur Register sein. Bei unserer Rechenmaschine gilt dies nur teilweise. Auf jeden Fall gibt es nur ein einzelnes vier Bit Register, aber die Zugriffszeiten des Registers unterscheiden sich nicht von denen des Hauptspeichers.\\
 \\
@@ -1976,7 +1979,7 @@ Das beschriebene Verhalten l\"asst sich leicht durch folgenden logischen Schaltp
 \paragraph{\"Ubungsbeispiel}: Analysiere den logischen Schaltplan und identifiziere welche Komponente welche Aufgabe \"ubernimmt.
 \newpage
 \subsection{Der BUS}
-Ein BUS wird in einer Rechenmaschine verwendet um die Kommunikation mehrerer Komponenten miteinander zu erm\"oglichen. Der BUS selbst besteht dabei aus einem mehrere Bit gro\ss{}en Kanals, durch den genau zwei Komponenten miteinander reden k\"onnen. Es gibt dabei immer einen Sender und einen Empf\"anger. Falls man mehr als zwei Komponenten hat oder bl\ss{} Komminikation in beide Richtugen zwischen zwei Komponenten zu erm\"oglichen will, muss man pr\"azise steuern wann eine Komponente redet, wann sie schweigt und wann sie zuh\"oren soll. Das Prinzip ist, dass immer genau eine Komponente reden soll und alle anderen w\"ahrenddessen schweigen sollen.\\
+Ein BUS wird in einer Rechenmaschine verwendet um die Kommunikation mehrerer Komponenten miteinander zu erm\"oglichen. Der BUS selbst besteht dabei aus einem mehrere Bit gro\ss{}en Kanal, durch den genau zwei Komponenten miteinander reden k\"onnen. Es gibt dabei immer einen Sender und einen Empf\"anger. Falls man mehr als zwei Komponenten hat oder blo\ss{} Komminikation in beide Richtugen zwischen zwei Komponenten zu erm\"oglichen will, muss man pr\"azise steuern wann eine Komponente redet, wann sie schweigt und wann sie zuh\"oren soll. Das Prinzip ist, dass immer genau eine Komponente reden soll und alle anderen zu dieser Zeit schweigen sollen.\\
 Im Fall unserer Rechenmaschine ist der BUS ein vier Bit breiter Kommunikationskanal \"uber den, wie in der Skizze zu Beginn dieses Kapitels zu erkennen ist, beinahe jeglicher Datenaustausch l\"auft.\\
 \\
 Der BUS hat entsprechend folgendes Eingabe/Ausgabe Schema.
@@ -1999,7 +2002,8 @@ Ein m\"oglicher logischer Schaltplan um das erw\"unschte Verhalten zu bekommen, 
 	\end{center}
 \end{figure}
 \noindent
-\newpage
+Die Kontrolle \"uber die Eingabe wird durch UND-Gatter erm\"oglicht. Wir erkennen, dass nur, dann ein Signal durchgelassen wird wenn auch das \textbf{Lesen} Signal Eins ist. Das resultierende vier Bit Signal und die Signale der anderen Eing\"ange werden dann \"uber Oder-Gatter kombiniert. 
+\newpage´
 \subsection{Kontrolleinheit}
 Die Kontrolleiheit ist der zentrale Kern des Rechners. Sie kommuniziert mit dem Programmspeicher, um die n\"achste Anweisung zu erhalten und \"ubersetzt diese dann in zeitlich abgestimmte Signale an die einzelnen Module. Die Module f\"uhren dann die durch die Anweisung bestimmte Berechnung durch.
 \\
