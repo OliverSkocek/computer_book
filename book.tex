@@ -1886,8 +1886,10 @@ Die einfachste M\"oglichkeit w\"are es eine Rechenmaschine mit Wortl\"ange Eins 
 Ich habe mich entschieden f\"ur uns eine 4Bit Rechner zu bauen. Daher wir arbeiten mit der Wortl\"ange vier, wodurch wir zumindest nat\"urliche Zahlen von 0 bis 15 oder ganze Zahlen von -7 bis +7 darstellen k\"onnen. Vier Bit werden auch ein Nibble genannt, genauso wie acht Bit auch ein Byte genannt werden.\\
 \\
 \section{Aufbau der Rechenmaschine}
-In diesem Abschnitt besprechen wir den groben Aufbau der Rechenmaschine. Hierbei werden die einzelnen Module vorgestellt und beschrieben wie Diese kommunizieren.
-Das zentrale Modul der Machine ist die \textbf{Kontrolleinheit}, die mit dem \textbf{Programmspeicher} kommuniziert, den Zustand der Machine \"uber das \textbf{Flag} liest und Kommandos an alle anderen Module schickt um die im Programmspeicher beschriebene Berechnung durchzuf\"urhren. Malen wir zuerst ein Bild der Module und der Kommunikationskan\"ale zwischen Ihnen. 
+In diesem Abschnitt wird der grobe Aufbau unserer Rechenmaschine vorgestellt. Dies geschieht auf der Ebene von Modulen. Ein Modul ist ein Bauelement, dass eine einfach zu verstehende Funktion erf\"ullt und bis auf eine streng definiertes Eingabe-Ausgabe Verhalten in sich geschlossen ist. Jedes der Module erf\"ullt eine grundlegende Aufgabe der Rechenmaschine und besteht aus einer Verkn\"upfung von logischen Gattern.\\
+\\
+Das Herz der Rechenmaschine ist die Kontrolleinheit. Sie hat die Aufgabe aus dem Programmspeicher den n\"achsten Befehl abzurufen, und den anderen Modulen zu sagen, was von ihnen verlangt wird um dem Befehl folge zu leisten. Der Speicher dient wie nicht anders zu erwarten ist dem Speichern von vier Bit Worten. Worte im Speicher k\"onnen im Rechenkern durch mathematische Operationen verkn\"upft werden. Das Ergebnis der Operation landet dann im Register. Abh\"angig vom Ausgang der Operation wird auch ein Flag, dass sich ebenfalls im Register befindet auf Eins oder auf Null gesetzt.
+Das Register kann aber auch direkt Inhalte aus dem Speicher annehmen oder an Speicheradressen im Speicher senden. Der BUS dient dabei als Kommunikationskanal f\"ur vier Bit \"Ubertragung zwischen den Modulen. Das ist im Prinzip alles was wir ben\"otigen. Betrachten wir kurz eine Skizze des Aufbaus unserer Rechenmaschine.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.5]{Plan.pdf}
@@ -1895,6 +1897,12 @@ Das zentrale Modul der Machine ist die \textbf{Kontrolleinheit}, die mit dem \te
 	\end{center}
 \end{figure}
 \noindent
+Die Pfeile symbolisieren  Kommunikation de zwischen den Modulen stattfinden kann. Wir sehen zum Beispiel, dass die Kontrolleinheit allen Modulen Nachrichten schickt, aber nur vom Register Nachrichten zur\"uckbekommen kann. Die Kontrolleinheit braucht n\"amlich das Flag um Informationen \"uber den Ausgang von Rechenoperationen zu bekommen. Dies ist notwendig, wenn die Kontrolleinheit eine bedingte Verzweigung ausf\"uhren soll.
+Der Rechenkern bekommt seine Eingabe vom Speicher und sendet sie an den BUS. Der BUS kann mit dem Speicher und dem Register in beide Richtungen kommunizieren. Wir geben der Rechenmaschine aber nicht die M\"oglichkeit direkt die Ausgabe vom Rechenkern in den Speicher zu schicken, da es sonst zu Instabilit\"aten kommen kann. Dies kann passieren, wenn an die Speicheradresse geschrieben wird von der gerade gelesen wird. Die Kommunikation zwischen der Kontrolleinheit und dem Programmspeicher geht auch in beide Richtungen, da die Kontrolleinheit die Reihenfolge der Befehle ver\"andern k\"onnen muss.
+\\
+\\
+In den folgenden Abschnitten werden die Module einzeln vorgestellt und im Detail beschrieben. Am Ende dieses Kapitels haben wir dann eine vollst\"andige Rechenmaschine konstruiert.
+\newpage
 \subsection{Speicher}
 Die Rechenmaschine hat einen Daten Speicher von 16 Worten. Er kann sich also gleichzeitig 16 vier Bit lange Worte merken. Jeder dieser ein Wort fassenden Speicherbl\"ocke hat eine 4 Bit lange Addresse mit der er angesprochen werden kann.
 \begin{figure}[H]
