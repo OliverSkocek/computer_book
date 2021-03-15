@@ -668,7 +668,7 @@ $$\phi_3\wedge(\phi_1\vee(\neg\phi_1))$$
 Wir kommen nun zu einer sehr n\"utzlichen Werkzeug zur Behandlung von aussagenlogischen Formeln, den Wahrheitstafeln. Hier wird eine Tabelle mit allen m\"oglichen Wahrheitswerten f\"ur die Atome der aussagenlogischen Formel gebildet und f\"ur jede dieser Kombinationen schreibt man in der letzten Spalte den Wahrheitswert den die Formel f\"ur diese Kombination ergeben w\"urde.\\
 \\
 Wahrheitstafeln sind somit ein allgemeines Format zur Darstellung beliebiger aussagenlogischer Verkn\"upfunen und eignen sich hervorragend zum Finden von L\"osungen aussagenlogischer Erf\"ullbarkeitsprobleme, die wir gleich an- schlie\ss{}end behandeln werden.
-Starten wir mit den Wahrheitstafeln der drei Grund- verkn\"upfungen Verneinung, Und und Oder.
+Starten wir mit den Wahrheitstafeln der drei Grundverkn\"upfungen Verneinung, Und und Oder.
 \begin{center}
 \begin{minipage}{1.0in}
 	\begin{tabular}{|c|c|}
@@ -2172,6 +2172,89 @@ Die gew\"unschte Funktionalit\"at l\"asst sich mit nur wenig Aufwand implementie
 \noindent
 Die Symbole 3, 4, 5 ,6 und 7 stehen hierbei f\"ur die entsprechenden Ausg\"ange des Multiplexers.
 \chapter{Programmierung der Rechenmaschine}
+Wir kommen nun endlich zur Ernte der Früchte unserer Bemühungen. In diesem Kapitel vergewissern wir uns, dass unsere Rechenmaschine tats\"achlich eine universelle Programmiersprache implementiert, soweit dies \"uberhaupt dies \"uberhaupt f\"ur eine physikalische Machine m\"oglich ist.\\
+Dies wird in mehreren Schritten gezeigt. Zuerst vergewissern wir uns, dass wir mit unseren Grundfunktionen Vier Bit Addition und Gleichheit darstellen k\"onnen. Anschlie\ss{}end wird gezeigt, dass wir WHILE- Schleifen und beliebige IF-THEN-END Verzweigungen ausdr\"ucken k\"onnen. Zum Abschluss wird noch gezeigt wie Addressierung und Programmaufrufe funktionieren k\"onnen.
+\section{Addition}
+Die Addition zweier bin\"arer Zahlen erfolgt analog zu dem Verfahren, dass wir in der Schule f\"ur dekadische Zahlen gelernt haben. Nehmen wir als Beispiel der Addition von $7 = 0111$ und $6=0110$.
+Wir schreiben die beiden Zahlen \"ubereinander, so dass die erste Stelle der einen Zahl \"uber der ersten Stelle der anderen Zahl steht.
+\begin{center}
+	\begin{tabular}{c c c c}
+		0 & 1 & 1 & 1\\
+		0 & 1 & 1 & 0\\
+		\hline
+	\end{tabular}  
+\end{center}
+Wir addieren die erste Stelle. Falls sie den Wert Null oder Eins ergibt, ist dieser Wert dann die erste Stelle des Ergebnisses und der \"Uberlauf zur n\"achsten Stelle ist Null. Falls der Wert aber Zwei ergibt, dann kommt der Wert Null an die erste Stelle des Ergebnisses und wir haben einen \"Uberlauf von Eins zur n\"achsten Stelle.  
+\begin{center}
+	\begin{tabular}{c c c c}
+		$0$ & $1$ & $1$ & $1$\\
+		$0$ & $1$ & $1_0$ & $0$\\
+		\hline
+		 & &  & $1$\\
+	\end{tabular}  
+\end{center}
+Wir fahren fort und rechnen die Werte an der zweiten Stelle und den \"Uberlauf zusammen. Falls das Ergebnis Null, Eins oder Zwei ist, handeln wir wie bei der ersten Stelle. Falls wir aber als Ergebnis drei erhalten, ist der \"Uberlauf zur n\"achsten Stelle, sowie der Wert des Resultats an der zweiten Stelle gleich Eins.  
+
+\begin{center}
+	\begin{tabular}{c c c c}
+		$0$ & $1$ & $1$ & $1$\\
+		$0$ & $1_1$ & $1$ & $0$\\
+		\hline
+		& & $0$ & $1$\\
+	\end{tabular}  
+\end{center}
+Die \"ubrigen Stellen werden dann ganz analog zur zweiten behandelt.
+\begin{center}
+	\begin{tabular}{c c c c}
+		$0$ & $1$ & $1$ & $1$\\
+		$0_1$ & $1$ & $1$ & $0$\\
+		\hline
+		& $1$ & $0$ & $1$\\
+	\end{tabular}  
+\end{center}
+\begin{center}
+	\begin{tabular}{c c c c}
+		$0$ & $1$ & $1$ & $1$\\
+		$0$ & $1$ & $1$ & $0$\\
+		\hline
+		$1$& $1$ & $0$ & $1$\\
+	\end{tabular}  
+\end{center}
+\noindent
+Modifizieren wir dieses Verfahren ein wenig. Bilden wir zun\"achst die Summe der beiden Zahlen ohne Ber\"ucksichtigung der \"Uberl\"aufe.
+\begin{center}
+	\begin{tabular}{c c c c}
+		$0$ & $1$ & $1$ & $1$\\
+		$0$ & $1$ & $1$ & $0$\\
+		\hline
+		$0$& $0$ & $0$ & $1$\\
+	\end{tabular}  
+\end{center}
+\noindent
+Diese Operation entspricht einer stellenweisen XOR Operation. Um das korrekte Resultat zu erhalten m\"ussen wir hierzu die ignorierten \"Uberl\"aufe hinzuaddieren. Die \"Uberl\"aufe sind einfach das Resultat der stellenweisen logischen UND Operation, das um eine Stelle nach links verschoben wurde.
+\begin{center}
+	\begin{tabular}{c c c c c}
+		&$0$ & $1$ & $1$ & $1$\\
+		&$0$ & $1$ & $1$ & $0$\\
+		\hline
+		&$0$& $1$ & $1$ & $0$\\
+				\hline
+		$0$&$1$& $1$ & $0$ & $0$\\
+	\end{tabular}  
+\end{center}
+\noindent
+Es wird sich zeigen, dass die Summe $x + y$ zweier bin\"arer Zahlen gleich der Summe $XOR(x,y) + LSHIFT(AND(x,y))$ ist.\\
+Im einfachsten Fall ergibt das logische UND f\"ur jede Stelle Nullen und wir sind fertig. Im Fall des obigen Beispiels von $7 + 6$ muss die Umwandlung der Summe ein zweites mal durchgef\"uhrt werden und wir haben das Ergebnis bereits errechnet.
+\begin{center}
+	\begin{tabular}{c c c c c}
+		&$0$& $0$ & $0$ & $1$\\
+		$0$&$1$& $1$ & $0$ & $0$\\
+		\hline
+		$0$&$1$& $1$ & $0$ & $1$\\
+	\end{tabular}  
+\end{center}
+\noindent
+Falls der \"Uberlauf immer Null ist, ist es leicht zu sehen, dass die Addition einfach das stellenweise XOR ist. Die Positionen an denen ein \"Uberlauf 
 \end{document}
 
 
