@@ -2175,8 +2175,8 @@ Die Symbole 3, 4, 5 ,6 und 7 stehen hierbei f\"ur die entsprechenden Ausg\"ange 
 Wir kommen nun endlich zur Ernte der Früchte unserer Bemühungen. In diesem Kapitel vergewissern wir uns, dass unsere Rechenmaschine tats\"achlich eine universelle Programmiersprache implementiert, soweit dies \"uberhaupt dies \"uberhaupt f\"ur eine physikalische Machine m\"oglich ist.\\
 Dies wird in mehreren Schritten gezeigt. Zuerst vergewissern wir uns, dass wir mit unseren Grundfunktionen Vier Bit Addition und Gleichheit darstellen k\"onnen. Anschlie\ss{}end wird gezeigt, dass wir WHILE- Schleifen und beliebige IF-THEN-END Verzweigungen ausdr\"ucken k\"onnen. Zum Abschluss wird noch gezeigt wie Addressierung und Programmaufrufe funktionieren k\"onnen.
 \section{Addition}
-Die Addition zweier bin\"arer Zahlen erfolgt analog zu dem Verfahren, dass wir in der Schule f\"ur dekadische Zahlen gelernt haben. Nehmen wir als Beispiel der Addition von $7 = 0111$ und $6=0110$.
-Wir schreiben die beiden Zahlen \"ubereinander, so dass die erste Stelle der einen Zahl \"uber der ersten Stelle der anderen Zahl steht.
+Die Addition zweier bin\"arer Zahlen funktioniert analog zu dem Verfahren, dass wir in der Schule f\"ur dekadische Zahlen gelernt haben. Nehmen wir als Beispiel der Addition der Zahl $0111$ mit der Zahl $0110$, oder in gewohnter dekadischer Darstellung $7$ plus $6$.
+Wir schreiben die beiden Zahlen wie gewohnt \"ubereinander, sodass die Stellen rechtsb\"undig \"ubereinander angeordnet sind.
 \begin{center}
 	\begin{tabular}{c c c c}
 		0 & 1 & 1 & 1\\
@@ -2184,7 +2184,7 @@ Wir schreiben die beiden Zahlen \"ubereinander, so dass die erste Stelle der ein
 		\hline
 	\end{tabular}  
 \end{center}
-Wir addieren die erste Stelle. Falls sie den Wert Null oder Eins ergibt, ist dieser Wert dann die erste Stelle des Ergebnisses und der \"Uberlauf zur n\"achsten Stelle ist Null. Falls der Wert aber Zwei ergibt, dann kommt der Wert Null an die erste Stelle des Ergebnisses und wir haben einen \"Uberlauf von Eins zur n\"achsten Stelle.  
+Wir addieren die erste Stelle. Falls dies den Wert $0$ oder $1$ ergibt, ist das auch der Wert der ersten Stelle des Ergebnisses. Der \"Uberlauf zur n\"achsten Stelle ist dann Null. Falls es jeddoch $2$ ergibt, dann kommt der Wert $0$ an die erste Stelle des Ergebnisses und wir haben einen \"Uberlauf von $1$ zur n\"achsten Stelle.  
 \begin{center}
 	\begin{tabular}{c c c c}
 		$0$ & $1$ & $1$ & $1$\\
@@ -2193,8 +2193,7 @@ Wir addieren die erste Stelle. Falls sie den Wert Null oder Eins ergibt, ist die
 		 & &  & $1$\\
 	\end{tabular}  
 \end{center}
-Wir fahren fort und rechnen die Werte an der zweiten Stelle und den \"Uberlauf zusammen. Falls das Ergebnis Null, Eins oder Zwei ist, handeln wir wie bei der ersten Stelle. Falls wir aber als Ergebnis drei erhalten, ist der \"Uberlauf zur n\"achsten Stelle, sowie der Wert des Resultats an der zweiten Stelle gleich Eins.  
-
+Wir fahren fort und rechnen die Werte an der zweiten Stelle und den \"Uberlauf zusammen. Falls das Ergebnis $0$, $1$ oder $2$ ist, handeln wir wie bei der ersten Stelle. Falls wir aber als Ergebnis $3$ erhalten, ist der \"Uberlauf zur n\"achsten Stelle, sowie der Wert des Resultats an der zweiten Stelle gleich Eins.  
 \begin{center}
 	\begin{tabular}{c c c c}
 		$0$ & $1$ & $1$ & $1$\\
@@ -2221,7 +2220,7 @@ Die \"ubrigen Stellen werden dann ganz analog zur zweiten behandelt.
 	\end{tabular}  
 \end{center}
 \noindent
-Modifizieren wir dieses Verfahren ein wenig. Bilden wir zun\"achst die Summe der beiden Zahlen ohne Ber\"ucksichtigung der \"Uberl\"aufe.
+Modifizieren wir dieses Verfahren ein wenig. Hierzu bilden wir zun\"achst die Summe der beiden Zahlen ohne Ber\"ucksichtigung der \"Uberl\"aufe.
 \begin{center}
 	\begin{tabular}{c c c c}
 		$0$ & $1$ & $1$ & $1$\\
@@ -2231,7 +2230,7 @@ Modifizieren wir dieses Verfahren ein wenig. Bilden wir zun\"achst die Summe der
 	\end{tabular}  
 \end{center}
 \noindent
-Diese Operation entspricht einer stellenweisen XOR Operation. Um das korrekte Resultat zu erhalten m\"ussen wir hierzu die ignorierten \"Uberl\"aufe hinzuaddieren. Die \"Uberl\"aufe sind einfach das Resultat der stellenweisen logischen UND Operation, das um eine Stelle nach links verschoben wurde.
+Diese Operation entspricht einer stellenweisen XOR Operation. Um das korrekte Resultat zu erhalten m\"ussen wir hierzu f\"ur die ignorierten \"Uberl\"aufe kompensieren. Bei jeder Stelle haben wir einen \"Uberlauf ignoriert, wenn das logische UND der beiden Stellen $1$ ergeben hat. 
 \begin{center}
 	\begin{tabular}{c c c c c}
 		&$0$ & $1$ & $1$ & $1$\\
@@ -2243,7 +2242,12 @@ Diese Operation entspricht einer stellenweisen XOR Operation. Um das korrekte Re
 	\end{tabular}  
 \end{center}
 \noindent
-Es wird sich zeigen, dass die Summe $x + y$ zweier bin\"arer Zahlen gleich der Summe $XOR(x,y) + LSHIFT(AND(x,y))$ ist.\\
+Wir sehen also, dass ein hinzuaddieren des Resultats der um eine Stelle nach links verschobenen stellenweise UND Operation genau f\"ur den begangenen Fehler kompensiert.
+\begin{proposition}
+	Seien $x$ und $y$ zwei bin\"are Zahlen dann gilt:
+	$$x + y = XOR(x,y) + LSHIFT(AND(x,y))$$
+\end{proposition}
+\noindent
 Im einfachsten Fall ergibt das logische UND f\"ur jede Stelle Nullen und wir sind fertig. Im Fall des obigen Beispiels von $7 + 6$ muss die Umwandlung der Summe ein zweites mal durchgef\"uhrt werden und wir haben das Ergebnis bereits errechnet.
 \begin{center}
 	\begin{tabular}{c c c c c}
@@ -2254,7 +2258,11 @@ Im einfachsten Fall ergibt das logische UND f\"ur jede Stelle Nullen und wir sin
 	\end{tabular}  
 \end{center}
 \noindent
-Falls der \"Uberlauf immer Null ist, ist es leicht zu sehen, dass die Addition einfach das stellenweise XOR ist. Die Positionen an denen ein \"Uberlauf 
+Die Frage die sich jetzt noch stellt ist, ob mehrmaliges hintereinander Ausf\"uhren dieser Umwandlung immer dazu f\"uhrt, dass einer der Summanden Null wird. Dies l\"asst sich mit ja beantworten.
+\begin{proposition}
+	Seien $x$ und $y$ bin\"are Zahlen der L\"ange $n$, dann ergibt $n$ maliges anwenden der Umwandlung aus Satz 7.1 einen linken Summanden der gleich der Summe ist und einen rechten Summanden der gleich Null ist.
+\end{proposition}
+
 \end{document}
 
 
