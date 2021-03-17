@@ -98,4 +98,5 @@
 \contentsline {paragraph}{RESET IF:}{92}{section*.58}%
 \contentsline {section}{\numberline {6.4}Funktionsweise der Kontrolleinheit}{92}{section.6.4}%
 \contentsline {chapter}{\numberline {7}Programmierung der Rechenmaschine}{96}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Addition}{96}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Addition und Gleichheit}{96}{section.7.1}%
+\contentsline {section}{\numberline {7.2}IF-THEN-END}{98}{section.7.2}%

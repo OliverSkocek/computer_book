@@ -2174,7 +2174,7 @@ Die Symbole 3, 4, 5 ,6 und 7 stehen hierbei f\"ur die entsprechenden Ausg\"ange 
 \chapter{Programmierung der Rechenmaschine}
 Wir kommen nun endlich zur Ernte der Früchte unserer Bemühungen. In diesem Kapitel vergewissern wir uns, dass unsere Rechenmaschine tats\"achlich eine universelle Programmiersprache implementiert, soweit dies \"uberhaupt dies \"uberhaupt f\"ur eine physikalische Machine m\"oglich ist.\\
 Dies wird in mehreren Schritten gezeigt. Zuerst vergewissern wir uns, dass wir mit unseren Grundfunktionen Vier Bit Addition und Gleichheit darstellen k\"onnen. Anschlie\ss{}end wird gezeigt, dass wir WHILE- Schleifen und beliebige IF-THEN-END Verzweigungen ausdr\"ucken k\"onnen. Zum Abschluss wird noch gezeigt wie Addressierung und Programmaufrufe funktionieren k\"onnen.
-\section{Addition}
+\section{Addition und Gleichheit}
 Die Addition zweier bin\"arer Zahlen funktioniert analog zu dem Verfahren, dass wir in der Schule f\"ur dekadische Zahlen gelernt haben. Nehmen wir als Beispiel der Addition der Zahl $0111$ mit der Zahl $0110$, oder in gewohnter dekadischer Darstellung $7$ plus $6$.
 Wir schreiben die beiden Zahlen wie gewohnt \"ubereinander, sodass die Stellen rechtsb\"undig \"ubereinander angeordnet sind.
 \begin{center}
@@ -2260,9 +2260,21 @@ Im einfachsten Fall ergibt das logische UND f\"ur jede Stelle Nullen und wir sin
 \noindent
 Die Frage die sich jetzt noch stellt ist, ob mehrmaliges hintereinander Ausf\"uhren dieser Umwandlung immer dazu f\"uhrt, dass einer der Summanden Null wird. Dies l\"asst sich mit ja beantworten.
 \begin{proposition}
-	Seien $x$ und $y$ bin\"are Zahlen der L\"ange $n$, dann ergibt $n$ maliges anwenden der Umwandlung aus Satz 7.1 einen linken Summanden der gleich der Summe ist und einen rechten Summanden der gleich Null ist.
+	Seien $x$ und $y$ bin\"are Zahlen der L\"ange $n$, dann ergibt $n$ maliges anwenden der Umwandlung aus Satz 7.1 einen linken Summanden der gleich der gesuchten Summe ist und einen rechten Summanden der gleich Null ist.
 \end{proposition}
-
+\noindent
+Der Satz 7.2 und der Satz 7.1 erm\"oglichen es uns, die arithmetische Addition mit folgendes Programm durch UND, XOR und Linksverschiebung auszudr\"ucken.
+\begin{lstlisting}
+		WHILE Y
+			Z = XOR(X, Y)
+			Y = UND(X, Y)
+			X=Z
+			Y = LSHIFT(Y)
+\end{lstlisting}
+Die XOR Operation und die UND Operation lassen sich ja so wie jede bin\"are Operation durch NAND Operationen ausdr\"ucken. Somit haben wir gezeigt, dass unsere ALU zusammen mit einer Implementierung von WHILE Schleifen die Additions Operation durchf\"uhren kann.\\
+\\
+Offensichtlich k\"onnen wir die XOR Operation ausnutzen um in unserer Maschinensprache eine IF oder RESET IF Anweisung bedingt auf die Gleichheit oder Ungleichheit zweier W\"orter zu verwenden.
+\section{IF-THEN-END}
 \end{document}
 
 
