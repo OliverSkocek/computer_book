@@ -42,4 +42,7 @@
 \BOOKMARK [1][-]{section.6.4}{Funktionsweise der Kontrolleinheit}{chapter.6}% 42
 \BOOKMARK [0][-]{chapter.7}{Programmierung der Rechenmaschine}{}% 43
 \BOOKMARK [1][-]{section.7.1}{Addition und Gleichheit}{chapter.7}% 44
-\BOOKMARK [1][-]{section.7.2}{IF-THEN-END}{chapter.7}% 45
+\BOOKMARK [1][-]{section.7.2}{Beispiele}{chapter.7}% 45
+\BOOKMARK [2][-]{subsection.7.2.1}{Acht Bit Addition}{section.7.2}% 46
+\BOOKMARK [2][-]{subsection.7.2.2}{Multiplikation}{section.7.2}% 47
+\BOOKMARK [2][-]{subsection.7.2.3}{Fibonacci Zahlen}{section.7.2}% 48

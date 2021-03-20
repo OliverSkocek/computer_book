@@ -2054,7 +2054,7 @@ in der Theorie interessant, da sie nat\"urlich mehr Rechenschritte ben\"otigen a
 Ebenso galt es die Kontrolleinheit so einfach wie m\"oglich zu gestalten um eine physikalische Realisierung mit so wenigen Bauteilen wie m\"oglich zu gew\"ahrleisten. Dies musste nat\"urlich unter der Bedingung geschehen, dass unsere Rechenmaschine mit universeller Berechenbarkeit ausgestattet ist.
 \\
 \\
-Um zu zeigen, dass unsere Rechenmaschine ein universelle Programmiersprache darstellt, m\"ussen wir lediglich einen Algorithmus finden, der die Additions Operation mit unseren beiden Grundoperationen und den zu verf\"ugung stehenden bedingten Verzweigungen ausdr\"uckt.
+Um zu zeigen, dass unsere Rechenmaschine ein universelle Programmiersprache implementiert, m\"ussen wir lediglich einen Algorithmus finden, der die Additions Operation mit unseren beiden Grundoperationen und den zu verf\"ugung stehenden bedingten Verzweigungen ausdr\"uckt.
 \\
 \\
 Bevor wir dies tun k\"onnen m\"ussen wir den Rest unserer Programmiersprache definieren. Meine Wahl fiel hierbei auf WHILE-Programme mit IF Verzweigungen. Insbesondere lie\ss{} ich mich einschr\"anken durch die Tatsache, dass die Kontrolleinheit der Rechenmaschine selbst keine Additionsoperationen ausf\"uhren soll, da dies die Sinnhaftigkeit der Einschr\"ankung auf die beiden gew\"ahlten Grundoperationen zu absurd scheinen l\"asst. Dies f\"uhrte mich zur Kleenschen Normalform. Jedes WHILE-Programm, aber auch jedes GOTO- Programm l\"asst sich umschreiben sodass nur einer WHILE Schleife beziehungsweise GOTO Aufruf verwendet wird.\\
@@ -2173,7 +2173,7 @@ Die gew\"unschte Funktionalit\"at l\"asst sich mit nur wenig Aufwand implementie
 Die Symbole 3, 4, 5 ,6 und 7 stehen hierbei f\"ur die entsprechenden Ausg\"ange des Multiplexers.
 \chapter{Programmierung der Rechenmaschine}
 Wir kommen nun endlich zur Ernte der Früchte unserer Bemühungen. In diesem Kapitel vergewissern wir uns, dass unsere Rechenmaschine tats\"achlich eine universelle Programmiersprache implementiert, soweit dies \"uberhaupt dies \"uberhaupt f\"ur eine physikalische Machine m\"oglich ist.\\
-Dies wird in mehreren Schritten gezeigt. Zuerst vergewissern wir uns, dass wir mit unseren Grundfunktionen Vier Bit Addition und Gleichheit darstellen k\"onnen. Anschlie\ss{}end wird gezeigt, dass wir WHILE- Schleifen und beliebige IF-THEN-END Verzweigungen ausdr\"ucken k\"onnen. Zum Abschluss wird noch gezeigt wie Addressierung und Programmaufrufe funktionieren k\"onnen.
+Dies wird in mehreren Schritten gezeigt. Zuerst vergewissern wir uns, dass wir mit unseren Grundfunktionen Vier Bit Addition und Gleichheit darstellen k\"onnen. Damit haben wir bereits gezeigt, dass sich beliebige WHILE-Programme in unsrer Maschinensprache ausdr\"ucken lassen. Nat\"urlich mit der Einschr\"ankung, dass die Variablen und Kontrollstrukturen, die notwendig sind in den Speicher passen, aber diese Einschr\"ankung hat jede Rechenmaschine. Um zu zeigen, dass sich interessante Programme f\"ur unsere Rechenmaschine schreiben lassen, geben wir zum Abschluss ein paar Beispiele. Hierzu geh\"oren Kontrollstrukturen f\"ur IF-THEN-END Anweisungen, acht Bit Addition, Multiplikation und ein Programm, dass Fibonacci Zahlen ausspuckt.
 \section{Addition und Gleichheit}
 Die Addition zweier bin\"arer Zahlen funktioniert analog zu dem Verfahren, dass wir in der Schule f\"ur dekadische Zahlen gelernt haben. Nehmen wir als Beispiel der Addition der Zahl $0111$ mit der Zahl $0110$, oder in gewohnter dekadischer Darstellung $7$ plus $6$.
 Wir schreiben die beiden Zahlen wie gewohnt \"ubereinander, sodass die Stellen rechtsb\"undig \"ubereinander angeordnet sind.
@@ -2245,7 +2245,7 @@ Diese Operation entspricht einer stellenweisen XOR Operation. Um das korrekte Re
 Wir sehen also, dass ein hinzuaddieren des Resultats der um eine Stelle nach links verschobenen stellenweise UND Operation genau f\"ur den begangenen Fehler kompensiert.
 \begin{proposition}
 	Seien $x$ und $y$ zwei bin\"are Zahlen dann gilt:
-	$$x + y = XOR(x,y) + LSHIFT(AND(x,y))$$
+	$$x + y = XOR(x,y) + LSHIFT(UND(x,y))$$
 \end{proposition}
 \noindent
 Im einfachsten Fall ergibt das logische UND f\"ur jede Stelle Nullen und wir sind fertig. Im Fall des obigen Beispiels von $7 + 6$ muss die Umwandlung der Summe ein zweites mal durchgef\"uhrt werden und wir haben das Ergebnis bereits errechnet.
@@ -2273,8 +2273,14 @@ Der Satz 7.2 und der Satz 7.1 erm\"oglichen es uns, die arithmetische Addition m
 \end{lstlisting}
 Die XOR Operation und die UND Operation lassen sich ja so wie jede bin\"are Operation durch NAND Operationen ausdr\"ucken. Somit haben wir gezeigt, dass unsere ALU zusammen mit einer Implementierung von WHILE Schleifen die Additions Operation durchf\"uhren kann.\\
 \\
+In Wahrheit kommen wir auch ohne WHILE-Schleife aus, da wir ja wissen, dass die Umwandlung bei zwei n-Bit lange Zahlen maximal $n$ mal durchgef\"uhrt werden muss. Au\ss{}erdem \"andert die Umwandlung nichts mehr sobald die UND Operation einmal Null ergeben hat.\\
+\\
 Offensichtlich k\"onnen wir die XOR Operation ausnutzen um in unserer Maschinensprache eine IF oder RESET IF Anweisung bedingt auf die Gleichheit oder Ungleichheit zweier W\"orter zu verwenden.
-\section{IF-THEN-END}
+\section{Beispiele}
+\subsection{Acht Bit Addition}
+\subsection{Multiplikation}
+\subsection{Fibonacci Zahlen}
+
 \end{document}
 
 
