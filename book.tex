@@ -2017,10 +2017,14 @@ Die Kontrolleiheit ist der zentrale Kern des Rechners. Sie kommuniziert mit dem 
 \\
 \\
 Wir k\"onnen die Kontrolleinheit in zwei Teilmodule aufspalten, n\"amlich einem \textbf{Taktgeber} und einem \textbf{Ausf\"uhrer}. Der Taktgeber erzeugt drei Taktsignale.
-Eine Rechteckswelle, die als eigentliches Taktsignal bezeichnet wird. Ausgehend von diesem Taktsignal werden zwei versetzte Taktsignale ohne gegenseitige zeitliche \"Uberlappung erzeugt. Beide diese abgeleiteten Signale sollen genauso Rechteckswellen sein, wobei die erste der beiden, namens Schreibtakt, einige Nanosekunden nach dem eigentlichen Taktsignal startet und das dritte Taktsignal, namens Steuertakt, startet nachdem das Zweite endet, und endet bevor der eigentliche Takt endet.
+Die Taktsignale sind drei Rechteckswellen ohne \"Uberlappung, die der Reihe nach in der sie auftreten, Taktsignal, Schreibsignal und Steuersignal genannt werden.
+Es ist dabei zu beachten, dass zwiscen diesen Signalen abh\"angig von den Charakteristiken der elektrischen Bauteile mindestens eine bestimmte Zeit vergehen muss und die Signale eine bestimmte Zeit lang sein m\"ussen.\\
+\\
+Dies wird durch einen so genannten Ring Counter und einen Rechteckswellen Generator implementiert. Der Ring Counter besitzt drei Zust\"ande durch die bei Eintreffen einer aufsteigenden Rechtecksflancke am Takteingang zyklische weitergeschalten werden. 
+Das Resultat wird in der folgenden Abbildung dargestellt. Das Rechteckssignal von Generator wird in drei Taktsignal umgewandelt. Eine gute Analogie w\"are hier ein Dirigent der den verschiedenen Teilen des Orchesters sagt wann sie Spielen und wann sie nicht Spielen sollen.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.6]{takt.pdf}
+		\includegraphics[scale=0.6]{tz.pdf}
 		\caption{Taktsignale.}
 	\end{center}
 \end{figure}

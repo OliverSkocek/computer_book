@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.9)  25 MAR 2021 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.9)  29 APR 2021 00:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2403,102 +2403,107 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<takt.pdf, id=1686, 433.62pt x 289.08pt>
-File: takt.pdf Graphic file (type pdf)
-<use takt.pdf>
-Package pdftex.def Info: takt.pdf  used on input line 2023.
+<tz.pdf, id=1686, 433.62pt x 289.08pt>
+File: tz.pdf Graphic file (type pdf)
+<use tz.pdf>
+Package pdftex.def Info: tz.pdf  used on input line 2027.
 (pdftex.def)             Requested size: 260.17401pt x 173.44933pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2016--2026
+Underfull \hbox (badness 10000) in paragraph at lines 2016--2030
 
  []
 
 
-Overfull \hbox (0.80078pt too wide) in paragraph at lines 2016--2026
+Overfull \hbox (0.80078pt too wide) in paragraph at lines 2016--2030
 \OT1/lmr/m/n/10.95 Wir k^^?onnen die Kon-trollein-heit in zwei Teilmod-ule auf-
 s-pal-ten, n^^?amlich einem
  []
 
-[87 <./takt.pdf>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 2016--2030
+
+ []
+
+[87 <./tz.pdf>]
 <Ausfuehrer.pdf, id=1713, 589.5999pt x 743.78506pt>
 File: Ausfuehrer.pdf Graphic file (type pdf)
 <use Ausfuehrer.pdf>
-Package pdftex.def Info: Ausfuehrer.pdf  used on input line 2043.
+Package pdftex.def Info: Ausfuehrer.pdf  used on input line 2047.
 (pdftex.def)             Requested size: 156.24323pt x 197.1021pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2030--2046
+Underfull \hbox (badness 10000) in paragraph at lines 2034--2050
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2030--2046
+Underfull \hbox (badness 10000) in paragraph at lines 2034--2050
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2030--2046
+Underfull \hbox (badness 10000) in paragraph at lines 2034--2050
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2030--2046
+Underfull \hbox (badness 10000) in paragraph at lines 2034--2050
 
  []
 
 [88]
-Underfull \hbox (badness 10000) in paragraph at lines 2051--2065
+Underfull \hbox (badness 10000) in paragraph at lines 2055--2069
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2051--2065
+Underfull \hbox (badness 10000) in paragraph at lines 2055--2069
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2051--2065
+Underfull \hbox (badness 10000) in paragraph at lines 2055--2069
 
  []
 
 
-Overfull \hbox (7.55261pt too wide) in paragraph at lines 2051--2065
+Overfull \hbox (7.55261pt too wide) in paragraph at lines 2055--2069
 \OT1/lmr/m/n/10.95 fehl ausspucken, oder im Fall einer IF Verzwei-gung einige B
 e-fehle ^^?uberspringen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2051--2065
+Underfull \hbox (badness 10000) in paragraph at lines 2055--2069
 
  []
 
 [89 <./ausfuehrer.pdf>]
-Overfull \hbox (11.17253pt too wide) in paragraph at lines 2066--2077
+Overfull \hbox (11.17253pt too wide) in paragraph at lines 2070--2081
 \OT1/lmr/m/n/10.95 In diesem Ab-schnitt definieren wir die Pro-gram-mier-sprach
 e, die un-sere Rechen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2066--2077
+Underfull \hbox (badness 10000) in paragraph at lines 2070--2081
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2066--2077
+Underfull \hbox (badness 10000) in paragraph at lines 2070--2081
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2066--2077
+Underfull \hbox (badness 10000) in paragraph at lines 2070--2081
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2066--2077
+Underfull \hbox (badness 10000) in paragraph at lines 2070--2081
 
  []
 
 [90]
-Overfull \hbox (11.71472pt too wide) in paragraph at lines 2085--2086
+Overfull \hbox (11.71472pt too wide) in paragraph at lines 2089--2090
  []\OT1/lmr/bx/n/10.95 LOAD + 4 bit Wort:[] $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/
 10.95 b[]; b[]; b[]\OT1/lmr/m/n/10.95 ) = (1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/
 10.95 1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 0)$ Schreibt das Wort $(\OML/lm
@@ -2506,7 +2511,7 @@ m/m/it/10.95 a[]; a[]; a[]; a[]\OT1/lmr/m/n/10.95 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2086--2090
+Underfull \hbox (badness 10000) in paragraph at lines 2090--2094
 
  []
 
@@ -2514,45 +2519,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 2086--2090
 <ausfuhrer.pdf, id=1764, 575.51671pt x 321.0083pt>
 File: ausfuhrer.pdf Graphic file (type pdf)
 <use ausfuhrer.pdf>
-Package pdftex.def Info: ausfuhrer.pdf  used on input line 2098.
+Package pdftex.def Info: ausfuhrer.pdf  used on input line 2102.
 (pdftex.def)             Requested size: 345.31268pt x 192.60646pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2092--2101
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2102--2119
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2102--2119
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2102--2119
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2102--2119
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2102--2119
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2123
 
  []
 
 [92 <./ausfuhrer.pdf>]
-Overfull \hbox (15.89731pt too wide) in paragraph at lines 2120--2132
+Overfull \hbox (15.89731pt too wide) in paragraph at lines 2124--2136
  [] 
  []
 
 
-Overfull \hbox (4.75232pt too wide) in paragraph at lines 2134--2146
+Overfull \hbox (4.75232pt too wide) in paragraph at lines 2138--2150
  [] 
  []
 
@@ -2560,57 +2565,57 @@ Overfull \hbox (4.75232pt too wide) in paragraph at lines 2134--2146
 <aus_2.pdf, id=1789, 486.50131pt x 161.56721pt>
 File: aus_2.pdf Graphic file (type pdf)
 <use aus_2.pdf>
-Package pdftex.def Info: aus_2.pdf  used on input line 2168.
+Package pdftex.def Info: aus_2.pdf  used on input line 2172.
 (pdftex.def)             Requested size: 340.5486pt x 113.09627pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2147--2171
+Underfull \hbox (badness 10000) in paragraph at lines 2151--2175
 
  []
 
 
-Overfull \hbox (10.37411pt too wide) in paragraph at lines 2147--2171
+Overfull \hbox (10.37411pt too wide) in paragraph at lines 2151--2175
 \OT1/lmr/m/n/10.95 denkens. F^^?ur je-den Aus-gang des Mul-ti-plex-ers be-tra-c
 hten wir die entsprechende
  []
 
 
-Overfull \hbox (15.99522pt too wide) in paragraph at lines 2147--2171
+Overfull \hbox (15.99522pt too wide) in paragraph at lines 2151--2175
 \OT1/lmr/m/n/10.95 m^^?ussen Diese zuerst durch ein ODER-Gatter mit entsprechen
 d vie-len Eing^^?angen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2147--2171
+Underfull \hbox (badness 10000) in paragraph at lines 2151--2175
 
  []
 
 
-Overfull \hbox (20.43025pt too wide) in paragraph at lines 2147--2171
+Overfull \hbox (20.43025pt too wide) in paragraph at lines 2151--2175
 \OT1/lmr/m/n/10.95 Abschlie^^Yend muss noch der \OT1/lmr/bx/n/10.95 Reg-is-ter 
 Schreiben \OT1/lmr/m/n/10.95 und der \OT1/lmr/bx/n/10.95 Spe-icher Schreiben
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2147--2171
+Underfull \hbox (badness 10000) in paragraph at lines 2151--2175
 
  []
 
 [94] [95 <./aus_2.pdf>]
 Kapitel 7.
 
-Overfull \hbox (1.8055pt too wide) in paragraph at lines 2175--2177
+Overfull \hbox (1.8055pt too wide) in paragraph at lines 2179--2181
 \OT1/lmr/m/n/10.95 diesem Kapi-tel vergewis-sern wir uns, dass un-sere Rechen-m
 as-chine tats^^?achlich
  []
 
 
-Overfull \hbox (2.83841pt too wide) in paragraph at lines 2175--2177
+Overfull \hbox (2.83841pt too wide) in paragraph at lines 2179--2181
 \OT1/lmr/m/n/10.95 wir mit un-seren Grund-funk-tio-nen Vier Bit Ad-di-tion und 
 Gle-ich-heit darstellen
  []
 
 
-Overfull \hbox (2.71805pt too wide) in paragraph at lines 2175--2177
+Overfull \hbox (2.71805pt too wide) in paragraph at lines 2179--2181
 \OT1/lmr/m/n/10.95 der Ein-schr^^?ankung, dass die Vari-ablen und Kon-troll-str
 uk-turen, die notwendig
  []
@@ -2618,33 +2623,33 @@ uk-turen, die notwendig
 [96
 
 ]
-Overfull \hbox (0.9541pt too wide) in paragraph at lines 2196--2197
+Overfull \hbox (0.9541pt too wide) in paragraph at lines 2200--2201
 \OT1/lmr/m/n/10.95 Wir fahren fort und rech-nen die Werte an der zweiten Stelle
  und den []Uberlauf
  []
 
 [97]
-Overfull \hbox (13.60753pt too wide) in paragraph at lines 2260--2262
+Overfull \hbox (13.60753pt too wide) in paragraph at lines 2264--2266
 \OT1/lmr/m/n/10.95 Die Frage die sich jetzt noch stellt ist, ob mehrma-liges hi
 n-tere-inan-der Ausf^^?uhren
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2274--2279
+Underfull \hbox (badness 10000) in paragraph at lines 2278--2283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2274--2279
+Underfull \hbox (badness 10000) in paragraph at lines 2278--2283
 
  []
 
 [98] [99]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2284.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2284.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2288.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2288.
  (./book.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2284.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2284.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2288.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2288.
 
 Package rerunfilecheck Info: File `book.out' has not changed.
 (rerunfilecheck)             Checksum: 1E76E565EFE0E986CDD7CAF25FB7EB9D;3252.
@@ -2652,12 +2657,12 @@ Package rerunfilecheck Info: File `book.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2284.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2288.
  ) 
 Here is how much of TeX's memory you used:
  20193 strings out of 481239
- 365950 string characters out of 5920378
- 621663 words of memory out of 5000000
+ 365938 string characters out of 5920378
+ 621661 words of memory out of 5000000
  34466 multiletter control sequences out of 15000+600000
  607241 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2680,7 +2685,7 @@ usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
-Output written on book.pdf (100 pages, 1357225 bytes).
+Output written on book.pdf (100 pages, 1357482 bytes).
 PDF statistics:
  2020 PDF objects out of 2073 (max. 8388607)
  1647 compressed objects within 17 object streams
