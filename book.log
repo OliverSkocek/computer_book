@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.30)  9 SEP 2021 20:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.30)  9 SEP 2021 23:20
 entering extended mode
 **./book.tex
 (book.tex
@@ -3525,10 +3525,10 @@ n logischen Schaltplan
  []
 
 [83 <./Bilder/ALU.pdf>] [84 <./Bilder/Kern.pdf>]
-<Bilder/bus.pdf, id=1612, 598.76205pt x 322.52065pt>
-File: Bilder/bus.pdf Graphic file (type pdf)
-<use Bilder/bus.pdf>
-Package pdftex.def Info: Bilder/bus.pdf  used on input line 1995.
+<Bilder/_bus.pdf, id=1612, 598.76205pt x 322.52065pt>
+File: Bilder/_bus.pdf Graphic file (type pdf)
+<use Bilder/_bus.pdf>
+Package pdftex.def Info: Bilder/_bus.pdf  used on input line 1995.
 (pdftex.def)             Requested size: 179.62999pt x 96.75693pt.
 
 Overfull \hbox (12.5718pt too wide) in paragraph at lines 1989--1998
@@ -3580,7 +3580,7 @@ Overfull \hbox (11.53746pt too wide) in paragraph at lines 1999--2010
 lten zu bekommen,
  []
 
-[85 <./Bilder/bus.pdf>] [86 <./Bilder/BUS.pdf>]
+[85 <./Bilder/_bus.pdf>] [86 <./Bilder/BUS.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 013.
 
@@ -4044,7 +4044,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2287.
  ) 
 Here is how much of TeX's memory you used:
  20650 strings out of 482850
- 383433 string characters out of 2952748
+ 383493 string characters out of 2952748
  633970 words of memory out of 3000000
  35279 multiletter control sequences out of 15000+200000
  607241 words of font info for 70 fonts, out of 3000000 for 9000
@@ -4075,7 +4075,7 @@ fb></home/skocek/.miktex/texmfs/install/fonts/type1/public/lm/lmsy8.pfb></home/
 skocek/.miktex/texmfs/install/fonts/type1/public/lm/lmsy9.pfb></home/skocek/.mi
 ktex/texmfs/install/fonts/type1/public/lm/lmtt10.pfb></home/skocek/.miktex/texm
 fs/install/fonts/type1/public/lm/lmtti10.pfb>
-Output written on book.pdf (100 pages, 1542758 bytes).
+Output written on book.pdf (100 pages, 1542759 bytes).
 PDF statistics:
  2002 PDF objects out of 2073 (max. 8388607)
  517 named destinations out of 1000 (max. 500000)
