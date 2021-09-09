@@ -1054,7 +1054,7 @@ In einem komplexen elektrischen Netzwerk kann man mehrere Spannungsquellen, beli
 Wir starten mit einem jedem bekannten Beispiel eines elektrischen Stromkreises, dem Kartoffelstromkreis.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{kartoffel.jpg}
+		\includegraphics[scale=0.5]{Bilder/kartoffel.jpg}
 		\caption{Typischer Stromkreis.}
 	\end{center}
 \end{figure}
@@ -1062,7 +1062,7 @@ Wir starten mit einem jedem bekannten Beispiel eines elektrischen Stromkreises, 
 In der Abbildung sehen wir drei Kartoffelbatterien, die mit Dr\"ahten miteinander und mit einer Gl\"uhbirne verbunden sind. Dieser Stromkreis kann als Schaltplan idealisierter Komponenten abstrahiert werden. Hierbei werden irrelevante Eigenschaften der Bausteine des Stromkreises ignoriert und durch idealisierte Bauteile dargestellt. Unser Kartoffelstromkreis wird in folgendem Schaltplan abstrahiert.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{kartoffel_diagram.pdf}
+		\includegraphics[scale=1]{Bilder/kartoffel_diagram.pdf}
 		\caption{Schaltplan.}
 	\end{center}
 \end{figure}
@@ -1074,7 +1074,7 @@ Jedes Bauteil hat eine feste Anzahl an Anschl\"ussen und ein Leiter endet immer 
 Betrachten wir ein weiteres Beispiel um dies zu illustrieren. 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.6]{circuit.pdf}
+		\includegraphics[scale=0.6]{Bilder/circuit.pdf}
 		\caption{Stromkreis.}
 	\end{center}
 \end{figure}
@@ -1113,7 +1113,7 @@ Bevor wir uns den drei Gesetzen widmen, die Strom und Spannung in einem Netzwerk
 Wir nehmen an, dass die Kanten, die Bauteile und Knoten verbinden, den Strom und die Spannung nicht beeinflu\ss{}. Ihre Interpretation soll einzig und allein das darstellen von Verbindungen zwischen Komponenten sein. Strom und Spannungs Abh\"anigkeiten werden allein in die Bauteile gepresst. Wenn man genau sein will h\"atten wir den Schaltplan unseres Kartoffelstromkreises so zeichnen m\"ussen:
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.6]{true_kartoffel.pdf}
+		\includegraphics[scale=0.6]{Bilder/true_kartoffel.pdf}
 		\caption{Der wahre Kartoffelschaltplan.}
 	\end{center}
 \end{figure}
@@ -1140,7 +1140,7 @@ In unserer Abstraktion eines elektrischen Netzwerkes als Schaltplan bedeutet die
 \textbf{Beispiel}: Nehmen wir einen Knoten mit zwei zuflie\ss{}enden Kanten und einer wegflie\ss{}enden Kante.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=2]{flow.pdf}
+		\includegraphics[scale=2]{Bilder/flow.pdf}
 		\caption{Str\"ome.}
 	\end{center}
 \end{figure}
@@ -1152,7 +1152,7 @@ i_1 + i_2 = i_3
 \paragraph{\"Ubungsbeispiel:} Formuliere das Kontinuit\"atsgesetz f\"ur die folgende Anordnung:
 \begin{figure}[H]
 	\centering{
-		\includegraphics[scale=2]{aufgabe.pdf}
+		\includegraphics[scale=2]{Bilder/aufgabe.pdf}
 		\caption{Aufgabe.}
 		\label{fig:circuit}
 	}
@@ -1194,7 +1194,7 @@ ist. Also eine Zuordnung die den $N-1$ Potentialwerten eindeutig die $N-1$ Str\"
 Die Charakteristik eines Bauteiles kann direkt gemessen werden (zb.: mit einem Oszilloskop; siehe Anhang) oder typischerweise im vom Hersteller zur Verf\"ungung gestellten Datenblatt des elektrischen Bauteiles.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{charakter.pdf}
+		\includegraphics[scale=1]{Bilder/charakter.pdf}
 	\end{center}
 	\caption{Charakteristik eines mehrpoligen Bauteiles.}
 \end{figure}
@@ -1212,7 +1212,7 @@ i_3 = \Phi^3(\phi_1,\phi_2,\phi_3)\\
 Eine \textbf{ideale elektrische Spannungsquelle} ist ein zwei poliges elektrisches Bauteil von dem unabh\"angig von der abgenommenen Stromst\"arke eine konstante Spanung abgenommen werden kann. 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{ideal.pdf}
+		\includegraphics[scale=1]{Bilder/ideal.pdf}
 		\caption{Schaltsymbol ideale Spannungsquelle.}
 	\end{center}
 \end{figure}
@@ -1221,11 +1221,10 @@ Beachte die Pfeile in der obigen Abbildung, die nicht Teil des eigentlichen Scha
 \\
 Die Strom- Spannungs- Kennlinie einer 5V Spannungsquelle sieht folgenderma\ss{}en aus.
 \begin{figure}[H]
-	\centering{
-		\resizebox{65mm}{!}{\input{ideal_spannung.pdf_tex}}
+	\begin{center}
+		\includegraphics[scale=0.5]{Bilder/ideal_spannung.pdf}
 		\caption{Charakteristik Spannungsquelle.}
-		\label{fig:circuit}
-	}
+	\end{center}
 \end{figure}
 \noindent
 Dies ist ein Beispiel bei dem die Charakteristik keine Funktion ist sondern man sich zur Beschreibung die allgemeinere Form, eine Gleichung, bedienen muss: $U=5$.\\
@@ -1236,7 +1235,7 @@ Reale Spannungsquellen, wie Zink/Kohle Batterien oder Lithium- Ionen- Akkumulato
 Als n\"achstes Bauteil lernen wir die Gl\"uhbirne kennen. Eine Gl\"ubirne ist ein zweipoliges Bauteil, das Licht erzeugt wenn es mit Strom durchflossen wird.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{gluh.pdf}
+		\includegraphics[scale=1]{Bilder/gluh.pdf}
 		\caption{Schaltsymbol Gl\"uhbirne.}
 	\end{center}
 \end{figure}
@@ -1244,7 +1243,7 @@ Als n\"achstes Bauteil lernen wir die Gl\"uhbirne kennen. Eine Gl\"ubirne ist ei
 Eine elektrische Gl\"uhbirne hat eine parabolische Charakteristik.
 \begin{figure}[H]
 	\centering{
-		\resizebox{65mm}{!}{\input{gluhbirne.pdf_tex}}
+		\resizebox{65mm}{!}{\input{Bilder/gluhbirne.pdf_tex}}
 		\caption{Charakteristik Gl\"uhbirne.}
 		\label{fig:circuit}
 	}
@@ -1265,7 +1264,7 @@ Gegeben sei ein elektrischer Stromkreis bestehend aus Knoten und elektrischen Ba
 Hier ein Beispiel eines abstrakten elektrischen Stromkreises. 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{_abstract.pdf}
+		\includegraphics[scale=1]{Bilder/_abstract.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1275,7 +1274,7 @@ Kanten, welche direkt \"uber Knoten verbunden sind, haben den selben Potentialwe
 Somit haben wir sechs Bereiche an denen die Potentialfunktion konstanten Wert hat; im Bild angezeigt durch $\{\psi_1, \psi_2, \psi_3, \psi_4, \psi_5, \psi_6\}$. 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{potent.pdf}
+		\includegraphics[scale=1]{Bilder/potent.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1284,7 +1283,7 @@ Hier wird gezeigt wie die Spannung $U$ von einem Punkt bei $\psi_3$ zu einem Pun
 Als n\"achstes betrachten wir die elektrischen Stromst\"arken die innerhalb des Stromkreises auftreten und die Flu\ss{}richtungen: 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{laminar.pdf}
+		\includegraphics[scale=1]{Bilder/laminar.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1327,7 +1326,7 @@ Auf der anderen Seite werden einige von diesen Umwelteigenschaften, wie Temperat
 Eine wichtige Erkenntnis in der Elektronik ist das Ohm'sche Gesetz, welches besagt, dass bei kleinen Stromst\"arken und Spannungen die Charakteristiken von vielen Materialen ann\"ahernd linear sind.
 \begin{figure}[H]
 	\centering{
-		\resizebox{65mm}{!}{\input{widerstand.pdf_tex}}
+		\resizebox{65mm}{!}{\input{Bilder/widerstand.pdf_tex}}
 		\caption{Charakteristik Widerstand.}
 		\label{fig:circuit}
 	}
@@ -1354,7 +1353,7 @@ zwischen Widerstand und Leitf\"ahigkeit.
 Das elektrische Bauteil assoziiert mit dem Ohm'schen Widerstand ist der Widerstand mit dem Schaltsymbol.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{widder.pdf}
+		\includegraphics[scale=1]{Bilder/widder.pdf}
 		\caption{Schaltsymbol 4000 $\Omega$ Widerstand.}
 	\end{center}
 \end{figure}
@@ -1369,7 +1368,7 @@ Bestimmte h\"aufig auftretende Teilstrukturen elektrischer Stromkreise werden al
 Gegeben sei eine Teilstruktur bestehend aus mehreren zweipoligen elektrischen Bauteilen, die nacheinander geschaltet sind, eine so genannte \textbf{Reihenschaltung}.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.75]{reihe.pdf}
+		\includegraphics[scale=0.75]{Bilder/reihe.pdf}
 		\caption{Reihenschaltung.}
 	\end{center}
 \end{figure}
@@ -1386,7 +1385,7 @@ Das Problem vereinfacht sich stark und es ist leicht zu zeigen, dass $\Phi(u) = 
 Gegeben sei eine Teilstruktur bestehend aus mehreren zweipoligen elektrischen Bauteilen, die nebeneinander geschaltet sind, eine so genannte \textbf{Paralellschaltung}. In der folgenden Abbildung sehen wir ein Beispiel mit zwei paralell geschalteten Bauteilen.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.75]{Parallel.pdf}
+		\includegraphics[scale=0.75]{Bilder/Parallel.pdf}
 		\caption{Paralellschaltung.}
 	\end{center}
 \end{figure}
@@ -1405,7 +1404,7 @@ Die Gleichungen in (4.3) reduzieren sich im Fall von Bauteilen mit linearer Char
 Gegeben sei ein elektrischer Stromkreis bestehend aus einer quadratischen Anordnung von Widerst\"anden. Die Kanten des Quadrats sind Widerst\"ande, die Ecken sind Knoten. Eine der Diagonalen ist ein Widerstand, die Andere ist eine ideale Spannungsquelle.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.8]{stromkreis_1.pdf}
+		\includegraphics[scale=0.8]{Bilder/stromkreis_1.pdf}
 		\caption{Beispiel.}
 	\end{center}
 \end{figure}
@@ -1413,7 +1412,7 @@ Gegeben sei ein elektrischer Stromkreis bestehend aus einer quadratischen Anordn
 Wir starten mit unserer Analyse des Stromkreises indem wir f\"ur jede Kante eine Vorzugsrichtung ausw\"ahlen und die zugeh\"origen Str\"ome benennen. Die an der Spannungsquelle liegenden Kanten haben bereits eine Vorzugsrichtung (4.5), und f\"ur alle an Widerst\"ande grenzenten Kanten, kann die Flu\ss{}richtung beliebig gew\"ahlt werden (4.10), solange beachtet wird, dass jeder Widerstand eine zuflie\ss{}ende und eine abflie\ss{}ende Kante haben muss.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.8]{stromkreis_2.pdf}
+		\includegraphics[scale=0.8]{Bilder/stromkreis_2.pdf}
 		\caption{Str\"ome und Richtungen.}
 	\end{center}
 \end{figure}
@@ -1423,7 +1422,7 @@ Um ein wenig mit den Variablen zu sparen, haben wir hier beiden an ein Bauteil g
 Als n\"achstes ordnen wir jedem durch Knoten verbundenen Bereich von Kanten und einzelnen nicht an Knoten grenzende Kanten eine Potentialvariable zu. Die Potentialvariablen stehen f\"ur die unbekannten Potentialwert an den entsprechenden Bereichen.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.8]{stromkreis_3.pdf}
+		\includegraphics[scale=0.8]{Bilder/stromkreis_3.pdf}
 		\caption{Potentialvariablen.}
 	\end{center}
 \end{figure}
@@ -1446,7 +1445,7 @@ Beachte hierbei die erste Gleichung, welche wir erhalten da sich wie schon gezei
 Wir wissen bereits, dass Potentialfunktionen immer nur bis auf eine Konstante festgelegt sind. Das bedeutet wir k\"onnen einen der Potentialwerte frei w\"ahlen und es empfliehlt sich bei nur einer Spannungsquelle den Minuspol auf Null zu setzen. In unserem Fall ist das $\psi_4$. Man sagt auch diese Kante ist \textbf{Erde} und man kann diesen Sachverhalt im Schaltplan folgenderma\ss{} darstellen.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.8]{erde.pdf}
+		\includegraphics[scale=0.8]{Bilder/erde.pdf}
 		\caption{Erde.}
 	\end{center}
 \end{figure}
@@ -1486,7 +1485,7 @@ Es ist nun eine einfache Aufgabe dieses Gleichungssystem aufzul\"osen. Die Strom
 \paragraph{\"Ubungsaufgabe:} Stelle das Gleichungssystem f\"ur folgenden Schaltkreis auf.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.8]{ub.pdf}
+		\includegraphics[scale=0.8]{Bilder/ub.pdf}
 		\caption{\"Ubungsbeispiel.}
 	\end{center}
 \end{figure}
@@ -1497,7 +1496,7 @@ Bisher haben wir die Annahme getroffen, dass Strom und Spannung in einem elektri
  Ein Kondensator ist ein elektrisches Bauteil, dass Strom in eine dem Strom entgegengerichete Spannung umwandelt. Wir wollen in diesem Abschnitt nicht auf den Aufbau oder unterliegende physikalische Prinzip ein, sondern beschr\"anken uns auf eine Beschreibung basierend auf Strom und Spannung allein. Wer mehr wissen will kann \"uber die darunterliegende Physik im Anhang lesen oder in einem entsprecheden Fachbuch.
   \begin{figure}[H]
  	\begin{center}
- 		\includegraphics[scale=0.8]{kondens.pdf}
+ 		\includegraphics[scale=0.8]{Bilder/kondens.pdf}
  		\caption{Schaltsymbol eines Kondensator.}
  	\end{center}
  \end{figure}
@@ -1505,7 +1504,7 @@ Bisher haben wir die Annahme getroffen, dass Strom und Spannung in einem elektri
  Betrachten wir einen Schaltplan in dem ein Kondensator \"uber einen Widerstand und eine Gl\"uhbiren an eine Spannungsquelle geschlossen ist. 
  \begin{figure}[H]
  	\begin{center}
- 		\includegraphics[scale=0.8]{kondensator.pdf}
+ 		\includegraphics[scale=0.8]{Bilder/kondensator.pdf}
  		\caption{Stromkreis mit Kondensator.}
  	\end{center}
  \end{figure}
@@ -1520,7 +1519,7 @@ Bisher haben wir die Annahme getroffen, dass Strom und Spannung in einem elektri
  Wir werden daher jedem Kondensator, genauso wie einer Kante, eine Vorzugsrichtung zuordnen. Die Charakteristik soll einer idealen Spannungsquelle mit Plus Pol in Vorzugsrichtung entsprechen.
   \begin{figure}[H]
  	\begin{center}
- 		\includegraphics[scale=0.5]{variable_Spannungsquelle.pdf}
+ 		\includegraphics[scale=0.5]{Bilder/variable_Spannungsquelle.pdf}
  		\caption{Charakteristik variable Spannungsquelle}
  	\end{center}
  \end{figure}
@@ -1528,7 +1527,7 @@ Bisher haben wir die Annahme getroffen, dass Strom und Spannung in einem elektri
 Jedem Kondensator in einem elektrischen Netz wird ein Zustand, seine Spannung $U$ zugeordnet. Um diese Spannung zu interpretieren m\"ussen eine Vorzugsrichtung und anliegende Potentiale gegeben sein
   \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{kkondens.pdf}
+		\includegraphics[scale=1]{Bilder/kkondens.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1552,7 +1551,7 @@ Es wird ein linearer Zusammenhang zwischen dem Differentialquotienten der Spannu
  Wir werden im Rest dieses Abschnittes das in Worten beschriebene Experiment zu Abbildung (4.22) nachrechnen. Hierzu vereinfachen wir den Stromkreis indem wir die Gl\"uhbirne und den Widerstand zu einem einzigen Widerstand verschmelzen. Dies f\"uhrt zum selben Ergebnis, wenn wir annehmen, dass die Gl\"uhbirne eine lineare Charakteristik hat und der resultierende Widerstand nach der Reihenschaltungsformel(4.9) berechnet wird.
    \begin{figure}[H]
  	\begin{center}
- 		\includegraphics[scale=1]{einfach.pdf}
+ 		\includegraphics[scale=1]{Bilder/einfach.pdf}
  	\end{center}
  \end{figure}
  \noindent
@@ -1576,7 +1575,7 @@ Dies f\"uhrt zur eindeutigen L\"osung:
 Setzen wir den Widerstand $R$ gleich $10k\Omega$, die Spannung $u$ auf $5V$ und die Kapazit\"at $c$ gleich $10nAs/V$ und betrachten die Kurve.
    \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{Ladung.png}
+		\includegraphics[scale=0.5]{Bilder/Ladung.png}
 	\end{center}
 \end{figure}
 \noindent
@@ -1589,7 +1588,7 @@ Im zweiten Szenario nehmen wir an, dass wir den nun geladenen Kondensator von de
 Wir setzen die Paramter $c$ und $R$ wie gehabt und erhalten, einen exponentiellen Abfall der Spannung.
    \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{entladung.png}
+		\includegraphics[scale=0.5]{Bilder/entladung.png}
 	\end{center}
 \end{figure}
 \noindent
@@ -1603,7 +1602,7 @@ Eine Spule ist ein zweipoliges elektrisches Bauteil, dass sich einer \"Anderung 
 Wir wollen aber hier, wie bereits beim Kondensator, das Bauteil anhand der f\"ur uns interessanten Ph\"anomene Spannung und Stromst\"arke beschreiben.
   \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1.5]{spule.pdf}
+		\includegraphics[scale=1.5]{Bilder/spule.pdf}
 		\caption{Schaltsymbol einer Spule.}
 	\end{center}
 \end{figure}
@@ -1612,7 +1611,7 @@ Starten wir wieder mit einem einfachen Experiment. Wir nehmen eine Spule und ver
 Der beschriebene Sachverhalt entspricht dem in Abbildung (4.25) dargestellten Schaltpan.
   \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{spulensg.pdf}
+		\includegraphics[scale=1]{Bilder/spulensg.pdf}
 		\caption{Experiment zu Induktion.}
 	\end{center}
 \end{figure}
@@ -1629,7 +1628,7 @@ Analog zum Kondensator nehmen wir an, dass die Spule die Charakteristik einer id
 Entsprechend wird einer Spule eine Vorzugsrichtung gegeben wie einer Kante und es gilt wie beim Kondensator.
   \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1.5]{spule_direkt.pdf}
+		\includegraphics[scale=1.5]{Bilder/spule_direkt.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1649,7 +1648,7 @@ Die Konstante $L$ nennen wir die Induktivit\"at der Spule und sie wird in $Vs/A$
 Kommen wir nun zur\"uck zum Experiment zu Abbildung (4.25) zur\"uck und rechnen dieses mit Hilfe der nun bekannten Gesetzm\"assigkeiten nach. Der Schaltplan wird hierzu wieder vereinfacht indem jede Gl\"uhbirne durch einen ohmschen Widerstand ersetzt wird.
   \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{spuledir.pdf}
+		\includegraphics[scale=1]{Bilder/spuledir.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1679,7 +1678,7 @@ Unser erstes Experiment entspricht also bis auf die Konstanten genau dem ersten 
 Nehmen wir wie beim Kondensator ein konkretes Beispiel heran. Die Spule hat eine Induktivit\"at $L=0.1 Vs/A$, $R_1=100\Omega$ und $R_2=100\Omega$ und die Spannungsquelle eine Spannung $u=5V$.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.75]{spule_j.pdf}
+		\includegraphics[scale=0.75]{Bilder/spule_j.pdf}
 		\caption{Stromst\"arken zu Experiment 1.}
 	\end{center}
 \end{figure}
@@ -1689,14 +1688,14 @@ Die Abbildung zeigt die Stromst\"arken der Gl\"uhbirne 1 und 2. Es zeigt sich ga
 Kommen wir nun zum zweiten Experiment, wo wir von dem Stromkreis (4.25), nachdem beide Gl\"uhbirnen konstant leuchten, die Spannungsquelle aus dem Stromkreis entfernen. Hierzu m\"ussen wir etwas an unseren Variablen \"andern und erhalten folgenden Schaltplan, der den Sachverhalt nach der Entfernung widerspiegelt.
   \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{spuledir2.pdf}
+		\includegraphics[scale=1]{Bilder/spuledir2.pdf}
 	\end{center}
 \end{figure}
 \noindent
 Im Abschnitt \"uber Reihenschaltung haben wir gesehen, dass sich dies vereinfachen l\"asst, sei hierzu $R = R_1 + R_2$.
   \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{spuledir3.pdf}
+		\includegraphics[scale=1]{Bilder/spuledir3.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1718,7 +1717,7 @@ f\"uhrt.\\
 Betrachten wir abschlie\ss{}end noch den Verlauf von $j$ in diesem Experiment.
   \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.75]{entladungsspule.pdf}
+		\includegraphics[scale=0.75]{Bilder/entladungsspule.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1739,7 +1738,7 @@ In diesem Abschnitt werden wir uns entwas n\"aher mit diesem Ph\"anomen auseinan
 Betrachten wir zun\"achst den einfacheren Fall, den so genannten unged\"ampften Schwingkreis, n\"amlich eines Kondensators, der direkt an eine Spule geschlossen wird. Nehmen wir an, dass der Kondensator anfangs geladen ist und kein Strom flie\ss{}t und berechnen wie sich der Strom und die Spannung mit der Zeit entwickelt.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{schnwingkreis_ungedampft.pdf}
+		\includegraphics[scale=1]{Bilder/schnwingkreis_ungedampft.pdf}
 		\caption{Unged\"ampfter Schwingkreis.}
 	\end{center}
 \end{figure}
@@ -1769,7 +1768,7 @@ Aus GLeichung (4.37) und $j(0) = 0$ folgt zusammen mit (4.41), dass $b=0$ und au
 In graphischer Form dargestellt sieht das bei einem Kondensator mit Kapazit\"at $c=1nF$ und einer Spule mit Induktivit\"at $L=1H$ folgenderma\ss{}en aus.
   \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.75]{harmonisch.pdf}
+		\includegraphics[scale=0.75]{Bilder/harmonisch.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1797,7 +1796,7 @@ D\"ampfung ist ein Resultat von Termen in der dynamischen Gleichung, die Energie
 Widmen wir uns um n\"aher an die Realit\"at zu kommen, kurz dem ged\"ampften Schwingkreis in dem einfach zus\"atzlich ein Widerstand zwischen Kondensator und Spule geschaltet ist.
   \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{schnwingkreis_gedampft.pdf}
+		\includegraphics[scale=1]{Bilder/schnwingkreis_gedampft.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1838,7 +1837,7 @@ Wir gehen hier genauso vor wie beim unged\"ampften Fall und erhalten die L\"osun
 Betrachten wir die graphische Darstellung des zeitlichen Verlaufes der Spannungskurve mit den selben Werten f\"ur Induktivit\"at und Kapazit\"at wie in der vorherigen Darstellung im unged\"ampften Fall, f\"ur drei Werte des Widerstandes $R$.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.75]{dampf.pdf}
+		\includegraphics[scale=0.75]{Bilder/dampf.pdf}
 	\end{center}
 \end{figure}
 \noindent
@@ -1859,7 +1858,7 @@ Das Thema Schwingkreis lie\ss{}e sich noch wesentlich detailierter darstellen. D
 Eine Diode ist ein zweipoliges nichtlineares elektrisches Bauteil, dass Strom in eine Richtung sehr gut und in die entgegengesetzte Richtung bei moderat niedrigen Spannungen kaum leitet. Es gibt sehr viele verschiedene Bauformen und Implementierungen in verschiedenen Substraten. An sich ist eine Diode kein dynamisches Bauteil, aber Implementierungsabh\"angig kann es eine zeitliche Charakteristik haben und unabh\"angig von der Implementierung ist sie in Sperrrichtung immer auch ein Kondensator. Wir werden uns in der Diskussion von Dioden auf normale Halbleiter Dioden beschr\"anken.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1.5]{diode.pdf}
+		\includegraphics[scale=1.5]{Bilder/diode.pdf}
 		\caption{Schaltsymbol einer Diode.}
 	\end{center}
 \end{figure}
@@ -1892,7 +1891,7 @@ Das Herz der Rechenmaschine ist die Kontrolleinheit. Sie hat die Aufgabe aus dem
 Das Register kann aber auch direkt Inhalte aus dem Speicher annehmen oder an Speicheradressen im Speicher senden. Der BUS dient dabei als Kommunikationskanal f\"ur vier Bit \"Ubertragung zwischen den Modulen. Das ist im Prinzip alles was wir ben\"otigen. Betrachten wir kurz eine Skizze des Aufbaus unserer Rechenmaschine.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{Plan.pdf}
+		\includegraphics[scale=0.5]{Bilder/Plan.pdf}
 		\caption{Grober Plan der Rechenmaschine.}
 	\end{center}
 \end{figure}
@@ -1907,7 +1906,7 @@ In den folgenden Abschnitten werden die Module einzeln vorgestellt und im Detail
 Die Rechenmaschine hat einen Daten Speicher von 16 Worten. Er kann sich also gleichzeitig 16 vier Bit lange Worte merken. Jeder dieser ein Wort fassenden Speicherbl\"ocke hat eine 4 Bit lange Addresse mit der er angesprochen werden kann.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.3]{Speicher.pdf}
+		\includegraphics[scale=0.3]{Bilder/Speicher.pdf}
 		\caption{Speichermodul.}
 	\end{center}
 \end{figure}
@@ -1938,7 +1937,7 @@ Der Zustand des Flags kann zu jeder Zeit vom Flag Ausgang gelesen werden.\\
 Betrachten wir als n\"achstes das Eingabe-Ausgabe Schema des Registers.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.3]{register.pdf}
+		\includegraphics[scale=0.3]{Bilder/register.pdf}
 		\caption{Register.}
 	\end{center}
 \end{figure}
@@ -1946,7 +1945,7 @@ Betrachten wir als n\"achstes das Eingabe-Ausgabe Schema des Registers.
 Der Bau unseres Register l\"asst sich sehr einfach mit f\"unf D-Flip-Flops und vier UND-Gattern umsetzen. Betrachte hierzu den logischen Schaltplan.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.7]{reg.pdf}
+		\includegraphics[scale=0.7]{Bilder/reg.pdf}
 		\caption{Plan Register.}
 	\end{center}
 \end{figure}
@@ -1963,7 +1962,7 @@ Die Links Verschiebung ignoriert den rechten Operand und schiebt jeden 0-1 Wert 
 Betrachten wir das Eingabe/Ausgabe Schema unseres Rechenkerns.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.3]{ALU.pdf}
+		\includegraphics[scale=0.3]{Bilder/ALU.pdf}
 		\caption{Rechenkern.}
 	\end{center}
 \end{figure}
@@ -1979,7 +1978,7 @@ Will man allerdings die Links Verschiebung anwenden, so legt man am Selektor die
 Das beschriebene Verhalten l\"asst sich leicht durch folgenden logischen Schaltplan darstellen.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.6]{Kern.pdf}
+		\includegraphics[scale=0.6]{Bilder/Kern.pdf}
 		\caption{Logischer Schaltplan Kern.}
 	\end{center}
 \end{figure}
@@ -1993,7 +1992,7 @@ Im Fall unserer Rechenmaschine ist der BUS ein vier Bit breiter Kommunikationska
 Der BUS hat entsprechend folgendes Eingabe/Ausgabe Schema.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.3]{bus.pdf}
+		\includegraphics[scale=0.3]{Bilder/bus.pdf}
 		\caption{BUS Modul.}
 	\end{center}
 \end{figure}
@@ -2005,7 +2004,7 @@ Der vier Bit Ausgang, namens \textbf{Ausgang BUS}, dient als Anschluss f\"ur all
 Ein m\"oglicher logischer Schaltplan um das erw\"unschte Verhalten zu bekommen, ist der Folgende.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.8]{BUS.pdf}
+		\includegraphics[scale=0.8]{Bilder/BUS.pdf}
 		\caption{Logischer Schaltplan.}
 	\end{center}
 \end{figure}
@@ -2024,7 +2023,7 @@ Dies wird durch einen so genannten Ring Counter und einen Rechteckswellen Genera
 Das Resultat wird in der folgenden Abbildung dargestellt. Das Rechteckssignal von Generator wird in drei Taktsignal umgewandelt. Eine gute Analogie w\"are hier ein Dirigent der den verschiedenen Teilen des Orchesters sagt wann sie Spielen und wann sie nicht Spielen sollen.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.6]{tz.pdf}
+		\includegraphics[scale=0.6]{Bilder/tz.pdf}
 		\caption{Taktsignale.}
 	\end{center}
 \end{figure}
@@ -2044,7 +2043,7 @@ Intern hat der Ausf\"uhrer zwei Zust\"ande, die durch RS-Flip-Flops implementier
 Es folgt wie in jedem Modul bisher ein bildliche Zusammenfassung. Da es eine Menge Ausg\"ange gibt mit selbsterkl\"arendem Namen, verzichte ich darauf sie alle hier im Text aufzuz\"ahlen, sondern verweise auf die Abbildung.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.265]{Ausfuehrer.pdf}
+		\includegraphics[scale=0.265]{Bilder/ausfuehrer.pdf}
 		\caption{Ausf\"uhrer.}
 	\end{center}
 \end{figure}
@@ -2099,7 +2098,7 @@ Es gibt drei Befehle, die direkt die Kontrolleinheit betreffen. Die HALT Anweisu
 Diese Befehle sind in der Lage den internen Zustand der Kontrolleinheit zu ver\"andern.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.6]{ausfuhrer.pdf}
+		\includegraphics[scale=0.6]{Bilder/ausfuhrer.pdf}
 		\caption{Logischer Schaltplan.}
 	\end{center}
 \end{figure}
@@ -2169,7 +2168,7 @@ Abschlie\ss{}end muss noch der \textbf{Register Schreiben} und der \textbf{Speic
 Die gew\"unschte Funktionalit\"at l\"asst sich mit nur wenig Aufwand implementieren.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.7]{aus_2.pdf}
+		\includegraphics[scale=0.7]{Bilder/aus_2.pdf}
 		\caption{restlicher Ausf\"uhrer.}
 	\end{center}
 \end{figure}
