@@ -1,0 +1,55 @@
+PRECONDITION
+*****************************************************
+	LOAD 	X
+	POP	0000
+	POP	0010
+	LOAD	Y
+	POP	0001
+	POP	0011
+****************************************************
+
+CODE
++++++++++++++++++++++++++++++++++++++++++++++++++++
+NAND	001
+POP	0100
+POP	0101
+NAND	010
+POP	1000
+
+PUSH 	0010
+POP	0100
+POP	0101
+NAND 	010
+POP	0101
+PUSH	0011
+POP	0110
+POP	0111
+NAND	011
+POP	0111
+NAND	010
+POP	0100
+NAND	011
+POP	0101
+NAND	010
+POP	0010
+LSHIFT 	1000
+POP	0011
+
+IF
+	LOAD	0001
+	POP	1001
+END
+
+PUSH	1000
+POP	0110
+POP	0111
+NAND	011
+POP	0110
+POP	0111
+NAND	011
+
+RESET IF
+PUSH	1001
+POP	0011
+
+HALT
