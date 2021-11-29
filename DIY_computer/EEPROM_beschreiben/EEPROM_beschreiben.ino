@@ -65,7 +65,7 @@ byte data[] = {
 };
 
 void writeEEPROM(byte data){
-  for (int pin=DATA; pin<=DATA + 7; pin++){
+  for (int pin=DATA + 7; pin>=DATA; pin--){
     pinMode(pin, OUTPUT);
     digitalWrite(pin, data &1);
     data = data >> 1;
@@ -92,7 +92,7 @@ void resetAddress(){
 
 byte readEEPROM() {
   byte _data = 0;
-  for (int pin=DATA; pin<=DATA + 7; pin++){
+  for (int pin=DATA + 7; pin>=DATA; pin--){
     pinMode(pin, INPUT);
     _data = (_data << 1) + digitalRead(pin);
   }
@@ -107,7 +107,9 @@ void printContents() {
     opcode = readEEPROM();
     nextAddress();
     char buf[20];
-    sprintf(buf, "%03x:  %1x %1x %1x %1x %1x %1x %1x %1x", address,(opcode >> 0) & 1, (opcode >> 1) & 1, (opcode >> 2) & 1, (opcode >> 3) & 1, (opcode >> 4) & 1, (opcode >> 5) & 1, (opcode >> 6) & 1, (opcode >> 7) & 1);
+    sprintf(buf, "%03x:  %1x %1x %1x %1x %1x %1x %1x %1x", address,
+    (opcode >> 0) & 1, (opcode >> 1) & 1, (opcode >> 2) & 1, (opcode >> 3) & 1, 
+    (opcode >> 4) & 1, (opcode >> 5) & 1, (opcode >> 6) & 1, (opcode >> 7) & 1);
     //sprintf(buf, "%03x:  %04x", address,opcode);
 
     Serial.println(buf);
@@ -145,6 +147,13 @@ void setup() {
   printContents();
 
   resetAddress();
+  for (int pin=2; pin<=13; pin++){
+    pinMode(pin, INPUT);
+  }
+  pinMode(OUTPUT_ENABLE, OUTPUT);
+  pinMode(WRITE_ENABLE, OUTPUT);
+  digitalWrite(OUTPUT_ENABLE, LOW);
+  digitalWrite(WRITE_ENABLE, HIGH);
 }
 
 void loop() {
