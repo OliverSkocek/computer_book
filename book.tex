@@ -2083,8 +2083,8 @@ Die Befehle, die unsere Rechenmaschine kennt sind die Folgenden:
 \paragraph{IF:} $(b_0, b_1, b_2) = (0, 0, 1)$ Wenn das Flag auf Eins steht wird der n\"achste Befehl in der Reihe als n\"achstes ausgef\"uhrt, ansonsten wenn das Flag auf Null steht wird der n\"achste Befehl ausgef\"uhrt dessen letztes Bit, der $F$ Bit, Eins ist.
 \paragraph{NAND + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 0)$ Berechnet die NAND Operation des Wortes an der Addresse $(a_0, a_1, a_2, 0)$ mit dem Wort an der Stelle $(a_0, a_1, a_2, 1)$ und schreibt das Ergebnis in das Register. Falls das Ergebnis der Operation Null ist wird das Flag auf Eins gesetzt, sonst auf Null.
 \paragraph{LSHIFT + 3 bit Addresse:} $(b_0, b_1, b_2) = (0, 1, 1)$ Wendet die LSHIFT auf das Wort an der Stelle $(a_0, a_1, a_2, 0)$ and und schreibt das Ergebnis in das Register. Hierbei wird das nullte Bit des Wortes auf Null gesetzt und der Wert des dritten Bits wird auf das Flag \"ubertragen.
-\paragraph{PUSH + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 0)$ Schreibt das Wort an der Addresse $(a_0, a_1, a_2, a_3)$ in das Register.
-\paragraph{POP + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 1)$ Schreibt das Wort im Register an die Addresse $(a_0, a_1, a_2, a_3)$.
+\paragraph{POP + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 0)$ Schreibt das Wort im Register an die Addresse $(a_0, a_1, a_2, a_3)$.
+\paragraph{PUSH + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 1)$ Schreibt das Wort an der Addresse $(a_0, a_1, a_2, a_3)$ in das Register.
 \paragraph{LOAD + 4 bit Wort:} $(b_0, b_1, b_2) = (1, 1, 0)$ Schreibt das Wort $(a_0, a_1, a_2, a_3)$ in das Register.
 \paragraph{RESET IF:} $(b_0, b_1, b_2) = (1, 1, 1)$ Wenn das Flag Eins ist wird der Z\"ahler auf Null gesetzt, sonst passiert nichts und der n\"achste Befehl in der Reihe wird ausgef\"uhrt.
 \\

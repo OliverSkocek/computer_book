@@ -9,8 +9,8 @@
 #define IF 0b00100000
 #define NAND 0b01000000
 #define LSHIFT 0b01100000
-#define PUSH 0b10000000
-#define POP 0b10100000
+#define POP 0b10000000
+#define PUSH 0b10100000
 #define LOAD 0b11000000
 #define RESET_IF 0b11100000
 
