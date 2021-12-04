@@ -60,7 +60,8 @@ byte data[] = {
   NAND | 0b01100,
   IF,
     RESET,
-  PUSH | 0b10010,
+//END,
+  PUSH | 0b10011,
   POP | 0b00110,
   HALT,
 };
