@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.23)  2 DEC 2021 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.23)  4 DEC 2021 02:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2427,126 +2427,130 @@ Underfull \hbox (badness 10000) in paragraph at lines 2015--2029
 <Bilder/ausfuehrer.pdf, id=1713, 589.5999pt x 743.78506pt>
 File: Bilder/ausfuehrer.pdf Graphic file (type pdf)
 <use Bilder/ausfuehrer.pdf>
-Package pdftex.def Info: Bilder/ausfuehrer.pdf  used on input line 2046.
+Package pdftex.def Info: Bilder/ausfuehrer.pdf  used on input line 2047.
 (pdftex.def)             Requested size: 156.24323pt x 197.1021pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2033--2049
+Underfull \hbox (badness 10000) in paragraph at lines 2034--2050
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2033--2049
+Underfull \hbox (badness 10000) in paragraph at lines 2034--2050
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2033--2049
+Underfull \hbox (badness 10000) in paragraph at lines 2034--2050
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2033--2049
+Underfull \hbox (badness 10000) in paragraph at lines 2034--2050
 
  []
 
 [88]
-Underfull \hbox (badness 10000) in paragraph at lines 2054--2068
+Underfull \hbox (badness 10000) in paragraph at lines 2055--2069
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2054--2068
+Underfull \hbox (badness 10000) in paragraph at lines 2055--2069
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2054--2068
+Underfull \hbox (badness 10000) in paragraph at lines 2055--2069
 
  []
 
 
-Overfull \hbox (7.55261pt too wide) in paragraph at lines 2054--2068
+Overfull \hbox (7.55261pt too wide) in paragraph at lines 2055--2069
 \OT1/lmr/m/n/10.95 fehl ausspucken, oder im Fall einer IF Verzwei-gung einige B
 e-fehle ^^?uberspringen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2054--2068
+Underfull \hbox (badness 10000) in paragraph at lines 2055--2069
 
  []
 
 [89 <./Bilder/ausfuehrer.pdf>]
-Overfull \hbox (11.17253pt too wide) in paragraph at lines 2069--2080
+Overfull \hbox (11.17253pt too wide) in paragraph at lines 2070--2081
 \OT1/lmr/m/n/10.95 In diesem Ab-schnitt definieren wir die Pro-gram-mier-sprach
 e, die un-sere Rechen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2069--2080
+Underfull \hbox (badness 10000) in paragraph at lines 2070--2081
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2069--2080
+Underfull \hbox (badness 10000) in paragraph at lines 2070--2081
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2069--2080
+Underfull \hbox (badness 10000) in paragraph at lines 2070--2081
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2069--2080
+Underfull \hbox (badness 10000) in paragraph at lines 2070--2081
 
  []
 
 [90]
-Overfull \hbox (11.71472pt too wide) in paragraph at lines 2088--2089
+Overfull \hbox (11.71472pt too wide) in paragraph at lines 2089--2090
  []\OT1/lmr/bx/n/10.95 LOAD + 4 bit Wort:[] $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/
 10.95 b[]; b[]; b[]\OT1/lmr/m/n/10.95 ) = (1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/
 10.95 1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 0)$ Schreibt das Wort $(\OML/lm
 m/m/it/10.95 a[]; a[]; a[]; a[]\OT1/lmr/m/n/10.95 )$
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2089--2093
+[91]
+Underfull \hbox (badness 10000) in paragraph at lines 2090--2094
 
  []
 
-[91]
-<Bilder/ausfuhrer.pdf, id=1764, 575.51671pt x 321.0083pt>
+<Bilder/ausfuhrer.pdf, id=1763, 547.01796pt x 347.3588pt>
 File: Bilder/ausfuhrer.pdf Graphic file (type pdf)
 <use Bilder/ausfuhrer.pdf>
-Package pdftex.def Info: Bilder/ausfuhrer.pdf  used on input line 2101.
-(pdftex.def)             Requested size: 345.31268pt x 192.60646pt.
+Package pdftex.def Info: Bilder/ausfuhrer.pdf  used on input line 2102.
+(pdftex.def)             Requested size: 328.2133pt x 208.41687pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2095--2104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2105--2122
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2105--2122
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2105--2122
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2105--2122
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2105--2122
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2122
 
  []
 
@@ -2659,10 +2663,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2287.
  ) 
 Here is how much of TeX's memory you used:
- 20191 strings out of 483130
- 367846 string characters out of 5963882
- 616996 words of memory out of 5000000
- 34230 multiletter control sequences out of 15000+600000
+ 20190 strings out of 483130
+ 367826 string characters out of 5963882
+ 616977 words of memory out of 5000000
+ 34229 multiletter control sequences out of 15000+600000
  607241 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,14n,60p,1320b,1957s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2684,7 +2688,7 @@ usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
-Output written on book.pdf (100 pages, 1357831 bytes).
+Output written on book.pdf (100 pages, 1358269 bytes).
 PDF statistics:
  2020 PDF objects out of 2073 (max. 8388607)
  1647 compressed objects within 17 object streams

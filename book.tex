@@ -2017,7 +2017,7 @@ Die Kontrolleiheit ist der zentrale Kern des Rechners. Sie kommuniziert mit dem 
 \\
 Wir k\"onnen die Kontrolleinheit in zwei Teilmodule aufspalten, n\"amlich einem \textbf{Taktgeber} und einem \textbf{Ausf\"uhrer}. Der Taktgeber erzeugt drei Taktsignale.
 Die Taktsignale sind drei Rechteckswellen ohne \"Uberlappung, die der Reihe nach in der sie auftreten, Taktsignal, Schreibsignal und Steuersignal genannt werden.
-Es ist dabei zu beachten, dass zwiscen diesen Signalen abh\"angig von den Charakteristiken der elektrischen Bauteile mindestens eine bestimmte Zeit vergehen muss und die Signale eine bestimmte Zeit lang sein m\"ussen.\\
+Es ist dabei zu beachten, dass zwischen diesen Signalen abh\"angig von den Charakteristiken der elektrischen Bauteile mindestens eine bestimmte Zeit vergehen muss und die Signale eine bestimmte Zeit lang sein m\"ussen.\\
 \\
 Dies wird durch einen so genannten Ring Counter und einen Rechteckswellen Generator implementiert. Der Ring Counter besitzt drei Zust\"ande durch die bei Eintreffen einer aufsteigenden Rechtecksflancke am Takteingang zyklische weitergeschalten werden. 
 Das Resultat wird in der folgenden Abbildung dargestellt. Das Rechteckssignal von Generator wird in drei Taktsignal umgewandelt. Eine gute Analogie w\"are hier ein Dirigent der den verschiedenen Teilen des Orchesters sagt wann sie Spielen und wann sie nicht Spielen sollen.
@@ -2028,7 +2028,8 @@ Das Resultat wird in der folgenden Abbildung dargestellt. Das Rechteckssignal vo
 	\end{center}
 \end{figure}
 \noindent
-Der Grund warum wir ein extra Schreibsignal und Steuersignal brauchen liegt in einer Verz\"ogerung der jede elektronische Komponente im Rechner unterliegt. Erst nach einer kurzen Zeit wird jede Komponente den korrekten Spannungswert liefern und ein Schreiben bevor diese Zeit vergangen ist, f\"uhrt zu Fehlern. Das Steuersignal dient dazu den internen Zustand der Kontrolleinheit zu manipulieren und das Zur\"ucksetz Signal an den Programmspeicher zu erzeugen. Es ist notwendig, dass nichts mehr geschrieben wird nachdem das Steuersignal entweder den internen Zustand \"andert oder ein Zur\"ucksetzsignal sendet, da sich ansonsten die Machine in einem unspezifischen Zustand befindent und gleichzeitig Schreiben darf. 
+Der Grund warum wir ein extra Schreibsignal und Steuersignal brauchen liegt in einer Verz\"ogerung der jede elektronische Komponente im Rechner unterliegt. Erst nach einer kurzen Zeit wird jede Komponente den korrekten Spannungswert liefern und ein Schreiben bevor diese Zeit vergangen ist, f\"uhrt zu Fehlern. Das Steuersignal dient dazu den internen Zustand der Kontrolleinheit zu manipulieren und das Zur\"ucksetz Signal an den Programmspeicher zu erzeugen. Es ist notwendig, dass nichts mehr geschrieben wird nachdem das Steuersignal entweder den internen Zustand \"andert oder ein Zur\"ucksetzsignal sendet, da sich ansonsten die Machine in einem unspezifischen Zustand befindent und gleichzeitig Schreiben darf.\\
+Das erste beim Ring Coutner ankommende Rechtecksignal muss immer das Steuersignal ausl\"osen, das N\"achste dann das Schreibsignal und wiederum das n\"achste dann das Taktsignal. Das Taktsignal teilt direkt dem Programmspeicher mit den n\"achsten Befehl zu laden. W\"are das erste Signal das Taktsignal w\"urde der erste Befehl im Programmspeicher immer \"ubersprungen werden.
 \subsubsection{Ausf\"uhrer}
 Am Anfang des Kapitels haben wir gesehen wie die Kontrolleinheit mit den unterschiedlichen Modulen im Rechner kommuniziert. Anschlie\ss{}end haben wir in jedem der bisherigen Module gesehen welche Steuersignale jedes von ihnen ben\"otigt. In diesem Abschnitt wird gezeigt wie der Ausf\"uhrer mit dem Programmspeicher kommuniziert, und abh\"angig von seinem internen Zustand, der vom Programmspeicher gesendeten Anweisung und dem Flag diese Steuersignale erzeugt. 
 \\
@@ -2086,7 +2087,7 @@ Die Befehle, die unsere Rechenmaschine kennt sind die Folgenden:
 \paragraph{POP + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 0)$ Schreibt das Wort im Register an die Addresse $(a_0, a_1, a_2, a_3)$.
 \paragraph{PUSH + 4 bit Addresse:} $(b_0, b_1, b_2) = (1, 0, 1)$ Schreibt das Wort an der Addresse $(a_0, a_1, a_2, a_3)$ in das Register.
 \paragraph{LOAD + 4 bit Wort:} $(b_0, b_1, b_2) = (1, 1, 0)$ Schreibt das Wort $(a_0, a_1, a_2, a_3)$ in das Register.
-\paragraph{RESET IF:} $(b_0, b_1, b_2) = (1, 1, 1)$ Wenn das Flag Eins ist wird der Z\"ahler auf Null gesetzt, sonst passiert nichts und der n\"achste Befehl in der Reihe wird ausgef\"uhrt.
+\paragraph{RESET:} $(b_0, b_1, b_2) = (1, 1, 1)$ Der Z\"ahler wird auf Null gesetzt.
 \\
 \\
 Nun sind wir in der Lage die Additionsoperation in der Maschinensprache unserer Rechenmaschine auszudr\"ucken.
@@ -2094,7 +2095,7 @@ Nun sind wir in der Lage die Additionsoperation in der Maschinensprache unserer 
 \section{Funktionsweise der Kontrolleinheit}
 Nachdem wir die Machinensprache die in unserem Rechner zur Anwendung kommt definiert haben, k\"onnen wir die Kontrolleinheit im Detail konstruieren.\\
 \\
-Es gibt drei Befehle, die direkt die Kontrolleinheit betreffen. Die HALT Anweisung, die der Machine mitteilt, dass das Ende der Berechnung erreicht wurde und sie nun ruhen kann und die beiden bedingte Verzweigungen der IF Befehl und der RESET IF Befehl.\\
+Es gibt drei Befehle, die direkt die Kontrolleinheit betreffen. Die HALT Anweisung, die der Machine mitteilt, dass das Ende der Berechnung erreicht wurde und sie nun ruhen kann, die bedingte Verzweigungen, also der IF Befehl, und der RESET Befehl.\\
 Diese Befehle sind in der Lage den internen Zustand der Kontrolleinheit zu ver\"andern.
 \begin{figure}[H]
 	\begin{center}
@@ -2106,17 +2107,16 @@ Diese Befehle sind in der Lage den internen Zustand der Kontrolleinheit zu ver\"
 Das obige Bild stellt eine M\"oglichkeit dar den Ausf\"uhrer als logischen Schaltplan darzustellen. Man beachte, dass nur die drei oben erw\"ahnten Befehle in diesem Schaltplan implementier sind. Dies dient der \"Ubersichtlichkeit und was fehlt wird sp\"ater nachgeholt.\\
 \\
 Starten wir beim Einschaltvorgang. Wenn wir den ein Bit Eingang namens \textbf{Ein} auf eins setzen, wird dadurch der AN Flip-Flop gesetzt. Dies signalisiert der Machine, dass sie nun arbeiten soll.\\
-Der aktive Ausgang des AN FLip-Flops wird \"uber ein UND Gatter, dessen Ausgang wiederum den \textbf{n\"achste Anweisung} Ausgang darstellt, mit dem Taktsignal verkn\"upft.
+Der aktive Ausgang des AN FLip-Flops steuert direkt \"uber den \textbf{Takt an} Ausgang die Verbindung zwischen dem Rechteckswellengenerator und dem Ring Counter im Taktgeber.
 Hierdurch wird sicher gestellt, dass die Machine h\"alt wenn der AN Flip-Flop inaktiv ist. Zus\"atzlich wird der IF Flip-Flop durch das AN Signal zur\"uckgesetzt.\\
 \\
-Das \textbf{Steuer Takt} Signal wird durch ein UND Gatter mit dem Flag Eingang verkn\"upft, sodass ein getaktetes Flag Signal gebildet wird.\\
+Der acht Bit Eingang vom Programmspeicher teilt sich in drei Segmente. Die ersten drei Bit sind an die drei Adresseing\"ange eines acht Bit analog Multiplexers gebunden. Die n\"achsten vier Bit bilden direkt den Ausgang \textbf{Datenadresse} und der letzte Bit wird \"uber ein UND Gatter mit dem \textbf{Schreib Takt} verbunden. Das letztere Signal vom Ausgang des UND Gatters setzt den IF Flip-Flop zur\"uck.\\
 \\
-Der acht Bit Eingang vom Programmspeicher teilt sich in drei Segmente. Die ersten drei Bit sind an die drei Adresseing\"ange eines acht Bit analog Multiplexers gebunden. Die n\"achsten vier Bit bilden direkt den Ausgang \textbf{Datenadresse} und der letzte Bit wird \"uber ein UND Gatter mit dem \textbf{Steuer Takt} verbunden. Das letztere Signal vom Ausgang des UND Gatters setzt den IF Flip-Flop zur\"uck.\\
+Der erste Ausgang des Multiplexers ist mit de \textbf{Schreib Takt} verkn\"upft durch ein UND-Gatter dessen Ausgang den \textbf{AN} Flip-Flop zur\"ucksetzt. Hierdurch wird \textbf{HALT} implementiert.\\
 \\
-Der erste Ausgang des Multiplexers ist mit de Steuertakt verkn\"upft durch ein UND-Gatter dessen Ausgang den \textbf{AN} Flip-Flop zur\"ucksetzt. Hierdurch wird \textbf{HALT} implementiert.\\
-Der zweite Ausgang des Multiplexers wird mit dem gatakteten Flag Signal durch ein UND-Gatter verkn\"upft. Das resultierende Signal setzt den \textbf{IF} FLip-Flop.
-Dies implementiert den \textbf{IF} Befehl.\\
-Der letzte Ausgang des Multiplexers ist ebenfalls \"uber ein UND-Gatter mit dem getakteten Flag verbunden. Der Ausgang des UND-Gatters bildet dann den Ausgang \textbf{Zur\"ucksetzen}.\\
+Der zweite Ausgang des Multiplexers wird mit dem gatakteten Flag Signal durch ein UND-Gatter verkn\"upft. Das resultierende Signal setzt den \textbf{IF} Flip-Flop. Dies implementiert den \textbf{IF} Befehl.\\
+\\
+Der letzte Ausgang des Multiplexers ist \"uber ein UND-Gatter mit dem Steuertakt verbunden. Der Ausgang des UND-Gatters bildet dann den Ausgang \textbf{Zur\"ucksetzen} oder RESET.\\
 \\
 Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den Rechenkern und werden im folgenden pr\"asentiert.
 \begin{center}
@@ -2278,7 +2278,7 @@ Die XOR Operation und die UND Operation lassen sich ja so wie jede bin\"are Oper
 \\
 In Wahrheit kommen wir auch ohne WHILE-Schleife aus, da wir ja wissen, dass die Umwandlung bei zwei n-Bit lange Zahlen maximal $n$ mal durchgef\"uhrt werden muss. Au\ss{}erdem \"andert die Umwandlung nichts mehr sobald die UND Operation einmal Null ergeben hat.\\
 \\
-Offensichtlich k\"onnen wir die XOR Operation ausnutzen um in unserer Maschinensprache eine IF oder RESET IF Anweisung bedingt auf die Gleichheit oder Ungleichheit zweier W\"orter zu verwenden.
+Offensichtlich k\"onnen wir die XOR Operation ausnutzen um in unserer Maschinensprache eine IF Anweisung bedingt auf die Gleichheit oder Ungleichheit zweier W\"orter zu verwenden.
 \section{Beispiele}
 \subsection{Acht Bit Addition}
 \subsection{Multiplikation}

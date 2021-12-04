@@ -1,6 +1,6 @@
 #define WRITE_ENABLE 10
 #define OUTPUT_ENABLE 11
-#define RESET 12
+#define RESET_PIN 12
 #define NEXT 13
 
 #define DATA 2
@@ -12,7 +12,7 @@
 #define POP 0b10000000
 #define PUSH 0b10100000
 #define LOAD 0b11000000
-#define RESET_IF 0b11100000
+#define RESET 0b11100000
 
 
 byte data[] = {
@@ -58,7 +58,8 @@ byte data[] = {
   POP | 0b01100,
   POP | 0b01110,
   NAND | 0b01100,
-  RESET_IF,
+  IF,
+    RESET,
   PUSH | 0b10010,
   POP | 0b00110,
   HALT,
@@ -84,9 +85,9 @@ void nextAddress(){
 }
 
 void resetAddress(){
-  digitalWrite(RESET, HIGH);
+  digitalWrite(RESET_PIN, HIGH);
   delayMicroseconds(100);
-  digitalWrite(RESET, LOW);
+  digitalWrite(RESET_PIN, LOW);
   delay(10);
 }
 
@@ -123,7 +124,7 @@ void setup() {
   // put your setup code here, to run once:
   pinMode(WRITE_ENABLE, OUTPUT);
   pinMode(OUTPUT_ENABLE, OUTPUT);
-  pinMode(RESET, OUTPUT);
+  pinMode(RESET_PIN, OUTPUT);
   pinMode(NEXT, OUTPUT);
 
   digitalWrite(OUTPUT_ENABLE, HIGH);
