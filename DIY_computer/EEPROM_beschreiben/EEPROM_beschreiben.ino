@@ -15,7 +15,8 @@
 #define RESET 0b11100000
 
 
-byte data[] = {
+/*byte data[] = {
+  LOAD | 0b00010,
   IF,
     LOAD | 0b00010,
 //END,
@@ -33,6 +34,57 @@ byte data[] = {
     RESET,
 //END,
   POP | 0b00111,
+  HALT,
+};*/
+
+byte data[] = {
+  // precondition
+  LOAD | 0b01000,  // x 
+  POP | 0b0,
+  POP | 0b00100,
+  LOAD | 0b00010,  // y
+  POP | 0b00010,
+  POP | 0b00110,
+  // Code
+  NAND | 0b00100,
+  POP | 0b01000,
+  POP | 0b01010,
+  NAND | 0b01000,
+  POP | 0b10000,
+  PUSH | 0b00100,
+  POP | 0b01000,
+  POP | 0b01010,
+  NAND | 0b01000,
+  POP | 0b01010,
+  PUSH | 0b00110,
+  POP | 0b01100,
+  POP | 0b01110,
+  NAND | 0b01100,
+  POP | 0b01110,
+  NAND | 0b01000,
+  POP | 0b01000,
+  NAND | 0b01100,
+  POP | 0b01010,
+  NAND | 0b01000,
+  POP | 0b00100,
+  LSHIFT | 0b10000,
+  POP | 0b00110,
+  IF,
+    LOAD | 0b00010,
+    POP | 0b10010,
+//END,
+  PUSH | 0b10001,
+  POP | 0b01100,
+  POP | 0b01110,
+  NAND | 0b01100,
+  POP | 0b01100,
+  POP | 0b01110,
+  NAND | 0b01100,
+  IF,
+    RESET,
+//END,
+  PUSH | 0b10011,
+  POP | 0b00110,
   HALT,
 };
 
