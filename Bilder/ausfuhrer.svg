@@ -36,8 +36,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="3.0444395"
-     inkscape:cx="401.52309"
-     inkscape:cy="293.53773"
+     inkscape:cx="336.81496"
+     inkscape:cy="292.22386"
      inkscape:window-x="72"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -60,6 +60,7 @@
      y="0"
      id="tspan18">Q</tspan></text>
 
+
 <g
    id="g22"><path
      d="m 227.973,108.09 h 6"
@@ -72,6 +73,7 @@
      x="0"
      y="0"
      id="tspan26">Q</tspan></text>
+
 
 <g
    id="g30"><path
@@ -88,6 +90,7 @@
      x="29.497473"
      y="-0.091958404"
      id="tspan36">R</tspan></text>
+
 
 <g
    id="g40"><path
@@ -168,6 +171,7 @@
      sodipodi:role="line"
      id="tspan96">Inhibit</tspan></text>
 
+
 <g
    id="g100"
    transform="translate(0,-15)"><path
@@ -247,6 +251,7 @@
      y="0"
      id="tspan162">Q</tspan></text>
 
+
 <g
    id="g166"><path
      d="m 282.922,107.871 h 6"
@@ -259,6 +264,7 @@
      x="0"
      y="0"
      id="tspan170">Q</tspan></text>
+
 
 <g
    id="g174"><path
@@ -275,6 +281,7 @@
      x="29.497473"
      y="-0.091958404"
      id="tspan180">R</tspan></text>
+
 
 <g
    id="g184"><path
@@ -299,6 +306,7 @@
      y="0"
      sodipodi:role="line"
      id="tspan196">IFAN</tspan></text>
+
 
 <g
    id="g204"><path
@@ -424,6 +432,7 @@
      sodipodi:role="line"
      id="tspan288">Multiplexer</tspan></text>
 
+
 <g
    id="g292"><path
      d="m 344.918,138 v 3.75"
@@ -472,6 +481,7 @@
      sodipodi:role="line"
      id="tspan322">Ausgang</tspan></text>
 
+
 <g
    id="g326"><path
      d="m 411.23,95.711 v 3.75"
@@ -485,6 +495,7 @@
      y="0"
      sodipodi:role="line"
      id="tspan330">Eingang</tspan></text>
+
 
 <g
    id="g334"><path
@@ -505,13 +516,15 @@
      sodipodi:role="line"
      id="tspan342">VCC</tspan></text>
 
+
 <g
    id="g346"><path
      d="m 179.746,211.68 h 11.25"
      style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path348"
      inkscape:connector-curvature="0" /></g><g
-   id="g350"><path
+   id="g350"
+   transform="translate(-4.5)"><path
      d="m 179.746,226.68 h 11.25"
      style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path352"
@@ -793,6 +806,7 @@
      sodipodi:role="line"
      id="tspan568">Programmspeicher</tspan></text>
 
+
 <text
    style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
    id="text594"
@@ -802,6 +816,7 @@
      y="4.4522972"
      sodipodi:role="line"
      id="tspan592">Zurücksetzen</tspan></text>
+
 
 <g
    id="g608"><path
@@ -2230,7 +2245,8 @@
      style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1818"
      inkscape:connector-curvature="0" /></g><g
-   id="g1820"><path
+   id="g1820"
+   transform="translate(-58.488,21.918)"><path
      d="m 244.984,204.762 c 0,-3 4.5,-3 4.5,0 0,3 -4.5,3 -4.5,0"
      style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1822"
@@ -2246,6 +2262,7 @@
      y="75.595306"
      style="font-size:12px;stroke-width:0.75">Ein</tspan></text>
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
@@ -2257,6 +2274,7 @@
      x="1.1652641"
      y="55.81525"
      style="font-size:12px;stroke-width:0.75">Flag</tspan></text>
+
 
 <text
    xml:space="preserve"
@@ -2270,6 +2288,7 @@
      y="11.39003"
      style="font-size:12px;stroke-width:0.75">Steuer Takt</tspan></text>
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
@@ -2281,6 +2300,7 @@
      x="1.9442976"
      y="33.835091"
      style="font-size:12px;stroke-width:0.75">Schreib Takt</tspan></text>
+
 
 <g
    transform="translate(0,19.778)"
@@ -2641,6 +2661,7 @@
      x="211.15114"
      y="62.165432">Takt an</tspan></text>
 
+
 <g
    transform="translate(45.180048,-301.76293)"
    id="g1752-1-8"><path
@@ -2779,4 +2800,10 @@
      d="m 364.77,299.25 0.027,11.25"
      style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1466-7-1"
+     inkscape:connector-curvature="0" /></g><g
+   id="g780-3"
+   transform="matrix(0.9865978,0,0,0.9883447,3.3041137,-3.9934186)"><path
+     d="m 247.309,219.336 -0.043,-11.25"
+     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path782-6"
      inkscape:connector-curvature="0" /></g></g></g></svg>

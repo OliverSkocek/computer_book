@@ -2113,7 +2113,7 @@ Der acht Bit Eingang vom Programmspeicher teilt sich in drei Segmente. Die erste
 \\
 Der erste Ausgang des Multiplexers ist mit de \textbf{Schreib Takt} verkn\"upft durch ein UND-Gatter dessen Ausgang den \textbf{AN} Flip-Flop zur\"ucksetzt. Hierdurch wird \textbf{HALT} implementiert.\\
 \\
-Der zweite Ausgang des Multiplexers wird mit dem gatakteten Flag Signal durch ein UND-Gatter verkn\"upft. Das resultierende Signal setzt den \textbf{IF} Flip-Flop. Dies implementiert den \textbf{IF} Befehl.\\
+Der zweite Ausgang des Multiplexers wird mit dem Schreibtakt und dem verneinten Flag Signal durch ein UND-Gatter verkn\"upft. Das resultierende Signal setzt den \textbf{IF} Flip-Flop. Dies implementiert den \textbf{IF} Befehl.\\
 \\
 Der letzte Ausgang des Multiplexers ist \"uber ein UND-Gatter mit dem Steuertakt verbunden. Der Ausgang des UND-Gatters bildet dann den Ausgang \textbf{Zur\"ucksetzen} oder RESET.\\
 \\
