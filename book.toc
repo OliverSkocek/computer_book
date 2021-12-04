@@ -94,7 +94,7 @@
 \contentsline {paragraph}{LSHIFT + 3 bit Addresse:}{91}{section*.54}%
 \contentsline {paragraph}{POP + 4 bit Addresse:}{91}{section*.55}%
 \contentsline {paragraph}{PUSH + 4 bit Addresse:}{91}{section*.56}%
-\contentsline {paragraph}{LOAD + 4 bit Wort:}{92}{section*.57}%
+\contentsline {paragraph}{LOAD + 4 bit Wort:}{91}{section*.57}%
 \contentsline {paragraph}{RESET:}{92}{section*.58}%
 \contentsline {section}{\numberline {6.4}Funktionsweise der Kontrolleinheit}{92}{section.6.4}%
 \contentsline {chapter}{\numberline {7}Programmierung der Rechenmaschine}{96}{chapter.7}%
