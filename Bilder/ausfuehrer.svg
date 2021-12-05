@@ -13,7 +13,7 @@
    viewBox="0 0 207.22066 261.41056"
    version="1.1"
    id="svg8"
-   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="ausfuehrer.svg">
   <defs
      id="defs2">
@@ -91,15 +91,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="409.04404"
-     inkscape:cy="629.54641"
+     inkscape:zoom="1.4"
+     inkscape:cx="263.71801"
+     inkscape:cy="281.83618"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1368"
-     inkscape:window-height="836"
+     inkscape:window-width="3768"
+     inkscape:window-height="2096"
      inkscape:window-x="72"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -137,12 +137,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96"
        x="5.4582777"
-       y="15.684336"><tspan
+       y="15.684336">
+      <tspan
          sodipodi:role="line"
          id="tspan94"
          style="stroke-width:0.352777"
          x="5.4582777"
-         y="15.684336">Ein</tspan></text>
+         y="15.684336">Ein</tspan>
+    </text>
     <g
        id="g98"
        transform="matrix(0.35277777,0,0,0.35277777,24.063888,-48.942115)">
@@ -155,12 +157,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text104"
        x="85.690849"
-       y="15.925219"><tspan
+       y="15.925219">
+      <tspan
          sodipodi:role="line"
          id="tspan102"
          style="stroke-width:0.352777"
          x="85.690849"
-         y="15.925219">Takt</tspan></text>
+         y="15.925219">Takt</tspan>
+    </text>
     <g
        id="g106"
        transform="matrix(0.35277777,0,0,0.35277777,25.386669,-48.942115)">
@@ -173,12 +177,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text112"
        x="124.96221"
-       y="15.774027"><tspan
+       y="15.774027">
+      <tspan
          sodipodi:role="line"
          id="tspan110"
          style="stroke-width:0.352777"
          x="124.96221"
-         y="15.774027">Schreib Takt</tspan></text>
+         y="15.774027">Schreib Takt</tspan>
+    </text>
     <g
        id="g82-3"
        transform="matrix(0.17422936,0,0,0.35411946,135.05133,184.7047)"
@@ -192,12 +198,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text88-7"
        x="134.11"
-       y="193.6777"><tspan
+       y="193.6777">
+      <tspan
          sodipodi:role="line"
          id="tspan86-5"
          style="stroke-width:0.352777"
          x="134.11"
-         y="193.6777">Datenadresse</tspan></text>
+         y="193.6777">Datenadresse</tspan>
+    </text>
     <g
        id="g98-3"
        transform="matrix(0.35277777,0,0,0.35277777,-17.005802,-48.9425)">
@@ -210,12 +218,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text104-7"
        x="44.621151"
-       y="15.924828"><tspan
+       y="15.924828">
+      <tspan
          sodipodi:role="line"
          id="tspan102-5"
          style="stroke-width:0.352777"
          x="44.621151"
-         y="15.924828">Flag</tspan></text>
+         y="15.924828">Flag</tspan>
+    </text>
     <g
        id="g90-3-0"
        transform="matrix(0.35277777,0,0,0.35277777,2.244506,128.81812)"
@@ -229,12 +239,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-3"
        x="5.7992144"
-       y="193.44348"><tspan
+       y="193.44348">
+      <tspan
          sodipodi:role="line"
          id="tspan94-2-6"
          style="stroke-width:0.352777"
          x="5.7992144"
-         y="193.44348">Speicher Schreiben</tspan></text>
+         y="193.44348">Speicher Schreiben</tspan>
+    </text>
     <g
        id="g90-3-06"
        transform="matrix(0.35277777,0,0,0.35277777,2.244504,157.21869)"
@@ -248,12 +260,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-6"
        x="5.7992144"
-       y="221.84349"><tspan
+       y="221.84349">
+      <tspan
          sodipodi:role="line"
          id="tspan94-2-1"
          style="stroke-width:0.352777"
          x="5.7992144"
-         y="221.84349">Register Schreiben</tspan></text>
+         y="221.84349">Register Schreiben</tspan>
+    </text>
     <g
        id="g90-3-5"
        transform="matrix(0.35277777,0,0,0.35277777,1.9034325,37.234458)"
@@ -267,12 +281,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-2"
        x="5.4581513"
-       y="101.86094"><tspan
+       y="101.86094">
+      <tspan
          sodipodi:role="line"
          id="tspan94-2-8"
          style="stroke-width:0.352777"
          x="5.4581513"
-         y="101.86094">Register Lesen</tspan></text>
+         y="101.86094">Register Lesen</tspan>
+    </text>
     <g
        id="g90-3-9"
        transform="matrix(0.35277777,0,0,0.35277777,130.43673,38.331546)"
@@ -286,12 +302,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36"
        x="133.99136"
-       y="102.95798"><tspan
+       y="102.95798">
+      <tspan
          sodipodi:role="line"
          id="tspan94-2-12"
          style="stroke-width:0.352777"
          x="133.99136"
-         y="102.95798">Speicher Lesen</tspan></text>
+         y="102.95798">Speicher Lesen</tspan>
+    </text>
     <g
        id="g90-3-9-9"
        transform="matrix(0.35277777,0,0,0.35277777,2.3480071,65.698377)"
@@ -305,12 +323,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-1"
        x="5.9027228"
-       y="130.32477"><tspan
+       y="130.32477">
+      <tspan
          sodipodi:role="line"
          id="tspan94-2-12-9"
          style="stroke-width:0.352777"
          x="5.9027228"
-         y="130.32477">Operation Selektor</tspan></text>
+         y="130.32477">Operation Selektor</tspan>
+    </text>
     <g
        id="g90-3-9-4"
        transform="matrix(0.35277777,0,0,0.35277777,1.9034376,93.153779)"
@@ -324,22 +344,26 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-8"
        x="5.4581513"
-       y="157.77977"><tspan
+       y="157.77977">
+      <tspan
          sodipodi:role="line"
          id="tspan94-2-12-4"
          style="stroke-width:0.352777"
          x="5.4581513"
-         y="157.77977">Eingabe Lesen</tspan></text>
+         y="157.77977">Eingabe Lesen</tspan>
+    </text>
     <text
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-3"
        x="133.99121"
-       y="87.995438"><tspan
+       y="87.995438">
+      <tspan
          sodipodi:role="line"
          id="tspan94-2-12-6"
          style="stroke-width:0.352777"
          x="133.99121"
-         y="87.995438" /></text>
+         y="87.995438" />
+    </text>
     <g
        id="g90-3-9-1"
        transform="matrix(0.35277777,0,0,0.35277777,130.43658,65.698751)"
@@ -353,12 +377,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-6"
        x="133.99121"
-       y="130.32516"><tspan
+       y="130.32516">
+      <tspan
          sodipodi:role="line"
          id="tspan94-2-12-3"
          style="stroke-width:0.352777"
          x="133.99121"
-         y="130.32516">Resultat Lesen</tspan></text>
+         y="130.32516">Resultat Lesen</tspan>
+    </text>
     <g
        id="g82"
        style="fill:url(#linearGradient1027);fill-opacity:1"
@@ -372,17 +398,20 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text88"
        x="6.4141622"
-       y="42.955406"><tspan
+       y="42.955406">
+      <tspan
          sodipodi:role="line"
          x="6.4141622"
          y="42.955406"
          style="stroke-width:0.352777"
-         id="tspan936">Anweisung von</tspan><tspan
+         id="tspan936">Anweisung von</tspan>
+      <tspan
          sodipodi:role="line"
          x="6.4141622"
          y="56.184532"
          style="stroke-width:0.352777"
-         id="tspan940">Programmspeicher</tspan></text>
+         id="tspan940">Programmspeicher</tspan>
+    </text>
     <g
        id="g90-3-5-2"
        transform="matrix(0.35277777,0,0,0.35277777,2.244932,190.21356)"
@@ -393,15 +422,17 @@
          id="path92-5-92-0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-2-6"
        x="5.7996416"
-       y="254.83971"><tspan
+       y="254.83971">
+      <tspan
          sodipodi:role="line"
          id="tspan94-2-8-1"
          style="stroke-width:0.352777"
          x="5.7996416"
-         y="254.83971">nächste_Anweisung</tspan></text>
+         y="254.83971">Takt an</tspan>
+    </text>
     <g
        id="g90-3-9-5"
        transform="matrix(0.35277777,0,0,0.35277777,130.77829,191.31065)"
@@ -415,12 +446,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-4"
        x="134.33275"
-       y="255.93675"><tspan
+       y="255.93675">
+      <tspan
          sodipodi:role="line"
          id="tspan94-2-12-7"
          style="stroke-width:0.352777"
          x="134.33275"
-         y="255.93675">Zurücksetzen</tspan></text>
+         y="255.93675">Zurücksetzen</tspan>
+    </text>
     <g
        id="g106-3"
        transform="matrix(0.35277777,0,0,0.35277777,25.386793,-8.5316289)">
@@ -433,12 +466,14 @@
        style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text112-7"
        x="124.96221"
-       y="56.184517"><tspan
+       y="56.184517">
+      <tspan
          sodipodi:role="line"
          id="tspan110-5"
          style="stroke-width:0.352777"
          x="124.96221"
-         y="56.184517">Steuer Takt</tspan></text>
+         y="56.184517">Steuer Takt</tspan>
+    </text>
     <text
        xml:space="preserve"
        id="text930"

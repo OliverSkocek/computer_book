@@ -2035,8 +2035,8 @@ Am Anfang des Kapitels haben wir gesehen wie die Kontrolleinheit mit den untersc
 \\
 Der Ausf\"uhrer hat f\"unf ein Bit Eing\"ange. Einen Eingang f\"ur das Flag, einen Eingang f\"ur das Taktsignal, einen f\"ur den Schreib Takt, einen f\"ur den Steuertakt und einen Eingang zum Einschalten der Rechenmaschine.\\
 \\
-Die Kommunikation mit dem Programmspeicher ist sehr einfach gestaltet. Es gibt zwei ein Bit Ausg\"ange namens \textbf{n\"achste Anweisung} und \textbf{Zur\"ucksetzen}. Ersterer kommuniziert dem Programmspeicher, dass er zur n\"achsten Anweisung im Speicher gehen soll und Letzterer teilt dem Programmspeicher mit, dass er zur\"uck zur ersten Anweisung gehen soll.\\
-Als Antwort erh\"alt der Ausf\"uhrer an einem acht Bit Eingang, namens \textbf{Anweisung von Programmspeicher} die gesuchte Anweisung in Form eines acht Bit Wortes.\\
+Die Kommunikation mit dem Programmspeicher ist sehr einfach gestaltet. Es gibt einen ein Bit Ausgang namens \textbf{Zur\"ucksetzen}. Dieser teilt dem Programmspeicher mit, dass er zur\"uck zur ersten Anweisung gehen soll.\\
+Der ein Bit Ausgang \textbf{Takt an} steuert den \textbf{Taktgeber}, der wiederum daf\"ur verantwortlich ist dem Programmspeicher mitzuteilen wann er zur n\"achsten Anweisung \"uber gehen soll. Als Antwort erh\"alt der Ausf\"uhrer an einem acht Bit Eingang, namens \textbf{Anweisung von Programmspeicher} die gesuchte Anweisung in Form eines acht Bit Wortes.\\
 \\
 Intern hat der Ausf\"uhrer zwei Zust\"ande, die durch RS-Flip-Flops implementiert sind. Einen \textbf{AN} Bit, der signalisiert, dass die Maschine einen Rechenprozess ausf\"uhrt und einen \textbf{WENN} Bit, der signalisiert, dass sich der Rechner in einer IF-THEN-END Verzweigung befindet.\\
 \\
