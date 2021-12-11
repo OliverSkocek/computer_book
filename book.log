@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.23)  6 DEC 2021 00:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.23)  12 DEC 2021 00:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2429,11 +2429,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 2030--2032
  []
 
 [87 <./Bilder/tz.pdf>]
-<Bilder/ausfuehrer.pdf, id=1713, 589.5999pt x 743.78506pt>
+<Bilder/ausfuehrer.pdf, id=1713, 591.58362pt x 743.78506pt>
 File: Bilder/ausfuehrer.pdf Graphic file (type pdf)
 <use Bilder/ausfuehrer.pdf>
 Package pdftex.def Info: Bilder/ausfuehrer.pdf  used on input line 2046.
-(pdftex.def)             Requested size: 156.24323pt x 197.1021pt.
+(pdftex.def)             Requested size: 156.7689pt x 197.1021pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2033--2049
 
@@ -2520,7 +2520,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2089--2093
  []
 
 [91]
-<Bilder/ausfuhrer.pdf, id=1764, 546.26698pt x 347.3588pt>
+<Bilder/ausfuhrer.pdf, id=1757, 546.26698pt x 347.3588pt>
 File: Bilder/ausfuhrer.pdf Graphic file (type pdf)
 <use Bilder/ausfuhrer.pdf>
 Package pdftex.def Info: Bilder/ausfuhrer.pdf  used on input line 2101.
@@ -2571,11 +2571,11 @@ Overfull \hbox (4.75232pt too wide) in paragraph at lines 2136--2148
  []
 
 [93]
-<Bilder/aus_2.pdf, id=1789, 486.50131pt x 161.56721pt>
+<Bilder/aus_2.pdf, id=1782, 486.43074pt x 198.18619pt>
 File: Bilder/aus_2.pdf Graphic file (type pdf)
 <use Bilder/aus_2.pdf>
 Package pdftex.def Info: Bilder/aus_2.pdf  used on input line 2170.
-(pdftex.def)             Requested size: 340.5486pt x 113.09627pt.
+(pdftex.def)             Requested size: 340.49919pt x 138.72937pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2149--2173
 
@@ -2596,12 +2596,6 @@ d vie-len Eing^^?angen
 
 Underfull \hbox (badness 10000) in paragraph at lines 2149--2173
 
- []
-
-
-Overfull \hbox (20.43025pt too wide) in paragraph at lines 2149--2173
-\OT1/lmr/m/n/10.95 Abschlie^^Yend muss noch der \OT1/lmr/bx/n/10.95 Reg-is-ter 
-Schreiben \OT1/lmr/m/n/10.95 und der \OT1/lmr/bx/n/10.95 Spe-icher Schreiben
  []
 
 
@@ -2694,10 +2688,10 @@ usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
-Output written on book.pdf (100 pages, 1357930 bytes).
+Output written on book.pdf (100 pages, 1358007 bytes).
 PDF statistics:
- 2020 PDF objects out of 2073 (max. 8388607)
- 1647 compressed objects within 17 object streams
+ 2013 PDF objects out of 2073 (max. 8388607)
+ 1641 compressed objects within 17 object streams
  517 named destinations out of 1000 (max. 500000)
  672 words of extra memory for PDF output out of 10000 (max. 10000000)
 

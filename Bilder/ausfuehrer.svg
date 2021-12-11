@@ -8,9 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="207.22066mm"
+   width="207.91786mm"
    height="261.41055mm"
-   viewBox="0 0 207.22066 261.41056"
+   viewBox="0 0 207.91786 261.41055"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
@@ -23,36 +23,6 @@
        width="311.31265"
        height="241.85126"
        id="rect932" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient987"
-       id="linearGradient989"
-       x1="1.2850004"
-       y1="76.769997"
-       x2="259.246"
-       y2="76.769997"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient987">
-      <stop
-         style="stop-color:#ff0000;stop-opacity:1;"
-         offset="0"
-         id="stop983" />
-      <stop
-         style="stop-color:#ff0000;stop-opacity:0;"
-         offset="1"
-         id="stop985" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient987"
-       id="linearGradient59"
-       gradientUnits="userSpaceOnUse"
-       x1="1.2850004"
-       y1="76.769997"
-       x2="259.246"
-       y2="76.769997" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient1025"
@@ -92,8 +62,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="263.71801"
-     inkscape:cy="281.83618"
+     inkscape:cx="125.75599"
+     inkscape:cy="450.40754"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -124,17 +94,18 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-6.496844,-7.6435084)">
+     transform="translate(-5.7686358,-7.6435084)">
     <g
        id="g90"
        transform="matrix(0.35277777,0,0,0.35277777,1.9035643,-48.942115)">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path92" />
+         style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path92"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96"
        x="5.4582777"
        y="15.684336">
@@ -150,11 +121,12 @@
        transform="matrix(0.35277777,0,0,0.35277777,24.063888,-48.942115)">
       <path
          d="m 206.129,207.641 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.371,0 -13.351,-5.84 -13.351,-13.043 0,-7.207 5.98,-13.047 13.351,-13.047 7.375,0 13.352,5.84 13.352,13.047 z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path100" />
+         style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path100"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text104"
        x="85.690849"
        y="15.925219">
@@ -170,11 +142,12 @@
        transform="matrix(0.35277777,0,0,0.35277777,25.386669,-48.942115)">
       <path
          d="m 313.699,207.211 c 0,7.203 -5.976,13.043 -13.351,13.043 -7.371,0 -13.348,-5.84 -13.348,-13.043 0,-7.203 5.977,-13.043 13.348,-13.043 7.375,0 13.351,5.84 13.351,13.043 z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path108" />
+         style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path108"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text112"
        x="124.96221"
        y="15.774027">
@@ -186,36 +159,16 @@
          y="15.774027">Schreib Takt</tspan>
     </text>
     <g
-       id="g82-3"
-       transform="matrix(0.17422936,0,0,0.35411946,135.05133,184.7047)"
-       style="fill:url(#linearGradient989);fill-opacity:1;stroke:#000000">
-      <path
-         d="m 1.66,47.594 h 257.211 v 58.352 H 1.66 Z"
-         style="fill:url(#linearGradient59);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path84-6" />
-    </g>
-    <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
-       id="text88-7"
-       x="134.11"
-       y="193.6777">
-      <tspan
-         sodipodi:role="line"
-         id="tspan86-5"
-         style="stroke-width:0.352777"
-         x="134.11"
-         y="193.6777">Datenadresse</tspan>
-    </text>
-    <g
        id="g98-3"
        transform="matrix(0.35277777,0,0,0.35277777,-17.005802,-48.9425)">
       <path
          d="m 206.129,207.641 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.371,0 -13.351,-5.84 -13.351,-13.043 0,-7.207 5.98,-13.047 13.351,-13.047 7.375,0 13.352,5.84 13.352,13.047 z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path100-6" />
+         style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path100-6"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text104-7"
        x="44.621151"
        y="15.924828">
@@ -232,11 +185,12 @@
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path92-5-9" />
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path92-5-9"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-3"
        x="5.7992144"
        y="193.44348">
@@ -253,11 +207,12 @@
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path92-5-2" />
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path92-5-2"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-6"
        x="5.7992144"
        y="221.84349">
@@ -274,11 +229,12 @@
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path92-5-92" />
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path92-5-92"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-2"
        x="5.4581513"
        y="101.86094">
@@ -295,11 +251,12 @@
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path92-5-7" />
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path92-5-7"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36"
        x="133.99136"
        y="102.95798">
@@ -316,11 +273,12 @@
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path92-5-7-3" />
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path92-5-7-3"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-1"
        x="5.9027228"
        y="130.32477">
@@ -337,11 +295,12 @@
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path92-5-7-7" />
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path92-5-7-7"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-8"
        x="5.4581513"
        y="157.77977">
@@ -353,7 +312,7 @@
          y="157.77977">Eingabe Lesen</tspan>
     </text>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-3"
        x="133.99121"
        y="87.995438">
@@ -362,7 +321,7 @@
          id="tspan94-2-12-6"
          style="stroke-width:0.352777"
          x="133.99121"
-         y="87.995438" />
+         y="97.359177" />
     </text>
     <g
        id="g90-3-9-1"
@@ -370,11 +329,12 @@
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path92-5-7-0" />
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path92-5-7-0"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-6"
        x="133.99121"
        y="130.32516">
@@ -391,11 +351,12 @@
        transform="matrix(0.35277777,0,0,0.35277777,6.3184051,45.726416)">
       <path
          d="m 1.66,47.594 h 257.211 v 58.352 H 1.66 Z"
-         style="fill:url(#linearGradient447);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path84" />
+         style="fill:url(#linearGradient447);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path84"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text88"
        x="6.4141622"
        y="42.955406">
@@ -418,8 +379,9 @@
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path92-5-92-0" />
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path92-5-92-0"
+         inkscape:connector-curvature="0" />
     </g>
     <text
        style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
@@ -439,11 +401,12 @@
        style="fill:#ff0000">
       <path
          d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path92-5-7-5" />
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path92-5-7-5"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text96-6-36-4"
        x="134.33275"
        y="255.93675">
@@ -459,11 +422,12 @@
        transform="matrix(0.35277777,0,0,0.35277777,25.386793,-8.5316289)">
       <path
          d="m 313.699,207.211 c 0,7.203 -5.976,13.043 -13.351,13.043 -7.371,0 -13.348,-5.84 -13.348,-13.043 0,-7.203 5.977,-13.043 13.348,-13.043 7.375,0 13.351,5.84 13.351,13.043 z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path108-6" />
+         style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path108-6"
+         inkscape:connector-curvature="0" />
     </g>
     <text
-       style="font-variant:normal;font-weight:normal;font-size:10.5833px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
        id="text112-7"
        x="124.96221"
        y="56.184517">
@@ -477,6 +441,28 @@
     <text
        xml:space="preserve"
        id="text930"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect932);fill:#000000;fill-opacity:1;stroke:none;" />
+       style="font-style:normal;font-weight:normal;font-size:10.58329964px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect932);fill:#000000;fill-opacity:1;stroke:none" />
+    <g
+       id="g90-3-06-3"
+       transform="matrix(0.35277777,0,0,0.35277777,130.43645,128.81766)"
+       style="fill:#ff0000">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 41.516,206.957 c 0,7.203 -5.977,13.043 -13.352,13.043 -7.375,0 -13.352,-5.84 -13.352,-13.043 0,-7.203 5.977,-13.043 13.352,-13.043 7.375,0 13.352,5.84 13.352,13.043 z"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.74999899;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path92-5-2-6" />
+    </g>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:10.58329964px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       id="text96-6-6-7"
+       x="133.99115"
+       y="193.44246">
+      <tspan
+         sodipodi:role="line"
+         id="tspan94-2-1-5"
+         style="stroke-width:0.352777"
+         x="133.99115"
+         y="193.44246">Flag schreiben</tspan>
+    </text>
   </g>
 </svg>

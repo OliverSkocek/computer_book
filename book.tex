@@ -2117,7 +2117,7 @@ Der zweite Ausgang des Multiplexers wird mit dem Schreibtakt und dem verneinten 
 \\
 Der letzte Ausgang des Multiplexers ist \"uber ein UND-Gatter mit dem Steuertakt verbunden. Der Ausgang des UND-Gatters bildet dann den Ausgang \textbf{Zur\"ucksetzen} oder RESET.\\
 \\
-Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den Rechenkern und werden im folgenden pr\"asentiert.
+Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den Rechenkern und werden im folgenden pr\"asentiert. Man beachte, dass alle Steuersignale, die ein Schreiben steuern nur Eins sind, wenn der Schreibtakt Eins ist.
 \begin{center}
 	\begin{tabular}{|c|c|c|c|c|c|}
 		\textbf{Multiplexer Ausgang} & Register Lesen & Speicher Lesen & Eingabe Lesen \\
@@ -2126,8 +2126,8 @@ Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den 
 		1 & 0 & 0 & 0 \\
 		2 & 0 & 0 & 0 \\
 		3 & 0 & 0 & 0 \\
-		4 & 0 & 1 & 0 \\
-		5 & 1 & 0 & 0 \\
+		4 & 1 & 0 & 0 \\
+		5 & 0 & 1 & 0 \\
 		6 & 0 & 0 & 1 \\
 		7 & 0 & 0 & 0 \\
 	\end{tabular}  
@@ -2138,31 +2138,31 @@ Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den 
 		\hline
 		0 & 0 & 0 & 0\\
 		0 & 0 & 0 & 0\\
-		0 & 1 & 1 & 0\\
 		1 & 1 & 1 & 0\\
-		0 & 0 & 1 & 0\\
+		0 & 1 & 1 & 0\\
 		0 & 0 & 0 & 1\\
+		0 & 0 & 1 & 0\\
 		0 & 0 & 1 & 0\\
 		0 & 0 & 0 & 0\\
 	\end{tabular}  
 \end{center}
-\begin{tabular}{|c|}
-		Resultat Lesen \\
+\begin{tabular}{|c|c|}
+		Resultat Lesen & Flag Schreiben \\
 		\hline
-		0\\
-		0\\
-		1\\
-		1\\
-		0\\
-		0\\
-		0\\
-		0\\
+		0 & 0\\
+		0 & 0\\
+		1 & 1\\
+		1 & 1\\
+		0 & 0\\
+		0 & 0\\
+		0 & 0\\
+		0 & 0\\
 \end{tabular}\\  
 \\
 Die Implementierung dieses Teils des Ausf\"uhrers erfolgt ohne viel Nachdenkens. Für jeden Ausgang des Multiplexers betrachten wir die entsprechende Zeile in der Tabelle und verbinden den Multiplexerausgang mit jedem durch Eins gekennzeichneten Ausgang des Ausf\"uhrers.
 Falls mehrere Multiplexer Ausg\"ange mit dem selben Ausf\"uhrer Ausgang verbunden werden sollen, m\"ussen Diese zuerst durch ein ODER-Gatter mit entsprechend vielen Eing\"angen verkn\"upft werden. Der Ausgang des ODER-Gatters f\"uhrt dann zum gewollten Ausf\"uhrer Ausgang.\\
 \\
-Abschlie\ss{}end muss noch der \textbf{Register Schreiben} und der \textbf{Speicher Schreiben} jeder f\"ur sich mit dem \textbf{Schreib Takt} per UND-Gatter verkn\"upft werden. Hierdurch erzeugt man die eigentlichen Schreib Takt gesteuerte Schreibsignale.\\
+Abschlie\ss{}end muss noch \textbf{Register Schreiben}, \textbf{Speicher Schreiben} und \textbf{Flag Schreiben}] jeder f\"ur sich mit dem \textbf{Schreib Takt} per UND-Gatter verkn\"upft werden. Hierdurch erzeugt man die eigentlichen Schreib Takt gesteuerte Schreibsignale.\\
 \\
 Die gew\"unschte Funktionalit\"at l\"asst sich mit nur wenig Aufwand implementieren.
 \begin{figure}[H]
@@ -2172,7 +2172,7 @@ Die gew\"unschte Funktionalit\"at l\"asst sich mit nur wenig Aufwand implementie
 	\end{center}
 \end{figure}
 \noindent
-Die Symbole 3, 4, 5 ,6 und 7 stehen hierbei f\"ur die entsprechenden Ausg\"ange des Multiplexers.
+Die Symbole 2, 3, 4 ,5 und 6 stehen hierbei f\"ur die entsprechenden Ausg\"ange des Multiplexers.
 \chapter{Programmierung der Rechenmaschine}
 Wir kommen nun endlich zur Ernte der Früchte unserer Bemühungen. In diesem Kapitel vergewissern wir uns, dass unsere Rechenmaschine tats\"achlich eine universelle Programmiersprache implementiert, soweit dies \"uberhaupt dies \"uberhaupt f\"ur eine physikalische Machine m\"oglich ist.\\
 Dies wird in mehreren Schritten gezeigt. Zuerst vergewissern wir uns, dass wir mit unseren Grundfunktionen Vier Bit Addition und Gleichheit darstellen k\"onnen. Damit haben wir bereits gezeigt, dass sich beliebige WHILE-Programme in unsrer Maschinensprache ausdr\"ucken lassen. Nat\"urlich mit der Einschr\"ankung, dass die Variablen und Kontrollstrukturen, die notwendig sind in den Speicher passen, aber diese Einschr\"ankung hat jede Rechenmaschine. Um zu zeigen, dass sich interessante Programme f\"ur unsere Rechenmaschine schreiben lassen, geben wir zum Abschluss ein paar Beispiele. Hierzu geh\"oren Kontrollstrukturen f\"ur IF-THEN-END Anweisungen, acht Bit Addition, Multiplikation und ein Programm, dass Fibonacci Zahlen ausspuckt.
