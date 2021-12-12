@@ -2077,7 +2077,7 @@ Die letzte Eigenschaft die wir ausnutzen ist, dass verschachtelte IF-THEN-END Ve
 \\
 Gie\ss{}en wir den Gedanken nun in eine konkrete Form.
 Jeder Befehl ist einen Byte lang und hat die Form:
-$$(b_0, b_1, b_3, a_0, a_1, a_2, a_3, F)$$
+$$(b_0, b_1, b_2, a_0, a_1, a_2, a_3, F)$$
 Die Befehle, die unsere Rechenmaschine kennt sind die Folgenden:
 \paragraph{HALT:} $(b_0, b_1, b_2) = (0, 0, 0)$ Der Zustand der Rechenmaschine \"andert sich nicht und kein weiterer Befehl wird mehr ausgef\"uhrt.
 \paragraph{IF:} $(b_0, b_1, b_2) = (0, 0, 1)$ Wenn das Flag auf Eins steht wird der n\"achste Befehl in der Reihe als n\"achstes ausgef\"uhrt, ansonsten wenn das Flag auf Null steht wird der n\"achste Befehl ausgef\"uhrt dessen letztes Bit, der $F$ Bit, Eins ist.
@@ -2162,7 +2162,7 @@ Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den 
 Die Implementierung dieses Teils des Ausf\"uhrers erfolgt ohne viel Nachdenkens. Für jeden Ausgang des Multiplexers betrachten wir die entsprechende Zeile in der Tabelle und verbinden den Multiplexerausgang mit jedem durch Eins gekennzeichneten Ausgang des Ausf\"uhrers.
 Falls mehrere Multiplexer Ausg\"ange mit dem selben Ausf\"uhrer Ausgang verbunden werden sollen, m\"ussen Diese zuerst durch ein ODER-Gatter mit entsprechend vielen Eing\"angen verkn\"upft werden. Der Ausgang des ODER-Gatters f\"uhrt dann zum gewollten Ausf\"uhrer Ausgang.\\
 \\
-Abschlie\ss{}end muss noch \textbf{Register Schreiben}, \textbf{Speicher Schreiben} und \textbf{Flag Schreiben}] jeder f\"ur sich mit dem \textbf{Schreib Takt} per UND-Gatter verkn\"upft werden. Hierdurch erzeugt man die eigentlichen Schreib Takt gesteuerte Schreibsignale.\\
+Abschlie\ss{}end muss noch \textbf{Register Schreiben}, \textbf{Speicher Schreiben} und \textbf{Flag Schreiben} jeder f\"ur sich mit dem \textbf{Schreib Takt} per UND-Gatter verkn\"upft werden. Hierdurch erzeugt man die eigentlichen Schreib Takt gesteuerte Schreibsignale.\\
 \\
 Die gew\"unschte Funktionalit\"at l\"asst sich mit nur wenig Aufwand implementieren.
 \begin{figure}[H]
