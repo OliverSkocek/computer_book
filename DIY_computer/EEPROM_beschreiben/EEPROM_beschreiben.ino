@@ -14,7 +14,108 @@
 #define LOAD 0b11000000
 #define RESET 0b11100000
 
+/*
+byte data[] = {
+  LOAD | 0b11111,
+  POP | 0b00000,
+  PUSH | 0b00000,
+  LOAD | 0b11111,
+  POP | 0b00010,
+  PUSH | 0b00010,
+  LOAD | 0b11111,
+  POP | 0b00100,
+  PUSH | 0b00100,
+  LOAD | 0b11111,
+  POP | 0b00110,
+  PUSH | 0b00110,
+  LOAD | 0b11111,
+  POP | 0b01000,
+  PUSH | 0b01000,
+  LOAD | 0b11111,
+  POP | 0b01010,
+  PUSH | 0b01010,
+  LOAD | 0b11111,
+  POP | 0b01100,
+  PUSH | 0b01100,
+  LOAD | 0b11111,
+  POP | 0b01110,
+  PUSH | 0b01110,
+  LOAD | 0b11111,
+  POP | 0b10000,
+  PUSH | 0b10000,
+  LOAD | 0b11111,
+  POP | 0b10010,
+  PUSH | 0b10010,
+  LOAD | 0b11111,
+  POP | 0b10100,
+  PUSH | 0b10100,
+  LOAD | 0b11111,
+  POP | 0b10110,
+  PUSH | 0b10110,
+  LOAD | 0b11111,
+  POP | 0b11000,
+  PUSH | 0b11000,
+  LOAD | 0b11111,
+  POP | 0b11010,
+  PUSH | 0b11010,
+  LOAD | 0b11111,
+  POP | 0b11100,
+  PUSH | 0b11100,
+  LOAD | 0b11111,
+  POP | 0b11110,
+  PUSH | 0b11110,
 
+  RESET,
+};*/
+
+
+/*
+byte data[] = {
+  // precondition
+  LOAD | 0b01010,  // x 
+  POP | 0b00100,
+  PUSH | 0b00100,
+  POP | 0b00000,
+  LOAD | 0b00110,  // y
+  POP | 0b00010,
+  LOAD | 0b10100,  // y
+  POP | 0b11100,
+  LOAD | 0b00100,  // y
+  POP | 0b11110,
+  NAND | 0b0,
+  LSHIFT | 0b0,
+  IF,
+    RESET,
+  NAND | 0b11111,
+  LSHIFT | 0b11100,
+  HALT,
+};*/
+
+/*
+byte data[] = {
+  // precondition
+  LOAD | 0b01010,  // x 
+  POP | 0b0,
+  LOAD | 0b00010,  // y
+  POP | 0b11110,
+  LOAD | 0b10100,  // y
+  POP | 0b11100,
+  PUSH | 0b0,
+  IF,
+    RESET,
+  PUSH | 0b11111,
+  PUSH | 0b11100,
+  HALT,
+};*/
+
+/*byte data[] = {
+  LOAD | 0b00010,
+  IF,
+    RESET,
+  POP | 0b01011,
+  LOAD | 0b00010,
+  HALT,
+};*/
 /*byte data[] = {
   LOAD | 0b00010,
   IF,
@@ -39,52 +140,79 @@
 
 byte data[] = {
   // precondition
-  LOAD | 0b01000,  // x 
-  POP | 0b0,
-  POP | 0b00100,
-  LOAD | 0b00010,  // y
-  POP | 0b00010,
-  POP | 0b00110,
+  LOAD | 0b10000,
+  POP | 0b11010,
+  IF,
+    LOAD | 0b00000,
+    POP | 0b11010,
+  LSHIFT | 0b11011,
+  IF,
+    LOAD | 0b01010,  // x 
+    POP | 0b00000,
+    LOAD | 0b00110,  // y
+    POP | 0b00010,
   // Code
-  NAND | 0b00100,
-  POP | 0b01000,
-  POP | 0b01010,
-  NAND | 0b01000,
-  POP | 0b10000,
-  PUSH | 0b00100,
-  POP | 0b01000,
-  POP | 0b01010,
-  NAND | 0b01000,
-  POP | 0b01010,
-  PUSH | 0b00110,
-  POP | 0b01100,
-  POP | 0b01110,
-  NAND | 0b01100,
-  POP | 0b01110,
-  NAND | 0b01000,
-  POP | 0b01000,
-  NAND | 0b01100,
-  POP | 0b01010,
-  NAND | 0b01000,
+  NAND | 0b00001,
   POP | 0b00100,
-  LSHIFT | 0b10000,
   POP | 0b00110,
+  NAND | 0b00100,
+  POP | 0b00110,
+  
+  PUSH | 0b00000,
+  POP | 0b01000,
+  POP | 0b01010,
+  NAND | 0b01000,
+  POP | 0b01100,
+
+  PUSH | 0b00010,
+  POP | 0b01110,
+  POP | 0b01000,
+  POP | 0b01010,
+  NAND | 0b01000,
+  POP | 0b01000,
+
+  PUSH | 0b00000,
+  POP | 0b01010,
+  NAND | 0b01000,
+  POP | 0b01000,
+  NAND | 0b01100,
+  POP | 0b01010,
+  NAND | 0b01000,
+  POP | 0b00000,
+
+  LSHIFT | 0b00110,
+  POP | 0b00010,
   IF,
     LOAD | 0b00010,
-    POP | 0b10010,
-//END,
-  PUSH | 0b10001,
-  POP | 0b01100,
-  POP | 0b01110,
-  NAND | 0b01100,
-  POP | 0b01100,
-  POP | 0b01110,
-  NAND | 0b01100,
+    POP | 0b11100,
+  
+  LOAD | 0b00001,
+  POP | 0b11110,
+  LSHIFT | 0b00010,
+  POP |0b01110,
+  IF,
+    LOAD | 0b10000,
+    POP | 0b11110,
+  LSHIFT | 0b01111,
+  POP |0b01110,
+  IF,
+    LOAD | 0b10000,
+    POP | 0b11110,
+  LSHIFT | 0b01111,
+  POP |0b01110,
+  IF,
+    LOAD | 0b10000,
+    POP | 0b11110,  
+  LSHIFT | 0b01111,
+  POP |0b01110,
+  IF,
+    LOAD | 0b10000,
+    POP | 0b11110,  
+
+  LSHIFT | 0b11111,
   IF,
     RESET,
-//END,
-  PUSH | 0b10011,
-  POP | 0b00110,
+  PUSH | 0b00001,
   HALT,
 };
 
