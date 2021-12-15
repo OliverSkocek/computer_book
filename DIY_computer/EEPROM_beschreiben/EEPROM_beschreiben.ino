@@ -156,20 +156,20 @@ byte data[] = {
   POP | 0b00100,
   POP | 0b00110,
   NAND | 0b00100,
-  POP | 0b00110,
+  POP | 0b00110,    // x and y
   
   PUSH | 0b00000,
   POP | 0b01000,
   POP | 0b01010,
   NAND | 0b01000,
-  POP | 0b01100,
+  POP | 0b01100,    // nicht x
 
   PUSH | 0b00010,
   POP | 0b01110,
   POP | 0b01000,
   POP | 0b01010,
   NAND | 0b01000,
-  POP | 0b01000,
+  POP | 0b01000,    // nicht y
 
   PUSH | 0b00000,
   POP | 0b01010,
@@ -178,15 +178,15 @@ byte data[] = {
   NAND | 0b01100,
   POP | 0b01010,
   NAND | 0b01000,
-  POP | 0b00000,
+  POP | 0b00000,    // x xor y
 
-  LSHIFT | 0b00110,
+  LSHIFT | 0b00110,   // lshift x und y
   POP | 0b00010,
   IF,
     LOAD | 0b00010,
-    POP | 0b11100,
+    POP | 0b11100,    // Überlauf
   
-  LOAD | 0b00001,
+  LOAD | 0b00001,   // if lshift x und y ungleich null springe
   POP | 0b11110,
   LSHIFT | 0b00010,
   POP |0b01110,
