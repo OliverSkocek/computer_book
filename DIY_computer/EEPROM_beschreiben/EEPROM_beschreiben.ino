@@ -149,7 +149,7 @@ byte data[] = {
   IF,
     LOAD | 0b01010,  // x 
     POP | 0b00000,
-    LOAD | 0b00110,  // y
+    LOAD | 0b01110,  // y
     POP | 0b00010,
   // Code
   NAND | 0b00001,

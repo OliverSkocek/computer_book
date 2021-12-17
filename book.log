@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.23)  13 DEC 2021 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.23)  16 DEC 2021 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1408,7 +1408,7 @@ Overfull \hbox (10.4143pt too wide) in paragraph at lines 1044--1045
 -tilen oder Zahnr^^?adern
  []
 
-<Bilder/kartoffel.jpg, id=676, 539.1342pt x 337.26pt>
+<Bilder/kartoffel.jpg, id=686, 539.1342pt x 337.26pt>
 File: Bilder/kartoffel.jpg Graphic file (type jpg)
 <use Bilder/kartoffel.jpg>
 Package pdftex.def Info: Bilder/kartoffel.jpg  used on input line 1057.
@@ -1437,7 +1437,7 @@ trischen Stromkreises,
 [37
 
 ]
-<Bilder/kartoffel_diagram.pdf, id=681, 114.4275pt x 63.23625pt>
+<Bilder/kartoffel_diagram.pdf, id=691, 114.4275pt x 63.23625pt>
 File: Bilder/kartoffel_diagram.pdf Graphic file (type pdf)
 <use Bilder/kartoffel_diagram.pdf>
 Package pdftex.def Info: Bilder/kartoffel_diagram.pdf  used on input line 1065.
@@ -1449,7 +1449,7 @@ Overfull \hbox (3.508pt too wide) in paragraph at lines 1061--1068
 ie mit Dr^^?ahten miteinan-
  []
 
-<Bilder/circuit.pdf, id=682, 240.9pt x 180.675pt>
+<Bilder/circuit.pdf, id=692, 240.9pt x 180.675pt>
 File: Bilder/circuit.pdf Graphic file (type pdf)
 <use Bilder/circuit.pdf>
 Package pdftex.def Info: Bilder/circuit.pdf  used on input line 1077.
@@ -1506,7 +1506,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1081--1104
  []
 
 [39 <./Bilder/circuit.pdf>]
-<Bilder/true_kartoffel.pdf, id=713, 201.75375pt x 85.82062pt>
+<Bilder/true_kartoffel.pdf, id=723, 201.75375pt x 85.82062pt>
 File: Bilder/true_kartoffel.pdf Graphic file (type pdf)
 <use Bilder/true_kartoffel.pdf>
 Package pdftex.def Info: Bilder/true_kartoffel.pdf  used on input line 1116.
@@ -1522,7 +1522,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1109--1119
  []
 
 [40]
-<Bilder/flow.pdf, id=720, 56.64166pt x 35.59265pt>
+<Bilder/flow.pdf, id=730, 56.64166pt x 35.59265pt>
 File: Bilder/flow.pdf Graphic file (type pdf)
 <use Bilder/flow.pdf>
 Package pdftex.def Info: Bilder/flow.pdf  used on input line 1143.
@@ -1563,7 +1563,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1120--1146
  []
 
 [41 <./Bilder/true_kartoffel.pdf>]
-<Bilder/aufgabe.pdf, id=729, 56.64166pt x 49.6764pt>
+<Bilder/aufgabe.pdf, id=739, 56.64166pt x 49.6764pt>
 File: Bilder/aufgabe.pdf Graphic file (type pdf)
 <use Bilder/aufgabe.pdf>
 Package pdftex.def Info: Bilder/aufgabe.pdf  used on input line 1155.
@@ -1628,7 +1628,7 @@ Overfull \hbox (4.14682pt too wide) in paragraph at lines 1187--1189
 , dass die Charak-
  []
 
-<Bilder/charakter.pdf, id=760, 64.39186pt x 81.9727pt>
+<Bilder/charakter.pdf, id=770, 64.39186pt x 81.9727pt>
 File: Bilder/charakter.pdf Graphic file (type pdf)
 <use Bilder/charakter.pdf>
 Package pdftex.def Info: Bilder/charakter.pdf  used on input line 1197.
@@ -1639,12 +1639,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1191--1200
  []
 
 [44]
-<Bilder/ideal.pdf, id=769, 120.11609pt x 32.00229pt>
+<Bilder/ideal.pdf, id=780, 120.11609pt x 32.00229pt>
 File: Bilder/ideal.pdf Graphic file (type pdf)
 <use Bilder/ideal.pdf>
 Package pdftex.def Info: Bilder/ideal.pdf  used on input line 1215.
 (pdftex.def)             Requested size: 120.11578pt x 32.0022pt.
-<Bilder/ideal_spannung.pdf, id=770, 433.62pt x 289.08pt>
+<Bilder/ideal_spannung.pdf, id=781, 433.62pt x 289.08pt>
 File: Bilder/ideal_spannung.pdf Graphic file (type pdf)
 <use Bilder/ideal_spannung.pdf>
 Package pdftex.def Info: Bilder/ideal_spannung.pdf  used on input line 1225.
@@ -1659,7 +1659,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1219--1228
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/ideal.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >]
-<Bilder/gluh.pdf, id=801, 165.61874pt x 60.225pt>
+<Bilder/gluh.pdf, id=811, 165.61874pt x 60.225pt>
 File: Bilder/gluh.pdf Graphic file (type pdf)
 <use Bilder/gluh.pdf>
 Package pdftex.def Info: Bilder/gluh.pdf  used on input line 1238.
@@ -1681,7 +1681,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1229--1241
  []
 
 (./Bilder/gluhbirne.pdf_tex
-<Bilder/gluhbirne.pdf, id=802, page=1, 433.62pt x 289.08pt>
+<Bilder/gluhbirne.pdf, id=812, page=1, 433.62pt x 289.08pt>
 File: Bilder/gluhbirne.pdf Graphic file (type pdf)
 <use Bilder/gluhbirne.pdf, page 1>
 Package pdftex.def Info: Bilder/gluhbirne.pdf , page1 used on input line 56.
@@ -1700,7 +1700,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1255--1259
 
  []
 
-<Bilder/_abstract.pdf, id=816, 165.0246pt x 100.88425pt>
+<Bilder/_abstract.pdf, id=826, 165.0246pt x 100.88425pt>
 File: Bilder/_abstract.pdf Graphic file (type pdf)
 <use Bilder/_abstract.pdf>
 Package pdftex.def Info: Bilder/_abstract.pdf  used on input line 1267.
@@ -1711,12 +1711,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1261--1269
  []
 
 [47 <./Bilder/gluhbirne.pdf>]
-<Bilder/potent.pdf, id=829, 180.28911pt x 121.41615pt>
+<Bilder/potent.pdf, id=839, 180.28911pt x 121.41615pt>
 File: Bilder/potent.pdf Graphic file (type pdf)
 <use Bilder/potent.pdf>
 Package pdftex.def Info: Bilder/potent.pdf  used on input line 1277.
 (pdftex.def)             Requested size: 180.28867pt x 121.41585pt.
-<Bilder/laminar.pdf, id=830, 165.0246pt x 100.88425pt>
+<Bilder/laminar.pdf, id=840, 165.0246pt x 100.88425pt>
 File: Bilder/laminar.pdf Graphic file (type pdf)
 <use Bilder/laminar.pdf>
 Package pdftex.def Info: Bilder/laminar.pdf  used on input line 1286.
@@ -1752,7 +1752,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1316--1325
  []
 
 [49 <./Bilder/laminar.pdf>] (./Bilder/widerstand.pdf_tex
-<Bilder/widerstand.pdf, id=887, page=1, 433.62pt x 289.08pt>
+<Bilder/widerstand.pdf, id=897, page=1, 433.62pt x 289.08pt>
 File: Bilder/widerstand.pdf Graphic file (type pdf)
 <use Bilder/widerstand.pdf, page 1>
 Package pdftex.def Info: Bilder/widerstand.pdf , page1 used on input line 56.
@@ -1764,7 +1764,7 @@ tei-gung der Strom/S-pan-nungskurve, \OT1/lmr/bx/n/10.95 elek-trische Leitf[]ah
 igkeit
  []
 
-<Bilder/widder.pdf, id=893, 165.61874pt x 75.28125pt>
+<Bilder/widder.pdf, id=903, 165.61874pt x 75.28125pt>
 File: Bilder/widder.pdf Graphic file (type pdf)
 <use Bilder/widder.pdf>
 Package pdftex.def Info: Bilder/widder.pdf  used on input line 1356.
@@ -1784,7 +1784,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1360--1365
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/widder.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 >]
-<Bilder/reihe.pdf, id=935, 128.61617pt x 212.00705pt>
+<Bilder/reihe.pdf, id=945, 128.61617pt x 212.00705pt>
 File: Bilder/reihe.pdf Graphic file (type pdf)
 <use Bilder/reihe.pdf>
 Package pdftex.def Info: Bilder/reihe.pdf  used on input line 1371.
@@ -1795,7 +1795,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1366--1374
  []
 
 [52 <./Bilder/reihe.pdf>]
-<Bilder/Parallel.pdf, id=959, 152.1786pt x 231.96338pt>
+<Bilder/Parallel.pdf, id=969, 152.1786pt x 231.96338pt>
 File: Bilder/Parallel.pdf Graphic file (type pdf)
 <use Bilder/Parallel.pdf>
 Package pdftex.def Info: Bilder/Parallel.pdf  used on input line 1388.
@@ -1806,7 +1806,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1382--1391
  []
 
 [53 <./Bilder/Parallel.pdf>]
-<Bilder/stromkreis_1.pdf, id=985, 174.95413pt x 147.88184pt>
+<Bilder/stromkreis_1.pdf, id=995, 174.95413pt x 147.88184pt>
 File: Bilder/stromkreis_1.pdf Graphic file (type pdf)
 <use Bilder/stromkreis_1.pdf>
 Package pdftex.def Info: Bilder/stromkreis_1.pdf  used on input line 1407.
@@ -1816,7 +1816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1402--1410
 
  []
 
-<Bilder/stromkreis_2.pdf, id=986, 161.00252pt x 156.09392pt>
+<Bilder/stromkreis_2.pdf, id=996, 161.00252pt x 156.09392pt>
 File: Bilder/stromkreis_2.pdf Graphic file (type pdf)
 <use Bilder/stromkreis_2.pdf>
 Package pdftex.def Info: Bilder/stromkreis_2.pdf  used on input line 1415.
@@ -1834,7 +1834,7 @@ ird, dass jeder Wider-
  []
 
 [54 <./Bilder/stromkreis_1.pdf>]
-<Bilder/stromkreis_3.pdf, id=1009, 156.6363pt x 151.92715pt>
+<Bilder/stromkreis_3.pdf, id=1019, 156.6363pt x 151.92715pt>
 File: Bilder/stromkreis_3.pdf Graphic file (type pdf)
 <use Bilder/stromkreis_3.pdf>
 Package pdftex.def Info: Bilder/stromkreis_3.pdf  used on input line 1425.
@@ -1860,7 +1860,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1429--1433
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/stromkreis_3.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
-<Bilder/erde.pdf, id=1038, 149.05125pt x 182.1976pt>
+<Bilder/erde.pdf, id=1048, 149.05125pt x 182.1976pt>
 File: Bilder/erde.pdf Graphic file (type pdf)
 <use Bilder/erde.pdf>
 Package pdftex.def Info: Bilder/erde.pdf  used on input line 1448.
@@ -1886,23 +1886,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 1461--1470
  []
 
 [57]
-<Bilder/ub.pdf, id=1057, 141.00853pt x 194.48601pt>
+<Bilder/ub.pdf, id=1067, 141.00853pt x 194.48601pt>
 File: Bilder/ub.pdf Graphic file (type pdf)
 <use Bilder/ub.pdf>
 Package pdftex.def Info: Bilder/ub.pdf  used on input line 1488.
 (pdftex.def)             Requested size: 112.80696pt x 155.589pt.
-<Bilder/kondens.pdf, id=1058, 99.37125pt x 22.58438pt>
+<Bilder/kondens.pdf, id=1068, 99.37125pt x 22.58438pt>
 File: Bilder/kondens.pdf Graphic file (type pdf)
 <use Bilder/kondens.pdf>
 Package pdftex.def Info: Bilder/kondens.pdf  used on input line 1499.
 (pdftex.def)             Requested size: 79.4971pt x 18.0675pt.
  [58 <./Bilder/ub.pdf>]
-<Bilder/kondensator.pdf, id=1081, 114.2583pt x 117.43875pt>
+<Bilder/kondensator.pdf, id=1091, 114.2583pt x 117.43875pt>
 File: Bilder/kondensator.pdf Graphic file (type pdf)
 <use Bilder/kondensator.pdf>
 Package pdftex.def Info: Bilder/kondensator.pdf  used on input line 1507.
 (pdftex.def)             Requested size: 91.40675pt x 93.95111pt.
-<Bilder/variable_Spannungsquelle.pdf, id=1082, 433.62pt x 289.08pt>
+<Bilder/variable_Spannungsquelle.pdf, id=1092, 433.62pt x 289.08pt>
 File: Bilder/variable_Spannungsquelle.pdf Graphic file (type pdf)
 <use Bilder/variable_Spannungsquelle.pdf>
 Package pdftex.def Info: Bilder/variable_Spannungsquelle.pdf  used on input lin
@@ -1929,7 +1929,7 @@ ante, eine Vorzugsrich-
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/kondensator.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 >]
-<Bilder/kkondens.pdf, id=1092, 99.37125pt x 30.47552pt>
+<Bilder/kkondens.pdf, id=1102, 99.37125pt x 30.47552pt>
 File: Bilder/kkondens.pdf Graphic file (type pdf)
 <use Bilder/kkondens.pdf>
 Package pdftex.def Info: Bilder/kkondens.pdf  used on input line 1530.
@@ -1945,7 +1945,7 @@ rd ein lin-earer Zusam-
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/kkondens.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >]
-<Bilder/einfach.pdf, id=1128, 105.39375pt x 123.7677pt>
+<Bilder/einfach.pdf, id=1138, 105.39375pt x 123.7677pt>
 File: Bilder/einfach.pdf Graphic file (type pdf)
 <use Bilder/einfach.pdf>
 Package pdftex.def Info: Bilder/einfach.pdf  used on input line 1554.
@@ -1961,7 +1961,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1567--1572
  []
 
 [61 <./Bilder/einfach.pdf>]
-<Bilder/Ladung.png, id=1153, 549.05125pt x 372.39125pt>
+<Bilder/Ladung.png, id=1163, 549.05125pt x 372.39125pt>
 File: Bilder/Ladung.png Graphic file (type png)
 <use Bilder/Ladung.png>
 Package pdftex.def Info: Bilder/Ladung.png  used on input line 1578.
@@ -1971,7 +1971,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1581--1585
 
  []
 
-<Bilder/entladung.png, id=1155, 553.06625pt x 382.42876pt>
+<Bilder/entladung.png, id=1165, 553.06625pt x 382.42876pt>
 File: Bilder/entladung.png Graphic file (type png)
 <use Bilder/entladung.png>
 Package pdftex.def Info: Bilder/entladung.png  used on input line 1591.
@@ -1986,18 +1986,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1594--1600
 
  []
 
-<Bilder/spule.pdf, id=1164, 84.315pt x 7.52812pt>
+<Bilder/spule.pdf, id=1174, 84.315pt x 7.52812pt>
 File: Bilder/spule.pdf Graphic file (type pdf)
 <use Bilder/spule.pdf>
 Package pdftex.def Info: Bilder/spule.pdf  used on input line 1605.
 (pdftex.def)             Requested size: 126.47215pt x 11.29213pt.
 [63 <./Bilder/entladung.png>]
-<Bilder/spulensg.pdf, id=1170, 147.55125pt x 123.46124pt>
+<Bilder/spulensg.pdf, id=1180, 147.55125pt x 123.46124pt>
 File: Bilder/spulensg.pdf Graphic file (type pdf)
 <use Bilder/spulensg.pdf>
 Package pdftex.def Info: Bilder/spulensg.pdf  used on input line 1614.
 (pdftex.def)             Requested size: 147.55087pt x 123.46092pt.
-<Bilder/spule_direkt.pdf, id=1172, 84.315pt x 13.92067pt>
+<Bilder/spule_direkt.pdf, id=1182, 84.315pt x 13.92067pt>
 File: Bilder/spule_direkt.pdf Graphic file (type pdf)
 <use Bilder/spule_direkt.pdf>
 Package pdftex.def Info: Bilder/spule_direkt.pdf  used on input line 1631.
@@ -2022,7 +2022,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1618--1633
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/spulensg.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >]
-<Bilder/spuledir.pdf, id=1189, 165.38577pt x 127.05644pt>
+<Bilder/spuledir.pdf, id=1200, 165.38577pt x 127.05644pt>
 File: Bilder/spuledir.pdf Graphic file (type pdf)
 <use Bilder/spuledir.pdf>
 Package pdftex.def Info: Bilder/spuledir.pdf  used on input line 1651.
@@ -2051,13 +2051,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1671--1675
 
  []
 
-<Bilder/spule_j.pdf, id=1225, 433.62pt x 289.08pt>
+<Bilder/spule_j.pdf, id=1235, 433.62pt x 289.08pt>
 File: Bilder/spule_j.pdf Graphic file (type pdf)
 <use Bilder/spule_j.pdf>
 Package pdftex.def Info: Bilder/spule_j.pdf  used on input line 1681.
 (pdftex.def)             Requested size: 325.2142pt x 216.80946pt.
 [66]
-<Bilder/spuledir2.pdf, id=1237, 161.83827pt x 85.34189pt>
+<Bilder/spuledir2.pdf, id=1247, 161.83827pt x 85.34189pt>
 File: Bilder/spuledir2.pdf Graphic file (type pdf)
 <use Bilder/spuledir2.pdf>
 Package pdftex.def Info: Bilder/spuledir2.pdf  used on input line 1691.
@@ -2067,7 +2067,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1685--1693
 
  []
 
-<Bilder/spuledir3.pdf, id=1238, 161.83827pt x 85.34189pt>
+<Bilder/spuledir3.pdf, id=1248, 161.83827pt x 85.34189pt>
 File: Bilder/spuledir3.pdf Graphic file (type pdf)
 <use Bilder/spuledir3.pdf>
 Package pdftex.def Info: Bilder/spuledir3.pdf  used on input line 1698.
@@ -2077,7 +2077,7 @@ Package pdftex.def Info: Bilder/spuledir3.pdf  used on input line 1698.
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/spuledir2.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
-<Bilder/entladungsspule.pdf, id=1275, 433.62pt x 289.08pt>
+<Bilder/entladungsspule.pdf, id=1285, 433.62pt x 289.08pt>
 File: Bilder/entladungsspule.pdf Graphic file (type pdf)
 <use Bilder/entladungsspule.pdf>
 Package pdftex.def Info: Bilder/entladungsspule.pdf  used on input line 1720.
@@ -2102,7 +2102,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1723--1732
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/entladungsspule.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 >]
-<Bilder/schnwingkreis_ungedampft.pdf, id=1308, 92.47952pt x 83.02878pt>
+<Bilder/schnwingkreis_ungedampft.pdf, id=1318, 92.47952pt x 83.02878pt>
 File: Bilder/schnwingkreis_ungedampft.pdf Graphic file (type pdf)
 <use Bilder/schnwingkreis_ungedampft.pdf>
 Package pdftex.def Info: Bilder/schnwingkreis_ungedampft.pdf  used on input lin
@@ -2131,7 +2131,7 @@ n eine Spule geschlossen
  []
 
 [69]
-<Bilder/harmonisch.pdf, id=1313, 433.62pt x 289.08pt>
+<Bilder/harmonisch.pdf, id=1323, 433.62pt x 289.08pt>
 File: Bilder/harmonisch.pdf Graphic file (type pdf)
 <use Bilder/harmonisch.pdf>
 Package pdftex.def Info: Bilder/harmonisch.pdf  used on input line 1771.
@@ -2142,7 +2142,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1774--1779
  []
 
 [71 <./Bilder/harmonisch.pdf>]
-<Bilder/schnwingkreis_gedampft.pdf, id=1359, 92.2139pt x 105.43481pt>
+<Bilder/schnwingkreis_gedampft.pdf, id=1369, 92.2139pt x 105.43481pt>
 File: Bilder/schnwingkreis_gedampft.pdf Graphic file (type pdf)
 <use Bilder/schnwingkreis_gedampft.pdf>
 Package pdftex.def Info: Bilder/schnwingkreis_gedampft.pdf  used on input line 
@@ -2169,7 +2169,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1822--1827
 
  []
 
-<Bilder/dampf.pdf, id=1383, 433.62pt x 289.08pt>
+<Bilder/dampf.pdf, id=1393, 433.62pt x 289.08pt>
 File: Bilder/dampf.pdf Graphic file (type pdf)
 <use Bilder/dampf.pdf>
 Package pdftex.def Info: Bilder/dampf.pdf  used on input line 1840.
@@ -2189,7 +2189,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1854--1857
 
  []
 
-<Bilder/diode.pdf, id=1394, 39.14626pt x 14.55438pt>
+<Bilder/diode.pdf, id=1404, 39.14626pt x 14.55438pt>
 File: Bilder/diode.pdf Graphic file (type pdf)
 <use Bilder/diode.pdf>
 Package pdftex.def Info: Bilder/diode.pdf  used on input line 1861.
@@ -2237,7 +2237,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1877--1887
 
  []
 
-<Bilder/Plan.pdf, id=1429, 648.45871pt x 345.11464pt>
+<Bilder/Plan.pdf, id=1439, 648.45871pt x 345.11464pt>
 File: Bilder/Plan.pdf Graphic file (type pdf)
 <use Bilder/Plan.pdf>
 Package pdftex.def Info: Bilder/Plan.pdf  used on input line 1894.
@@ -2273,7 +2273,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1898--1904
  []
 
 [77 <./Bilder/Plan.pdf>] [78]
-<Bilder/Speicher.pdf, id=1452, 520.8065pt x 894.15721pt>
+<Bilder/Speicher.pdf, id=1463, 520.8065pt x 894.15721pt>
 File: Bilder/Speicher.pdf Graphic file (type pdf)
 <use Bilder/Speicher.pdf>
 Package pdftex.def Info: Bilder/Speicher.pdf  used on input line 1909.
@@ -2295,7 +2295,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1913--1925
  []
 
 [79 <./Bilder/Speicher.pdf>]
-<Bilder/register.pdf, id=1494, 423.55688pt x 325.15465pt>
+<Bilder/register.pdf, id=1504, 423.55688pt x 325.15465pt>
 File: Bilder/register.pdf Graphic file (type pdf)
 <use Bilder/register.pdf>
 Package pdftex.def Info: Bilder/register.pdf  used on input line 1940.
@@ -2311,7 +2311,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1927--1943
  []
 
 [80]
-<Bilder/reg.pdf, id=1499, 449.1128pt x 283.07658pt>
+<Bilder/reg.pdf, id=1509, 449.1128pt x 283.07658pt>
 File: Bilder/reg.pdf Graphic file (type pdf)
 <use Bilder/reg.pdf>
 Package pdftex.def Info: Bilder/reg.pdf  used on input line 1948.
@@ -2321,7 +2321,7 @@ Package pdftex.def Info: Bilder/reg.pdf  used on input line 1948.
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/reg.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >] [82]
-<Bilder/ALU.pdf, id=1552, 517.38074pt x 323.29912pt>
+<Bilder/ALU.pdf, id=1562, 517.38074pt x 323.29912pt>
 File: Bilder/ALU.pdf Graphic file (type pdf)
 <use Bilder/ALU.pdf>
 Package pdftex.def Info: Bilder/ALU.pdf  used on input line 1965.
@@ -2336,7 +2336,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1956--1968
 
  []
 
-<Bilder/Kern.pdf, id=1553, 529.23026pt x 346.30284pt>
+<Bilder/Kern.pdf, id=1563, 529.23026pt x 346.30284pt>
 File: Bilder/Kern.pdf Graphic file (type pdf)
 <use Bilder/Kern.pdf>
 Package pdftex.def Info: Bilder/Kern.pdf  used on input line 1981.
@@ -2370,7 +2370,7 @@ Overfull \hbox (0.43738pt too wide) in paragraph at lines 1969--1984
  []
 
 [83 <./Bilder/ALU.pdf>] [84 <./Bilder/Kern.pdf>]
-<Bilder/_bus.pdf, id=1625, 598.76205pt x 322.52065pt>
+<Bilder/_bus.pdf, id=1635, 598.76205pt x 322.52065pt>
 File: Bilder/_bus.pdf Graphic file (type pdf)
 <use Bilder/_bus.pdf>
 Package pdftex.def Info: Bilder/_bus.pdf  used on input line 1995.
@@ -2380,7 +2380,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1989--1998
 
  []
 
-<Bilder/BUS.pdf, id=1626, 499.02098pt x 318.61034pt>
+<Bilder/BUS.pdf, id=1636, 499.02098pt x 318.61034pt>
 File: Bilder/BUS.pdf Graphic file (type pdf)
 <use Bilder/BUS.pdf>
 Package pdftex.def Info: Bilder/BUS.pdf  used on input line 2007.
@@ -2402,7 +2402,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<Bilder/tz.pdf, id=1686, 433.62pt x 289.08pt>
+<Bilder/tz.pdf, id=1696, 433.62pt x 289.08pt>
 File: Bilder/tz.pdf Graphic file (type pdf)
 <use Bilder/tz.pdf>
 Package pdftex.def Info: Bilder/tz.pdf  used on input line 2026.
@@ -2429,7 +2429,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2030--2032
  []
 
 [87 <./Bilder/tz.pdf>]
-<Bilder/ausfuehrer.pdf, id=1713, 591.58362pt x 743.78506pt>
+<Bilder/ausfuehrer.pdf, id=1723, 591.58362pt x 743.78506pt>
 File: Bilder/ausfuehrer.pdf Graphic file (type pdf)
 <use Bilder/ausfuehrer.pdf>
 Package pdftex.def Info: Bilder/ausfuehrer.pdf  used on input line 2046.
@@ -2520,7 +2520,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2089--2093
  []
 
 [91]
-<Bilder/ausfuhrer.pdf, id=1757, 546.26698pt x 347.3588pt>
+<Bilder/ausfuhrer.pdf, id=1767, 546.26698pt x 347.3588pt>
 File: Bilder/ausfuhrer.pdf Graphic file (type pdf)
 <use Bilder/ausfuhrer.pdf>
 Package pdftex.def Info: Bilder/ausfuhrer.pdf  used on input line 2101.
@@ -2571,7 +2571,7 @@ Overfull \hbox (4.75232pt too wide) in paragraph at lines 2136--2148
  []
 
 [93]
-<Bilder/aus_2.pdf, id=1782, 486.43074pt x 198.18619pt>
+<Bilder/aus_2.pdf, id=1792, 486.43074pt x 198.18619pt>
 File: Bilder/aus_2.pdf Graphic file (type pdf)
 <use Bilder/aus_2.pdf>
 Package pdftex.def Info: Bilder/aus_2.pdf  used on input line 2170.
@@ -2638,35 +2638,36 @@ n-tere-inan-der Ausf^^?uhren
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2276--2281
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2276--2281
+Underfull \hbox (badness 10000) in paragraph at lines 2276--2279
 
  []
 
 [98] [99]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2286.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2286.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2287.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2287.
  (./book.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2286.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2286.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2287.
 
-Package rerunfilecheck Info: File `book.out' has not changed.
-(rerunfilecheck)             Checksum: 1E76E565EFE0E986CDD7CAF25FB7EB9D;3252.
 
+
+Package rerunfilecheck Warning: File `book.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `book.out':
+(rerunfilecheck)             Before: 1A32E11B1C47DB67454881AF16BA2804;3378
+(rerunfilecheck)             After:  5E246F31A044962A3865895BE6A67148;3369.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2286.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2287.
  ) 
 Here is how much of TeX's memory you used:
- 20190 strings out of 483130
- 367826 string characters out of 5963882
+ 20194 strings out of 483130
+ 367874 string characters out of 5963882
  616978 words of memory out of 5000000
- 34229 multiletter control sequences out of 15000+600000
+ 34231 multiletter control sequences out of 15000+600000
  607241 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,14n,60p,1320b,1957s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2688,10 +2689,10 @@ usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
-Output written on book.pdf (100 pages, 1357894 bytes).
+Output written on book.pdf (100 pages, 1357999 bytes).
 PDF statistics:
- 2013 PDF objects out of 2073 (max. 8388607)
- 1641 compressed objects within 17 object streams
- 517 named destinations out of 1000 (max. 500000)
- 672 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2023 PDF objects out of 2073 (max. 8388607)
+ 1651 compressed objects within 17 object streams
+ 519 named destinations out of 1000 (max. 500000)
+ 688 words of extra memory for PDF output out of 10000 (max. 10000000)
 

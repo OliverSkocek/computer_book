@@ -2176,7 +2176,7 @@ Die Symbole 2, 3, 4 ,5 und 6 stehen hierbei f\"ur die entsprechenden Ausg\"ange 
 \chapter{Programmierung der Rechenmaschine}
 Wir kommen nun endlich zur Ernte der Früchte unserer Bemühungen. In diesem Kapitel vergewissern wir uns, dass unsere Rechenmaschine tats\"achlich eine universelle Programmiersprache implementiert, soweit dies \"uberhaupt dies \"uberhaupt f\"ur eine physikalische Machine m\"oglich ist.\\
 Dies wird in mehreren Schritten gezeigt. Zuerst vergewissern wir uns, dass wir mit unseren Grundfunktionen Vier Bit Addition und Gleichheit darstellen k\"onnen. Damit haben wir bereits gezeigt, dass sich beliebige WHILE-Programme in unsrer Maschinensprache ausdr\"ucken lassen. Nat\"urlich mit der Einschr\"ankung, dass die Variablen und Kontrollstrukturen, die notwendig sind in den Speicher passen, aber diese Einschr\"ankung hat jede Rechenmaschine. Um zu zeigen, dass sich interessante Programme f\"ur unsere Rechenmaschine schreiben lassen, geben wir zum Abschluss ein paar Beispiele. Hierzu geh\"oren Kontrollstrukturen f\"ur IF-THEN-END Anweisungen, acht Bit Addition, Multiplikation und ein Programm, dass Fibonacci Zahlen ausspuckt.
-\section{Addition und Gleichheit}
+\section{Addition}
 Die Addition zweier bin\"arer Zahlen funktioniert analog zu dem Verfahren, dass wir in der Schule f\"ur dekadische Zahlen gelernt haben. Nehmen wir als Beispiel der Addition der Zahl $0111$ mit der Zahl $0110$, oder in gewohnter dekadischer Darstellung $7$ plus $6$.
 Wir schreiben die beiden Zahlen wie gewohnt \"ubereinander, sodass die Stellen rechtsb\"undig \"ubereinander angeordnet sind.
 \begin{center}
@@ -2275,9 +2275,10 @@ Der Satz 7.2 und der Satz 7.1 erm\"oglichen es uns, die arithmetische Addition m
 \end{lstlisting}
 Die XOR Operation und die UND Operation lassen sich ja so wie jede bin\"are Operation durch NAND Operationen ausdr\"ucken. Somit haben wir gezeigt, dass unsere ALU zusammen mit einer Implementierung von WHILE Schleifen die Additions Operation durchf\"uhren kann.\\
 \\
-In Wahrheit kommen wir auch ohne WHILE-Schleife aus, da wir ja wissen, dass die Umwandlung bei zwei n-Bit lange Zahlen maximal $n$ mal durchgef\"uhrt werden muss. Au\ss{}erdem \"andert die Umwandlung nichts mehr sobald die UND Operation einmal Null ergeben hat.\\
-\\
+In Wahrheit kommen wir auch ohne WHILE-Schleife aus, da wir ja wissen, dass die Umwandlung bei zwei n-Bit lange Zahlen maximal $n$ mal durchgef\"uhrt werden muss.
+\section{Gleichheit}
 Offensichtlich k\"onnen wir die XOR Operation ausnutzen um in unserer Maschinensprache eine IF Anweisung bedingt auf die Gleichheit oder Ungleichheit zweier W\"orter zu verwenden.
+\section{Ein WHILE Program Komplierer}
 \section{Beispiele}
 \subsection{Acht Bit Addition}
 \subsection{Multiplikation}

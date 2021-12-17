@@ -98,8 +98,10 @@
 \contentsline {paragraph}{RESET:}{92}{section*.58}%
 \contentsline {section}{\numberline {6.4}Funktionsweise der Kontrolleinheit}{92}{section.6.4}%
 \contentsline {chapter}{\numberline {7}Programmierung der Rechenmaschine}{96}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Addition und Gleichheit}{96}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Beispiele}{99}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Acht Bit Addition}{99}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Multiplikation}{99}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Fibonacci Zahlen}{99}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.1}Addition}{96}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Gleichheit}{98}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Ein WHILE Program Komplierer}{99}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Beispiele}{99}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Acht Bit Addition}{99}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Multiplikation}{99}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Fibonacci Zahlen}{99}{subsection.7.4.3}%

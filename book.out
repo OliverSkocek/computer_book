@@ -41,8 +41,10 @@
 \BOOKMARK [1][-]{section.6.3}{Maschinensprache}{chapter.6}% 41
 \BOOKMARK [1][-]{section.6.4}{Funktionsweise der Kontrolleinheit}{chapter.6}% 42
 \BOOKMARK [0][-]{chapter.7}{Programmierung der Rechenmaschine}{}% 43
-\BOOKMARK [1][-]{section.7.1}{Addition und Gleichheit}{chapter.7}% 44
-\BOOKMARK [1][-]{section.7.2}{Beispiele}{chapter.7}% 45
-\BOOKMARK [2][-]{subsection.7.2.1}{Acht Bit Addition}{section.7.2}% 46
-\BOOKMARK [2][-]{subsection.7.2.2}{Multiplikation}{section.7.2}% 47
-\BOOKMARK [2][-]{subsection.7.2.3}{Fibonacci Zahlen}{section.7.2}% 48
+\BOOKMARK [1][-]{section.7.1}{Addition}{chapter.7}% 44
+\BOOKMARK [1][-]{section.7.2}{Gleichheit}{chapter.7}% 45
+\BOOKMARK [1][-]{section.7.3}{Ein WHILE Program Komplierer}{chapter.7}% 46
+\BOOKMARK [1][-]{section.7.4}{Beispiele}{chapter.7}% 47
+\BOOKMARK [2][-]{subsection.7.4.1}{Acht Bit Addition}{section.7.4}% 48
+\BOOKMARK [2][-]{subsection.7.4.2}{Multiplikation}{section.7.4}% 49
+\BOOKMARK [2][-]{subsection.7.4.3}{Fibonacci Zahlen}{section.7.4}% 50
