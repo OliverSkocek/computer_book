@@ -2159,7 +2159,7 @@ Die \"ubrigen Anweisungen betreffen alleine Steuersignale f\"ur den BUS und den 
 		0 & 0\\
 \end{tabular}\\  
 \\
-Die Implementierung dieses Teils des Ausf\"uhrers erfolgt ohne viel Nachdenkens. Für jeden Ausgang des Multiplexers betrachten wir die entsprechende Zeile in der Tabelle und verbinden den Multiplexerausgang mit jedem durch Eins gekennzeichneten Ausgang des Ausf\"uhrers.
+Kommen wir zur Implementierung dieses Teils des Ausf\"uhrers. Für jeden Ausgang des Multiplexers betrachten wir die entsprechende Zeile in der Tabelle und verbinden den Multiplexerausgang mit jedem durch Eins gekennzeichneten Ausgang des Ausf\"uhrers.
 Falls mehrere Multiplexer Ausg\"ange mit dem selben Ausf\"uhrer Ausgang verbunden werden sollen, m\"ussen Diese zuerst durch ein ODER-Gatter mit entsprechend vielen Eing\"angen verkn\"upft werden. Der Ausgang des ODER-Gatters f\"uhrt dann zum gewollten Ausf\"uhrer Ausgang.\\
 \\
 Abschlie\ss{}end muss noch \textbf{Register Schreiben}, \textbf{Speicher Schreiben} und \textbf{Flag Schreiben} jeder f\"ur sich mit dem \textbf{Schreib Takt} per UND-Gatter verkn\"upft werden. Hierdurch erzeugt man die eigentlichen Schreib Takt gesteuerte Schreibsignale.\\
@@ -2276,6 +2276,7 @@ Der Satz 7.2 und der Satz 7.1 erm\"oglichen es uns, die arithmetische Addition m
 Die XOR Operation und die UND Operation lassen sich ja so wie jede bin\"are Operation durch NAND Operationen ausdr\"ucken. Somit haben wir gezeigt, dass unsere ALU zusammen mit einer Implementierung von WHILE Schleifen die Additions Operation durchf\"uhren kann.\\
 \\
 In Wahrheit kommen wir auch ohne WHILE-Schleife aus, da wir ja wissen, dass die Umwandlung bei zwei n-Bit lange Zahlen maximal $n$ mal durchgef\"uhrt werden muss.
+\paragraph{\"Ubungsbeispiel:} Zeige, dass sich die Subtraktion analog zur Addition mit Hilfe von logischen Verkn\"upfungen und links Verschiebung implementieren l\"asst.
 \section{Gleichheit}
 Offensichtlich k\"onnen wir die XOR Operation ausnutzen um in unserer Maschinensprache eine IF Anweisung bedingt auf die Gleichheit oder Ungleichheit zweier W\"orter zu verwenden.
 \section{Ein WHILE Program Komplierer}
