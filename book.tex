@@ -272,8 +272,8 @@ An diesem einfachen Beispiel l\"asst sich wenn wir es mit dem zugeh\"origen GOTO
 \end{definition}
 Zwei Programmiersprachen nennen wir equivalent, wenn es zu jedem Programm in der einen Programmiersprache ein equivalentes Programm in der anderen Programmiersprache gibt und umgekehrt. Was uns sogleich zum n\"achsten Abschnitt f\"uhrt.
 \paragraph{\"Ubungsbeispiel 5:} Mach \"Ubungsbeispiel 1, 2 und 3 mit WHILE-Programmen, anstelle von GOTO-Programmen.
-\section{Church-Turing Hypothese}
-Die Church-Turing Hypothese (CT-Hypothese) ist eine nicht beweisbare Aussage \"uber, dass was im Prinzip berechenbar ist. Inspiriert ist sie durch die Erkenntnis, dass alle Defintionen des Berechenbaren, also im Prinzip \\Programmiersprachen, zumindest die Berechnungen ausf\"uhren kann, die GOTO-Programme berechnen k\"onnen. CT-Hypothese besagt also, dass jede Berechnung die im Prinzip m\"oglich ist von einer Maschine ausgef\"uhrt werden kann, die GOTO-Programme verarbeiten kann. Hiermit ist auch klar weshalb die Aussage eher philosophisch und nicht beweisbar ist, da "das Berechenbare" nicht leicht fassbar/definierbar ist und wir heute nicht wissen k\"onnen was morgen noch f\"ur Maschinen sein werden und welchen Gesetzen sie gehorchen werden. Es sei weiters noch angemerkt, dass wir aus ersichtlichem Grund die GOTO-Programmiersprache, sowie jede Programmier-sprache, die jede Berechnung ausf\"uhren kann, die von einem GOTO-Programm ausgef\"uhrt werden kann, eine universelle Programmiersprache genannt werden soll. Eine solche universelle Programmiersprache ist sozusagen maximal in ihrer F\"ahigkeit Berechnungen auszuf\"uhren. Zur Motivation der Hypothese werden wir als n\"achstes beweisen, dass zu jedem GOTO-Programm ein WHILE-Programm existiert, dass daselbe berechnet und umgekehrt
+\section{Die Church-Turing Hypothese}
+Die Church-Turing Hypothese (CT-Hypothese) ist eine Vermutung \"uber das was \"uberhaupt berechenbar ist. Inspiriert wurde sie durch die Beobachtung, dass alle Berechenbarkeitsmodelle, nur Berechnungen ausdr\"ucken die sich auch als GOTO-Programm schreiben lassen. Die CT-Hypothese besagt also, dass jede Berechnung die im Prinzip m\"oglich ist von einer Maschine ausgef\"uhrt werden kann, die GOTO-Programme verarbeiten kann. Es ist unmittelbar klar, dass die Aussage eher philosophisch und nicht beweisbar ist, da "das Berechenbare" nicht leicht fassbar/definierbar ist und wir niemals wissen k\"onnen was morgen noch f\"ur Maschinen sein werden und welchen Gesetzen sie gehorchen werden. Es sei weiters noch angemerkt, dass wir aus ersichtlichem Grund die GOTO-Programmiersprache, sowie jede Programmiersprache, die jede Berechnung ausf\"uhren kann, die von einem GOTO-Programm ausgef\"uhrt werden kann, eine universelle Programmiersprache genannt werden soll. Eine solche universelle Programmiersprache ist sozusagen maximal in ihrer F\"ahigkeit Berechnungen auszuf\"uhren. Zur Motivation der Hypothese werden wir als n\"achstes beweisen, dass zu jedem GOTO-Programm ein WHILE-Programm existiert, dass daselbe berechnet und umgekehrt
 \paragraph{IF THEN END} Doch bevor wir dies zeigen soll eine bedingte Verzweigung eingef\"uhrt werden, die zwar nicht zwingend notwendig ist, daher wir k\"onnen sie mit WHILE-Programmen sowie GOTO-Programmen bereits ausdr\"ucken, aber sie werden, die in unseren Beweisen vorkommenden Programme kompakter und leichter lesbar machen, wenn wir sie verwenden.
 \begin{definition}
 Sei $Z$ eine Variable, $P$ und $Q$ sind GOTO/WHILE-Programme, dann nennen wir das Konstrukt
@@ -335,9 +335,7 @@ IF R THEN
 \end{lstlisting}
 ansonsten schreiben wir den Befehl so wie er in $P$ steht an die entsprechende Position. Das so erzeugte WHILE-Programm ist equivalent zum urspr\"unglichen GOTO-Programm.
 \end{proof}
-
-
-
+\noindent
 Abschlie\ss{}end sei noch erw\"ahnt, dass die CT-Hypothese nichts \"uber die Anzahl der Rechenschritte oder die Zeit, die eine Machine zur Berechnung ben\"otigen wird aussagt. Ein Quantencomputer wird eine Faktorisierung einer gro\ss{}en nat\"urlichen Zahl in kurzer Zeit vollbringen, w\"ahrend eine klassischer Computer Jahrhunderte braucht. Aber diesen Aspekt von unterschiedlichen Programmiersprachen und Maschinen haben wir bereits gesehen, als wir untschiedliche Grundoperationen f\"ur GOTO-Programme in betracht gezogen haben.
 
 \section{Kleenesche Normalform}
@@ -498,7 +496,7 @@ Wir starten mit zehn Symbolen $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$ und der Einfach
 \begin{corollary}
 	Die Stellen des dekadischen Zahlensystems sind selbst ein Zahlensystem.
 \end{corollary}
-\paragraph{\"Ubungsbeispiel 12:} Beweise Corollary 1.6.
+\paragraph{\"Ubungsbeispiel 12:} Beweise Folgerung 3.3.
 \section{Das bin\"are Zahlensystem}
 Nachdem wir uns jetzt das dekadische Zahlensystem angeschaut haben, kommen wir nun zum eigentlichen Thema, dem dualen Zahlensystem oder bin\"aren Zahlen. Im bin\"aren Zahlensystem gibt es im Gegensatz zu den zehn Symbolen des dekadischen Zahlensystem nur zwei Symbole n\"amlich ${0, 1}$. Wie bei den dekadischen Zahlen legen wir eine Reihenfolge der Symbole fest, n\"amlich $0, 1$ und definieren das duale Zahlensystem analog zum dekadischen.\\
 %Die Definition des bin\"aren Zahlensystems ist nun ganz einfach. Man nehme die Definition der dekadischen Zahlen und ersetze $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$ durch $\{0, 1\}$. 
@@ -565,7 +563,7 @@ Beispiel: Alle vier stelligen bin\"aren Zahlen
 Im Allgemeinen nennen wir Zahlensysteme wie das dekadische oder das duale Zahlensystem Stellenwertsysteme. Im Prinzip m\"ussen wir nur ein paar wohlunterscheidbare Symbole aussuchen, eine Reihenfolge festlegen und wir k\"onnen beliebige derartige Systeme festlegen. In der Informatik ist ein beliebtes Zahlensystem das Hexadezimalsystem. Hier haben wir die Symbole $0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F$.
 \paragraph{\"Ubungsbeispiel 15:} Berechne die hexadezimale Darstellung der dekadischen Zahlen $15$, $17$ und $432$.\\
 \\
-In der Praxis hat sich das bin\"are Zahlensystem bew\"ahrt, da zum einen eine enge Beziehung zwischen logischen Ausdr\"ucken und dem Zahlensystem und zum anderen unsere Rechenmaschinen elektronisch sind und es praktisch einfacher ist einen Schaltkreis zu bauen, der zwei Zust\"ande kennt, n\"amlich viel Spannung oder Stromst\"arke und sehr wenig Spannung oder Stromst\"arke und es genauso einfacher ist diese zwei Zust\"ande f\"ur einen oder mehrere weiteren Schaltkreis zu unterscheiden. Es gab zwar einige Versuche von Rechenmaschinen mit nicht bin\"arem Zahlen- system, und sogar analoge Rechenmaschinen, die direkt mit reelen Zahlen arbeiten, aber nichts davon konnte die Robustheit der bin\"aren Darstellung und die daraus resultierenden Vorteile schlagen.
+In der Praxis haben sich Digitalrechner, also solche die das bin\"are Zahlensystem verwenden, bew\"ahrt. Dies ist weil unsere Rechenmaschinen elektronisch sind und es praktisch einfacher ist einen Schaltkreis zu bauen, der zwei Zust\"ande kennt, n\"amlich viel Spannung oder Stromst\"arke und sehr wenig Spannung oder Stromst\"arke und es genauso einfacher ist diese zwei Zust\"ande f\"ur einen oder mehrere weiteren Schaltkreise zu unterscheiden.
 %\\
 
 %In einem sp\"ateren Kapitel werden wir einige Elektronik Grundlagen vorstellen und 
