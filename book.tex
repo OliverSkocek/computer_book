@@ -102,7 +102,7 @@ Oliver \textsc{Sko\v{c}ek} \\[4cm]
 
 
 \chapter{Einf\"uhrung}
-Das Ziel dieses Buches ist es dem Leser die Grundkonzepte von Rechenmaschinen also Computern zu vermitteln. 
+Das Ziel dieses Buches ist es dem Leser die Grundkonzepte von Rechenmaschinen zu vermitteln. 
 Viel mehr noch soll die F\"ahigkeit vermittelt werden einen Computer selbst zu erdenken und zu bauen.\\
 \\
 Dies geschieht auf mehreren Ebenen. Es soll dabei sowohl auf theoretische Konzepte der Programmierung als auch praktischer Konzepte aus der Elektronik eingegangen werden.\\
@@ -121,36 +121,70 @@ Im Sommer 2019 setzte ich mir in den Kopf ein Projekt zu starten, \"uber das ich
 \fi
 
 \chapter{Aufbau einer Rechenmaschine}
-Was muss eine Rechenmaschine k\"onnen, damit sie im Prinzip alles berechnen kann?
-Diese Frage wurde Mitte des zwanzigsten Jahrhunderts beantwortet. Mehrere Personen entwickelten unterschiedliche Definitionen des Berechenbaren, und im Laufe der Zeit konnte gezeigt werden, dass all diese hypothetischen Rechenmaschinen gleichwertig sind. Die Gleichwertigkeit zweier Rechenmaschine ist dabei so zu verstehen, dass jeweils eine Maschine die andere simulieren kann. Dies gilt unabh\"angig davon ob es sich um eine analoge Rechenmaschine, eine digitale Rechenmaschine, eine Quantenrechenmaschine oder einen Menschen mit Papier und Stift handelt. Die einzige Einschr\"ankung ist dabei die Gr\"osse des Speichers. Die beschriebene Gleichwertigkeit gilt nur unter der Annahme eines unendlich großen Speichers, also im Prinzip eines Speichers der bei Bedarf beliebig vergr\"ossert werden kann.\\
+Was muss eine Rechenmaschine k\"onnen, damit sie im Prinzip "alles berechnen" kann?
+Diese Frage wurde Mitte des zwanzigsten Jahrhunderts beantwortet. Mehrere Personen entwickelten verschiedene einleuchtende Definitionen des Berechenbaren. Im Laufe der Zeit wurde dann gezeigt, dass all diese Konzepte gleichwertig sind.\\
+Man sagt zwei Rechenmaschinen $A$ und $B$ sind gleichwertig, falls jede Berechnung die auf Rechenmaschine $A$ durchgef\"uhrt werden kann, auch auf Rechenmaschine $B$ durchgef\"uhrt werden kann, und umgekehrt.
+Anders ausgedr\"uckt sind sie gleichwertig wenn jeweils eine Maschine die andere simulieren kann. Dies gilt unabh\"angig davon ob es sich um eine analoge Rechenmaschine, eine digitale Rechenmaschine, eine Quantenrechenmaschine oder einen Menschen mit Papier und Stift handelt.\\
 \\
-Eine Rechenmaschine ist ein Apparat, der Listen von Befehlen abarbeitet und dabei drei fundamentale Bestandteile hat:
-\paragraph{Register:} Ein Ding, dass ein Wort, also eine Kette von Symbolen, speichern kann. Das Wort muss also zu einem sp\"ateren Zeitpunkt abgerufen werden k\"onnen und bei Bedarf muss es m\"oglich sein das Wort im Speicher durch ein Anderes zu ersetzen. Analogien sind Variablen, Platzhalter oder auch Schmierzettel, sofern man mit Bleistift schreibt.
-\paragraph{Grundoperationen:} Eine Liste der elementarten Operationen, welche die Maschine auf Worte oder Paare von Worten anwenden kann. Eine Operation ist dabei ein Vorgang der ein Wort oder Wortpaar, die Operanden, nimmt und in Abh\"angigkeit davon ein resultierendes Wort ausgibt. Wichtige Beisiele hierf\"r sind Rechenoperationen wie Addition und Multiplikation.
-
-\paragraph{Bedingte Verzweigung:} Ein Weg wie der Ausgang einer Operation die Reihenfolge der abzuarbeitenden Befehle ab\"andern kann. Diese Konstrukte haben f\"ur gew\"ohnlich die Form: "Wiederhole bestimmte Teilliste von Befehlen, bis eine Bedingung erreicht ist" oder "Falls Bedingung erf\"ullt ist springe zum so und so vielten Befehl und mach von dort weiter.
+Wir wollen bei der Analyse der Berechenbarkeit die Gr\"o\ss{}e des Speichers ausklammern. Keine physikalische Rechenmaschine wird je universelle Berechenbarkeit erreichen, weil es ein endliches Ger\"at mit endlich viel Speicher ist. Man kann einfach sagen, dass der Speicher ja immer vergr\"ossert werden kann bei Bedarf, und das so rechtfertigen, aber das ist Geschmacksache.\\
 \\
+\textbf{Was ist eine Rechenmaschine?}\\
+Eine Rechenmaschine ist ein Apparat, der Listen von Befehlen abarbeitet und dabei drei fundamentale Bestandteile aufweist:
+\paragraph{Register:} Eine Komponente, die ein Wort, daher eine Kette von Symbolen, speichern kann. Das Wort muss dementsprechend nachdem es im Register platziert wurde zu einem sp\"ateren Zeitpunkt abgerufen werden k\"onnen. Bei Bedarf muss es m\"oglich sein das Wort im Register durch ein Anderes zu ersetzen.\\
 \\
-Der zuletzt beschriebene Bestandteil einer Rechenmaschine, die \textbf{Bedingte Verzweigung} wird oft durch einen internen Zustand der Rechenmaschine realisiert, der f\"ur gew\"ohnlich \"uber so genannte Flags implementiert wird. 
-Dies sind Register, die entweder Null oder Eins sind und eine Aussage \"uber den Verlauf der zuletzt von der Rechenmaschine durchgef\"uhrten Operation macht.\\
-Es gilt dabei, dass das Flag Eins ist wenn die Aussage zutrifft und Null falls nicht. Das wichtigste Beispiel ist das Null-Flag, dass genau dann Eins ausgibt wenn die letzte Ausgabe nur Nullen enthielt.\\
-Diese Register bilden eine Ausnahme, da man ihren Wert nicht direkt setzen kann, sondern nur indirekt \"uber die Ausf\"uhrung einer Operation.\\
+Ein Schmierzettel zusammen mit Bleistift und Radiergummi sind ein Beispiel aus dem Alltag.
+\paragraph{Grundoperationen:} Eine Liste von fundamentalen Operationen, welche die Maschine auf ein Wort oder mehrere Worte anwenden kann. Eine Operation ist dabei ein Vorgang der ein Wort oder Liste von Worten, die Operanden, nimmt und dann ein Wort als Resultat ausgibt.\\
 \\
-In den n\"achsten Abschnitten werden wir uns n\"aher mit den Befehlen, die eine Rechenmaschine abarbeitet auseindandersetzen. Zuerst soll hier aber noch der Unterschied und die Beziehung einer Rechenmaschine zum Konzept der Programmiersprache gezogen werden. Programmiersprachen sind Regelwerke nach denen ein Text geschrieben werden kann, der als Kette von Befehlen interpretiert und durch eine Rechenmaschine abgearbeitet werden kann.
-Einen solchen Text nennt man auch ein Programm.
-Typischerweise hat jede Rechenmaschine eine eigene interne Programmiersprache, ihre Machinensprache und sie kann nur Programme verstehen und die darin beschriebene Berechnung durchf\"uhren, wenn sie in dieser Maschinensprache geschrieben ist.
+Ein Alltagsbeispiel sind die Grundoperationen wie Addition, Subtraktion, Multiplikation und Division die man in der Schule gelernt hat.
+\paragraph{Bedingte Verzweigung:} Ein Mechanismus, der es erlaubt, dass der Ausgang einer Operation die Reihenfolge der abzuarbeitenden Befehle ab\"andert. Diese Konstrukte haben f\"ur gew\"ohnlich die Form: "Wiederhole bestimmte Teilliste von Befehlen, bis eine Bedingung erreicht ist" oder "Falls Bedingung erf\"ullt ist springe zum so und so vielten Befehl und mach von dort weiter.
 \\
 \\
-Jede Programmiersprache besteht aus Grundsymbolen und einigen sprachlichen Regeln, die bestimmen wie die Grundsymbole zusammengesetzt werden k\"onnen. Die Grundsymbole k\"onnen dabei Konstanten (z.B.: $0$, $1$, $2$, $\dots$) Variablen (zb.: $x$, $y$, $z$), Operationen (z.B.: $+$, $-$), Zuweisungen (z.B.:$x = y + 4$) oder auch Verzweigunganweisungen (z.B.: Spring zum dritten Befehl) sein.\\
-Die Regeln legen fest welche Anordnung korrekt geschriebene Programme darstellen und welche nicht interpretierbar oder nicht eindeutig interpretierbar sind.\\
+Die feste Wortl\"ange ist notwendig, da eine Realisierung einer Rechenmaschine, wenn es sich nicht gerade um einen Menschen mit Papier und Bleistift handelt, eine fixe Anzahl an Zahnr\"adern, Schaltkreisen, oder \"Ahnliches haben wird.\\
 \\
-Programmieren ist das entwerfen von Programmen. Jeder der noch nichts damit zu tun hatte, kann sich das komplett analog zu einem Koch vorstellen, der ein Rezept f\"ur einen unf\"ahigen Lehrling schreibt. Das Rezept ist eine Abfolge an Operationen, die der Lehrling an der K\"uche ausf\"uhren muss, um ein Gericht herzustellen. Der Lehrling ist unf\"ahig und deshalb muss man es ihm ganz genau aufschreiben, also pr\"azise formuliert, nach gewissen Regeln, damit die Anweisung immer eindeutig ist und keine Interpretationsfreiheit zul\"asst. Genauso verh\"alt es sich mit der Programmierung einer Rechenmaschine.
+Bedingte Verzweigungen machen es notwendig, dass die Rechenmaschine einen Zustand hat, der es erlaubt Eigenschaften des Ausgangs der letzten abgelaufenen Grundoperation auszulesen. \\
+Dazu dienen so genannte \textbf{Flags}, das sind \"ahnlich wie Register, die zwei Werte haben k\"onnen, daher "WAHR" oder "FALSCH" und f\"ur eine Eigenschaft des Ausgangs einer Operation stehen. Ein Flag kann zum Beispiel daf\"hr stehen, dass zuletzt Null das Resultat war, oder eine Addition einen \"Uberlauf, also "eins weiter", bei der h\"ochsten Stelle hatte. Im Gegensatz zu Registern, kann man den Wert des Flags nur indirekt \"uber den Ausgang einer Grundoperation steuern.\\
+\\
+In den n\"achsten Abschnitten werden wir uns n\"aher mit den Befehlen, die eine Rechenmaschine abarbeitet, auseindandersetzen. \\
+Zuvor soll hier aber noch das Konzept der Rechenmaschine mit dem der Programmiersprache in Beziehung gesetzt werden.\\
+\\
+\textbf{Was ist eine Programmiersprache?}\\
+Eine Programmiersprache ist ein Regelwerk mit Rechtschreibung und Grammatik, nach dem ein Text verfasst werden kann. Dieser Text muss als Liste von Befehlen interpretierbar sein, die dann von einer Rechenmaschine abgearbeitet werden k\"onnen.\\
+\\
+Einen solchen Text nennt man auch ein \textbf{Programm}.\\
+\\
+In der Regel hat jede Rechenmaschine eine eigene interne Programmiersprache, ihre \textbf{Machinensprache} und sie kann nur Programme verstehen und die darin beschriebene Berechnung durchf\"uhren, wenn sie in dieser Maschinensprache geschrieben ist.
+\\
+\\
+Ein Regelwerk einer Programmiersprache hat die folgenden Komponenten:
+\begin{enumerate}
+	\item \textbf{Konstanten:} Eine Liste von Symbolen f\"ur Zahlen. Als Beispiel nehmen wir die nat\"urlichen Zahlen in dekadischer Darstelung $\{0,1,2,3,\dots\}$.
+	\item \textbf{Variablen:} Eine Liste von Symbolen f\"ur Variablen, also Symbole die mit Zahlen belegt werden k\"onnen. Ein Beispiel w\"are $\{x, y, z\}$.
+	\item \textbf{Operationen:} Eine Liste von Symbolen die f\"ur Operation auf Zahlen, Zahlenpaaren oder Listen von Zahlen ausgef\"uhrt werden k\"onnen. Ein Beispiel w\"are $\{+, -, *, :,\}$. 
+	\item \textbf{Vergleichssymbole}: Eine Liste von Vergleichen zwischen Zahlen. Ein Beispiel w\"are $\{<, >,\leq,\geq,==\}$.
+	\item \textbf{Schreiboperationen:} Eine Liste von Variablenoperationen, daher Operationen die den Wert einer Variablen ver\"andern, oder das Verhalten von Variablen ver\"andern. Ein Beispiel w\"are $=$ oder $\leftarrow$. Hier soll einer Variable links vom Symbol der Wert rechts vom Symbol zugeordnet werden. 
+	$$x \leftarrow 3$$
+	Das Verhalten dieser Operationen kann unterschiedlich sein abh\"angig von der Programmiersprache. Es muss dabei nicht notwendigerweise eine Kopie des zugeordneten Wertes entstehen. 
+	\item \textbf{Steuersymbole:} Eine Liste von Symbolen, die f\"ur bedingte Verzweigungen stehen. Einige werden wir in K\"urze kennen lernen. Vorweggenommen sei das Beispiel $\{WHILE, IF, END\}$.
+\end{enumerate}
+\noindent
+Im Regelwerk der Programmiersprache muss stehen wie man aus Operationen, Konstanten und Variablen Terme formen kann. Eine Definition kann folgenderma\ss{}en aussehen:
+\begin{enumerate}
+	\item Eine Konstante oder Variable ist ein Term.
+	\item Falls $f$ eine Operation ist, $x_1$ $x_2$, $\dots$ $x_k$ Terme sind und $f$ auf $k$ Zahlen anwendbar ist, dann ist $f(x_1,x_2,\dots,x_k)$ auch ein Term. Im Fall von $+$, $-$, und $*$ w\"urde man schreiben: $x_1+x_2$, $x_1-x_2$ und $x_1 * x_2$ respektive.
+\end{enumerate}
+Eine solche Defintion nennt man rekursiv und wir werden im Laufe dieses Buches diesen Begriff noch \"ofter h\"oren.
+Terme stehen wenn allen Variablen Werte zugeordnet sind f\"ur den entsprechenden Zahlenwert den man durch ausf\"uhren der Operationen in der geeigneten Reihenfolge erh\"lt.\\
+\\
+\"Ubrige Regeln m\"ussen noch festlegen wie mit Hilfe der Vergleichssymbole Aussagen gebaut werden k\"onnen und ganz allgemein wie Steuersymbole, Schreiboperationen, Aussagen und Terme angeordnet werden d\"urfen um als Befehlsliste interpretierbare Programme zu bilden.\\
+\\
+Programmieren ist das entwerfen von Programmen. Jeder der noch nichts damit zu tun hatte, kann sich das komplett analog zu einem Koch vorstellen, der ein Rezept f\"ur einen Laien schreibt. Das Rezept ist eine Abfolge an Operationen, die der Laie in der K\"uche ausf\"uhren muss, um eine Speise herzustellen. Dem Laien muss man die Anweisungen ganz genau aufschreiben, also pr\"azise formuliert, nach gewissen Regeln, damit die Anweisung immer eindeutig ist und keine Interpretationsfreiheit zul\"asst. Genauso verh\"alt es sich mit der Programmierung einer Rechenmaschine.
 
 \section{GOTO-Programme}
-Eine der einfachsten und am leichtesten verst\"andlichen Arten von Programmiersprachen ist die Klasse der GOTO-Programmiersprachen. In der Praxis sind GOTO-Programmiersprachen zwar nur von geringer Bedeutung, da sich Programme, die in solchen Sprachen geschrieben wurden, wegen ihrer schwierigen Lesbarkeit, nur schwer warten lassen, jedoch sind die internen Maschinensprachen von allen Rechenmaschinen, die in der Praxis eingesetzt werden, GOTO-Programmiersprachen und (theoretisch interessant).\\
+Eine der einfachsten und am leichtesten verst\"andlichen Arten von Programmiersprachen ist die Klasse der GOTO-Programmiersprachen. In der Praxis sind GOTO-Programmiersprachen nur von geringer Bedeutung. Grund hierf\"ur ist, dass Programme, die in solchen Sprachen geschrieben wurden, schwer lesbar und daher auch nur schwer wartbar sind. Allerdings sind die internen Maschinensprachen von allen (mir) bekannten Rechenmaschinen GOTO-Programmiersprachen und vor allem f\"ur die Theoriebildung interessant.\\
 \\
-Es folgt eine Beschreibung einer sehr einfachen Form einer GOTO-Programmier- sprache, die bereits alle Zutaten f\"ur eine universelle Programmiersprache enth\"alt, und die wir fortan als Ausgangspunkt f\"ur unsere Diskussion des Berechenbaren ansehen.
-\paragraph{Variablen:} Variablen sind synonym zu verstehen mit Registern, es sind also Dinge die ein Wort speichern k\"onnen, das gelesen werden kann, und durch ein anderes Wort ersetzt werden kann. Ein Wort wird in der folgenden Diskussion, um m\"oglichst einfach zu bleiben, eine nat\"urliche Zahl sein. \\
+Wir wollen nun eine sehr einfache GOTO-Programmiersprache definieren, die bereits alle Zutaten f\"ur eine universelle Programmiersprache enth\"alt. Fortan soll sie uns als Ausgangspunkt f\"ur  Diskussionen des Berechenbaren dienen.\\
+\\
+Variablen sind fast synonym zu verstehen mit Registern, es sind Dinge die ein Wort speichern k\"onnen, das gelesen, und durch ein anderes Wort ersetzt werden kann. Ein Wort soll in der folgenden Diskussion, um m\"oglichst einfach zu bleiben, eine nat\"urliche Zahl sein. \\
 \begin{definition}
 	Ein GOTO-Programm ist durch folgendes Schema definiert:
 	\begin{enumerate}
@@ -159,7 +193,6 @@ Es folgt eine Beschreibung einer sehr einfachen Form einer GOTO-Programmier- spr
 		\item Einer Variablen $Z$ die Summe zweier Variable $X$ und $Y$ als Wert zuordnen, kurz $Z = X + Y$, ist ein GOTO-Programm.
 		\item Einer Variablen $Z$ die Differenz zweier Variable $X$ und $Y$ als Wert zuordnen, kurz $Z = X - Y$, ist ein GOTO-Programm.\footnote{Da wir mit nat\"urlichen Zahlen und keinen ganzen Zahlen arbeiten, setzen wir eine Differenz, die in einer negativen Zahl resultiren w\"urde auf den Wert Null.}
 		\item Das Stoppen des Programmes, kurz $HALT$ ist ein GOTO-Programm.
-		\newpage
 		\item Seien $W$ und $V$ GOTO-Programme, dann ist
 		\begin{lstlisting}
 			W
@@ -181,6 +214,7 @@ Es folgt eine Beschreibung einer sehr einfachen Form einer GOTO-Programmier- spr
 		\end{lstlisting}
 	\end{enumerate}
 \end{definition}	
+\noindent
 Das Beispielprogramm unter Punkt sieben beschreibt die Multiplikation zweier nat\"urlicher Zahlen $Z$ und $Y$, daher wenn das Programm zu Ende gelaufen ist, steht in der Variable $X$ das Produkt der Werte, die zum Start des Programmes in der Variablen $Z$ und $Y$ gespeichert waren. Es ist zu beachten, dass wir eins basiert nummerieren. Also mit Zeilennummerierung als Orientierung sieht unser Programm so aus:
 \begin{lstlisting}
 	1: X = 0
