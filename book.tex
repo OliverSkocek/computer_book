@@ -596,6 +596,7 @@ w(\neg\phi)= 1 - w(\phi)=
 0 & \text{falls }w(\phi)=1
 \end{cases}
 \end{equation}
+\noindent
 Das logische \textbf{Und} ist eine logische Verkn\"upfung, die zwei Aussagen verbindet zu einer Aussage. Seien nun $\phi$ und $\psi$ Aussagen, dann schreiben wir $\phi\wedge\psi$ f\"ur die durch das logische Und erzeugte Verbindung der Aussagen.
 $$\phi = \text{Der Himmel ist blau.}$$
 $$\psi = \text{Fische leben im Wasser.}$$
@@ -608,6 +609,7 @@ w(\phi\wedge\psi) = w(\phi) * w(\psi)=
 0 & \text{sonst}
 \end{cases}
 \end{equation}
+\noindent
 Abschlie\ss{}end kommen wir zum logische \textbf{Oder}, das wie das logische Und zwei Aussagen verbindet zu einer Aussage. Seien wieder $\phi$ und $\psi$ Aussagen, dann schreiben wir $\phi\vee\psi$ f\"ur die durch das logische Oder erzeugte Verbindung der Aussagen.
 $$\phi = \text{Der Himmel ist gr\"un.}$$
 $$\psi = \text{Fische leben im Wasser.}$$
@@ -620,6 +622,7 @@ w(\phi\vee\psi) =
 0 & \text{sonst}
 \end{cases}
 \end{equation}
+\noindent
 Damit haben wir die wichtigsten logischen Verkn\"upfungen kennen gelernt und k\"onnen damit bereits alles ausdr\"ucken, was man in der Aussagenlogik ausdr\"ucken kann. Wir werden sp\"ater in diesem Kapitel noch weitere logische Verkn\"upfungen besprechen, die eine besondere Erw\"ahnung verdienen.\\
 \\
 Als n\"achstes wollen wir konkretisieren was ein aussagelogisches System ist. Man startet mit elementaren Aussagen, so genannten \textbf{logischen Atomen}. Dies sind die Grundsymbole unseres Systems aus welchen wir zusammen mit den logischen Verkn\"upfungen alle m\"oglichen Kombinationen bilden k\"onnen. 
@@ -635,6 +638,7 @@ Solange man aber nur die Symbolketten betrachtet und die logischen Atome noch ni
 	\end{enumerate}
 	
 \end{definition}
+\noindent
 Jede aussagenlogische Formel wird zusammen mit einer Belegung der logischen Atome mit Wahrheitswerten, eine Aussage, durch folgendes Prinzip.
 \begin{definition}
 	Sei $\beta$ eine \textbf{Belegung} der logischen Atome $\{\phi_1, \phi_2, \dots\}$, daher eine Zuordnung von $0$ oder $1$ zu jedem logischen Atom, dann lassen sich durch $\beta$ Wahrheitswerte $w$ f\"ur beliebige aussagenlogische Formeln durch folgendes Schema berechnen:\\
@@ -665,6 +669,7 @@ Jede aussagenlogische Formel wird zusammen mit einer Belegung der logischen Atom
 		Falls $p$ beziehungsweise $p$ und $q$ logische Atome sind, wenden wir Punkt 1. an und sind fertig. Falls nicht, wenden wir wiederholt Punkt 2. an, bis wir ausschlie\ss{}lich logische Atome erreicht haben und wenden dann Punkt 1. an.
 	\end{enumerate}
 \end{definition}
+\noindent
 Wir zeigen nun anhand von einem Beispiel einer aussagenlogischen Formeln wie dies funktioniert.\\
 \\
 \textbf{Beispiel}: Wir haben drei logische Atome $\phi_1$, $\phi_2$ und $\phi_3$, mit Wahrheitswerten $w(\phi_1)=0$, $w(\phi_2)=1$ und $w(\phi_3)=1$.\\
@@ -801,6 +806,7 @@ Als Gleichheit verwendet man in der Logik die \"aquivalenz; Diese verh\"alt sich
 		\end{equation}
 	\end{enumerate}
 \end{definition}
+\noindent
 Eigentlich ist es notwendig Klammern um die beiden Formeln zu setzen, die links und rechts vom $\equiv$ Symbol sind, aber solange die \"aquivalenz als Gleichheit betrachten und nicht als Verkn\"upfung, werden wir die Klammern weglassen.
 \\
 \\
@@ -813,6 +819,7 @@ Eine erste Folgerung aus der Verwendung der \"aquivalenz als Gleichheit zusammen
 		\item Aus $\phi_1\equiv\phi_2$ und $\psi_1\equiv\psi_2$ folgt $\phi_1\vee\psi_1\equiv\phi_2\vee\psi_2$.
 	\end{enumerate}
 \end{corollary}
+\noindent
 Da die \"aquivalenz selbst auch eine logische Verkn\"upfung darstellt, f\"uhrt dies nat\"urlich dazu, dass eine aussagenlogische Gleichung, zugleich als Gleichung aber auch als Formel interpretierbar ist.\\
 \\
 Wir nehmen daher Abstand vom Begriff Gleichungen und betrachten das so genannte Erf\"ullbarkeitsproblem Aussagenlogischer Formeln.\\
@@ -820,6 +827,7 @@ In einfachen Worten ist das Erf\"ullbarkeitsproblem einer Formel $\psi$, die Suc
 \begin{definition}
 	Sei $\psi$ eine aussagenlogische Formel und $\beta$ eine Belegung der logischen Atome in $\psi$, sodass der zu $\beta$ geh\"orende Wahrheitswert f\"ur $\psi$ Eins ist, dann nennen wir die Belegung $\beta$ eine L\"osung des Erf\"ullbarketisproblems f\"ur $\psi$. Die Suche nach einer solchen Belegung, nennen wir folglich das Erf\"ullbarkeitsproblem von $\psi$.
 \end{definition}
+\noindent
 Genauso wie sich in der Schulalgebra Formeln umformen lassen in andere g\"ultige Formeln, so lassen sich auch aussagenlogische Formeln umformen in \"aquivalente Formeln. Wir nennen die Algebra, die mit ausagenlogischen Formeln verbunden ist auch Boolsche Algebra nach dem Mathematiker George Bool, der nach unseren Aufzeichnungen, der erste war, der sich mit diesem Thema befasste.\\
 \\
 Aussagenlogische Formeln lasssen sich bez\"uglich der logischen Und und der logischen Oder Verkn\"upfung genauso umformen wie die Multiplikation und Addition in der Schulalgebra. Die Besonderheit der Boolschen Algebra ist, dass das diese beiden Verkn\"upfungen in Bezug auf die Rolle, die sie bei den Umformungen einnehmen, austauschbar sind.\\
@@ -1069,7 +1077,7 @@ Die erste dieser Operationen ist die Verneinung des Unds, auch \textbf{NAND}, au
 	\phi\vee\psi \equiv \neg(\neg(\phi\vee\psi)) \equiv \neg((\neg(\phi))\wedge(\neg(\psi)))\equiv (\neg(\phi))\text{NAND}(\neg(\psi))
 	\end{align}
 \end{proof}
-
+\noindent
 Es ist nun eine leichte \"ubung zu zeigen, dass das \textbf{NOR}, also die Verneinung des Oders, in Formel $\neg(\phi\vee\psi)$ dieselbe Eigenschaften hat.
 \paragraph{\"Ubungsbeispiel 32:} Zeige Dies.
 \chapter{Elektronik}
